@@ -85,6 +85,65 @@ int SwitchInAbilityCheck(void *bw, struct BattleStruct *sp)
                             ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
                             newBS.weather = 0;
                             break;
+                        case WEATHER_SYS_PERMANENT_TAILWIND:
+                            scriptnum = SUB_SEQ_OVERWORLD_PERMANENT_TAILWIND;
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            newBS.weather = 0;
+                            break;
+                        case WEATHER_SYS_STEALTH_ROCK:
+                            scriptnum = SUB_SEQ_OVERWORLD_STEALTH_ROCK;
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            newBS.weather = 0;
+                            break;
+                        case WEATHER_SYS_STICKY_WEB:
+                            scriptnum = SUB_SEQ_OVERWORLD_STICKY_WEB;
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            newBS.weather = 0;
+                            break;
+                        case WEATHER_SYS_TOXIC_SPIKES:
+                            scriptnum = SUB_SEQ_OVERWORLD_TOXIC_SPIKES;
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            newBS.weather = 0;
+                            break;
+                        case WEATHER_SYS_TAILWIND:
+                            scriptnum = SUB_SEQ_OVERWORLD_TAILWIND;
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            newBS.weather = 0;
+                            break;
+                        case WEATHER_SYS_SPIKES:
+                            scriptnum = SUB_SEQ_OVERWORLD_SPIKES;
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            newBS.weather = 0;
+                            break;
+                        case WEATHER_SYS_SANDSTORM_STEALTH_ROCK:
+                            scriptnum = SUB_SEQ_OVERWORLD_SANDSTORM_STEALTH_ROCK;
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            newBS.weather = WEATHER_SANDSTORM_PERMANENT;
+                            break;
+                        case WEATHER_SYS_ELECTRIC_TERRAIN:
+                            scriptnum = SUB_SEQ_OVERWORLD_TERRAIN;
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            sp->current_move_index = MOVE_ELECTRIC_TERRAIN; 
+                            newBS.weather = 0;
+                            break;
+                        case WEATHER_SYS_PSYCHIC_TERRAIN:
+                            scriptnum = SUB_SEQ_OVERWORLD_TERRAIN;
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            sp->current_move_index = MOVE_PSYCHIC_TERRAIN;
+                            newBS.weather = 0;
+                            break;
+                        case WEATHER_SYS_GRASSY_TERRAIN:
+                            scriptnum = SUB_SEQ_OVERWORLD_TERRAIN;
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            sp->current_move_index = MOVE_GRASSY_TERRAIN;
+                            newBS.weather = 0;
+                            break;
+                        case WEATHER_SYS_MISTY_TERRAIN:
+                            scriptnum = SUB_SEQ_OVERWORLD_TERRAIN;
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            sp->current_move_index = MOVE_MISTY_TERRAIN;
+                            newBS.weather = 0;
+                            break;
                     }
                     if (ret == SWITCH_IN_CHECK_MOVE_SCRIPT)
                     {

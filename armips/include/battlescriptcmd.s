@@ -1573,3 +1573,7 @@ MOVE_DATA_CONTEST_TYPE equ 11
     .word 0xF6, side, forceExecutionOrder
     .word ((failAddress - org()) / 4) - 1
 .endmacro
+
+.macro setpermanenttailwind,battler
+    .word 0xF7, battler
+.endmacro

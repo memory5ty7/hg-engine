@@ -366,7 +366,15 @@
 #define SUB_SEQ_HANDLE_AFTER_YOU                      (356)
 #define SUB_SEQ_HANDLE_QUASH                          (357)
 
-
+// new sub seq entries - Memory5ty7
+#define SUB_SEQ_OVERWORLD_PERMANENT_TAILWIND          (358)
+#define SUB_SEQ_OVERWORLD_STEALTH_ROCK                (359)
+#define SUB_SEQ_OVERWORLD_STICKY_WEB                  (360)
+#define SUB_SEQ_OVERWORLD_TOXIC_SPIKES                (361)
+#define SUB_SEQ_OVERWORLD_TAILWIND                    (362)
+#define SUB_SEQ_OVERWORLD_SPIKES                      (363)
+#define SUB_SEQ_OVERWORLD_SANDSTORM_STEALTH_ROCK      (364)
+#define SUB_SEQ_OVERWORLD_TERRAIN                     (365)
 
 // add status effect constants--used in battle effect scripts to queue up a subscript through the table in src/moves.c
 

@@ -173,7 +173,7 @@ void ServerFieldConditionCheck(void *bw, struct BattleStruct *sp)
             while (sp->fcc_work < 2)
             {
                 side = sp->fcc_work;
-                if (sp->tailwindCount[side]) // update tailwind to use a separate counter so it can be larger
+                if (sp->tailwindCount[side]&&sp->tailwindCount[side]<5) // update tailwind to use a separate counter so it can be larger
                 {
                     if (--sp->tailwindCount[side] == 0)
                     {
