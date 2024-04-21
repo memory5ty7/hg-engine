@@ -676,6 +676,7 @@ struct __attribute__((packed)) BattlePokemon
                /** switch in flags to mark it as having been done */
     /* 0x28 */ u32 appear_check_flag : 1;    /**< has appeared */
                u32 intimidate_flag : 1;      /**< intimidate has activated */
+               u32 magnet_rise_flag : 1;
                u32 trace_flag : 1;           /**< trace has activated */
                u32 download_flag : 1;        /**< download has activated */
                u32 anticipation_flag : 1;    /**< anticipation has printed its message */
@@ -720,7 +721,7 @@ struct __attribute__((packed)) BattlePokemon
                u8 oyasex : 4;                /**< original trainer sex */
     /* 0x83 */ u8 get_ball;                  /**< caught ball */
     /* 0x84 */ u32 effect_of_moves;          /**< move effect trackers (see MOVE_EFFECT_* constants) */
-    /* 0x88 */ u32 effect_of_moves_temp;     /**< storage for effect_of_moves */
+    /* 0x88 */ u32 effect_of_moves_temp;     /**< storage for effect_of_moves */ 
     /* 0x8c */ struct __attribute__((packed)) battle_moveflag moveeffect;
 }; // size = 0xc0
 
@@ -2175,6 +2176,7 @@ enum
     SWITCH_IN_CHECK_FIELD,
     SWITCH_IN_CHECK_SURGE_ABILITY,
     SWITCH_IN_CHECK_TERRAIN_SEED,
+    SWITCH_IN_CHECK_WEATHER_MAGNET_RISE,
     SWITCH_IN_CHECK_END,
 };
 

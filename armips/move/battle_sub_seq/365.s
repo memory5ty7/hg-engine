@@ -18,7 +18,7 @@ PSYCHIC_TERRAIN_APPLY_MSG equ (1394)
 // Weather Terrain
 
 a001_365:
-    updateterrainoverlay FALSE, SameTerrainFail
+    updateterrainoverlay FALSE, DefaultOrEnd
     playanimation BATTLER_ATTACKER
     waitmessage
 ifterrainoverlayistype GRASSY_TERRAIN, GrassyTerrainMessage
@@ -43,8 +43,6 @@ PostMessage:
     changevar VAR_OP_CLEARMASK, VAR_SERVER_STATUS1, 0x4000 // reenable animations
     endscript
 
-SameTerrainFail:
-    changevar VAR_OP_SETMASK, VAR_MOVE_STATUS, 0x40
 DefaultOrEnd:
     endscript
 

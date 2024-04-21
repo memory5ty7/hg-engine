@@ -2380,14 +2380,15 @@ BOOL btl_scr_cmd_EC_updateterrainoverlay(void *bw UNUSED, struct BattleStruct *s
     if (oldTerrainOverlay == sp->terrainOverlay.type) {
         IncrementBattleScriptPtr(sp, address);
     } else {
-        if (sp->terrainOverlay.type != TERRAIN_NONE) {
-            // TODO: handle item effects
-            sp->terrainOverlay.numberOfTurnsLeft = 5;
-        } else {
-            sp->terrainOverlay.numberOfTurnsLeft = 0;
+        if(sp->terrainOverlay.numberOfTurnsLeft<10){
+            if (sp->terrainOverlay.type != TERRAIN_NONE) {
+                // TODO: handle item effects
+                sp->terrainOverlay.numberOfTurnsLeft = 5;
+            } else {
+                sp->terrainOverlay.numberOfTurnsLeft = 0;
+            }
         }
     }
-
     client_set_max = BattleWorkClientSetMaxGet(bw);
 
     if (sp->terrainOverlay.type == ELECTRIC_TERRAIN) {

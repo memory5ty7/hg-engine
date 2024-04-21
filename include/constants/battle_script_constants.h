@@ -375,6 +375,7 @@
 #define SUB_SEQ_OVERWORLD_SPIKES                      (363)
 #define SUB_SEQ_OVERWORLD_SANDSTORM_STEALTH_ROCK      (364)
 #define SUB_SEQ_OVERWORLD_TERRAIN                     (365)
+#define SUB_SEQ_OVERWORLD_MAGNET_RISE                 (366)
 
 // add status effect constants--used in battle effect scripts to queue up a subscript through the table in src/moves.c
 

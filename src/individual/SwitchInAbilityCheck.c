@@ -52,6 +52,7 @@ int SwitchInAbilityCheck(void *bw, struct BattleStruct *sp)
                     {
                         case WEATHER_SYS_RAIN:
                         case WEATHER_SYS_HEAVY_RAIN:
+                        case WEATHER_SYS_RAIN_ELECTRIC_TERRAIN:
                         case WEATHER_SYS_THUNDER:
                             scriptnum = SUB_SEQ_OVERWORLD_RAIN;
                             ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
@@ -81,6 +82,7 @@ int SwitchInAbilityCheck(void *bw, struct BattleStruct *sp)
                             newBS.weather = WEATHER_SUNNY_PERMANENT;
                             break;
                         case WEATHER_SYS_TRICK_ROOM:
+                        case WEATHER_SYS_PSYCHIC_TERRAIN_TRICK_ROOM:
                             scriptnum = SUB_SEQ_OVERWORLD_TRICK_ROOM;
                             ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
                             newBS.weather = 0;
@@ -119,30 +121,6 @@ int SwitchInAbilityCheck(void *bw, struct BattleStruct *sp)
                             scriptnum = SUB_SEQ_OVERWORLD_SANDSTORM_STEALTH_ROCK;
                             ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
                             newBS.weather = WEATHER_SANDSTORM_PERMANENT;
-                            break;
-                        case WEATHER_SYS_ELECTRIC_TERRAIN:
-                            scriptnum = SUB_SEQ_OVERWORLD_TERRAIN;
-                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
-                            sp->current_move_index = MOVE_ELECTRIC_TERRAIN; 
-                            newBS.weather = 0;
-                            break;
-                        case WEATHER_SYS_PSYCHIC_TERRAIN:
-                            scriptnum = SUB_SEQ_OVERWORLD_TERRAIN;
-                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
-                            sp->current_move_index = MOVE_PSYCHIC_TERRAIN;
-                            newBS.weather = 0;
-                            break;
-                        case WEATHER_SYS_GRASSY_TERRAIN:
-                            scriptnum = SUB_SEQ_OVERWORLD_TERRAIN;
-                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
-                            sp->current_move_index = MOVE_GRASSY_TERRAIN;
-                            newBS.weather = 0;
-                            break;
-                        case WEATHER_SYS_MISTY_TERRAIN:
-                            scriptnum = SUB_SEQ_OVERWORLD_TERRAIN;
-                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
-                            sp->current_move_index = MOVE_MISTY_TERRAIN;
-                            newBS.weather = 0;
                             break;
                     }
                     if (ret == SWITCH_IN_CHECK_MOVE_SCRIPT)
@@ -896,8 +874,6 @@ int SwitchInAbilityCheck(void *bw, struct BattleStruct *sp)
                 }
                 break;
 
-
-
             case SWITCH_IN_CHECK_AIR_BALLOON:
                 for(i = 0; i < client_set_max; i++)
                 {
@@ -920,11 +896,44 @@ int SwitchInAbilityCheck(void *bw, struct BattleStruct *sp)
                 // 02253D78
             case SWITCH_IN_CHECK_FIELD:
                 if (sp->printed_field_message == 0) {
-                    sp->terrainOverlay.type = TERRAIN_NONE;
-                    sp->terrainOverlay.numberOfTurnsLeft = 0;
-                    scriptnum = SUB_SEQ_HANDLE_FIELD_EFFECTS_INITIAL_MSG;
-                    ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
-
+                    switch(BattleWorkWeatherGet(bw)){
+                        case WEATHER_SYS_ELECTRIC_TERRAIN:
+                        case WEATHER_SYS_RAIN_ELECTRIC_TERRAIN:
+                        case WEATHER_SYS_ELECTRIC_TERRAIN_MAGNET_RISE:
+                            scriptnum = SUB_SEQ_OVERWORLD_TERRAIN;
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            sp->current_move_index = MOVE_ELECTRIC_TERRAIN;
+                            sp->terrainOverlay.numberOfTurnsLeft = 10;
+                            newBS.weather = 0;
+                            break;
+                        case WEATHER_SYS_GRASSY_TERRAIN:
+                            scriptnum = SUB_SEQ_OVERWORLD_TERRAIN;
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            sp->current_move_index = MOVE_GRASSY_TERRAIN;
+                            sp->terrainOverlay.numberOfTurnsLeft = 10;
+                            newBS.weather = 0;
+                            break;
+                        case WEATHER_SYS_PSYCHIC_TERRAIN:
+                        case WEATHER_SYS_PSYCHIC_TERRAIN_TRICK_ROOM:
+                            scriptnum = SUB_SEQ_OVERWORLD_TERRAIN;
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            sp->current_move_index = MOVE_PSYCHIC_TERRAIN;
+                            sp->terrainOverlay.numberOfTurnsLeft = 10;
+                            newBS.weather = 0;
+                            break;
+                        case WEATHER_SYS_MISTY_TERRAIN:
+                            scriptnum = SUB_SEQ_OVERWORLD_TERRAIN;
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            sp->current_move_index = MOVE_MISTY_TERRAIN;
+                            sp->terrainOverlay.numberOfTurnsLeft = 10;
+                            newBS.weather = 0;
+                            break;
+                        default:
+                            sp->terrainOverlay.type = TERRAIN_NONE;
+                            sp->terrainOverlay.numberOfTurnsLeft = 0;
+                            scriptnum = SUB_SEQ_HANDLE_FIELD_EFFECTS_INITIAL_MSG;
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                    }
                     if (ret == SWITCH_IN_CHECK_MOVE_SCRIPT) {
                         sp->printed_field_message = 1;
                     }
@@ -970,7 +979,7 @@ int SwitchInAbilityCheck(void *bw, struct BattleStruct *sp)
                     sp->switch_in_check_seq_no++;
                 }
                 break;
-            case SWITCH_IN_CHECK_TERRAIN_SEED:;
+            case SWITCH_IN_CHECK_TERRAIN_SEED:
                 u16 heldItem;
                 for (i = 0; i < client_set_max; i++) {
                     client_no = sp->turn_order[i];
@@ -983,6 +992,25 @@ int SwitchInAbilityCheck(void *bw, struct BattleStruct *sp)
                     }
                 }
                 if (i == (s32)client_set_max) {
+                    sp->switch_in_check_seq_no++;
+                }
+                break;
+            case SWITCH_IN_CHECK_WEATHER_MAGNET_RISE:;
+                for (i = 0; i < client_set_max; i++)
+                {
+                    client_no = sp->turn_order[i];
+                    if ((sp->battlemon[client_no].magnet_rise_flag == 0)
+                        && (sp->battlemon[client_no].hp)
+                        && (BattleWorkWeatherGet(bw)==WEATHER_SYS_MAGNET_RISE||BattleWorkWeatherGet(bw)==WEATHER_SYS_ELECTRIC_TERRAIN_MAGNET_RISE))
+                    {
+                        sp->battlemon[client_no].magnet_rise_flag = 1;
+                        sp->attack_client = client_no;
+                        scriptnum = SUB_SEQ_OVERWORLD_MAGNET_RISE;
+                        ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                        break;
+                    }
+                }
+                if (i == (s32)client_set_max){
                     sp->switch_in_check_seq_no++;
                 }
                 FALLTHROUGH;
