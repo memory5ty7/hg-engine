@@ -1976,6 +1976,9 @@ u32 SpeciesAndFormeToWazaOshieIndex(u32 species, u32 form)
 u32 GetLevelCap(void)
 {
     u32 levelCap = GetScriptVar(LEVEL_CAP_VARIABLE);
+    if(CheckScriptFlag(0x75)){
+        levelCap = GetScriptVar(0x4073);
+    }
     if (levelCap > 100) levelCap = 100;
     return levelCap;
 }
