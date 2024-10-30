@@ -123,9 +123,9 @@ VAR_UNK_406E equ                       0x406E
 VAR_UNK_406F equ                       0x406F
 VAR_UNK_4070 equ                       0x4070
 VAR_UNK_4071 equ                       0x4071
-VAR_SCENE_NEW_BARK_TOWN_OW equ         0x4072
-VAR_SCENE_CHERRYGROVE_CITY_OW equ      0x4073
-VAR_SCENE_VIOLET_CITY_OW equ           0x4074
+VAR_SCENE_NEW_BARK_TOWN_OW equ         0x4072   // Cutscene Progression
+VAR_SCENE_CHERRYGROVE_CITY_OW equ      0x4073   // Trigger Baseball Field
+VAR_SCENE_VIOLET_CITY_OW equ           0x4074   // Trigger Hospital
 VAR_UNK_4075 equ                       0x4075
 VAR_UNK_4076 equ                       0x4076
 VAR_SCENE_ROCKET_TAKEOVER equ          0x4077
@@ -135,18 +135,18 @@ VAR_UNK_407A equ                       0x407A
 VAR_UNK_407B equ                       0x407B
 VAR_UNK_407C equ                       0x407C
 VAR_UNK_407D equ                       0x407D
-VAR_SCENE_NEW_BARK_WEST_EXIT equ       0x407E
+VAR_SCENE_NEW_BARK_WEST_EXIT equ       0x407E   // Trigger leave Sports Club
 VAR_UNK_407F equ                       0x407F
 VAR_UNK_4080 equ                       0x4080
-VAR_SCENE_NEW_BARK_EAST_EXIT equ       0x4081
+VAR_SCENE_NEW_BARK_EAST_EXIT equ       0x4081   // Trigger Tennis Fields
 VAR_UNK_4082 equ                       0x4082
 VAR_UNK_4083 equ                       0x4083
 VAR_UNK_4084 equ                       0x4084
 VAR_UNK_4085 equ                       0x4085
 VAR_UNK_4086 equ                       0x4086
-VAR_SCENE_ROUTE_24_ROCKET equ          0x4087
+VAR_SCENE_ROUTE_24_ROCKET equ          0x4087   // Trigger 2nd floor
 VAR_UNK_4088 equ                       0x4088
-VAR_SCENE_ROUTE_25 equ                 0x4089
+VAR_SCENE_ROUTE_25 equ                 0x4089   // Triggers Gym Front Gate
 VAR_UNK_408A equ                       0x408A
 VAR_UNK_408B equ                       0x408B
 VAR_SCENE_ROUTE_30_OW equ              0x408C
@@ -158,7 +158,7 @@ VAR_UNK_4091 equ                       0x4091
 VAR_UNK_4092 equ                       0x4092
 VAR_UNK_4093 equ                       0x4093
 VAR_NUM_MET_WEEKDAY_SIBLINGS equ       0x4094
-VAR_SCENE_ROUTE_30_PHONE_CALL equ      0x4095
+VAR_SCENE_ROUTE_30_PHONE_CALL equ      0x4095   // Trigger leave Front Gate
 VAR_UNK_4096 equ                       0x4096
 VAR_UNK_4097 equ                       0x4097
 VAR_UNK_4098 equ                       0x4098
@@ -236,7 +236,7 @@ VAR_UNK_40DF equ                       0x40DF
 VAR_UNK_40E0 equ                       0x40E0
 VAR_BOAT_DIRECTION equ                 0x40E1
 VAR_UNK_40E2 equ                       0x40E2
-VAR_SCENE_SAFARI_ZONE_ENTRANCE equ     0x40E3
+VAR_SCENE_SAFARI_ZONE_ENTRANCE equ     0x40E3   // Var Story Progression Phone
 VAR_UNK_40E4 equ                       0x40E4
 VAR_UNK_40E5 equ                       0x40E5
 VAR_UNK_40E6 equ                       0x40E6

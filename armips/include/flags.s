@@ -139,17 +139,17 @@ FLAG_UNK_06F                                               equ  0x6F
 FLAG_UNK_070                                               equ  0x70
 FLAG_TRADE_VIOLET_CITY_BELLSPROUT_ONIX                     equ  0x71
 FLAG_UNK_072                                               equ  0x72
-FLAG_GOT_TM51_FROM_FALKNER                                 equ  0x73
+FLAG_GOT_TM51_FROM_FALKNER                                 equ  0x73    // Initial Cutscene
 FLAG_UNK_074                                               equ  0x74
 FLAG_GOT_OLD_ROD                                           equ  0x75
 FLAG_UNK_076                                               equ  0x76
 FLAG_UNK_077                                               equ  0x77
 FLAG_UNK_078                                               equ  0x78
 FLAG_UNK_079                                               equ  0x79
-FLAG_GOT_KINGS_ROCK_FROM_SLOWPOKE_WELL_MAN                 equ  0x7A
-FLAG_BEAT_AZALEA_ROCKETS                                   equ  0x7B
+FLAG_GOT_KINGS_ROCK_FROM_SLOWPOKE_WELL_MAN                 equ  0x7A    // Classroom Cutscene
+FLAG_BEAT_AZALEA_ROCKETS                                   equ  0x7B    // Tower Cutscene
 FLAG_UNK_07C                                               equ  0x7C
-FLAG_FOUND_FIRST_FARFETCHD                                 equ  0x7D
+FLAG_FOUND_FIRST_FARFETCHD                                 equ  0x7D    // Sylvia in Sports Club
 FLAG_FOUND_SECOND_FARFETCHD                                equ  0x7E
 FLAG_GOT_TM89_FROM_BUGSY                                   equ  0x7F
 FLAG_GOT_HM01                                              equ  0x80

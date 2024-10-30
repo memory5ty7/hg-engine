@@ -7,6 +7,8 @@
 
 #define SCRIPT_NEW_CMD_MAX          256
 
+// Ignore this file, file used is src/scripts.c
+
 BOOL Script_RunNewCmd(SCRIPTCONTEXT *ctx) {
     u8 sw = ScriptReadByte(ctx);
     u16 UNUSED arg0 = ScriptReadHalfword(ctx);
@@ -14,9 +16,7 @@ BOOL Script_RunNewCmd(SCRIPTCONTEXT *ctx) {
     switch (sw) {
         case SCRIPT_NEW_CMD_REPEL_USE:;
 #ifdef IMPLEMENT_REUSABLE_REPELS
-            u16 most_recent_repel = Repel_GetMostRecent();
-            SetScriptVar(arg0, most_recent_repel);
-            Repel_Use(most_recent_repel, HEAPID_MAIN_HEAP);
+            Repel_Use();
 #endif
             break;
 
