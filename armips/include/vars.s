@@ -125,7 +125,7 @@ VAR_UNK_4070 equ                       0x4070
 VAR_UNK_4071 equ                       0x4071
 VAR_SCENE_NEW_BARK_TOWN_OW equ         0x4072   // Cutscene Progression
 VAR_SCENE_CHERRYGROVE_CITY_OW equ      0x4073   // Trigger Baseball Field
-VAR_SCENE_VIOLET_CITY_OW equ           0x4074   // Trigger Hospital
+VAR_SCENE_VIOLET_CITY_OW equ           0x4074   // Trigger Hospital A CHANGER - Changement étage mvt 
 VAR_UNK_4075 equ                       0x4075
 VAR_UNK_4076 equ                       0x4076
 VAR_SCENE_ROCKET_TAKEOVER equ          0x4077
@@ -260,7 +260,7 @@ VAR_UNK_40F7 equ                       0x40F7
 VAR_UNK_40F8 equ                       0x40F8
 VAR_UNK_40F9 equ                       0x40F9
 VAR_UNK_40FA equ                       0x40FA
-VAR_SCENE_SINJOH_MYSTRI_ROOM equ       0x40FB
+VAR_SCENE_SINJOH_MYSTRI_ROOM equ       0x40FB   // Chapter Number
 VAR_UNK_40FC equ                       0x40FC
 VAR_UNK_40FD equ                       0x40FD
 VAR_UNK_40FE equ                       0x40FE
@@ -271,9 +271,10 @@ VAR_UNK_4102 equ                       0x4102
 VAR_UNK_4103 equ                       0x4103
 VAR_UNK_4104 equ                       0x4104
 VAR_UNK_4105 equ                       0x4105
-VAR_SCENE_PLAYERS_HOUSE_1F equ         0x4106
-VAR_SCENE_MR_POKEMONS_HOUSE equ        0x4107
-VAR_SCENE_ELMS_LAB equ                 0x4108
+VAR_SCENE_PLAYERS_HOUSE_1F equ         0x4106   // Difficulty
+VAR_DIFFICULTY equ                     0x4106   // Difficulty
+VAR_SCENE_MR_POKEMONS_HOUSE equ        0x4107   // Cutscene Options
+VAR_SCENE_ELMS_LAB equ                 0x4108   // Players to recruit
 VAR_UNK_4109 equ                       0x4109
 VAR_UNK_410A equ                       0x410A
 VAR_UNK_410B equ                       0x410B

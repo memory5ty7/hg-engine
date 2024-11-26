@@ -149,7 +149,7 @@ FLAG_UNK_079                                               equ  0x79
 FLAG_GOT_KINGS_ROCK_FROM_SLOWPOKE_WELL_MAN                 equ  0x7A    // Classroom Cutscene
 FLAG_BEAT_AZALEA_ROCKETS                                   equ  0x7B    // Tower Cutscene
 FLAG_UNK_07C                                               equ  0x7C
-FLAG_FOUND_FIRST_FARFETCHD                                 equ  0x7D    // Sylvia in Sports Club
+FLAG_FOUND_FIRST_FARFETCHD                                 equ  0x7D    // Silvia in Sports Club
 FLAG_FOUND_SECOND_FARFETCHD                                equ  0x7E
 FLAG_GOT_TM89_FROM_BUGSY                                   equ  0x7F
 FLAG_GOT_HM01                                              equ  0x80
@@ -368,19 +368,20 @@ FLAG_UNK_154                                               equ 0x154
 FLAG_UNK_155                                               equ 0x155
 FLAG_UNK_156                                               equ 0x156
 FLAG_UNK_157                                               equ 0x157
-FLAG_GOT_SPELL_TAG_FROM_CELADON_CITY_MAN                   equ 0x158
-FLAG_GOT_MAREEP_EGG_FROM_PRIMO                             equ 0x159
-FLAG_GOT_WOOPER_EGG_FROM_PRIMO                             equ 0x15A
-FLAG_GOT_SLUGMA_EGG_FROM_PRIMO                             equ 0x15B
-FLAG_GOT_LUCKY_PUNCH_FROM_ROUTE_14_WOMAN                   equ 0x15C
+FLAG_GOT_SPELL_TAG_FROM_CELADON_CITY_MAN                   equ 0x158    // PC
+FLAG_GOT_MAREEP_EGG_FROM_PRIMO                             equ 0x159    // Heal Pokémon
+FLAG_GOT_WOOPER_EGG_FROM_PRIMO                             equ 0x15A    // Map
+FLAG_GOT_SLUGMA_EGG_FROM_PRIMO                             equ 0x15B    // Repellent
+FLAG_GOT_LUCKY_PUNCH_FROM_ROUTE_14_WOMAN                   equ 0x15C    // Cutscene GF
 FLAG_UNK_15D                                               equ 0x15D
-FLAG_MET_MOVE_MANIAC                                       equ 0x15E
+FLAG_MET_MOVE_MANIAC                                       equ 0x15E    // test cutscene
 FLAG_BUG_CONTEST_OTHER_POKES_HELD                          equ 0x15F
-FLAG_ELMS_LAB_PREVENT_PLAYER_ESCAPE                        equ 0x160
+FLAG_ELMS_LAB_PREVENT_PLAYER_ESCAPE                        equ 0x160    // Nuzlocke Mode
+FLAG_NUZLOCKE_MODE                                         equ 0x160    // Nuzlocke Mode
 FLAG_UNK_161                                               equ 0x161
-FLAG_TRADE_LT_SURGE_PIKACHU                                equ 0x162
-FLAG_GOT_RAGECANDYBAR                                      equ 0x163
-FLAG_UNK_164                                               equ 0x164
+FLAG_TRADE_LT_SURGE_PIKACHU                                equ 0x162    // Trainer Club
+FLAG_GOT_RAGECANDYBAR                                      equ 0x163    // Royal Academy Match Announced
+FLAG_UNK_164                                               equ 0x164    // Max Joins
 FLAG_TRADE_BROCK_BONSLY_RHYHORN                            equ 0x165
 FLAG_TRADE_JASMINE_STEELIX                                 equ 0x166
 FLAG_TRADE_STEVEN_FORRETRESS_BELDUM                        equ 0x167
@@ -448,8 +449,8 @@ FLAG_UNK_1A0                                              equ 0x1A0
 FLAG_HIDE_NEW_BARK_MARILL                                 equ 0x1A1
 FLAG_HIDE_NEW_BARK_FRIEND                                 equ 0x1A2
 FLAG_UNK_1A3                                              equ 0x1A3
-FLAG_HIDE_ROUTE_29_FRIEND                                 equ 0x1A4
-FLAG_HIDE_ROUTE_29_MARILL                                 equ 0x1A5
+FLAG_HIDE_ROUTE_29_FRIEND                                 equ 0x1A4     // Silvia sports club
+FLAG_HIDE_ROUTE_29_MARILL                                 equ 0x1A5     // Flag cutscene all
 FLAG_HIDE_ELMS_LAB_FRIEND                                 equ 0x1A6
 FLAG_HIDE_FARFETCHD_1_LOST                                equ 0x1A7
 FLAG_HIDE_FARFETCHD_2_LOST                                equ 0x1A8

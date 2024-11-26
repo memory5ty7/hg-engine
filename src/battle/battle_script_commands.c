@@ -3349,6 +3349,9 @@ u32 CalculateBallShakes(void *bw, struct BattleStruct *sp)
     type1 = BattlePokemonParamGet(sp, sp->defence_client, BATTLE_MON_DATA_TYPE1, 0); // type 1
     type2 = BattlePokemonParamGet(sp, sp->defence_client, BATTLE_MON_DATA_TYPE2, 0); // type 2
 
+    if(captureRate == 255){
+        return 4;
+    }
 
     switch (sp->item_work)
     {

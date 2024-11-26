@@ -239,7 +239,7 @@ movedata MOVE_SWORDS_DANCE, "Swords Dance"
     basepower 0
     type TYPE_NORMAL
     accuracy 0
-    pp 20
+    pp 1
     effectchance 0
     target MOVE_TARGET_USER
     priority 0
@@ -1183,7 +1183,7 @@ movedata MOVE_LEECH_SEED, "Leech Seed"
     basepower 0
     type TYPE_GRASS
     accuracy 90
-    pp 10
+    pp 3
     effectchance 0
     target MOVE_TARGET_SELECTED
     priority 0
@@ -1199,7 +1199,7 @@ movedata MOVE_GROWTH, "Growth"
     basepower 0
     type TYPE_NORMAL
     accuracy 0
-    pp 20
+    pp 5
     effectchance 0
     target MOVE_TARGET_USER
     priority 0
@@ -1551,7 +1551,7 @@ movedata MOVE_MEDITATE, "Meditate"
     basepower 0
     type TYPE_PSYCHIC
     accuracy 0
-    pp 40
+    pp 5
     effectchance 0
     target MOVE_TARGET_USER
     priority 0
@@ -1567,7 +1567,7 @@ movedata MOVE_AGILITY, "Agility"
     basepower 0
     type TYPE_PSYCHIC
     accuracy 0
-    pp 30
+    pp 1
     effectchance 0
     target MOVE_TARGET_USER
     priority 0
@@ -1695,7 +1695,7 @@ movedata MOVE_RECOVER, "Recover"
     basepower 0
     type TYPE_NORMAL
     accuracy 0
-    pp 5
+    pp 3
     effectchance 0
     target MOVE_TARGET_USER
     priority 0
@@ -1711,7 +1711,7 @@ movedata MOVE_HARDEN, "Harden"
     basepower 0
     type TYPE_NORMAL
     accuracy 0
-    pp 30
+    pp 5
     effectchance 0
     target MOVE_TARGET_USER
     priority 0
@@ -1775,7 +1775,7 @@ movedata MOVE_WITHDRAW, "Withdraw"
     basepower 0
     type TYPE_WATER
     accuracy 0
-    pp 40
+    pp 5
     effectchance 0
     target MOVE_TARGET_USER
     priority 0
@@ -1791,7 +1791,7 @@ movedata MOVE_DEFENSE_CURL, "Defense Curl"
     basepower 0
     type TYPE_NORMAL
     accuracy 0
-    pp 40
+    pp 5
     effectchance 0
     target MOVE_TARGET_USER
     priority 0
@@ -1807,7 +1807,7 @@ movedata MOVE_BARRIER, "Barrier"
     basepower 0
     type TYPE_PSYCHIC
     accuracy 0
-    pp 20
+    pp 1
     effectchance 0
     target MOVE_TARGET_USER
     priority 0
@@ -1823,7 +1823,7 @@ movedata MOVE_LIGHT_SCREEN, "Light Screen"
     basepower 0
     type TYPE_PSYCHIC
     accuracy 0
-    pp 30
+    pp 1
     effectchance 0
     target MOVE_TARGET_USER_SIDE
     priority 0
@@ -1855,7 +1855,7 @@ movedata MOVE_REFLECT, "Reflect"
     basepower 0
     type TYPE_PSYCHIC
     accuracy 0
-    pp 20
+    pp 1
     effectchance 0
     target MOVE_TARGET_USER_SIDE
     priority 0
@@ -2143,7 +2143,7 @@ movedata MOVE_AMNESIA, "Amnesia"
     basepower 0
     type TYPE_PSYCHIC
     accuracy 0
-    pp 20
+    pp 1
     effectchance 0
     target MOVE_TARGET_USER
     priority 0
@@ -2175,7 +2175,7 @@ movedata MOVE_SOFT_BOILED, "Soft-Boiled"
     basepower 0
     type TYPE_NORMAL
     accuracy 0
-    pp 5
+    pp 3
     effectchance 0
     target MOVE_TARGET_USER
     priority 0
@@ -2431,7 +2431,7 @@ movedata MOVE_ACID_ARMOR, "Acid Armor"
     basepower 0
     type TYPE_POISON
     accuracy 0
-    pp 20
+    pp 1
     effectchance 0
     target MOVE_TARGET_USER
     priority 0
@@ -2511,7 +2511,7 @@ movedata MOVE_REST, "Rest"
     basepower 0
     type TYPE_PSYCHIC
     accuracy 0
-    pp 5
+    pp 1
     effectchance 0
     target MOVE_TARGET_USER
     priority 0
@@ -2799,7 +2799,7 @@ movedata MOVE_CURSE, "Curse"
     basepower 0
     type TYPE_GHOST
     accuracy 0
-    pp 10
+    pp 3
     effectchance 0
     target MOVE_TARGET_SELECTED
     priority 0
@@ -3007,7 +3007,7 @@ movedata MOVE_BELLY_DRUM, "Belly Drum"
     basepower 0
     type TYPE_NORMAL
     accuracy 0
-    pp 10
+    pp 1
     effectchance 0
     target MOVE_TARGET_USER
     priority 0
@@ -3071,7 +3071,7 @@ movedata MOVE_SPIKES, "Spikes"
     basepower 0
     type TYPE_GROUND
     accuracy 0
-    pp 20
+    pp 5
     effectchance 0
     target MOVE_TARGET_OPPONENTS_FIELD
     priority 0
@@ -3231,7 +3231,7 @@ movedata MOVE_SANDSTORM, "Sandstorm"
     basepower 0
     type TYPE_ROCK
     accuracy 0
-    pp 10
+    pp 1
     effectchance 0
     target MOVE_TARGET_ACTIVE_FIELD
     priority 0
@@ -3343,7 +3343,7 @@ movedata MOVE_MILK_DRINK, "Milk Drink"
     basepower 0
     type TYPE_NORMAL
     accuracy 0
-    pp 5
+    pp 3
     effectchance 0
     target MOVE_TARGET_USER
     priority 0
@@ -3855,7 +3855,7 @@ movedata MOVE_RAIN_DANCE, "Rain Dance"
     basepower 0
     type TYPE_WATER
     accuracy 0
-    pp 5
+    pp 1
     effectchance 0
     target MOVE_TARGET_ACTIVE_FIELD
     priority 0
@@ -3871,7 +3871,7 @@ movedata MOVE_SUNNY_DAY, "Sunny Day"
     basepower 0
     type TYPE_FIRE
     accuracy 0
-    pp 5
+    pp 1
     effectchance 0
     target MOVE_TARGET_ACTIVE_FIELD
     priority 0
@@ -4000,7 +4000,7 @@ movedata MOVE_ROCK_SMASH, "Rock Smash"
     type TYPE_FIGHTING
     accuracy 100
     pp 15
-    effectchance 50
+    effectchance 100
     target MOVE_TARGET_SELECTED
     priority 0
     flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
@@ -4079,7 +4079,7 @@ movedata MOVE_STOCKPILE, "Stockpile"
     basepower 0
     type TYPE_NORMAL
     accuracy 0
-    pp 20
+    pp 3
     effectchance 0
     target MOVE_TARGET_USER
     priority 0
@@ -4143,7 +4143,7 @@ movedata MOVE_HAIL, "Hail"
     basepower 0
     type TYPE_ICE
     accuracy 0
-    pp 10
+    pp 1
     effectchance 0
     target MOVE_TARGET_ACTIVE_FIELD
     priority 0
@@ -4383,7 +4383,7 @@ movedata MOVE_WISH, "Wish"
     basepower 0
     type TYPE_NORMAL
     accuracy 0
-    pp 10
+    pp 1
     effectchance 0
     target MOVE_TARGET_USER
     priority 0
@@ -4719,7 +4719,7 @@ movedata MOVE_TAIL_GLOW, "Tail Glow"
     basepower 0
     type TYPE_BUG
     accuracy 0
-    pp 20
+    pp 1
     effectchance 0
     target MOVE_TARGET_USER
     priority 0
@@ -4863,7 +4863,7 @@ movedata MOVE_SLACK_OFF, "Slack Off"
     basepower 0
     type TYPE_NORMAL
     accuracy 0
-    pp 5
+    pp 3
     effectchance 0
     target MOVE_TARGET_USER
     priority 0
@@ -5359,7 +5359,7 @@ movedata MOVE_IRON_DEFENSE, "Iron Defense"
     basepower 0
     type TYPE_STEEL
     accuracy 0
-    pp 15
+    pp 1
     effectchance 0
     target MOVE_TARGET_USER
     priority 0
@@ -5391,7 +5391,7 @@ movedata MOVE_HOWL, "Howl"
     basepower 0
     type TYPE_NORMAL
     accuracy 0
-    pp 40
+    pp 5
     effectchance 0
     target MOVE_TARGET_USER
     priority 0
@@ -5439,7 +5439,7 @@ movedata MOVE_BULK_UP, "Bulk Up"
     basepower 0
     type TYPE_FIGHTING
     accuracy 0
-    pp 20
+    pp 3
     effectchance 0
     target MOVE_TARGET_USER
     priority 0
@@ -5567,7 +5567,7 @@ movedata MOVE_CALM_MIND, "Calm Mind"
     basepower 0
     type TYPE_PSYCHIC
     accuracy 0
-    pp 20
+    pp 5
     effectchance 0
     target MOVE_TARGET_USER
     priority 0
@@ -5599,7 +5599,7 @@ movedata MOVE_DRAGON_DANCE, "Dragon Dance"
     basepower 0
     type TYPE_DRAGON
     accuracy 0
-    pp 20
+    pp 1
     effectchance 0
     target MOVE_TARGET_USER
     priority 0
@@ -5695,7 +5695,7 @@ movedata MOVE_ROOST, "Roost"
     basepower 0
     type TYPE_FLYING
     accuracy 0
-    pp 5
+    pp 3
     effectchance 0
     target MOVE_TARGET_USER
     priority 0
@@ -5871,7 +5871,7 @@ movedata MOVE_TAILWIND, "Tailwind"
     basepower 0
     type TYPE_FLYING
     accuracy 0
-    pp 15
+    pp 1
     effectchance 0
     target MOVE_TARGET_USER_SIDE
     priority 0
@@ -6255,7 +6255,7 @@ movedata MOVE_TOXIC_SPIKES, "Toxic Spikes"
     basepower 0
     type TYPE_POISON
     accuracy 0
-    pp 20
+    pp 5
     effectchance 0
     target MOVE_TARGET_OPPONENTS_FIELD
     priority 0
@@ -6367,7 +6367,7 @@ movedata MOVE_ROCK_POLISH, "Rock Polish"
     basepower 0
     type TYPE_ROCK
     accuracy 0
-    pp 20
+    pp 1
     effectchance 0
     target MOVE_TARGET_USER
     priority 0
@@ -6687,7 +6687,7 @@ movedata MOVE_NASTY_PLOT, "Nasty Plot"
     basepower 0
     type TYPE_DARK
     accuracy 0
-    pp 20
+    pp 1
     effectchance 0
     target MOVE_TARGET_USER
     priority 0
@@ -6943,7 +6943,7 @@ movedata MOVE_TRICK_ROOM, "Trick Room"
     basepower 0
     type TYPE_PSYCHIC
     accuracy 0
-    pp 5
+    pp 1
     effectchance 0
     target MOVE_TARGET_ACTIVE_FIELD
     priority -7
@@ -7151,7 +7151,7 @@ movedata MOVE_STEALTH_ROCK, "Stealth Rock"
     basepower 0
     type TYPE_ROCK
     accuracy 0
-    pp 20
+    pp 5
     effectchance 0
     target MOVE_TARGET_OPPONENTS_FIELD
     priority 0
@@ -7311,7 +7311,7 @@ movedata MOVE_HEAL_ORDER, "Heal Order"
     basepower 0
     type TYPE_BUG
     accuracy 0
-    pp 10
+    pp 3
     effectchance 0
     target MOVE_TARGET_USER
     priority 0
@@ -7551,7 +7551,7 @@ movedata MOVE_HONE_CLAWS, "Hone Claws"
     basepower 0
     type TYPE_DARK
     accuracy 0
-    pp 15
+    pp 5
     effectchance 0
     target MOVE_TARGET_USER
     priority 0
@@ -7791,7 +7791,7 @@ movedata MOVE_QUIVER_DANCE, "Quiver Dance"
     basepower 0
     type TYPE_BUG
     accuracy 0
-    pp 20
+    pp 1
     effectchance 0
     target MOVE_TARGET_USER
     priority 0
@@ -7871,7 +7871,7 @@ movedata MOVE_FLAME_CHARGE, "Flame Charge"
     basepower 50
     type TYPE_FIRE
     accuracy 100
-    pp 20
+    pp 5
     effectchance 100
     target MOVE_TARGET_SELECTED
     priority 0
@@ -7887,7 +7887,7 @@ movedata MOVE_COIL, "Coil"
     basepower 0
     type TYPE_POISON
     accuracy 0
-    pp 20
+    pp 3
     effectchance 0
     target MOVE_TARGET_USER
     priority 0
@@ -8127,7 +8127,7 @@ movedata MOVE_SHELL_SMASH, "Shell Smash"
     basepower 0
     type TYPE_NORMAL
     accuracy 0
-    pp 15
+    pp 1
     effectchance 0
     target MOVE_TARGET_USER
     priority 0
@@ -8191,7 +8191,7 @@ movedata MOVE_SHIFT_GEAR, "Shift Gear"
     basepower 0
     type TYPE_STEEL
     accuracy 0
-    pp 10
+    pp 1
     effectchance 0
     target MOVE_TARGET_USER
     priority 0
@@ -8479,7 +8479,7 @@ movedata MOVE_WORK_UP, "Work Up"
     basepower 0
     type TYPE_NORMAL
     accuracy 0
-    pp 30
+    pp 5
     effectchance 0
     target MOVE_TARGET_USER
     priority 0
@@ -8671,7 +8671,7 @@ movedata MOVE_COTTON_GUARD, "Cotton Guard"
     basepower 0
     type TYPE_GRASS
     accuracy 0
-    pp 10
+    pp 1
     effectchance 0
     target MOVE_TARGET_USER
     priority 0
@@ -9344,7 +9344,7 @@ movedata MOVE_GRASSY_TERRAIN, "Grassy Terrain"
     basepower 0
     type TYPE_GRASS
     accuracy 0
-    pp 10
+    pp 1
     effectchance 0
     target MOVE_TARGET_ACTIVE_FIELD
     priority 0
@@ -9360,7 +9360,7 @@ movedata MOVE_MISTY_TERRAIN, "Misty Terrain"
     basepower 0
     type (FAIRY_TYPE_IMPLEMENTED) ? TYPE_FAIRY : TYPE_NORMAL
     accuracy 0
-    pp 10
+    pp 1
     effectchance 0
     target MOVE_TARGET_ACTIVE_FIELD
     priority 0
@@ -9728,7 +9728,7 @@ movedatalongname MOVE_ELECTRIC_TERRAIN, "ElectricTerrain", "Electric Terrain"
     basepower 0
     type TYPE_ELECTRIC
     accuracy 0
-    pp 10
+    pp 1
     effectchance 0
     target MOVE_TARGET_ACTIVE_FIELD
     priority 0
@@ -9856,7 +9856,7 @@ movedata MOVE_POWER_UP_PUNCH, "Power-Up Punch"
     basepower 40
     type TYPE_FIGHTING
     accuracy 100
-    pp 20
+    pp 5
     effectchance 100
     target MOVE_TARGET_SELECTED
     priority 0
@@ -10912,7 +10912,7 @@ movedata MOVE_PSYCHIC_TERRAIN, "Psychic Terrain"
     basepower 0
     type TYPE_PSYCHIC
     accuracy 0
-    pp 10
+    pp 1
     effectchance 0
     target MOVE_TARGET_ACTIVE_FIELD
     priority 0
@@ -14224,7 +14224,7 @@ movedata MOVE_TRAILBLAZE, "Trailblaze"
     basepower 50
     type TYPE_GRASS
     accuracy 100
-    pp 20
+    pp 5
     effectchance 100
     target MOVE_TARGET_SELECTED
     priority 0

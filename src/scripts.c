@@ -2,9 +2,10 @@
 #include "../include/script.h"
 #include "../include/bag.h"
 #include "../include/repel.h"
+#include "../include/task.h"
 
 // script command 0xD0, DummyTextTrap/scrcmd_208
-u32 ScrCmd_master_new_script_command(SCRIPTCONTEXT *ctx)
+u32 Script_RunNewCmd(SCRIPTCONTEXT *ctx)
 {
     u32 sw = ScriptReadByte(ctx);
     u32 arg0 = ScriptReadHalfword(ctx);

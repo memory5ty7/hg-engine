@@ -317,3 +317,28 @@ BOOL ScrCmd_DaycareSanitizeMon(SCRIPTCONTEXT *ctx) {
     }
     return FALSE;
 }
+
+BOOL LONG_CALL Save_VarsFlags_CheckHaveFollower(SCRIPT_STATE *state);
+u16 LONG_CALL Save_VarsFlags_GetFollowerTrainerNum(SCRIPT_STATE *state);
+void LONG_CALL SetupAndStartTrainerBattle(TaskManager *taskManager, u32 opponentTrainer1, u32 opponentTrainer2, u32 followerTrainerNum, u32 a4, u32 a5, int heapId, u32 *winFlag);
+
+BOOL ScrCmd_TrainerBattle(SCRIPTCONTEXT *ctx) {
+    FieldSystem *fieldSystem = ctx->fsys;
+    u16 *script = FieldSysGetAttrAddr(fieldSystem, 8);
+    u32 *winFlag = FieldSysGetAttrAddr(fieldSystem, 24);
+    u16 var0 = ScriptGetVar(ctx);
+    u16 var1 = ScriptGetVar(ctx);
+    u8 var2 = ScriptReadByte(ctx);
+    u8 var3 = ScriptReadByte(ctx);
+    u16 followerTrainerNum = 0;
+
+    var0 += GetScriptVar(0x4106);
+
+    if (Save_VarsFlags_CheckHaveFollower(SavArray_Flags_get(ctx->fsys->savedata)) == TRUE) {
+        followerTrainerNum = Save_VarsFlags_GetFollowerTrainerNum(SavArray_Flags_get(fieldSystem->savedata));
+        followerTrainerNum += GetScriptVar(0x4106);
+    }
+
+    SetupAndStartTrainerBattle(ctx->taskman, var0, var1, followerTrainerNum, var2, var3, 11, winFlag);
+    return TRUE;
+}

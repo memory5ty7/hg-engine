@@ -42,7 +42,7 @@ void ClearOverworldRequestFlags(OVERWORLD_REQUEST_FLAGS *req)
  */
 void SetOverworldRequestFlags(OVERWORLD_REQUEST_FLAGS *req, u16 trg)
 {
-    if (trg & PAD_BUTTON_R) {
+    if (trg & PAD_BUTTON_L) {
         req->OpenPCCheck = TRUE;
     }
 }
@@ -65,7 +65,7 @@ void CheckOverworldRequestFlags(OVERWORLD_REQUEST_FLAGS *req, FieldSystem *fsys)
 
     // Testing mode
     if (req->OpenPCCheck) {
-        EventSet_Script(fsys, 2010, NULL); // set up script 2073
+        EventSet_Script(fsys, 2073, NULL); // set up script 2073
     }
 
     // // Don't allow the PC at all if flag 398 hasn't been set

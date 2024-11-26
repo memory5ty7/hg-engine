@@ -665,3 +665,7 @@ BattleContext_CheckMoveHealBlocked = 0x02252DF8 | 1;
 CanUseItemOnPokemon = 0x0208FD9C | 1;
 
 BagApp_GetSaveRoamers = 0x021F992C | 1;
+
+Save_VarsFlags_CheckHaveFollower = 0x02066644 | 1;
+Save_VarsFlags_GetFollowerTrainerNum = 0x02066AD0 | 1;
+SetupAndStartTrainerBattle = 0x02051370 | 1;
