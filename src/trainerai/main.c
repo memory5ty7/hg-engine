@@ -114,12 +114,13 @@ BOOL LONG_CALL IsInMirrorMoveList(u32 moveEffect);
 BOOL LONG_CALL IsInStatList(u32 moveEffect, const u16 StatList[], u16 ListLength);
 void SetupStateVariables(struct BattleSystem *bsys, u32 attacker, AiContext *ai);
 
-
 enum AIActionChoice __attribute__((section (".init"))) TrainerAI_Main(struct BattleSystem *bsys, u32 attacker)
     {
     struct BattleStruct *ctx = bsys->sp;
     AiContext aictx = {0};
     AiContext *ai = &aictx;
+
+    ctx->battlemon[attacker].
 
     enum AIActionChoice result = AI_ENEMY_ATTACK_1, highestBasePower = 0;
     int highest_move_score = 0;
