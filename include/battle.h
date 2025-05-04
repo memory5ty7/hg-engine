@@ -2899,6 +2899,15 @@ void LONG_CALL PushAndLoadBattleScript(struct BattleStruct *sp, int kind, int in
  */
 BOOL LONG_CALL IsClientGrounded(struct BattleStruct *sp, u32 client_no);
 
+
+/**
+ *  @brief function to check whether a party pokemon is grounded or not
+ *  @param sp global battle structure
+ *  @param pp party pokemon
+ *  @return `TRUE` if grounded, `FALSE` otherwise
+ */
+ BOOL LONG_CALL IsPartyPokemonGrounded(struct BattleStruct *sp, struct PartyPokemon *pp);
+
 /**
  *  @brief function to check whether a mon is grounded or not
  *  @param sp global battle structure
@@ -3033,7 +3042,7 @@ u8 BeastBoostGreatestStatHelper(struct BattleStruct *sp, u32 client);
  *  @param flag if nonzero, ignore quick claw and custap berry modifiers
  *  @return 0 if client1 moves first, 1 if client2 moves first, 2 if random roll between the two
  */
-u8 LONG_CALL CalcSpeed(void *bw, struct BattleStruct *sp, int client1, int client2, int flag);
+u8 LONG_CALL CalcSpeed(void *bw, struct BattleStruct *sp, int client1, int client2, int flag, int client2IsPP, struct PartyPokemon *pp);
 
 #define CALCSPEED_FLAG_NOTHING 0
 #define CALCSPEED_FLAG_NO_PRIORITY 0x80
@@ -3385,8 +3394,8 @@ BOOL LONG_CALL BattleContext_CheckMoveHealBlocked(struct BattleSystem *bsys, str
 //Buffer messages related to being unable to select moves?
 BOOL LONG_CALL ov12_02251A28(struct BattleSystem *bsys, struct BattleStruct *ctx, int battlerId, int movePos, MESSAGE_PARAM *msg);
 
-int CalcBaseDamage(void *bw, struct BattleStruct *sp, int moveno, u32 side_cond,
-                   u32 field_cond, u16 pow, u8 type, u8 attacker, u8 defender, u8 critical);
+int LONG_CALL CalcBaseDamage(void *bw, struct BattleStruct *sp, int moveno, u32 side_cond,
+                   u32 field_cond, u16 pow, u8 type, u8 attacker, u8 defender, u8 critical, BOOL usePP, struct PartyPokemon *pp);
 
 int AdjustDamageForRoll(void *bw, struct BattleStruct *sp, int damage);
 
