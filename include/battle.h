@@ -3042,7 +3042,7 @@ u8 BeastBoostGreatestStatHelper(struct BattleStruct *sp, u32 client);
  *  @param flag if nonzero, ignore quick claw and custap berry modifiers
  *  @return 0 if client1 moves first, 1 if client2 moves first, 2 if random roll between the two
  */
-u8 LONG_CALL CalcSpeed(void *bw, struct BattleStruct *sp, int client1, int client2, int flag, int client2IsPP, struct PartyPokemon *pp);
+u8 LONG_CALL CalcSpeed(void *bw, struct BattleStruct *sp, int client1, int client2, int flag);
 
 #define CALCSPEED_FLAG_NOTHING 0
 #define CALCSPEED_FLAG_NO_PRIORITY 0x80

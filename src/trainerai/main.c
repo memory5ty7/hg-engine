@@ -4608,10 +4608,10 @@ int TagStrategyFlag(struct BattleSystem *bsys, u32 attacker, int i, AIContext *a
             }
             else{
                 if(BattlerHasMoveEffect(bsys, ai->partner, MOVE_EFFECT_HIT_IN_3_TURNS, ai)){
-                    if(CalcSpeed(bsys, ctx, ai->attacker, ai->partner, 0, 0, NULL) == 1){
+                    if(CalcSpeed(bsys, ctx, ai->attacker, ai->partner, 0) == 1){
                         moveScore -= 3;
                     }
-                    else if(CalcSpeed(bsys, ctx, ai->attacker, ai->partner, 0, 0, NULL) == 2){
+                    else if(CalcSpeed(bsys, ctx, ai->attacker, ai->partner, 0) == 2){
                         if(BattleRand(bsys) % 2 < 1){
                             moveScore -= 3;
                         }
@@ -5288,7 +5288,7 @@ BOOL LONG_CALL BattlerMovesFirstDoubles(struct BattleSystem *bsys, struct Battle
     BOOL movesFirst = TRUE;
     for (int otherBattler = 0; otherBattler < 4; otherBattler++){
         if(ctx->battlemon[otherBattler].hp != 0 && mainBattler != otherBattler){
-            if(CalcSpeed(bsys, ctx, otherBattler, mainBattler, flag, 0, NULL) != 1){
+            if(CalcSpeed(bsys, ctx, otherBattler, mainBattler, flag) != 1){
                 return FALSE;
             }
         }
@@ -5353,7 +5353,7 @@ void SetupStateVariables(struct BattleSystem *bsys, u32 attacker, u32 defender, 
     ai->trickRoomActive = 0;
     ai->defenderHasBadItem = 0;
 
-    speedCalc = CalcSpeed(ctx, ctx, ai->defender, attacker, CALCSPEED_FLAG_NO_PRIORITY, 0, NULL); //checks actual turn order with field state considered
+    speedCalc = CalcSpeed(ctx, ctx, ai->defender, attacker, CALCSPEED_FLAG_NO_PRIORITY); //checks actual turn order with field state considered
     //evaluates to 0 if ai->defender > attacker (false)
     //and 1 if ai->defender < attacker (true)
     //if speed tie, then 2.

@@ -631,7 +631,7 @@ const u8 DecreaseSpeedHoldEffects[] =
 };
 
 // return 0 if client1 moves first, 1 if client2 moves first, 2 if random roll between the two.
-u8 LONG_CALL CalcSpeed(void *bw, struct BattleStruct *sp, int client1, int client2, int flag, int client2IsPP, struct PartyPokemon *pp)
+u8 LONG_CALL CalcSpeed(void *bw, struct BattleStruct *sp, int client1, int client2, int flag)
 {
     u8 ret = 0;
     u32 speed1, speed2;
@@ -640,19 +640,10 @@ u8 LONG_CALL CalcSpeed(void *bw, struct BattleStruct *sp, int client1, int clien
     //u8 hold_atk1;
     u8 hold_effect2;
     //u8 hold_atk2;
-    s8 priority1 = 0;
-    s8 priority2 = 0;
-    u8 quick_claw1 = 0;
-    u8 quick_claw2 = 0;
-    if(!client2IsPP){ 
-        priority1 = sp->clientPriority[client1];
-        priority2 = sp->clientPriority[client2];
-        quick_claw1 = sp->battlemon[client1].moveeffect.quickClawFlag || sp->battlemon[client1].moveeffect.custapBerryFlag;
-        quick_claw2 = sp->battlemon[client2].moveeffect.quickClawFlag || sp->battlemon[client2].moveeffect.custapBerryFlag;
-    }
-    //We do not care about quick claw or priority for post-ko switch ins here, those are handled separately
-    
-    
+    s8 priority1 = sp->clientPriority[client1];
+    s8 priority2 = sp->clientPriority[client2];
+    u8 quick_claw1 = sp->battlemon[client1].moveeffect.quickClawFlag || sp->battlemon[client1].moveeffect.custapBerryFlag;
+    u8 quick_claw2 = sp->battlemon[client2].moveeffect.quickClawFlag || sp->battlemon[client2].moveeffect.custapBerryFlag;
     u8 move_last1 = 0, move_last2 = 0;
     //int command1;
     //int command2;
@@ -665,57 +656,49 @@ u8 LONG_CALL CalcSpeed(void *bw, struct BattleStruct *sp, int client1, int clien
     u32 i;
 
     // if one mon is fainted and the other isn't, then the alive one obviously goes first
-    if(!client2IsPP){
-        if ((sp->battlemon[client1].hp == 0) && (sp->battlemon[client2].hp))
-        {
-            return 1;
-        }
-        if ((sp->battlemon[client1].hp) && (sp->battlemon[client2].hp == 0))
-        {
-            return 0;
-        }
+    if ((sp->battlemon[client1].hp == 0) && (sp->battlemon[client2].hp))
+    {
+        return 1;
+    }
+    if ((sp->battlemon[client1].hp) && (sp->battlemon[client2].hp == 0))
+    {
+        return 0;
+    }
 
-        // Potential After You or Quash present
-        if (sp->oneTurnFlag[client1].force_execution_order_flag != sp->oneTurnFlag[client2].force_execution_order_flag) {
-            switch (sp->oneTurnFlag[client1].force_execution_order_flag) {
-                case EXECUTION_ORDER_AFTER_YOU:
-                    return 0;
-                    break;
-                case EXECUTION_ORDER_QUASH:
-                    return 1;
-                    break;
-                default:
-                    break;
-            }
-            switch (sp->oneTurnFlag[client2].force_execution_order_flag) {
-                case EXECUTION_ORDER_AFTER_YOU:
-                    return 1;
-                    break;
-                case EXECUTION_ORDER_QUASH:
-                    return 0;
-                    break;
-                default:
-                    break;
-            }
+    // Potential After You or Quash present
+    if (sp->oneTurnFlag[client1].force_execution_order_flag != sp->oneTurnFlag[client2].force_execution_order_flag) {
+        switch (sp->oneTurnFlag[client1].force_execution_order_flag) {
+            case EXECUTION_ORDER_AFTER_YOU:
+                return 0;
+                break;
+            case EXECUTION_ORDER_QUASH:
+                return 1;
+                break;
+            default:
+                break;
+        }
+        switch (sp->oneTurnFlag[client2].force_execution_order_flag) {
+            case EXECUTION_ORDER_AFTER_YOU:
+                return 1;
+                break;
+            case EXECUTION_ORDER_QUASH:
+                return 0;
+                break;
+            default:
+                break;
         }
     }
 
     ability1 = GetBattlerAbility(sp, client1);
+    ability2 = GetBattlerAbility(sp, client2);
+
     hold_effect1 = HeldItemHoldEffectGet(sp, client1);
+    //hold_atk1 = HeldItemAtkGet(sp, client1, 0);
+    hold_effect2 = HeldItemHoldEffectGet(sp, client2);
+    //hold_atk2 = HeldItemAtkGet(sp, client2, 0);
+
     stat_stage_spd1 = sp->battlemon[client1].states[STAT_SPEED];
-
-    if(!client2IsPP){
-        ability2 = GetBattlerAbility(sp, client2);
-        hold_effect2 = HeldItemHoldEffectGet(sp, client2);
-        stat_stage_spd2 = sp->battlemon[client2].states[STAT_SPEED];
-    }
-    else{
-        ability2 = GetMonData(pp, MON_DATA_ABILITY, 0);
-        hold_effect2 = BattleItemDataGet(sp, GetMonData(pp, MON_DATA_HELD_ITEM, 0), 1);
-        stat_stage_spd2 = 6; //stage 0
-    }
-
-
+    stat_stage_spd2 = sp->battlemon[client2].states[STAT_SPEED];
 
     // if (GetBattlerAbility(sp, client1) == ABILITY_SIMPLE)
     // {
@@ -829,117 +812,63 @@ u8 LONG_CALL CalcSpeed(void *bw, struct BattleStruct *sp, int client1, int clien
         move_last1 = 1;
     }
 
-    //now do the same for client2, which could be a PartyPokemon (for AI switch-in calcs)
-    if(!client2IsPP){
-        for (i = 0; i < NELEMS(DecreaseSpeedHoldEffects); i++)
-        {
-            if (BattleItemDataGet(sp, sp->battlemon[client2].item, 1) == DecreaseSpeedHoldEffects[i]) {
-                if (!(GetBattlerAbility(sp, client2) == ABILITY_KLUTZ && DecreaseSpeedHoldEffects[i] == HOLD_EFFECT_SPEED_DOWN_GROUNDED)) {
-                    speed2 /= 2;
-                break;
-                }
+    for (i = 0; i < NELEMS(DecreaseSpeedHoldEffects); i++)
+    {
+        if (BattleItemDataGet(sp, sp->battlemon[client2].item, 1) == DecreaseSpeedHoldEffects[i]) {
+            if (!(GetBattlerAbility(sp, client2) == ABILITY_KLUTZ && DecreaseSpeedHoldEffects[i] == HOLD_EFFECT_SPEED_DOWN_GROUNDED)) {
+                speed2 /= 2;
+            break;
             }
         }
-    
-        if (hold_effect2 == HOLD_EFFECT_CHOICE_SPEED)
-        {
-            speed2 = speed2 * 15 / 10;
-        }
-    
-        if ((hold_effect2 == HOLD_EFFECT_DITTO_SPEED_UP) && (sp->battlemon[client2].species == SPECIES_DITTO))
-        {
-            speed2 *= 2;
-        }
-    
-        if ((ability2 == ABILITY_QUICK_FEET) && (sp->battlemon[client2].condition & STATUS_ANY_PERSISTENT))
-        {
-            speed2 = speed2 * 15 / 10;
-        }
-        else
-        {
-            if (sp->battlemon[client2].condition & STATUS_PARALYSIS)
-            {
-                speed2 /= 2; // gen 7 on only halves speed for paralysis
-            }
-        }
-    
-        if ((ability2 == ABILITY_SLOW_START)
-         && ((sp->total_turn - sp->battlemon[client2].moveeffect.slowStartTurns) < 5))
-        {
-            speed2 /= 2;
-        }
-    
-        if ((ability2 == ABILITY_UNBURDEN)
-         && (sp->battlemon[client2].moveeffect.knockOffFlag)
-         && (sp->battlemon[client2].item == 0))
-        {
-            speed2 *= 2;
-        }
-    
-        if (sp->tailwindCount[IsClientEnemy(bw, client2)]) // new tailwind handling
-        {
-            speed2 *= 2;
-        }
-    
-        if (hold_effect2 == HOLD_EFFECT_PRIORITY_DOWN)
-        {
-            move_last2 = 1;
-        }    
     }
-    else{ //if client2 is a PartyPokemon, access data structures differently
-        for (i = 0; i < NELEMS(DecreaseSpeedHoldEffects); i++)
-        {
-            if (hold_effect2 == DecreaseSpeedHoldEffects[i]) {
-                if (!(ability2 == ABILITY_KLUTZ && DecreaseSpeedHoldEffects[i] == HOLD_EFFECT_SPEED_DOWN_GROUNDED)) {
-                    speed2 /= 2;
-                break;
-                }
-            }
-        }
-    
-        if (hold_effect2 == HOLD_EFFECT_CHOICE_SPEED)
-        {
-            speed2 = speed2 * 15 / 10;
-        }
-    
-        if ((hold_effect2 == HOLD_EFFECT_DITTO_SPEED_UP) && (GetMonData(pp, MON_DATA_SPECIES, 0) == SPECIES_DITTO))
-        {
-            speed2 *= 2;
-        }
-    
-        if ((ability2 == ABILITY_QUICK_FEET) && (GetMonData(pp, MON_DATA_STATUS, 0) & STATUS_ANY_PERSISTENT))
-        {
-            speed2 = speed2 * 15 / 10;
-        }
-        else
-        {
-            if (GetMonData(pp, MON_DATA_STATUS, 0) & STATUS_PARALYSIS)
-            {
-                speed2 /= 2; // gen 7 on only halves speed for paralysis
-            }
-        }
-    
-        if (ability2 == ABILITY_SLOW_START) //mon in the party will always have full slow start turns remaining
-        {
-            speed2 /= 2;
-        }
-    
-        if (sp->tailwindCount[IsClientEnemy(bw, client2)]) // new tailwind handling
-        {
-            speed2 *= 2;
-        }
-    
-        if (hold_effect2 == HOLD_EFFECT_PRIORITY_DOWN)
-        {
-            move_last2 = 1;
-        }    
+
+    if (hold_effect2 == HOLD_EFFECT_CHOICE_SPEED)
+    {
+        speed2 = speed2 * 15 / 10;
     }
-    
+
+    if ((hold_effect2 == HOLD_EFFECT_DITTO_SPEED_UP) && (sp->battlemon[client2].species == SPECIES_DITTO))
+    {
+        speed2 *= 2;
+    }
+
+    if ((ability2 == ABILITY_QUICK_FEET) && (sp->battlemon[client2].condition & STATUS_ANY_PERSISTENT))
+    {
+        speed2 = speed2 * 15 / 10;
+    }
+    else
+    {
+        if (sp->battlemon[client2].condition & STATUS_PARALYSIS)
+        {
+            speed2 /= 2; // gen 7 on only halves speed for paralysis
+        }
+    }
+
+    if ((ability2 == ABILITY_SLOW_START)
+     && ((sp->total_turn - sp->battlemon[client2].moveeffect.slowStartTurns) < 5))
+    {
+        speed2 /= 2;
+    }
+
+    if ((ability2 == ABILITY_UNBURDEN)
+     && (sp->battlemon[client2].moveeffect.knockOffFlag)
+     && (sp->battlemon[client2].item == 0))
+    {
+        speed2 *= 2;
+    }
+
+    if (sp->tailwindCount[IsClientEnemy(bw, client2)]) // new tailwind handling
+    {
+        speed2 *= 2;
+    }
+
+    if (hold_effect2 == HOLD_EFFECT_PRIORITY_DOWN)
+    {
+        move_last2 = 1;
+    }
+
     sp->effectiveSpeed[client1]=speed1;
-    if(!client2IsPP){
-        sp->effectiveSpeed[client2]=speed2;
-    }
-    
+    sp->effectiveSpeed[client2]=speed2;
 
     // if (flag == 0)
     // {
@@ -1062,6 +991,7 @@ u8 LONG_CALL CalcSpeed(void *bw, struct BattleStruct *sp, int client1, int clien
     return ret;
 }
 
+
 /**
  *  @brief Sorts clients' execution order factoring in who has already performed their action
  *  @param bw battle work structure; void * because we haven't defined the battle work structure. Apparently we have but we don't use it here so
@@ -1121,7 +1051,7 @@ void LONG_CALL DynamicSortClientExecutionOrder(void *bw, struct BattleStruct *sp
                 }
                 // sprintf(buf, "Comparing client %d and %d\n", temp1, temp2);
                 // debugsyscall(buf);
-                if (CalcSpeed(bw, sp, temp1, temp2, flag, 0, NULL)) {
+                if (CalcSpeed(bw, sp, temp1, temp2, flag)) {
                     // sprintf(buf, "Swapping %d and %d\n", temp1, temp2);
                     // debugsyscall(buf);
                     sp->executionOrder[i] = temp2;
@@ -1138,7 +1068,7 @@ void LONG_CALL DynamicSortClientExecutionOrder(void *bw, struct BattleStruct *sp
                 temp1 = sp->turnOrder[i];
                 temp2 = sp->turnOrder[j];
 
-                if (CalcSpeed(bw, sp, temp1, temp2, CALCSPEED_FLAG_NO_PRIORITY, 0, NULL)) {
+                if (CalcSpeed(bw, sp, temp1, temp2, CALCSPEED_FLAG_NO_PRIORITY)) {
                     sp->turnOrder[i] = temp2;
                     sp->turnOrder[j] = temp1;
                 }

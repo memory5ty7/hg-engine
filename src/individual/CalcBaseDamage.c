@@ -347,11 +347,12 @@ int LONG_CALL CalcBaseDamage(void *bw, struct BattleStruct *sp, int moveno, u32 
 
     //handle analytic
     if(usePP){
+        /*
         if (AttackingMon.ability == ABILITY_ANALYTIC)
         {
             for (i = 0; i < 4; i++)
             {
-                if (attacker != i && sp->battlemon[i].hp != 0 && CalcSpeed(bw, sp, attacker, i, 0, 1, pp) == 1)
+                if (attacker != i && sp->battlemon[i].hp != 0 && CalcSpeed(bw, sp, attacker, i, 0) == 1)
                 {
                     break;
                 }
@@ -361,13 +362,14 @@ int LONG_CALL CalcBaseDamage(void *bw, struct BattleStruct *sp, int moveno, u32 
                 movepower = movepower * 130 / 100;
             }
         }
+        */
     }
     else{
         if (AttackingMon.ability == ABILITY_ANALYTIC)
         {
             for (i = 0; i < 4; i++)
             {
-                if (attacker != i && sp->battlemon[i].hp != 0 && CalcSpeed(bw, sp, attacker, i, 0, 0, NULL) == 0)
+                if (attacker != i && sp->battlemon[i].hp != 0 && CalcSpeed(bw, sp, attacker, i, 0) == 0)
                 {
                     break;
                 }
