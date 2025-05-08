@@ -117,7 +117,7 @@ trainerdata 3, "Silver"
 trainerdata 4, "Wade"
     trainermontype TRAINER_DATA_TYPE_NOTHING
     trainerclass TRAINERCLASS_BUG_CATCHER
-    nummons 4
+    nummons 2
     item ITEM_NONE
     item ITEM_NONE
     item ITEM_NONE
@@ -141,19 +141,6 @@ trainerdata 4, "Wade"
         pokemon SPECIES_WURMPLE
         ballseal 0
 
-        // mon 2
-        ivs 0
-        abilityslot 0
-        level 3
-        pokemon SPECIES_PIKACHU
-        ballseal 0
-
-        // mon 3
-        ivs 0
-        abilityslot 0
-        level 2
-        pokemon SPECIES_RAICHU
-        ballseal 0
     endparty
 
 trainerdata 5, "Victoria"

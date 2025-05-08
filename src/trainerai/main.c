@@ -147,9 +147,10 @@ enum AIActionChoice __attribute__((section (".init"))) TrainerAI_Main(struct Bat
     AIContext *ai = &aictx;
     enum AIActionChoice result = AI_ENEMY_ATTACK_1, highest_damage_something = 0;
 
+    /*
     if(ctx->battlemon[attacker].hp == 0){//if pokemon is dead, dont do anything -- this is necessary for doubles.
         return -1;
-    }
+    }*/
     int highest_move_score = 0;
     u32 moveScores[4][4];
     for (int i = 0; i < 4; i++) {           //don't want to get negative (unsigned ints) numbers, so start high at 100
@@ -720,11 +721,16 @@ Heavily penalize stupid decisions that would fail, do nothing, or objectively hu
 int BasicFlag (struct BattleSystem *bsys, u32 attacker, int i, AIContext *ai){
     int moveScore = 0;
     struct BattleStruct *ctx = bsys->sp;
-
+    /*
+    if(ctx->battlemon[ai->defender].hp == 0){
+        return -60;
+    }
+    */
     /*Never use moves that are out of pp*/
     if(ctx->battlemon[ai->attacker].pp[i] == 0){
         moveScore -= 40;
     }
+
 
     /*Check for ai->defender type immunities.*/
     if(ai->attackerMoveEffectiveness == MOVE_STATUS_FLAG_NOT_EFFECTIVE){
