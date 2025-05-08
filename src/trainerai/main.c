@@ -146,6 +146,10 @@ enum AIActionChoice __attribute__((section (".init"))) TrainerAI_Main(struct Bat
     AIContext aictx = {0};
     AIContext *ai = &aictx;
     enum AIActionChoice result = AI_ENEMY_ATTACK_1, highest_damage_something = 0;
+
+    if(ctx->battlemon[attacker].hp == 0){//if pokemon is dead, dont do anything -- this is necessary for doubles.
+        return -1;
+    }
     int highest_move_score = 0;
     u32 moveScores[4][4];
     for (int i = 0; i < 4; i++) {           //don't want to get negative (unsigned ints) numbers, so start high at 100
@@ -5058,7 +5062,7 @@ int AttackerMonWithHighestDamage (struct BattleSystem *bsys, u32 attacker, AICon
         if(GetMonData(currentMonAttacking, MON_DATA_HP, 0) != 0){
             for (int attack_index = 0; attack_index < 4; attack_index++){
                 int current_move = GetMonData(currentMonAttacking, MON_DATA_MOVE1 + attack_index, NULL);
-                int damage = CalcBaseDamage(bsys, ctx, current_move, ctx->side_condition[ai->defenderSide], ctx->field_condition, 0, 0, attacker, ai->defender, 0, 0, NULL);
+                int damage = CalcBaseDamage(bsys, ctx, current_move, ctx->side_condition[ai->defenderSide], ctx->field_condition, 0, 0, attacker, ai->defender, 0, 0, 0, NULL);
                 if(damage > maxDamage){
                     maxDamage = damage;
                     maxDamageIndex = i;
@@ -5492,7 +5496,7 @@ void SetupStateVariables(struct BattleSystem *bsys, u32 attacker, u32 defender, 
         if(attackerEffectCheck == MOVE_EFFECT_RANDOM_POWER_10_CASES){ //average magnitude power
             specialMovePower = 71;
         }
-        ai->attackerMaxRollMoveDamages[i] = CalcBaseDamage(bsys, ctx, attackerMoveCheck, ctx->side_condition[ai->defenderSide],ctx->field_condition, specialMovePower, 0, ai->attacker, ai->defender, 0, 0, NULL);
+        ai->attackerMaxRollMoveDamages[i] = CalcBaseDamage(bsys, ctx, attackerMoveCheck, ctx->side_condition[ai->defenderSide],ctx->field_condition, specialMovePower, 0, ai->attacker, ai->defender, 0, 0, 0, NULL);
 
         ai->attackerMaxRollMoveDamages[i] = ServerDoTypeCalcMod(bsys, ctx, attackerMoveCheck, 0, attacker, ai->defender, ai->attackerMaxRollMoveDamages[i], &temp);
         

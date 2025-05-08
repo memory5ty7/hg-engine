@@ -26,6 +26,9 @@ BOOL TrainerAI_ShouldUseItem(struct BattleSystem *battleSys, int battler);
 int BattleAI_PostKOSwitchIn(struct BattleSystem *battleSys, int battler);
 int TypeMatchupMultiplier(u8 attackingType, u8 defendingType1, u8 defendingType2);
 
+u8 AI_CalcSpeed(void *bw, struct BattleStruct *sp, int client1, int client2, int flag, int client2IsPP, struct PartyPokemon *pp);
+int AI_ServerDoTypeCalcMod(void *bw UNUSED, struct BattleStruct *sp, int move_no, int move_type, int attack_client, int defence_client, int damage, u32 *flag, BOOL usePPForAttacker, BOOL usePPForDefender, struct PartyPokemon *pp);
+
 
 int TrainerAI_PickCommand(struct BattleSystem *bsys, int attacker)
 {
@@ -1231,12 +1234,12 @@ int BattleAI_PostKOSwitchIn(struct BattleSystem *battleSys, int battler)
                 if (move && battleCtx->moveTbl[move].power != 1) {
 
                     score = CalcBaseDamage(battleSys, battleCtx, move, battleCtx->side_condition[BATTLER_IS_ENEMY(defender)],
-                    battleCtx->field_condition, battleCtx->moveTbl[move].power, battleCtx->moveTbl[move].type, battler, defender, 0, 0, NULL);
+                    battleCtx->field_condition, battleCtx->moveTbl[move].power, battleCtx->moveTbl[move].type, battler, defender, 0, 1, 0, mon);
 
 
                     moveStatusFlags = 0;
 
-                    score = ServerDoTypeCalcMod(battleSys, battleCtx, move, 0, battler, defender, score, &moveStatusFlags);
+                    score = AI_ServerDoTypeCalcMod(battleSys, battleCtx, move, 0, battler, defender, score, &moveStatusFlags, 1, 0, mon);
 
 
                     if (moveStatusFlags & MOVE_STATUS_FLAG_NOT_EFFECTIVE) {
@@ -1656,7 +1659,7 @@ u8 AI_CalcSpeed(void *bw, struct BattleStruct *sp, int client1, int client2, int
  *  @param flag move status flags to mess around with
  *  @return modified damage
  */
- int AI_ServerDoTypeCalcMod(void *bw UNUSED, struct BattleStruct *sp, int move_no, int move_type, int attack_client, int defence_client, int damage, u32 *flag)
+ int AI_ServerDoTypeCalcMod(void *bw UNUSED, struct BattleStruct *sp, int move_no, int move_type, int attack_client, int defence_client, int damage, u32 *flag, BOOL usePPForAttacker, BOOL usePPForDefender, struct PartyPokemon *pp)
  {
      int i;
      int modifier;
@@ -1665,35 +1668,73 @@ u8 AI_CalcSpeed(void *bw, struct BattleStruct *sp, int client1, int client2, int
      u8  eqp_d UNUSED;
      u8  atk_a;
      u8  atk_d UNUSED; // not currently used but will be
+
+     u8 attacker_type_1;
+    u8 attacker_type_2;
+    u8 defender_type_1;
+    u8 defender_type_2;
  
      modifier = 1;
- 
+
      if (move_no == MOVE_STRUGGLE)
          return damage;
+    if(usePPForAttacker){
+        eqp_a = BattleItemDataGet(sp, GetMonData(pp, MON_DATA_HELD_ITEM, 0), 1);  
+        atk_a = BattleItemDataGet(sp, GetMonData(pp, MON_DATA_HELD_ITEM, 0), 2);   
+    }
+    else{
+        eqp_a = HeldItemHoldEffectGet(sp, attack_client);
+        atk_a = HeldItemAtkGet(sp, attack_client, ATK_CHECK_NORMAL);
+        eqp_d = HeldItemHoldEffectGet(sp, defence_client);
+        atk_d = HeldItemAtkGet(sp, defence_client, ATK_CHECK_NORMAL);
+    }
+
+    if(usePPForAttacker){
+        GetAdjustedMoveTypeBasics(sp, move_no, GetMonData(pp, MON_DATA_ABILITY, 0), 0);
+    }
+    else{
+        move_type = GetAdjustedMoveType(sp, attack_client, move_no);
+    }
  
-     eqp_a = HeldItemHoldEffectGet(sp, attack_client);
-     atk_a = HeldItemAtkGet(sp, attack_client, ATK_CHECK_NORMAL);
-     eqp_d = HeldItemHoldEffectGet(sp, defence_client);
-     atk_d = HeldItemAtkGet(sp, defence_client, ATK_CHECK_NORMAL);
- 
-     move_type = GetAdjustedMoveType(sp, attack_client, move_no); // new normalize checks
+     // new normalize checks
      base_power = sp->moveTbl[move_no].power;
  
-     u8 attacker_type_1 = BattlePokemonParamGet(sp, attack_client, BATTLE_MON_DATA_TYPE1, NULL);
-     u8 attacker_type_2 = BattlePokemonParamGet(sp, attack_client, BATTLE_MON_DATA_TYPE2, NULL);
-     u8 defender_type_1 = BattlePokemonParamGet(sp, defence_client, BATTLE_MON_DATA_TYPE1, NULL);
-     u8 defender_type_2 = BattlePokemonParamGet(sp, defence_client, BATTLE_MON_DATA_TYPE2, NULL);
- 
+     if(usePPForAttacker){
+        attacker_type_1 = GetMonData(pp, MON_DATA_TYPE_1, 0);
+        attacker_type_2 = GetMonData(pp, MON_DATA_TYPE_2, 0);
+     }
+     else if(usePPForDefender){
+        defender_type_1 = GetMonData(pp, MON_DATA_TYPE_1, 0);
+        defender_type_2 = GetMonData(pp, MON_DATA_TYPE_2, 0);
+     }
+     else{
+        attacker_type_1 = BattlePokemonParamGet(sp, attack_client, BATTLE_MON_DATA_TYPE1, NULL);
+        attacker_type_2 = BattlePokemonParamGet(sp, attack_client, BATTLE_MON_DATA_TYPE2, NULL);
+        defender_type_1 = BattlePokemonParamGet(sp, defence_client, BATTLE_MON_DATA_TYPE1, NULL);
+        defender_type_2 = BattlePokemonParamGet(sp, defence_client, BATTLE_MON_DATA_TYPE2, NULL);   
+     }
+     
      if (((sp->server_status_flag & SERVER_STATUS_FLAG_TYPE_FLAT) == 0) && ((attacker_type_1 == move_type) || (attacker_type_2 == move_type)))
      {
-         if (GetBattlerAbility(sp,attack_client) == ABILITY_ADAPTABILITY)
-         {
-             damage *= 2;
-         }
-         else
-         {
-             damage = damage * 15 / 10;
-         }
+        if(usePPForAttacker){
+            if(GetMonData(pp, MON_DATA_ABILITY, 0) == ABILITY_ADAPTABILITY){
+                damage *= 2;
+            }
+            else{
+                damage = damage * 15 / 10;
+            }
+        }
+        else{
+            if (GetBattlerAbility(sp,attack_client) == ABILITY_ADAPTABILITY)
+            {
+                damage *= 2;
+            }
+            else
+            {
+                damage = damage * 15 / 10;
+            }
+        }
+
      }
  
      {
@@ -1702,15 +1743,29 @@ u8 AI_CalcSpeed(void *bw, struct BattleStruct *sp, int client1, int client2, int
          {
              if (TypeEffectivenessTable[i][0] == TYPE_FORESIGHT) // handle foresight
              {
-                 if ((sp->battlemon[defence_client].condition2 & STATUS2_FORESIGHT) || (GetBattlerAbility(sp, attack_client) == ABILITY_SCRAPPY) || (GetBattlerAbility(sp, attack_client) == ABILITY_MINDS_EYE))
-                 {
-                     break;
-                 }
-                 else
-                 {
-                     i++;
-                     continue;
-                 }
+                if(usePPForAttacker){
+                    if ((GetMonData(pp, MON_DATA_ABILITY, 0) == ABILITY_SCRAPPY) || (GetMonData(pp, MON_DATA_ABILITY, 0) == ABILITY_MINDS_EYE))
+                    {
+                        break;
+                    }
+                    else
+                    {
+                        i++;
+                        continue;
+                    }
+                }
+                else{
+                    if ((sp->battlemon[defence_client].condition2 & STATUS2_FORESIGHT) || (GetBattlerAbility(sp, attack_client) == ABILITY_SCRAPPY) || (GetBattlerAbility(sp, attack_client) == ABILITY_MINDS_EYE))
+                    {
+                        break;
+                    }
+                    else
+                    {
+                        i++;
+                        continue;
+                    }
+                }
+
              }
              if (TypeEffectivenessTable[i][0] == move_type)
              {
@@ -1751,53 +1806,142 @@ u8 AI_CalcSpeed(void *bw, struct BattleStruct *sp, int client1, int client2, int
          }
      }
  
-     if ((MoldBreakerAbilityCheck(sp, attack_client, defence_client, ABILITY_WONDER_GUARD) == TRUE)
-      && (ShouldDelayTurnEffectivenessChecking(sp, move_no)) // check supereffectiveness later, 2-turn move
-      && (((flag[0] & MOVE_STATUS_FLAG_SUPER_EFFECTIVE) == 0) || ((flag[0] & (MOVE_STATUS_FLAG_SUPER_EFFECTIVE | MOVE_STATUS_FLAG_NOT_VERY_EFFECTIVE)) == (MOVE_STATUS_FLAG_SUPER_EFFECTIVE | MOVE_STATUS_FLAG_NOT_VERY_EFFECTIVE)))
-      && (base_power))
-     {
-         flag[0] |= MOVE_STATUS_FLAG_MISS_WONDER_GUARD;
-         sp->oneTurnFlag[attack_client].parental_bond_flag = 0;
-         sp->oneTurnFlag[attack_client].parental_bond_is_active = FALSE;
+     if(usePPForAttacker){
+        if ((GetMonData(pp, MON_DATA_ABILITY, 0) != ABILITY_MOLD_BREAKER && sp->battlemon[defence_client].ability == ABILITY_WONDER_GUARD)
+        && (((flag[0] & MOVE_STATUS_FLAG_SUPER_EFFECTIVE) == 0) || ((flag[0] & (MOVE_STATUS_FLAG_SUPER_EFFECTIVE | MOVE_STATUS_FLAG_NOT_VERY_EFFECTIVE)) == (MOVE_STATUS_FLAG_SUPER_EFFECTIVE | MOVE_STATUS_FLAG_NOT_VERY_EFFECTIVE)))
+        && (base_power))
+        {
+            damage = 0;
+        }
+        else
+        {
+
+            if ((flag[0] & MOVE_STATUS_FLAG_SUPER_EFFECTIVE) && (base_power))
+            {
+                if ((GetMonData(pp, MON_DATA_ABILITY, 0) != ABILITY_MOLD_BREAKER && sp->battlemon[defence_client].ability == ABILITY_FILTER) || (GetMonData(pp, MON_DATA_ABILITY, 0) != ABILITY_MOLD_BREAKER && sp->battlemon[defence_client].ability == ABILITY_SOLID_ROCK))
+                {
+                    damage = BattleDamageDivide(damage * 3, 4);
+                }
+                if (GetBattlerAbility(sp, defence_client) == ABILITY_PRISM_ARMOR)
+                {
+                    damage = BattleDamageDivide(damage * 3, 4);
+                }
+                if (GetMonData(pp, MON_DATA_ABILITY, 0) == ABILITY_NEUROFORCE)
+                {
+                    damage = BattleDamageDivide(damage * 5, 4);
+                }
+                if (eqp_a == HOLD_EFFECT_POWER_UP_SE)
+                {
+                    damage = damage * (100 + atk_a) / 100;
+                }
+            }
+            if ((flag[0] & MOVE_STATUS_FLAG_NOT_VERY_EFFECTIVE) && (base_power))
+            {
+                if (GetMonData(pp, MON_DATA_ABILITY, 0) == ABILITY_TINTED_LENS)
+                {
+                    damage *= 2;
+                }
+            }
+        }
      }
-     else
-     {
-         if (((sp->server_status_flag & SERVER_STATUS_FLAG_TYPE_FLAT) == 0)
-          && ((sp->server_status_flag & SERVER_STATUS_FLAG_TYPE_NONE) == 0))
-         {
-             if ((flag[0] & MOVE_STATUS_FLAG_SUPER_EFFECTIVE) && (base_power))
-             {
-                 if ((MoldBreakerAbilityCheck(sp, attack_client, defence_client, ABILITY_FILTER) == TRUE) || (MoldBreakerAbilityCheck(sp, attack_client, defence_client, ABILITY_SOLID_ROCK) == TRUE))
-                 {
-                     damage = BattleDamageDivide(damage * 3, 4);
-                 }
-                 if (GetBattlerAbility(sp, defence_client) == ABILITY_PRISM_ARMOR)
-                 {
-                     damage = BattleDamageDivide(damage * 3, 4);
-                 }
-                 if (GetBattlerAbility(sp, attack_client) == ABILITY_NEUROFORCE)
-                 {
-                     damage = BattleDamageDivide(damage * 5, 4);
-                 }
-                 if (eqp_a == HOLD_EFFECT_POWER_UP_SE)
-                 {
-                     damage = damage * (100 + atk_a) / 100;
-                 }
-             }
-             if ((flag[0] & MOVE_STATUS_FLAG_NOT_VERY_EFFECTIVE) && (base_power))
-             {
-                 if (GetBattlerAbility(sp, attack_client) == ABILITY_TINTED_LENS)
-                 {
-                     damage *= 2;
-                 }
-             }
-         }
-         else
-         {
-             flag[0] &= ~(MOVE_STATUS_FLAG_SUPER_EFFECTIVE);
-             flag[0] &= ~(MOVE_STATUS_FLAG_NOT_VERY_EFFECTIVE);
-         }
+
+     else if(usePPForDefender){
+        if ((sp->battlemon[attack_client].ability != ABILITY_MOLD_BREAKER && GetMonData(pp, MON_DATA_ABILITY, 0) == ABILITY_WONDER_GUARD)
+        && (ShouldDelayTurnEffectivenessChecking(sp, move_no)) // check supereffectiveness later, 2-turn move
+        && (((flag[0] & MOVE_STATUS_FLAG_SUPER_EFFECTIVE) == 0) || ((flag[0] & (MOVE_STATUS_FLAG_SUPER_EFFECTIVE | MOVE_STATUS_FLAG_NOT_VERY_EFFECTIVE)) == (MOVE_STATUS_FLAG_SUPER_EFFECTIVE | MOVE_STATUS_FLAG_NOT_VERY_EFFECTIVE)))
+        && (base_power))
+       {
+            damage = 0;
+       }
+       else
+       {
+           if (((sp->server_status_flag & SERVER_STATUS_FLAG_TYPE_FLAT) == 0)
+            && ((sp->server_status_flag & SERVER_STATUS_FLAG_TYPE_NONE) == 0))
+           {
+               if ((flag[0] & MOVE_STATUS_FLAG_SUPER_EFFECTIVE) && (base_power))
+               {
+                   if ((GetMonData(pp, MON_DATA_ABILITY,0) == ABILITY_FILTER && sp->battlemon[attack_client].ability != ABILITY_MOLD_BREAKER) || (GetMonData(pp, MON_DATA_ABILITY,0) == ABILITY_FILTER && sp->battlemon[attack_client].ability != ABILITY_MOLD_BREAKER))
+                   {
+                       damage = BattleDamageDivide(damage * 3, 4);
+                   }
+                   if (GetMonData(pp, MON_DATA_ABILITY, 0) == ABILITY_PRISM_ARMOR)
+                   {
+                       damage = BattleDamageDivide(damage * 3, 4);
+                   }
+                   if (GetBattlerAbility(sp, attack_client) == ABILITY_NEUROFORCE)
+                   {
+                       damage = BattleDamageDivide(damage * 5, 4);
+                   }
+                   if (eqp_a == HOLD_EFFECT_POWER_UP_SE)
+                   {
+                       damage = damage * (100 + atk_a) / 100;
+                   }
+               }
+               if ((flag[0] & MOVE_STATUS_FLAG_NOT_VERY_EFFECTIVE) && (base_power))
+               {
+                   if (GetBattlerAbility(sp, attack_client) == ABILITY_TINTED_LENS)
+                   {
+                       damage *= 2;
+                   }
+               }
+           }
+           else
+           {
+               flag[0] &= ~(MOVE_STATUS_FLAG_SUPER_EFFECTIVE);
+               flag[0] &= ~(MOVE_STATUS_FLAG_NOT_VERY_EFFECTIVE);
+           }
+       }
      }
- 
+     else{
+        if ((MoldBreakerAbilityCheck(sp, attack_client, defence_client, ABILITY_WONDER_GUARD) == TRUE)
+        && (ShouldDelayTurnEffectivenessChecking(sp, move_no)) // check supereffectiveness later, 2-turn move
+        && (((flag[0] & MOVE_STATUS_FLAG_SUPER_EFFECTIVE) == 0) || ((flag[0] & (MOVE_STATUS_FLAG_SUPER_EFFECTIVE | MOVE_STATUS_FLAG_NOT_VERY_EFFECTIVE)) == (MOVE_STATUS_FLAG_SUPER_EFFECTIVE | MOVE_STATUS_FLAG_NOT_VERY_EFFECTIVE)))
+        && (base_power))
+       {
+           flag[0] |= MOVE_STATUS_FLAG_MISS_WONDER_GUARD;
+           sp->oneTurnFlag[attack_client].parental_bond_flag = 0;
+           sp->oneTurnFlag[attack_client].parental_bond_is_active = FALSE;
+       }
+       else
+       {
+           if (((sp->server_status_flag & SERVER_STATUS_FLAG_TYPE_FLAT) == 0)
+            && ((sp->server_status_flag & SERVER_STATUS_FLAG_TYPE_NONE) == 0))
+           {
+               if ((flag[0] & MOVE_STATUS_FLAG_SUPER_EFFECTIVE) && (base_power))
+               {
+                   if ((MoldBreakerAbilityCheck(sp, attack_client, defence_client, ABILITY_FILTER) == TRUE) || (MoldBreakerAbilityCheck(sp, attack_client, defence_client, ABILITY_SOLID_ROCK) == TRUE))
+                   {
+                       damage = BattleDamageDivide(damage * 3, 4);
+                   }
+                   if (GetBattlerAbility(sp, defence_client) == ABILITY_PRISM_ARMOR)
+                   {
+                       damage = BattleDamageDivide(damage * 3, 4);
+                   }
+                   if (GetBattlerAbility(sp, attack_client) == ABILITY_NEUROFORCE)
+                   {
+                       damage = BattleDamageDivide(damage * 5, 4);
+                   }
+                   if (eqp_a == HOLD_EFFECT_POWER_UP_SE)
+                   {
+                       damage = damage * (100 + atk_a) / 100;
+                   }
+               }
+               if ((flag[0] & MOVE_STATUS_FLAG_NOT_VERY_EFFECTIVE) && (base_power))
+               {
+                   if (GetBattlerAbility(sp, attack_client) == ABILITY_TINTED_LENS)
+                   {
+                       damage *= 2;
+                   }
+               }
+           }
+           else
+           {
+               flag[0] &= ~(MOVE_STATUS_FLAG_SUPER_EFFECTIVE);
+               flag[0] &= ~(MOVE_STATUS_FLAG_NOT_VERY_EFFECTIVE);
+           }
+       }
+   
+     }
+     
      return damage;
  }

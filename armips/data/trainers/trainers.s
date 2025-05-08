@@ -78,18 +78,18 @@ trainerdata 2, "Silver"
     endentry
 
     party 2
-        // mon 0
+                // mon 0
         ivs 0
         abilityslot 0
         level 5
-        pokemon SPECIES_CYNDAQUIL
+        pokemon SPECIES_OVERQWIL
         ballseal 0
 
                 // mon 0
         ivs 0
         abilityslot 0
         level 5
-        pokemon SPECIES_CYNDAQUIL
+        pokemon SPECIES_MAGIKARP
         ballseal 0
     endparty
 
@@ -122,8 +122,8 @@ trainerdata 4, "Wade"
     item ITEM_NONE
     item ITEM_NONE
     item ITEM_NONE
-    aiflags F_PRIORITIZE_SUPER_EFFECTIVE | 0
-    battletype SINGLE_BATTLE
+    aiflags F_PRIORITIZE_SUPER_EFFECTIVE | F_EVALUATE_ATTACKS | F_PRIORITIZE_DAMAGE | 0
+    battletype DOUBLE_BATTLE
     endentry
 
     party 4
@@ -131,28 +131,28 @@ trainerdata 4, "Wade"
         ivs 0
         abilityslot 0
         level 2
-        pokemon SPECIES_CATERPIE
+        pokemon SPECIES_SCORBUNNY
         ballseal 0
 
         // mon 1
         ivs 0
         abilityslot 0
         level 2
-        pokemon SPECIES_CATERPIE
+        pokemon SPECIES_WURMPLE
         ballseal 0
 
         // mon 2
         ivs 0
         abilityslot 0
         level 3
-        pokemon SPECIES_WEEDLE
+        pokemon SPECIES_PIKACHU
         ballseal 0
 
         // mon 3
         ivs 0
         abilityslot 0
         level 2
-        pokemon SPECIES_CATERPIE
+        pokemon SPECIES_RAICHU
         ballseal 0
     endparty
 
