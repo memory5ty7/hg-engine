@@ -244,8 +244,12 @@ enum AIActionChoice __attribute__((section (".init"))) TrainerAI_Main(struct Bat
             }
         }
         target = defender_tie_indices[BattleRand(bsys) % num_defender_ties];        //randomly pick a target among the tie
+
         ctx->aiWorkTable.ai_dir_select_client[ai->attacker] = target;                   //assign the correct target for this attacker.
         debug_printf("Target: %d\n", target);
+        if (ctx->battlemon[target].hp == 0) {
+            debug_printf("WARNING: AI selected dead target %d\n", target);
+        }
     }
     else{ //single battles
         
