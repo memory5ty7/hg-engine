@@ -633,7 +633,7 @@ const u8 DecreaseSpeedHoldEffects[] =
 // return 0 if client1 moves first, 1 if client2 moves first, 2 if random roll between the two.
 u8 LONG_CALL CalcSpeed(void *bw, struct BattleStruct *sp, int client1, int client2, int flag)
 {
-    debug_printf("In calcspeed top\n");
+
     u8 ret = 0;
     u32 speed1, speed2;
     //u16 move1 = 0, move2 = 0;
@@ -988,7 +988,7 @@ u8 LONG_CALL CalcSpeed(void *bw, struct BattleStruct *sp, int client1, int clien
     {
         ret = 1;
     }
-    debug_printf("In calcspeed bottom\n");
+
     return ret;
 }
 
@@ -1007,7 +1007,7 @@ void LONG_CALL DynamicSortClientExecutionOrder(void *bw, struct BattleStruct *sp
 
     maxBattlers = BattleWorkClientSetMaxGet(bw);
 
-    debug_printf("in dynamic sort execution order\n");
+
     // for (i = 0; i < maxBattlers; i++) {
     //     if (sp->attack_client == sp->executionOrder[i]) {
     //         currentAttackerId = i;
@@ -1077,7 +1077,6 @@ void LONG_CALL DynamicSortClientExecutionOrder(void *bw, struct BattleStruct *sp
             }
         }
     }
-    debug_printf("after dynamic sort execution order\n");
 
     // sprintf(buf, "\tAfter turnOrder: ");
     // debugsyscall(buf);

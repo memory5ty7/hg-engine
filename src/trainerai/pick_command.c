@@ -48,6 +48,7 @@ int TrainerAI_PickCommand(struct BattleSystem *bsys, int attacker)
             // If this is a switch which should use the post-KO switch logic, then do so.
             // If there is no valid battler, pick the first one in party order.
             if (ctx->aiSwitchedPartySlot[attacker] == 6) {
+                debug_printf("about to call postko switchin\n");
                 if ((i = BattleAI_PostKOSwitchIn(bsys, attacker)) == 6) {
                     battler1 = attacker;
                     if (battleType & BATTLE_TYPE_TAG
@@ -1107,8 +1108,24 @@ int BattleAI_PostKOSwitchIn(struct BattleSystem *battleSys, int battler)
     u8 score, maxScore; // BUG: Post-KO Switch-In AI Scoring Overflow (see docs/bugs_and_glitches.md)
     u8 picked = 6;
     u8 slot1, slot2;
-    u32 moveStatusFlags;
+    u32 moveStatusFlags = 0;
     int partySize;
+
+    BOOL monHasDamagingMove[6] = {0};
+    BOOL monIsFaster[6] = {0};
+    u32 monMoveDamagesDealt[4] = {0};
+    u32 monMoveDamagesReceived[4] = {0};
+    u32 minRollMaxDamageDealt[6] = {0};
+    u32 minRollMaxDamageReceived[6] = {0};
+    u32 monTieIndices[6] = {0};
+
+    u32 monSwapScore[6] = {0};
+    BOOL monCanOHKO[6] = {0};
+    BOOL monIsOHKOd[6] = {0};
+    u32 currentDamage = 0;
+    u32 defenderMove = 0;
+    u32 highestMonScore = 0;
+
     struct PartyPokemon *mon;
     struct BattleStruct *battleCtx = battleSys->sp;
     int battleType = BattleTypeGet(battleSys);
@@ -1123,87 +1140,6 @@ int BattleAI_PostKOSwitchIn(struct BattleSystem *battleSys, int battler)
     defender = BATTLER_OPPONENT(battler); //BattleSystem_RandomOpponent(battleSys, battleCtx, battler); was random opponent in pokeplat
     partySize = Battle_GetClientPartySize(battleSys, battler);
     battlersDisregarded = 0;
-
-    // Stage 1: Loop through all the party slots and find the one with the most favorable
-    // offensive type-matchup against the chosen defender which also has a super-effective
-    // move against that defender. Choose the Pokemon with the highest such score, breaking
-    // ties by party-order. If no such Pokemon exists, proceed to Stage 2.
-    //
-    // Mono-type Pokemon are regarded as being dual-type of the same type.
-    while (battlersDisregarded != 0x3F) {
-        maxScore = 0;
-        picked = 6;
-
-        for (i = 0; i < partySize; i++) {
-            mon = Battle_GetClientPartyMon(battleSys, battler, i);
-            monSpecies = GetMonData(mon, MON_DATA_SPECIES_OR_EGG, 0);
-
-            if (monSpecies != SPECIES_NONE
-                && monSpecies != SPECIES_EGG
-                && GetMonData(mon, MON_DATA_HP, 0)
-                && (battlersDisregarded & No2Bit(i)) == FALSE
-                && i != battleCtx->sel_mons_no[slot1]
-                && i != battleCtx->sel_mons_no[slot2]
-                && i != battleCtx->aiSwitchedPartySlot[slot1]
-                && i != battleCtx->aiSwitchedPartySlot[slot2]) {
-
-                defenderType1 = battleCtx->battlemon[defender].type1; 
-                defenderType2 = battleCtx->battlemon[defender].type2; 
-                monType1 = GetMonData(mon, MON_DATA_TYPE_1, 0);
-                monType2 = GetMonData(mon, MON_DATA_TYPE_2, 0);
-
-                score = TypeMatchupMultiplier(monType1, defenderType1, defenderType2);
-                score += TypeMatchupMultiplier(monType2, defenderType1, defenderType2);
-
-                if (maxScore < score) {
-                    maxScore = score;
-                    picked = i;
-                }
-            } else {
-                battlersDisregarded |= No2Bit(i);
-            }
-        }
-
-        if (picked != 6) {
-            // Determine if this mon has any super-effective moves against the defender
-            mon = Battle_GetClientPartyMon(battleSys, battler, i);
-
-            for (j = 0; j < CLIENT_MAX; j++) {
-
-                move = GetMonData(mon, MON_DATA_MOVE1 + j, NULL); 
-                moveType = battleCtx->moveTbl[move].effect; 
-
-                if (move) {
-                    moveStatusFlags = 0;
-
-                    AITypeCalc(battleCtx, 
-                        move, 
-                        moveType, 
-                        GetMonData(mon, MON_DATA_ABILITY, 0), 
-                        battleCtx->battlemon[defender].ability, 
-                        BattleItemDataGet(battleCtx,GetMonData(mon, MON_DATA_HELD_ITEM, 0), 1),
-                        GetMonData(mon, MON_DATA_TYPE_1, 0),
-                         GetMonData(mon, MON_DATA_TYPE_2, 0), 
-                         &moveStatusFlags);
-
-                    if (moveStatusFlags & MOVE_STATUS_FLAG_SUPER_EFFECTIVE) {
-                        break;
-                    }
-                }
-            }
-
-            // If this mon has no moves which would be super-effective against the
-            // defender, mark it as disregarded and move to the next in priority.
-            if (i == CLIENT_MAX) {
-                battlersDisregarded |= No2Bit(picked);
-            } else {
-                return picked;
-            }
-        } else {
-            // No valid battlers to further-evaluate, break out
-            battlersDisregarded = 0x3F;
-        }
-    }
 
     maxScore = 0;
     picked = 6;
@@ -1226,35 +1162,127 @@ int BattleAI_PostKOSwitchIn(struct BattleSystem *battleSys, int battler)
             && i != battleCtx->sel_mons_no[slot2]
             && i != battleCtx->aiSwitchedPartySlot[slot1]
             && i != battleCtx->aiSwitchedPartySlot[slot2]) {
-            for (j = 0; j < CLIENT_MAX; j++) {
 
+            monSwapScore[i] = 10; //initialize the valid swaps to 10, leaving invalid ones at zero so they are never chosen
+            for (j = 0; j < CLIENT_MAX; j++) {
+                currentDamage = 0;
+                
                 move = GetMonData(mon, MON_DATA_MOVE1 + j, NULL); 
                 moveType = battleCtx->moveTbl[move].effect; 
 
-                if (move && battleCtx->moveTbl[move].power != 1) {
-
-                    score = CalcBaseDamage(battleSys, battleCtx, move, battleCtx->side_condition[BATTLER_IS_ENEMY(defender)],
-                    battleCtx->field_condition, battleCtx->moveTbl[move].power, battleCtx->moveTbl[move].type, battler, defender, 0, 1, 0, mon);
+                //first see whether current mon is faster than defender
+                monIsFaster[i] = AI_CalcSpeed(battleSys, battleCtx, defender, battler, 0, 1, mon); //1 if faster, 0 if slower, 2 if tied
 
 
-                    moveStatusFlags = 0;
-
-                    score = AI_ServerDoTypeCalcMod(battleSys, battleCtx, move, 0, battler, defender, score, &moveStatusFlags, 1, 0, mon);
-
-
-                    if (moveStatusFlags & MOVE_STATUS_FLAG_NOT_EFFECTIVE) {
-                        score = 0;
+                /*if the current move is a damaging move, compute the damage to be potentially dealt to the defender,
+                then apply type chart modifiers.*/
+                if(battleCtx->moveTbl[move].split != SPLIT_STATUS && battleCtx->moveTbl[move].power){
+                    currentDamage = CalcBaseDamage(battleSys, battleCtx, move, battleCtx->side_condition[BATTLER_IS_ENEMY(defender)],
+                     battleCtx->field_condition, battleCtx->moveTbl[move].power, battleCtx->moveTbl[move].type, battler, defender, 0, 1, 0, mon);
+                    currentDamage = AI_ServerDoTypeCalcMod(battleSys, battleCtx, move, battleCtx->moveTbl[move].type, battler, defender, currentDamage, &moveStatusFlags, 1, 0, mon) * 85 / 100;
+                }
+                if(currentDamage > minRollMaxDamageDealt[i]){
+                    minRollMaxDamageDealt[i] = currentDamage;
+                }
+                if(currentDamage){
+                    monHasDamagingMove[i] = TRUE;
+                    if(currentDamage > battleCtx->battlemon[defender].hp){
+                        monCanOHKO[i] = TRUE;
                     }
                 }
 
-                if (maxScore < score) {
-                    maxScore = score;
-                    picked = i;
+                /*Now compute how much damage the ai would receive 
+                (in other words, swap attacker and defender)*/
+                defenderMove = battleCtx->battlemon[defender].move[j];
+                if(battleCtx->moveTbl[defenderMove].split != SPLIT_STATUS && battleCtx->moveTbl[defenderMove].power){
+                    currentDamage = CalcBaseDamage(battleSys, battleCtx, defenderMove, battleCtx->side_condition[BATTLER_IS_ENEMY(battler)],
+                     battleCtx->field_condition, battleCtx->moveTbl[defenderMove].power, battleCtx->moveTbl[defenderMove].type, defender, battler, 0, 0, 1, mon);
+                     currentDamage = AI_ServerDoTypeCalcMod(battleSys, battleCtx, defenderMove, battleCtx->moveTbl[defenderMove].type, defender, battler, currentDamage, &moveStatusFlags, 0, 1, mon) * 85 / 100;
+                }
+                if(currentDamage > minRollMaxDamageReceived[i]){
+                    minRollMaxDamageReceived[i] = currentDamage;
+                }
+                if(currentDamage){
+                    if(currentDamage > GetMonData(mon, MON_DATA_HP, 0)){
+                        monIsOHKOd[i] = TRUE;
+                    }
+                }
+            }
+        } 
+    }
+
+    /*Now compute the score for each Pokemon in the party*/
+    for (i = 0; i < partySize; i++){
+        if(!(monSwapScore[i])){
+            continue;
+        }
+        if(monHasDamagingMove[i]){
+            if(monIsFaster[i]){
+                if(monCanOHKO[i]){
+                    monSwapScore[i] += 5;
+                }
+                else{
+                    if(minRollMaxDamageDealt[i] * 100 / battleCtx->battlemon[defender].hp > minRollMaxDamageReceived[i] * 100 / GetMonData(mon, MON_DATA_HP, 0)){
+                        monSwapScore[i] += 3;
+                    }
+                    else{
+                        monSwapScore[i] += 1;
+                    }
+                }
+            }
+            else{
+                if(monIsOHKOd[i]){
+                    monSwapScore[i] -= 1;
+                }
+                else{
+                    if(monCanOHKO[i]){
+                        monSwapScore[i] += 4;
+                    }
+                    else{
+                        if(minRollMaxDamageDealt[i] * 100 / battleCtx->battlemon[defender].hp > minRollMaxDamageReceived[i] * 100 / GetMonData(mon, MON_DATA_HP, 0)){
+                            monSwapScore[i] += 2;
+                        }
+                        else{
+                            monSwapScore[i] += 0;
+                        }
+                    }
                 }
             }
         }
+        else{
+            if(GetMonData(Battle_GetClientPartyMon(battleSys, battler, i),MON_DATA_SPECIES,0) == SPECIES_DITTO){
+                monSwapScore[i] += 2;
+            }
+            else{
+                if((GetMonData(Battle_GetClientPartyMon(battleSys, battler, i),MON_DATA_SPECIES,0) == SPECIES_WOBBUFFET ||
+                    GetMonData(Battle_GetClientPartyMon(battleSys, battler, i),MON_DATA_SPECIES,0) == SPECIES_WYNAUT) &&
+                    !(monIsOHKOd[i])){
+                    monSwapScore[i] += 2;
+                }
+                else{
+                    monSwapScore[i] += 0;
+                }
+            }
+        }
+        if(monSwapScore[i] > highestMonScore){
+            highestMonScore = monSwapScore[i];
+        }
     }
 
+    /*Now that all the scores have been computed, select the highest one (and if tie, select randomly)*/
+    int j_tie_index = 0;
+    int num_mon_score_ties = 0;
+
+    for (int mon_no = 0; mon_no < partySize; mon_no++){   
+        debug_printf("The swap index %d has score %d\n",mon_no,monSwapScore[mon_no]);       //check for ties
+        if(monSwapScore[mon_no] == highestMonScore){
+            num_mon_score_ties++;
+            monTieIndices[j_tie_index] = mon_no;
+            j_tie_index++;
+        }
+    }
+    picked = monTieIndices[BattleRand(battleSys) % num_mon_score_ties];
+    debug_printf("Picking index number %d\n\n",picked);
     return picked;
 }
 

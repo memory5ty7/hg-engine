@@ -247,7 +247,7 @@ enum AIActionChoice __attribute__((section (".init"))) TrainerAI_Main(struct Bat
 
         ctx->aiWorkTable.ai_dir_select_client[ai->attacker] = target;                   //assign the correct target for this attacker.
         for(int i = 0; i < 4; i++){
-            debug_printf("the target for battler %d is %d",i,ctx->aiWorkTable.ai_dir_select_client[ai->attacker]);
+            debug_printf("the target for battler %d is %d",i,ctx->aiWorkTable.ai_dir_select_client[i]);
         }
         debug_printf("Target: %d\n", target);
         if (ctx->battlemon[target].hp == 0) {
