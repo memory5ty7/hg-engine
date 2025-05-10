@@ -133,6 +133,7 @@ static const u16 SharpnessMovesTable[] = {
 int LONG_CALL CalcBaseDamage(void *bw, struct BattleStruct *sp, int moveno, u32 side_cond,
                    u32 field_cond, u16 pow, u8 type UNUSED, u8 attacker, u8 defender, u8 critical, BOOL usePPForAttacker, BOOL usePPForDefender,struct PartyPokemon *pp)
 {
+
     u32 i;
     s32 damage = 0;
     u8 movetype;
@@ -153,7 +154,7 @@ int LONG_CALL CalcBaseDamage(void *bw, struct BattleStruct *sp, int moveno, u32 
 
     struct sDamageCalc AttackingMon;
     struct sDamageCalc DefendingMon;
-    
+    //debug_printf("in calc damage using usePPForAttacker  = %d, and usePPForDefender = %d\n", usePPForAttacker, usePPForDefender);
     /*Populate the sDamageCalc structs from PartyPokemon 
     attacker instead of the battlemon.
     This is SPECIFICALLY for post-ko switch in logic*/
@@ -168,7 +169,8 @@ int LONG_CALL CalcBaseDamage(void *bw, struct BattleStruct *sp, int moveno, u32 
     
             default:
                 attack = GetMonData(pp, MON_DATA_ATTACK, 0);
-                atkstate = 0; //stage 0
+                //atkstate = 0; //stage 0
+                atkstate = BattlePokemonParamGet(sp, attacker, BATTLE_MON_DATA_STATE_DEF, NULL) - 6;
                 break;
         }
         sp_attack = GetMonData(pp, MON_DATA_SPECIAL_ATTACK, 0);
@@ -183,6 +185,7 @@ int LONG_CALL CalcBaseDamage(void *bw, struct BattleStruct *sp, int moveno, u32 
         AttackingMon.type1 = GetMonData(pp, MON_DATA_TYPE_1, 0);
         AttackingMon.type2 = GetMonData(pp, MON_DATA_TYPE_2, 0);
         item = GetMonData(pp, MON_DATA_HELD_ITEM, 0);
+        //debug_printf("Calcing base damage using species = %d, hp = %d, attack = %d, and attack stage =%d \n",AttackingMon.species, AttackingMon.hp, attack, atkstate);
     }
     else if(usePPForDefender){
         defense = GetMonData(pp, MON_DATA_DEFENSE, 0);

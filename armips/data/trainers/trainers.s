@@ -70,7 +70,7 @@ trainerdata 2, "Dickson"
 	trainermontype TRAINER_DATA_TYPE_ITEMS | TRAINER_DATA_TYPE_MOVES | TRAINER_DATA_TYPE_ABILITY | TRAINER_DATA_TYPE_IV_EV_SET | TRAINER_DATA_TYPE_NATURE_SET | TRAINER_DATA_TYPE_SHINY_LOCK
     trainerclass TRAINERCLASS_ROUGHNECK
      
-    nummons 3
+    nummons 4
     item ITEM_NONE
     item ITEM_NONE
     item ITEM_NONE
@@ -86,10 +86,10 @@ trainerdata 2, "Dickson"
 		level 4
 		pokemon SPECIES_KOFFING
 		item ITEM_NONE
-		move MOVE_POISON_GAS
-		move MOVE_TACKLE
-		move MOVE_MEMENTO
 		move MOVE_SMOG
+		move MOVE_TACKLE
+		move MOVE_NONE
+		move MOVE_NONE
 		ability ABILITY_LEVITATE
 		setivs 31, 31, 31, 31, 31, 31 // hp, atk, def, spe, spatk, spdef
 		setevs 0, 0, 0, 0, 0, 0
@@ -118,11 +118,27 @@ trainerdata 2, "Dickson"
 		level 5
 		pokemon SPECIES_NICKIT
 		item ITEM_ORAN_BERRY
-		move MOVE_PURSUIT
+		move MOVE_TACKLE
 		move MOVE_NONE
 		move MOVE_NONE
 		move MOVE_NONE
 		ability ABILITY_UNBURDEN
+		setivs 31, 31, 31, 31, 31, 31 // hp, atk, def, spe, spatk, spdef
+		setevs 0, 0, 0, 0, 0, 0
+		nature NATURE_RELAXED
+		shinylock 1
+		ballseal 0
+
+        		ivs 250
+		abilityslot 32
+		level 5
+		monwithform SPECIES_RAYQUAZA, 1
+		item ITEM_RUSTED_SWORD
+		move MOVE_DRAGON_ASCENT
+		move MOVE_NONE
+		move MOVE_NONE
+		move MOVE_NONE
+		ability ABILITY_INTREPID_SWORD
 		setivs 31, 31, 31, 31, 31, 31 // hp, atk, def, spe, spatk, spdef
 		setevs 0, 0, 0, 0, 0, 0
 		nature NATURE_RELAXED
