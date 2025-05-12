@@ -3031,6 +3031,17 @@ u32 TurnEndAbilityCheck(void *bw, struct BattleStruct *sp, int client_no);
 u8 BeastBoostGreatestStatHelper(struct BattleStruct *sp, u32 client);
 
 
+//ai version of CalcSpeed, takes in a party pokemon struct.
+u8 LONG_CALL AI_CalcSpeed(void *bw, struct BattleStruct *sp, int client1, int client2, int flag, int client2IsPP, struct PartyPokemon *pp);
+//ai version of type chart adjustments for damage calc, uses party pokemon
+int LONG_CALL AI_ServerDoTypeCalcMod(void *bw UNUSED, struct BattleStruct *sp, int move_no, int move_type, int attack_client, int defence_client, int damage, u32 *flag, BOOL usePPForAttacker, BOOL usePPForDefender, struct PartyPokemon *pp);
+//ai version of calc damage ahead of time for switch-ins. Uses party pokemon
+int LONG_CALL AI_CalcBaseDamage(void *bw, struct BattleStruct *sp, int moveno, u32 side_cond, u32 field_cond, u16 pow, u8 type UNUSED, u8 attacker, u8 defender, u8 critical, BOOL usePPForAttacker, BOOL usePPForDefender,struct PartyPokemon *pp);
+//instructions on how to swap
+int LONG_CALL BattleAI_PostKOSwitchIn(struct BattleSystem *battleSys, int battler);
+
+
+
 // defined in other_battle_calculators.c
 /**
  *  @brief compare battlers to determine who goes first
