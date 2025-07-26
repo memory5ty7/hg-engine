@@ -20,7 +20,7 @@ struct SummaryBaseData {
     u32  playerID;              /* 0x0C */
     u8   playerGender;          /* 0x10 */
     u8   dataType;              /* 0x11 */
-    u8   mode;
+    BOOL   mode;
     u8   limit;
     u8   pos;
     u8   pageFlag;
@@ -210,10 +210,10 @@ void LONG_CALL Summary_ColorizeStatScreen_Wrap(struct SummaryState *summary);
  * @param[in,out] summary
  * @param[in]     mode      Determines which page of the stat screen to show.
  */
-void  LONG_CALL Summary_ChangeStatScreenState(struct SummaryState *summary, u8 mode);
+void  LONG_CALL Summary_ChangeStatScreenState(struct SummaryState *summary, BOOL mode);
 
 void  LONG_CALL Summary_PrintStatStringAccountForStat(struct SummaryState *summary, u32 windowId, u32 msgId, u32 stat, u32 justify);
 void  LONG_CALL Summary_PrintStringGeneric(struct SummaryState *summary, u32 windowId, u32 msgId, u32 color, u32 justify);
-void LONG_CALL Summary_ColorizeStatScreen(struct SummaryState *summary, u32 mode);
+void LONG_CALL Summary_ColorizeStatScreen(struct SummaryState *summary, BOOL mode);
 
 #endif // __UI_SUMMARY_H

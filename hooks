@@ -512,3 +512,7 @@ arm9 DestroyHeap_hook 0201AA24 3
 
 # expand metronome move pool
 0012 load_max_move_num_metronome 022408AC 0
+
+0012 CalcPrizeMoney 0223FB34 3
+
+arm9 PlayerProfile_CountBadges 02028FF0 1

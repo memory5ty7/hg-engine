@@ -17,6 +17,8 @@ b.c
 dump.py
 dumpitem.py
 *_DSPRE_contents/*
+Maps/*
+sprites/*
 
 # pycache files
 *.pyc
@@ -91,3 +93,9 @@ tools/swav2swar.exe
 *.gbapal
 *.4bpp
 changelog
+
+Docs/*
+notes.txt
+OW.txt
+*.lnk
+gs_sound_data.sdat

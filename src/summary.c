@@ -8,7 +8,7 @@
 // i just adapted it to hgss and added the +/- handling and such
 
 
-static void UpdatePokemonData(struct SummaryState *summary, u8 mode)
+static void UpdatePokemonData(struct SummaryState *summary, BOOL mode)
 {
     void *potentialBoxMon = Summary_GetPokemonData(summary);
     void *pokemon;
@@ -24,16 +24,11 @@ static void UpdatePokemonData(struct SummaryState *summary, u8 mode)
     int paramStart = MON_DATA_MAXHP;
 
     // Pokemon struct orders current HP before max HP, so need to handle mode == 0 as a special case
-    if (mode == 0) {
-        summary->pokemonData.hp = (u16) GetMonData(pokemon, MON_DATA_HP, NULL);
+    if (mode == TRUE) {
+        paramStart = MON_DATA_HP_IV;
+        summary->pokemonData.hp = (u16) GetMonData(pokemon, paramStart, NULL);        
     } else {
-        if (mode == 1) {
-            paramStart = MON_DATA_HP_EV;
-        } else {
-            paramStart = MON_DATA_HP_IV;
-        }
-
-        summary->pokemonData.hp = (u16) GetMonData(pokemon, paramStart, NULL);
+        summary->pokemonData.hp = (u16) GetMonData(pokemon, MON_DATA_HP, NULL);
     }
 
     // Pokemon struct orders all data parameters as such:
@@ -106,7 +101,7 @@ static void PrintStatNumberWithColor(struct SummaryState *summary, u8 windowIdx,
     Summary_PrintString(summary, &summary->addlWindows[windowIdx], color, justify);
 }
 
-void Summary_ColorizeStatScreen(struct SummaryState *summary, u32 mode)
+void Summary_ColorizeStatScreen(struct SummaryState *summary, BOOL mode)
 {
     u32 nature = GetBoxMonNatureCountMints(Summary_GetPokemonData(summary));
     Summary_NumberToString(summary, 120, summary->pokemonData.attack, 3, 0);
@@ -136,12 +131,10 @@ void Summary_ColorizeStatScreen(struct SummaryState *summary, u32 mode)
 
             //Summary_PrintStatStringAccountForStat(summary, 0xF+i, msgId+i, i-1, JUSTIFY_LEFT);
             Summary_PrintStringGeneric(summary, 0xF+i, msgId+i, color, JUSTIFY_LEFT);
-        } else if (mode == 0) { // raw stat
-            Summary_PrintStringGeneric(summary, 0xF, 110, WHITE, JUSTIFY_LEFT);
-        } else if (mode == 1) { // ev's
-            Summary_PrintStringGeneric(summary, 0xF, 206, WHITE, JUSTIFY_LEFT);
-        } else {                // iv's
+        } else if (mode == TRUE) { // raw stat
             Summary_PrintStringGeneric(summary, 0xF, 207, WHITE, JUSTIFY_LEFT);
+        } else {                // IVs
+            Summary_PrintStringGeneric(summary, 0xF, 110, WHITE, JUSTIFY_LEFT);
         }
         CopyWindowToVram(&summary->defnWindows[0xF+i]);
     }
@@ -152,7 +145,7 @@ void Summary_ColorizeStatScreen_Wrap(struct SummaryState *summary)
     Summary_ColorizeStatScreen(summary, 0);
 }
 
-void Summary_ChangeStatScreenState(struct SummaryState *summary, u8 mode)
+void Summary_ChangeStatScreenState(struct SummaryState *summary, BOOL mode)
 {
     for (int i = 0; i < 6; i++) {
         FillWindowPixelBuffer(&summary->addlWindows[i], 0);

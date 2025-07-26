@@ -6,6 +6,8 @@
 #include "rtc.h"
 #include "pokemon.h"
 
+#define VAR_FIGHTS_WON 0x4094
+
 typedef enum GymmickType {
     GYMMICK_NONE,
     GYMMICK_ECRUTEAK,

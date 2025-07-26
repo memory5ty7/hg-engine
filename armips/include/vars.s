@@ -157,7 +157,7 @@ VAR_UNK_4090 equ                       0x4090
 VAR_UNK_4091 equ                       0x4091
 VAR_UNK_4092 equ                       0x4092
 VAR_UNK_4093 equ                       0x4093
-VAR_NUM_MET_WEEKDAY_SIBLINGS equ       0x4094
+VAR_FIGHTS_WON equ                     0x4094
 VAR_SCENE_ROUTE_30_PHONE_CALL equ      0x4095
 VAR_UNK_4096 equ                       0x4096
 VAR_UNK_4097 equ                       0x4097

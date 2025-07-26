@@ -17,6 +17,9 @@
 #include "../../include/constants/species.h"
 #include "../../include/constants/weather_numbers.h"
 
+#include "../../include/trainer_data.h"
+#include "../../include/prize_money.h"
+
 struct EXP_CALCULATOR
 {
     /* 0x00 */ void *bw;
@@ -108,6 +111,8 @@ u32 DealWithCriticalCaptureShakes(struct EXP_CALCULATOR *expcalc, u32 shakes);
 u32 LoadCaptureSuccessSPA(u32 id);
 u32 LoadCaptureSuccessSPAStarEmitter(u32 id);
 u32 LoadCaptureSuccessSPANumEmitters(u32 id);
+
+u32 CalcPrizeMoney(struct BattleSystem *bw, struct BattleStruct *sp, int trainerIndex);
 
 #ifdef DEBUG_BATTLE_SCRIPT_COMMANDS
 const u8 *BattleScrCmdNames[] =
@@ -4007,4 +4012,17 @@ BOOL BtlCmd_TrySwapItems(void* bw, struct BattleStruct *sp)
         IncrementBattleScriptPtr(sp, defence);
 
     return FALSE;
+}
+
+u32 CalcPrizeMoney(struct BattleSystem *bw, struct BattleStruct *sp, int trainerIndex) {
+    u32 prizeMoney;
+    u8 trainerClass;
+    Trainer trainer;
+
+    TrainerData_ReadTrData(bw->trainerId[trainerIndex], &trainer);
+    trainerClass = trainer.data.trainerClass;
+
+    SetScriptVar(VAR_FIGHTS_WON, GetScriptVar(VAR_FIGHTS_WON) + 1);
+
+    return PrizeMoney[trainerClass].multiplier;
 }

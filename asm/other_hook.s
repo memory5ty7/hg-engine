@@ -549,24 +549,6 @@ Summary_Check_RButton:
 mov     r1, #1
 lsl     r1, r1, #8
 tst     r6, r1
-beq     Summary_Check_SELButton
-sub     r1, r2, #3
-ldrsb   r1, [r5, r1]
-cmp     r1, #1
-bne     Summary_Check_SELButton
-mov     r1, #2
-bl      Summary_ChangeStatScreenState
-mov     r0, #0x5E
-lsl     r0, #4
-add     r0, #1
-ldr     r2, =0x0200604C | 1
-bl      bx_r2
-mov     r0, #2
-pop     {r4-r6,pc}
-
-Summary_Check_SELButton:
-mov     r1, #4
-tst     r6, r1
 beq     Summary_StatsPage_Return
 sub     r1, r2, #3
 ldrsb   r1, [r5, r1]
