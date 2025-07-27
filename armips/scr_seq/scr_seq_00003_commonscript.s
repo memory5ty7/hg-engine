@@ -1577,12 +1577,10 @@ _14FB:
     touchscreen_menu_hide
     menu_init_std_gmm 1, 1, 0, 1, VAR_SPECIAL_RESULT
     menu_item_add 321, 255, 0
-    menu_item_add 322, 255, 1
     menu_item_add 323, 255, 2
     menu_exec
     switch VAR_SPECIAL_RESULT
     case 0, scr_seq_0003_053
-    case 1, scr_seq_0003_054
     case 2, scr_seq_0003_055
     end
 

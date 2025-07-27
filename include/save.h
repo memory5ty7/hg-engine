@@ -6,7 +6,11 @@
 #include "rtc.h"
 #include "pokemon.h"
 
-#define VAR_FIGHTS_WON 0x4094
+#define FLAG_STARTER_CHOSEN
+
+#define VAR_BATTLE_THEME    0x4072
+#define STORY_PROGRESSION   0x4073
+#define VAR_FIGHTS_WON      0x4094
 
 typedef enum GymmickType {
     GYMMICK_NONE,

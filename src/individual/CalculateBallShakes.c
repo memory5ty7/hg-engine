@@ -56,6 +56,8 @@ u32 __attribute__((section (".init"))) CalculateBallShakesInternal(void *bw, str
     int badges, missingBadges;
     BOOL isCriticalCatch = FALSE;
 
+    return 4;
+
     if (BattleTypeGet(bw) & (BATTLE_TYPE_PAL_PARK | BATTLE_TYPE_CATCHING_DEMO)) // poke park and safari zone always succeed
     {
         return 4;

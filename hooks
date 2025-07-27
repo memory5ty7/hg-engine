@@ -516,3 +516,5 @@ arm9 DestroyHeap_hook 0201AA24 3
 0012 CalcPrizeMoney 0223FB34 3
 
 arm9 PlayerProfile_CountBadges 02028FF0 1
+
+arm9 NPCTrainerGetBattleIntroAndMusicParam 02051868 1

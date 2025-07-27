@@ -76,12 +76,12 @@ You used the\n{STRVAR_1 8, 1, 0}.\rWild Pokémon will be repelled.
 MOVE
 {STRVAR_1 8, 0, 0}? Oh, no.\nI can’t buy that.
 {STRVAR_1 8, 0, 0}? \nHow many will you sell?
-I can pay ${STRVAR_1 55, 0, 0}.\nWould that be OK?
-Turned over the {STRVAR_1 8, 0, 0}\nand received ${STRVAR_1 55, 1, 0}.
+I can pay {STRVAR_1 55, 0, 0} Point(s).\nWould that be OK?
+Turned over the {STRVAR_1 8, 0, 0}\nand received {STRVAR_1 55, 1, 0} Point(s).
 Money
-${STRVAR_1 55, 0, 0}
+{STRVAR_1 55, 0, 0} Point(s)
       
-+${STRVAR_1 55, 0, 0}
++{STRVAR_1 55, 0, 0} Point(s)
   
    
 SELL

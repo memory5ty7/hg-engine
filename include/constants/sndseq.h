@@ -1374,17 +1374,25 @@
 #define SEQ_SE_GS_XBUTTON_SYUKUSHOU          2377
 #define SEQ_SE_END                           2378
 
+#define SEQ_SANCTUARY                        2379
+#define SEQ_HOENN_LEADER                     2380
+#define SEQ_ELITE_FOUR                       2381
+#define SEQ_CHAMBER                          2382
+#define SEQ_SINNOH_LEADER                    2383
+#define SEQ_UNOVA_LEADER                     2384
+#define SEQ_DEMIGOD                          2385
+
 //Sounds marked BANK, WAVE, PLAYER, GROUP not ported over from pokeheartgold/include/constants/sndseq.h
 
 enum {
     ANIM_MUSIC_COMBO_LEADER,
     ANIM_MUSIC_COMBO_ELITE_FOUR,
     ANIM_MUSIC_COMBO_CHAMPION,
-    ANIM_MUSIC_COMBO_03,
-    ANIM_MUSIC_COMBO_04,
-    ANIM_MUSIC_COMBO_05,
-    ANIM_MUSIC_COMBO_06,
-    ANIM_MUSIC_COMBO_07,
+    KANTO_LEADER,
+    JOHTO_LEADER,
+    HOENN_LEADER,
+    SINNOH_LEADER,
+    UNOVA_LEADER,
     ANIM_MUSIC_COMBO_08,
     ANIM_MUSIC_COMBO_09,
     ANIM_MUSIC_COMBO_10,

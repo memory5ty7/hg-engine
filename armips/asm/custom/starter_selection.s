@@ -1,5 +1,5 @@
 .nds
-.arm
+.thumb
 
 .open "base/arm9.bin", 0x02000000
 
