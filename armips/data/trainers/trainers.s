@@ -5314,8 +5314,8 @@ trainerdata 4, "Wally"
         level 4
         pokemon SPECIES_MAGNEMITE
         item ITEM_MAGNET
-        move MOVE_THUNDER_SHOCK
-        move MOVE_SONIC_BOOM
+        move MOVE_CHARGE_BEAM
+        move MOVE_SWIFT
         move MOVE_NONE
         move MOVE_NONE
         ability ABILITY_MAGNET_PULL
@@ -5361,7 +5361,7 @@ trainerdata 5, "Tcheren"
         level 5
         pokemon SPECIES_MINCCINO
         item ITEM_KINGS_ROCK
-        move MOVE_TAIL_SLAP
+        move MOVE_DOUBLE_SLAP
         move MOVE_BULLET_SEED
         move MOVE_NONE
         move MOVE_NONE
@@ -7426,7 +7426,7 @@ trainerdata 95, "Benga"
 trainerdata 1, "Oak"
     trainermontype TRAINER_DATA_TYPE_ITEMS | TRAINER_DATA_TYPE_ABILITY | TRAINER_DATA_TYPE_NATURE_SET | TRAINER_DATA_TYPE_MOVES | TRAINER_DATA_TYPE_ADDITIONAL_FLAGS | TRAINER_DATA_TYPE_IV_EV_SET | 0
     trainerclass TRAINERCLASS_OAK
-    nummons 4
+    nummons 3
     item ITEM_NONE
     item ITEM_NONE
     item ITEM_NONE
@@ -7458,13 +7458,13 @@ trainerdata 1, "Oak"
         ivs 255
         abilityslot 0
         level 1
-        pokemon SPECIES_BULBASAUR
-        item ITEM_MIRACLE_SEED
-        move MOVE_LEAFAGE
+        pokemon SPECIES_NIDORAN_M
+        item ITEM_WIDE_LENS
+        move MOVE_FURY_ATTACK
         move MOVE_NONE
         move MOVE_NONE
         move MOVE_NONE
-        ability ABILITY_OVERGROW
+        ability ABILITY_HUSTLE
         setivs 31, 31, 31, 31, 31, 31
         setevs 0, 0, 0, 0, 0, 0
         nature NATURE_ADAMANT
@@ -7475,33 +7475,16 @@ trainerdata 1, "Oak"
         ivs 255
         abilityslot 0
         level 1
-        pokemon SPECIES_CHARMANDER
-        item ITEM_CHARCOAL
-        move MOVE_EMBER
+        pokemon SPECIES_EEVEE
+        item ITEM_MUSCLE_BAND
+        move MOVE_TACKLE
         move MOVE_NONE
         move MOVE_NONE
         move MOVE_NONE
-        ability ABILITY_BLAZE
+        ability ABILITY_ADAPTABILITY
         setivs 31, 31, 31, 31, 31, 31
         setevs 0, 0, 0, 0, 0, 0
-        nature NATURE_MODEST
-        additionalflags 0
-        ballseal 0
-
-        // mon 3
-        ivs 255
-        abilityslot 0
-        level 1
-        pokemon SPECIES_SQUIRTLE
-        item ITEM_MYSTIC_WATER
-        move MOVE_BUBBLE
-        move MOVE_NONE
-        move MOVE_NONE
-        move MOVE_NONE
-        ability ABILITY_TORRENT
-        setivs 31, 31, 31, 31, 31, 31
-        setevs 0, 0, 0, 0, 0, 0
-        nature NATURE_MODEST
+        nature NATURE_JOLLY
         additionalflags 0
         ballseal 0
 
