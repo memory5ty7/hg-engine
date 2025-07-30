@@ -53,15 +53,15 @@
 
 // IMPLEMENT_WILD_DOUBLE_BATTLES defines whether or not grass tiles will have a 10% chance of starting a wild double battle
 // commenting this line out disables wild double battles entirely
-//#define IMPLEMENT_WILD_DOUBLE_BATTLES
+#define IMPLEMENT_WILD_DOUBLE_BATTLES
 
 // IMPLEMENT_CAPTURE_EXPERIENCE defines whether or not capturing wild pokemon will net experience
 // commenting this line out disables capture experience
-// #define IMPLEMENT_CAPTURE_EXPERIENCE
+#define IMPLEMENT_CAPTURE_EXPERIENCE
 
 // IMPLEMENT_CRITICAL_CAPTURE defines whether or not throwing a poké ball has a certain percent chance of a guaranteed capture called a critical throw
 // commenting this line out disables critical captures
-// #define IMPLEMENT_CRITICAL_CAPTURE
+#define IMPLEMENT_CRITICAL_CAPTURE
 
 #define CRITICAL_CAPTURE_GENERATION GEN_LATEST
 
