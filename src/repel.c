@@ -3,10 +3,10 @@
 #include "../include/constants/item.h"
 #include "../include/bag.h"
 #include "../include/constants/file.h"
-#include "../include/save.h"
 
 
 void Repel_SetCurrentType();
+
 
 u16 ALIGN4 CurrentRepelType = 0;
 
@@ -14,27 +14,45 @@ bool32 PlayerStepEvent_RepelCounterDecrement(SaveData *saveData, FieldSystem *fi
     return FALSE;
 }
 
+#ifdef IMPLEMENT_REUSABLE_REPELS
 u16 Repel_GetMostRecent() {
-    return ITEM_REPELLENT;
+    Repel_SetCurrentType();
+    return CurrentRepelType;
 }
 
 BOOL Repel_Use(u16 item_id, u32 heap_id) {
+    SaveData *saveData = SaveBlock2_get();
+    void *roamerSaveData = EncDataSave_GetSaveDataPtr(saveData);
+    u8* repel_addr = SaveData_GetRepelPtr(roamerSaveData);
 
-    if(CheckScriptFlag(FLAG_REPELLENT_ON))
-    {
-        ClearScriptFlag(FLAG_REPELLENT_ON);
-    } else {
-        SetScriptFlag(FLAG_REPELLENT_ON);
+    BAG_DATA *bag = Sav2_Bag_get(saveData);
+
+    item_id = Repel_GetMostRecent();
+
+    if (Bag_TakeItem(bag, item_id, 1, heap_id)) {
+        *repel_addr = Repel_GetSteps(item_id, heap_id);
+        return TRUE;
     }
-    
-    return TRUE;
+
+    return FALSE;
 }
 
 u8 Repel_GetSteps(u16 item_id, u32 heap_id) {
-    return CheckScriptFlag(FLAG_REPELLENT_ON) ? 1 : 0;
+    return GetItemData(item_id, ITEM_PARAM_ATTACK, heap_id);
 }
+#endif
 
 void Repel_SetCurrentType() {
+#ifdef IMPLEMENT_REUSABLE_REPELS
+    u16 item_id = 0;
+    BAG_DATA *bag = Sav2_Bag_get(SaveBlock2_get());
+    if (Bag_HasItem(bag, ITEM_MAX_REPEL, 1, HEAPID_MAIN_HEAP))
+        item_id = ITEM_MAX_REPEL;
+    else if (Bag_HasItem(bag, ITEM_SUPER_REPEL, 1, HEAPID_MAIN_HEAP))
+        item_id = ITEM_SUPER_REPEL;
+    else
+        item_id = ITEM_REPEL;
 
-    CurrentRepelType = ITEM_REPELLENT;
+    CurrentRepelType = item_id;
+#endif
 }
