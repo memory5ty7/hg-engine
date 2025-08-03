@@ -99,3 +99,7 @@ notes.txt
 OW.txt
 *.lnk
 gs_sound_data.sdat
+
+backups/*
+wfcsettings.bin
+melonDS.exe
