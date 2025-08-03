@@ -33,7 +33,7 @@ trainerdata 70, "Phoebe"
     item ITEM_NONE
     item ITEM_NONE
     aiflags F_PRIORITIZE_SUPER_EFFECTIVE | F_EVALUATE_ATTACKS | F_EXPERT_ATTACKS | 0
-    battletype DOUBLE_BATTLE
+    battletype NO_PARTNER_DOUBLE_BATTLE
     endentry
 
     party 70
@@ -229,7 +229,7 @@ trainerdata 72, "Misty"
     item ITEM_NONE
     item ITEM_NONE
     aiflags F_PRIORITIZE_SUPER_EFFECTIVE | F_EVALUATE_ATTACKS | F_EXPERT_ATTACKS | 0
-    battletype DOUBLE_BATTLE
+    battletype NO_PARTNER_DOUBLE_BATTLE
     endentry
 
     party 72
@@ -324,7 +324,7 @@ trainerdata 73, "Nessa"
     item ITEM_NONE
     item ITEM_NONE
     aiflags F_PRIORITIZE_SUPER_EFFECTIVE | F_EVALUATE_ATTACKS | F_EXPERT_ATTACKS | 0
-    battletype DOUBLE_BATTLE
+    battletype NO_PARTNER_DOUBLE_BATTLE
     endentry
 
     party 73
@@ -704,7 +704,7 @@ trainerdata 77, "Clair"
     item ITEM_NONE
     item ITEM_NONE
     aiflags F_PRIORITIZE_SUPER_EFFECTIVE | F_EVALUATE_ATTACKS | F_EXPERT_ATTACKS | 0
-    battletype DOUBLE_BATTLE
+    battletype NO_PARTNER_DOUBLE_BATTLE
     endentry
 
     party 77
@@ -824,7 +824,7 @@ trainerdata 78, "Siebold"
         abilityslot 0
         level 78
         monwithform SPECIES_ARTICUNO, 1
-        item ITEM_NONE
+        item ITEM_WACAN_BERRY
         move MOVE_HURRICANE
         move MOVE_FREEZING_GLARE
         move MOVE_U_TURN
@@ -894,7 +894,7 @@ trainerdata 79, "Clemont"
     item ITEM_NONE
     item ITEM_NONE
     aiflags F_PRIORITIZE_SUPER_EFFECTIVE | F_EVALUATE_ATTACKS | F_EXPERT_ATTACKS | 0
-    battletype DOUBLE_BATTLE
+    battletype NO_PARTNER_DOUBLE_BATTLE
     endentry
 
     party 79
@@ -1128,7 +1128,7 @@ trainerdata 81, "Volkner"
         item ITEM_SHELL_BELL
         move MOVE_SUPERCELL_SLAM
         move MOVE_CROSS_CHOP
-        move MOVE_EARTHQUAKE
+        move MOVE_DUAL_CHOP
         move MOVE_ICE_PUNCH
         ability ABILITY_MOTOR_DRIVE
         setivs 31, 31, 31, 31, 31, 31
@@ -2169,7 +2169,7 @@ trainerdata 61, "Brandon"
     item ITEM_NONE
     item ITEM_NONE
     aiflags F_PRIORITIZE_SUPER_EFFECTIVE | F_EVALUATE_ATTACKS | F_EXPERT_ATTACKS | 0
-    battletype DOUBLE_BATTLE
+    battletype NO_PARTNER_DOUBLE_BATTLE
     endentry
 
     party 61
@@ -2411,7 +2411,7 @@ trainerdata 64, "Grusha"
     item ITEM_NONE
     item ITEM_NONE
     aiflags F_PRIORITIZE_SUPER_EFFECTIVE | F_EVALUATE_ATTACKS | F_EXPERT_ATTACKS | 0
-    battletype DOUBLE_BATTLE
+    battletype NO_PARTNER_DOUBLE_BATTLE
     endentry
 
     party 64
@@ -2648,7 +2648,7 @@ trainerdata 67, "Spenser"
     item ITEM_NONE
     item ITEM_NONE
     aiflags F_PRIORITIZE_SUPER_EFFECTIVE | F_EVALUATE_ATTACKS | F_EXPERT_ATTACKS | 0
-    battletype DOUBLE_BATTLE
+    battletype NO_PARTNER_DOUBLE_BATTLE
     endentry
 
     party 67
@@ -3016,7 +3016,7 @@ trainerdata 49, "Noland"
     item ITEM_NONE
     item ITEM_NONE
     aiflags F_PRIORITIZE_SUPER_EFFECTIVE | F_EVALUATE_ATTACKS | F_EXPERT_ATTACKS | 0
-    battletype DOUBLE_BATTLE
+    battletype NO_PARTNER_DOUBLE_BATTLE
     endentry
 
     party 49
@@ -3095,7 +3095,7 @@ trainerdata 50, "Rika"
     item ITEM_NONE
     item ITEM_NONE
     aiflags F_PRIORITIZE_SUPER_EFFECTIVE | F_EVALUATE_ATTACKS | F_EXPERT_ATTACKS | 0
-    battletype DOUBLE_BATTLE
+    battletype NO_PARTNER_DOUBLE_BATTLE
     endentry
 
     party 50
@@ -3411,7 +3411,7 @@ trainerdata 54, "Aarune"
     item ITEM_NONE
     item ITEM_NONE
     aiflags F_PRIORITIZE_SUPER_EFFECTIVE | F_EVALUATE_ATTACKS | F_EXPERT_ATTACKS | 0
-    battletype DOUBLE_BATTLE
+    battletype NO_PARTNER_DOUBLE_BATTLE
     endentry
 
     party 54
@@ -4730,7 +4730,7 @@ trainerdata 33, "Brassius"
     item ITEM_NONE
     item ITEM_NONE
     aiflags F_PRIORITIZE_SUPER_EFFECTIVE | F_EVALUATE_ATTACKS | F_EXPERT_ATTACKS | 0
-    battletype DOUBLE_BATTLE
+    battletype NO_PARTNER_DOUBLE_BATTLE
     endentry
 
     party 33
@@ -5250,7 +5250,7 @@ trainerdata 3, "Tierno"
         abilityslot 0
         level 3
         pokemon SPECIES_CORPHISH
-        item ITEM_MYSTIC_WATER
+        item ITEM_BERRY_JUICE
         move MOVE_AQUA_JET
         move MOVE_VICE_GRIP
         move MOVE_NONE
@@ -5258,7 +5258,7 @@ trainerdata 3, "Tierno"
         ability ABILITY_ADAPTABILITY
         setivs 31, 31, 31, 31, 31, 31
         setevs 0, 0, 0, 0, 0, 0
-        nature NATURE_ADAMANT
+        nature NATURE_JOLLY
         ballseal 0
 
         // mon 2
@@ -5359,13 +5359,13 @@ trainerdata 5, "Tcheren"
         ivs 255
         abilityslot 0
         level 5
-        pokemon SPECIES_MINCCINO
-        item ITEM_KINGS_ROCK
-        move MOVE_DOUBLE_SLAP
-        move MOVE_BULLET_SEED
-        move MOVE_NONE
-        move MOVE_NONE
-        ability ABILITY_SKILL_LINK
+        pokemon SPECIES_RUFFLET
+        item ITEM_SHARP_BEAK
+        move MOVE_AERIAL_ACE
+        move MOVE_FURY_ATTACK
+        move MOVE_HONE_CLAWS
+        move MOVE_ROCK_SMASH
+        ability ABILITY_KEEN_EYE
         setivs 31, 31, 31, 31, 31, 31
         setevs 0, 0, 0, 0, 0, 0
         nature NATURE_JOLLY
@@ -5532,7 +5532,7 @@ trainerdata 7, "Milo"
     endparty
 
 trainerdata 8, "Ilima"
-    trainermontype TRAINER_DATA_TYPE_ITEMS | TRAINER_DATA_TYPE_ABILITY | TRAINER_DATA_TYPE_NATURE_SET | TRAINER_DATA_TYPE_MOVES | TRAINER_DATA_TYPE_ADDITIONAL_FLAGS | TRAINER_DATA_TYPE_IV_EV_SET | 0
+    trainermontype TRAINER_DATA_TYPE_ITEMS | TRAINER_DATA_TYPE_ABILITY | TRAINER_DATA_TYPE_NATURE_SET | TRAINER_DATA_TYPE_MOVES | TRAINER_DATA_TYPE_IV_EV_SET | 0
     trainerclass TRAINERCLASS_ILIMA
     nummons 3
     item ITEM_NONE
@@ -5558,7 +5558,6 @@ trainerdata 8, "Ilima"
         setivs 31, 31, 31, 31, 31, 31
         setevs 0, 0, 0, 0, 0, 0
         nature NATURE_JOLLY
-        additionalflags 0
         ballseal 0
 
         // mon 1
@@ -5566,8 +5565,8 @@ trainerdata 8, "Ilima"
         abilityslot 0
         level 8
         pokemon SPECIES_YUNGOOS
-        item ITEM_SILK_SCARF
-        move MOVE_LAST_RESORT
+        item ITEM_BERRY_JUICE
+        move MOVE_TACKLE
         move MOVE_SUPER_FANG
         move MOVE_NONE
         move MOVE_NONE
@@ -5575,7 +5574,6 @@ trainerdata 8, "Ilima"
         setivs 31, 31, 31, 31, 31, 31
         setevs 0, 0, 0, 0, 0, 0
         nature NATURE_ADAMANT
-        additionalflags 0
         ballseal 0
 
         // mon 2
@@ -5583,7 +5581,7 @@ trainerdata 8, "Ilima"
         abilityslot 0
         level 8
         pokemon SPECIES_TAILLOW
-        item ITEM_SHARP_BEAK
+        item ITEM_FLAME_ORB
         move MOVE_FACADE
         move MOVE_WING_ATTACK
         move MOVE_NONE
@@ -5592,8 +5590,6 @@ trainerdata 8, "Ilima"
         setivs 31, 31, 31, 31, 31, 31
         setevs 0, 0, 0, 0, 0, 0
         nature NATURE_JOLLY
-        additionalflags TRAINER_DATA_EXTRA_TYPE_STATUS
-        status 0x10
         ballseal 0
 
     endparty
@@ -5859,7 +5855,7 @@ trainerdata 13, "Tulip"
     item ITEM_NONE
     item ITEM_NONE
     aiflags F_PRIORITIZE_SUPER_EFFECTIVE | F_EVALUATE_ATTACKS | F_EXPERT_ATTACKS | 0
-    battletype DOUBLE_BATTLE
+    battletype NO_PARTNER_DOUBLE_BATTLE
     endentry
 
     party 13
@@ -6555,7 +6551,7 @@ trainerdata 87, "Kiawe"
     item ITEM_NONE
     item ITEM_NONE
     aiflags F_PRIORITIZE_SUPER_EFFECTIVE | F_EVALUATE_ATTACKS | F_EXPERT_ATTACKS | 0
-    battletype DOUBLE_BATTLE
+    battletype NO_PARTNER_DOUBLE_BATTLE
     endentry
 
     party 87
@@ -7799,7 +7795,7 @@ trainerdata 42, "Olympia"
     item ITEM_NONE
     item ITEM_NONE
     aiflags F_PRIORITIZE_SUPER_EFFECTIVE | F_EVALUATE_ATTACKS | F_EXPERT_ATTACKS | 0
-    battletype DOUBLE_BATTLE
+    battletype NO_PARTNER_DOUBLE_BATTLE
     endentry
 
     party 42
@@ -7878,7 +7874,7 @@ trainerdata 43, "Marshal"
     item ITEM_NONE
     item ITEM_NONE
     aiflags F_PRIORITIZE_SUPER_EFFECTIVE | F_EVALUATE_ATTACKS | F_EXPERT_ATTACKS | 0
-    battletype DOUBLE_BATTLE
+    battletype NO_PARTNER_DOUBLE_BATTLE
     endentry
 
     party 43
@@ -8126,7 +8122,7 @@ trainerdata 46, "Palmer"
     item ITEM_NONE
     item ITEM_NONE
     aiflags F_PRIORITIZE_SUPER_EFFECTIVE | F_EVALUATE_ATTACKS | F_EXPERT_ATTACKS | 0
-    battletype DOUBLE_BATTLE
+    battletype NO_PARTNER_DOUBLE_BATTLE
     endentry
 
     party 46
@@ -8205,7 +8201,7 @@ trainerdata 47, "Bede"
     item ITEM_NONE
     item ITEM_NONE
     aiflags F_PRIORITIZE_SUPER_EFFECTIVE | F_EVALUATE_ATTACKS | F_EXPERT_ATTACKS | 0
-    battletype DOUBLE_BATTLE
+    battletype NO_PARTNER_DOUBLE_BATTLE
     endentry
 
     party 47
@@ -8316,7 +8312,7 @@ trainerdata 40, "Tate & Liza"
     item ITEM_NONE
     item ITEM_NONE
     aiflags F_PRIORITIZE_SUPER_EFFECTIVE | F_EVALUATE_ATTACKS | F_EXPERT_ATTACKS | 0
-    battletype DOUBLE_BATTLE
+    battletype NO_PARTNER_DOUBLE_BATTLE
     endentry
 
     party 40
