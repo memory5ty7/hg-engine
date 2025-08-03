@@ -96,7 +96,7 @@ const u16 *_0210FA3C[] = {
     _020FBA5A, 17   // Golden Fields
     _020FBC02, 18   // Tower of Heaven 2
     _020FBC4E, 19   // Temple of Cronus
-    _020FBC68, 20
+    _020FBC68, 20   // Main Shop
     _020FBA68, 21   // Gray Wasteland
     _020FBBC6, 22   // End of the World 2
     _020FBB08, 23   // Dunes of Silence 6
@@ -288,6 +288,11 @@ const u16 *_0210FA3C[] = {
 .org 0x020FBC4E
 .halfword ITEM_LATIASITE
 .halfword ITEM_LATIOSITE
+.halfword 0xFFFF
+
+/* Main Shop */
+.org 0x020FBC68
+.halfword ITEM_POKE_BALL
 .halfword 0xFFFF
 
 .close
