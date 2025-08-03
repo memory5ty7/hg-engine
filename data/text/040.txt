@@ -89,7 +89,7 @@ A glowing stairway appeared!
 The Azure Flute echoed hollowly...\rIt appears to be meaningless using\nthe Azure Flute here...
 {STRVAR_1 3, 0, 0} put the {STRVAR_1 8, 1, 0}\nin the {COLOR 2}{STRVAR_1 27, 2, 0}{COLOR 0} Pocket.\r
 {STRVAR_1 3, 0, 0} put away the\n{STRVAR_1 31, 1, 0} in the Fashion Case.\r
-                        
+You can’t access the Pokémon\nStorage System without a Pokémon.\r         
                                  
 Your Bag is full.\rThe Griseous Orb could not be removed,\nso you cannot enter.
 Your Hall of Fame data is corrupted.\rIt will be fixed if you enter the\nHall of Fame again.\r

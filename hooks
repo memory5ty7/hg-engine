@@ -512,7 +512,10 @@ arm9 DestroyHeap_hook 0201AA24 3
 0012 load_max_move_num_metronome 022408AC 0
 
 0012 CalcPrizeMoney 0223FB34 3
+0012 CalcMoneyLoss 0223C24C 2
 
 arm9 PlayerProfile_CountBadges 02028FF0 1
 
 arm9 NPCTrainerGetBattleIntroAndMusicParam 02051868 1
+
+0015 BagApp_TryUseRepel 021FBA9C 2

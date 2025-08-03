@@ -113,6 +113,7 @@ u32 LoadCaptureSuccessSPAStarEmitter(u32 id);
 u32 LoadCaptureSuccessSPANumEmitters(u32 id);
 
 u32 CalcPrizeMoney(struct BattleSystem *bw, struct BattleStruct *sp, int trainerIndex);
+u32 CalcMoneyLoss(struct Party *party, struct PlayerProfile *profile);
 
 #ifdef DEBUG_BATTLE_SCRIPT_COMMANDS
 const u8 *BattleScrCmdNames[] =
@@ -4025,4 +4026,8 @@ u32 CalcPrizeMoney(struct BattleSystem *bw, struct BattleStruct *sp, int trainer
     SetScriptVar(VAR_FIGHTS_WON, GetScriptVar(VAR_FIGHTS_WON) + 1);
 
     return PrizeMoney[trainerClass].multiplier;
+}
+
+u32 CalcMoneyLoss(struct Party *party, struct PlayerProfile *profile) {
+    return 0;
 }

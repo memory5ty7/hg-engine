@@ -757,11 +757,18 @@ scr_seq_0003_010:
     scrcmd_609
     lockall
     play_se SEQ_SE_DP_PC_ON
+    goto_if_unset FLAG_GOT_STARTER, noMonInParty
     call _0A18
     buffer_players_name 0
     npc_msg 33
     touchscreen_menu_hide
     goto _0A2E
+
+noMonInParty:
+    npc_msg 91
+    closemsg
+    releaseall
+    end    
 
 _0A18:
     scrcmd_500 90
@@ -779,11 +786,7 @@ _0A2E:
     buffer_players_name 0
     npc_msg 34
     menu_init_std_gmm 1, 1, 0, 1, VAR_SPECIAL_x8006
-    call_if_unset FLAG_SYS_MET_BILL, _0A78
-    call_if_set FLAG_SYS_MET_BILL, _0A82
-    menu_item_add 63, 255, 1
-    goto_if_set FLAG_GAME_CLEAR, _0A8C
-    goto_if_unset FLAG_GAME_CLEAR, _0AD1
+    menu_item_add 61, 255, 0
     goto _0AD1
     .byte 0x02, 0x00
 _0A78:
@@ -825,6 +828,7 @@ _0B17:
     menu_item_add 68, 77, 1
     menu_item_add 69, 78, 2
     menu_item_add 70, 79, 3
+    menu_item_add 71, 86, 6
     menu_item_add 72, 81, 5
     return
     .byte 0x46, 0x00, 0x47, 0x00, 0x50, 0x00, 0x04
@@ -837,7 +841,17 @@ _0B53:
     case 2, _0BC8
     case 3, _0BDB
     case 4, _0BEE
+    case 6, _healPokemon
     goto _0A2E
+
+_healPokemon:
+    fade_screen 6, 1, 0, RGB_BLACK
+    wait_fade
+    closemsg
+    play_fanfare SEQ_ME_ASA
+    wait_fanfare
+    heal_party
+    goto _0C01
 
 _0BA2:
     closemsg
