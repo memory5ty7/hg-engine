@@ -21,7 +21,7 @@
 #define TYPE_GHOST     7
 #define TYPE_STEEL     8
 #define TYPE_MYSTERY   9
-#define TYPE_FAIRY     9 // TODO: 17
+#define TYPE_FAIRY     9
 #define TYPE_FIRE     10
 #define TYPE_WATER    11
 #define TYPE_GRASS    12
@@ -31,7 +31,28 @@
 #define TYPE_DRAGON   16
 #define TYPE_DARK     17
 #define TYPE_TYPELESS 18
-#define TYPE_STELLAR  19 // TODO: 99
+#define TYPE_STELLAR  19
+
+#define TYPE_NORMAL_INTERNAL    0
+#define TYPE_FIGHTING_INTERNAL  1
+#define TYPE_FLYING_INTERNAL    2
+#define TYPE_POISON_INTERNAL    3
+#define TYPE_GROUND_INTERNAL    4
+#define TYPE_ROCK_INTERNAL      5
+#define TYPE_BUG_INTERNAL       6
+#define TYPE_GHOST_INTERNAL     7
+#define TYPE_STEEL_INTERNAL     8
+#define TYPE_FIRE_INTERNAL      9
+#define TYPE_WATER_INTERNAL    10
+#define TYPE_GRASS_INTERNAL    11
+#define TYPE_ELECTRIC_INTERNAL 12
+#define TYPE_PSYCHIC_INTERNAL  13
+#define TYPE_ICE_INTERNAL      14
+#define TYPE_DRAGON_INTERNAL   15
+#define TYPE_DARK_INTERNAL     16
+#define TYPE_FAIRY_INTERNAL    17
+#define TYPE_TYPELESS_INTERNAL 18
+#define TYPE_STELLAR_INTERNAL  99
 
 #define NUMBER_OF_MON_TYPES 20
 
@@ -1374,6 +1395,8 @@ struct PACKED BattleStruct {
                int numberOfTurnsClientHasCurrentAbility[CLIENT_MAX]; // idk it's probably not u8?
                u8 clientPriority[CLIENT_MAX];
                OnceOnlyAbilityFlags onceOnlyAbilityFlags[4][6];
+
+               BOOL gemBoostingMove;
 };
 
 enum {
@@ -1846,6 +1869,7 @@ enum {
     BEFORE_MOVE_STATE_MOVE_FAILURES_4_MULTIPLE_TARGETS,
     BEFORE_MOVE_STATE_MOVE_FAILURES_5,
     BEFORE_MOVE_STATE_AROMA_VEIL,
+    BEFORE_MOVE_STATE_GEM_ACTIVATION,
     BEFORE_MOVE_STATE_TRIGGER_STRONG_WINDS,
     BEFORE_MOVE_STATE_TERA_SHELL,
     BEFORE_MOVE_STATE_CONSUME_DAMAGE_REDUCING_BERRY,
@@ -3732,6 +3756,62 @@ void LONG_CALL BufferItemNameWithIndefArticle(u32 *msgFmt, u32 fieldno, u32 item
 
 int LONG_CALL MoveCheckDamageNegatingAbilities(struct BattleStruct *sp, int attacker, int defender);
 
+int LONG_CALL GetTypeEffectiveness(struct BattleSystem *bw, struct BattleStruct *sp, int attack_client, int defence_client, int move_type, u32 *flag);
+
+BOOL LONG_CALL CanItemBeRemovedFromSpecies(u16 species, u16 item);
+
+BOOL LONG_CALL CanItemBeRemovedFromClient(struct BattleStruct *ctx, u32 client);
+/**
+ *  @brief check if knock off can remove the defender's held item
+ *         does not count sticky hold and substitute because those still allow knock off's base power increase
+ *
+ *  @param sp global battle structure
+ *  @return TRUE if knock off can remove the mon's item; FALSE otherwise
+ */
+BOOL LONG_CALL CanKnockOffApply(struct BattleSystem *bw, struct BattleStruct *sp);
+
+/**
+ * @brief checks if the move index is a move that will hit with double power if target is minimized
+ * @param move move index to check
+ * @return TRUE/FALSE
+*/
+BOOL LONG_CALL IsMoveInMinimizeVulnerabilityMovesList(u16 move);
+
+BOOL LONG_CALL IsMonValidAndHealthy(struct PartyPokemon *mon);
+
+// https://x.com/Sibuna_Switch/status/1753849078943723899
+// https://www.youtube.com/watch?v=bLS2WyCaDIM
+// TODO: come back here after implementing Raids
+#define I_AM_TERAPAGOS_AND_I_NEED_TO_KO_CARMINES_SINISTCHA(bsys, ctx, attacker) (FALSE)
+
+typedef struct TrainerData {
+    /*000*/ u8 trainerType;
+    /*001*/ u8 trainerClass;
+    /*002*/ u8 unk_2;
+    /*003*/ u8 npoke;
+    /*004*/ u16 items[4];
+    /*00C*/ u32 aiFlags;
+    /*010*/ u32 doubleBattle;
+} TrainerData;
+
+typedef struct Trainer {
+    struct TrainerData data;
+    /*014*/ u16 name[7 + 1];
+    // Used in the Frontier
+    /*024*/ PMS_DATA winMessage;
+    /*02C*/ PMS_DATA loseMessage;
+} Trainer; // size=0x34
+
+Trainer LONG_CALL *BattleSystem_GetTrainer(struct BattleSystem *bsys, int battlerId);
+
+/**
+ * @brief checks if the current move hits any oppsoing battler or ally
+ * @param sp global battle structure
+ * @return TRUE/FALSE
+*/
+BOOL LONG_CALL IsAnyBattleMonHit(struct BattleStruct* ctx);
+
+int GetSanitisedType(int type);
 int LONG_CALL PokeParty_GetPokeCount(const struct Party *party);
 
 #endif // BATTLE_H

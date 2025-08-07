@@ -226,98 +226,426 @@ int UNUSED CalcBaseDamage(void *bw, struct BattleStruct *sp, int moveno, u32 sid
         return 0;
     }
 
+    
+    //=====Step 1. Custom BP=====
 
-    if (pow == 0)
-        movepower = sp->moveTbl[moveno].power;
-    else
-        movepower = pow;
+    movepower = sp->moveTbl[moveno].power;
 
-    // get the type
-    movetype = GetAdjustedMoveType(sp, attacker, moveno);
-    movepower = movepower * sp->damage_value / 10;
+    // TODO: Check if there are any moves not ported yet 
+    // if (pow == 0) {
+    //     debug_printf("First case\n");
+    //     movepower = sp->moveTbl[moveno].power;
+    // } else {
+    //     debug_printf("Second case\n");
+    //     movepower = pow;
+    // }
 
-    // handle charge
-    if ((sp->battlemon[attacker].effect_of_moves & MOVE_EFFECT_FLAG_CHARGE) && (movetype == TYPE_ELECTRIC))
-        movepower *= 2;
-
-    // handle helping hand
-    if (sp->oneTurnFlag[attacker].helping_hand_flag)
-        movepower = movepower * 15 / 10;
-
-    // handle technician
-    if ((AttackingMon.ability == ABILITY_TECHNICIAN) && (moveno != MOVE_STRUGGLE) && (movepower <= 60))
-        movepower = movepower * 15 / 10;
-
-    movesplit = GetMoveSplit(sp, moveno);
-
-    // handle huge power + pure power
-    if ((AttackingMon.ability == ABILITY_HUGE_POWER) || (AttackingMon.ability == ABILITY_PURE_POWER))
-        attack = attack * 2;
-
-    // handle slow start
-    if ((AttackingMon.ability == ABILITY_SLOW_START)
-     && ((BattleWorkMonDataGet(bw, sp, 3, 0) - BattlePokemonParamGet(sp, attacker, BATTLE_MON_DATA_SLOW_START_COUNTER, NULL)) < 5))
-        attack /= 2;
-
-    // handle defeatist
-    if ((AttackingMon.ability == ABILITY_DEFEATIST) && (AttackingMon.hp <= AttackingMon.maxhp / 2))
-    {
-        attack /= 2;
-        sp_attack /= 2;
-    }
-
-    //handle analytic
-    if (AttackingMon.ability == ABILITY_ANALYTIC)
-    {
-        for (i = 0; i < 4; i++)
-        {
-            if (attacker != i && sp->battlemon[i].hp != 0 && CalcSpeed(bw, sp, attacker, i, 0) == 0)
-            {
-                break;
+    switch (moveno) {
+    // Speed-based
+    case MOVE_GYRO_BALL:
+        if (AttackingMon.speed == 0) {
+            movepower = 1;
+        } else {
+            movepower = (25 * DefendingMon.speed) / AttackingMon.speed;
+            movepower = movepower > 150 ? 150 : movepower;
+        }
+        break;
+    case MOVE_ELECTRO_BALL:
+        if (DefendingMon.speed == 0) {
+            movepower = 40;
+        } else {
+            switch (AttackingMon.speed / DefendingMon.speed) {
+                case 0:
+                    movepower = 40;
+                    break;
+                case 1:
+                    movepower = 60;
+                    break;
+                case 2:
+                    movepower = 80;
+                    break;
+                case 3:
+                    movepower = 120;
+                    break;
+                // 4 or higher
+                default:
+                    movepower = 150;
+                    break;
             }
         }
-        if (i == 4)
-        {
-            movepower = movepower * 130 / 100;
+        break;
+    // Weight-based
+    case MOVE_LOW_KICK:
+    case MOVE_GRASS_KNOT:
+        while (sLowKickWeightToPower[i][0] != 0xFFFF) {
+            if (sLowKickWeightToPower[i][0] >= DefendingMon.weight) {
+                break;
+            }
+            i++;
         }
 
+        if (sLowKickWeightToPower[i][0] != 0xFFFF) {
+            movepower = sLowKickWeightToPower[i][1];
+        } else {
+            movepower = 120;
+        }
+        break;
+    case MOVE_HEAVY_SLAM:
+    case MOVE_HEAT_CRASH:
+        switch (AttackingMon.weight / DefendingMon.weight) {
+            case 2:
+                movepower = 60;
+                break;
+            case 3:
+                movepower = 80;
+                break;
+            case 4:
+                movepower = 100;
+                break;
+            case 5:
+                movepower = 120;
+                break;
+            // less than 2
+            default:
+                movepower = 40;
+                break;
+        }
+        break;
+    // HP-based
+    case MOVE_ERUPTION:
+    case MOVE_WATER_SPOUT:
+        movepower = (150 * AttackingMon.hp) / AttackingMon.maxhp;
+        break;
+    case MOVE_FLAIL:
+        p = (48 * AttackingMon.hp) / AttackingMon.maxhp;
+        if (p >= 32) {
+            movepower = 20;
+            break;
+        }
+        if (p >= 17) {
+            movepower = 40;
+            break;
+        }
+        if (p >= 10) {
+            movepower = 80;
+            break;
+        }
+        if (p >= 5) {
+            movepower = 100;
+            break;
+        }
+        if (p >= 2) {
+            movepower = 150;
+            break;
+        }
+        if (p <= 1) {
+            movepower = 200;
+            break;
+        }
+        break;
+    case MOVE_CRUSH_GRIP:
+    case MOVE_WRING_OUT:
+        // TODO: Check correctness
+        movepower = QMul_RoundDown(120 * 100, (DefendingMon.hp * 4096) / DefendingMon.maxhp) / 100;
+        break;
+    // Happiness-based
+    case MOVE_RETURN:
+        movepower = AttackingMon.happiness * 10 / 25;
+        break;
+    case MOVE_FRUSTRATION:
+        movepower = (255 - AttackingMon.happiness) * 10 / 25;
+        break;
+    // Counter-based
+    case MOVE_FURY_CUTTER:
+        for (int n = 0; n < sp->battlemon[attacker].moveeffect.furyCutterCount; n++) {
+            movepower *= 2;
+        }
+        break;
+    case MOVE_ROLLOUT:
+    case MOVE_ICE_BALL:
+        // TODO: Handle Rollout storage, need to hook `BtlCmd_CalcRolloutPower`
+        // For now we use the Gen 4 implementation which is basically the same
+        // Edit: Rollout storage seems to be patched
+
+        for (int n = 0; n < 5 - sp->battlemon[attacker].moveeffect.rolloutCount; n++) {
+            movepower *= 2;
+        }
+        break;
+    case MOVE_SPIT_UP:
+        if (sp->oneTurnFlag[attacker].parental_bond_flag == 2 && sp->battlemon[attacker].ability == ABILITY_PARENTAL_BOND) {
+            movepower = sp->damage_power;
+        } else {
+            movepower = 100 * sp->battlemon[attacker].moveeffect.stockpileCount;
+        }
+        break;
+    // Stat boosts-based
+    case MOVE_PUNISHMENT:
+        for (int stat = 0; stat < 8; stat++) {
+            if (sp->battlemon[defender].states[stat] > 6) {
+                positiveStatBoosts += sp->battlemon[defender].states[stat] - 6;
+            }
+        }
+        movepower = 60 + 20 * positiveStatBoosts;
+        movepower = movepower > 200 ? 200 : movepower;
+        break;
+    case MOVE_STORED_POWER:
+        for (int stat = 0; stat < 8; stat++) {
+            if (sp->battlemon[attacker].states[stat] > 6) {
+                positiveStatBoosts += sp->battlemon[attacker].states[stat] - 6;
+            }
+        }
+        movepower = 20 + 20 * positiveStatBoosts;
+        break;
+    // Dichotomous Base Power
+    case MOVE_ACROBATICS:
+        if (GetBattleMonItem(sp, attacker) == ITEM_NONE) {
+            movepower *= 2;
+        }
+        break;
+    case MOVE_ASSURANCE:
+    case MOVE_REVENGE:
+        if (sp->oneTurnFlag[defender].assuranceDamage) {
+            movepower *= 2;
+        }
+        break;
+    case MOVE_WATER_PLEDGE:
+    case MOVE_FIRE_PLEDGE:
+    case MOVE_GRASS_PLEDGE:
+        // TODO
+        break;
+    case MOVE_GUST:
+    case MOVE_TWISTER:
+        // TODO: handle charging turn of Sky Drop
+        if (sp->battlemon[defender].effect_of_moves & MOVE_EFFECT_FLAG_FLYING_IN_AIR) {
+            movepower *= 2;
+        }
+        break;
+    case MOVE_HEX:
+        if (sp->battlemon[defender].condition & STATUS_ALL) {
+            movepower *= 2;
+        }
+        break;
+    case MOVE_PAYBACK:
+        // TODO: Check correctness
+        if (sp->playerActions[defender][0] == CONTROLLER_COMMAND_40) {
+            movepower *= 2;
+        }
+        break;
+    case MOVE_PURSUIT:
+        // TODO: Handle this massive headache later
+        movepower = movepower * sp->damage_value / 10;
+        break;
+    case MOVE_ROUND:
+        // TODO: Implement Round
+        break;
+    case MOVE_SMELLING_SALTS:
+        if (sp->battlemon[defender].condition & STATUS_PARALYSIS) {
+            movepower *= 2;
+        }
+        break;
+    case MOVE_STOMPING_TANTRUM:
+        // TODO: Implement Stomping Tantrum
+        break;
+    case MOVE_WAKE_UP_SLAP:
+        if (sp->battlemon[defender].condition & STATUS_SLEEP) {
+            movepower *= 2;
+        }
+        break;
+    case MOVE_WEATHER_BALL:
+        if (!CheckSideAbility(bw, sp, CHECK_ABILITY_ALL_HP, 0, ABILITY_CLOUD_NINE)
+        && !CheckSideAbility(bw, sp, CHECK_ABILITY_ALL_HP, 0, ABILITY_AIR_LOCK)) {
+            if ((sp->field_condition & FIELD_CONDITION_WEATHER)
+            && !(sp->field_condition & (WEATHER_STRONG_WINDS | WEATHER_SNOW_ANY))) {
+                movepower *= 2;
+            }
+        }
+        break;
+    case MOVE_WATER_SHURIKEN:
+        if (sp->battlemon[sp->attack_client].species == SPECIES_GRENINJA
+            && sp->battlemon[sp->attack_client].form_no == 1) {
+            movepower = 20;
+        }
+        break;
+    case MOVE_BOLT_BEAK:
+        // https://www.smogon.com/forums/threads/sword-shield-battle-mechanics-research.3655528/post-8433978
+        break;
+    case MOVE_FISHIOUS_REND:
+        // https://www.smogon.com/forums/threads/sword-shield-battle-mechanics-research.3655528/post-8433978
+        break;
+    case MOVE_RISING_VOLTAGE:
+        if ((sp->terrainOverlay.numberOfTurnsLeft > 0) && (sp->terrainOverlay.type == ELECTRIC_TERRAIN)) {
+            movepower = 140;
+        }
+        break;
+    // Item-based
+    case MOVE_FLING:
+        // TODO: test Parental Bond interaction
+        movepower = sp->damage_power;
+        break;
+    case MOVE_NATURAL_GIFT:
+        movepower = sp->damage_power;
+        break;
+    // Other
+    case MOVE_BEAT_UP:
+        for (int i = sp->beat_up_count; i < Battle_GetClientPartySize(bw, sp->attack_client); i++) {
+            struct PartyPokemon *mon = Battle_GetClientPartyMon(bw, sp->attack_client, i);
+            if ((IsMonValidAndHealthy(mon))) {
+
+                sp->beat_up_count = i + 1;
+                sp->multiHitCountTemp++;
+                int species = GetMonData(mon, MON_DATA_SPECIES, 0);
+                int form = GetMonData(mon, MON_DATA_FORM, 0);
+                movepower = 5 + (PokeFormNoPersonalParaGet(species, form, PERSONAL_BASE_ATTACK) / 10);
+                break;
+
+            }
+        }
+
+        break;
+    case MOVE_ECHOED_VOICE:
+        // TODO
+        break;
+    case MOVE_HIDDEN_POWER:
+        movepower = 60;
+        break;
+    case MOVE_MAGNITUDE:
+        // TODO: check correctness
+        movepower = sp->magnitude;
+        break;
+    case MOVE_PRESENT:
+        movepower = sp->damage_power;
+        break;
+    case MOVE_TRIPLE_KICK:
+        movepower = sp->damage_power;
+        break;
+    case MOVE_TRUMP_CARD:
+        movepower = sp->damage_power;
+        break;
+    default:
+        break;
     }
 
-    // handle sheer force
-    if (AttackingMon.ability == ABILITY_SHEER_FORCE && sp->battlemon[attacker].sheer_force_flag == 1)
-    {
-        movepower = movepower * 130 / 100;
+    sp->damage_power = movepower;
+    movetype = GetAdjustedMoveType(sp, attacker, moveno);
+
+    // TODO: Check if there are any moves not ported yet 
+    // movepower = movepower * sp->damage_value / 10;
+
+#ifdef DEBUG_DAMAGE_CALC
+    debug_printf("\n=================\n");
+    debug_printf("[CalcBaseDamage] Step 1. Custom BP\n");
+    debug_printf("[CalcBaseDamage] moveno: %d\n", moveno);
+    debug_printf("[CalcBaseDamage] movepower: %d\n", movepower);
+#endif
+
+    //=====End of Step 1=====
+
+    //=====Step 2. Base Power Modifiers=====
+
+    SortRawSpeedNonRNGArray(bw, sp);
+
+    // Z-move effects:
+
+    // Move effects:
+
+    // handle Helping Hand (+5 priority)
+    // TODO: Handle multiple Helping Hand boosts
+    if (sp->oneTurnFlag[attacker].helping_hand_flag) {
+        basePowerModifier = QMul_RoundUp(basePowerModifier, UQ412__1_5);
     }
 
-    // handle punk rock
-    if (AttackingMon.ability == ABILITY_PUNK_ROCK && IsMoveSoundBased(sp->current_move_index))
-    {
-        movepower = movepower * 130 / 100;
+    switch (moveno) {
+        case MOVE_FACADE:
+            if ((AttackingMon.condition & STATUS_FACADE_BOOST)) {
+                basePowerModifier = QMul_RoundUp(basePowerModifier, UQ412__2_0);
+            }
+            break;
+        case MOVE_BRINE:
+            if (DefendingMon.hp <= DefendingMon.maxhp / 2) {
+                basePowerModifier = QMul_RoundUp(basePowerModifier, UQ412__2_0);
+            }
+            break;
+        case MOVE_KNOCK_OFF:
+            if (CanKnockOffApply(bw, sp)) {
+                basePowerModifier = QMul_RoundUp(basePowerModifier, UQ412__1_5);
+            }
+            break;
+        case MOVE_VENOSHOCK:
+            if (DefendingMon.condition &STATUS_POISON_ALL) {
+                basePowerModifier = QMul_RoundUp(basePowerModifier, UQ412__2_0);
+            }
+            break;
+        case MOVE_RETALIATE:
+            // TODO
+            break;
+        case MOVE_FUSION_FLARE:
+            // TODO
+            break;
+        case MOVE_FUSION_BOLT:
+            // TODO
+            break;
+        case MOVE_GRAV_APPLE:
+            // https://www.smogon.com/forums/threads/sword-shield-battle-mechanics-research.3655528/post-8870357
+            if ((sp->field_condition & FIELD_STATUS_GRAVITY)) {
+                basePowerModifier = QMul_RoundUp(basePowerModifier, UQ412__1_5);
+            }
+            break;
+        case MOVE_EXPANDING_FORCE:
+            // https://www.smogon.com/forums/threads/sword-shield-battle-mechanics-research.3655528/post-8520635
+            if ((sp->terrainOverlay.numberOfTurnsLeft > 0) && (sp->terrainOverlay.type == MISTY_TERRAIN)) {
+                basePowerModifier = QMul_RoundUp(basePowerModifier, UQ412__1_5);
+            }
+            break;
+        case MOVE_MISTY_EXPLOSION:
+            // https://www.smogon.com/forums/threads/sword-shield-battle-mechanics-research.3655528/post-8520635
+            if ((sp->terrainOverlay.numberOfTurnsLeft > 0) && (sp->terrainOverlay.type == MISTY_TERRAIN)) {
+                basePowerModifier = QMul_RoundUp(basePowerModifier, UQ412__1_5);
+            }
+            break;
+        case MOVE_LASH_OUT:
+            // https://www.smogon.com/forums/threads/sword-shield-battle-mechanics-research.3655528/post-8870357
+            // TODO
+            if (FALSE) {
+                basePowerModifier = QMul_RoundUp(basePowerModifier, UQ412__2_0);
+            }
+            break;
+        
+
+        default:
+            break;
     }
 
+    // Effects relative to a particular slot of the field (Wish, Lunar Dance, Future Sight, etc.):
 
-    // type boosting held items
-    {
-        u8 element[2] = {AttackingMon.item_held_effect, movetype};
-        if (IsElementInArray(HeldItemPowerUpTable, element, NELEMS(HeldItemPowerUpTable), sizeof(element)))
-        {
-            movepower = movepower * (100 + AttackingMon.item_power) / 100;
+    // handle Charge
+    if ((sp->battlemon[attacker].effect_of_moves & MOVE_EFFECT_FLAG_CHARGE)
+    && (movetype == TYPE_ELECTRIC)) {
+        basePowerModifier = QMul_RoundUp(basePowerModifier, UQ412__2_0);
+    }
+
+    // handle Me First
+    if (sp->battlemon[sp->attack_client].moveeffect.meFirstFlag) {
+        if (sp->me_first_total_turns == sp->battlemon[sp->attack_client].moveeffect.meFirstCount) {
+            sp->battlemon[sp->attack_client].moveeffect.meFirstCount--;
+        }
+
+        if ((sp->me_first_total_turns - sp->battlemon[sp->attack_client].moveeffect.meFirstCount) < 2) {
+            basePowerModifier = QMul_RoundUp(basePowerModifier, UQ412__1_5);
+        } else {
+            sp->battlemon[sp->attack_client].moveeffect.meFirstFlag = 0;
         }
     }
-    // handle choice band
-    if (AttackingMon.item_held_effect == HOLD_EFFECT_CHOICE_ATK)
-        attack = attack * 150 / 100;
 
-    // handle choice specs
-    if (AttackingMon.item_held_effect == HOLD_EFFECT_CHOICE_SPATK)
-        sp_attack = sp_attack * 150 / 100;
+    // Effects relative to a particular side of the field (Tailwind, Safeguard, Pledge combo effects, Wide Guard, etc.):
 
-    // handle soul dew - gen 7 changes it to just boost movepower if the type is dragon or psychic, no more defense boost
-    if ((AttackingMon.item_held_effect == HOLD_EFFECT_LATI_SPECIAL)
-     && ((AttackingMon.species == SPECIES_LATIOS) || (AttackingMon.species == SPECIES_LATIAS))
-     && (movetype == TYPE_DRAGON || movetype == TYPE_PSYCHIC))
-    {
-        movepower = movepower * 120 / 100; // 4915/4096
+    // Field effects (weather conditions, Terrains, Imprison, Ion Deluge, Magic Room, Gravity, etc.):
+
+    if ((CheckSideAbility(bw, sp, CHECK_ABILITY_ALL_HP, 0, ABILITY_CLOUD_NINE) == 0)
+    && (CheckSideAbility(bw, sp, CHECK_ABILITY_ALL_HP, 0, ABILITY_AIR_LOCK) == 0)) {
+        if ((field_cond & (FIELD_STATUS_FOG | WEATHER_HAIL_ANY | WEATHER_SANDSTORM_ANY | WEATHER_RAIN_ANY | WEATHER_SNOW_ANY))
+        && (moveno == MOVE_SOLAR_BEAM || moveno == MOVE_SOLAR_BLADE)) {
+            basePowerModifier = QMul_RoundUp(basePowerModifier, UQ412__0_5);
+        }
     }
 
     // handle deep sea tooth
@@ -518,88 +846,138 @@ int UNUSED CalcBaseDamage(void *bw, struct BattleStruct *sp, int moveno, u32 sid
         defense *= 2;
     }
 
-    // handle mud/water sport
-    if ((movetype == TYPE_ELECTRIC) && (CheckFieldMoveEffect(bw, sp, MOVE_EFFECT_FLAG_MUD_SPORT)))
-    {
-        movepower /= 3;
+    // Items:
+
+    for (i = 0; i < maxBattlers; i++) {
+        if (attacker == sp->rawSpeedNonRNGClientOrder[i]) {
+            // Handle Muscle Band
+            if ((AttackingMon.item_held_effect == HOLD_EFFECT_POWER_UP_PHYS) && (movesplit == SPLIT_PHYSICAL)) {
+                basePowerModifier = QMul_RoundUp(basePowerModifier, UQ412__1_1);
+                continue;
+            }
+
+            if ((AttackingMon.item_held_effect == HOLD_EFFECT_POWER_UP_SPEC) && (movesplit == SPLIT_SPECIAL)) {
+                basePowerModifier = QMul_RoundUp(basePowerModifier, UQ412__1_1);
+                continue;
+            }
+
+            // type boosting held items
+            {
+                u8 element[2] = {AttackingMon.item_held_effect, movetype};
+                if (IsElementInArray(HeldItemPowerUpTable, element, NELEMS(HeldItemPowerUpTable), sizeof(element))) {
+                    basePowerModifier = QMul_RoundUp(basePowerModifier, UQ412__1_2);
+                    continue;
+                }
+            }
+
+            // handle Adamant Orb
+            if ((AttackingMon.item_held_effect == HOLD_EFFECT_DIALGA_BOOST)
+            && ((movetype == TYPE_DRAGON) || (movetype == TYPE_STEEL))
+            && (AttackingMon.species == SPECIES_DIALGA)) {
+                basePowerModifier = QMul_RoundUp(basePowerModifier, UQ412__1_2);
+                continue;
+            }
+
+            // handle Lustrous Orb
+            if ((AttackingMon.item_held_effect == HOLD_EFFECT_PALKIA_BOOST)
+            && ((movetype == TYPE_DRAGON) || (movetype == TYPE_WATER))
+            && (AttackingMon.species == SPECIES_PALKIA)) {
+                basePowerModifier = QMul_RoundUp(basePowerModifier, UQ412__1_2);
+                continue;
+            }
+
+            // handle Griseous Orb
+            if ((AttackingMon.item_held_effect == HOLD_EFFECT_GIRATINA_BOOST)
+            && ((movetype == TYPE_DRAGON) || (movetype == TYPE_GHOST))
+            && (AttackingMon.species == SPECIES_GIRATINA)) {
+                basePowerModifier = QMul_RoundUp(basePowerModifier, UQ412__1_2);
+                continue;
+            }
+
+            // handle Adamant Crystal, lustrous globe & griseous core
+            if ((AttackingMon.item_held_effect == HOLD_EFFECT_DIALGA_BOOST_AND_TRANSFORM)
+            && ((movetype == TYPE_DRAGON) || (movetype == TYPE_STEEL))
+            && (AttackingMon.species == SPECIES_DIALGA)) {
+                basePowerModifier = QMul_RoundUp(basePowerModifier, UQ412__1_2);
+                continue;
+            }
+
+            // handle Lustrous Globe
+            if ((AttackingMon.item_held_effect == HOLD_EFFECT_PALKIA_BOOST_AND_TRANSFORM) 
+            && ((movetype == TYPE_DRAGON) || (movetype == TYPE_WATER))
+            && (AttackingMon.species == SPECIES_PALKIA)) {
+                basePowerModifier = QMul_RoundUp(basePowerModifier, UQ412__1_2);
+                continue;
+            }
+
+            // handle Griseous Core
+            if ((AttackingMon.item_held_effect == HOLD_EFFECT_GIRATINA_BOOST_AND_TRANSFORM)
+            && ((movetype == TYPE_DRAGON) || (movetype == TYPE_GHOST))
+            && (AttackingMon.species == SPECIES_GIRATINA)) {
+                basePowerModifier = QMul_RoundUp(basePowerModifier, UQ412__1_2);
+                continue;
+            }
+
+            // handle Soul Dew
+            if ((AttackingMon.item_held_effect == HOLD_EFFECT_LATI_SPECIAL)
+            && ((AttackingMon.species == SPECIES_LATIOS) || (AttackingMon.species == SPECIES_LATIAS))
+            && (movetype == TYPE_DRAGON || movetype == TYPE_PSYCHIC)) {
+                basePowerModifier = QMul_RoundUp(basePowerModifier, UQ412__1_2);
+                continue;
+            }
+
+            // handle Gems
+            if (sp->gemBoostingMove) {
+                basePowerModifier = QMul_RoundUp(basePowerModifier, UQ412__1_3);
+                continue;
+            }
+
+            // handle Punching Glove
+            if ((AttackingMon.item_held_effect == HOLD_EFFECT_INCREASE_PUNCHING_MOVE_DMG) && IsElementInArray(PunchingMovesTable, (u16 *)&moveno, NELEMS(PunchingMovesTable), sizeof(PunchingMovesTable[0]))) {
+                basePowerModifier = QMul_RoundUp(basePowerModifier, UQ412__1_1_BUT_HIGHER);
+                continue;
+            }
+
+            // handle Wellspring Mask
+            if ((AttackingMon.item_held_effect == HOLD_EFFECT_WELLSPRING_MASK)
+            && (AttackingMon.species == SPECIES_OGERPON)
+            && (AttackingMon.form == 1 || AttackingMon.form == 5)) {
+                basePowerModifier = QMul_RoundUp(basePowerModifier, UQ412__1_2);
+                continue;
+            }
+
+            // handle Hearthflame Mask
+            if ((AttackingMon.item_held_effect == HOLD_EFFECT_HEARTHFLAME_MASK)
+            && (AttackingMon.species == SPECIES_OGERPON)
+            && (AttackingMon.form == 2 || AttackingMon.form == 6)) {
+                basePowerModifier = QMul_RoundUp(basePowerModifier, UQ412__1_2);
+                continue;
+            }
+
+            // handle Cornerstone Mask
+            if ((AttackingMon.item_held_effect == HOLD_EFFECT_CORNERSTONE_MASK)
+            && (AttackingMon.species == SPECIES_OGERPON)
+            && (AttackingMon.form == 3 || AttackingMon.form == 7)) {
+                basePowerModifier = QMul_RoundUp(basePowerModifier, UQ412__1_2);
+                continue;
+            }
+        }
+        
     }
+    
+    // Stall (the ability):
 
-    if ((movetype == TYPE_FIRE) && (CheckFieldMoveEffect(bw, sp, MOVE_EFFECT_FLAG_WATER_SPORT)))
-    {
-        movepower /= 3;
-    }
+    // Apply the chained modifier to the starting base power. That is, multiply the starting base power by the chained base power modifiers, divide by 4096, and pokeRound the result. If the base power would now be less than 1, make it 1. Finally, if the base power is greater than 65,535, make it the the current base power modulo 65,536 (BP % 65536).
 
-    // handle "in a pinch" type boosters
-    if ((movetype == TYPE_GRASS) && (AttackingMon.ability == ABILITY_OVERGROW) && (AttackingMon.hp <= AttackingMon.maxhp * 10 / 30))
-    {
-        movepower = movepower * 150 / 100;
-    }
+    movepower = QMul_RoundDown(movepower, basePowerModifier);
+    movepower = movepower < 1 ? 1 : movepower;
+    movepower = movepower % 65536;
 
-    if ((movetype == TYPE_FIRE) && (AttackingMon.ability == ABILITY_BLAZE) && (AttackingMon.hp <= AttackingMon.maxhp * 10 / 30))
-    {
-        movepower = movepower * 150 / 100;
-    }
-
-    if ((movetype == TYPE_WATER) && (AttackingMon.ability == ABILITY_TORRENT) && (AttackingMon.hp <= AttackingMon.maxhp * 10 / 30))
-    {
-        movepower = movepower * 150 / 100;
-    }
-
-    if ((movetype == TYPE_BUG) && (AttackingMon.ability == ABILITY_SWARM) && (AttackingMon.hp <= AttackingMon.maxhp * 10 / 30))
-    {
-        movepower = movepower * 150 / 100;
-    }
-
-    // handle ice scales - halve damage if move is special, regardless of if it uses defense stat
-    if (MoldBreakerAbilityCheck(sp, attacker, defender, ABILITY_ICE_SCALES) == TRUE && movesplit == SPLIT_SPECIAL)
-    {
-        movepower /= 2;
-    }
-
-    // handle steelworker
-    if (AttackingMon.ability == ABILITY_STEELWORKER && (movetype == TYPE_STEEL))
-    {
-        movepower = movepower * 150 / 100;
-    }
-
-    // handle dragon's maw
-    if (AttackingMon.ability == ABILITY_DRAGONS_MAW && (movetype == TYPE_DRAGON))
-    {
-        movepower = movepower * 150 / 100;
-    }
-
-    // handle transistor
-    if (AttackingMon.ability == ABILITY_TRANSISTOR && (movetype == TYPE_ELECTRIC))
-    {
-        movepower = movepower * 130 / 100;
-    }
-
-    // handle rocky payload
-    if (AttackingMon.ability == ABILITY_ROCKY_PAYLOAD && (movetype == TYPE_ROCK))
-    {
-        movepower = movepower * 150 / 100;
-    }
-
-    // if dark aura is present but not aura break
-    if ((movetype == TYPE_DARK) && (CheckSideAbility(bw, sp, CHECK_ABILITY_ALL_HP, 0, ABILITY_DARK_AURA) != 0)
-      && (CheckSideAbility(bw, sp, CHECK_ABILITY_ALL_HP, 0, ABILITY_AURA_BREAK) == 0))
-        movepower = movepower * 133 / 100;
-
-    // if dark aura is present AND aura break
-    else if ((movetype == TYPE_DARK) && (CheckSideAbility(bw, sp, CHECK_ABILITY_ALL_HP, 0, ABILITY_DARK_AURA) != 0)
-      && (CheckSideAbility(bw, sp, CHECK_ABILITY_ALL_HP, 0, ABILITY_AURA_BREAK) != 0))
-        movepower = movepower * 100 / 133;
-
-#if FAIRY_TYPE_IMPLEMENTED == 1
-    // if FAIRY aura is present but not aura break
-    if ((movetype == TYPE_FAIRY) && (CheckSideAbility(bw, sp, CHECK_ABILITY_ALL_HP, 0, ABILITY_FAIRY_AURA) != 0)
-      && (CheckSideAbility(bw, sp, CHECK_ABILITY_ALL_HP, 0, ABILITY_AURA_BREAK) == 0))
-        movepower = movepower * 133 / 100;
-
-    // if FAIRY aura is present AND aura break
-    else if ((movetype == TYPE_FAIRY) && (CheckSideAbility(bw, sp, CHECK_ABILITY_ALL_HP, 0, ABILITY_FAIRY_AURA) != 0)
-      && (CheckSideAbility(bw, sp, CHECK_ABILITY_ALL_HP, 0, ABILITY_AURA_BREAK) != 0))
-        movepower = movepower * 100 / 133;
+#ifdef DEBUG_DAMAGE_CALC
+    debug_printf("\n=================\n");
+    debug_printf("[CalcBaseDamage] Step 2. Base Power Modifiers\n");
+    debug_printf("[CalcBaseDamage] basePowerModifier: %d\n", basePowerModifier);
+    debug_printf("[CalcBaseDamage] movepower: %d\n", movepower);
 #endif
 
     // handle steely spirit for the ally

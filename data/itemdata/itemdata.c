@@ -42913,9 +42913,9 @@ const ITEMDATA __data[] =
 
 [ITEM_NORMAL_GEM - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
-    .price = 0,
-    .holdEffect = 0,
-    .holdEffectParam = 0,
+    .price = 200,
+    .holdEffect = HOLD_EFFECT_POWERING_UP_MOVE_ONCE,
+    .holdEffectParam = TYPE_NORMAL,
     .pluckEffect = 0,
     .flingEffect = 0,
     .flingPower = 30,
@@ -42978,9 +42978,9 @@ const ITEMDATA __data[] =
 
 [ITEM_FIGHTING_GEM - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
-    .price = 0,
-    .holdEffect = 0,
-    .holdEffectParam = 0,
+    .price = 200,
+    .holdEffect = HOLD_EFFECT_POWERING_UP_MOVE_ONCE,
+    .holdEffectParam = TYPE_FIGHTING,
     .pluckEffect = 0,
     .flingEffect = 0,
     .flingPower = 30,
@@ -43043,9 +43043,9 @@ const ITEMDATA __data[] =
 
 [ITEM_FLYING_GEM - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
-    .price = 0,
-    .holdEffect = 0,
-    .holdEffectParam = 0,
+    .price = 200,
+    .holdEffect = HOLD_EFFECT_POWERING_UP_MOVE_ONCE,
+    .holdEffectParam = TYPE_FLYING,
     .pluckEffect = 0,
     .flingEffect = 0,
     .flingPower = 30,
@@ -43108,9 +43108,9 @@ const ITEMDATA __data[] =
 
 [ITEM_POISON_GEM - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
-    .price = 0,
-    .holdEffect = 0,
-    .holdEffectParam = 0,
+    .price = 200,
+    .holdEffect = HOLD_EFFECT_POWERING_UP_MOVE_ONCE,
+    .holdEffectParam = TYPE_POISON,
     .pluckEffect = 0,
     .flingEffect = 0,
     .flingPower = 30,
@@ -43173,9 +43173,9 @@ const ITEMDATA __data[] =
 
 [ITEM_GROUND_GEM - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
-    .price = 0,
-    .holdEffect = 0,
-    .holdEffectParam = 0,
+    .price = 200,
+    .holdEffect = HOLD_EFFECT_POWERING_UP_MOVE_ONCE,
+    .holdEffectParam = TYPE_GROUND,
     .pluckEffect = 0,
     .flingEffect = 0,
     .flingPower = 30,
@@ -43238,9 +43238,9 @@ const ITEMDATA __data[] =
 
 [ITEM_ROCK_GEM - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
-    .price = 0,
-    .holdEffect = 0,
-    .holdEffectParam = 0,
+    .price = 200,
+    .holdEffect = HOLD_EFFECT_POWERING_UP_MOVE_ONCE,
+    .holdEffectParam = TYPE_ROCK,
     .pluckEffect = 0,
     .flingEffect = 0,
     .flingPower = 30,
@@ -43303,9 +43303,9 @@ const ITEMDATA __data[] =
 
 [ITEM_BUG_GEM - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
-    .price = 0,
-    .holdEffect = 0,
-    .holdEffectParam = 0,
+    .price = 200,
+    .holdEffect = HOLD_EFFECT_POWERING_UP_MOVE_ONCE,
+    .holdEffectParam = TYPE_BUG,
     .pluckEffect = 0,
     .flingEffect = 0,
     .flingPower = 30,
@@ -43368,9 +43368,9 @@ const ITEMDATA __data[] =
 
 [ITEM_GHOST_GEM - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
-    .price = 0,
-    .holdEffect = 0,
-    .holdEffectParam = 0,
+    .price = 200,
+    .holdEffect = HOLD_EFFECT_POWERING_UP_MOVE_ONCE,
+    .holdEffectParam = TYPE_GHOST,
     .pluckEffect = 0,
     .flingEffect = 0,
     .flingPower = 30,
@@ -43433,9 +43433,9 @@ const ITEMDATA __data[] =
 
 [ITEM_STEEL_GEM - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
-    .price = 0,
-    .holdEffect = 0,
-    .holdEffectParam = 0,
+    .price = 200,
+    .holdEffect = HOLD_EFFECT_POWERING_UP_MOVE_ONCE,
+    .holdEffectParam = TYPE_STEEL,
     .pluckEffect = 0,
     .flingEffect = 0,
     .flingPower = 30,
@@ -43498,9 +43498,9 @@ const ITEMDATA __data[] =
 
 [ITEM_FIRE_GEM - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
-    .price = 0,
-    .holdEffect = 0,
-    .holdEffectParam = 0,
+    .price = 200,
+    .holdEffect = HOLD_EFFECT_POWERING_UP_MOVE_ONCE,
+    .holdEffectParam = TYPE_FIRE,
     .pluckEffect = 0,
     .flingEffect = 0,
     .flingPower = 30,
@@ -43563,9 +43563,9 @@ const ITEMDATA __data[] =
 
 [ITEM_WATER_GEM - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
-    .price = 0,
-    .holdEffect = 0,
-    .holdEffectParam = 0,
+    .price = 200,
+    .holdEffect = HOLD_EFFECT_POWERING_UP_MOVE_ONCE,
+    .holdEffectParam = TYPE_WATER,
     .pluckEffect = 0,
     .flingEffect = 0,
     .flingPower = 30,
@@ -43628,9 +43628,9 @@ const ITEMDATA __data[] =
 
 [ITEM_GRASS_GEM - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
-    .price = 0,
-    .holdEffect = 0,
-    .holdEffectParam = 0,
+    .price = 200,
+    .holdEffect = HOLD_EFFECT_POWERING_UP_MOVE_ONCE,
+    .holdEffectParam = TYPE_GRASS,
     .pluckEffect = 0,
     .flingEffect = 0,
     .flingPower = 30,
@@ -43693,9 +43693,9 @@ const ITEMDATA __data[] =
 
 [ITEM_ELECTRIC_GEM - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
-    .price = 0,
-    .holdEffect = 0,
-    .holdEffectParam = 0,
+    .price = 200,
+    .holdEffect = HOLD_EFFECT_POWERING_UP_MOVE_ONCE,
+    .holdEffectParam = TYPE_ELECTRIC,
     .pluckEffect = 0,
     .flingEffect = 0,
     .flingPower = 30,
@@ -43758,9 +43758,9 @@ const ITEMDATA __data[] =
 
 [ITEM_PSYCHIC_GEM - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
-    .price = 0,
-    .holdEffect = 0,
-    .holdEffectParam = 0,
+    .price = 200,
+    .holdEffect = HOLD_EFFECT_POWERING_UP_MOVE_ONCE,
+    .holdEffectParam = TYPE_PSYCHIC,
     .pluckEffect = 0,
     .flingEffect = 0,
     .flingPower = 30,
@@ -43823,9 +43823,9 @@ const ITEMDATA __data[] =
 
 [ITEM_ICE_GEM - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
-    .price = 0,
-    .holdEffect = 0,
-    .holdEffectParam = 0,
+    .price = 200,
+    .holdEffect = HOLD_EFFECT_POWERING_UP_MOVE_ONCE,
+    .holdEffectParam = TYPE_ICE,
     .pluckEffect = 0,
     .flingEffect = 0,
     .flingPower = 30,
@@ -43888,9 +43888,9 @@ const ITEMDATA __data[] =
 
 [ITEM_DRAGON_GEM - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
-    .price = 0,
-    .holdEffect = 0,
-    .holdEffectParam = 0,
+    .price = 200,
+    .holdEffect = HOLD_EFFECT_POWERING_UP_MOVE_ONCE,
+    .holdEffectParam = TYPE_DRAGON,
     .pluckEffect = 0,
     .flingEffect = 0,
     .flingPower = 30,
@@ -43953,9 +43953,9 @@ const ITEMDATA __data[] =
 
 [ITEM_DARK_GEM - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
-    .price = 0,
-    .holdEffect = 0,
-    .holdEffectParam = 0,
+    .price = 200,
+    .holdEffect = HOLD_EFFECT_POWERING_UP_MOVE_ONCE,
+    .holdEffectParam = TYPE_DARK,
     .pluckEffect = 0,
     .flingEffect = 0,
     .flingPower = 30,
@@ -44018,9 +44018,9 @@ const ITEMDATA __data[] =
 
 [ITEM_FAIRY_GEM - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
-    .price = 0,
-    .holdEffect = 0,
-    .holdEffectParam = 0,
+    .price = 200,
+    .holdEffect = HOLD_EFFECT_POWERING_UP_MOVE_ONCE,
+    .holdEffectParam = TYPE_FAIRY,
     .pluckEffect = 0,
     .flingEffect = 0,
     .flingPower = 30,

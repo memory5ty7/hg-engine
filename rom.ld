@@ -758,3 +758,4 @@ BattleSystem_GetTrainerIndex = 0x0223A9AC | 1;
 TrainerMessageWithIdPairExists = 0x020734D0 | 1;
 BattleSystem_GetParty = 0x0223A7F4 | 1;
 BattleSystem_GetTrainer = 0x0223A9F4 | 1;
+PartyMenu_PrintMessageOnWindow32 = 0x0207DAC4 | 1;
