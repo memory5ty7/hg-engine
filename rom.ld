@@ -752,3 +752,9 @@ QueueEmitterWithCallback = 0x02015494 | 1;
 particleEmitCallback = 0x021E5C28 | 1;
 
 TrainerData_ReadTrData = 0x020735D8 | 1;
+
+BattleSystem_GetBattleType = 0x0223A7E0 | 1;
+BattleSystem_GetTrainerIndex = 0x0223A9AC | 1;
+TrainerMessageWithIdPairExists = 0x020734D0 | 1;
+BattleSystem_GetParty = 0x0223A7F4 | 1;
+BattleSystem_GetTrainer = 0x0223A9F4 | 1;

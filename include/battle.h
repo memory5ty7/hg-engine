@@ -3732,4 +3732,6 @@ void LONG_CALL BufferItemNameWithIndefArticle(u32 *msgFmt, u32 fieldno, u32 item
 
 int LONG_CALL MoveCheckDamageNegatingAbilities(struct BattleStruct *sp, int attacker, int defender);
 
+int LONG_CALL PokeParty_GetPokeCount(const struct Party *party);
+
 #endif // BATTLE_H

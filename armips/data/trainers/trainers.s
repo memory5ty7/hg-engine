@@ -6085,7 +6085,7 @@ trainerdata 16, "Whitney"
         abilityslot 0
         level 16
         pokemon SPECIES_STUFFUL
-        item ITEM_MUSCLE_BAND
+        item ITEM_SALAC_BERRY
         move MOVE_FORCE_PALM
         move MOVE_FACADE
         move MOVE_BRUTAL_SWING
@@ -6093,7 +6093,7 @@ trainerdata 16, "Whitney"
         ability ABILITY_FLUFFY
         setivs 31, 31, 31, 31, 31, 31
         setevs 0, 0, 0, 0, 0, 0
-        nature NATURE_ADAMANT
+        nature NATURE_JOLLY
         ballseal 0
 
         // mon 2
@@ -6135,7 +6135,7 @@ trainerdata 16, "Whitney"
         pokemon SPECIES_TOGETIC
         item ITEM_LUM_BERRY
         move MOVE_AIR_CUTTER
-        move MOVE_ANCIENT_POWER
+        move MOVE_MAGICAL_LEAF
         move MOVE_YAWN
         move MOVE_TAILWIND
         ability ABILITY_SERENE_GRACE

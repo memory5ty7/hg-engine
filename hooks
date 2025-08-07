@@ -519,3 +519,5 @@ arm9 PlayerProfile_CountBadges 02028FF0 1
 arm9 NPCTrainerGetBattleIntroAndMusicParam 02051868 1
 
 0015 BagApp_TryUseRepel 021FBA9C 2
+
+0012 CheckTrainerMessage 02250D4C 2
