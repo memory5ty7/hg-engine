@@ -5961,7 +5961,7 @@ trainerdata 14, "Mallow"
         pokemon SPECIES_COMFEY
         item ITEM_BIG_ROOT
         move MOVE_DRAINING_KISS
-        move MOVE_GIGA_DRAIN
+        move MOVE_MEGA_DRAIN
         move MOVE_CHARM
         move MOVE_LIGHT_SCREEN
         ability ABILITY_TRIAGE
@@ -6069,11 +6069,11 @@ trainerdata 16, "Whitney"
         abilityslot 0
         level 16
         pokemon SPECIES_CLEFAIRY
-        item ITEM_ROCKY_HELMET
+        item ITEM_JABOCA_BERRY
         move MOVE_DISARMING_VOICE
         move MOVE_SING
         move MOVE_CHARM
-        move MOVE_ICY_WIND
+        move MOVE_SWIFT
         ability ABILITY_MAGIC_GUARD
         setivs 31, 31, 31, 31, 31, 31
         setevs 0, 0, 0, 0, 0, 0
@@ -6087,9 +6087,9 @@ trainerdata 16, "Whitney"
         pokemon SPECIES_STUFFUL
         item ITEM_SALAC_BERRY
         move MOVE_FORCE_PALM
-        move MOVE_FACADE
+        move MOVE_STOMP
         move MOVE_BRUTAL_SWING
-        move MOVE_AERIAL_ACE
+        move MOVE_BABY_DOLL_EYES
         ability ABILITY_FLUFFY
         setivs 31, 31, 31, 31, 31, 31
         setevs 0, 0, 0, 0, 0, 0
@@ -6101,11 +6101,11 @@ trainerdata 16, "Whitney"
         abilityslot 0
         level 16
         pokemon SPECIES_SNUBBULL
-        item ITEM_EXPERT_BELT
-        move MOVE_FIRE_FANG
-        move MOVE_ICE_FANG
+        item ITEM_LUM_BERRY
+        move MOVE_HEADBUTT
         move MOVE_THUNDER_FANG
-        move MOVE_NONE
+        move MOVE_CHARM
+        move MOVE_BITE
         ability ABILITY_INTIMIDATE
         setivs 31, 31, 31, 31, 31, 31
         setevs 0, 0, 0, 0, 0, 0
@@ -6125,7 +6125,7 @@ trainerdata 16, "Whitney"
         ability ABILITY_COMPETITIVE
         setivs 31, 31, 31, 31, 31, 31
         setevs 0, 0, 0, 0, 0, 0
-        nature NATURE_MODEST
+        nature NATURE_TIMID
         ballseal 0
 
         // mon 4
@@ -6133,7 +6133,7 @@ trainerdata 16, "Whitney"
         abilityslot 0
         level 16
         pokemon SPECIES_TOGETIC
-        item ITEM_LUM_BERRY
+        item ITEM_CUSTAP_BERRY
         move MOVE_AIR_CUTTER
         move MOVE_MAGICAL_LEAF
         move MOVE_YAWN
@@ -6149,15 +6149,15 @@ trainerdata 16, "Whitney"
         abilityslot 0
         level 16
         pokemon SPECIES_MILTANK
-        item ITEM_CHOPLE_BERRY
+        item ITEM_MOOMOO_MILK
         move MOVE_STOMP
-        move MOVE_ROLLOUT
-        move MOVE_ATTRACT
         move MOVE_HEART_STAMP
+        move MOVE_ATTRACT
+        move MOVE_DEFENSE_CURL
         ability ABILITY_SCRAPPY
         setivs 31, 31, 31, 31, 31, 31
         setevs 0, 0, 0, 0, 0, 0
-        nature NATURE_IMPISH
+        nature NATURE_RELAXED
         ballseal 0
 
     endparty
