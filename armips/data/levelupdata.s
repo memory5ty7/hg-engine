@@ -137,7 +137,7 @@ levelup SPECIES_SQUIRTLE
     learnset MOVE_TACKLE, 1
     learnset MOVE_TAIL_WHIP, 1
     learnset MOVE_WATER_GUN, 5
-    learnset MOVE_MUD_SPORT, 8
+    learnset MOVE_MUD_SHOT, 8
     learnset MOVE_BITE, 10
     learnset MOVE_YAWN, 13
     learnset MOVE_WATER_PULSE, 16
@@ -156,7 +156,7 @@ levelup SPECIES_WARTORTLE
     learnset MOVE_TACKLE, 1
     learnset MOVE_TAIL_WHIP, 1
     learnset MOVE_WATER_GUN, 5
-    learnset MOVE_MUD_SPORT, 8
+    learnset MOVE_MUD_SHOT, 8
     learnset MOVE_BITE, 10
     learnset MOVE_YAWN, 13
     learnset MOVE_WATER_PULSE, 16
@@ -178,7 +178,7 @@ levelup SPECIES_BLASTOISE
     learnset MOVE_TACKLE, 1
     learnset MOVE_TAIL_WHIP, 1
     learnset MOVE_WATER_GUN, 5
-    learnset MOVE_MUD_SPORT, 8
+    learnset MOVE_MUD_SHOT, 8
     learnset MOVE_BITE, 10
     learnset MOVE_YAWN, 13
     learnset MOVE_WATER_PULSE, 16
