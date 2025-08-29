@@ -17,6 +17,7 @@
 #include "../../include/constants/species.h"
 #include "../../include/constants/weather_numbers.h"
 #include "../../include/q412.h"
+#include "../../include/constants/vars_flags.h"
 
 u32 get_shake_chance(int input_value);
 
@@ -55,6 +56,11 @@ u32 __attribute__((section (".init"))) CalculateBallShakesInternal(void *bw, str
     u64 a = 0, b = 0, c = 0, d = 0, e = 0, f = 0, g = 0, captureValueCoeffcient = 0, badgePenalty = UQ412__1_0, statusModifier = 0, criticalCatchModifier = 0, speciesInDex = 0, criticalCatchRate = 0, shakeChecks = 4, shakeChance = 0;
     int badges, missingBadges;
     BOOL isCriticalCatch = FALSE;
+
+    if (CheckScriptFlag(FLAG_GUARANTEED_CAPTURE))
+    {
+        return 4;
+    }
 
     if (BattleTypeGet(bw) & (BATTLE_TYPE_PAL_PARK | BATTLE_TYPE_CATCHING_DEMO)) // poke park and safari zone always succeed
     {
