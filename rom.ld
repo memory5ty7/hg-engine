@@ -753,3 +753,9 @@ particleEmitCallback = 0x021E5C28 | 1;
 
 BattleSystem_GetTrainer = 0x0223A9F4 | 1;
 PartyMenu_PrintMessageOnWindow32 = 0x0207DAC4 | 1;
+
+MonMoveCanRestorePP = 0x020908CC | 1;
+MonMoveRestorePP = 0x0209091C | 1;
+
+TaskManager_Call = 0x02050530 | 1;
+Task_Blackout = 0x02052858 | 1;
