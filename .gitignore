@@ -93,3 +93,6 @@ tools/swav2swar.exe
 changelog
 
 docs/*
+sprites/*
+DSPRE 1.13.1/*
+*.lnk
