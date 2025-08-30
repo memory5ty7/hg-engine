@@ -131,6 +131,8 @@
 #define TRAINERCLASS_PKMN_TRAINER_LUCAS_PT  127
 #define TRAINERCLASS_PKMN_TRAINER_DAWN_PT   128
 
+#define TRAINERCLASS_KTV                    129
+
 // Only used to display attributes of phone contacts
 #define TRAINERCLASS_PHONE_MOM               200
 #define TRAINERCLASS_PHONE_POKEMON_PROFESSOR 201
