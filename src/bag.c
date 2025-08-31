@@ -214,7 +214,7 @@ ITEM_SLOT *Bag_GetItemSlotForRemove(BAG_DATA *bag, u16 itemId, u16 quantity, int
 
 BOOL Bag_TakeItem(BAG_DATA *bag, u16 itemId, u16 quantity, int heap_id) {
     ITEM_SLOT *slot = Bag_GetItemSlotForRemove(bag, itemId, quantity, heap_id);
-    if (slot == NULL || itemId == ITEM_INFINITE_CANDY) {
+    if (slot == NULL || itemId == ITEM_INFINITE_CANDY || itemId == ITEM_REPELLENT) {
         return FALSE;
     }
     slot->quantity -= quantity;
@@ -233,7 +233,7 @@ BOOL Bag_TakeItem(BAG_DATA *bag, u16 itemId, u16 quantity, int heap_id) {
 
 BOOL Pocket_TakeItem(ITEM_SLOT *slots, u32 count, u16 itemId, u16 quantity) {
     ITEM_SLOT *slot = Pocket_GetItemSlotForRemove(slots, count, itemId, quantity);
-    if (slot == NULL) {
+    if (slot == NULL || itemId == ITEM_INFINITE_CANDY || itemId == ITEM_REPELLENT) {
         return FALSE;
     }
     slot->quantity -= quantity;

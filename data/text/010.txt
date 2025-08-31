@@ -60,10 +60,10 @@ Jetons: {STRVAR_1 54, 0, 0}
 CT activée.{WAIT 3}{WAIT 4}\n
 CS activée.{WAIT 3}{WAIT 4}\n
 Elle contient\n{STRVAR_1 6, 0, 0}.\rApprendre {STRVAR_1 6, 0, 0}\nà un Pokémon?
-You utilisez le\n{STRVAR_1 8, 1, 0}.
-Mais le Repousse précédent est\ntoujours actif.
-You utilisez le\n{STRVAR_1 8, 1, 0}.\rÇa va attirer les Pokémon sauvages.
-You utilisez le\n{STRVAR_1 8, 1, 0}.\rÇa va repousser les Pokémon\nsauvages.
+Vous activez le\n{STRVAR_1 8, 1, 0}.
+Vous désactivez le\n{STRVAR_1 8, 1, 0}.
+Vous utilisez le\n{STRVAR_1 8, 1, 0}.\rÇa va attirer les Pokémon sauvages.
+Vous utilisez le\n{STRVAR_1 8, 1, 0}.\rÇa va repousser les Pokémon\nsauvages.
               
              
             

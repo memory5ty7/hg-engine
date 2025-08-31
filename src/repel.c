@@ -7,32 +7,14 @@
 
 void Repel_SetCurrentType();
 
-#ifdef IMPLEMENT_REUSABLE_REPELS
+
 u16 ALIGN4 CurrentRepelType = 0;
 
 bool32 PlayerStepEvent_RepelCounterDecrement(SaveData *saveData, FieldSystem *fieldSystem) {
-    void *roamerSaveData = EncDataSave_GetSaveDataPtr(saveData);
-    u8* repel_addr = SaveData_GetRepelPtr(roamerSaveData);
-
-    if (*repel_addr != 0) {
-        (*repel_addr)--;
-
-        if (*repel_addr == 0) {
-            BAG_DATA *bag = Sav2_Bag_get(saveData);
-            u16 currentRepel = Repel_GetMostRecent();
-            if (Bag_HasItem(bag, currentRepel, 1, HEAPID_WORLD)) {
-                EventSet_Script(fieldSystem, 2072, NULL);
-            } else {
-                EventSet_Script(fieldSystem, 2022, NULL);
-            }
-
-            return TRUE;
-        }
-    }
-
     return FALSE;
 }
 
+#ifdef IMPLEMENT_REUSABLE_REPELS
 u16 Repel_GetMostRecent() {
     Repel_SetCurrentType();
     return CurrentRepelType;
