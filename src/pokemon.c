@@ -1330,7 +1330,7 @@ BOOL CanUseItemOnMonInParty(struct Party *party, u16 itemID, s32 partyIdx, s32 m
     int currentLevel = GetMonData(mon, MON_DATA_LEVEL, NULL);
     if (GetItemData(itemID, ITEM_PARAM_LEVEL_UP, heapID))
     {
-        if (currentLevel < 100 && itemID == ITEM_RARE_CANDY)
+        if (currentLevel < 100 && (itemID == ITEM_RARE_CANDY))
         {
             return TRUE;
         }

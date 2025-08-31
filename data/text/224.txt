@@ -535,3 +535,5 @@ Lock Capsules
 Red Orbs
 Blue Orbs
 Enigma Stones
+Infinite Candies
+Repellents
