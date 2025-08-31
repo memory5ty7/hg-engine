@@ -525,3 +525,12 @@ arm9 CallTask_Blackout 0205297C 1
 
 # Repel
 0015 BagApp_TryUseRepel 021FBA9C 2
+
+# **** Iridium: Added hooks to support the portable relearner. ****
+
+# pc anywhere
+0001 ClearOverworldRequestFlags 021E6880 1
+# hook from where y button is checked
+0001 SetOverworldRequestFlags_hook 021E6982 0
+# hook from near beginning of function
+0001 CheckOverworldRequestFlags_hook 021E6AF6 3
