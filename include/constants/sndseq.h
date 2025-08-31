@@ -1375,6 +1375,7 @@
 #define SEQ_SE_END                           2378
 
 #define SEQ_VS_KTV                           2379
+#define SEQ_VS_LASTMON                       2380
 
 //Sounds marked BANK, WAVE, PLAYER, GROUP not ported over from pokeheartgold/include/constants/sndseq.h
 

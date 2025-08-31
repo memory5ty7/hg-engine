@@ -3821,4 +3821,6 @@ BOOL LONG_CALL IsAnyBattleMonHit(struct BattleStruct* ctx);
 
 int GetSanitisedType(int type);
 
+int LONG_CALL PokeParty_GetPokeCount(const struct Party *party);
+
 #endif // BATTLE_H
