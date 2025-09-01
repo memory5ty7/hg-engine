@@ -783,6 +783,9 @@ _0A2E:
     menu_init_std_gmm 1, 1, 0, 1, VAR_SPECIAL_x8006
     call_if_unset FLAG_SYS_MET_BILL, _0A78
     call_if_set FLAG_SYS_MET_BILL, _0A82
+    menu_item_add 100, 255, 10
+    menu_item_add 101, 255, 11
+    menu_item_add 102, 255, 12
     menu_item_add 63, 255, 1
     goto_if_set FLAG_GAME_CLEAR, _0A8C
     goto_if_unset FLAG_GAME_CLEAR, _0AD1
@@ -812,7 +815,84 @@ _0AD1:
     switch VAR_SPECIAL_x8006
     case 0, _0B01
     case 1, _0C23
+    case 10, healPokemon
+    case 11, status
+    case 12, preDamage
     goto _0DF0
+
+healPokemon:
+    fade_screen 6, 1, 0, RGB_BLACK
+    wait_fade
+    closemsg
+    play_fanfare SEQ_ME_ASA
+    wait_fanfare
+    heal_party
+    fade_screen 6, 1, 1, RGB_BLACK
+    wait_fade
+    goto _0A2E
+
+status:
+    npc_msg 121
+    menu_init_std_gmm 1, 1, 0, 1, VAR_SPECIAL_x8006
+    menu_item_add 1, 255, 10  // Paralyze
+    menu_item_add 3, 255, 11  // Burn
+    menu_item_add 4, 255, 12  // Freeze
+    menu_item_add 0, 255, 13  // Poison
+    menu_item_add 94, 255, 2   // Cancel
+    menu_exec
+    compare VAR_SPECIAL_x8006, 2
+    goto_if_eq _0A2E
+
+    goto statusMain
+
+statusMain:
+    setflag 0x18F
+    closemsg
+    playfanfare SEQ_SE_DP_SELECT
+	fade_screen 6, 1, 0, RGB_BLACK
+	wait_fade 
+	party_select_ui 
+	getselectedpartyslot VAR_SPECIAL_x8005
+	returnscreen
+	fade_screen 6, 1, 1, RGB_BLACK
+	wait_fade 
+
+    switch VAR_SPECIAL_x8006
+    case 10, paralyze_mon
+    case 11, burn_mon
+    case 12, freeze_mon
+    case 13, poison_mon
+    goto _0A2E
+
+preDamage:
+    setflag 0x18F
+    closemsg
+    playfanfare SEQ_SE_DP_SELECT
+	fade_screen 6, 1, 0, RGB_BLACK
+	wait_fade 
+	party_select_ui 
+	getselectedpartyslot VAR_SPECIAL_x8005
+	returnscreen 
+	fade_screen 6, 1, 1, RGB_BLACK
+	wait_fade 
+
+    goto _0A2E
+
+paralyze_mon:
+    DummyTextTrap 1, VAR_SPECIAL_x8005
+    goto _0A2E
+
+burn_mon:
+    DummyTextTrap 2, VAR_SPECIAL_x8005
+    goto _0A2E
+
+freeze_mon:
+    DummyTextTrap 3, VAR_SPECIAL_x8005
+    goto _0A2E
+
+poison_mon:
+    DummyTextTrap 4, VAR_SPECIAL_x8005
+    goto _0A2E
 
 _0B01:
     play_se SEQ_SE_DP_PC_LOGIN

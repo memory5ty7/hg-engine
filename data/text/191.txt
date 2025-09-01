@@ -1,0 +1,477 @@
+POISON
+PARALYSIE
+SOMMEIL
+BRULURE
+GEL
+QUITTER
+COMBAT SOLO
+COMBAT DUO
+COMBAT MIXTE
+COMBAT MULTI
+COMBAT 50
+INFOS
+QUITTER
+QUITTER
+JOINDRE
+MENEUR
+Etage:
+{STRVAR_1 50, 0, 0}
+
+
+
+
+
+ECHANGE
+ANNULER
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CONFIRMER
+REGLES
+OUI
+NON
+QUITTER
+ANNULER
+{ALN_CENTER}OUI
+{ALN_CENTER}NON
+
+
+
+
+COMBAT
+{STRVAR_1 3, 0, 0}
+{STRVAR_1 3, 1, 0}
+{STRVAR_1 3, 2, 0}
+{STRVAR_1 3, 3, 0}
+
+
+DESSINER
+
+PC DE ???
+PC DE LEO
+PC DE {STRVAR_1 3, 0, 0}
+PANTHEON
+ALBUM PHOTO
+DECONNEXION
+DEPOSER\nPOKéMON
+RETIRER\nPOKéMON
+DEPLACER\nPOKéMON
+DEPLACER\nOBJETS
+
+SALUT!
+BOITE AUX LETTRES
+CAPSULES BALL
+ETEINDRE
+Déposer des Pokémon de l’équipe dans\ndes Boîtes.
+Intégrer dans l’équipe des Pokémon se\ntrouvant dans les Boîtes.
+Organiser les Pokémon dans les Boîtes\net dans l’équipe.
+Déplacer des objets tenus par des\nPokémon d’une Boîte ou de l’équipe.
+                                  
+Fermer le système de Gestion de\nStocks de Pokémon.
+Vous pouvez stocker jusqu’à 20\nLettres.
+Vous pouvez appliquer ou modifier des\ncapsules pour décorer les Poké Balls.
+Eteindre votre PC.
+Vous pouvez regarder des photos\nsouvenir.
+
+
+
+
+
+
+
+
+ANNULER
+
+
+
+
+
+SOIGNER ₧₦
+STATUS ₧₦
+DEGATS ₧₦
+
+
+
+
+
+
+
+
+
+
+
+
+
+RC
+1¹
+2⁴
+3⁴
+4⁴
+5⁴
+-1
+
+
+TERRASSE
+QUITTER
+50 Jet.{CURSOR_X 60}1 000 $
+500 Jet.{CURSOR_X 60}$10 000 $
+Non merci
+INFOS
+ECHANGE
+RETOUR
+DEPOSER POKéMON?
+CHERCHER POKéMON?
+COMPRIS!
+{STRVAR_1 0, 0, 0}{STRVAR_1 2, 2, 0}{CURSOR_X 90}N. {STRVAR_1 52, 1, 0}
+{STRVAR_1 0, 0, 0}{STRVAR_1 2, 2, 0}{CURSOR_X 90}N. {STRVAR_1 52, 1, 0}
+ANNULER
+
+
+OEUF
+DONNEES
+DEFI
+INFOS
+QUITTER
+
+
+CONTINUER
+REPOS
+PARTIR
+
+
+VOIR LEADERS
+DEFI SALLE\nPRECEDENTE
+VOIR LEADERS
+ENREGISTRER UN AMI?
+COMPRIS!
+PAS COMPRIS...
+VIEIL AMBRE
+NAUTILE
+FOSSILE DOME
+FOSS. RACINE
+FOSS. GRIFFE
+FOSS. ARMURE
+FOSS. CRANE
+COMBATS 2 DRESSEURS
+COMBATS 4 DRESSEURS
+SALUER
+DISCUTER
+TCHAT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{STRVAR_1 54, 0, 0} Jet.
+REGLES DE BASE
+SHOW CAPTURE
+STOCKAGE POKéMON
+
+COMPRIS!
+INSCRIRE
+INFORMATIONS
+QUITTER
+
+
+
+TESSON ROUGE
+TESSON BLEU
+TESSON JAUNE
+TESSON VERT
+EAU FRAICHE{CURSOR_X 80}200 $
+SODA COOL{CURSOR_X 80}300 $
+LEMONADE{CURSOR_X 80}350 $
+RIEN, MERCI
+FERTIPOUSSE{CURSOR_X 90}\n200 $
+FERTIHUMIDE{CURSOR_X 90}\n200 $
+FERTISTABLE{CURSOR_X 90}\n$200 $
+FERTIGLU{CURSOR_X 90}\n200 $
+QUITTER
+
+
+{STRVAR_1 53, 0, 0} PCo
+
+
+{STRVAR_1 54, 0, 0} POINTS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ENREGISTRER
+
+
+
+
+
+
+
+PARTICIPER
+POKéATHLON
+PAR. VITESSE
+PAR. FORCE
+PAR. ENDURANCE
+PAR. SAUT
+PAR. HABILETE
+CPE DES CRACKS
+F. Parcours\nMaster
+ALLIE
+PION
+AMI
+STRATEGIE
+ENTRAINEMENT
+TRICHERIE
+LES GENS FAIBLES
+LES GENS FORTS
+N’IMPORTE QUI
+L’AMOUR
+LA FORCE
+LA CONNAISSANCE
+FORT
+PEU IMPORTE
+FAIBLE
+
+A PROPOS DES EPREUVES
+A PROPOS DE TOI
+COURS’OBSTACLES
+CAPTURE DRAPEAU
+CERCLE MUSICAL
+CASSE ROC
+ATTRAP’DISQUES
+SAUTE-LUMIERE
+COURSE DE RELAIS
+COMBAT RING-OUT
+BATAILLE NEIGE
+BALLE AU BUT
+PAR. VITESSE
+PAR. FORCE
+PAR. HABILETE
+PAR. ENDURANCE
+PAR. SAUT
+
+
+
+
+
+
+
+
+ACHETER
+VENDRE
+QUITTER
+INFORMATIONS
+ECHANGE DES POINTS ATHLETE
+NOIGRUME DRINK
+ASTUCES POUR LES NOIGRUME DRINKS!
+ACHETER
+LIRE L’ETIQUETTE
+ARGENT EN DEPOT
+ARGENT POSSEDE
+{STRVAR_1 55, 0, 0} $
+A: JOINDRE
+B: ANNULER
+B: QUITTER
+A: COMMENCER
+ACHETER AVEC DE L’ARGENT
+ACHETER AVEC DES POINTS
+EAU FRAICHE{CURSOR_X 80}50 POINTS
+SODA COOL{CURSOR_X 80}80 POINTS
+LIMONADE{CURSOR_X 80}100 POINTS
+A. Parcours\nVitesse&Saut
+B. Parcours\nSaut&Habileté
+C. Parcours\nHabileté&Force
+D. Parcours\nForce&Endur.
+E. Parcours\nEndur.&Vitesse
+OBJETS\nENTRAINEMENT 1
+OBJETS\nENTRAINEMENT 2
+OBJETS\nCOMBAT 1
+OBJETS\nCOMBAT 2
+ATTAQUES NORMALES
+ATTAQUES SPECIALES
+ATTAQUES DE STATUT
+PROTEINE\n1 PCo
+CALCIUM\n1 PCo
+FER\n1 PCo
+ZINC\n1 PCo
+CARBONE\n1 PCo
+PV PLUS\n1 PCo
+POIGN. POUV.\n16 PCo
+CEINT. POUV.\n16 PCo
+LENT. POUV.\n16 PCo
+BAND. POUV.\n16 PCo
+CHAINE POUV.\n16 PCo
+POIDS POUV.\n16 PCo
+ORBE TOXIQUE\n16 PCo
+ORBE FLAMME\n16 PCo
+HERBEBLANCHE\n32 PCo
+HERBE POUV.\n32 PCo
+POUDRECLAIRE\n48 PCo
+BAND. CHOIX\n48 PCo
+BANDEAU\n48 PCo
+LENTILSCOPE\n48 PCo
+BAND. MUSCLE\n48 PCo
+CEINT. FORCE\n48 PCo
+MOUCH. CHOIX\n48 PCo
+GRIF. RASOIR\n48 PCo
+CROC RASOIR\n48 PCo
+SUPER BONBON\n48 PCo
+AEROPIQUE\n40 PCo
+CASSE-BRIQUE\n40 PCo
+DEMI-TOUR\n40 PCo
+PLAIE-CROIX\n64 PCo
+LAME DE ROC\n80 PCo
+SEISME\n80 PCo
+BALL’OMBRE\n64 PCo
+ECO-SPHERE\n64 PCo
+BOMB-BEURK\n80 PCo
+DRACOCHOC\n80 PCo
+TOXIK\n32 PCo
+CAGE-ECLAIR\n32 PCo
+FEU FOLLET\n32 PCo
+ATTRACTION\n32 PCo
+GONFLETTE\n48 PCo
+PLENITUDE\n48 PCo
+Monte l’Attaque d’un Pokémon.
+Monte l’Atq. Spé. (Attaque Spéciale)\nd’un Pokémon.
+Monte la Défense d’un Pokémon.
+Monte la Déf. Spé. (Défense Spéciale)\nd’un Pokémon.
+Monte la Vitesse d’un Pokémon.
+Monte les PV d’un Pokémon.
+Permet à un Pokémon de gagner\nun niveau d’expérience.
+Tenu, monte l’Attaque lors des montées\nde niveau et réduit la stat Vitesse.
+Tenu, monte la Défense lors des montées\nde niveau et réduit la stat Vitesse.
+Tenu, monte l’Atq. Spé. lors de montées\nde niveau et réduit la stat Vitesse.
+Tenu, monte la Déf. Spé. lors des\nmontées de N., réduit la stat Vitesse.
+Tenu, monte la Vitesse lors des montées\nde niveau et réduit la stat Vitesse.
+Tenu, monte les PV lors des montées\nde niveau et réduit la stat Vitesse.
+Tenu, empoisonne gravement son porteur\ndurant le combat.
+Tenu, brûle son porteur durant\nle combat.
+Restaure les stats baissées.\nNe peut être utilisé qu’une fois.
+Usage unique. Permet d’utiliser une\ncapacité censée se charger un tour.
+Baisse la précision de l’ennemi.
+Monte l’Attaque, mais ne permet\nd’utiliser qu’une sorte de capacité.
+Empêche parfois d’être mis K.O.,\nne laissant qu’un PV.
+Monte le taux de critiques du porteur.
+Augmente légèrement la puissance des\nattaques physiques.
+Permet au porteur avec tous ses PV\nd’éviter un K.O. en conservant un PV.
+Augmente la Vitesse, mais ne permet\nd’utiliser qu’une sorte de capacité.
+Tenu, augmente le taux de critiques.
+Tenu, peut apeurer l’ennemi\nquand le porteur inflige des dégâts.
+Envoie une attaque rapide à l’ennemi.\nImpossible à esquiver.
+Attaque qui peut briser les barrières\ncomme Mur Lumière et Protection.
+Après avoir attaqué, le lanceur change\nde place avec un Pokémon de l’équipe.
+Taillade l’ennemi en utilisant ses faux\nou ses griffes comme des ciseaux.
+Fait surgir des pierres aiguisées sous\nl’ennemi. Taux de critiques élevé.
+Provoque un séisme touchant tous les\nautres Pokémon au combat.
+Projette une ombre sur l’ennemi. Peut\naussi faire baisser sa Déf. Spé.
+Fait exploser son énergie lumineuse.\nPeut baisser la Déf. Spé. de l’ennemi.
+Attaque l’ennemi avec la langue.\nPeut aussi l’empoisonner.
+Ouvre la bouche pour envoyer une onde\nde choc qui frappe l’ennemi.
+Empoisonne gravement l’ennemi.
+Faible choc électrique. S’il touche,\nl’ennemi est paralysé.
+Lance une sinistre flamme violette à\nl’ennemi pour lui infliger une brûlure.
+Si l’ennemi est du sexe opposé, il\ntombe amoureux et rechigne à attaquer.
+Le lanceur tend ses muscles, ce qui\nbooste son Attaque et sa Défense.
+Le lanceur se concentre pour monter\nson Atq. Spé. et sa Déf. Spé.
+Revenir à l’écran de sélection.
+QUITTER
+REVENIR
+
+
+
+
+PEPITE\n4 500 $
+PERLE\n650 $
+GRANDE PERLE\n3 500 $
+POUSS.ETOILE\n900 $
+MORC.ETOILE\n4 600 $
+ANNULER
+ZONE DE COMBAT
+REGLES DE BASE
+POINTS DE\nCOMBAT
+SERVICE\nD’ECHANGE
+ECRAN DES\nPERFORMANCES
+OK
+CUSTOMISATION\nDE ZONE
+CUSTOMISATION\nDEBUTER
+ECHANGE\nDE ZONE
+ORDRE\nDES ZONES
+APPARITION\nDES POKéMON
+QUITTER
+BLOCS
+POSER\nDES BLOCS
+REPRENDRE\nDES BLOCS
+TYPE DE BLOCS
+APPARITION\nDES POKéMON
+ENLEVER TOUS\nLES BLOCS
+QUITTER
+Les Baies poussent plus vite, mais le sol\ns’assèche plus vite.
+Les Baies mûres tombent moins vite de\nla plante.
+Les Baies poussent plus lentement, mais\nle sol s’assèche moins vite.
+Augmente le nombre de nouveaux plants\nqui poussent quand la plante flétrit.
+Quitter sans rien acheter.
+COMBAT SOLO
+COMBAT DUO
