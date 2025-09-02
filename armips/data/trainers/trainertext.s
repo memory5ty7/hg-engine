@@ -3094,6 +3094,9 @@ _1ACC: // Trainer 629
 _1AD0: // Trainer 630
     trainertextentry 630, TEXT_DEFEATED_IN_BATTLE, "Graaaaaah!"
 
+_ktvdarkcave:
+    trainertextentry 738, TEXT_DEFEATED_IN_BATTLE, "Quoi? Mes Pokémon!"
+
 .close
 
 
@@ -3835,5 +3838,9 @@ _1AD0: // Trainer 630
 /* Trainer 732 */ .halfword _184C
 /* Trainer 733 */ .halfword _1858
 /* Trainer 734 */ .halfword _185C
+/* Trainer 735 */ .halfword _0000
+/* Trainer 736 */ .halfword _0000
+/* Trainer 737 */ .halfword _0000
+/* Trainer 738 */ .halfword _ktvdarkcave
 
 .close
