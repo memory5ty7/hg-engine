@@ -58,7 +58,7 @@ def process_text(folder):
             if caps:
                 s = s.upper()
             if articles:
-                s = ('an ' if s.upper().startswith('A') or s.upper().startswith('E') or s.upper().startswith('I') or s.upper().startswith('O') or s.upper().startswith('U') else 'a ') + s
+                s = 'un ' + s
             if s != '':
                 if force_length != '':
                     while len(s) < force_lengths[force_length]:
