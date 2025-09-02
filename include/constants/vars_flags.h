@@ -5,5 +5,7 @@
 #define FLAG_NUZLOCKE_MODE          2551
 #define FLAG_PORTA_PC_AVAILABLE     2552
 #define FLAG_REPELLENT_ON           2553
+#define FLAG_TALKED_TO_DARK_CAVE    2554
+#define FLAG_BEAT_DARK_CAVE         2555
 
 #endif // CONSTANTS_VARS_FLAGS_H
