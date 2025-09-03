@@ -3226,7 +3226,7 @@ movedata MOVE_OUTRAGE, "Colère"
     terminatedata
     movedescription MOVE_OUTRAGE, "The user rampages\nand attacks for two\nto three turns.\nHowever, it then\nbecomes confused."
 
-movedata MOVE_SANDSTORM, "TempêteDeSable"
+movedatalongname MOVE_SANDSTORM, "TempêteDeSable", "Tempête de Sable"
     battleeffect MOVE_EFFECT_WEATHER_SANDSTORM
     pss SPLIT_STATUS
     basepower 0
@@ -3802,7 +3802,7 @@ movedata MOVE_MOONLIGHT, "Rayon Lune"
     terminatedata
     movedescription MOVE_MOONLIGHT, "The user restores its\nown HP.\nThe amount of HP\nregained varies with\nthe weather."
 
-movedata MOVE_HIDDEN_POWER, "Puis. Cachée"
+movedatalongname MOVE_HIDDEN_POWER, "Puis. Cachée", "Puissance Cachée"
     battleeffect MOVE_EFFECT_RANDOM_TYPE_BASED_ON_IVS
     pss SPLIT_SPECIAL
     basepower 60
@@ -9163,7 +9163,7 @@ movedata MOVE_NOBLE_ROAR, "Râle Mâle"
     terminatedata
     movedescription MOVE_NOBLE_ROAR, "Letting out a noble\nroar, the user\nintimidates the target\nand lowers its Attack\nand Sp. Atk stats."
 
-movedata MOVE_ION_DELUGE, "DélugePlasmique"
+movedatalongname MOVE_ION_DELUGE, "DélugePlasmique", "Déluge Plasmique"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_STATUS
     basepower 0
@@ -9179,7 +9179,7 @@ movedata MOVE_ION_DELUGE, "DélugePlasmique"
     terminatedata
     movedescription MOVE_ION_DELUGE, "---"
 
-movedatalongname MOVE_PARABOLIC_CHARGE, "Parabocharge", "Parabolic Charge"
+movedata MOVE_PARABOLIC_CHARGE, "Parabocharge"
     battleeffect MOVE_EFFECT_RECOVER_HALF_DAMAGE_DEALT
     pss SPLIT_SPECIAL
     basepower 65
@@ -9547,7 +9547,7 @@ movedata MOVE_STEAM_ERUPTION, "Jet de Vapeur"
     terminatedata
     movedescription MOVE_STEAM_ERUPTION, "The user immerses the\ntarget in superheated\nsteam.\nThis may also leave\nthe target with a burn."
 
-movedata MOVE_HYPERSPACE_HOLE, "Trou Dimension"
+movedatalongname MOVE_HYPERSPACE_HOLE, "Trou Dimension", "Trou Dimensionnel"
     battleeffect MOVE_EFFECT_REMOVE_PROTECT
     pss SPLIT_SPECIAL
     basepower 80
@@ -9723,7 +9723,7 @@ movedata MOVE_HAPPY_HOUR, "Étrennes"
     terminatedata
     movedescription MOVE_HAPPY_HOUR, "Using Happy Hour\ndoubles the amount of\nprize money received\nafter battle."
 
-movedatalongname MOVE_ELECTRIC_TERRAIN, "Champ Électrik", "Electric Terrain"
+movedatalongname MOVE_ELECTRIC_TERRAIN, "Champ Électrik", "Champ Électrifié"
     battleeffect MOVE_EFFECT_APPLY_TERRAINS
     pss SPLIT_STATUS
     basepower 0
@@ -9803,7 +9803,7 @@ movedata MOVE_BABY_DOLL_EYES, "Regard Touchant"
     terminatedata
     movedescription MOVE_BABY_DOLL_EYES, "---"
 
-movedata MOVE_NUZZLE, "FrotteFrimousse"
+movedatalongname MOVE_NUZZLE, "FrotteFrimousse", "Frotte-Frimousse"
     battleeffect MOVE_EFFECT_PARALYZE_HIT
     pss SPLIT_PHYSICAL
     basepower 20
@@ -9915,7 +9915,7 @@ movedata MOVE_THOUSAND_WAVES, "Myria-Vagues"
     terminatedata
     movedescription MOVE_THOUSAND_WAVES, "The user attacks with\na wave that crawls\nalong the ground.\nThose it hits can't\nflee from battle."
 
-movedata MOVE_LANDS_WRATH, "ForceChtonienne"
+movedatalongname MOVE_LANDS_WRATH, "ForceChtonienne", "Force Chtonienne"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_PHYSICAL
     basepower 90
@@ -9931,7 +9931,7 @@ movedata MOVE_LANDS_WRATH, "ForceChtonienne"
     terminatedata
     movedescription MOVE_LANDS_WRATH, "The user gathers the\nenergy of the land and\nfocuses that power on\nopposing Pokémon to\ninflict damage."
 
-movedata MOVE_LIGHT_OF_RUIN, "LumièreDuNéant"
+movedatalongname MOVE_LIGHT_OF_RUIN, "LumièreDuNéant", "Lumière du Néant"
     battleeffect MOVE_EFFECT_RECOIL_HALF
     pss SPLIT_SPECIAL
     basepower 140
@@ -9963,7 +9963,7 @@ movedata MOVE_ORIGIN_PULSE, "Onde Originelle"
     terminatedata
     movedescription MOVE_ORIGIN_PULSE, "The user attacks\nopposing Pokémon with\ncountless beams of\nlight that glow a deep\nand brilliant blue."
 
-movedatalongname MOVE_PRECIPICE_BLADES, "Lame Pangéenne", "Precipice Blades"
+movedata MOVE_PRECIPICE_BLADES, "Lame Pangéenne"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_PHYSICAL
     basepower 120
@@ -10011,7 +10011,7 @@ movedata MOVE_HYPERSPACE_FURY, "Furie Dimension"
     terminatedata
     movedescription MOVE_HYPERSPACE_FURY, "---"
 
-movedata MOVE_BREAKNECK_BLITZ_PHYSICAL, "ChargeBulldozer"
+movedatalongname MOVE_BREAKNECK_BLITZ_PHYSICAL, "ChargeBulldozer", "Turbo-Charge Bulldozer"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_PHYSICAL
     basepower 0
@@ -10027,7 +10027,7 @@ movedata MOVE_BREAKNECK_BLITZ_PHYSICAL, "ChargeBulldozer"
     terminatedata
     movedescription MOVE_BREAKNECK_BLITZ_PHYSICAL, "---"
 
-movedata MOVE_BREAKNECK_BLITZ_SPECIAL, "ChargeBulldozer"
+movedatalongname MOVE_BREAKNECK_BLITZ_SPECIAL, "ChargeBulldozer", "Turbo-Charge Bulldozer"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_SPECIAL
     basepower 0
@@ -10043,7 +10043,7 @@ movedata MOVE_BREAKNECK_BLITZ_SPECIAL, "ChargeBulldozer"
     terminatedata
     movedescription MOVE_BREAKNECK_BLITZ_SPECIAL, "---"
 
-movedatalongname MOVE_ALL_OUT_PUMMELING_PHYSICAL, "Hyper-Furie", "All-Out Pummeling"
+movedatalongname MOVE_ALL_OUT_PUMMELING_PHYSICAL, "Hyper-Furie", "Combo Hyper-Furie"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_PHYSICAL
     basepower 0
@@ -10059,7 +10059,7 @@ movedatalongname MOVE_ALL_OUT_PUMMELING_PHYSICAL, "Hyper-Furie", "All-Out Pummel
     terminatedata
     movedescription MOVE_ALL_OUT_PUMMELING_PHYSICAL, "---"
 
-movedatalongname MOVE_ALL_OUT_PUMMELING_SPECIAL, "Hyper-Furie", "All-Out Pummeling"
+movedatalongname MOVE_ALL_OUT_PUMMELING_SPECIAL, "Hyper-Furie", "Combo Hyper-Furie"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_SPECIAL
     basepower 0
@@ -10075,7 +10075,7 @@ movedatalongname MOVE_ALL_OUT_PUMMELING_SPECIAL, "Hyper-Furie", "All-Out Pummeli
     terminatedata
     movedescription MOVE_ALL_OUT_PUMMELING_SPECIAL, "---"
 
-movedatalongname MOVE_SUPERSONIC_SKYSTRIKE_PHYSICAL, "PiquéSupersonik", "Supersonic Skystrike"
+movedatalongname MOVE_SUPERSONIC_SKYSTRIKE_PHYSICAL, "PiquéSupersonik", "Piqué Supersonique"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_PHYSICAL
     basepower 0
@@ -10091,7 +10091,7 @@ movedatalongname MOVE_SUPERSONIC_SKYSTRIKE_PHYSICAL, "PiquéSupersonik", "Supers
     terminatedata
     movedescription MOVE_SUPERSONIC_SKYSTRIKE_PHYSICAL, "---"
 
-movedatalongname MOVE_SUPERSONIC_SKYSTRIKE_SPECIAL, "PiquéSupersonik", "Supersonic Skystrike"
+movedatalongname MOVE_SUPERSONIC_SKYSTRIKE_SPECIAL, "PiquéSupersonik", "Piqué Supersonique"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_SPECIAL
     basepower 0
@@ -10107,7 +10107,7 @@ movedatalongname MOVE_SUPERSONIC_SKYSTRIKE_SPECIAL, "PiquéSupersonik", "Superso
     terminatedata
     movedescription MOVE_SUPERSONIC_SKYSTRIKE_SPECIAL, "---"
 
-movedata MOVE_ACID_DOWNPOUR_PHYSICAL, "Déluge Toxique"
+movedatalongname MOVE_ACID_DOWNPOUR_PHYSICAL, "Déluge Toxique", "Déluge Causti-Toxique"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_PHYSICAL
     basepower 0
@@ -10123,7 +10123,7 @@ movedata MOVE_ACID_DOWNPOUR_PHYSICAL, "Déluge Toxique"
     terminatedata
     movedescription MOVE_ACID_DOWNPOUR_PHYSICAL, "---"
 
-movedata MOVE_ACID_DOWNPOUR_SPECIAL, "Déluge Toxique"
+movedatalongname MOVE_ACID_DOWNPOUR_SPECIAL, "Déluge Toxique", "Déluge Causti-Toxique"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_SPECIAL
     basepower 0
@@ -10139,7 +10139,7 @@ movedata MOVE_ACID_DOWNPOUR_SPECIAL, "Déluge Toxique"
     terminatedata
     movedescription MOVE_ACID_DOWNPOUR_SPECIAL, "---"
 
-movedata MOVE_TECTONIC_RAGE_PHYSICAL, "Éruption Sismik"
+movedatalongname MOVE_TECTONIC_RAGE_PHYSICAL, "Éruption Sismik", "Éruption Géo-Sismique"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_PHYSICAL
     basepower 0
@@ -10155,7 +10155,7 @@ movedata MOVE_TECTONIC_RAGE_PHYSICAL, "Éruption Sismik"
     terminatedata
     movedescription MOVE_TECTONIC_RAGE_PHYSICAL, "---"
 
-movedata MOVE_TECTONIC_RAGE_SPECIAL, "Éruption Sismik"
+movedatalongname MOVE_TECTONIC_RAGE_SPECIAL, "Éruption Sismik", "Éruption Géo-Sismique"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_SPECIAL
     basepower 0
@@ -10171,7 +10171,7 @@ movedata MOVE_TECTONIC_RAGE_SPECIAL, "Éruption Sismik"
     terminatedata
     movedescription MOVE_TECTONIC_RAGE_SPECIAL, "---"
 
-movedatalongname MOVE_CONTINENTAL_CRUSH_PHYSICAL, "Apo. Gigalithik", "Continental Crush"
+movedatalongname MOVE_CONTINENTAL_CRUSH_PHYSICAL, "Apo. Gigalithik", "Apocalypse Gigalithique"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_PHYSICAL
     basepower 0
@@ -10187,7 +10187,7 @@ movedatalongname MOVE_CONTINENTAL_CRUSH_PHYSICAL, "Apo. Gigalithik", "Continenta
     terminatedata
     movedescription MOVE_CONTINENTAL_CRUSH_PHYSICAL, "---"
 
-movedatalongname MOVE_CONTINENTAL_CRUSH_SPECIAL, "Apo. Gigalithik", "Continental Crush"
+movedatalongname MOVE_CONTINENTAL_CRUSH_SPECIAL, "Apo. Gigalithik", "Apocalypse Gigalithique"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_SPECIAL
     basepower 0
@@ -10235,7 +10235,7 @@ movedata MOVE_SAVAGE_SPIN_OUT_SPECIAL, "Cocon Fatal"
     terminatedata
     movedescription MOVE_SAVAGE_SPIN_OUT_SPECIAL, "---"
 
-movedatalongname MOVE_NEVER_ENDING_NIGHTMARE_PHYSICAL, "Ombre Éternelle", "Never-Ending Nightmare"
+movedatalongname MOVE_NEVER_ENDING_NIGHTMARE_PHYSICAL, "Ombre Éternelle", "Appel des Ombres Éternelles"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_PHYSICAL
     basepower 0
@@ -10251,7 +10251,7 @@ movedatalongname MOVE_NEVER_ENDING_NIGHTMARE_PHYSICAL, "Ombre Éternelle", "Neve
     terminatedata
     movedescription MOVE_NEVER_ENDING_NIGHTMARE_PHYSICAL, "---"
 
-movedatalongname MOVE_NEVER_ENDING_NIGHTMARE_SPECIAL, "Ombre Éternelle", "Never-Ending Nightmare"
+movedatalongname MOVE_NEVER_ENDING_NIGHTMARE_SPECIAL, "Ombre Éternelle", "Appel des Ombres Éternelles"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_SPECIAL
     basepower 0
@@ -10299,7 +10299,7 @@ movedata MOVE_CORKSCREW_CRASH_SPECIAL, "Vrille Maximum"
     terminatedata
     movedescription MOVE_CORKSCREW_CRASH_SPECIAL, "---"
 
-movedatalongname MOVE_INFERNO_OVERDRIVE_PHYSICAL, "Exp.Cataclysmik", "Inferno Overdrive"
+movedatalongname MOVE_INFERNO_OVERDRIVE_PHYSICAL, "Pyro-Explosion", "Pyro-Explosion Cataclysmique"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_PHYSICAL
     basepower 0
@@ -10315,7 +10315,7 @@ movedatalongname MOVE_INFERNO_OVERDRIVE_PHYSICAL, "Exp.Cataclysmik", "Inferno Ov
     terminatedata
     movedescription MOVE_INFERNO_OVERDRIVE_PHYSICAL, "---"
 
-movedatalongname MOVE_INFERNO_OVERDRIVE_SPECIAL, "Exp.Cataclysmik", "Inferno Overdrive"
+movedatalongname MOVE_INFERNO_OVERDRIVE_SPECIAL, "Pyro-Explosion", "Pyro-Explosion Cataclysmique"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_SPECIAL
     basepower 0
@@ -10331,7 +10331,7 @@ movedatalongname MOVE_INFERNO_OVERDRIVE_SPECIAL, "Exp.Cataclysmik", "Inferno Ove
     terminatedata
     movedescription MOVE_INFERNO_OVERDRIVE_SPECIAL, "---"
 
-movedata MOVE_HYDRO_VORTEX_PHYSICAL, "Tourb. Abyssal"
+movedatalongname MOVE_HYDRO_VORTEX_PHYSICAL, "Tourb. Abyssal", "Super Tourbillon Abyssal"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_PHYSICAL
     basepower 0
@@ -10347,7 +10347,7 @@ movedata MOVE_HYDRO_VORTEX_PHYSICAL, "Tourb. Abyssal"
     terminatedata
     movedescription MOVE_HYDRO_VORTEX_PHYSICAL, "---"
 
-movedata MOVE_HYDRO_VORTEX_SPECIAL, "Tourb. Abyssal"
+movedatalongname MOVE_HYDRO_VORTEX_SPECIAL, "Tourb. Abyssal", "Super Tourbillon Abyssal"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_SPECIAL
     basepower 0
@@ -10363,7 +10363,7 @@ movedata MOVE_HYDRO_VORTEX_SPECIAL, "Tourb. Abyssal"
     terminatedata
     movedescription MOVE_HYDRO_VORTEX_SPECIAL, "---"
 
-movedata MOVE_BLOOM_DOOM_PHYSICAL, "Pétalexplosion"
+movedatalongname MOVE_BLOOM_DOOM_PHYSICAL, "Pétalexplosion", "Pétalexplosion Éblouissante"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_PHYSICAL
     basepower 0
@@ -10379,7 +10379,7 @@ movedata MOVE_BLOOM_DOOM_PHYSICAL, "Pétalexplosion"
     terminatedata
     movedescription MOVE_BLOOM_DOOM_PHYSICAL, "---"
 
-movedata MOVE_BLOOM_DOOM_SPECIAL, "Pétalexplosion"
+movedatalongname MOVE_BLOOM_DOOM_SPECIAL, "Pétalexplosion", "Pétalexplosion Éblouissante"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_SPECIAL
     basepower 0
@@ -10395,7 +10395,7 @@ movedata MOVE_BLOOM_DOOM_SPECIAL, "Pétalexplosion"
     terminatedata
     movedescription MOVE_BLOOM_DOOM_SPECIAL, "---"
 
-movedata MOVE_GIGAVOLT_HAVOC_PHYSICAL, "Fulguro-Lance"
+movedatalongname MOVE_GIGAVOLT_HAVOC_PHYSICAL, "Fulguro-Lance", "Fulguro-Lance Gigavolt"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_PHYSICAL
     basepower 0
@@ -10411,7 +10411,7 @@ movedata MOVE_GIGAVOLT_HAVOC_PHYSICAL, "Fulguro-Lance"
     terminatedata
     movedescription MOVE_GIGAVOLT_HAVOC_PHYSICAL, "---"
 
-movedata MOVE_GIGAVOLT_HAVOC_SPECIAL, "Fulguro-Lance"
+movedatalongname MOVE_GIGAVOLT_HAVOC_SPECIAL, "Fulguro-Lance", "Fulguro-Lance Gigavolt"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_SPECIAL
     basepower 0
@@ -10427,7 +10427,7 @@ movedata MOVE_GIGAVOLT_HAVOC_SPECIAL, "Fulguro-Lance"
     terminatedata
     movedescription MOVE_GIGAVOLT_HAVOC_SPECIAL, "---"
 
-movedatalongname MOVE_SHATTERED_PSYCHE_PHYSICAL, "Pulvérisation", "Shattered Psyche"
+movedatalongname MOVE_SHATTERED_PSYCHE_PHYSICAL, "Pulvérisation", "Psycho-Pulvérisation EX"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_PHYSICAL
     basepower 0
@@ -10443,7 +10443,7 @@ movedatalongname MOVE_SHATTERED_PSYCHE_PHYSICAL, "Pulvérisation", "Shattered Ps
     terminatedata
     movedescription MOVE_SHATTERED_PSYCHE_PHYSICAL, "---"
 
-movedatalongname MOVE_SHATTERED_PSYCHE_SPECIAL, "Pulvérisation", "Shattered Psyche"
+movedatalongname MOVE_SHATTERED_PSYCHE_SPECIAL, "Pulvérisation", "Psycho-Pulvérisation EX"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_SPECIAL
     basepower 0
@@ -10459,7 +10459,7 @@ movedatalongname MOVE_SHATTERED_PSYCHE_SPECIAL, "Pulvérisation", "Shattered Psy
     terminatedata
     movedescription MOVE_SHATTERED_PSYCHE_SPECIAL, "---"
 
-movedata MOVE_SUBZERO_SLAMMER_PHYSICAL, "Laser Cryogénik"
+movedatalongname MOVE_SUBZERO_SLAMMER_PHYSICAL, "Laser Cryogénik", "Laser Cryogénique"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_PHYSICAL
     basepower 0
@@ -10475,7 +10475,7 @@ movedata MOVE_SUBZERO_SLAMMER_PHYSICAL, "Laser Cryogénik"
     terminatedata
     movedescription MOVE_SUBZERO_SLAMMER_PHYSICAL, "---"
 
-movedata MOVE_SUBZERO_SLAMMER_SPECIAL, "Laser Cryogénik"
+movedatalongname MOVE_SUBZERO_SLAMMER_SPECIAL, "Laser Cryogénik", "Laser Cryogénique"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_SPECIAL
     basepower 0
@@ -10491,7 +10491,7 @@ movedata MOVE_SUBZERO_SLAMMER_SPECIAL, "Laser Cryogénik"
     terminatedata
     movedescription MOVE_SUBZERO_SLAMMER_SPECIAL, "---"
 
-movedatalongname MOVE_DEVASTATING_DRAKE_PHYSICAL, "ChaosDraconique", "Devastating Drake"
+movedatalongname MOVE_DEVASTATING_DRAKE_PHYSICAL, "ChaosDraconique", "Chaos Draconique"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_PHYSICAL
     basepower 0
@@ -10507,7 +10507,7 @@ movedatalongname MOVE_DEVASTATING_DRAKE_PHYSICAL, "ChaosDraconique", "Devastatin
     terminatedata
     movedescription MOVE_DEVASTATING_DRAKE_PHYSICAL, "---"
 
-movedatalongname MOVE_DEVASTATING_DRAKE_SPECIAL, "ChaosDraconique", "Devastating Drake"
+movedatalongname MOVE_DEVASTATING_DRAKE_SPECIAL, "ChaosDraconique", "Chaos Draconique"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_SPECIAL
     basepower 0
@@ -10523,7 +10523,7 @@ movedatalongname MOVE_DEVASTATING_DRAKE_SPECIAL, "ChaosDraconique", "Devastating
     terminatedata
     movedescription MOVE_DEVASTATING_DRAKE_SPECIAL, "---"
 
-movedatalongname MOVE_BLACK_HOLE_ECLIPSE_PHYSICAL, "TrouNoirD'Ombre", "Black Hole Eclipse"
+movedatalongname MOVE_BLACK_HOLE_ECLIPSE_PHYSICAL, "TrouNoirD'Ombre", "Trou Noir des Ombres"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_PHYSICAL
     basepower 0
@@ -10539,7 +10539,7 @@ movedatalongname MOVE_BLACK_HOLE_ECLIPSE_PHYSICAL, "TrouNoirD'Ombre", "Black Hol
     terminatedata
     movedescription MOVE_BLACK_HOLE_ECLIPSE_PHYSICAL, "---"
 
-movedatalongname MOVE_BLACK_HOLE_ECLIPSE_SPECIAL, "TrouNoirD'Ombre", "Black Hole Eclipse"
+movedatalongname MOVE_BLACK_HOLE_ECLIPSE_SPECIAL, "TrouNoirD'Ombre", "Trou Noir des Ombres"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_SPECIAL
     basepower 0
@@ -10555,7 +10555,7 @@ movedatalongname MOVE_BLACK_HOLE_ECLIPSE_SPECIAL, "TrouNoirD'Ombre", "Black Hole
     terminatedata
     movedescription MOVE_BLACK_HOLE_ECLIPSE_SPECIAL, "---"
 
-movedata MOVE_TWINKLE_TACKLE_PHYSICAL, "ImpctChoupinova"
+movedatalongname MOVE_TWINKLE_TACKLE_PHYSICAL, "ImpctChoupinova", "Impact Choupinova"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_PHYSICAL
     basepower 0
@@ -10571,7 +10571,7 @@ movedata MOVE_TWINKLE_TACKLE_PHYSICAL, "ImpctChoupinova"
     terminatedata
     movedescription MOVE_TWINKLE_TACKLE_PHYSICAL, "---"
 
-movedata MOVE_TWINKLE_TACKLE_SPECIAL, "ImpctChoupinova"
+movedatalongname MOVE_TWINKLE_TACKLE_SPECIAL, "ImpctChoupinova", "Impact Choupinova"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_SPECIAL
     basepower 0
@@ -10587,7 +10587,7 @@ movedata MOVE_TWINKLE_TACKLE_SPECIAL, "ImpctChoupinova"
     terminatedata
     movedescription MOVE_TWINKLE_TACKLE_SPECIAL, "---"
 
-movedata MOVE_CATASTROPIKA, "Pikachute"
+movedatalongname MOVE_CATASTROPIKA, "Pikachute", "Pikachute Foudroyante"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_PHYSICAL
     basepower 210
@@ -10619,7 +10619,7 @@ movedata MOVE_SHORE_UP, "Amass'Sable"
     terminatedata
     movedescription MOVE_SHORE_UP, "The user restores its\nown HP by up to half\nits max HP.\nIt regains more HP\nin a sandstorm."
 
-movedatalongname MOVE_FIRST_IMPRESSION, "Escarmouche", "First Impression"
+movedata MOVE_FIRST_IMPRESSION, "Escarmouche"
     battleeffect MOVE_EFFECT_ALWAYS_FLINCH_FIRST_TURN_ONLY
     pss SPLIT_PHYSICAL
     basepower 90
@@ -10699,7 +10699,7 @@ movedata MOVE_SPARKLING_ARIA, "Aria de l'Écume"
     terminatedata
     movedescription MOVE_SPARKLING_ARIA, "The user bursts into\nsong, emitting bubbles.\nAny Pokémon suffering\nfrom a burn will be\ncured by their touch."
 
-movedata MOVE_ICE_HAMMER, "MarteauDeGlace"
+movedatalongname MOVE_ICE_HAMMER, "MarteauDeGlace", "Marteau de Glace"
     battleeffect MOVE_EFFECT_USER_SPEED_DOWN_HIT
     pss SPLIT_PHYSICAL
     basepower 100
@@ -10715,7 +10715,7 @@ movedata MOVE_ICE_HAMMER, "MarteauDeGlace"
     terminatedata
     movedescription MOVE_ICE_HAMMER, "The user swings and\nhits with its strong,\nheavy fist.\nIt lowers the user's\nSpeed, however."
 
-movedata MOVE_FLORAL_HEALING, "Soin Floral"
+movedatalongname MOVE_FLORAL_HEALING, "Soin Floral", "Cavalerie Lourde"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_STATUS
     basepower 0
@@ -11035,7 +11035,7 @@ movedata MOVE_PURIFY, "Purification"
     terminatedata
     movedescription MOVE_PURIFY, "---"
 
-movedatalongname MOVE_REVELATION_DANCE, "Danse Éveil", "Revelation Dance"
+movedata MOVE_REVELATION_DANCE, "Danse Éveil"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_SPECIAL
     basepower 90
@@ -11051,7 +11051,7 @@ movedatalongname MOVE_REVELATION_DANCE, "Danse Éveil", "Revelation Dance"
     terminatedata
     movedescription MOVE_REVELATION_DANCE, "The user attacks the\ntarget by dancing with\nall its might. This\nmove becomes the same\ntype as the user's type."
 
-movedata MOVE_CORE_ENFORCER, "SanctionSuprême"
+movedatalongname MOVE_CORE_ENFORCER, "SanctionSuprême", "Sanction Suprême"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_SPECIAL
     basepower 100
@@ -11179,7 +11179,7 @@ movedata MOVE_AURORA_VEIL, "Voile Aurore"
     terminatedata
     movedescription MOVE_AURORA_VEIL, "---"
 
-movedatalongname MOVE_SINISTER_ARROW_RAID, "Plume Spectrale", "Sinister Arrow Raid"
+movedatalongname MOVE_SINISTER_ARROW_RAID, "Plume Spectrale", "Fureur des Plumes Spectrales"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_PHYSICAL
     basepower 180
@@ -11195,7 +11195,7 @@ movedatalongname MOVE_SINISTER_ARROW_RAID, "Plume Spectrale", "Sinister Arrow Ra
     terminatedata
     movedescription MOVE_SINISTER_ARROW_RAID, "The user, Decidueye,\ncreates countless\narrows using its Z-Power\nand shoots the target\nwith full force."
 
-movedatalongname MOVE_MALICIOUS_MOONSAULT, "Dark Body Press", "Malicious Moonsault"
+movedata MOVE_MALICIOUS_MOONSAULT, "Dark Body Press"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_PHYSICAL
     basepower 180
@@ -11211,7 +11211,7 @@ movedatalongname MOVE_MALICIOUS_MOONSAULT, "Dark Body Press", "Malicious Moonsau
     terminatedata
     movedescription MOVE_MALICIOUS_MOONSAULT, "The user, Incineroar,\nstrengthens its body\nusing its Z-Power and\ncrashes into the target\nwith full force."
 
-movedatalongname MOVE_OCEANIC_OPERETTA, "SymphonieOndine", "Oceanic Operetta"
+movedatalongname MOVE_OCEANIC_OPERETTA, "SymphonieOndine", "Symphonie des Ondines"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_SPECIAL
     basepower 195
@@ -11227,7 +11227,7 @@ movedatalongname MOVE_OCEANIC_OPERETTA, "SymphonieOndine", "Oceanic Operetta"
     terminatedata
     movedescription MOVE_OCEANIC_OPERETTA, "The user, Primarina,\nsummons a massive\namount of water using its\nZ-Power and attacks the\ntarget with full force."
 
-movedatalongname MOVE_GUARDIAN_OF_ALOLA, "Gardien d'Alola", "Guardian of Alola"
+movedatalongname MOVE_GUARDIAN_OF_ALOLA, "Gardien d'Alola", "Colère du Gardien d'Alola"
     battleeffect MOVE_EFFECT_QUARTER_HP
     pss SPLIT_SPECIAL
     basepower 0
@@ -11243,7 +11243,7 @@ movedatalongname MOVE_GUARDIAN_OF_ALOLA, "Gardien d'Alola", "Guardian of Alola"
     terminatedata
     movedescription MOVE_GUARDIAN_OF_ALOLA, "---"
 
-movedatalongname MOVE_SOUL_STEALING_7_STAR_STRIKE, "Fauche-Âme", "Soul-Stealing 7-Star Strike"
+movedatalongname MOVE_SOUL_STEALING_7_STAR_STRIKE, "Fauche-Âme", "Fauche-Âme des Sept Étoiles"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_PHYSICAL
     basepower 195
@@ -11259,7 +11259,7 @@ movedatalongname MOVE_SOUL_STEALING_7_STAR_STRIKE, "Fauche-Âme", "Soul-Stealing
     terminatedata
     movedescription MOVE_SOUL_STEALING_7_STAR_STRIKE, "---"
 
-movedatalongname MOVE_STOKED_SPARKSURFER, "Électro-Surf", "Stoked Sparksurfer"
+movedatalongname MOVE_STOKED_SPARKSURFER, "Électro-Surf", "Électro-Surf Survolté"
     battleeffect MOVE_EFFECT_PARALYZE_HIT
     pss SPLIT_SPECIAL
     basepower 175
@@ -11275,7 +11275,7 @@ movedatalongname MOVE_STOKED_SPARKSURFER, "Électro-Surf", "Stoked Sparksurfer"
     terminatedata
     movedescription MOVE_STOKED_SPARKSURFER, "---"
 
-movedatalongname MOVE_PULVERIZING_PANCAKE, "Gare au Ronflex", "Pulverizing Pancake"
+movedata MOVE_PULVERIZING_PANCAKE, "Gare au Ronflex"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_PHYSICAL
     basepower 210
@@ -11291,7 +11291,7 @@ movedatalongname MOVE_PULVERIZING_PANCAKE, "Gare au Ronflex", "Pulverizing Panca
     terminatedata
     movedescription MOVE_PULVERIZING_PANCAKE, "---"
 
-movedatalongname MOVE_EXTREME_EVOBOOST, "Neuf pour Un", "Extreme Evoboost"
+movedata MOVE_EXTREME_EVOBOOST, "Neuf pour Un"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_STATUS
     basepower 0
@@ -11307,7 +11307,7 @@ movedatalongname MOVE_EXTREME_EVOBOOST, "Neuf pour Un", "Extreme Evoboost"
     terminatedata
     movedescription MOVE_EXTREME_EVOBOOST, "---"
 
-movedatalongname MOVE_GENESIS_SUPERNOVA, "Supernova", "Genesis Supernova"
+movedatalongname MOVE_GENESIS_SUPERNOVA, "Supernova", "Supernova Originelle"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_SPECIAL
     basepower 185
@@ -11371,7 +11371,7 @@ movedata MOVE_PSYCHIC_FANGS, "Psycho-Croc"
     terminatedata
     movedescription MOVE_PSYCHIC_FANGS, "The user bites the\ntarget with its psychic\ncapabilities. This can\nalso destroy Light\nScreen and Reflect."
 
-movedatalongname MOVE_STOMPING_TANTRUM, "Trépignement", "Stomping Tantrum"
+movedata MOVE_STOMPING_TANTRUM, "Trépignement"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_PHYSICAL
     basepower 75
@@ -11531,7 +11531,7 @@ movedata MOVE_ZING_ZAP, "Électrikipik"
     terminatedata
     movedescription MOVE_ZING_ZAP, "The user crashes into\nthe target, delivering\na powerful electric\nshock. This may also\nmake the target flinch."
 
-movedatalongname MOVE_NATURES_MADNESS, "IreDeLaNature", "Nature’s Madness"
+movedatalongname MOVE_NATURES_MADNESS, "IreDeLaNature", "Ire de la Nature"
     battleeffect MOVE_EFFECT_HALVE_HP
     pss SPLIT_SPECIAL
     basepower 0
@@ -11563,7 +11563,7 @@ movedata MOVE_MULTI_ATTACK, "Coup Varia-Type"
     terminatedata
     movedescription MOVE_MULTI_ATTACK, "Cloaking itself in high\nenergy, the user slams\ninto the target. The\nmemory held determines\nthe move's type."
 
-movedatalongname MOVE_10_000_000_VOLT_THUNDERBOLT, "Giga-Tonnerre", "10,000,000 Volt Thunderbolt"
+movedata MOVE_10_000_000_VOLT_THUNDERBOLT, "Giga-Tonnerre"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_SPECIAL
     basepower 195
@@ -11627,7 +11627,7 @@ movedata MOVE_PHOTON_GEYSER, "Photo-Geyser"
     terminatedata
     movedescription MOVE_PHOTON_GEYSER, "---"
 
-movedatalongname MOVE_LIGHT_THAT_BURNS_THE_SKY, "ApocalypsisLumi", "Light That Burns the Sky"
+movedatalongname MOVE_LIGHT_THAT_BURNS_THE_SKY, "ApocalypsisLumi", "Apocalypsis Luminis"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_SPECIAL
     basepower 200
@@ -11643,7 +11643,7 @@ movedatalongname MOVE_LIGHT_THAT_BURNS_THE_SKY, "ApocalypsisLumi", "Light That B
     terminatedata
     movedescription MOVE_LIGHT_THAT_BURNS_THE_SKY, "---"
 
-movedatalongname MOVE_SEARING_SUNRAZE_SMASH, "Hélio-Choc", "Searing Sunraze Smash"
+movedatalongname MOVE_SEARING_SUNRAZE_SMASH, "Hélio-Choc", "Hélio-Choc Dévastateur"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_PHYSICAL
     basepower 200
@@ -11659,7 +11659,7 @@ movedatalongname MOVE_SEARING_SUNRAZE_SMASH, "Hélio-Choc", "Searing Sunraze Sma
     terminatedata
     movedescription MOVE_SEARING_SUNRAZE_SMASH, "---"
 
-movedatalongname MOVE_MENACING_MOONRAZE_MAELSTROM, "RayonsSélénites", "Menacing Moonraze Maelstrom"
+movedatalongname MOVE_MENACING_MOONRAZE_MAELSTROM, "RayonsSélénites", "Rayons Séléno-Explosifs"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_SPECIAL
     basepower 200
@@ -11675,7 +11675,7 @@ movedatalongname MOVE_MENACING_MOONRAZE_MAELSTROM, "RayonsSélénites", "Menacin
     terminatedata
     movedescription MOVE_MENACING_MOONRAZE_MAELSTROM, "---"
 
-movedatalongname MOVE_LETS_SNUGGLE_FOREVER, "PatatiPatatrape", "Let’s Snuggle Forever"
+movedatalongname MOVE_LETS_SNUGGLE_FOREVER, "PatatiPatatrape", "Patati-Patattrape"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_PHYSICAL
     basepower 190
@@ -11691,7 +11691,7 @@ movedatalongname MOVE_LETS_SNUGGLE_FOREVER, "PatatiPatatrape", "Let’s Snuggle 
     terminatedata
     movedescription MOVE_LETS_SNUGGLE_FOREVER, "---"
 
-movedatalongname MOVE_SPLINTERED_STORMSHARDS, "Roches-Lames", "Splintered Stormshards"
+movedatalongname MOVE_SPLINTERED_STORMSHARDS, "Roches-Lames", "Hurlement des Roches-Lames"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_PHYSICAL
     basepower 190
@@ -11707,7 +11707,7 @@ movedatalongname MOVE_SPLINTERED_STORMSHARDS, "Roches-Lames", "Splintered Storms
     terminatedata
     movedescription MOVE_SPLINTERED_STORMSHARDS, "---"
 
-movedatalongname MOVE_CLANGOROUS_SOULBLAZE, "Dracacophonie", "Clangorous Soulblaze"
+movedatalongname MOVE_CLANGOROUS_SOULBLAZE, "Dracacophonie", "Dracacophonie Flamboyante"
     battleeffect MOVE_EFFECT_RAISE_ALL_STATS_HIT
     pss SPLIT_SPECIAL
     basepower 185
@@ -11931,7 +11931,7 @@ movedata MOVE_VEEVEE_VOLLEY, "Évo-Chardasso"
     terminatedata
     movedescription MOVE_VEEVEE_VOLLEY, "The more Eevee\nloves its Trainer,\nthe greater the\nmove's power.\nIt never misses."
 
-movedatalongname MOVE_DOUBLE_IRON_BASH, "Écrous d'Poing", "Double Iron Bash"
+movedata MOVE_DOUBLE_IRON_BASH, "Écrous d'Poing"
     battleeffect MOVE_EFFECT_HIT_TWICE_AND_FLINCH
     pss SPLIT_PHYSICAL
     basepower 60
@@ -11979,7 +11979,7 @@ movedata MOVE_DYNAMAX_CANNON, "Canon Dynamax"
     terminatedata
     movedescription MOVE_DYNAMAX_CANNON, "The user condenses\nenergy within its body\nand unleashes that\nenergy from its core\nto inflict damage."
 
-movedata MOVE_SNIPE_SHOT, "TirDePrécision"
+movedatalongname MOVE_SNIPE_SHOT, "TirDePrécision", "Tir de Précision"
     battleeffect MOVE_EFFECT_HIGH_CRITICAL
     pss SPLIT_SPECIAL
     basepower 80
@@ -12971,7 +12971,7 @@ movedata MOVE_SKITTER_SMACK, "Ravage Rampant"
     terminatedata
     movedescription MOVE_SKITTER_SMACK, "The user skitters\nbehind the target to\nattack.\nThis also lowers the\ntarget's Sp. Atk stat."
 
-movedatalongname MOVE_BURNING_JEALOUSY, "Feu Envieux", "Burning Jealousy"
+movedata MOVE_BURNING_JEALOUSY, "Feu Envieux"
     battleeffect MOVE_EFFECT_BURN_HIT
     pss SPLIT_SPECIAL
     basepower 70
@@ -13115,7 +13115,7 @@ movedata MOVE_SCORCHING_SANDS, "Sable Ardent"
     terminatedata
     movedescription MOVE_SCORCHING_SANDS, "The user throws\nscorching sand at\nthe target to attack.\nThe target may also\nbe left with a burn."
 
-movedata MOVE_JUNGLE_HEALING, "SelveSalvatrice"
+movedatalongname MOVE_JUNGLE_HEALING, "SelveSalvatrice", "Selve Salvatrice"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_STATUS
     basepower 0
@@ -13147,7 +13147,7 @@ movedata MOVE_WICKED_BLOW, "Poing Obscur"
     terminatedata
     movedescription MOVE_WICKED_BLOW, "The user strikes\nthe target with a\nfierce blow.\nThis move always\nlands a critical hit."
 
-movedata MOVE_SURGING_STRIKES, "TorrentDeCoups"
+movedatalongname MOVE_SURGING_STRIKES, "TorrentDeCoups", "Torrent de Coups"
     battleeffect MOVE_EFFECT_HIT_THREE_TIMES_ALWAYS_CRITICAL
     pss SPLIT_PHYSICAL
     basepower 25
@@ -13291,7 +13291,7 @@ movedata MOVE_EERIE_SPELL, "Sort Sinistre"
     terminatedata
     movedescription MOVE_EERIE_SPELL, "The user attacks with\nits tremendous psychic\npower. This also drains\n3 PP from the move last\nused by the target."
 
-movedata MOVE_DIRE_CLAW, "GriffesFunestes"
+movedatalongname MOVE_DIRE_CLAW, "GriffesFunestes", "Griffes Funestes"
     battleeffect MOVE_EFFECT_SLEEP_POISON_PARALYZE_HIT
     pss SPLIT_PHYSICAL
     basepower 80
@@ -13355,7 +13355,7 @@ movedata MOVE_STONE_AXE, "Hache de Pierre"
     terminatedata
     movedescription MOVE_STONE_AXE, "---"
 
-movedatalongname MOVE_SPRINGTIDE_STORM, "TyphonPassionné", "Springtide Storm"
+movedatalongname MOVE_SPRINGTIDE_STORM, "TyphonPassionné", "Typhon Passionné"
     battleeffect MOVE_EFFECT_LOWER_ATTACK_HIT
     pss SPLIT_SPECIAL
     basepower 100
@@ -13595,7 +13595,7 @@ movedata MOVE_CEASELESS_EDGE, "Vagues à Lames"
     terminatedata
     movedescription MOVE_CEASELESS_EDGE, "---"
 
-movedatalongname MOVE_BLEAKWIND_STORM, "Typhon Hivernal","Bleakwind Storm"
+movedata MOVE_BLEAKWIND_STORM, "Typhon Hivernal"
     battleeffect MOVE_EFFECT_BLEAKWIND_STORM // accuracy in rain handled in other_battle_calculators.c
     pss SPLIT_SPECIAL
     basepower 100
@@ -13611,7 +13611,7 @@ movedatalongname MOVE_BLEAKWIND_STORM, "Typhon Hivernal","Bleakwind Storm"
     terminatedata
     movedescription MOVE_BLEAKWIND_STORM, "The user attacks with\nsavagely cold winds.\nThis may also lower\nthe Speed stats of\nopposing Pokémon."
 
-movedatalongname MOVE_WILDBOLT_STORM, "TyphonFulgurant","Wildbolt Storm"
+movedatalongname MOVE_WILDBOLT_STORM, "TyphonFulgurant", "Typhon Fulgurant"
     battleeffect MOVE_EFFECT_WILDBOLT_STORM // accuracy in rain handled in other_battle_calculators.c
     pss SPLIT_SPECIAL
     basepower 100
@@ -13627,7 +13627,7 @@ movedatalongname MOVE_WILDBOLT_STORM, "TyphonFulgurant","Wildbolt Storm"
     terminatedata
     movedescription MOVE_WILDBOLT_STORM, "The user savagely\nattacks with\nlightning and wind.\nIt may also leave\nopponents paralyzed."
 
-movedatalongname MOVE_SANDSEAR_STORM, "TyphonPyrosable","Sandsear Storm"
+movedatalongname MOVE_SANDSEAR_STORM, "TyphonPyrosable", "Typhon Pyrosable"
     battleeffect MOVE_EFFECT_SANDSEAR_STORM // accuracy in rain handled in other_battle_calculators.c
     pss SPLIT_SPECIAL
     basepower 100
@@ -13723,7 +13723,7 @@ movedata MOVE_AXE_KICK, "Talon-Marteau"
     terminatedata
     movedescription MOVE_AXE_KICK, "---"
 
-movedata MOVE_LAST_RESPECTS, "HommagePosthume"
+movedatalongname MOVE_LAST_RESPECTS, "HommagePosthume", "Hommage Posthume"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_PHYSICAL
     basepower 50
@@ -13867,7 +13867,7 @@ movedata MOVE_GLAIVE_RUSH, "Charge Glaive"
     terminatedata
     movedescription MOVE_GLAIVE_RUSH, "---"
 
-movedatalongname MOVE_REVIVAL_BLESSING, "Second Souffle", "Revival Blessing"
+movedata MOVE_REVIVAL_BLESSING, "Second Souffle"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_STATUS
     basepower 0
@@ -13995,7 +13995,7 @@ movedata MOVE_FLOWER_TRICK, "Magie Florale"
     terminatedata
     movedescription MOVE_FLOWER_TRICK, "---"
 
-movedata MOVE_TORCH_SONG, "ChantFlamboyant"
+movedatalongname MOVE_TORCH_SONG, "ChantFlamboyant", "Chant Flamboyant"
     battleeffect MOVE_EFFECT_RAISE_SP_ATK_HIT
     pss SPLIT_SPECIAL
     basepower 80
@@ -14107,7 +14107,7 @@ movedata MOVE_RUINATION, "Cataclysme"
     terminatedata
     movedescription MOVE_RUINATION, "The user summons a\nruinous disaster.\nThis cuts the\ntarget’s HP in half."
 
-movedatalongname MOVE_COLLISION_COURSE, "Nitro Crash","Collision Course"
+movedata MOVE_COLLISION_COURSE, "Nitro Crash"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_PHYSICAL
     basepower 100
@@ -14155,7 +14155,7 @@ movedata MOVE_SHED_TAIL, "Queulonage"
     terminatedata
     movedescription MOVE_SHED_TAIL, "The user creates\na decoy using its own\nHP, then swaps places\nwith a party Pokémon\nin waiting."
 
-movedatalongname MOVE_CHILLY_RECEPTION, "Neigeux de Mots", "Chilly Reception"
+movedata MOVE_CHILLY_RECEPTION, "Neigeux de Mots"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_STATUS
     basepower 0
@@ -14555,7 +14555,7 @@ movedata MOVE_ELECTRO_SHOT, "Fulgurayon"
     terminatedata
     movedescription MOVE_ELECTRO_SHOT, "A two-turn attack.\nThe user gathers\nlight, then fires a\nhigh voltage shot\non the second turn."
 
-movedata MOVE_TERA_STARSTORM, "PluieTérastrale"
+movedatalongname MOVE_TERA_STARSTORM, "PluieTérastrale", "Pluie Térastrale"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_SPECIAL
     basepower 120
@@ -14635,7 +14635,7 @@ movedata MOVE_MIGHTY_CLEAVE, "Lame Puissante"
     terminatedata
     movedescription MOVE_MIGHTY_CLEAVE, "---"
 
-movedata MOVE_TACHYON_CUTTER, "LameTachyonique"
+movedatalongname MOVE_TACHYON_CUTTER, "LameTachyonique", "Lame Tachyonique"
     battleeffect MOVE_EFFECT_HIT_TWICE
     pss SPLIT_SPECIAL
     basepower 50
@@ -14651,7 +14651,7 @@ movedata MOVE_TACHYON_CUTTER, "LameTachyonique"
     terminatedata
     movedescription MOVE_TACHYON_CUTTER, "The user attacks by\nlaunching particle\nblades at the target\ntwice in a row. This\nattack never misses."
 
-movedata MOVE_HARD_PRESS, "PressionExtrême"
+movedatalongname MOVE_HARD_PRESS, "PressionExtrême", "Pression Extrême"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_PHYSICAL
     basepower 0
