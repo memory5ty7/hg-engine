@@ -535,5 +535,9 @@ arm9 CallTask_Blackout 0205297C 1
 # hook from near beginning of function
 0001 CheckOverworldRequestFlags_hook 021E6AF6 3
 
+# fixed encounters
 0002 WildEncounters_ReplaceTimedEncounters 02246A84 2
 0002 WildEncounters_ReplaceRadioEncounters 02246B00 2
+
+# starter IVs
+arm9 ScrCmd_SetStarterChoice 02043964 1
