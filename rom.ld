@@ -759,8 +759,22 @@ MonMoveCanRestorePP = 0x020908CC | 1;
 MonMoveRestorePP = 0x0209091C | 1;
 
 /* Nuzlocke Mode Blackout */
-TaskManager_Call = 0x02050530 | 1;
-Task_Blackout = 0x02052858 | 1;
+MapObjectManager_PauseAllMovement = 0x0205F574 | 1;
+sub_02055218 = 0x02055218 | 1;
+sub_02050724 = 0x02050724 | 1;
+sub_02093070 = 0x02093070 | 1;
+sub_020930C4 = 0x020930C4 | 1;
+sub_02051660 = 0x02051660 | 1;
+
+CallTask_LeaveOverworld = 0x0205525C | 1;
+CallTask_StartBattle = 0x020506AC | 1;
+Encounter_GetResult = 0x020506F4 | 1;
+Encounter_Delete = 0x020506E0 | 1;
+Save_VarsFlags_CheckHaveFollower = 0x02066644 | 1;
+CallTask_RestoreOverworld = 0x020552A4 | 1;
+CallTask_FadeFromBlack = 0x0205532C | 1;
+
+CallTask_Blackout = 0x0205297C | 1;
 
 /* Last Mon Theme */
 BattleSystem_GetBattleType = 0x0223A7E0 | 1;

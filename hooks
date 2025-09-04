@@ -518,7 +518,8 @@ arm9 PartyMenu_ItemUseFunc_ReuseItem_hook 0208138C 3
 
 # Nuzlocke Mode Blackout
 arm9 HealParty 02090C1C 1
-arm9 CallTask_Blackout 0205297C 1
+arm9 Task_StartEncounter 02050738 1
+arm9 ScrCmd_WhiteOut 020498C8 1
 
 # Last Mon Theme
 0012 CheckTrainerMessage 02250D4C 2
