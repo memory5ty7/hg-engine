@@ -3,6 +3,11 @@
 #include "../../include/constants/battle_message_constants.h"
 #include "../../include/constants/vars_flags.h"
 #include "../../include/pokemon.h"
+#include "../../include/constants/map_sections.h"
+#include "../../include/constants/battle_script_constants.h"
+#include "../../include/npc_trade.h"
+#include "../../include/constants/file.h"
+#include "../../include/constants/species.h"
 
 void overrideItemUsage(struct BattleSystem *bsys, struct BattleStruct *ctx)
 {
@@ -21,14 +26,16 @@ void overrideItemUsage(struct BattleSystem *bsys, struct BattleStruct *ctx)
                 ov12_022639B8(bsys, battlerId, mp);
                 ctx->com_seq_no[battlerId] = SSI_STATE_15;
                 ctx->ret_seq_no[battlerId] = SSI_STATE_SELECT_COMMAND_INIT;
-            } else if (checkAreaCaughtFlag(bsys, bsys->location) && CheckScriptFlag(FLAG_NUZLOCKE_MODE))
+            } else if (checkAreaCaughtFlag(bsys, bsys->location)
+                       && CheckScriptFlag(FLAG_NUZLOCKE_MODE))
             {
                 mp.msg_id = BATTLE_MSG_AREA_ALREADY_CAUGHT_POKEMON; //msg.id  = msg_0197_01574; // You have already caught a Pokémon in this Area!
                 mp.msg_tag = TAG_NONE;
                 ov12_022639B8(bsys, battlerId, mp);
                 ctx->com_seq_no[battlerId] = SSI_STATE_15;
                 ctx->ret_seq_no[battlerId] = SSI_STATE_SELECT_COMMAND_INIT;                
-            } else if (BattleSystem_CheckMonCaught(bsys, ctx->battlemon[BATTLER_ENEMY].species) & CheckScriptFlag(FLAG_NUZLOCKE_MODE))
+            } else if (CheckEvoLineCaught(bsys, ctx->battlemon[BATTLER_ENEMY].species, ctx->battlemon[BATTLER_ENEMY].form_no)
+                       && CheckScriptFlag(FLAG_NUZLOCKE_MODE))
             {
                 mp.msg_id = BATTLE_MSG_ALREADY_CAUGHT_POKEMON; //msg.id  = msg_0197_01575; // You have already caught this Pokémon (or its Evolution Line)!
                 mp.msg_tag = TAG_NONE;
@@ -62,11 +69,54 @@ BOOL LONG_CALL BattleContext_Main(struct BattleSystem *bsys, struct BattleStruct
     return FALSE;
 }
 
-#include "../../include/constants/map_sections.h"
+void getAllEvolutions(u16 specieswithform, u16 *results) {
+    u16 toCheck[100];
+    int checkCount = 0;
+    int resultCount = 0;
+    u8 buf[200];
 
-BOOL CheckEvoLineCaught(struct BattleSystem *bsys, u16 species)
+    toCheck[checkCount++] = specieswithform;
+
+    int checkIndex = 0;
+    while (checkIndex < checkCount) {
+        u16 current = toCheck[checkIndex++];
+
+        struct Evolution *evoTable;
+        evoTable = sys_AllocMemory(0, MAX_EVOS_PER_POKE * sizeof(struct Evolution));
+        ArchiveDataLoad(evoTable, ARC_EVOLUTIONS, current);
+
+        int evoIndex = 0;
+
+        while (evoTable[evoIndex].method != EVO_NONE) {
+            results[resultCount++] = evoTable[evoIndex].target & 0x7FF;
+            toCheck[checkCount++] = evoTable[evoIndex].target & 0x7FF;
+            evoIndex++;
+        }
+
+        sys_FreeMemoryEz(evoTable);
+    }
+}
+
+BOOL CheckEvoLineCaught(struct BattleSystem *bsys, u16 species, u16 form_no)
 {
-    return BattleSystem_CheckMonCaught(bsys, species);
+    u8 buf[200];
+    u16 speciesWithForm;
+    speciesWithForm = PokeOtherFormMonsNoGet(species, form_no);
+
+    u16 evolutionList[100] = { SPECIES_NONE };
+    getAllEvolutions(speciesWithForm, evolutionList);
+    
+    int i = 0;
+    while(evolutionList[i] != SPECIES_NONE)
+    {
+        if (BattleSystem_CheckMonCaught(bsys, evolutionList[i]))
+        {
+            return TRUE;
+        }
+        i++;
+    }
+
+    return FALSE;
 }
 
 void setAreaCaughtFlag(struct BattleSystem *bsys, u8 mapSec)
@@ -81,13 +131,6 @@ BOOL checkAreaCaughtFlag(struct BattleSystem *bsys, u8 mapSec)
     u16 varValue = GetScriptVar(varID);
     return varValue & (1 << mapSec % 16);
 }
-
-#include "../../include/constants/battle_script_constants.h"
-#include "../../include/npc_trade.h"
-
-#define BATTLE_OUTCOME_WIN         1
-
-void LONG_CALL ReadBattleScriptFromNarc(struct BattleStruct *ctx, int narcId, int fileId);
 
 void ov12_0224D464(struct BattleSystem *bsys, struct BattleStruct *ctx) {
     if (BattleSystem_GetBattleOutcomeFlags(bsys) & BATTLE_RESULT_TRY_FLEE) {
@@ -107,7 +150,8 @@ void ov12_0224D464(struct BattleSystem *bsys, struct BattleStruct *ctx) {
         ctx->server_seq_no = CONTROLLER_COMMAND_44;
     }
 
-    if (!(BattleTypeGet(bsys) & BATTLE_TYPE_TRAINER) && !CheckEvoLineCaught(bsys, ctx->battlemon[BATTLER_ENEMY].species))
+    if (!(BattleTypeGet(bsys) & BATTLE_TYPE_TRAINER)
+        && !CheckEvoLineCaught(bsys, ctx->battlemon[BATTLER_ENEMY].species, ctx->battlemon[BATTLER_ENEMY].form_no))
     {
         setAreaCaughtFlag(bsys, bsys->location);
     }
@@ -115,15 +159,13 @@ void ov12_0224D464(struct BattleSystem *bsys, struct BattleStruct *ctx) {
     ctx->fight_end_flag = TRUE;
 }
 
-int LONG_CALL ov12_022581D4(struct BattleSystem *bsys, struct BattleStruct *ctx, int var, int battlerId);
-
 void BattleSystem_SetPokedexCaught(struct BattleSystem *bsys, int battlerId) {
     u32 flag = ov12_02261258(bsys->opponentData[battlerId]);
 
     if (!(bsys->battleType & (BATTLE_TYPE_WIRELESS | BATTLE_TYPE_BATTLE_TOWER)) && (flag & 1)) {
         int selectedMonIndex = ov12_022581D4(bsys, bsys->sp, 2, battlerId);
         struct PartyPokemon *mon = Battle_GetClientPartyMon(bsys, battlerId, selectedMonIndex);
-        if (!CheckEvoLineCaught(bsys, bsys->sp->battlemon[bsys->sp->defence_client].species))
+        if (!CheckEvoLineCaught(bsys, bsys->sp->battlemon[BATTLER_ENEMY].species, bsys->sp->battlemon[BATTLER_ENEMY].form_no))
         {
             setAreaCaughtFlag(bsys, bsys->location);
         }
