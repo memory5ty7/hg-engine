@@ -1520,7 +1520,7 @@ struct BattleSystem {
     u8 padding[0x2400 - 0x228];
     u32 terrain;
     u32 bgId;
-    // int location;
+    int location;
     // u32 battleSpecial;
     // int timezone; //might be timeOfDay? unclear
     // int safariBallCnt;
@@ -3823,5 +3823,16 @@ BOOL LONG_CALL IsAnyBattleMonHit(struct BattleStruct* ctx);
 int GetSanitisedType(int type);
 
 int LONG_CALL PokeParty_GetPokeCount(const struct Party *party);
+
+#define BATTLE_IN_PROGRESS          0
+#define BATTLE_RESULT_WIN           (1 << 0)
+#define BATTLE_RESULT_LOSE          (1 << 1)
+#define BATTLE_RESULT_CAPTURED_MON  (1 << 2)
+#define BATTLE_RESULT_TRY_FLEE_WAIT (1 << 6)
+#define BATTLE_RESULT_TRY_FLEE      (1 << 7)
+
+#define BATTLE_RESULT_DRAW        (BATTLE_RESULT_WIN | BATTLE_RESULT_LOSE)
+#define BATTLE_RESULT_PLAYER_FLED (BATTLE_RESULT_CAPTURED_MON | BATTLE_RESULT_WIN)
+#define BATTLE_RESULT_ENEMY_FLED  (BATTLE_RESULT_CAPTURED_MON | BATTLE_RESULT_LOSE)
 
 #endif // BATTLE_H

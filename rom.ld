@@ -766,6 +766,12 @@ sub_02093070 = 0x02093070 | 1;
 sub_020930C4 = 0x020930C4 | 1;
 sub_02051660 = 0x02051660 | 1;
 
+/* Nuzlocke Mode Catching */
+BattleSystem_CheckMonCaught = 0x0223C330 | 1;
+ReadBattleScriptFromNarc = 0x0224EB9C | 1;
+ov12_02261258 = 0x02261258 | 1;
+ov12_022581D4 = 0x022581D4 | 1;
+
 CallTask_LeaveOverworld = 0x0205525C | 1;
 CallTask_StartBattle = 0x020506AC | 1;
 Encounter_GetResult = 0x020506F4 | 1;
