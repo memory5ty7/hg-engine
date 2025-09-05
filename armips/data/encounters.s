@@ -530,7 +530,7 @@ pokemon SPECIES_NONE
 
 encounterdata   5   // Violet City
 
-walkrate 0
+walkrate 25
 surfrate 15
 rocksmashrate 0
 oldrodrate 100
