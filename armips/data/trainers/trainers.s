@@ -1015,7 +1015,7 @@ trainerdata 28, "Jake"
 
 trainerdata 29, "Élie"
     trainermontype TRAINER_DATA_TYPE_ABILITY | TRAINER_DATA_TYPE_NATURE_SET | TRAINER_DATA_TYPE_MOVES | TRAINER_DATA_TYPE_IV_EV_SET | TRAINER_DATA_TYPE_ITEMS | 0
-    trainerclass TRAINERCLASS_BIRD_KEEPER
+    trainerclass TRAINERCLASS_BIRD_KEEPER_GS
     nummons 4
     item ITEM_NONE
     item ITEM_NONE
@@ -1844,7 +1844,7 @@ trainerdata 49, "Albert"
 
 trainerdata 50, "Ben"
     trainermontype TRAINER_DATA_TYPE_ABILITY | TRAINER_DATA_TYPE_NATURE_SET | TRAINER_DATA_TYPE_MOVES | TRAINER_DATA_TYPE_IV_EV_SET | TRAINER_DATA_TYPE_ITEMS | 0
-    trainerclass TRAINERCLASS_BIRD_KEEPER
+    trainerclass TRAINERCLASS_BIRD_KEEPER_GS
     nummons 3
     item ITEM_NONE
     item ITEM_NONE
