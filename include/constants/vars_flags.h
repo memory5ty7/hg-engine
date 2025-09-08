@@ -7,6 +7,7 @@
 #define FLAG_REPELLENT_ON           2553
 #define FLAG_TALKED_TO_DARK_CAVE    2554
 #define FLAG_BEAT_DARK_CAVE         2555
+#define FLAG_GOT_SHOCK_WAVE_TM      2556
 
 #define VAR_MAPSEC_1                16410
 #define VAR_MAPSEC_2                16411
