@@ -1248,9 +1248,10 @@
     .long (((\arg_0 - .) / 4) - 1)
     .endm
 
-    .macro SetTailwindCounter arg_0
+    .macro SetTailwindCounter arg_0, arg_1
     .long 228
     .long \arg_0
+    .long \arg_1
     .endm
 
     .macro GotoIfTailwindActive arg_0, arg_1

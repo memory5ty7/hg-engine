@@ -1362,20 +1362,23 @@ void ServerFieldConditionCheck(void *bw, struct BattleStruct *sp) {
 
                             if (sp->tailwindCount[side])  // update tailwind to use a separate counter so it can be larger
                             {
-                                if (--sp->tailwindCount[side] == 0) {
-                                    LoadBattleSubSeqScript(sp, ARC_BATTLE_SUB_SEQ, SUB_SEQ_TAILWIND_END);
-                                    sp->next_server_seq_no = sp->server_seq_no;
-                                    sp->server_seq_no = 22;
-                                    sp->battlerIdTemp = ST_ServerDir2ClientNoGet(bw, sp, side);
-                                    ret = 1;
+                                if (sp->tailwindCount[side] < 5)
+                                {
+                                    if (--sp->tailwindCount[side] == 0) {
+                                        LoadBattleSubSeqScript(sp, ARC_BATTLE_SUB_SEQ, SUB_SEQ_TAILWIND_END);
+                                        sp->next_server_seq_no = sp->server_seq_no;
+                                        sp->server_seq_no = 22;
+                                        sp->battlerIdTemp = ST_ServerDir2ClientNoGet(bw, sp, side);
+                                        ret = 1;
 
-                                    // clear ability activated flag for wind power/rider
-                                    for (int index = side; index < client_set_max; index += 2)
-                                    {
-                                        u32 currAbility = GetBattlerAbility(sp, index);
-                                        if (currAbility == ABILITY_WIND_POWER || currAbility == ABILITY_WIND_RIDER)
+                                        // clear ability activated flag for wind power/rider
+                                        for (int index = side; index < client_set_max; index += 2)
                                         {
-                                            sp->battlemon[index].ability_activated_flag = FALSE;
+                                            u32 currAbility = GetBattlerAbility(sp, index);
+                                            if (currAbility == ABILITY_WIND_POWER || currAbility == ABILITY_WIND_RIDER)
+                                            {
+                                                sp->battlemon[index].ability_activated_flag = FALSE;
+                                            }
                                         }
                                     }
                                 }

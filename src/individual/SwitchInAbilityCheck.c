@@ -70,6 +70,7 @@ int UNUSED SwitchInAbilityCheck(void *bw, struct BattleStruct *sp)
                             scriptnum = SUB_SEQ_OVERWORLD_FOG;
                             ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
                             break;
+                        case WEATHER_SYS_SUN:
                         case WEATHER_SYS_HIGH_SUN:
                             scriptnum = SUB_SEQ_OVERWORLD_SUN;
                             ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
@@ -78,6 +79,19 @@ int UNUSED SwitchInAbilityCheck(void *bw, struct BattleStruct *sp)
                             scriptnum = SUB_SEQ_OVERWORLD_TRICK_ROOM;
                             ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
                             break;
+                        case WEATHER_SYS_TAILWIND:
+                            sp->current_move_index = MOVE_TAILWIND;
+                            sp->attack_client = BATTLER_ENEMY;
+                            scriptnum = SUB_SEQ_OVERWORLD_TAILWIND;
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            break;
+                        case WEATHER_SYS_STICKY_WEB:
+                            sp->current_move_index = MOVE_STICKY_WEB;
+                            sp->attack_client = BATTLER_ENEMY;
+                            sp->defence_client = BATTLER_PLAYER;
+                            scriptnum = SUB_SEQ_OVERWORLD_STICKY_WEB;                  
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            break;                            
                     }
                     if (ret == SWITCH_IN_CHECK_MOVE_SCRIPT) {
                         sp->weather_check_flag = 1;

@@ -2253,10 +2253,11 @@ BOOL btl_scr_cmd_E4_settailwind(void *bw, struct BattleStruct *sp)
 {
     IncrementBattleScriptPtr(sp, 1);
     u32 client_no = read_battle_script_param(sp);
+    int turns = read_battle_script_param(sp);
 
     client_no = GrabClientFromBattleScriptParam(bw, sp, client_no);
 
-    sp->tailwindCount[IsClientEnemy(bw, client_no)] = 4;
+    sp->tailwindCount[IsClientEnemy(bw, client_no)] = turns;
 
     return FALSE;
 }
