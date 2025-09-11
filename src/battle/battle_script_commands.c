@@ -110,6 +110,8 @@ u32 LoadCaptureSuccessSPA(u32 id);
 u32 LoadCaptureSuccessSPAStarEmitter(u32 id);
 u32 LoadCaptureSuccessSPANumEmitters(u32 id);
 
+BOOL btl_scr_cmd_permanentterrain(void *bw, struct BattleStruct *sp);
+
 #ifdef DEBUG_BATTLE_SCRIPT_COMMANDS
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wpointer-sign"
@@ -376,13 +378,14 @@ const u8 *BattleScrCmdNames[] =
     "RemoveEntryHazardFromQueue",
     "CheckProtectContactMoves",
     // "YourCustomCommand",
+    "PermanentTerrain",
 };
 
 u32 cmdAddress = 0;
 #pragma GCC diagnostic pop
 #endif // DEBUG_BATTLE_SCRIPT_COMMANDS
 
-#define BASE_ENGINE_BTL_SCR_CMDS_MAX 0xFF
+#define BASE_ENGINE_BTL_SCR_CMDS_MAX 0x103
 
 const btl_scr_cmd_func NewBattleScriptCmdTable[] =
 {
@@ -422,6 +425,7 @@ const btl_scr_cmd_func NewBattleScriptCmdTable[] =
     [0x102 - START_OF_NEW_BTL_SCR_CMDS] = btl_scr_cmd_102_removeentryhazardfromqueue,
     [0x103 - START_OF_NEW_BTL_SCR_CMDS] = btl_scr_cmd_103_checkprotectcontactmoves,
     // [BASE_ENGINE_BTL_SCR_CMDS_MAX - START_OF_NEW_BTL_SCR_CMDS + 1] = btl_scr_cmd_custom_01_your_custom_command,
+    [BASE_ENGINE_BTL_SCR_CMDS_MAX - START_OF_NEW_BTL_SCR_CMDS + 1] = btl_scr_cmd_permanentterrain,
 };
 
 // entries before 0xFFFE are banned for mimic and metronome--after is just banned for metronome.  table ends with 0xFFFF
@@ -3981,6 +3985,52 @@ BOOL BtlCmd_TrySwapItems(void* bw, struct BattleStruct *sp)
         IncrementBattleScriptPtr(sp, attack);
     else if (MoldBreakerAbilityCheck(sp, sp->attack_client, sp->defence_client, ABILITY_STICKY_HOLD) == TRUE)
         IncrementBattleScriptPtr(sp, defence);
+
+    return FALSE;
+}
+
+BOOL btl_scr_cmd_permanentterrain(void *bw UNUSED, struct BattleStruct *sp) {
+    IncrementBattleScriptPtr(sp, 1);
+
+    u8 endTerrainFlag = read_battle_script_param(sp);
+    int address = read_battle_script_param(sp);
+    int item, itemPower;
+
+    enum TerrainOverlayType oldTerrainOverlay = sp->terrainOverlay.type;
+
+    switch (sp->current_move_index) {
+        case MOVE_GRASSY_TERRAIN:
+            sp->terrainOverlay.type = GRASSY_TERRAIN;
+            break;
+        case MOVE_MISTY_TERRAIN:
+            sp->terrainOverlay.type = MISTY_TERRAIN;
+            break;
+        case MOVE_ELECTRIC_TERRAIN:
+            sp->terrainOverlay.type = ELECTRIC_TERRAIN;
+            break;
+        case MOVE_PSYCHIC_TERRAIN:
+            sp->terrainOverlay.type = PSYCHIC_TERRAIN;
+            break;
+        default:
+            // I think this could work for moves that remove terrain
+            sp->terrainOverlay.type = TERRAIN_NONE;
+            break;
+    }
+
+    if (endTerrainFlag == TRUE) {
+        sp->terrainOverlay.type = TERRAIN_NONE;
+    }
+
+    // if the new terrain is the same as the old one, the move should fail
+    if (oldTerrainOverlay == sp->terrainOverlay.type) {
+        IncrementBattleScriptPtr(sp, address);
+    } else {
+        if (sp->terrainOverlay.type != TERRAIN_NONE) {
+            sp->terrainOverlay.numberOfTurnsLeft = 6;
+        } else {
+            sp->terrainOverlay.numberOfTurnsLeft = 0;
+        }
+    }
 
     return FALSE;
 }

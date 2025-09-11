@@ -460,15 +460,16 @@
 #define SUB_SEQ_SPIKY_SHIELD                          (450)
 #define SUB_SEQ_HANDLE_ANGER_SHELL                    (451)
 #define SUB_SEQ_HANDLE_GEM_ACTIVATION_MESSAGE         (452)
-#define SUB_SEQ_OVERWORLD_STICKY_WEB                  (453)
-#define SUB_SEQ_OVERWORLD_TAILWIND                    (454)
 
-#define MAX_BASE_SUBSCRIPT_NUM 454
+#define MAX_BASE_SUBSCRIPT_NUM 452
 
 // define your custom subscripts below like this
 // #define MOVE_SUBSCRIPT_PTR_CUSTOM_1 (MAX_BASE_SUBSCRIPT_NUM + 1)
 
-
+#define SUB_SEQ_OVERWORLD_STICKY_WEB                  (MAX_BASE_SUBSCRIPT_NUM + 1)
+#define SUB_SEQ_OVERWORLD_TAILWIND                    (MAX_BASE_SUBSCRIPT_NUM + 2)
+#define SUB_SEQ_OVERWORLD_TERRAIN                     (MAX_BASE_SUBSCRIPT_NUM + 3)
+#define SUB_SEQ_PERMANENT_TRICK_ROOM                  (MAX_BASE_SUBSCRIPT_NUM + 4)
 
 // add status effect constants--used in battle effect scripts to queue up a subscript through the table in src/moves.c
 

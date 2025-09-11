@@ -79,6 +79,10 @@ int UNUSED SwitchInAbilityCheck(void *bw, struct BattleStruct *sp)
                             scriptnum = SUB_SEQ_OVERWORLD_TRICK_ROOM;
                             ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
                             break;
+                        case WEATHER_SYS_PERMANENT_TRICK_ROOM:
+                            scriptnum = SUB_SEQ_PERMANENT_TRICK_ROOM;
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;                        
+                            break;
                         case WEATHER_SYS_TAILWIND:
                             sp->current_move_index = MOVE_TAILWIND;
                             sp->attack_client = BATTLER_ENEMY;
@@ -91,7 +95,42 @@ int UNUSED SwitchInAbilityCheck(void *bw, struct BattleStruct *sp)
                             sp->defence_client = BATTLER_PLAYER;
                             scriptnum = SUB_SEQ_OVERWORLD_STICKY_WEB;                  
                             ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            break;
+                        case WEATHER_SYS_ELECTRIC_TERRAIN:
+                            sp->current_move_index = MOVE_ELECTRIC_TERRAIN;
+                            scriptnum = SUB_SEQ_OVERWORLD_TERRAIN;
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            break;           
+                        case WEATHER_SYS_PSYCHIC_TERRAIN:
+                            sp->current_move_index = MOVE_PSYCHIC_TERRAIN;
+                            scriptnum = SUB_SEQ_OVERWORLD_TERRAIN;
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            break;           
+                        case WEATHER_SYS_MISTY_TERRAIN:
+                            sp->current_move_index = MOVE_MISTY_TERRAIN;
+                            scriptnum = SUB_SEQ_OVERWORLD_TERRAIN;
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            break;           
+                        case WEATHER_SYS_GRASSY_TERRAIN:
+                            sp->current_move_index = MOVE_GRASSY_TERRAIN;
+                            scriptnum = SUB_SEQ_OVERWORLD_TERRAIN;
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
                             break;                            
+                        case WEATHER_SYS_DESOLATE_LAND:
+                        case WEATHER_SYS_PRIMORDIAL_SEA:
+                        case WEATHER_SYS_DELTA_STREAM:
+                            break; 
+                        case WEATHER_SYS_AURORA_VEIL:
+                            break;
+                        case WEATHER_SYS_SPIKES_1:
+                        case WEATHER_SYS_SPIKES_2:
+                        case WEATHER_SYS_SPIKES_3:
+                            break;
+                        case WEATHER_SYS_TSPIKES_1:
+                        case WEATHER_SYS_TSPIKES_2:
+                            break;
+                        case WEATHER_SYS_STEALTH_ROCK:
+                            break;
                     }
                     if (ret == SWITCH_IN_CHECK_MOVE_SCRIPT) {
                         sp->weather_check_flag = 1;
