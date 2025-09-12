@@ -99,3 +99,5 @@ DSPRE 1.13.1/*
 *.py
 maps/*
 traduction/*
+encountersgen/*
+*.bak
