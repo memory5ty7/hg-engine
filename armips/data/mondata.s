@@ -22,7 +22,7 @@ mondata SPECIES_NONE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 0
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_NONE, EGG_GROUP_NONE
@@ -43,7 +43,7 @@ mondata SPECIES_BULBASAUR, "Bulbizarre"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_GRASS
@@ -64,7 +64,7 @@ mondata SPECIES_IVYSAUR, "Herbizarre"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_GRASS
@@ -85,7 +85,7 @@ mondata SPECIES_VENUSAUR, "Florizarre"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_GRASS
@@ -106,7 +106,7 @@ mondata SPECIES_CHARMANDER, "Salamèche"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_DRAGON
@@ -127,7 +127,7 @@ mondata SPECIES_CHARMELEON, "Reptincel"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_DRAGON
@@ -148,7 +148,7 @@ mondata SPECIES_CHARIZARD, "Dracaufeu"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_DRAGON
@@ -169,7 +169,7 @@ mondata SPECIES_SQUIRTLE, "Carapuce"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_WATER_1
@@ -190,7 +190,7 @@ mondata SPECIES_WARTORTLE, "Carabaffe"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_WATER_1
@@ -211,7 +211,7 @@ mondata SPECIES_BLASTOISE, "Tortank"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_WATER_1
@@ -232,7 +232,7 @@ mondata SPECIES_CATERPIE, "Chenipan"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -253,7 +253,7 @@ mondata SPECIES_METAPOD, "Chrysacier"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -274,7 +274,7 @@ mondata SPECIES_BUTTERFREE, "Papilusion"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -295,7 +295,7 @@ mondata SPECIES_WEEDLE, "Aspicot"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -316,7 +316,7 @@ mondata SPECIES_KAKUNA, "Coconfort"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -337,7 +337,7 @@ mondata SPECIES_BEEDRILL, "Dardargnan"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -358,7 +358,7 @@ mondata SPECIES_PIDGEY, "Roucool"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -379,7 +379,7 @@ mondata SPECIES_PIDGEOTTO, "Roucoups"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -400,7 +400,7 @@ mondata SPECIES_PIDGEOT, "Roucarnage"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -421,7 +421,7 @@ mondata SPECIES_RATTATA, "Rattata"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -442,7 +442,7 @@ mondata SPECIES_RATICATE, "Rattatac"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -463,7 +463,7 @@ mondata SPECIES_SPEAROW, "Piafabec"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -484,7 +484,7 @@ mondata SPECIES_FEAROW, "Rapasdepic"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -505,7 +505,7 @@ mondata SPECIES_EKANS, "Abo"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_DRAGON
@@ -526,7 +526,7 @@ mondata SPECIES_ARBOK, "Arbok"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_DRAGON
@@ -547,7 +547,7 @@ mondata SPECIES_PIKACHU, "Pikachu"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 10
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FAIRY
@@ -568,7 +568,7 @@ mondata SPECIES_RAICHU, "Raichu"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 10
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FAIRY
@@ -589,7 +589,7 @@ mondata SPECIES_SANDSHREW, "Sabelette"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -610,7 +610,7 @@ mondata SPECIES_SANDSLASH, "Sablaireau"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -631,7 +631,7 @@ mondata SPECIES_NIDORAN_F, "Nidoran♀"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_FIELD
@@ -652,7 +652,7 @@ mondata SPECIES_NIDORINA, "Nidorina"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -673,7 +673,7 @@ mondata SPECIES_NIDOQUEEN, "Nidoqueen"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -694,7 +694,7 @@ mondata SPECIES_NIDORAN_M, "Nidoran♂"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_FIELD
@@ -715,7 +715,7 @@ mondata SPECIES_NIDORINO, "Nidorino"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_FIELD
@@ -736,7 +736,7 @@ mondata SPECIES_NIDOKING, "Nidoking"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_FIELD
@@ -757,7 +757,7 @@ mondata SPECIES_CLEFAIRY, "Mélofée"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 190
-    eggcycles 10
+    eggcycles 1
     basefriendship 140
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_FAIRY
@@ -778,7 +778,7 @@ mondata SPECIES_CLEFABLE, "Mélodelfe"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 190
-    eggcycles 10
+    eggcycles 1
     basefriendship 140
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_FAIRY
@@ -799,7 +799,7 @@ mondata SPECIES_VULPIX, "Goupix"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 190
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -820,7 +820,7 @@ mondata SPECIES_NINETALES, "Feunard"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 190
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -841,7 +841,7 @@ mondata SPECIES_JIGGLYPUFF, "Rondoudou"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 190
-    eggcycles 10
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_FAIRY
@@ -862,7 +862,7 @@ mondata SPECIES_WIGGLYTUFF, "Grodoudou"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 190
-    eggcycles 10
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_FAIRY
@@ -883,7 +883,7 @@ mondata SPECIES_ZUBAT, "Nosferapti"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -904,7 +904,7 @@ mondata SPECIES_GOLBAT, "Nosferalto"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -925,7 +925,7 @@ mondata SPECIES_ODDISH, "Mystherbe"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_GRASS, EGG_GROUP_GRASS
@@ -946,7 +946,7 @@ mondata SPECIES_GLOOM, "Ortide"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_GRASS, EGG_GROUP_GRASS
@@ -967,7 +967,7 @@ mondata SPECIES_VILEPLUME, "Rafflesia"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_GRASS, EGG_GROUP_GRASS
@@ -988,7 +988,7 @@ mondata SPECIES_PARAS, "Paras"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_GRASS
@@ -1009,7 +1009,7 @@ mondata SPECIES_PARASECT, "Parasect"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_GRASS
@@ -1030,7 +1030,7 @@ mondata SPECIES_VENONAT, "Mimitoss"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -1051,7 +1051,7 @@ mondata SPECIES_VENOMOTH, "Aéromite"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -1072,7 +1072,7 @@ mondata SPECIES_DIGLETT, "Taupiqueur"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -1093,7 +1093,7 @@ mondata SPECIES_DUGTRIO, "Triopikeur"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -1114,7 +1114,7 @@ mondata SPECIES_MEOWTH, "Miaouss"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -1135,7 +1135,7 @@ mondata SPECIES_PERSIAN, "Persian"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -1156,7 +1156,7 @@ mondata SPECIES_PSYDUCK, "Psykokwak"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_FIELD
@@ -1177,7 +1177,7 @@ mondata SPECIES_GOLDUCK, "Akwakwak"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_FIELD
@@ -1198,7 +1198,7 @@ mondata SPECIES_MANKEY, "Férosinge"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -1219,7 +1219,7 @@ mondata SPECIES_PRIMEAPE, "Colossinge"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -1240,7 +1240,7 @@ mondata SPECIES_GROWLITHE, "Caninos"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 63
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -1261,7 +1261,7 @@ mondata SPECIES_ARCANINE, "Arcanin"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 63
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -1282,7 +1282,7 @@ mondata SPECIES_POLIWAG, "Ptitard"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_WATER_1
@@ -1303,7 +1303,7 @@ mondata SPECIES_POLIWHIRL, "Têtarte"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_WATER_1
@@ -1324,7 +1324,7 @@ mondata SPECIES_POLIWRATH, "Tartard"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_WATER_1
@@ -1345,7 +1345,7 @@ mondata SPECIES_ABRA, "Abra"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 63
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -1366,7 +1366,7 @@ mondata SPECIES_KADABRA, "Kadabra"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 63
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -1387,7 +1387,7 @@ mondata SPECIES_ALAKAZAM, "Alakazam"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 63
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -1408,7 +1408,7 @@ mondata SPECIES_MACHOP, "Machoc"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 63
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -1429,7 +1429,7 @@ mondata SPECIES_MACHOKE, "Machopeur"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 63
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -1450,7 +1450,7 @@ mondata SPECIES_MACHAMP, "Mackogneur"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 63
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -1471,7 +1471,7 @@ mondata SPECIES_BELLSPROUT, "Chétiflor"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_GRASS, EGG_GROUP_GRASS
@@ -1492,7 +1492,7 @@ mondata SPECIES_WEEPINBELL, "Boustiflor"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_GRASS, EGG_GROUP_GRASS
@@ -1513,7 +1513,7 @@ mondata SPECIES_VICTREEBEL, "Empiflor"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_GRASS, EGG_GROUP_GRASS
@@ -1534,7 +1534,7 @@ mondata SPECIES_TENTACOOL, "Tentacool"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_WATER_3, EGG_GROUP_WATER_3
@@ -1555,7 +1555,7 @@ mondata SPECIES_TENTACRUEL, "Tentacruel"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_WATER_3, EGG_GROUP_WATER_3
@@ -1576,7 +1576,7 @@ mondata SPECIES_GEODUDE, "Racaillou"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -1597,7 +1597,7 @@ mondata SPECIES_GRAVELER, "Gravalanch"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -1618,7 +1618,7 @@ mondata SPECIES_GOLEM, "Grolem"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -1639,7 +1639,7 @@ mondata SPECIES_PONYTA, "Ponyta"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -1660,7 +1660,7 @@ mondata SPECIES_RAPIDASH, "Galopa"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -1681,7 +1681,7 @@ mondata SPECIES_SLOWPOKE, "Ramoloss"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_WATER_1
@@ -1702,7 +1702,7 @@ mondata SPECIES_SLOWBRO, "Flagadoss"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_WATER_1
@@ -1723,7 +1723,7 @@ mondata SPECIES_MAGNEMITE, "Magnéti"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -1744,7 +1744,7 @@ mondata SPECIES_MAGNETON, "Magnéton"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -1765,7 +1765,7 @@ mondata SPECIES_FARFETCHD, "Canarticho"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FIELD
@@ -1786,7 +1786,7 @@ mondata SPECIES_DODUO, "Doduo"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -1807,7 +1807,7 @@ mondata SPECIES_DODRIO, "Dodrio"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -1828,7 +1828,7 @@ mondata SPECIES_SEEL, "Otaria"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_FIELD
@@ -1849,7 +1849,7 @@ mondata SPECIES_DEWGONG, "Lamantine"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_FIELD
@@ -1870,7 +1870,7 @@ mondata SPECIES_GRIMER, "Tadmorv"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -1891,7 +1891,7 @@ mondata SPECIES_MUK, "Grotadmorv"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -1912,7 +1912,7 @@ mondata SPECIES_SHELLDER, "Kokiyas"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_WATER_3, EGG_GROUP_WATER_3
@@ -1933,7 +1933,7 @@ mondata SPECIES_CLOYSTER, "Crustabri"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_WATER_3, EGG_GROUP_WATER_3
@@ -1954,7 +1954,7 @@ mondata SPECIES_GASTLY, "Fantominus"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -1975,7 +1975,7 @@ mondata SPECIES_HAUNTER, "Spectrum"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -1996,7 +1996,7 @@ mondata SPECIES_GENGAR, "Ectoplasma"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -2017,7 +2017,7 @@ mondata SPECIES_ONIX, "Onix"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -2038,7 +2038,7 @@ mondata SPECIES_DROWZEE, "Soporifik"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -2059,7 +2059,7 @@ mondata SPECIES_HYPNO, "Hypnomade"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -2080,7 +2080,7 @@ mondata SPECIES_KRABBY, "Krabby"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_3, EGG_GROUP_WATER_3
@@ -2101,7 +2101,7 @@ mondata SPECIES_KINGLER, "Krabboss"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_3, EGG_GROUP_WATER_3
@@ -2122,7 +2122,7 @@ mondata SPECIES_VOLTORB, "Voltorbe"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -2143,7 +2143,7 @@ mondata SPECIES_ELECTRODE, "Électrode"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -2164,7 +2164,7 @@ mondata SPECIES_EXEGGCUTE, "Noeunoeuf"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_GRASS, EGG_GROUP_GRASS
@@ -2185,7 +2185,7 @@ mondata SPECIES_EXEGGUTOR, "Noadkoko"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_GRASS, EGG_GROUP_GRASS
@@ -2206,7 +2206,7 @@ mondata SPECIES_CUBONE, "Osselait"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_MONSTER
@@ -2227,7 +2227,7 @@ mondata SPECIES_MAROWAK, "Ossatueur"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_MONSTER
@@ -2248,7 +2248,7 @@ mondata SPECIES_HITMONLEE, "Kicklee"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -2269,7 +2269,7 @@ mondata SPECIES_HITMONCHAN, "Tygnon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -2290,7 +2290,7 @@ mondata SPECIES_LICKITUNG, "Excelangue"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_MONSTER
@@ -2311,7 +2311,7 @@ mondata SPECIES_KOFFING, "Smogo"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -2332,7 +2332,7 @@ mondata SPECIES_WEEZING, "Smogogo"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -2353,7 +2353,7 @@ mondata SPECIES_RHYHORN, "Rhinocorne"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_FIELD
@@ -2374,7 +2374,7 @@ mondata SPECIES_RHYDON, "Rhinoféros"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_FIELD
@@ -2395,7 +2395,7 @@ mondata SPECIES_CHANSEY, "Leveinard"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 40
+    eggcycles 1
     basefriendship 140
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_FAIRY
@@ -2416,7 +2416,7 @@ mondata SPECIES_TANGELA, "Saquedeneu"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_GRASS, EGG_GROUP_GRASS
@@ -2437,7 +2437,7 @@ mondata SPECIES_KANGASKHAN, "Kangourex"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_MONSTER
@@ -2458,7 +2458,7 @@ mondata SPECIES_HORSEA, "Hypotrempe"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_DRAGON
@@ -2479,7 +2479,7 @@ mondata SPECIES_SEADRA, "Hypocéan"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_DRAGON
@@ -2500,7 +2500,7 @@ mondata SPECIES_GOLDEEN, "Poissirène"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_2, EGG_GROUP_WATER_2
@@ -2521,7 +2521,7 @@ mondata SPECIES_SEAKING, "Poissoroy"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_2, EGG_GROUP_WATER_2
@@ -2542,7 +2542,7 @@ mondata SPECIES_STARYU, "Stari"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_WATER_3, EGG_GROUP_WATER_3
@@ -2563,7 +2563,7 @@ mondata SPECIES_STARMIE, "Staross"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_WATER_3, EGG_GROUP_WATER_3
@@ -2584,7 +2584,7 @@ mondata SPECIES_MR_MIME, "M. Mime"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -2605,7 +2605,7 @@ mondata SPECIES_SCYTHER, "Insécateur"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -2626,7 +2626,7 @@ mondata SPECIES_JYNX, "Lippoutou"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -2647,7 +2647,7 @@ mondata SPECIES_ELECTABUZZ, "Élektek"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 63
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -2668,7 +2668,7 @@ mondata SPECIES_MAGMAR, "Magmar"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 63
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -2689,7 +2689,7 @@ mondata SPECIES_PINSIR, "Scarabrute"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -2710,7 +2710,7 @@ mondata SPECIES_TAUROS, "Tauros"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -2731,7 +2731,7 @@ mondata SPECIES_MAGIKARP, "Magicarpe"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 5
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_WATER_2, EGG_GROUP_DRAGON
@@ -2752,7 +2752,7 @@ mondata SPECIES_GYARADOS, "Léviator"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 5
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_WATER_2, EGG_GROUP_DRAGON
@@ -2773,7 +2773,7 @@ mondata SPECIES_LAPRAS, "Lokhlass"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_WATER_1
@@ -2794,7 +2794,7 @@ mondata SPECIES_DITTO, "Métamorph"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_DITTO, EGG_GROUP_DITTO
@@ -2815,7 +2815,7 @@ mondata SPECIES_EEVEE, "Évoli"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 35
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -2836,7 +2836,7 @@ mondata SPECIES_VAPOREON, "Aquali"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 35
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -2857,7 +2857,7 @@ mondata SPECIES_JOLTEON, "Voltali"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 35
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -2878,7 +2878,7 @@ mondata SPECIES_FLAREON, "Pyroli"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 35
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -2899,7 +2899,7 @@ mondata SPECIES_PORYGON, "Porygon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -2920,7 +2920,7 @@ mondata SPECIES_OMANYTE, "Amonita"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 30
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_WATER_3
@@ -2941,7 +2941,7 @@ mondata SPECIES_OMASTAR, "Amonistar"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 30
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_WATER_3
@@ -2962,7 +2962,7 @@ mondata SPECIES_KABUTO, "Kabuto"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 30
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_WATER_3
@@ -2983,7 +2983,7 @@ mondata SPECIES_KABUTOPS, "Kabutops"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 30
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_WATER_3
@@ -3004,7 +3004,7 @@ mondata SPECIES_AERODACTYL, "Ptéra"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 35
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -3025,7 +3025,7 @@ mondata SPECIES_SNORLAX, "Ronflex"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 40
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_MONSTER
@@ -3046,7 +3046,7 @@ mondata SPECIES_ARTICUNO, "Artikodin"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 80
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -3067,7 +3067,7 @@ mondata SPECIES_ZAPDOS, "Électhor"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 80
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -3088,7 +3088,7 @@ mondata SPECIES_MOLTRES, "Sulfura"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 80
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -3109,7 +3109,7 @@ mondata SPECIES_DRATINI, "Minidraco"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_DRAGON
@@ -3130,7 +3130,7 @@ mondata SPECIES_DRAGONAIR, "Draco"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_DRAGON
@@ -3151,7 +3151,7 @@ mondata SPECIES_DRAGONITE, "Dracolosse"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_DRAGON
@@ -3172,7 +3172,7 @@ mondata SPECIES_MEWTWO, "Mewtwo"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -3193,7 +3193,7 @@ mondata SPECIES_MEW, "Mew"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 100
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -3214,7 +3214,7 @@ mondata SPECIES_CHIKORITA, "Germignon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_GRASS
@@ -3235,7 +3235,7 @@ mondata SPECIES_BAYLEEF, "Macronium"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_GRASS
@@ -3256,7 +3256,7 @@ mondata SPECIES_MEGANIUM, "Méganium"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_GRASS
@@ -3277,7 +3277,7 @@ mondata SPECIES_CYNDAQUIL, "Héricendre"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -3298,7 +3298,7 @@ mondata SPECIES_QUILAVA, "Feurisson"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -3319,7 +3319,7 @@ mondata SPECIES_TYPHLOSION, "Typhlosion"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -3340,7 +3340,7 @@ mondata SPECIES_TOTODILE, "Kaiminus"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_WATER_1
@@ -3361,7 +3361,7 @@ mondata SPECIES_CROCONAW, "Crocrodil"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_WATER_1
@@ -3382,7 +3382,7 @@ mondata SPECIES_FERALIGATR, "Aligatueur"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_WATER_1
@@ -3403,7 +3403,7 @@ mondata SPECIES_SENTRET, "Fouinette"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -3424,7 +3424,7 @@ mondata SPECIES_FURRET, "Fouinar"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -3445,7 +3445,7 @@ mondata SPECIES_HOOTHOOT, "Hoothoot"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -3466,7 +3466,7 @@ mondata SPECIES_NOCTOWL, "Noarfang"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -3487,7 +3487,7 @@ mondata SPECIES_LEDYBA, "Coxy"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -3508,7 +3508,7 @@ mondata SPECIES_LEDIAN, "Coxyclaque"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -3529,7 +3529,7 @@ mondata SPECIES_SPINARAK, "Mimigal"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -3550,7 +3550,7 @@ mondata SPECIES_ARIADOS, "Migalos"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -3571,7 +3571,7 @@ mondata SPECIES_CROBAT, "Nostenfer"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -3592,7 +3592,7 @@ mondata SPECIES_CHINCHOU, "Loupio"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_WATER_2, EGG_GROUP_WATER_2
@@ -3613,7 +3613,7 @@ mondata SPECIES_LANTURN, "Lanturn"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_WATER_2, EGG_GROUP_WATER_2
@@ -3634,7 +3634,7 @@ mondata SPECIES_PICHU, "Pichu"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 10
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -3655,7 +3655,7 @@ mondata SPECIES_CLEFFA, "Mélo"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 190
-    eggcycles 10
+    eggcycles 1
     basefriendship 140
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -3676,7 +3676,7 @@ mondata SPECIES_IGGLYBUFF, "Toudoudou"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 190
-    eggcycles 10
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -3697,7 +3697,7 @@ mondata SPECIES_TOGEPI, "Togepi"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 10
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -3718,7 +3718,7 @@ mondata SPECIES_TOGETIC, "Togetic"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 10
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FAIRY
@@ -3739,7 +3739,7 @@ mondata SPECIES_NATU, "Natu"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -3760,7 +3760,7 @@ mondata SPECIES_XATU, "Xatu"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -3781,7 +3781,7 @@ mondata SPECIES_MAREEP, "Wattouat"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_FIELD
@@ -3802,7 +3802,7 @@ mondata SPECIES_FLAAFFY, "Lainergie"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_FIELD
@@ -3823,7 +3823,7 @@ mondata SPECIES_AMPHAROS, "Pharamp"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_FIELD
@@ -3844,7 +3844,7 @@ mondata SPECIES_BELLOSSOM, "Joliflor"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_GRASS, EGG_GROUP_GRASS
@@ -3865,7 +3865,7 @@ mondata SPECIES_MARILL, "Marill"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 10
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_FAIRY
@@ -3886,7 +3886,7 @@ mondata SPECIES_AZUMARILL, "Azumarill"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 10
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_FAIRY
@@ -3907,7 +3907,7 @@ mondata SPECIES_SUDOWOODO, "Simularbre"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -3928,7 +3928,7 @@ mondata SPECIES_POLITOED, "Tarpaud"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_WATER_1
@@ -3949,7 +3949,7 @@ mondata SPECIES_HOPPIP, "Granivol"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_GRASS
@@ -3970,7 +3970,7 @@ mondata SPECIES_SKIPLOOM, "Floravol"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_GRASS
@@ -3991,7 +3991,7 @@ mondata SPECIES_JUMPLUFF, "Cotovol"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_GRASS
@@ -4012,7 +4012,7 @@ mondata SPECIES_AIPOM, "Capumain"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -4033,7 +4033,7 @@ mondata SPECIES_SUNKERN, "Tournegrin"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_GRASS, EGG_GROUP_GRASS
@@ -4054,7 +4054,7 @@ mondata SPECIES_SUNFLORA, "Héliatronc"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_GRASS, EGG_GROUP_GRASS
@@ -4075,7 +4075,7 @@ mondata SPECIES_YANMA, "Yanma"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -4096,7 +4096,7 @@ mondata SPECIES_WOOPER, "Axoloto"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_FIELD
@@ -4117,7 +4117,7 @@ mondata SPECIES_QUAGSIRE, "Maraiste"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_FIELD
@@ -4138,7 +4138,7 @@ mondata SPECIES_ESPEON, "Mentali"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 35
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -4159,7 +4159,7 @@ mondata SPECIES_UMBREON, "Noctali"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 35
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -4180,7 +4180,7 @@ mondata SPECIES_MURKROW, "Cornèbre"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -4201,7 +4201,7 @@ mondata SPECIES_SLOWKING, "Roigada"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_WATER_1
@@ -4222,7 +4222,7 @@ mondata SPECIES_MISDREAVUS, "Feuforêve"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -4243,7 +4243,7 @@ mondata SPECIES_UNOWN, "Zarbi"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 40
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -4264,7 +4264,7 @@ mondata SPECIES_WOBBUFFET, "Qulbutoké"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -4285,7 +4285,7 @@ mondata SPECIES_GIRAFARIG, "Girafarig"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -4306,7 +4306,7 @@ mondata SPECIES_PINECO, "Pomdepik"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -4327,7 +4327,7 @@ mondata SPECIES_FORRETRESS, "Foretress"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -4348,7 +4348,7 @@ mondata SPECIES_DUNSPARCE, "Insolourdo"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -4369,7 +4369,7 @@ mondata SPECIES_GLIGAR, "Scorplane"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -4390,7 +4390,7 @@ mondata SPECIES_STEELIX, "Steelix"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -4411,7 +4411,7 @@ mondata SPECIES_SNUBBULL, "Snubbull"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 190
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FAIRY
@@ -4432,7 +4432,7 @@ mondata SPECIES_GRANBULL, "Granbull"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 190
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FAIRY
@@ -4453,7 +4453,7 @@ mondata SPECIES_QWILFISH, "Qwilfish"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_2, EGG_GROUP_WATER_2
@@ -4474,7 +4474,7 @@ mondata SPECIES_SCIZOR, "Cizayox"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -4495,7 +4495,7 @@ mondata SPECIES_SHUCKLE, "Caratroc"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -4516,7 +4516,7 @@ mondata SPECIES_HERACROSS, "Scarhino"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -4537,7 +4537,7 @@ mondata SPECIES_SNEASEL, "Farfuret"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -4558,7 +4558,7 @@ mondata SPECIES_TEDDIURSA, "Teddiursa"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -4579,7 +4579,7 @@ mondata SPECIES_URSARING, "Ursaring"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -4600,7 +4600,7 @@ mondata SPECIES_SLUGMA, "Limagma"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -4621,7 +4621,7 @@ mondata SPECIES_MAGCARGO, "Volcaropod"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -4642,7 +4642,7 @@ mondata SPECIES_SWINUB, "Marcacrin"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -4663,7 +4663,7 @@ mondata SPECIES_PILOSWINE, "Cochignon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -4684,7 +4684,7 @@ mondata SPECIES_CORSOLA, "Corayon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 190
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_WATER_3
@@ -4705,7 +4705,7 @@ mondata SPECIES_REMORAID, "Rémoraid"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_WATER_2
@@ -4726,7 +4726,7 @@ mondata SPECIES_OCTILLERY, "Octillery"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_WATER_2
@@ -4747,7 +4747,7 @@ mondata SPECIES_DELIBIRD, "Cadoizo"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_FIELD
@@ -4768,7 +4768,7 @@ mondata SPECIES_MANTINE, "Démanta"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_WATER_1
@@ -4789,7 +4789,7 @@ mondata SPECIES_SKARMORY, "Airmure"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -4810,7 +4810,7 @@ mondata SPECIES_HOUNDOUR, "Malosse"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -4831,7 +4831,7 @@ mondata SPECIES_HOUNDOOM, "Démolosse"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -4852,7 +4852,7 @@ mondata SPECIES_KINGDRA, "Hyporoi"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_DRAGON
@@ -4873,7 +4873,7 @@ mondata SPECIES_PHANPY, "Phanpy"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -4894,7 +4894,7 @@ mondata SPECIES_DONPHAN, "Donphan"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -4915,7 +4915,7 @@ mondata SPECIES_PORYGON2, "Porygon2"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -4936,7 +4936,7 @@ mondata SPECIES_STANTLER, "Cerfrousse"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -4957,7 +4957,7 @@ mondata SPECIES_SMEARGLE, "Queulorior"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -4978,7 +4978,7 @@ mondata SPECIES_TYROGUE, "Debugant"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -4999,7 +4999,7 @@ mondata SPECIES_HITMONTOP, "Kapoera"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -5020,7 +5020,7 @@ mondata SPECIES_SMOOCHUM, "Lippouti"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -5041,7 +5041,7 @@ mondata SPECIES_ELEKID, "Élekid"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 63
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -5062,7 +5062,7 @@ mondata SPECIES_MAGBY, "Magby"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 63
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -5083,7 +5083,7 @@ mondata SPECIES_MILTANK, "Écrémeuh"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -5104,7 +5104,7 @@ mondata SPECIES_BLISSEY, "Leuphorie"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 40
+    eggcycles 1
     basefriendship 140
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_FAIRY
@@ -5125,7 +5125,7 @@ mondata SPECIES_RAIKOU, "Raikou"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 80
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -5146,7 +5146,7 @@ mondata SPECIES_ENTEI, "Entei"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 80
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -5167,7 +5167,7 @@ mondata SPECIES_SUICUNE, "Suicune"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 80
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -5188,7 +5188,7 @@ mondata SPECIES_LARVITAR, "Embrylex"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_MONSTER
@@ -5209,7 +5209,7 @@ mondata SPECIES_PUPITAR, "Ymphect"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_MONSTER
@@ -5230,7 +5230,7 @@ mondata SPECIES_TYRANITAR, "Tyranocif"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_MONSTER
@@ -5251,7 +5251,7 @@ mondata SPECIES_LUGIA, "Lugia"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -5272,7 +5272,7 @@ mondata SPECIES_HO_OH, "Ho-Oh"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -5293,7 +5293,7 @@ mondata SPECIES_CELEBI, "Celebi"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 100
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -5314,7 +5314,7 @@ mondata SPECIES_TREECKO, "Arcko"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_DRAGON
@@ -5335,7 +5335,7 @@ mondata SPECIES_GROVYLE, "Massko"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_DRAGON
@@ -5356,7 +5356,7 @@ mondata SPECIES_SCEPTILE, "Jungko"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_DRAGON
@@ -5377,7 +5377,7 @@ mondata SPECIES_TORCHIC, "Poussifeu"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -5398,7 +5398,7 @@ mondata SPECIES_COMBUSKEN, "Galifeu"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -5419,7 +5419,7 @@ mondata SPECIES_BLAZIKEN, "Braségali"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -5440,7 +5440,7 @@ mondata SPECIES_MUDKIP, "Gobou"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_WATER_1
@@ -5461,7 +5461,7 @@ mondata SPECIES_MARSHTOMP, "Flobio"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_WATER_1
@@ -5482,7 +5482,7 @@ mondata SPECIES_SWAMPERT, "Laggron"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_WATER_1
@@ -5503,7 +5503,7 @@ mondata SPECIES_POOCHYENA, "Medhyèna"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -5524,7 +5524,7 @@ mondata SPECIES_MIGHTYENA, "Grahyèna"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -5545,7 +5545,7 @@ mondata SPECIES_ZIGZAGOON, "Zigzaton"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -5566,7 +5566,7 @@ mondata SPECIES_LINOONE, "Linéon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -5587,7 +5587,7 @@ mondata SPECIES_WURMPLE, "Chenipotte"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -5608,7 +5608,7 @@ mondata SPECIES_SILCOON, "Armulys"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -5629,7 +5629,7 @@ mondata SPECIES_BEAUTIFLY, "Charmillon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -5650,7 +5650,7 @@ mondata SPECIES_CASCOON, "Blindalys"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -5671,7 +5671,7 @@ mondata SPECIES_DUSTOX, "Papinox"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -5692,7 +5692,7 @@ mondata SPECIES_LOTAD, "Nénupiot"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_GRASS
@@ -5713,7 +5713,7 @@ mondata SPECIES_LOMBRE, "Lombre"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_GRASS
@@ -5734,7 +5734,7 @@ mondata SPECIES_LUDICOLO, "Ludicolo"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_GRASS
@@ -5755,7 +5755,7 @@ mondata SPECIES_SEEDOT, "Grainipiot"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_GRASS
@@ -5776,7 +5776,7 @@ mondata SPECIES_NUZLEAF, "Pifeuil"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_GRASS
@@ -5797,7 +5797,7 @@ mondata SPECIES_SHIFTRY, "Tengalice"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_GRASS
@@ -5818,7 +5818,7 @@ mondata SPECIES_TAILLOW, "Nirondelle"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -5839,7 +5839,7 @@ mondata SPECIES_SWELLOW, "Hélédelle"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -5860,7 +5860,7 @@ mondata SPECIES_WINGULL, "Goélise"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_FLYING
@@ -5881,7 +5881,7 @@ mondata SPECIES_PELIPPER, "Bekipan"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_FLYING
@@ -5902,7 +5902,7 @@ mondata SPECIES_RALTS, "Tarsal"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_AMORPHOUS
@@ -5923,7 +5923,7 @@ mondata SPECIES_KIRLIA, "Kirlia"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_AMORPHOUS
@@ -5944,7 +5944,7 @@ mondata SPECIES_GARDEVOIR, "Gardevoir"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_AMORPHOUS
@@ -5965,7 +5965,7 @@ mondata SPECIES_SURSKIT, "Arakdo"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_BUG
@@ -5986,7 +5986,7 @@ mondata SPECIES_MASQUERAIN, "Maskadra"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_BUG
@@ -6007,7 +6007,7 @@ mondata SPECIES_SHROOMISH, "Balignon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_FLUCTUATING
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_GRASS
@@ -6028,7 +6028,7 @@ mondata SPECIES_BRELOOM, "Chapignon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_FLUCTUATING
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_GRASS
@@ -6049,7 +6049,7 @@ mondata SPECIES_SLAKOTH, "Parecool"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -6070,7 +6070,7 @@ mondata SPECIES_VIGOROTH, "Vigoroth"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -6091,7 +6091,7 @@ mondata SPECIES_SLAKING, "Monaflèmit"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -6112,7 +6112,7 @@ mondata SPECIES_NINCADA, "Ningale"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_ERRATIC
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -6133,7 +6133,7 @@ mondata SPECIES_NINJASK, "Ninjask"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_ERRATIC
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -6154,7 +6154,7 @@ mondata SPECIES_SHEDINJA, "Munja"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_ERRATIC
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -6175,7 +6175,7 @@ mondata SPECIES_WHISMUR, "Chuchmur"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_FIELD
@@ -6196,7 +6196,7 @@ mondata SPECIES_LOUDRED, "Ramboum"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_FIELD
@@ -6217,7 +6217,7 @@ mondata SPECIES_EXPLOUD, "Brouhabam"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_FIELD
@@ -6238,7 +6238,7 @@ mondata SPECIES_MAKUHITA, "Makuhita"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 63
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_FLUCTUATING
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -6259,7 +6259,7 @@ mondata SPECIES_HARIYAMA, "Hariyama"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 63
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_FLUCTUATING
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -6280,7 +6280,7 @@ mondata SPECIES_AZURILL, "Azurill"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 190
-    eggcycles 10
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -6301,7 +6301,7 @@ mondata SPECIES_NOSEPASS, "Tarinor"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -6322,7 +6322,7 @@ mondata SPECIES_SKITTY, "Skitty"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 190
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FAIRY
@@ -6343,7 +6343,7 @@ mondata SPECIES_DELCATTY, "Delcatty"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 190
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FAIRY
@@ -6364,7 +6364,7 @@ mondata SPECIES_SABLEYE, "Ténéfix"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -6385,7 +6385,7 @@ mondata SPECIES_MAWILE, "Mysdibule"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FAIRY
@@ -6406,7 +6406,7 @@ mondata SPECIES_ARON, "Galekid"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 35
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_MONSTER
@@ -6427,7 +6427,7 @@ mondata SPECIES_LAIRON, "Galegon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 35
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_MONSTER
@@ -6448,7 +6448,7 @@ mondata SPECIES_AGGRON, "Galeking"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 35
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_MONSTER
@@ -6469,7 +6469,7 @@ mondata SPECIES_MEDITITE, "Méditikka"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -6490,7 +6490,7 @@ mondata SPECIES_MEDICHAM, "Charmina"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -6511,7 +6511,7 @@ mondata SPECIES_ELECTRIKE, "Dynavolt"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -6532,7 +6532,7 @@ mondata SPECIES_MANECTRIC, "Élecsprint"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -6553,7 +6553,7 @@ mondata SPECIES_PLUSLE, "Posipi"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_FAIRY
@@ -6574,7 +6574,7 @@ mondata SPECIES_MINUN, "Négapi"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_FAIRY
@@ -6595,7 +6595,7 @@ mondata SPECIES_VOLBEAT, "Muciole"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_ERRATIC
     egggroups EGG_GROUP_BUG, EGG_GROUP_HUMAN_LIKE
@@ -6616,7 +6616,7 @@ mondata SPECIES_ILLUMISE, "Lumivole"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_FLUCTUATING
     egggroups EGG_GROUP_BUG, EGG_GROUP_HUMAN_LIKE
@@ -6637,7 +6637,7 @@ mondata SPECIES_ROSELIA, "Rosélia"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_GRASS
@@ -6658,7 +6658,7 @@ mondata SPECIES_GULPIN, "Gloupti"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_FLUCTUATING
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -6679,7 +6679,7 @@ mondata SPECIES_SWALOT, "Avaltout"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_FLUCTUATING
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -6700,7 +6700,7 @@ mondata SPECIES_CARVANHA, "Carvanha"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_WATER_2, EGG_GROUP_WATER_2
@@ -6721,7 +6721,7 @@ mondata SPECIES_SHARPEDO, "Sharpedo"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_WATER_2, EGG_GROUP_WATER_2
@@ -6742,7 +6742,7 @@ mondata SPECIES_WAILMER, "Wailmer"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_FLUCTUATING
     egggroups EGG_GROUP_FIELD, EGG_GROUP_WATER_2
@@ -6763,7 +6763,7 @@ mondata SPECIES_WAILORD, "Wailord"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_FLUCTUATING
     egggroups EGG_GROUP_FIELD, EGG_GROUP_WATER_2
@@ -6784,7 +6784,7 @@ mondata SPECIES_NUMEL, "Chamallot"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -6805,7 +6805,7 @@ mondata SPECIES_CAMERUPT, "Camérupt"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -6826,7 +6826,7 @@ mondata SPECIES_TORKOAL, "Chartor"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -6847,7 +6847,7 @@ mondata SPECIES_SPOINK, "Spoink"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -6868,7 +6868,7 @@ mondata SPECIES_GRUMPIG, "Groret"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -6889,7 +6889,7 @@ mondata SPECIES_SPINDA, "Spinda"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_HUMAN_LIKE
@@ -6910,7 +6910,7 @@ mondata SPECIES_TRAPINCH, "Kraknoix"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_BUG, EGG_GROUP_DRAGON
@@ -6931,7 +6931,7 @@ mondata SPECIES_VIBRAVA, "Vibraninf"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_BUG, EGG_GROUP_DRAGON
@@ -6952,7 +6952,7 @@ mondata SPECIES_FLYGON, "Libégon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_BUG, EGG_GROUP_DRAGON
@@ -6973,7 +6973,7 @@ mondata SPECIES_CACNEA, "Cacnea"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_GRASS, EGG_GROUP_HUMAN_LIKE
@@ -6994,7 +6994,7 @@ mondata SPECIES_CACTURNE, "Cacturne"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_GRASS, EGG_GROUP_HUMAN_LIKE
@@ -7015,7 +7015,7 @@ mondata SPECIES_SWABLU, "Tylton"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_ERRATIC
     egggroups EGG_GROUP_FLYING, EGG_GROUP_DRAGON
@@ -7036,7 +7036,7 @@ mondata SPECIES_ALTARIA, "Altaria"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_ERRATIC
     egggroups EGG_GROUP_FLYING, EGG_GROUP_DRAGON
@@ -7057,7 +7057,7 @@ mondata SPECIES_ZANGOOSE, "Mangriff"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_ERRATIC
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -7078,7 +7078,7 @@ mondata SPECIES_SEVIPER, "Séviper"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_FLUCTUATING
     egggroups EGG_GROUP_FIELD, EGG_GROUP_DRAGON
@@ -7099,7 +7099,7 @@ mondata SPECIES_LUNATONE, "Séléroc"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -7120,7 +7120,7 @@ mondata SPECIES_SOLROCK, "Solaroc"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -7141,7 +7141,7 @@ mondata SPECIES_BARBOACH, "Barloche"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_2, EGG_GROUP_WATER_2
@@ -7162,7 +7162,7 @@ mondata SPECIES_WHISCASH, "Barbicha"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_2, EGG_GROUP_WATER_2
@@ -7183,7 +7183,7 @@ mondata SPECIES_CORPHISH, "Écrapince"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_FLUCTUATING
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_WATER_3
@@ -7204,7 +7204,7 @@ mondata SPECIES_CRAWDAUNT, "Colhomard"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_FLUCTUATING
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_WATER_3
@@ -7225,7 +7225,7 @@ mondata SPECIES_BALTOY, "Balbuto"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -7246,7 +7246,7 @@ mondata SPECIES_CLAYDOL, "Kaorine"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -7267,7 +7267,7 @@ mondata SPECIES_LILEEP, "Lilia"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 30
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_ERRATIC
     egggroups EGG_GROUP_WATER_3, EGG_GROUP_WATER_3
@@ -7288,7 +7288,7 @@ mondata SPECIES_CRADILY, "Vacilys"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 30
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_ERRATIC
     egggroups EGG_GROUP_WATER_3, EGG_GROUP_WATER_3
@@ -7309,7 +7309,7 @@ mondata SPECIES_ANORITH, "Anorith"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 30
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_ERRATIC
     egggroups EGG_GROUP_WATER_3, EGG_GROUP_WATER_3
@@ -7330,7 +7330,7 @@ mondata SPECIES_ARMALDO, "Armaldo"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 30
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_ERRATIC
     egggroups EGG_GROUP_WATER_3, EGG_GROUP_WATER_3
@@ -7351,7 +7351,7 @@ mondata SPECIES_FEEBAS, "Barpau"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_ERRATIC
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_DRAGON
@@ -7372,7 +7372,7 @@ mondata SPECIES_MILOTIC, "Milobellus"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_ERRATIC
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_DRAGON
@@ -7393,7 +7393,7 @@ mondata SPECIES_CASTFORM, "Morphéo"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_AMORPHOUS
@@ -7414,7 +7414,7 @@ mondata SPECIES_KECLEON, "Kecleon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -7435,7 +7435,7 @@ mondata SPECIES_SHUPPET, "Polichombr"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -7456,7 +7456,7 @@ mondata SPECIES_BANETTE, "Branette"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -7477,7 +7477,7 @@ mondata SPECIES_DUSKULL, "Skelénox"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -7498,7 +7498,7 @@ mondata SPECIES_DUSCLOPS, "Téraclope"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -7519,7 +7519,7 @@ mondata SPECIES_TROPIUS, "Tropius"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_GRASS
@@ -7540,7 +7540,7 @@ mondata SPECIES_CHIMECHO, "Éoko"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -7561,7 +7561,7 @@ mondata SPECIES_ABSOL, "Absol"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -7582,7 +7582,7 @@ mondata SPECIES_WYNAUT, "Okéoké"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -7603,7 +7603,7 @@ mondata SPECIES_SNORUNT, "Stalgamin"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_MINERAL
@@ -7624,7 +7624,7 @@ mondata SPECIES_GLALIE, "Oniglali"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_MINERAL
@@ -7645,7 +7645,7 @@ mondata SPECIES_SPHEAL, "Obalie"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_FIELD
@@ -7666,7 +7666,7 @@ mondata SPECIES_SEALEO, "Phogleur"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_FIELD
@@ -7687,7 +7687,7 @@ mondata SPECIES_WALREIN, "Kaimorse"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_FIELD
@@ -7708,7 +7708,7 @@ mondata SPECIES_CLAMPERL, "Coquiperl"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_ERRATIC
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_WATER_1
@@ -7729,7 +7729,7 @@ mondata SPECIES_HUNTAIL, "Serpang"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_ERRATIC
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_WATER_1
@@ -7750,7 +7750,7 @@ mondata SPECIES_GOREBYSS, "Rosabyss"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_ERRATIC
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_WATER_1
@@ -7771,7 +7771,7 @@ mondata SPECIES_RELICANTH, "Relicanth"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 40
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_WATER_2
@@ -7792,7 +7792,7 @@ mondata SPECIES_LUVDISC, "Lovdisc"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 190
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_WATER_2, EGG_GROUP_WATER_2
@@ -7813,7 +7813,7 @@ mondata SPECIES_BAGON, "Draby"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_DRAGON, EGG_GROUP_DRAGON
@@ -7834,7 +7834,7 @@ mondata SPECIES_SHELGON, "Drackhaus"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_DRAGON, EGG_GROUP_DRAGON
@@ -7855,7 +7855,7 @@ mondata SPECIES_SALAMENCE, "Drattak"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_DRAGON, EGG_GROUP_DRAGON
@@ -7876,7 +7876,7 @@ mondata SPECIES_BELDUM, "Terhal"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 40
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -7897,7 +7897,7 @@ mondata SPECIES_METANG, "Métang"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 40
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -7918,7 +7918,7 @@ mondata SPECIES_METAGROSS, "Métalosse"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 40
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -7939,7 +7939,7 @@ mondata SPECIES_REGIROCK, "Regirock"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 80
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -7960,7 +7960,7 @@ mondata SPECIES_REGICE, "Regice"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 80
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -7981,7 +7981,7 @@ mondata SPECIES_REGISTEEL, "Registeel"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 80
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -8002,7 +8002,7 @@ mondata SPECIES_LATIAS, "Latias"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 120
+    eggcycles 1
     basefriendship 90
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -8023,7 +8023,7 @@ mondata SPECIES_LATIOS, "Latios"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 120
+    eggcycles 1
     basefriendship 90
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -8044,7 +8044,7 @@ mondata SPECIES_KYOGRE, "Kyogre"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -8065,7 +8065,7 @@ mondata SPECIES_GROUDON, "Groudon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -8086,7 +8086,7 @@ mondata SPECIES_RAYQUAZA, "Rayquaza"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -8107,7 +8107,7 @@ mondata SPECIES_JIRACHI, "Jirachi"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 100
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -8128,7 +8128,7 @@ mondata SPECIES_DEOXYS, "Deoxys"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -8149,7 +8149,7 @@ mondata SPECIES_TURTWIG, "Tortipouss"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_GRASS
@@ -8170,7 +8170,7 @@ mondata SPECIES_GROTLE, "Boskara"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_GRASS
@@ -8191,7 +8191,7 @@ mondata SPECIES_TORTERRA, "Torterra"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_GRASS
@@ -8212,7 +8212,7 @@ mondata SPECIES_CHIMCHAR, "Ouisticram"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_HUMAN_LIKE
@@ -8233,7 +8233,7 @@ mondata SPECIES_MONFERNO, "Chimpenfeu"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_HUMAN_LIKE
@@ -8254,7 +8254,7 @@ mondata SPECIES_INFERNAPE, "Simiabraz"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_HUMAN_LIKE
@@ -8275,7 +8275,7 @@ mondata SPECIES_PIPLUP, "Tiplouf"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_FIELD
@@ -8296,7 +8296,7 @@ mondata SPECIES_PRINPLUP, "Prinplouf"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_FIELD
@@ -8317,7 +8317,7 @@ mondata SPECIES_EMPOLEON, "Pingoléon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_FIELD
@@ -8338,7 +8338,7 @@ mondata SPECIES_STARLY, "Étourmi"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -8359,7 +8359,7 @@ mondata SPECIES_STARAVIA, "Étourvol"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -8380,7 +8380,7 @@ mondata SPECIES_STARAPTOR, "Étouraptor"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -8401,7 +8401,7 @@ mondata SPECIES_BIDOOF, "Keunotor"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_FIELD
@@ -8422,7 +8422,7 @@ mondata SPECIES_BIBAREL, "Castorno"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_FIELD
@@ -8443,7 +8443,7 @@ mondata SPECIES_KRICKETOT, "Crikzik"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -8464,7 +8464,7 @@ mondata SPECIES_KRICKETUNE, "Mélokrik"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -8485,7 +8485,7 @@ mondata SPECIES_SHINX, "Lixy"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -8506,7 +8506,7 @@ mondata SPECIES_LUXIO, "Luxio"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 100
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -8527,7 +8527,7 @@ mondata SPECIES_LUXRAY, "Luxray"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -8548,7 +8548,7 @@ mondata SPECIES_BUDEW, "Rozbouton"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -8569,7 +8569,7 @@ mondata SPECIES_ROSERADE, "Roserade"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_GRASS
@@ -8590,7 +8590,7 @@ mondata SPECIES_CRANIDOS, "Kranidos"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 30
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_ERRATIC
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_MONSTER
@@ -8611,7 +8611,7 @@ mondata SPECIES_RAMPARDOS, "Charkos"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 30
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_ERRATIC
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_MONSTER
@@ -8632,7 +8632,7 @@ mondata SPECIES_SHIELDON, "Dinoclier"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 30
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_ERRATIC
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_MONSTER
@@ -8653,7 +8653,7 @@ mondata SPECIES_BASTIODON, "Bastiodon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 30
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_ERRATIC
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_MONSTER
@@ -8674,7 +8674,7 @@ mondata SPECIES_BURMY, "Cheniti"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -8695,7 +8695,7 @@ mondata SPECIES_WORMADAM, "Cheniselle"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -8716,7 +8716,7 @@ mondata SPECIES_MOTHIM, "Papilord"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -8737,7 +8737,7 @@ mondata SPECIES_COMBEE, "Apitrini"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -8758,7 +8758,7 @@ mondata SPECIES_VESPIQUEN, "Apireine"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -8779,7 +8779,7 @@ mondata SPECIES_PACHIRISU, "Pachirisu"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 10
+    eggcycles 1
     basefriendship 100
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FAIRY
@@ -8800,7 +8800,7 @@ mondata SPECIES_BUIZEL, "Mustébouée"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_FIELD
@@ -8821,7 +8821,7 @@ mondata SPECIES_FLOATZEL, "Mustéflott"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_FIELD
@@ -8842,7 +8842,7 @@ mondata SPECIES_CHERUBI, "Ceribou"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_GRASS
@@ -8863,7 +8863,7 @@ mondata SPECIES_CHERRIM, "Ceriflor"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_GRASS
@@ -8884,7 +8884,7 @@ mondata SPECIES_SHELLOS, "Sancoki"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_AMORPHOUS
@@ -8905,7 +8905,7 @@ mondata SPECIES_GASTRODON, "Tritosor"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_AMORPHOUS
@@ -8926,7 +8926,7 @@ mondata SPECIES_AMBIPOM, "Capidextre"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 100
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -8947,7 +8947,7 @@ mondata SPECIES_DRIFLOON, "Baudrive"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 30
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_FLUCTUATING
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -8968,7 +8968,7 @@ mondata SPECIES_DRIFBLIM, "Grodrive"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 30
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_FLUCTUATING
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -8989,7 +8989,7 @@ mondata SPECIES_BUNEARY, "Laporeille"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_HUMAN_LIKE
@@ -9010,7 +9010,7 @@ mondata SPECIES_LOPUNNY, "Lockpin"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 140
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_HUMAN_LIKE
@@ -9031,7 +9031,7 @@ mondata SPECIES_MISMAGIUS, "Magirêve"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -9052,7 +9052,7 @@ mondata SPECIES_HONCHKROW, "Corboss"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -9073,7 +9073,7 @@ mondata SPECIES_GLAMEOW, "Chaglam"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 190
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -9094,7 +9094,7 @@ mondata SPECIES_PURUGLY, "Chaffreux"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 190
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -9115,7 +9115,7 @@ mondata SPECIES_CHINGLING, "Korillon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -9136,7 +9136,7 @@ mondata SPECIES_STUNKY, "Moufouette"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -9157,7 +9157,7 @@ mondata SPECIES_SKUNTANK, "Moufflair"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -9178,7 +9178,7 @@ mondata SPECIES_BRONZOR, "Archéomire"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -9199,7 +9199,7 @@ mondata SPECIES_BRONZONG, "Archéodong"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -9220,7 +9220,7 @@ mondata SPECIES_BONSLY, "Manzaï"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -9241,7 +9241,7 @@ mondata SPECIES_MIMEJR, "Mime Jr."
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -9262,7 +9262,7 @@ mondata SPECIES_HAPPINY, "Ptiravi"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 40
+    eggcycles 1
     basefriendship 140
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -9283,7 +9283,7 @@ mondata SPECIES_CHATOT, "Pijako"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -9304,7 +9304,7 @@ mondata SPECIES_SPIRITOMB, "Spiritomb"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 30
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -9325,7 +9325,7 @@ mondata SPECIES_GIBLE, "Griknot"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_DRAGON
@@ -9346,7 +9346,7 @@ mondata SPECIES_GABITE, "Carmache"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_DRAGON
@@ -9367,7 +9367,7 @@ mondata SPECIES_GARCHOMP, "Carchacrok"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_DRAGON
@@ -9388,7 +9388,7 @@ mondata SPECIES_MUNCHLAX, "Goinfrex"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 40
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -9409,7 +9409,7 @@ mondata SPECIES_RIOLU, "Riolu"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -9430,7 +9430,7 @@ mondata SPECIES_LUCARIO, "Lucario"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_HUMAN_LIKE
@@ -9451,7 +9451,7 @@ mondata SPECIES_HIPPOPOTAS, "Hippopotas"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 30
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -9472,7 +9472,7 @@ mondata SPECIES_HIPPOWDON, "Hippodocus"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 30
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -9493,7 +9493,7 @@ mondata SPECIES_SKORUPI, "Rapion"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_BUG, EGG_GROUP_WATER_3
@@ -9514,7 +9514,7 @@ mondata SPECIES_DRAPION, "Drascore"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_BUG, EGG_GROUP_WATER_3
@@ -9535,7 +9535,7 @@ mondata SPECIES_CROAGUNK, "Cradopaud"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 10
+    eggcycles 1
     basefriendship 100
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -9556,7 +9556,7 @@ mondata SPECIES_TOXICROAK, "Coatox"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -9577,7 +9577,7 @@ mondata SPECIES_CARNIVINE, "Vortente"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_GRASS, EGG_GROUP_GRASS
@@ -9598,7 +9598,7 @@ mondata SPECIES_FINNEON, "Écayon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_ERRATIC
     egggroups EGG_GROUP_WATER_2, EGG_GROUP_WATER_2
@@ -9619,7 +9619,7 @@ mondata SPECIES_LUMINEON, "Luminéon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_ERRATIC
     egggroups EGG_GROUP_WATER_2, EGG_GROUP_WATER_2
@@ -9640,7 +9640,7 @@ mondata SPECIES_MANTYKE, "Babimanta"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -9661,7 +9661,7 @@ mondata SPECIES_SNOVER, "Blizzi"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_GRASS
@@ -9682,7 +9682,7 @@ mondata SPECIES_ABOMASNOW, "Blizzaroi"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_GRASS
@@ -9703,7 +9703,7 @@ mondata SPECIES_WEAVILE, "Dimoret"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -9724,7 +9724,7 @@ mondata SPECIES_MAGNEZONE, "Magnézone"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -9745,7 +9745,7 @@ mondata SPECIES_LICKILICKY, "Coudlangue"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_MONSTER
@@ -9766,7 +9766,7 @@ mondata SPECIES_RHYPERIOR, "Rhinastoc"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_FIELD
@@ -9787,7 +9787,7 @@ mondata SPECIES_TANGROWTH, "Bouldeneu"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_GRASS, EGG_GROUP_GRASS
@@ -9808,7 +9808,7 @@ mondata SPECIES_ELECTIVIRE, "Élekable"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 63
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -9829,7 +9829,7 @@ mondata SPECIES_MAGMORTAR, "Maganon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 63
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -9850,7 +9850,7 @@ mondata SPECIES_TOGEKISS, "Togekiss"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 10
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FAIRY
@@ -9871,7 +9871,7 @@ mondata SPECIES_YANMEGA, "Yanméga"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -9892,7 +9892,7 @@ mondata SPECIES_LEAFEON, "Phyllali"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 35
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -9913,7 +9913,7 @@ mondata SPECIES_GLACEON, "Givrali"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 35
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -9934,7 +9934,7 @@ mondata SPECIES_GLISCOR, "Scorvol"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -9955,7 +9955,7 @@ mondata SPECIES_MAMOSWINE, "Mammochon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -9976,7 +9976,7 @@ mondata SPECIES_PORYGON_Z, "Porygon-Z"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -9997,7 +9997,7 @@ mondata SPECIES_GALLADE, "Gallame"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 20
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_AMORPHOUS
@@ -10018,7 +10018,7 @@ mondata SPECIES_PROBOPASS, "Tarinorme"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -10039,7 +10039,7 @@ mondata SPECIES_DUSKNOIR, "Noctunoir"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -10060,7 +10060,7 @@ mondata SPECIES_FROSLASS, "Momartik"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_MINERAL
@@ -10081,7 +10081,7 @@ mondata SPECIES_ROTOM, "Motisma"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -10102,7 +10102,7 @@ mondata SPECIES_UXIE, "Créhelf"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 80
+    eggcycles 1
     basefriendship 140
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -10123,7 +10123,7 @@ mondata SPECIES_MESPRIT, "Créfollet"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 80
+    eggcycles 1
     basefriendship 140
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -10144,7 +10144,7 @@ mondata SPECIES_AZELF, "Créfadet"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 80
+    eggcycles 1
     basefriendship 140
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -10165,7 +10165,7 @@ mondata SPECIES_DIALGA, "Dialga"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -10186,7 +10186,7 @@ mondata SPECIES_PALKIA, "Palkia"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -10207,7 +10207,7 @@ mondata SPECIES_HEATRAN, "Heatran"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 10
+    eggcycles 1
     basefriendship 100
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -10228,7 +10228,7 @@ mondata SPECIES_REGIGIGAS, "Regigigas"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -10249,7 +10249,7 @@ mondata SPECIES_GIRATINA, "Giratina"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -10270,7 +10270,7 @@ mondata SPECIES_CRESSELIA, "Cresselia"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 120
+    eggcycles 1
     basefriendship 100
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -10291,7 +10291,7 @@ mondata SPECIES_PHIONE, "Phione"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 40
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_FAIRY
@@ -10312,7 +10312,7 @@ mondata SPECIES_MANAPHY, "Manaphy"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 10
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_FAIRY
@@ -10333,7 +10333,7 @@ mondata SPECIES_DARKRAI, "Darkrai"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -10354,7 +10354,7 @@ mondata SPECIES_SHAYMIN, "Shaymin"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 100
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -10375,7 +10375,7 @@ mondata SPECIES_ARCEUS, "Arceus"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -10396,7 +10396,7 @@ mondata SPECIES_EGG, "Oeuf"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -10417,7 +10417,7 @@ mondata SPECIES_BAD_EGG, "Mauv. Oeuf"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -10438,7 +10438,7 @@ mondata SPECIES_DEOXYS_ATTACK, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -10459,7 +10459,7 @@ mondata SPECIES_DEOXYS_DEFENSE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -10480,7 +10480,7 @@ mondata SPECIES_DEOXYS_SPEED, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -10501,7 +10501,7 @@ mondata SPECIES_WORMADAM_SANDY, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -10522,7 +10522,7 @@ mondata SPECIES_WORMADAM_TRASHY, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -10543,7 +10543,7 @@ mondata SPECIES_GIRATINA_ORIGIN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -10564,7 +10564,7 @@ mondata SPECIES_SHAYMIN_SKY, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 100
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -10585,7 +10585,7 @@ mondata SPECIES_ROTOM_HEAT, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -10606,7 +10606,7 @@ mondata SPECIES_ROTOM_WASH, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -10627,7 +10627,7 @@ mondata SPECIES_ROTOM_FROST, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -10648,7 +10648,7 @@ mondata SPECIES_ROTOM_FAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -10669,7 +10669,7 @@ mondata SPECIES_ROTOM_MOW, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -10690,7 +10690,7 @@ mondata SPECIES_508, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 0
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_NONE, EGG_GROUP_NONE
@@ -10711,7 +10711,7 @@ mondata SPECIES_509, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 0
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_NONE, EGG_GROUP_NONE
@@ -10732,7 +10732,7 @@ mondata SPECIES_510, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 0
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_NONE, EGG_GROUP_NONE
@@ -10753,7 +10753,7 @@ mondata SPECIES_511, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 0
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_NONE, EGG_GROUP_NONE
@@ -10774,7 +10774,7 @@ mondata SPECIES_512, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 0
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_NONE, EGG_GROUP_NONE
@@ -10795,7 +10795,7 @@ mondata SPECIES_513, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 0
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_NONE, EGG_GROUP_NONE
@@ -10816,7 +10816,7 @@ mondata SPECIES_514, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 0
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_NONE, EGG_GROUP_NONE
@@ -10837,7 +10837,7 @@ mondata SPECIES_515, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 0
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_NONE, EGG_GROUP_NONE
@@ -10858,7 +10858,7 @@ mondata SPECIES_516, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 0
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_NONE, EGG_GROUP_NONE
@@ -10879,7 +10879,7 @@ mondata SPECIES_517, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 0
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_NONE, EGG_GROUP_NONE
@@ -10900,7 +10900,7 @@ mondata SPECIES_518, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 0
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_NONE, EGG_GROUP_NONE
@@ -10921,7 +10921,7 @@ mondata SPECIES_519, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 0
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_NONE, EGG_GROUP_NONE
@@ -10942,7 +10942,7 @@ mondata SPECIES_520, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 0
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_NONE, EGG_GROUP_NONE
@@ -10963,7 +10963,7 @@ mondata SPECIES_521, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 0
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_NONE, EGG_GROUP_NONE
@@ -10984,7 +10984,7 @@ mondata SPECIES_522, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 0
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_NONE, EGG_GROUP_NONE
@@ -11005,7 +11005,7 @@ mondata SPECIES_523, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 0
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_NONE, EGG_GROUP_NONE
@@ -11026,7 +11026,7 @@ mondata SPECIES_524, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 0
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_NONE, EGG_GROUP_NONE
@@ -11047,7 +11047,7 @@ mondata SPECIES_525, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 0
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_NONE, EGG_GROUP_NONE
@@ -11068,7 +11068,7 @@ mondata SPECIES_526, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 0
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_NONE, EGG_GROUP_NONE
@@ -11089,7 +11089,7 @@ mondata SPECIES_527, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 0
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_NONE, EGG_GROUP_NONE
@@ -11110,7 +11110,7 @@ mondata SPECIES_528, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 0
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_NONE, EGG_GROUP_NONE
@@ -11131,7 +11131,7 @@ mondata SPECIES_529, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 0
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_NONE, EGG_GROUP_NONE
@@ -11152,7 +11152,7 @@ mondata SPECIES_530, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 0
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_NONE, EGG_GROUP_NONE
@@ -11173,7 +11173,7 @@ mondata SPECIES_531, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 0
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_NONE, EGG_GROUP_NONE
@@ -11194,7 +11194,7 @@ mondata SPECIES_532, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 0
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_NONE, EGG_GROUP_NONE
@@ -11215,7 +11215,7 @@ mondata SPECIES_533, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 0
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_NONE, EGG_GROUP_NONE
@@ -11236,7 +11236,7 @@ mondata SPECIES_534, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 0
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_NONE, EGG_GROUP_NONE
@@ -11257,7 +11257,7 @@ mondata SPECIES_535, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 0
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_NONE, EGG_GROUP_NONE
@@ -11278,7 +11278,7 @@ mondata SPECIES_536, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 0
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_NONE, EGG_GROUP_NONE
@@ -11299,7 +11299,7 @@ mondata SPECIES_537, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 0
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_NONE, EGG_GROUP_NONE
@@ -11320,7 +11320,7 @@ mondata SPECIES_538, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 0
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_NONE, EGG_GROUP_NONE
@@ -11341,7 +11341,7 @@ mondata SPECIES_539, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 0
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_NONE, EGG_GROUP_NONE
@@ -11362,7 +11362,7 @@ mondata SPECIES_540, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 0
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_NONE, EGG_GROUP_NONE
@@ -11383,7 +11383,7 @@ mondata SPECIES_541, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 0
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_NONE, EGG_GROUP_NONE
@@ -11404,7 +11404,7 @@ mondata SPECIES_542, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 0
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_NONE, EGG_GROUP_NONE
@@ -11425,7 +11425,7 @@ mondata SPECIES_543, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 0
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_NONE, EGG_GROUP_NONE
@@ -11446,7 +11446,7 @@ mondata SPECIES_VICTINI, "Victini"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 100
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -11467,7 +11467,7 @@ mondata SPECIES_SNIVY, "Vipélierre"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_GRASS
@@ -11488,7 +11488,7 @@ mondata SPECIES_SERVINE, "Lianaja"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_GRASS
@@ -11509,7 +11509,7 @@ mondata SPECIES_SERPERIOR, "Majaspic"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_GRASS
@@ -11530,7 +11530,7 @@ mondata SPECIES_TEPIG, "Gruikui"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -11551,7 +11551,7 @@ mondata SPECIES_PIGNITE, "Grotichon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -11572,7 +11572,7 @@ mondata SPECIES_EMBOAR, "Roitiflam"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -11593,7 +11593,7 @@ mondata SPECIES_OSHAWOTT, "Moustillon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -11614,7 +11614,7 @@ mondata SPECIES_DEWOTT, "Mateloutre"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -11635,7 +11635,7 @@ mondata SPECIES_SAMUROTT, "Clamiral"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -11656,7 +11656,7 @@ mondata SPECIES_PATRAT, "Ratentif"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -11677,7 +11677,7 @@ mondata SPECIES_WATCHOG, "Miradar"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -11698,7 +11698,7 @@ mondata SPECIES_LILLIPUP, "Ponchiot"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -11719,7 +11719,7 @@ mondata SPECIES_HERDIER, "Ponchien"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -11740,7 +11740,7 @@ mondata SPECIES_STOUTLAND, "Mastouffe"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -11761,7 +11761,7 @@ mondata SPECIES_PURRLOIN, "Chacripan"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -11782,7 +11782,7 @@ mondata SPECIES_LIEPARD, "Léopardus"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -11803,7 +11803,7 @@ mondata SPECIES_PANSAGE, "Feuillajou"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -11824,7 +11824,7 @@ mondata SPECIES_SIMISAGE, "Feuiloutan"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -11845,7 +11845,7 @@ mondata SPECIES_PANSEAR, "Flamajou"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -11866,7 +11866,7 @@ mondata SPECIES_SIMISEAR, "Flamoutan"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -11887,7 +11887,7 @@ mondata SPECIES_PANPOUR, "Flotajou"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -11908,7 +11908,7 @@ mondata SPECIES_SIMIPOUR, "Flotoutan"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -11929,7 +11929,7 @@ mondata SPECIES_MUNNA, "Munna"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 10
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -11950,7 +11950,7 @@ mondata SPECIES_MUSHARNA, "Mushana"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 10
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -11971,7 +11971,7 @@ mondata SPECIES_PIDOVE, "Poichigeon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -11992,7 +11992,7 @@ mondata SPECIES_TRANQUILL, "Colombeau"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -12013,7 +12013,7 @@ mondata SPECIES_UNFEZANT, "Déflaisan"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -12034,7 +12034,7 @@ mondata SPECIES_BLITZLE, "Zébibron"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -12055,7 +12055,7 @@ mondata SPECIES_ZEBSTRIKA, "Zéblitz"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -12076,7 +12076,7 @@ mondata SPECIES_ROGGENROLA, "Nodulithe"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -12097,7 +12097,7 @@ mondata SPECIES_BOLDORE, "Géolithe"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -12118,7 +12118,7 @@ mondata SPECIES_GIGALITH, "Gigalithe"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -12139,7 +12139,7 @@ mondata SPECIES_WOOBAT, "Chovsourir"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FLYING
@@ -12160,7 +12160,7 @@ mondata SPECIES_SWOOBAT, "Rhinolove"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FLYING
@@ -12181,7 +12181,7 @@ mondata SPECIES_DRILBUR, "Rototaupe"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -12202,7 +12202,7 @@ mondata SPECIES_EXCADRILL, "Minotaupe"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -12223,7 +12223,7 @@ mondata SPECIES_AUDINO, "Nanméouïe"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_FAIRY
@@ -12244,7 +12244,7 @@ mondata SPECIES_TIMBURR, "Charpenti"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 63
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -12265,7 +12265,7 @@ mondata SPECIES_GURDURR, "Ouvrifier"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 63
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -12286,7 +12286,7 @@ mondata SPECIES_CONKELDURR, "Bétochef"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 63
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -12307,7 +12307,7 @@ mondata SPECIES_TYMPOLE, "Tritonde"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_WATER_1
@@ -12328,7 +12328,7 @@ mondata SPECIES_PALPITOAD, "Batracné"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_WATER_1
@@ -12349,7 +12349,7 @@ mondata SPECIES_SEISMITOAD, "Crapustule"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_WATER_1
@@ -12370,7 +12370,7 @@ mondata SPECIES_THROH, "Judokrak"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -12391,7 +12391,7 @@ mondata SPECIES_SAWK, "Karaclée"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -12412,7 +12412,7 @@ mondata SPECIES_SEWADDLE, "Larveyette"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -12433,7 +12433,7 @@ mondata SPECIES_SWADLOON, "Couverdure"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -12454,7 +12454,7 @@ mondata SPECIES_LEAVANNY, "Manternel"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -12475,7 +12475,7 @@ mondata SPECIES_VENIPEDE, "Venipatte"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -12496,7 +12496,7 @@ mondata SPECIES_WHIRLIPEDE, "Scobolide"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -12517,7 +12517,7 @@ mondata SPECIES_SCOLIPEDE, "Brutapode"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -12538,7 +12538,7 @@ mondata SPECIES_COTTONEE, "Doudouvet"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_GRASS, EGG_GROUP_FAIRY
@@ -12559,7 +12559,7 @@ mondata SPECIES_WHIMSICOTT, "Farfaduvet"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_GRASS, EGG_GROUP_FAIRY
@@ -12580,7 +12580,7 @@ mondata SPECIES_PETILIL, "Chlorobule"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_GRASS, EGG_GROUP_GRASS
@@ -12601,7 +12601,7 @@ mondata SPECIES_LILLIGANT, "Fragilady"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_GRASS, EGG_GROUP_GRASS
@@ -12622,7 +12622,7 @@ mondata SPECIES_BASCULIN, "Bargantua"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_2, EGG_GROUP_WATER_2
@@ -12643,7 +12643,7 @@ mondata SPECIES_SANDILE, "Mascaïman"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -12664,7 +12664,7 @@ mondata SPECIES_KROKOROK, "Escroco"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -12685,7 +12685,7 @@ mondata SPECIES_KROOKODILE, "Crocorible"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -12706,7 +12706,7 @@ mondata SPECIES_DARUMAKA, "Darumarond"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -12727,7 +12727,7 @@ mondata SPECIES_DARMANITAN, "Darumacho"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -12748,7 +12748,7 @@ mondata SPECIES_MARACTUS, "Maracachi"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_GRASS, EGG_GROUP_GRASS
@@ -12769,7 +12769,7 @@ mondata SPECIES_DWEBBLE, "Crabicoque"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_MINERAL
@@ -12790,7 +12790,7 @@ mondata SPECIES_CRUSTLE, "Crabaraque"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_MINERAL
@@ -12811,7 +12811,7 @@ mondata SPECIES_SCRAGGY, "Baggiguane"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_DRAGON
@@ -12832,7 +12832,7 @@ mondata SPECIES_SCRAFTY, "Baggaïd"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_DRAGON
@@ -12853,7 +12853,7 @@ mondata SPECIES_SIGILYPH, "Cryptéro"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -12874,7 +12874,7 @@ mondata SPECIES_YAMASK, "Tutafeh"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_AMORPHOUS
@@ -12895,7 +12895,7 @@ mondata SPECIES_COFAGRIGUS, "Tutankafer"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_AMORPHOUS
@@ -12916,7 +12916,7 @@ mondata SPECIES_TIRTOUGA, "Carapagos"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 30
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_WATER_3
@@ -12937,7 +12937,7 @@ mondata SPECIES_CARRACOSTA, "Mégapagos"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 30
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_WATER_3
@@ -12958,7 +12958,7 @@ mondata SPECIES_ARCHEN, "Arkéapti"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 30
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FLYING, EGG_GROUP_WATER_3
@@ -12979,7 +12979,7 @@ mondata SPECIES_ARCHEOPS, "Aéroptéryx"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 30
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FLYING, EGG_GROUP_WATER_3
@@ -13000,7 +13000,7 @@ mondata SPECIES_TRUBBISH, "Miamiasme"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -13021,7 +13021,7 @@ mondata SPECIES_GARBODOR, "Miasmax"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -13042,7 +13042,7 @@ mondata SPECIES_ZORUA, "Zorua"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -13063,7 +13063,7 @@ mondata SPECIES_ZOROARK, "Zoroark"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -13084,7 +13084,7 @@ mondata SPECIES_MINCCINO, "Chinchidou"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 190
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -13105,7 +13105,7 @@ mondata SPECIES_CINCCINO, "Pashmilla"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 190
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -13126,7 +13126,7 @@ mondata SPECIES_GOTHITA, "Scrutella"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 190
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -13147,7 +13147,7 @@ mondata SPECIES_GOTHORITA, "Mesmérella"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 190
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -13168,7 +13168,7 @@ mondata SPECIES_GOTHITELLE, "Sidérella"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 190
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -13189,7 +13189,7 @@ mondata SPECIES_SOLOSIS, "Nucléos"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -13210,7 +13210,7 @@ mondata SPECIES_DUOSION, "Méios"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -13231,7 +13231,7 @@ mondata SPECIES_REUNICLUS, "Symbios"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -13252,7 +13252,7 @@ mondata SPECIES_DUCKLETT, "Couaneton"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_FLYING
@@ -13273,7 +13273,7 @@ mondata SPECIES_SWANNA, "Lakmécygne"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_FLYING
@@ -13294,7 +13294,7 @@ mondata SPECIES_VANILLITE, "Sorbébé"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -13315,7 +13315,7 @@ mondata SPECIES_VANILLISH, "Sorboul"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -13336,7 +13336,7 @@ mondata SPECIES_VANILLUXE, "Sorbouboul"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -13357,7 +13357,7 @@ mondata SPECIES_DEERLING, "Vivaldaim"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -13378,7 +13378,7 @@ mondata SPECIES_SAWSBUCK, "Haydaim"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -13399,7 +13399,7 @@ mondata SPECIES_EMOLGA, "Emolga"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -13420,7 +13420,7 @@ mondata SPECIES_KARRABLAST, "Carabing"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -13441,7 +13441,7 @@ mondata SPECIES_ESCAVALIER, "Lançargot"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -13462,7 +13462,7 @@ mondata SPECIES_FOONGUS, "Trompignon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_GRASS, EGG_GROUP_GRASS
@@ -13483,7 +13483,7 @@ mondata SPECIES_AMOONGUSS, "Gaulet"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_GRASS, EGG_GROUP_GRASS
@@ -13504,7 +13504,7 @@ mondata SPECIES_FRILLISH, "Viskuse"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -13525,7 +13525,7 @@ mondata SPECIES_JELLICENT, "Moyade"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -13546,7 +13546,7 @@ mondata SPECIES_ALOMOMOLA, "Mamanbo"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_WATER_2
@@ -13567,7 +13567,7 @@ mondata SPECIES_JOLTIK, "Statitik"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -13588,7 +13588,7 @@ mondata SPECIES_GALVANTULA, "Mygavolt"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -13609,7 +13609,7 @@ mondata SPECIES_FERROSEED, "Grindur"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_GRASS, EGG_GROUP_MINERAL
@@ -13630,7 +13630,7 @@ mondata SPECIES_FERROTHORN, "Noacier"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_GRASS, EGG_GROUP_MINERAL
@@ -13651,7 +13651,7 @@ mondata SPECIES_KLINK, "Tic"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -13672,7 +13672,7 @@ mondata SPECIES_KLANG, "Clic"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -13693,7 +13693,7 @@ mondata SPECIES_KLINKLANG, "Cliticlic"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -13714,7 +13714,7 @@ mondata SPECIES_TYNAMO, "Anchwatt"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -13735,7 +13735,7 @@ mondata SPECIES_EELEKTRIK, "Lampéroie"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -13756,7 +13756,7 @@ mondata SPECIES_EELEKTROSS, "Ohmassacre"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -13777,7 +13777,7 @@ mondata SPECIES_ELGYEM, "Lewsor"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -13798,7 +13798,7 @@ mondata SPECIES_BEHEEYEM, "Neitram"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -13819,7 +13819,7 @@ mondata SPECIES_LITWICK, "Funécire"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -13840,7 +13840,7 @@ mondata SPECIES_LAMPENT, "Mélancolux"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -13861,7 +13861,7 @@ mondata SPECIES_CHANDELURE, "Lugulabre"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -13882,7 +13882,7 @@ mondata SPECIES_AXEW, "Coupenotte"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_DRAGON
@@ -13903,7 +13903,7 @@ mondata SPECIES_FRAXURE, "Incisache"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_DRAGON
@@ -13924,7 +13924,7 @@ mondata SPECIES_HAXORUS, "Tranchodon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_DRAGON
@@ -13945,7 +13945,7 @@ mondata SPECIES_CUBCHOO, "Polarhume"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -13966,7 +13966,7 @@ mondata SPECIES_BEARTIC, "Polagriffe"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -13987,7 +13987,7 @@ mondata SPECIES_CRYOGONAL, "Hexagel"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -14008,7 +14008,7 @@ mondata SPECIES_SHELMET, "Escargaume"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -14029,7 +14029,7 @@ mondata SPECIES_ACCELGOR, "Limaspeed"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -14050,7 +14050,7 @@ mondata SPECIES_STUNFISK, "Limonde"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_AMORPHOUS
@@ -14071,7 +14071,7 @@ mondata SPECIES_MIENFOO, "Kungfouine"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_HUMAN_LIKE
@@ -14092,7 +14092,7 @@ mondata SPECIES_MIENSHAO, "Shaofouine"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_HUMAN_LIKE
@@ -14113,7 +14113,7 @@ mondata SPECIES_DRUDDIGON, "Drakkarmin"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 30
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_DRAGON, EGG_GROUP_MONSTER
@@ -14134,7 +14134,7 @@ mondata SPECIES_GOLETT, "Gringolem"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -14155,7 +14155,7 @@ mondata SPECIES_GOLURK, "Golemastoc"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -14176,7 +14176,7 @@ mondata SPECIES_PAWNIARD, "Scalpion"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -14197,7 +14197,7 @@ mondata SPECIES_BISHARP, "Scalproie"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -14218,7 +14218,7 @@ mondata SPECIES_BOUFFALANT, "Frison"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -14239,7 +14239,7 @@ mondata SPECIES_RUFFLET, "Furaiglon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -14260,7 +14260,7 @@ mondata SPECIES_BRAVIARY, "Gueriaigle"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -14281,7 +14281,7 @@ mondata SPECIES_VULLABY, "Vostourno"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -14302,7 +14302,7 @@ mondata SPECIES_MANDIBUZZ, "Vaututrice"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -14323,7 +14323,7 @@ mondata SPECIES_HEATMOR, "Aflamanoir"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -14344,7 +14344,7 @@ mondata SPECIES_DURANT, "Fermite"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -14365,7 +14365,7 @@ mondata SPECIES_DEINO, "Solochi"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_DRAGON, EGG_GROUP_DRAGON
@@ -14386,7 +14386,7 @@ mondata SPECIES_ZWEILOUS, "Diamat"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_DRAGON, EGG_GROUP_DRAGON
@@ -14407,7 +14407,7 @@ mondata SPECIES_HYDREIGON, "Trioxhydre"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_DRAGON, EGG_GROUP_DRAGON
@@ -14428,7 +14428,7 @@ mondata SPECIES_LARVESTA, "Pyronille"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -14449,7 +14449,7 @@ mondata SPECIES_VOLCARONA, "Pyrax"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -14470,7 +14470,7 @@ mondata SPECIES_COBALION, "Cobaltium"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 80
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -14491,7 +14491,7 @@ mondata SPECIES_TERRAKION, "Terrakium"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 80
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -14512,7 +14512,7 @@ mondata SPECIES_VIRIZION, "Viridium"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 80
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -14533,7 +14533,7 @@ mondata SPECIES_TORNADUS, "Boréas"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 120
+    eggcycles 1
     basefriendship 90
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -14554,7 +14554,7 @@ mondata SPECIES_THUNDURUS, "Fulguris"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 120
+    eggcycles 1
     basefriendship 90
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -14575,7 +14575,7 @@ mondata SPECIES_RESHIRAM, "Reshiram"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -14596,7 +14596,7 @@ mondata SPECIES_ZEKROM, "Zekrom"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -14617,7 +14617,7 @@ mondata SPECIES_LANDORUS, "Démétéros"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 120
+    eggcycles 1
     basefriendship 90
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -14638,7 +14638,7 @@ mondata SPECIES_KYUREM, "Kyurem"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -14659,7 +14659,7 @@ mondata SPECIES_KELDEO, "Keldeo"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 80
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -14680,7 +14680,7 @@ mondata SPECIES_MELOETTA, "Meloetta"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 100
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -14701,7 +14701,7 @@ mondata SPECIES_GENESECT, "Genesect"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -14722,7 +14722,7 @@ mondata SPECIES_CHESPIN, "Marisson"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -14743,7 +14743,7 @@ mondata SPECIES_QUILLADIN, "Boguérisse"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -14764,7 +14764,7 @@ mondata SPECIES_CHESNAUGHT, "Blindpique"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -14785,7 +14785,7 @@ mondata SPECIES_FENNEKIN, "Feunnec"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -14806,7 +14806,7 @@ mondata SPECIES_BRAIXEN, "Roussil"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -14827,7 +14827,7 @@ mondata SPECIES_DELPHOX, "Goupelin"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -14848,7 +14848,7 @@ mondata SPECIES_FROAKIE, "Grenousse"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_WATER_1
@@ -14869,7 +14869,7 @@ mondata SPECIES_FROGADIER, "Croâporal"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_WATER_1
@@ -14890,7 +14890,7 @@ mondata SPECIES_GRENINJA, "Amphinobi"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_WATER_1
@@ -14911,7 +14911,7 @@ mondata SPECIES_BUNNELBY, "Sapereau"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -14932,7 +14932,7 @@ mondata SPECIES_DIGGERSBY, "Excavarene"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -14953,7 +14953,7 @@ mondata SPECIES_FLETCHLING, "Passerouge"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -14974,7 +14974,7 @@ mondata SPECIES_FLETCHINDER, "Braisillon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -14995,7 +14995,7 @@ mondata SPECIES_TALONFLAME, "Flambusard"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -15016,7 +15016,7 @@ mondata SPECIES_SCATTERBUG, "Lépidonile"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -15037,7 +15037,7 @@ mondata SPECIES_SPEWPA, "Pérégrain"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -15058,7 +15058,7 @@ mondata SPECIES_VIVILLON, "Prismillon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -15079,7 +15079,7 @@ mondata SPECIES_LITLEO, "Hélionceau"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 222
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -15100,7 +15100,7 @@ mondata SPECIES_PYROAR, "Némélios"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -15121,7 +15121,7 @@ mondata SPECIES_FLABEBE, "Flabébé"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_FAIRY
@@ -15142,7 +15142,7 @@ mondata SPECIES_FLOETTE, "Floette"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_FAIRY
@@ -15163,7 +15163,7 @@ mondata SPECIES_FLORGES, "Florges"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_FAIRY
@@ -15184,7 +15184,7 @@ mondata SPECIES_SKIDDO, "Cabriolain"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -15205,7 +15205,7 @@ mondata SPECIES_GOGOAT, "Chevroum"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -15226,7 +15226,7 @@ mondata SPECIES_PANCHAM, "Pandspiègl"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_HUMAN_LIKE
@@ -15247,7 +15247,7 @@ mondata SPECIES_PANGORO, "Pandarbare"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_HUMAN_LIKE
@@ -15268,7 +15268,7 @@ mondata SPECIES_FURFROU, "Couafarel"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -15289,7 +15289,7 @@ mondata SPECIES_ESPURR, "Psystigri"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -15310,7 +15310,7 @@ mondata SPECIES_MEOWSTIC, "Mistigrix"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -15331,7 +15331,7 @@ mondata SPECIES_HONEDGE, "Monorpale"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -15352,7 +15352,7 @@ mondata SPECIES_DOUBLADE, "Dimoclès"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -15373,7 +15373,7 @@ mondata SPECIES_AEGISLASH, "Exagide"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -15394,7 +15394,7 @@ mondata SPECIES_SPRITZEE, "Fluvetin"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_FAIRY
@@ -15415,7 +15415,7 @@ mondata SPECIES_AROMATISSE, "Cocotine"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_FAIRY
@@ -15436,7 +15436,7 @@ mondata SPECIES_SWIRLIX, "Sucroquin"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_FAIRY
@@ -15457,7 +15457,7 @@ mondata SPECIES_SLURPUFF, "Cupcanaile"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_FAIRY
@@ -15478,7 +15478,7 @@ mondata SPECIES_INKAY, "Sepiatop"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_WATER_2
@@ -15499,7 +15499,7 @@ mondata SPECIES_MALAMAR, "Sepiatroce"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_WATER_2
@@ -15520,7 +15520,7 @@ mondata SPECIES_BINACLE, "Opermine"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_3, EGG_GROUP_WATER_3
@@ -15541,7 +15541,7 @@ mondata SPECIES_BARBARACLE, "Golgopathe"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_3, EGG_GROUP_WATER_3
@@ -15562,7 +15562,7 @@ mondata SPECIES_SKRELP, "Venalgue"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_DRAGON
@@ -15583,7 +15583,7 @@ mondata SPECIES_DRAGALGE, "Kravarech"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_DRAGON
@@ -15604,7 +15604,7 @@ mondata SPECIES_CLAUNCHER, "Flingouste"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_WATER_3
@@ -15625,7 +15625,7 @@ mondata SPECIES_CLAWITZER, "Gamblast"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_WATER_3
@@ -15646,7 +15646,7 @@ mondata SPECIES_HELIOPTILE, "Galvaran"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_DRAGON
@@ -15667,7 +15667,7 @@ mondata SPECIES_HELIOLISK, "Iguolta"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_DRAGON
@@ -15688,7 +15688,7 @@ mondata SPECIES_TYRUNT, "Ptyranidur"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 30
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_DRAGON
@@ -15709,7 +15709,7 @@ mondata SPECIES_TYRANTRUM, "Rexillius"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 30
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_DRAGON
@@ -15730,7 +15730,7 @@ mondata SPECIES_AMAURA, "Amagara"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 30
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_MONSTER
@@ -15751,7 +15751,7 @@ mondata SPECIES_AURORUS, "Dragmara"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 30
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_MONSTER
@@ -15772,7 +15772,7 @@ mondata SPECIES_SYLVEON, "Nymphali"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 35
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -15793,7 +15793,7 @@ mondata SPECIES_HAWLUCHA, "Brutalibré"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FLYING, EGG_GROUP_HUMAN_LIKE
@@ -15814,7 +15814,7 @@ mondata SPECIES_DEDENNE, "Dedenne"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FAIRY
@@ -15835,7 +15835,7 @@ mondata SPECIES_CARBINK, "Strassie"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_MINERAL
@@ -15856,7 +15856,7 @@ mondata SPECIES_GOOMY, "Mucuscule"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_DRAGON, EGG_GROUP_DRAGON
@@ -15877,7 +15877,7 @@ mondata SPECIES_SLIGGOO, "Colimucus"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_DRAGON, EGG_GROUP_DRAGON
@@ -15898,7 +15898,7 @@ mondata SPECIES_GOODRA, "Muplodocus"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_DRAGON, EGG_GROUP_DRAGON
@@ -15919,7 +15919,7 @@ mondata SPECIES_KLEFKI, "Trousselin"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -15940,7 +15940,7 @@ mondata SPECIES_PHANTUMP, "Brocélôme"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_GRASS, EGG_GROUP_AMORPHOUS
@@ -15961,7 +15961,7 @@ mondata SPECIES_TREVENANT, "Deséliande"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_GRASS, EGG_GROUP_AMORPHOUS
@@ -15982,7 +15982,7 @@ mondata SPECIES_PUMPKABOO, "Pitrouille"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -16003,7 +16003,7 @@ mondata SPECIES_GOURGEIST, "Banshtrouy"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -16024,7 +16024,7 @@ mondata SPECIES_BERGMITE, "Grelaçon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_MINERAL
@@ -16045,7 +16045,7 @@ mondata SPECIES_AVALUGG, "Séracrawl"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_MINERAL
@@ -16066,7 +16066,7 @@ mondata SPECIES_NOIBAT, "Sonistrele"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FLYING, EGG_GROUP_DRAGON
@@ -16087,7 +16087,7 @@ mondata SPECIES_NOIVERN, "Bruyverne"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FLYING, EGG_GROUP_DRAGON
@@ -16108,7 +16108,7 @@ mondata SPECIES_XERNEAS, "Xerneas"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -16129,7 +16129,7 @@ mondata SPECIES_YVELTAL, "Yveltal"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -16150,7 +16150,7 @@ mondata SPECIES_ZYGARDE, "Zygarde"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -16171,7 +16171,7 @@ mondata SPECIES_DIANCIE, "Diancie"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -16192,7 +16192,7 @@ mondata SPECIES_HOOPA, "Hoopa"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 100
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -16213,7 +16213,7 @@ mondata SPECIES_VOLCANION, "Volcanion"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 100
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -16234,7 +16234,7 @@ mondata SPECIES_ROWLET, "Brindibou"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -16255,7 +16255,7 @@ mondata SPECIES_DARTRIX, "Efflèche"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -16276,7 +16276,7 @@ mondata SPECIES_DECIDUEYE, "Archéduc"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -16297,7 +16297,7 @@ mondata SPECIES_LITTEN, "Flamiaou"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -16318,7 +16318,7 @@ mondata SPECIES_TORRACAT, "Matoufeu"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -16339,7 +16339,7 @@ mondata SPECIES_INCINEROAR, "Félinferno"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -16360,7 +16360,7 @@ mondata SPECIES_POPPLIO, "Otaquin"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_FIELD
@@ -16381,7 +16381,7 @@ mondata SPECIES_BRIONNE, "Otarlette"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_FIELD
@@ -16402,7 +16402,7 @@ mondata SPECIES_PRIMARINA, "Oratoria"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_FIELD
@@ -16423,7 +16423,7 @@ mondata SPECIES_PIKIPEK, "Picassaut"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -16444,7 +16444,7 @@ mondata SPECIES_TRUMBEAK, "Piclairon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -16465,7 +16465,7 @@ mondata SPECIES_TOUCANNON, "Bazoucan"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -16486,7 +16486,7 @@ mondata SPECIES_YUNGOOS, "Manglouton"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -16507,7 +16507,7 @@ mondata SPECIES_GUMSHOOS, "Argouste"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -16528,7 +16528,7 @@ mondata SPECIES_GRUBBIN, "Larvibule"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -16549,7 +16549,7 @@ mondata SPECIES_CHARJABUG, "Chrysapile"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -16570,7 +16570,7 @@ mondata SPECIES_VIKAVOLT, "Lucanon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -16591,7 +16591,7 @@ mondata SPECIES_CRABRAWLER, "Crabagarre"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_3, EGG_GROUP_WATER_3
@@ -16612,7 +16612,7 @@ mondata SPECIES_CRABOMINABLE, "Crabomnabl"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_3, EGG_GROUP_WATER_3
@@ -16633,7 +16633,7 @@ mondata SPECIES_ORICORIO, "Plumeline"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 190
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -16654,7 +16654,7 @@ mondata SPECIES_CUTIEFLY, "Bombydou"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_FAIRY
@@ -16675,7 +16675,7 @@ mondata SPECIES_RIBOMBEE, "Rubombelle"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_FAIRY
@@ -16696,7 +16696,7 @@ mondata SPECIES_ROCKRUFF, "Rocabot"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -16717,7 +16717,7 @@ mondata SPECIES_LYCANROC, "Lougaroc"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -16738,7 +16738,7 @@ mondata SPECIES_WISHIWASHI, "Froussrdin"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_WATER_2, EGG_GROUP_WATER_2
@@ -16759,7 +16759,7 @@ mondata SPECIES_MAREANIE, "Vorastérie"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_WATER_1
@@ -16780,7 +16780,7 @@ mondata SPECIES_TOXAPEX, "Prédastéri"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_WATER_1
@@ -16801,7 +16801,7 @@ mondata SPECIES_MUDBRAY, "Tiboudet"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -16822,7 +16822,7 @@ mondata SPECIES_MUDSDALE, "Bourrinos"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -16843,7 +16843,7 @@ mondata SPECIES_DEWPIDER, "Araqua"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_BUG
@@ -16864,7 +16864,7 @@ mondata SPECIES_ARAQUANID, "Tarenbulle"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_BUG
@@ -16885,7 +16885,7 @@ mondata SPECIES_FOMANTIS, "Mimantis"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_GRASS, EGG_GROUP_GRASS
@@ -16906,7 +16906,7 @@ mondata SPECIES_LURANTIS, "Flormantis"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_GRASS, EGG_GROUP_GRASS
@@ -16927,7 +16927,7 @@ mondata SPECIES_MORELULL, "Spododo"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_GRASS, EGG_GROUP_GRASS
@@ -16948,7 +16948,7 @@ mondata SPECIES_SHIINOTIC, "Lampignon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_GRASS, EGG_GROUP_GRASS
@@ -16969,7 +16969,7 @@ mondata SPECIES_SALANDIT, "Tritox"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_DRAGON
@@ -16990,7 +16990,7 @@ mondata SPECIES_SALAZZLE, "Malamandre"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_DRAGON
@@ -17011,7 +17011,7 @@ mondata SPECIES_STUFFUL, "Nounourson"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -17032,7 +17032,7 @@ mondata SPECIES_BEWEAR, "Chelours"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -17053,7 +17053,7 @@ mondata SPECIES_BOUNSWEET, "Croquine"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_GRASS, EGG_GROUP_GRASS
@@ -17074,7 +17074,7 @@ mondata SPECIES_STEENEE, "Candine"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_GRASS, EGG_GROUP_GRASS
@@ -17095,7 +17095,7 @@ mondata SPECIES_TSAREENA, "Sucreine"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_GRASS, EGG_GROUP_GRASS
@@ -17116,7 +17116,7 @@ mondata SPECIES_COMFEY, "Guérilande"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 190
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_GRASS, EGG_GROUP_GRASS
@@ -17137,7 +17137,7 @@ mondata SPECIES_ORANGURU, "Gouroutan"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -17158,7 +17158,7 @@ mondata SPECIES_PASSIMIAN, "Quartermac"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -17179,7 +17179,7 @@ mondata SPECIES_WIMPOD, "Sovkipou"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_WATER_3
@@ -17200,7 +17200,7 @@ mondata SPECIES_GOLISOPOD, "Sarmuraï"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_WATER_3
@@ -17221,7 +17221,7 @@ mondata SPECIES_SANDYGAST, "Bacabouh"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -17242,7 +17242,7 @@ mondata SPECIES_PALOSSAND, "Trépasable"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -17263,7 +17263,7 @@ mondata SPECIES_PYUKUMUKU, "Concombaff"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_WATER_1
@@ -17284,7 +17284,7 @@ mondata SPECIES_TYPE_NULL, "Type:0"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -17305,7 +17305,7 @@ mondata SPECIES_SILVALLY, "Silvallié"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -17326,7 +17326,7 @@ mondata SPECIES_MINIOR, "Météno"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 25
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -17347,7 +17347,7 @@ mondata SPECIES_KOMALA, "Dodoala"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -17368,7 +17368,7 @@ mondata SPECIES_TURTONATOR, "Boumata"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_DRAGON
@@ -17389,7 +17389,7 @@ mondata SPECIES_TOGEDEMARU, "Togedemaru"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 10
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FAIRY
@@ -17410,7 +17410,7 @@ mondata SPECIES_MIMIKYU, "Mimiqui"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -17431,7 +17431,7 @@ mondata SPECIES_BRUXISH, "Denticriss"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_2, EGG_GROUP_WATER_2
@@ -17452,7 +17452,7 @@ mondata SPECIES_DRAMPA, "Draïeul"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_DRAGON
@@ -17473,7 +17473,7 @@ mondata SPECIES_DHELMISE, "Sinistrail"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -17494,7 +17494,7 @@ mondata SPECIES_JANGMO_O, "Bébécaille"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_DRAGON, EGG_GROUP_DRAGON
@@ -17515,7 +17515,7 @@ mondata SPECIES_HAKAMO_O, "Écaïd"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_DRAGON, EGG_GROUP_DRAGON
@@ -17536,7 +17536,7 @@ mondata SPECIES_KOMMO_O, "Ékaïser"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_DRAGON, EGG_GROUP_DRAGON
@@ -17557,7 +17557,7 @@ mondata SPECIES_TAPU_KOKO, "Tokorico"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -17578,7 +17578,7 @@ mondata SPECIES_TAPU_LELE, "Tokopiyon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -17599,7 +17599,7 @@ mondata SPECIES_TAPU_BULU, "Tokotoro"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -17620,7 +17620,7 @@ mondata SPECIES_TAPU_FINI, "Tokopisco"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -17641,7 +17641,7 @@ mondata SPECIES_COSMOG, "Cosmog"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -17662,7 +17662,7 @@ mondata SPECIES_COSMOEM, "Cosmovum"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -17683,7 +17683,7 @@ mondata SPECIES_SOLGALEO, "Solgaleo"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -17704,7 +17704,7 @@ mondata SPECIES_LUNALA, "Lunala"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -17725,7 +17725,7 @@ mondata SPECIES_NIHILEGO, "Zéroïd"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -17746,7 +17746,7 @@ mondata SPECIES_BUZZWOLE, "Mouscoto"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -17767,7 +17767,7 @@ mondata SPECIES_PHEROMOSA, "Cancrelove"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -17788,7 +17788,7 @@ mondata SPECIES_XURKITREE, "Câblifère"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -17809,7 +17809,7 @@ mondata SPECIES_CELESTEELA, "Bamboisell"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -17830,7 +17830,7 @@ mondata SPECIES_KARTANA, "Katagami"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -17851,7 +17851,7 @@ mondata SPECIES_GUZZLORD, "Engltyran"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -17872,7 +17872,7 @@ mondata SPECIES_NECROZMA, "Necrozma"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -17893,7 +17893,7 @@ mondata SPECIES_MAGEARNA, "Magearna"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -17914,7 +17914,7 @@ mondata SPECIES_MARSHADOW, "Marshadow"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -17935,7 +17935,7 @@ mondata SPECIES_POIPOLE, "Vémini"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -17956,7 +17956,7 @@ mondata SPECIES_NAGANADEL, "Mandrillon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -17977,7 +17977,7 @@ mondata SPECIES_STAKATAKA, "Ama-Ama"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -17998,7 +17998,7 @@ mondata SPECIES_BLACEPHALON, "Pierteknik"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -18019,7 +18019,7 @@ mondata SPECIES_ZERAORA, "Zeraora"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -18040,7 +18040,7 @@ mondata SPECIES_MELTAN, "Meltan"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -18061,7 +18061,7 @@ mondata SPECIES_MELMETAL, "Melmetal"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -18082,7 +18082,7 @@ mondata SPECIES_GROOKEY, "Ouistempo"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_GRASS
@@ -18103,7 +18103,7 @@ mondata SPECIES_THWACKEY, "Badabouin"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_GRASS
@@ -18124,7 +18124,7 @@ mondata SPECIES_RILLABOOM, "Gorythmic"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_GRASS
@@ -18145,7 +18145,7 @@ mondata SPECIES_SCORBUNNY, "Flambino"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_HUMAN_LIKE
@@ -18166,7 +18166,7 @@ mondata SPECIES_RABOOT, "Lapyro"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_HUMAN_LIKE
@@ -18187,7 +18187,7 @@ mondata SPECIES_CINDERACE, "Pyrobut"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_HUMAN_LIKE
@@ -18208,7 +18208,7 @@ mondata SPECIES_SOBBLE, "Larméléon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_FIELD
@@ -18229,7 +18229,7 @@ mondata SPECIES_DRIZZILE, "Arrozard"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_FIELD
@@ -18250,7 +18250,7 @@ mondata SPECIES_INTELEON, "Lézargus"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_FIELD
@@ -18271,7 +18271,7 @@ mondata SPECIES_SKWOVET, "Rngourmand"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -18292,7 +18292,7 @@ mondata SPECIES_GREEDENT, "Rongrigou"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -18313,7 +18313,7 @@ mondata SPECIES_ROOKIDEE, "Minisange"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -18334,7 +18334,7 @@ mondata SPECIES_CORVISQUIRE, "Bleuseille"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -18355,7 +18355,7 @@ mondata SPECIES_CORVIKNIGHT, "Corvaillus"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -18376,7 +18376,7 @@ mondata SPECIES_BLIPBUG, "Larvadar"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -18397,7 +18397,7 @@ mondata SPECIES_DOTTLER, "Coléodôme"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -18418,7 +18418,7 @@ mondata SPECIES_ORBEETLE, "Astronelle"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -18439,7 +18439,7 @@ mondata SPECIES_NICKIT, "Goupilou"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -18460,7 +18460,7 @@ mondata SPECIES_THIEVUL, "Roublenard"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -18481,7 +18481,7 @@ mondata SPECIES_GOSSIFLEUR, "Tourncoton"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_GRASS, EGG_GROUP_GRASS
@@ -18502,7 +18502,7 @@ mondata SPECIES_ELDEGOSS, "Blancoton"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_GRASS, EGG_GROUP_GRASS
@@ -18523,7 +18523,7 @@ mondata SPECIES_WOOLOO, "Moumouton"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -18544,7 +18544,7 @@ mondata SPECIES_DUBWOOL, "Moumouflon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -18565,7 +18565,7 @@ mondata SPECIES_CHEWTLE, "Khélocrok"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_WATER_1
@@ -18586,7 +18586,7 @@ mondata SPECIES_DREDNAW, "Torgamord"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_WATER_1
@@ -18607,7 +18607,7 @@ mondata SPECIES_YAMPER, "Voltoutou"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -18628,7 +18628,7 @@ mondata SPECIES_BOLTUND, "Fulgudog"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -18649,7 +18649,7 @@ mondata SPECIES_ROLYCOLY, "Charbi"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -18670,7 +18670,7 @@ mondata SPECIES_CARKOL, "Wagomine"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -18691,7 +18691,7 @@ mondata SPECIES_COALOSSAL, "Montracite"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -18712,7 +18712,7 @@ mondata SPECIES_APPLIN, "Verpom"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_ERRATIC
     egggroups EGG_GROUP_GRASS, EGG_GROUP_DRAGON
@@ -18733,7 +18733,7 @@ mondata SPECIES_FLAPPLE, "Pomdrapi"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_ERRATIC
     egggroups EGG_GROUP_GRASS, EGG_GROUP_DRAGON
@@ -18754,7 +18754,7 @@ mondata SPECIES_APPLETUN, "Dratatin"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_ERRATIC
     egggroups EGG_GROUP_GRASS, EGG_GROUP_DRAGON
@@ -18775,7 +18775,7 @@ mondata SPECIES_SILICOBRA, "Dunaja"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_DRAGON
@@ -18796,7 +18796,7 @@ mondata SPECIES_SANDACONDA, "Dunaconda"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_DRAGON
@@ -18817,7 +18817,7 @@ mondata SPECIES_CRAMORANT, "Nigosier"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_FLYING
@@ -18838,7 +18838,7 @@ mondata SPECIES_ARROKUDA, "Embrochet"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_WATER_2, EGG_GROUP_WATER_2
@@ -18859,7 +18859,7 @@ mondata SPECIES_BARRASKEWDA, "Hastacuda"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_WATER_2, EGG_GROUP_WATER_2
@@ -18880,7 +18880,7 @@ mondata SPECIES_TOXEL, "Toxizap"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -18901,7 +18901,7 @@ mondata SPECIES_TOXTRICITY, "Salarsen"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -18922,7 +18922,7 @@ mondata SPECIES_SIZZLIPEDE, "Grillepatt"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -18943,7 +18943,7 @@ mondata SPECIES_CENTISKORCH, "Scolcendre"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -18964,7 +18964,7 @@ mondata SPECIES_CLOBBOPUS, "Poulpaf"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_HUMAN_LIKE
@@ -18985,7 +18985,7 @@ mondata SPECIES_GRAPPLOCT, "Krakos"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_HUMAN_LIKE
@@ -19006,7 +19006,7 @@ mondata SPECIES_SINISTEA, "Théffroi"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_AMORPHOUS
@@ -19027,7 +19027,7 @@ mondata SPECIES_POLTEAGEIST, "Poltégeist"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_AMORPHOUS
@@ -19048,7 +19048,7 @@ mondata SPECIES_HATENNA, "Bibichut"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_FAIRY
@@ -19069,7 +19069,7 @@ mondata SPECIES_HATTREM, "Chapotus"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_FAIRY
@@ -19090,7 +19090,7 @@ mondata SPECIES_HATTERENE, "Sorcilence"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_FAIRY
@@ -19111,7 +19111,7 @@ mondata SPECIES_IMPIDIMP, "Grimalin"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_HUMAN_LIKE
@@ -19132,7 +19132,7 @@ mondata SPECIES_MORGREM, "Fourbelin"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_HUMAN_LIKE
@@ -19153,7 +19153,7 @@ mondata SPECIES_GRIMMSNARL, "Angoliath"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_HUMAN_LIKE
@@ -19174,7 +19174,7 @@ mondata SPECIES_OBSTAGOON, "Ixon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -19195,7 +19195,7 @@ mondata SPECIES_PERRSERKER, "Berserkatt"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -19216,7 +19216,7 @@ mondata SPECIES_CURSOLA, "Corayôme"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 190
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_WATER_3
@@ -19237,7 +19237,7 @@ mondata SPECIES_SIRFETCHD, "Palarticho"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FIELD
@@ -19258,7 +19258,7 @@ mondata SPECIES_MR_RIME, "M.Glaquett"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -19279,7 +19279,7 @@ mondata SPECIES_RUNERIGUS, "Tutétékri"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_AMORPHOUS
@@ -19300,7 +19300,7 @@ mondata SPECIES_MILCERY, "Crèmy"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_AMORPHOUS
@@ -19321,7 +19321,7 @@ mondata SPECIES_ALCREMIE, "Charmilly"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_AMORPHOUS
@@ -19342,7 +19342,7 @@ mondata SPECIES_FALINKS, "Hexadron"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_MINERAL
@@ -19363,7 +19363,7 @@ mondata SPECIES_PINCURCHIN, "Wattapik"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_AMORPHOUS
@@ -19384,7 +19384,7 @@ mondata SPECIES_SNOM, "Frisonille"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -19405,7 +19405,7 @@ mondata SPECIES_FROSMOTH, "Beldeneige"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -19426,7 +19426,7 @@ mondata SPECIES_STONJOURNER, "Dolman"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -19447,7 +19447,7 @@ mondata SPECIES_EISCUE, "Bekaglaçon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_FIELD
@@ -19468,7 +19468,7 @@ mondata SPECIES_INDEEDEE, "Wimessir"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 40
+    eggcycles 1
     basefriendship 140
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_FAIRY
@@ -19489,7 +19489,7 @@ mondata SPECIES_MORPEKO, "Morpeko"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 10
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FAIRY
@@ -19510,7 +19510,7 @@ mondata SPECIES_CUFANT, "Charibari"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_MINERAL
@@ -19531,7 +19531,7 @@ mondata SPECIES_COPPERAJAH, "Pachyrdjah"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_MINERAL
@@ -19552,7 +19552,7 @@ mondata SPECIES_DRACOZOLT, "Galvagon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 35
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -19573,7 +19573,7 @@ mondata SPECIES_ARCTOZOLT, "Galvagla"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 35
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -19594,7 +19594,7 @@ mondata SPECIES_DRACOVISH, "Hydragon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 35
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -19615,7 +19615,7 @@ mondata SPECIES_ARCTOVISH, "Hydragla"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 35
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -19636,7 +19636,7 @@ mondata SPECIES_DURALUDON, "Duralugon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 30
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_DRAGON
@@ -19657,7 +19657,7 @@ mondata SPECIES_DREEPY, "Fantyrm"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_DRAGON
@@ -19678,7 +19678,7 @@ mondata SPECIES_DRAKLOAK, "Dispreptil"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_DRAGON
@@ -19699,7 +19699,7 @@ mondata SPECIES_DRAGAPULT, "Lanssorien"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_DRAGON
@@ -19720,7 +19720,7 @@ mondata SPECIES_ZACIAN, "Zacian"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -19741,7 +19741,7 @@ mondata SPECIES_ZAMAZENTA, "Zamazenta"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -19762,7 +19762,7 @@ mondata SPECIES_ETERNATUS, "Éthernatos"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -19783,7 +19783,7 @@ mondata SPECIES_KUBFU, "Wushours"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 120
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -19804,7 +19804,7 @@ mondata SPECIES_URSHIFU, "Shifours"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 120
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -19825,7 +19825,7 @@ mondata SPECIES_ZARUDE, "Zarude"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -19846,7 +19846,7 @@ mondata SPECIES_REGIELEKI, "Regieleki"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -19867,7 +19867,7 @@ mondata SPECIES_REGIDRAGO, "Regidrago"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -19888,7 +19888,7 @@ mondata SPECIES_GLASTRIER, "Blizzeval"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -19909,7 +19909,7 @@ mondata SPECIES_SPECTRIER, "Spectreval"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -19930,7 +19930,7 @@ mondata SPECIES_CALYREX, "Sylveroy"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 100
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -19951,7 +19951,7 @@ mondata SPECIES_WYRDEER, "Cerbyllin"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 0
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -19972,7 +19972,7 @@ mondata SPECIES_KLEAVOR, "Hachékteur"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 0
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -19993,7 +19993,7 @@ mondata SPECIES_URSALUNA, "Ursaking"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 0
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -20014,7 +20014,7 @@ mondata SPECIES_BASCULEGION, "Paragruel"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 0
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_2, EGG_GROUP_WATER_2
@@ -20035,7 +20035,7 @@ mondata SPECIES_SNEASLER, "Farfurex"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 0
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -20056,7 +20056,7 @@ mondata SPECIES_OVERQWIL, "Qwilpik"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 0
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_2, EGG_GROUP_WATER_2
@@ -20077,7 +20077,7 @@ mondata SPECIES_ENAMORUS, "Amovénus"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 0
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -20098,7 +20098,7 @@ mondata SPECIES_SPRIGATITO, "Poussacha"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_GRASS
@@ -20119,7 +20119,7 @@ mondata SPECIES_FLORAGATO, "Matourgeon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_GRASS
@@ -20140,7 +20140,7 @@ mondata SPECIES_MEOWSCARADA, "Miascarade"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_GRASS
@@ -20161,7 +20161,7 @@ mondata SPECIES_FUECOCO, "Chochodile"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -20182,7 +20182,7 @@ mondata SPECIES_CROCALOR, "Crocogril"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -20203,7 +20203,7 @@ mondata SPECIES_SKELEDIRGE, "Flâmigator"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -20224,7 +20224,7 @@ mondata SPECIES_QUAXLY, "Coiffeton"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FLYING, EGG_GROUP_WATER_1
@@ -20245,7 +20245,7 @@ mondata SPECIES_QUAXWELL, "Canarbello"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FLYING, EGG_GROUP_WATER_1
@@ -20266,7 +20266,7 @@ mondata SPECIES_QUAQUAVAL, "Palmaval"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FLYING, EGG_GROUP_WATER_1
@@ -20287,7 +20287,7 @@ mondata SPECIES_LECHONK, "Gourmelet"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -20308,7 +20308,7 @@ mondata SPECIES_OINKOLOGNE, "Fragroin"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -20329,7 +20329,7 @@ mondata SPECIES_TAROUNTULA, "Tissenboul"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_ERRATIC
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -20350,7 +20350,7 @@ mondata SPECIES_SPIDOPS, "Filentrape"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_ERRATIC
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -20371,7 +20371,7 @@ mondata SPECIES_NYMBLE, "Liliterele"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 20
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -20392,7 +20392,7 @@ mondata SPECIES_LOKIX, "Gambex"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -20413,7 +20413,7 @@ mondata SPECIES_PAWMI, "Pohm"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -20434,7 +20434,7 @@ mondata SPECIES_PAWMO, "Pohmotte"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -20455,7 +20455,7 @@ mondata SPECIES_PAWMOT, "Pohmarmott"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -20476,7 +20476,7 @@ mondata SPECIES_TANDEMAUS, "Compagnol"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 10
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FAIRY
@@ -20497,7 +20497,7 @@ mondata SPECIES_MAUSHOLD, "Famignol"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 10
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FAIRY
@@ -20518,7 +20518,7 @@ mondata SPECIES_FIDOUGH, "Pâtachiot"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_MINERAL
@@ -20539,7 +20539,7 @@ mondata SPECIES_DACHSBUN, "Briochien"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_MINERAL
@@ -20560,7 +20560,7 @@ mondata SPECIES_SMOLIV, "Olivini"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_GRASS, EGG_GROUP_GRASS
@@ -20581,7 +20581,7 @@ mondata SPECIES_DOLLIV, "Olivado"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_GRASS, EGG_GROUP_GRASS
@@ -20602,7 +20602,7 @@ mondata SPECIES_ARBOLIVA, "Arboliva"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_GRASS, EGG_GROUP_GRASS
@@ -20623,7 +20623,7 @@ mondata SPECIES_SQUAWKABILLY, "Tapatoès"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_ERRATIC
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -20644,7 +20644,7 @@ mondata SPECIES_NACLI, "Selutin"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -20665,7 +20665,7 @@ mondata SPECIES_NACLSTACK, "Amassel"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -20686,7 +20686,7 @@ mondata SPECIES_GARGANACL, "Gigansel"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -20707,7 +20707,7 @@ mondata SPECIES_CHARCADET, "Charbambin"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 35
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -20728,7 +20728,7 @@ mondata SPECIES_ARMAROUGE, "Carmadura"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 35
+    eggcycles 1
     basefriendship 20
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -20749,7 +20749,7 @@ mondata SPECIES_CERULEDGE, "Malvalame"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 35
+    eggcycles 1
     basefriendship 20
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -20770,7 +20770,7 @@ mondata SPECIES_TADBULB, "Têtampoule"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_WATER_1
@@ -20791,7 +20791,7 @@ mondata SPECIES_BELLIBOLT, "Ampibidou"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_WATER_1
@@ -20812,7 +20812,7 @@ mondata SPECIES_WATTREL, "Zapétrel"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_FLYING
@@ -20833,7 +20833,7 @@ mondata SPECIES_KILOWATTREL, "Fulgulairo"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_FLYING
@@ -20854,7 +20854,7 @@ mondata SPECIES_MASCHIFF, "Grondogue"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -20875,7 +20875,7 @@ mondata SPECIES_MABOSSTIFF, "Dogrino"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -20896,7 +20896,7 @@ mondata SPECIES_SHROODLE, "Gribraigne"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -20917,7 +20917,7 @@ mondata SPECIES_GRAFAIAI, "Tag-Tag"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -20938,7 +20938,7 @@ mondata SPECIES_BRAMBLIN, "Virovent"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_GRASS, EGG_GROUP_GRASS
@@ -20959,7 +20959,7 @@ mondata SPECIES_BRAMBLEGHAST, "Virvorreur"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_GRASS, EGG_GROUP_GRASS
@@ -20980,7 +20980,7 @@ mondata SPECIES_TOEDSCOOL, "Terracool"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_GRASS, EGG_GROUP_GRASS
@@ -21001,7 +21001,7 @@ mondata SPECIES_TOEDSCRUEL, "Terracruel"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_GRASS, EGG_GROUP_GRASS
@@ -21022,7 +21022,7 @@ mondata SPECIES_KLAWF, "Craparoi"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 35
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_3, EGG_GROUP_WATER_3
@@ -21043,7 +21043,7 @@ mondata SPECIES_CAPSAKID, "Pimito"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_GRASS, EGG_GROUP_GRASS
@@ -21064,7 +21064,7 @@ mondata SPECIES_SCOVILLAIN, "Scovilain"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_GRASS, EGG_GROUP_GRASS
@@ -21085,7 +21085,7 @@ mondata SPECIES_RELLOR, "Léboulérou"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -21106,7 +21106,7 @@ mondata SPECIES_RABSCA, "Bérasca"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -21127,7 +21127,7 @@ mondata SPECIES_FLITTLE, "Flotillon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -21148,7 +21148,7 @@ mondata SPECIES_ESPATHRA, "Cléopsytra"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -21169,7 +21169,7 @@ mondata SPECIES_TINKATINK, "Forgerette"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_FAIRY
@@ -21190,7 +21190,7 @@ mondata SPECIES_TINKATUFF, "Forgella"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_FAIRY
@@ -21211,7 +21211,7 @@ mondata SPECIES_TINKATON, "Forgelina"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_FAIRY
@@ -21232,7 +21232,7 @@ mondata SPECIES_WIGLETT, "Taupikeau"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_3, EGG_GROUP_WATER_3
@@ -21253,7 +21253,7 @@ mondata SPECIES_WUGTRIO, "Triopikeau"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_3, EGG_GROUP_WATER_3
@@ -21274,7 +21274,7 @@ mondata SPECIES_BOMBIRDIER, "Lestombail"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 35
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -21295,7 +21295,7 @@ mondata SPECIES_FINIZEN, "Dofin"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_WATER_2
@@ -21316,7 +21316,7 @@ mondata SPECIES_PALAFIN, "Superdofin"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_WATER_2
@@ -21337,7 +21337,7 @@ mondata SPECIES_VAROOM, "Vrombi"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -21358,7 +21358,7 @@ mondata SPECIES_REVAVROOM, "Vrombotor"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -21379,7 +21379,7 @@ mondata SPECIES_CYCLIZAR, "Motorizard"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 30
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -21400,7 +21400,7 @@ mondata SPECIES_ORTHWORM, "Ferdeter"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 35
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -21421,7 +21421,7 @@ mondata SPECIES_GLIMMET, "Germéclat"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 30
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -21442,7 +21442,7 @@ mondata SPECIES_GLIMMORA, "Floréclat"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 30
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -21463,7 +21463,7 @@ mondata SPECIES_GREAVARD, "Toutombe"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -21484,7 +21484,7 @@ mondata SPECIES_HOUNDSTONE, "Tomberro"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -21505,7 +21505,7 @@ mondata SPECIES_FLAMIGO, "Flamnroule"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -21526,7 +21526,7 @@ mondata SPECIES_CETODDLE, "Piétacé"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -21547,7 +21547,7 @@ mondata SPECIES_CETITAN, "Balbalèze"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -21568,7 +21568,7 @@ mondata SPECIES_VELUZA, "Délestin"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_WATER_2, EGG_GROUP_WATER_2
@@ -21589,7 +21589,7 @@ mondata SPECIES_DONDOZO, "Oyacata"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_WATER_2, EGG_GROUP_WATER_2
@@ -21610,7 +21610,7 @@ mondata SPECIES_TATSUGIRI, "Nigirigon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 35
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_WATER_2, EGG_GROUP_WATER_2
@@ -21631,7 +21631,7 @@ mondata SPECIES_ANNIHILAPE, "Courousinj"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -21652,7 +21652,7 @@ mondata SPECIES_CLODSIRE, "Terraiste"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_FIELD
@@ -21673,7 +21673,7 @@ mondata SPECIES_FARIGIRAF, "Farigiraf"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -21694,7 +21694,7 @@ mondata SPECIES_DUDUNSPARCE, "Deusolrdo"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -21715,7 +21715,7 @@ mondata SPECIES_KINGAMBIT, "Scalpereur"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -21736,7 +21736,7 @@ mondata SPECIES_GREAT_TUSK, "FortIvoire"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 50
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -21757,7 +21757,7 @@ mondata SPECIES_SCREAM_TAIL, "HurleQueue"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 50
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -21778,7 +21778,7 @@ mondata SPECIES_BRUTE_BONNET, "FongusFuri"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 50
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -21799,7 +21799,7 @@ mondata SPECIES_FLUTTER_MANE, "FlottMèche"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 50
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -21820,7 +21820,7 @@ mondata SPECIES_SLITHER_WING, "RampeAiles"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 50
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -21841,7 +21841,7 @@ mondata SPECIES_SANDY_SHOCKS, "PelajSablé"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 50
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -21862,7 +21862,7 @@ mondata SPECIES_IRON_TREADS, "RoueDeFer"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 50
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -21883,7 +21883,7 @@ mondata SPECIES_IRON_BUNDLE, "HotteDeFer"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 50
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -21904,7 +21904,7 @@ mondata SPECIES_IRON_HANDS, "PaumeDeFer"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 50
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -21925,7 +21925,7 @@ mondata SPECIES_IRON_JUGULIS, "TêtesDeFer"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 50
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -21946,7 +21946,7 @@ mondata SPECIES_IRON_MOTH, "MiteDeFer"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 50
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -21967,7 +21967,7 @@ mondata SPECIES_IRON_THORNS, "ÉpineDeFer"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 50
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -21988,7 +21988,7 @@ mondata SPECIES_FRIGIBAX, "Frigodo"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_DRAGON, EGG_GROUP_MINERAL
@@ -22009,7 +22009,7 @@ mondata SPECIES_ARCTIBAX, "Cryodo"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_DRAGON, EGG_GROUP_MINERAL
@@ -22030,7 +22030,7 @@ mondata SPECIES_BAXCALIBUR, "Glaivodo"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_DRAGON, EGG_GROUP_MINERAL
@@ -22051,7 +22051,7 @@ mondata SPECIES_GIMMIGHOUL, "Mordudor"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 50
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -22072,7 +22072,7 @@ mondata SPECIES_GHOLDENGO, "Gromago"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 50
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -22093,7 +22093,7 @@ mondata SPECIES_WO_CHIEN, "Chongjian"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 50
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -22114,7 +22114,7 @@ mondata SPECIES_CHIEN_PAO, "Baojian"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 50
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -22135,7 +22135,7 @@ mondata SPECIES_TING_LU, "Dinglu"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 50
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -22156,7 +22156,7 @@ mondata SPECIES_CHI_YU, "Yuyu"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 50
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -22177,7 +22177,7 @@ mondata SPECIES_ROARING_MOON, "Rugit-Lune"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 50
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -22198,7 +22198,7 @@ mondata SPECIES_IRON_VALIANT, "GardedeFer"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 50
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -22219,7 +22219,7 @@ mondata SPECIES_KORAIDON, "Koraidon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 50
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -22240,7 +22240,7 @@ mondata SPECIES_MIRAIDON, "Miraidon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 50
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -22261,7 +22261,7 @@ mondata SPECIES_WALKING_WAKE, "SerpentEau"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 50
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -22282,7 +22282,7 @@ mondata SPECIES_IRON_LEAVES, "VertDeFer"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 50
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -22303,7 +22303,7 @@ mondata SPECIES_DIPPLIN, "Pomdramour"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_ERRATIC
     egggroups EGG_GROUP_GRASS, EGG_GROUP_DRAGON
@@ -22324,7 +22324,7 @@ mondata SPECIES_POLTCHAGEIST, "Polchgeist"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 20
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_AMORPHOUS
@@ -22345,7 +22345,7 @@ mondata SPECIES_SINISTCHA, "Théfroyabl"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 20
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_AMORPHOUS
@@ -22366,7 +22366,7 @@ mondata SPECIES_OKIDOGI, "Félicanis"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -22387,7 +22387,7 @@ mondata SPECIES_MUNKIDORI, "Fortusimia"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -22408,7 +22408,7 @@ mondata SPECIES_FEZANDIPITI, "Favianos"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -22429,7 +22429,7 @@ mondata SPECIES_OGERPON, "Ogerpon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 10
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -22450,7 +22450,7 @@ mondata SPECIES_ARCHALUDON, "Pndralugon"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 30
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_DRAGON
@@ -22471,7 +22471,7 @@ mondata SPECIES_HYDRAPPLE, "Pomdorochi"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_ERRATIC
     egggroups EGG_GROUP_GRASS, EGG_GROUP_DRAGON
@@ -22492,7 +22492,7 @@ mondata SPECIES_GOUGING_FIRE, "FeuPerçant"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 50
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -22513,7 +22513,7 @@ mondata SPECIES_RAGING_BOLT, "Ire-Foudre"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 50
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -22534,7 +22534,7 @@ mondata SPECIES_IRON_BOULDER, "Roc-de-Fer"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 50
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -22555,7 +22555,7 @@ mondata SPECIES_IRON_CROWN, "ChefDeFer"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 50
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -22576,7 +22576,7 @@ mondata SPECIES_TERAPAGOS, "Terapagos"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 5
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -22597,7 +22597,7 @@ mondata SPECIES_PECHARUNT, "Pêchaminus"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 20
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -22618,7 +22618,7 @@ mondata SPECIES_MEGA_VENUSAUR, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_GRASS
@@ -22634,7 +22634,7 @@ mondata SPECIES_MEGA_CHARIZARD_X, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_DRAGON
@@ -22650,7 +22650,7 @@ mondata SPECIES_MEGA_CHARIZARD_Y, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_DRAGON
@@ -22666,7 +22666,7 @@ mondata SPECIES_MEGA_BLASTOISE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_WATER_1
@@ -22682,7 +22682,7 @@ mondata SPECIES_MEGA_BEEDRILL, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -22698,7 +22698,7 @@ mondata SPECIES_MEGA_PIDGEOT, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -22714,7 +22714,7 @@ mondata SPECIES_MEGA_ALAKAZAM, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 63
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -22730,7 +22730,7 @@ mondata SPECIES_MEGA_SLOWBRO, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_WATER_1
@@ -22746,7 +22746,7 @@ mondata SPECIES_MEGA_GENGAR, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -22762,7 +22762,7 @@ mondata SPECIES_MEGA_KANGASKHAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_MONSTER
@@ -22778,7 +22778,7 @@ mondata SPECIES_MEGA_PINSIR, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -22794,7 +22794,7 @@ mondata SPECIES_MEGA_GYARADOS, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 5
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_WATER_2, EGG_GROUP_DRAGON
@@ -22810,7 +22810,7 @@ mondata SPECIES_MEGA_AERODACTYL, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 35
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -22826,7 +22826,7 @@ mondata SPECIES_MEGA_MEWTWO_X, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -22842,7 +22842,7 @@ mondata SPECIES_MEGA_MEWTWO_Y, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -22858,7 +22858,7 @@ mondata SPECIES_MEGA_AMPHAROS, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_FIELD
@@ -22874,7 +22874,7 @@ mondata SPECIES_MEGA_STEELIX, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -22890,7 +22890,7 @@ mondata SPECIES_MEGA_SCIZOR, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -22906,7 +22906,7 @@ mondata SPECIES_MEGA_HERACROSS, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -22922,7 +22922,7 @@ mondata SPECIES_MEGA_HOUNDOOM, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -22938,7 +22938,7 @@ mondata SPECIES_MEGA_TYRANITAR, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_MONSTER
@@ -22954,7 +22954,7 @@ mondata SPECIES_MEGA_SCEPTILE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_DRAGON
@@ -22970,7 +22970,7 @@ mondata SPECIES_MEGA_BLAZIKEN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -22986,7 +22986,7 @@ mondata SPECIES_MEGA_SWAMPERT, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_WATER_1
@@ -23002,7 +23002,7 @@ mondata SPECIES_MEGA_GARDEVOIR, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -23018,7 +23018,7 @@ mondata SPECIES_MEGA_SABLEYE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -23034,7 +23034,7 @@ mondata SPECIES_MEGA_MAWILE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FAIRY
@@ -23050,7 +23050,7 @@ mondata SPECIES_MEGA_AGGRON, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 35
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_MONSTER
@@ -23066,7 +23066,7 @@ mondata SPECIES_MEGA_MEDICHAM, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -23082,7 +23082,7 @@ mondata SPECIES_MEGA_MANECTRIC, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -23098,7 +23098,7 @@ mondata SPECIES_MEGA_SHARPEDO, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_WATER_2, EGG_GROUP_WATER_2
@@ -23114,7 +23114,7 @@ mondata SPECIES_MEGA_CAMERUPT, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -23130,7 +23130,7 @@ mondata SPECIES_MEGA_ALTARIA, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_ERRATIC
     egggroups EGG_GROUP_FLYING, EGG_GROUP_DRAGON
@@ -23146,7 +23146,7 @@ mondata SPECIES_MEGA_BANETTE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -23162,7 +23162,7 @@ mondata SPECIES_MEGA_ABSOL, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -23178,7 +23178,7 @@ mondata SPECIES_MEGA_GLALIE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_MINERAL
@@ -23194,7 +23194,7 @@ mondata SPECIES_MEGA_SALAMENCE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_DRAGON, EGG_GROUP_DRAGON
@@ -23210,7 +23210,7 @@ mondata SPECIES_MEGA_METAGROSS, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 40
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -23226,7 +23226,7 @@ mondata SPECIES_MEGA_LATIAS, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 120
+    eggcycles 1
     basefriendship 90
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -23242,7 +23242,7 @@ mondata SPECIES_MEGA_LATIOS, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 120
+    eggcycles 1
     basefriendship 90
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -23258,7 +23258,7 @@ mondata SPECIES_MEGA_RAYQUAZA, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -23274,7 +23274,7 @@ mondata SPECIES_MEGA_LOPUNNY, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_HUMAN_LIKE
@@ -23290,7 +23290,7 @@ mondata SPECIES_MEGA_GARCHOMP, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_DRAGON, EGG_GROUP_MONSTER
@@ -23306,7 +23306,7 @@ mondata SPECIES_MEGA_LUCARIO, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_HUMAN_LIKE
@@ -23322,7 +23322,7 @@ mondata SPECIES_MEGA_ABOMASNOW, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_GRASS
@@ -23338,7 +23338,7 @@ mondata SPECIES_MEGA_GALLADE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 20
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_WATER_1
@@ -23354,7 +23354,7 @@ mondata SPECIES_MEGA_AUDINO, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_FAIRY
@@ -23370,7 +23370,7 @@ mondata SPECIES_MEGA_DIANCIE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 25
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -23386,7 +23386,7 @@ mondata SPECIES_GROUDON_PRIMAL, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -23402,7 +23402,7 @@ mondata SPECIES_KYOGRE_PRIMAL, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -23418,7 +23418,7 @@ mondata SPECIES_RATTATA_ALOLAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -23434,7 +23434,7 @@ mondata SPECIES_RATICATE_ALOLAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -23450,7 +23450,7 @@ mondata SPECIES_RAICHU_ALOLAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 10
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FAIRY
@@ -23466,7 +23466,7 @@ mondata SPECIES_SANDSHREW_ALOLAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -23482,7 +23482,7 @@ mondata SPECIES_SANDSLASH_ALOLAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -23498,7 +23498,7 @@ mondata SPECIES_VULPIX_ALOLAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 191
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -23514,7 +23514,7 @@ mondata SPECIES_NINETALES_ALOLAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 191
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -23530,7 +23530,7 @@ mondata SPECIES_DIGLETT_ALOLAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -23546,7 +23546,7 @@ mondata SPECIES_DUGTRIO_ALOLAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -23562,7 +23562,7 @@ mondata SPECIES_MEOWTH_ALOLAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -23578,7 +23578,7 @@ mondata SPECIES_PERSIAN_ALOLAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -23594,7 +23594,7 @@ mondata SPECIES_GEODUDE_ALOLAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -23610,7 +23610,7 @@ mondata SPECIES_GRAVELER_ALOLAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -23626,7 +23626,7 @@ mondata SPECIES_GOLEM_ALOLAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -23642,7 +23642,7 @@ mondata SPECIES_GRIMER_ALOLAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -23658,7 +23658,7 @@ mondata SPECIES_MUK_ALOLAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -23674,7 +23674,7 @@ mondata SPECIES_EXEGGUTOR_ALOLAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_GRASS, EGG_GROUP_GRASS
@@ -23690,7 +23690,7 @@ mondata SPECIES_MAROWAK_ALOLAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_MONSTER
@@ -23706,7 +23706,7 @@ mondata SPECIES_RATICATE_ALOLAN_LARGE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -23722,7 +23722,7 @@ mondata SPECIES_MAROWAK_ALOLAN_LARGE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_MONSTER
@@ -23738,7 +23738,7 @@ mondata SPECIES_GUMSHOOS_LARGE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -23754,7 +23754,7 @@ mondata SPECIES_VIKAVOLT_LARGE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -23770,7 +23770,7 @@ mondata SPECIES_RIBOMBEE_LARGE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_FAIRY
@@ -23786,7 +23786,7 @@ mondata SPECIES_ARAQUANID_LARGE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_BUG
@@ -23802,7 +23802,7 @@ mondata SPECIES_LURANTIS_LARGE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_GRASS, EGG_GROUP_GRASS
@@ -23818,7 +23818,7 @@ mondata SPECIES_SALAZZLE_LARGE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_DRAGON
@@ -23834,7 +23834,7 @@ mondata SPECIES_TOGEDEMARU_LARGE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 10
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FAIRY
@@ -23850,7 +23850,7 @@ mondata SPECIES_MIMIKYU_LARGE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -23866,7 +23866,7 @@ mondata SPECIES_MIMIKYU_BUSTED_LARGE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -23882,7 +23882,7 @@ mondata SPECIES_KOMMO_O_LARGE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_DRAGON, EGG_GROUP_DRAGON
@@ -23898,7 +23898,7 @@ mondata SPECIES_MEOWTH_GALARIAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -23914,7 +23914,7 @@ mondata SPECIES_PONYTA_GALARIAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -23930,7 +23930,7 @@ mondata SPECIES_RAPIDASH_GALARIAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -23946,7 +23946,7 @@ mondata SPECIES_SLOWPOKE_GALARIAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_WATER_1
@@ -23962,7 +23962,7 @@ mondata SPECIES_SLOWBRO_GALARIAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_WATER_1
@@ -23978,7 +23978,7 @@ mondata SPECIES_FARFETCHD_GALARIAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FIELD
@@ -23994,7 +23994,7 @@ mondata SPECIES_WEEZING_GALARIAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -24010,7 +24010,7 @@ mondata SPECIES_MR_MIME_GALARIAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -24026,7 +24026,7 @@ mondata SPECIES_ARTICUNO_GALARIAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -24042,7 +24042,7 @@ mondata SPECIES_ZAPDOS_GALARIAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -24058,7 +24058,7 @@ mondata SPECIES_MOLTRES_GALARIAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -24074,7 +24074,7 @@ mondata SPECIES_SLOWKING_GALARIAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_WATER_1
@@ -24090,7 +24090,7 @@ mondata SPECIES_CORSOLA_GALARIAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 191
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_WATER_3
@@ -24106,7 +24106,7 @@ mondata SPECIES_ZIGZAGOON_GALARIAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -24122,7 +24122,7 @@ mondata SPECIES_LINOONE_GALARIAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -24138,7 +24138,7 @@ mondata SPECIES_DARUMAKA_GALARIAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -24154,7 +24154,7 @@ mondata SPECIES_DARMANITAN_GALARIAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -24170,7 +24170,7 @@ mondata SPECIES_YAMASK_GALARIAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_AMORPHOUS
@@ -24186,7 +24186,7 @@ mondata SPECIES_STUNFISK_GALARIAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_AMORPHOUS
@@ -24202,7 +24202,7 @@ mondata SPECIES_PIKACHU_COSPLAY, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 10
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -24218,7 +24218,7 @@ mondata SPECIES_PIKACHU_ROCK_STAR, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 10
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -24234,7 +24234,7 @@ mondata SPECIES_PIKACHU_BELLE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 10
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -24250,7 +24250,7 @@ mondata SPECIES_PIKACHU_POP_STAR, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 10
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -24266,7 +24266,7 @@ mondata SPECIES_PIKACHU_PH_D, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 10
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -24282,7 +24282,7 @@ mondata SPECIES_PIKACHU_LIBRE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 10
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -24298,7 +24298,7 @@ mondata SPECIES_PIKACHU_ORIGINAL_CAP, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 10
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -24314,7 +24314,7 @@ mondata SPECIES_PIKACHU_HOENN_CAP, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 10
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -24330,7 +24330,7 @@ mondata SPECIES_PIKACHU_SINNOH_CAP, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 10
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -24346,7 +24346,7 @@ mondata SPECIES_PIKACHU_UNOVA_CAP, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 10
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -24362,7 +24362,7 @@ mondata SPECIES_PIKACHU_KALOS_CAP, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 10
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -24378,7 +24378,7 @@ mondata SPECIES_PIKACHU_ALOLA_CAP, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 10
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -24394,7 +24394,7 @@ mondata SPECIES_PIKACHU_PARTNER_CAP, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 10
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -24410,7 +24410,7 @@ mondata SPECIES_PIKACHU_WORLD_CAP, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 10
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -24426,7 +24426,7 @@ mondata SPECIES_CASTFORM_SUNNY, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_AMORPHOUS
@@ -24442,7 +24442,7 @@ mondata SPECIES_CASTFORM_RAINY, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_AMORPHOUS
@@ -24458,7 +24458,7 @@ mondata SPECIES_CASTFORM_SNOWY, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_AMORPHOUS
@@ -24474,7 +24474,7 @@ mondata SPECIES_CHERRIM_SUNSHINE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_GRASS
@@ -24490,7 +24490,7 @@ mondata SPECIES_SHELLOS_EAST_SEA, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_AMORPHOUS
@@ -24506,7 +24506,7 @@ mondata SPECIES_GASTRODON_EAST_SEA, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_AMORPHOUS
@@ -24522,7 +24522,7 @@ mondata SPECIES_DIALGA_ORIGIN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -24538,7 +24538,7 @@ mondata SPECIES_PALKIA_ORIGIN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -24554,7 +24554,7 @@ mondata SPECIES_BASCULIN_BLUE_STRIPED, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_2, EGG_GROUP_WATER_2
@@ -24570,7 +24570,7 @@ mondata SPECIES_BASCULIN_WHITE_STRIPED, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_2, EGG_GROUP_WATER_2
@@ -24586,7 +24586,7 @@ mondata SPECIES_DARMANITAN_ZEN_MODE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -24602,7 +24602,7 @@ mondata SPECIES_DARMANITAN_ZEN_MODE_GALARIAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -24618,7 +24618,7 @@ mondata SPECIES_DEERLING_SUMMER, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -24634,7 +24634,7 @@ mondata SPECIES_DEERLING_AUTUMN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -24650,7 +24650,7 @@ mondata SPECIES_DEERLING_WINTER, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -24666,7 +24666,7 @@ mondata SPECIES_SAWSBUCK_SUMMER, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -24682,7 +24682,7 @@ mondata SPECIES_SAWSBUCK_AUTUMN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -24698,7 +24698,7 @@ mondata SPECIES_SAWSBUCK_WINTER, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -24714,7 +24714,7 @@ mondata SPECIES_TORNADUS_THERIAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 120
+    eggcycles 1
     basefriendship 90
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -24730,7 +24730,7 @@ mondata SPECIES_THUNDURUS_THERIAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 120
+    eggcycles 1
     basefriendship 90
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -24746,7 +24746,7 @@ mondata SPECIES_LANDORUS_THERIAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 120
+    eggcycles 1
     basefriendship 90
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -24762,7 +24762,7 @@ mondata SPECIES_KYUREM_WHITE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -24778,7 +24778,7 @@ mondata SPECIES_KYUREM_BLACK, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -24794,7 +24794,7 @@ mondata SPECIES_KELDEO_RESOLUTE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 80
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -24810,7 +24810,7 @@ mondata SPECIES_MELOETTA_PIROUETTE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 100
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -24826,7 +24826,7 @@ mondata SPECIES_GENESECT_DOUSE_DRIVE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -24842,7 +24842,7 @@ mondata SPECIES_GENESECT_SHOCK_DRIVE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -24858,7 +24858,7 @@ mondata SPECIES_GENESECT_BURN_DRIVE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -24874,7 +24874,7 @@ mondata SPECIES_GENESECT_CHILL_DRIVE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -24890,7 +24890,7 @@ mondata SPECIES_GRENINJA_BATTLE_BOND, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -24906,7 +24906,7 @@ mondata SPECIES_GRENINJA_ASH, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -24922,7 +24922,7 @@ mondata SPECIES_VIVILLON_POLAR, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -24938,7 +24938,7 @@ mondata SPECIES_VIVILLON_TUNDRA, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -24954,7 +24954,7 @@ mondata SPECIES_VIVILLON_CONTINENTAL, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -24970,7 +24970,7 @@ mondata SPECIES_VIVILLON_GARDEN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -24986,7 +24986,7 @@ mondata SPECIES_VIVILLON_ELEGANT, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -25002,7 +25002,7 @@ mondata SPECIES_VIVILLON_MEADOW, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -25018,7 +25018,7 @@ mondata SPECIES_VIVILLON_MODERN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -25034,7 +25034,7 @@ mondata SPECIES_VIVILLON_MARINE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -25050,7 +25050,7 @@ mondata SPECIES_VIVILLON_ARCHIPELAGO, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -25066,7 +25066,7 @@ mondata SPECIES_VIVILLON_HIGH_PLAINS, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -25082,7 +25082,7 @@ mondata SPECIES_VIVILLON_SANDSTORM, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -25098,7 +25098,7 @@ mondata SPECIES_VIVILLON_RIVER, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -25114,7 +25114,7 @@ mondata SPECIES_VIVILLON_MONSOON, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -25130,7 +25130,7 @@ mondata SPECIES_VIVILLON_SAVANNA, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -25146,7 +25146,7 @@ mondata SPECIES_VIVILLON_SUN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -25162,7 +25162,7 @@ mondata SPECIES_VIVILLON_OCEAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -25178,7 +25178,7 @@ mondata SPECIES_VIVILLON_JUNGLE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -25194,7 +25194,7 @@ mondata SPECIES_VIVILLON_FANCY, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -25210,7 +25210,7 @@ mondata SPECIES_VIVILLON_POKE_BALL, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -25226,7 +25226,7 @@ mondata SPECIES_FLABEBE_YELLOW_FLOWER, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_FAIRY
@@ -25242,7 +25242,7 @@ mondata SPECIES_FLABEBE_ORANGE_FLOWER, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_FAIRY
@@ -25258,7 +25258,7 @@ mondata SPECIES_FLABEBE_BLUE_FLOWER, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_FAIRY
@@ -25274,7 +25274,7 @@ mondata SPECIES_FLABEBE_WHITE_FLOWER, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_FAIRY
@@ -25290,7 +25290,7 @@ mondata SPECIES_FLOETTE_YELLOW_FLOWER, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_FAIRY
@@ -25306,7 +25306,7 @@ mondata SPECIES_FLOETTE_ORANGE_FLOWER, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_FAIRY
@@ -25322,7 +25322,7 @@ mondata SPECIES_FLOETTE_BLUE_FLOWER, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_FAIRY
@@ -25338,7 +25338,7 @@ mondata SPECIES_FLOETTE_WHITE_FLOWER, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_FAIRY
@@ -25354,7 +25354,7 @@ mondata SPECIES_FLOETTE_ETERNAL_FLOWER, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -25370,7 +25370,7 @@ mondata SPECIES_FLORGES_YELLOW_FLOWER, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_FAIRY
@@ -25386,7 +25386,7 @@ mondata SPECIES_FLORGES_ORANGE_FLOWER, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_FAIRY
@@ -25402,7 +25402,7 @@ mondata SPECIES_FLORGES_BLUE_FLOWER, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_FAIRY
@@ -25418,7 +25418,7 @@ mondata SPECIES_FLORGES_WHITE_FLOWER, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_FAIRY
@@ -25434,7 +25434,7 @@ mondata SPECIES_FURFROU_HEART, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -25450,7 +25450,7 @@ mondata SPECIES_FURFROU_STAR, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -25466,7 +25466,7 @@ mondata SPECIES_FURFROU_DIAMOND, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -25482,7 +25482,7 @@ mondata SPECIES_FURFROU_DEBUTANTE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -25498,7 +25498,7 @@ mondata SPECIES_FURFROU_MATRON, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -25514,7 +25514,7 @@ mondata SPECIES_FURFROU_DANDY, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -25530,7 +25530,7 @@ mondata SPECIES_FURFROU_LA_REINE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -25546,7 +25546,7 @@ mondata SPECIES_FURFROU_KABUKI, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -25562,7 +25562,7 @@ mondata SPECIES_FURFROU_PHARAOH, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -25578,7 +25578,7 @@ mondata SPECIES_AEGISLASH_BLADE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -25594,7 +25594,7 @@ mondata SPECIES_PUMPKABOO_SMALL, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -25610,7 +25610,7 @@ mondata SPECIES_PUMPKABOO_LARGE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -25626,7 +25626,7 @@ mondata SPECIES_PUMPKABOO_SUPER, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -25642,7 +25642,7 @@ mondata SPECIES_GOURGEIST_SMALL, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -25658,7 +25658,7 @@ mondata SPECIES_GOURGEIST_LARGE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -25674,7 +25674,7 @@ mondata SPECIES_GOURGEIST_SUPER, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -25690,7 +25690,7 @@ mondata SPECIES_XERNEAS_ACTIVE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -25706,7 +25706,7 @@ mondata SPECIES_ZYGARDE_10, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -25722,7 +25722,7 @@ mondata SPECIES_ZYGARDE_10_POWER_CONSTRUCT, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -25738,7 +25738,7 @@ mondata SPECIES_ZYGARDE_50_POWER_CONSTRUCT, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -25754,7 +25754,7 @@ mondata SPECIES_ZYGARDE_10_COMPLETE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -25770,7 +25770,7 @@ mondata SPECIES_ZYGARDE_50_COMPLETE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -25786,7 +25786,7 @@ mondata SPECIES_HOOPA_UNBOUND, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 100
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -25802,7 +25802,7 @@ mondata SPECIES_ORICORIO_POM_POM, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 191
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -25818,7 +25818,7 @@ mondata SPECIES_ORICORIO_PAU, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 191
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -25834,7 +25834,7 @@ mondata SPECIES_ORICORIO_SENSU, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 191
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -25850,7 +25850,7 @@ mondata SPECIES_ROCKRUFF_OWN_TEMPO, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -25866,7 +25866,7 @@ mondata SPECIES_LYCANROC_MIDNIGHT, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -25882,7 +25882,7 @@ mondata SPECIES_LYCANROC_DUSK, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -25898,7 +25898,7 @@ mondata SPECIES_WISHIWASHI_SCHOOL, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_WATER_2, EGG_GROUP_WATER_2
@@ -25914,7 +25914,7 @@ mondata SPECIES_MINIOR_METEOR_ORANGE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 25
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -25930,7 +25930,7 @@ mondata SPECIES_MINIOR_METEOR_YELLOW, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 25
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -25946,7 +25946,7 @@ mondata SPECIES_MINIOR_METEOR_GREEN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 25
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -25962,7 +25962,7 @@ mondata SPECIES_MINIOR_METEOR_BLUE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 25
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -25978,7 +25978,7 @@ mondata SPECIES_MINIOR_METEOR_INDIGO, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 25
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -25994,7 +25994,7 @@ mondata SPECIES_MINIOR_METEOR_VIOLET, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 25
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -26010,7 +26010,7 @@ mondata SPECIES_MINIOR_CORE_RED, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 25
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -26026,7 +26026,7 @@ mondata SPECIES_MINIOR_CORE_ORANGE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 25
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -26042,7 +26042,7 @@ mondata SPECIES_MINIOR_CORE_YELLOW, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 25
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -26058,7 +26058,7 @@ mondata SPECIES_MINIOR_CORE_GREEN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 25
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -26074,7 +26074,7 @@ mondata SPECIES_MINIOR_CORE_BLUE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 25
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -26090,7 +26090,7 @@ mondata SPECIES_MINIOR_CORE_INDIGO, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 25
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -26106,7 +26106,7 @@ mondata SPECIES_MINIOR_CORE_VIOLET, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 25
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -26122,7 +26122,7 @@ mondata SPECIES_MIMIKYU_BUSTED, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -26138,7 +26138,7 @@ mondata SPECIES_NECROZMA_DUSK_MANE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -26154,7 +26154,7 @@ mondata SPECIES_NECROZMA_DAWN_WINGS, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -26170,7 +26170,7 @@ mondata SPECIES_NECROZMA_ULTRA_DUSK_MANE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -26186,7 +26186,7 @@ mondata SPECIES_NECROZMA_ULTRA_DAWN_WINGS, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -26202,7 +26202,7 @@ mondata SPECIES_MAGEARNA_ORIGINAL, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -26218,7 +26218,7 @@ mondata SPECIES_PIKACHU_PARTNER, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 10
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FAIRY
@@ -26234,7 +26234,7 @@ mondata SPECIES_EEVEE_PARTNER, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 35
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FAIRY
@@ -26250,7 +26250,7 @@ mondata SPECIES_CRAMORANT_GULPING, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_FLYING
@@ -26266,7 +26266,7 @@ mondata SPECIES_CRAMORANT_GORGING, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_FLYING
@@ -26282,7 +26282,7 @@ mondata SPECIES_TOXTRICITY_LOW_KEY, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE
@@ -26298,7 +26298,7 @@ mondata SPECIES_SINISTEA_ANTIQUE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_AMORPHOUS
@@ -26314,7 +26314,7 @@ mondata SPECIES_POLTEAGEIST_ANTIQUE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_AMORPHOUS
@@ -26330,7 +26330,7 @@ mondata SPECIES_ALCREMIE_BERRY_SWEET, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_AMORPHOUS
@@ -26346,7 +26346,7 @@ mondata SPECIES_ALCREMIE_LOVE_SWEET, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_AMORPHOUS
@@ -26362,7 +26362,7 @@ mondata SPECIES_ALCREMIE_STAR_SWEET, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_AMORPHOUS
@@ -26378,7 +26378,7 @@ mondata SPECIES_ALCREMIE_CLOVER_SWEET, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_AMORPHOUS
@@ -26394,7 +26394,7 @@ mondata SPECIES_ALCREMIE_FLOWER_SWEET, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_AMORPHOUS
@@ -26410,7 +26410,7 @@ mondata SPECIES_ALCREMIE_RIBBON_SWEET, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_AMORPHOUS
@@ -26426,7 +26426,7 @@ mondata SPECIES_ALCREMIE_FILLER_1, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_AMORPHOUS
@@ -26442,7 +26442,7 @@ mondata SPECIES_ALCREMIE_FILLER_2, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_AMORPHOUS
@@ -26458,7 +26458,7 @@ mondata SPECIES_EISCUE_NOICE_FACE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 25
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_FIELD
@@ -26474,7 +26474,7 @@ mondata SPECIES_MORPEKO_HANGRY, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 10
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FAIRY
@@ -26490,7 +26490,7 @@ mondata SPECIES_ZACIAN_CROWNED, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -26506,7 +26506,7 @@ mondata SPECIES_ZAMAZENTA_CROWNED, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -26522,7 +26522,7 @@ mondata SPECIES_ETERNATUS_ETERNAMAX, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -26538,7 +26538,7 @@ mondata SPECIES_URSHIFU_RAPID_STRIKE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 120
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -26554,7 +26554,7 @@ mondata SPECIES_ZARUDE_DADA, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -26570,7 +26570,7 @@ mondata SPECIES_CALYREX_ICE_RIDER, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 100
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -26586,7 +26586,7 @@ mondata SPECIES_CALYREX_SHADOW_RIDER, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 120
+    eggcycles 1
     basefriendship 100
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -26602,7 +26602,7 @@ mondata SPECIES_ENAMORUS_THERIAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 0
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -26618,7 +26618,7 @@ mondata SPECIES_GROWLITHE_HISUIAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 63
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -26634,7 +26634,7 @@ mondata SPECIES_ARCANINE_HISUIAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 63
-    eggcycles 0
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_NONE, EGG_GROUP_NONE
@@ -26650,7 +26650,7 @@ mondata SPECIES_VOLTORB_HISUIAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -26666,7 +26666,7 @@ mondata SPECIES_ELECTRODE_HISUIAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -26682,7 +26682,7 @@ mondata SPECIES_TYPHLOSION_HISUIAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -26698,7 +26698,7 @@ mondata SPECIES_QWILFISH_HISUIAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_2, EGG_GROUP_WATER_2
@@ -26714,7 +26714,7 @@ mondata SPECIES_SNEASEL_HISUIAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -26730,7 +26730,7 @@ mondata SPECIES_SAMUROTT_HISUIAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -26746,7 +26746,7 @@ mondata SPECIES_LILLIGANT_HISUIAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_GRASS, EGG_GROUP_GRASS
@@ -26762,7 +26762,7 @@ mondata SPECIES_ZORUA_HISUIAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 25
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -26778,7 +26778,7 @@ mondata SPECIES_ZOROARK_HISUIAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -26794,7 +26794,7 @@ mondata SPECIES_BRAVIARY_HISUIAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -26810,7 +26810,7 @@ mondata SPECIES_SLIGGOO_HISUIAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_DRAGON, EGG_GROUP_DRAGON
@@ -26826,7 +26826,7 @@ mondata SPECIES_GOODRA_HISUIAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_DRAGON, EGG_GROUP_DRAGON
@@ -26842,7 +26842,7 @@ mondata SPECIES_AVALUGG_HISUIAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_MINERAL
@@ -26858,7 +26858,7 @@ mondata SPECIES_DECIDUEYE_HISUIAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -26874,7 +26874,7 @@ mondata SPECIES_KLEAVOR_LORD, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 0
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
@@ -26890,7 +26890,7 @@ mondata SPECIES_LILLIGANT_LADY, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_GRASS, EGG_GROUP_GRASS
@@ -26906,7 +26906,7 @@ mondata SPECIES_ARCANINE_LORD, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 63
-    eggcycles 0
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_NONE, EGG_GROUP_NONE
@@ -26922,7 +26922,7 @@ mondata SPECIES_ELECTRODE_LORD, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -26938,7 +26938,7 @@ mondata SPECIES_AVALUGG_LORD, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_MINERAL
@@ -26954,7 +26954,7 @@ mondata SPECIES_UNFEZANT_FEMALE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 15
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -26970,7 +26970,7 @@ mondata SPECIES_FRILLISH_FEMALE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -26986,7 +26986,7 @@ mondata SPECIES_JELLICENT_FEMALE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
@@ -27002,7 +27002,7 @@ mondata SPECIES_PYROAR_FEMALE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -27018,7 +27018,7 @@ mondata SPECIES_MEOWSTIC_FEMALE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 20
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -27034,7 +27034,7 @@ mondata SPECIES_INDEEDEE_FEMALE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 40
+    eggcycles 1
     basefriendship 140
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_FAIRY
@@ -27050,7 +27050,7 @@ mondata SPECIES_BASCULEGION_FEMALE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 0
+    eggcycles 1
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_2, EGG_GROUP_WATER_2
@@ -27066,7 +27066,7 @@ mondata SPECIES_MAUSHOLD_FAMILY_OF_THREE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 10
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FAIRY
@@ -27082,7 +27082,7 @@ mondata SPECIES_SQUAWKABILLY_BLUE_PLUMAGE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_ERRATIC
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -27098,7 +27098,7 @@ mondata SPECIES_SQUAWKABILLY_YELLOW_PLUMAGE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_ERRATIC
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -27114,7 +27114,7 @@ mondata SPECIES_SQUAWKABILLY_WHITE_PLUMAGE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_ERRATIC
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
@@ -27130,7 +27130,7 @@ mondata SPECIES_PALAFIN_HERO, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 40
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_WATER_2
@@ -27146,7 +27146,7 @@ mondata SPECIES_TATSUGIRI_DROOPY, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 35
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_WATER_2, EGG_GROUP_WATER_2
@@ -27162,7 +27162,7 @@ mondata SPECIES_TATSUGIRI_STRETCHY, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 35
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_WATER_2, EGG_GROUP_WATER_2
@@ -27178,7 +27178,7 @@ mondata SPECIES_DUDUNSPARCE_THREE_SEGMENT, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -27194,7 +27194,7 @@ mondata SPECIES_GIMMIGHOUL_ROAMING, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 50
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -27210,7 +27210,7 @@ mondata SPECIES_WOOPER_PALDEAN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_FIELD
@@ -27226,7 +27226,7 @@ mondata SPECIES_TAUROS_COMBAT, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -27242,7 +27242,7 @@ mondata SPECIES_TAUROS_BLAZE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -27258,7 +27258,7 @@ mondata SPECIES_TAUROS_AQUA, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 0
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -27274,7 +27274,7 @@ mondata SPECIES_OINKOLOGNE_FEMALE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 15
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
@@ -27290,7 +27290,7 @@ mondata SPECIES_REVAVROOM_SEGIN, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -27306,7 +27306,7 @@ mondata SPECIES_REVAVROOM_SCHEDAR, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -27322,7 +27322,7 @@ mondata SPECIES_REVAVROOM_NAVI, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -27338,7 +27338,7 @@ mondata SPECIES_REVAVROOM_RUCHBAH, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -27354,7 +27354,7 @@ mondata SPECIES_REVAVROOM_CAPH , "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
@@ -27370,7 +27370,7 @@ mondata SPECIES_KORAIDON_LIMITED_BUILD, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 50
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -27386,7 +27386,7 @@ mondata SPECIES_KORAIDON_SPRINTING_BUILD, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 50
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -27402,7 +27402,7 @@ mondata SPECIES_KORAIDON_SWIMMING_BUILD, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 50
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -27418,7 +27418,7 @@ mondata SPECIES_KORAIDON_GLIDING_BUILD, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 50
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -27434,7 +27434,7 @@ mondata SPECIES_MIRAIDON_LOW_POWER_MODE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 50
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -27450,7 +27450,7 @@ mondata SPECIES_MIRAIDON_DRIVE_MODE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 50
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -27466,7 +27466,7 @@ mondata SPECIES_MIRAIDON_AQUATIC_MODE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 50
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -27482,7 +27482,7 @@ mondata SPECIES_MIRAIDON_GLIDE_MODE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 50
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -27498,7 +27498,7 @@ mondata SPECIES_POLTCHAGEIST_MASTERPIECE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 20
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_AMORPHOUS
@@ -27514,7 +27514,7 @@ mondata SPECIES_SINISTCHA_MASTERPIECE, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
-    eggcycles 20
+    eggcycles 1
     basefriendship 0
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_AMORPHOUS
@@ -27530,7 +27530,7 @@ mondata SPECIES_OGERPON_WELLSPRING_MASK, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 10
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -27546,7 +27546,7 @@ mondata SPECIES_OGERPON_HEARTHFLAME_MASK, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 10
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -27562,7 +27562,7 @@ mondata SPECIES_OGERPON_CORNERSTONE_MASK, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 10
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -27578,7 +27578,7 @@ mondata SPECIES_OGERPON_TEAL_MASK_TERASTAL, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 10
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -27594,7 +27594,7 @@ mondata SPECIES_OGERPON_WELLSPRING_MASK_TERASTAL, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 10
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -27610,7 +27610,7 @@ mondata SPECIES_OGERPON_HEARTHFLAME_MASK_TERASTAL, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 10
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -27626,7 +27626,7 @@ mondata SPECIES_OGERPON_CORNERSTONE_MASK_TERASTAL, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 254
-    eggcycles 10
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -27642,7 +27642,7 @@ mondata SPECIES_URSALUNA_BLOODMOON, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 20
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -27658,7 +27658,7 @@ mondata SPECIES_TERAPAGOS_TERASTAL, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 5
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
@@ -27674,7 +27674,7 @@ mondata SPECIES_TERAPAGOS_STELLAR, "-----"
     evyields 0, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
-    eggcycles 5
+    eggcycles 1
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED

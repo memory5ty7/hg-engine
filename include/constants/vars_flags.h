@@ -24,5 +24,6 @@
 #define VAR_MAPSEC_13               16422
 #define VAR_MAPSEC_14               16423
 #define VAR_MAPSEC_15               16424
+#define VAR_PLAYER_STARTER          16432
 
 #endif // CONSTANTS_VARS_FLAGS_H

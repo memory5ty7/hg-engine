@@ -15,6 +15,7 @@
 #include "../../include/constants/moves.h"
 #include "../../include/constants/species.h"
 #include "../../include/constants/weather_numbers.h"
+#include "../../include/constants/vars_flags.h"
 
 /**
  *  @brief script command to give an egg adapted to set the hidden ability
@@ -73,7 +74,7 @@ BOOL ScrCmd_GiveTogepiEgg(SCRIPTCONTEXT *ctx) {
     s32 i;
     u8 pp;
     u16 moveData;
-    struct PartyPokemon *togepi;
+    struct PartyPokemon *randomStarter;
     void *profile;
     struct Party *party;
     FieldSystem *fsys = ctx->fsys;
@@ -85,45 +86,78 @@ BOOL ScrCmd_GiveTogepiEgg(SCRIPTCONTEXT *ctx) {
         return FALSE;
     }
 
-    togepi = AllocMonZeroed(11);
-    ZeroMonData(togepi);
+    u16 starter = GetScriptVar(VAR_PLAYER_STARTER);
+    int chosenType;
+    if (starter == SPECIES_CHIKORITA) {chosenType = 0;}
+    else if (starter == SPECIES_CYNDAQUIL) {chosenType = 1;}
+    else {chosenType = 2;}
 
-    SetEggStats(togepi, SPECIES_TOGEPI, 1, profile, 3, sub_02017FE4(1, 13));
+    int starterType;
+    do
+    {
+        starterType = gf_rand() % 3;
+    } while (starterType == chosenType);
+
+    int generation = gf_rand() % 4;
+    int grassStarterByGeneration[] = {SPECIES_TURTWIG, SPECIES_ROWLET, SPECIES_GROOKEY, SPECIES_SPRIGATITO};
+    int starterSpecies = grassStarterByGeneration[generation] + 3*starterType;
+
+    randomStarter = AllocMonZeroed(11);
+    ZeroMonData(randomStarter);
+
+    SetEggStats(randomStarter, starterSpecies, 12, profile, 3, sub_02017FE4(1, 13));
 
     //SetMonData(togepi, MON_DATA_FORM, &form); // add form capability
 
     //ClearMonMoves(pokemon);
     //InitBoxMonMoveset(&pokemon->box);
 
-    for (i = 0; i < 4; i++) {
-        if (!GetMonData(togepi, MON_DATA_MOVE1 + i, 0)) {
-            break;
+    //for (i = 0; i < 4; i++) {
+    //    if (!GetMonData(randomStarter, MON_DATA_MOVE1 + i, 0)) {
+    //        break;
+    //    }
+    //}
+
+    //if (i == 4) {
+    //    i = 3;
+    //}
+
+    //moveData = MOVE_EXTRASENSORY; // add extrasensory to the togepi
+    //SetMonData(randomStarter, MON_DATA_MOVE1 + i, &moveData);
+
+    //pp = GetMonData(randomStarter, MON_DATA_MOVE1MAXPP + i, 0);
+    //SetMonData(randomStarter, MON_DATA_MOVE1PP + i, &pp);
+
+    //if (CheckScriptFlag(HIDDEN_ABILITIES_FLAG) == 1) // add HA capability
+    //{
+    //    SET_MON_HIDDEN_ABILITY_BIT(randomStarter)
+    //    ResetPartyPokemonAbility(randomStarter);
+    //    ClearScriptFlag(HIDDEN_ABILITIES_FLAG);
+    //}
+
+    u16 perfectIV = 31;
+    u8 setIVs = 0;
+    BOOL isIVset[6] = {FALSE, FALSE, FALSE, FALSE, FALSE, FALSE};
+    u16 stat;
+
+    while(setIVs < 3) {
+        stat = gf_rand() % 6;
+
+        if (!isIVset[stat])
+        {
+            SetMonData(randomStarter, MON_DATA_HP_IV + stat, &perfectIV);
+            isIVset[stat] = TRUE;
+            setIVs++;
         }
-    }
-
-    if (i == 4) {
-        i = 3;
-    }
-
-    moveData = MOVE_EXTRASENSORY; // add extrasensory to the togepi
-    SetMonData(togepi, MON_DATA_MOVE1 + i, &moveData);
-
-    pp = GetMonData(togepi, MON_DATA_MOVE1MAXPP + i, 0);
-    SetMonData(togepi, MON_DATA_MOVE1PP + i, &pp);
-
-    if (CheckScriptFlag(HIDDEN_ABILITIES_FLAG) == 1) // add HA capability
-    {
-        SET_MON_HIDDEN_ABILITY_BIT(togepi)
-        ResetPartyPokemonAbility(togepi);
-        ClearScriptFlag(HIDDEN_ABILITIES_FLAG);
+        
     }
 
 
-    PokeParty_Add(party, togepi);
+    PokeParty_Add(party, randomStarter);
 
-    sys_FreeMemoryEz(togepi);
+    sys_FreeMemoryEz(randomStarter);
 
-    SaveMisc_SetTogepiPersonalityGender(Sav2_Misc_get(fsys->savedata), GetMonData(togepi, MON_DATA_PERSONALITY, 0), GetMonData(togepi, MON_DATA_GENDER, 0));
+    SaveMisc_SetTogepiPersonalityGender(Sav2_Misc_get(fsys->savedata), GetMonData(randomStarter, MON_DATA_PERSONALITY, 0), GetMonData(randomStarter, MON_DATA_GENDER, 0));
 
     return FALSE;
 }
