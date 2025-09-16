@@ -37,6 +37,7 @@ void LONG_CALL CallTask_FadeFromBlack(TaskManager *taskManager);
 void LONG_CALL CallTask_Blackout(TaskManager *taskManager);
 
 BOOL ScrCmd_WhiteOut(SCRIPTCONTEXT *ctx) {
+    ClearScriptFlag(FLAG_NUZLOCKE_MODE);
     CallTask_Blackout(ctx->taskman);
     return TRUE;
 }
