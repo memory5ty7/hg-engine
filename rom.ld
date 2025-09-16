@@ -444,7 +444,6 @@ Summary_NumberToString = 0x0208C87C | 1;
 Summary_PrintCurrentOverMax = 0x0208C8C8 | 1;
 Summary_PrintStatStringAccountForStat = 0x0208C7F8 | 1;
 Summary_PrintStringGeneric = 0x0208C850 | 1;
-CopyBoxPokemonToPokemon = 0x02071780 | 1;
 
 GetExpByGrowthRateAndLevel = 0x0206FD30 | 1;
 
@@ -771,6 +770,9 @@ BattleSystem_CheckMonCaught = 0x0223C330 | 1;
 ReadBattleScriptFromNarc = 0x0224EB9C | 1;
 ov12_02261258 = 0x02261258 | 1;
 ov12_022581D4 = 0x022581D4 | 1;
+
+/* Nuzlocke Mode PC */
+Mail_New = 0x0202B0C8 | 1;
 
 CallTask_LeaveOverworld = 0x0205525C | 1;
 CallTask_StartBattle = 0x020506AC | 1;

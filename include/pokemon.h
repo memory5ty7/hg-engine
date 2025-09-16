@@ -1441,7 +1441,7 @@ u32 LONG_CALL SetEncountDataSwarm_maybe(void *fsys, struct PartyPokemon *pp, u32
  *  @param src BoxPokemon to fill out to a PartyPokemon
  *  @param dest PartyPokemon return
  */
-void LONG_CALL CopyBoxPokemonToPokemon(const struct BoxPokemon *src, struct PartyPokemon *dest);
+void CopyBoxPokemonToPokemon(const struct BoxPokemon *src, struct PartyPokemon *dest);
 
 /**
  *  @brief grab experience needed to reach a specific level by growth rate

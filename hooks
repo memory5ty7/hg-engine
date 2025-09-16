@@ -525,6 +525,9 @@ arm9 ScrCmd_WhiteOut 020498C8 1
 0012 ov12_0224D464 0224D464 2
 0012 BattleSystem_SetPokedexCaught 0223C2F0 2
 
+# Nuzlocke Mode PC
+arm9 CopyBoxPokemonToPokemon 02071780 2
+
 # Last Mon Theme
 0012 CheckTrainerMessage 02250D4C 2
 
