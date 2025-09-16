@@ -3429,8 +3429,8 @@ BOOL LONG_CALL BattleContext_CheckMoveHealBlocked(struct BattleSystem *bsys, str
 //Buffer messages related to being unable to select moves?
 BOOL LONG_CALL ov12_02251A28(struct BattleSystem *bsys, struct BattleStruct *ctx, int battlerId, int movePos, MESSAGE_PARAM *msg);
 
-int CalcBaseDamage(void *bw, struct BattleStruct *sp, int moveno, u32 side_cond,
-                   u32 field_cond, u16 pow, u8 type, u8 attacker, u8 defender, u8 critical);
+int LONG_CALL CalcBaseDamage(void *bw, struct BattleStruct *sp, int moveno, u32 side_cond,
+                   u32 field_cond, u16 pow, u8 type, u8 attacker, u8 defender, u8 critical, BOOL usePPForAttacker, BOOL usePPForDefender, struct PartyPokemon *pp);
 
 int AdjustDamageForRoll(void *bw, struct BattleStruct *sp, int damage);
 
@@ -3835,5 +3835,12 @@ int LONG_CALL PokeParty_GetPokeCount(const struct Party *party);
 #define BATTLE_RESULT_DRAW        (BATTLE_RESULT_WIN | BATTLE_RESULT_LOSE)
 #define BATTLE_RESULT_PLAYER_FLED (BATTLE_RESULT_CAPTURED_MON | BATTLE_RESULT_WIN)
 #define BATTLE_RESULT_ENEMY_FLED  (BATTLE_RESULT_CAPTURED_MON | BATTLE_RESULT_LOSE)
+
+int LONG_CALL BattleAI_PostKOSwitchIn(struct BattleSystem *battleSys, int battler);
+
+int LONG_CALL AI_CalcBaseDamage(void *bw, struct BattleStruct *sp, int moveno, u32 side_cond,
+    u32 field_cond, u16 pow, u8 type UNUSED, u8 attacker, u8 defender, u8 critical, BOOL usePPForAttacker, BOOL usePPForDefender,struct PartyPokemon *pp);
+u8 LONG_CALL AI_CalcSpeed(void *bw, struct BattleStruct *sp, int client1, int client2, int flag, int client2IsPP, struct PartyPokemon *pp);
+int LONG_CALL AI_ServerDoTypeCalcMod(void *bw UNUSED, struct BattleStruct *sp, int move_no, int move_type, int attack_client, int defence_client, int damage, u32 *flag, BOOL usePPForAttacker, BOOL usePPForDefender, struct PartyPokemon *pp);
 
 #endif // BATTLE_H
