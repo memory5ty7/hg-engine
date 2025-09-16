@@ -165,7 +165,7 @@ APTE
 PAS APTE
 Les Pokémon identiques sont interdits.\r
 Les objets tenus par les Pokémon\ndoivent être différents.\r
-Le total des niveaux de tous les\nmembres de l’équipe dépasse \v0134ぁ\x0000\x0000.\r
+Le total des niveaux de tous les\nmembres de l’équipe dépasse {STRVAR_1 52, 0, 0}.\r
 Il y a 3 Pokémon légendaires ou plus.\r
 PV MAX.
 ATTAQUE
