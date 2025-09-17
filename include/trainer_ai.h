@@ -87,4 +87,8 @@ enum {
     PLAYER_INPUT_CANCEL = 0xFF,
 };
 
+BOOL AI_PerishSongKO(struct BattleStruct *battleCtx, int battler);
+BOOL AI_CannotDamageWonderGuard(struct BattleSystem *battleSys, struct BattleStruct *battleCtx, int battler);
+BOOL AI_OnlyIneffectiveMoves(struct BattleSystem *battleSys, struct BattleStruct *battleCtx, int battler);
+
 #endif // TRAINER_AI_H

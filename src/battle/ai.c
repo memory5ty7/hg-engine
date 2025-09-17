@@ -14,17 +14,6 @@
 #include "../../include/trainer_ai.h"
 #include "../../include/overlay.h"
 
-
-
-// function declarations
-void AITypeCalc(struct BattleStruct *sp, u32 move, u32 type, int atkAbility, int defAbility, int held_effect, int type1, int type2, u32 *flag);
-int LONG_CALL BattleAI_PostKOSwitchIn(struct BattleSystem *battleSys, int battler);
-
-int LONG_CALL AI_CalcBaseDamage(void *bw, struct BattleStruct *sp, int moveno, u32 side_cond,
-    u32 field_cond, u16 pow, u8 type UNUSED, u8 attacker, u8 defender, u8 critical, BOOL usePPForAttacker, BOOL usePPForDefender,struct PartyPokemon *pp);
-u8 LONG_CALL AI_CalcSpeed(void *bw, struct BattleStruct *sp, int client1, int client2, int flag, int client2IsPP, struct PartyPokemon *pp);
-int LONG_CALL AI_ServerDoTypeCalcMod(void *bw UNUSED, struct BattleStruct *sp, int move_no, int move_type, int attack_client, int defence_client, int damage, u32 *flag, BOOL usePPForAttacker, BOOL usePPForDefender, struct PartyPokemon *pp);
-
 /**
  *  @brief set up type calc flags for AI to respect and make decisions based on
  *
