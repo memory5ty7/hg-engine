@@ -121,3 +121,60 @@ mov r0, r4
 bl PartyMenu_ItemUseFunc_ReuseItem
 ldr r3, =0x02081398 | 1
 bx r3
+
+.global ov14_021E61BC_hook
+ov14_021E61BC_hook:
+    push {r3, r4, r5, r6, lr}
+    sub  sp, #8
+
+    add  r4, r1, #0
+    add  r5, r0, #0
+
+    ldr  r1, [r4, #4]
+    ldr  r0, [r5, #8]
+    sub  r1, #0x1e
+    bl   0x02074644 // Party_GetMonByIndex
+
+    add  r0, r6, #0     // partyMon dans r0
+    mov r1, #163    // MON_DATA_HP
+    mov r2, #0      // r2 = null
+    bl   0x0206E540 // GetMonData
+    str  r0, [sp, #4] // met curHP dans le stack
+
+    mov  r2, #0
+    add  r1, sp, #0
+    strb r2, [r1]
+    add  r6, r0, #0     // partyMon dans r6
+    movs r1, #187 // MON_DATA_MOOD
+    add  r2, sp, #0
+    bl   0x0206EC40 // SetMonData
+
+    add  r0, r6, #0 // partyMon dans r0
+    bl   0x02070DB0 // Mon_GetBoxMon
+    add  r3, r0, #0 // boxMon dans r3
+
+    //add  r0, r3, #0 // boxMon dans r0
+    //mov  r1, #114 // MON_DATA_RESERVED_114
+    //ldr  r2, [sp, #4] // prend curHP du stack
+    //bl   0x0206ED70 // SetBoxMonData
+
+    ldrb r1, [r5, #0x1f]
+    ldr  r0, [r5, #4]
+    ldr  r2, [r4, #8]
+    bl   0x02073C6C // PCStorage_PlaceMonInBoxByIndexPair
+
+    ldrb r1, [r5, #0x1f]
+    ldr r2, [r4, #4]
+    add  r0, r5, #0
+    bl   0x021E6100 // ov14_021E6100
+
+    ldrb r1, [r5, #0x1f]
+    add  r0, r5, #0
+    bl   0x021F4958 // ov14_021F4958
+
+    ldrb r1, [r5, #0x1f]
+    add  r0, r5, #0
+    bl   0x021F4A20 // ov14_021F4A20
+
+    add  sp, #8
+    pop  {r3, r4, r5, r6, pc}

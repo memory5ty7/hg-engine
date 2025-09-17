@@ -44,5 +44,5 @@ void CopyBoxPokemonToPokemon(const struct BoxPokemon *src, struct PartyPokemon *
     SetMonData(dest, MON_DATA_SEAL_COORDS, &sp4);
     RecalcPartyPokemonStats(dest);
 
-    SetMonData(dest, MON_DATA_HP, &curHP);
+    //SetMonData(dest, MON_DATA_HP, &curHP);
 }

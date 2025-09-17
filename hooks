@@ -548,3 +548,5 @@ arm9 CopyBoxPokemonToPokemon 02071780 2
 
 # starter IVs
 arm9 ScrCmd_SetStarterChoice 02043964 1
+
+0014 ov14_021E61BC_hook 021E61BC 2
