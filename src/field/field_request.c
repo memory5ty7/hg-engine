@@ -57,6 +57,7 @@ void CheckOverworldRequestFlags(OVERWORLD_REQUEST_FLAGS *req, FieldSystem *fsys)
 {
     if (req->OpenPCCheck && CheckScriptFlag(FLAG_PORTA_PC_AVAILABLE)) {
         SetScriptFlag(0x18F);
+        FieldDrawMapName_Reset(fsys->unk4->drawMapNameInfo);
         EventSet_Script(fsys, 2010, NULL);
     }
 }

@@ -793,3 +793,6 @@ BattleSystem_GetTrainer = 0x0223A9F4 | 1;
 
 /* Starter IVs */
 Save_VarsFlags_SetStarter = 0x2066AE0 | 1;
+
+/* Map Name Popup */
+FieldDrawMapName_Reset = 0x021EFACC | 1;

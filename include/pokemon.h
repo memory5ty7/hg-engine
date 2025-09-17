@@ -5,6 +5,7 @@
 //#include "save.h"
 #include "types.h"
 #include "trainer_data.h"
+#include "window.h"
 
 #define _PARTY_MENU_WINDOW_ID_MAX 40
 #define _PARTY_MENU_SPRITE_ID_MAX 29
@@ -568,8 +569,23 @@ typedef struct FollowMon {
     u32 unk1C;
 } FollowMon;
 
+typedef struct FieldSystemUnkSub4 {
+    u32 unk0;
+    void *unk04; // padding for field3dObjectTaskManager
+    void *drawMapNameInfo;
+    void *unk0C; // weather related?
+    void *unk10; // padding for removed UnkStruct_ov01_021EB1E8 *unk10;
+    u32 unk14;
+    u32 unk18;
+    u32 unk1c;
+    u32 unk20;
+    void *unk24; // padding for legendCutsceneCamera
+} FieldSystemUnkSub4;
+
 typedef struct FieldSystem {
-    /*  0x0 */ u8 unk0[0x8];
+    /*  0x0 */ //u8 unk0[0x8];
+    struct FieldSystemUnkSub0 *unk0;
+    FieldSystemUnkSub4 *unk4;
     /*  0x8 */ void *bg_config;
     /*  0xc */ void *savedata;//SAVEDATA* savedata;
     /* 0x10 */ void *taskman;//TaskManager* taskman;
@@ -648,6 +664,13 @@ struct Window
     void *pixelBuffer;
 }; //size 0x10
 
+struct FieldSystemUnkSub68 {
+    struct Window unk0;
+    u16 unk10;
+    u8 unk12;
+    u8 unk13_0 : 7;
+    u8 unk13_7 : 1;
+};
 
 struct PLIST_WORK
 {

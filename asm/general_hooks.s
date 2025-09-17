@@ -125,7 +125,7 @@ bx r3
 .global ov14_021E61BC_hook
 ov14_021E61BC_hook:
     push {r3, r4, r5, r6, lr}
-    sub  sp, #8
+    sub sp, #4
 
     add  r4, r1, #0
     add  r5, r0, #0
@@ -135,11 +135,11 @@ ov14_021E61BC_hook:
     sub  r1, #0x1e
     bl   0x02074644 // Party_GetMonByIndex
 
-    add  r0, r6, #0     // partyMon dans r0
-    mov r1, #163    // MON_DATA_HP
-    mov r2, #0      // r2 = null
-    bl   0x0206E540 // GetMonData
-    str  r0, [sp, #4] // met curHP dans le stack
+    // add  r0, r6, #0     // partyMon dans r0
+    // mov r1, #163    // MON_DATA_HP
+    // mov r2, #0      // r2 = null
+    // bl   0x0206E540 // GetMonData
+    // str  r0, [sp, #4] // met curHP dans le stack
 
     mov  r2, #0
     add  r1, sp, #0
@@ -176,5 +176,5 @@ ov14_021E61BC_hook:
     add  r0, r5, #0
     bl   0x021F4A20 // ov14_021F4A20
 
-    add  sp, #8
+    add  sp, #4
     pop  {r3, r4, r5, r6, pc}
