@@ -3714,7 +3714,7 @@ int LONG_CALL BattleAI_PostKOSwitchIn(struct BattleSystem *battleSys, int battle
     sprintf(buf,"--------------------\n");
     debugsyscall(buf);      
     for (int mon_no = 0; mon_no < partySize; mon_no++){   
-        sprintf(buf, "Switch-in Score %d: %d\n", mon_no + 1, monSwapScore[mon_no]);
+        sprintf(buf, "Switch-in Score %d: %d (Faster : %s, OHKO : %s)\n", mon_no + 1, monSwapScore[mon_no] - 10, (monIsFaster[i] ? "true" : "false"), (monCanOHKO[i] ? "true" : "false"));
         debugsyscall(buf);
         //debug_printf("The swap index %d has score %d\n",mon_no,monSwapScore[mon_no]);       //check for ties
         if(monSwapScore[mon_no] == highestMonScore){
@@ -4553,7 +4553,7 @@ int LONG_CALL AI_CalcBaseDamage(void *bw, struct BattleStruct *sp, int moveno, u
 
     struct sDamageCalc AttackingMon;
     struct sDamageCalc DefendingMon;
-    debug_printf("in AI calc damage using usePPForAttacker  = %d, and usePPForDefender = %d\n", usePPForAttacker, usePPForDefender);
+    //debug_printf("in AI calc damage using usePPForAttacker  = %d, and usePPForDefender = %d\n", usePPForAttacker, usePPForDefender);
     /*Populate the sDamageCalc structs from PartyPokemon 
     attacker instead of the battlemon.
     This is SPECIFICALLY for post-ko switch in logic*/
@@ -4584,7 +4584,7 @@ int LONG_CALL AI_CalcBaseDamage(void *bw, struct BattleStruct *sp, int moveno, u
         AttackingMon.type1 = GetMonData(pp, MON_DATA_TYPE_1, 0);
         AttackingMon.type2 = GetMonData(pp, MON_DATA_TYPE_2, 0);
         item = GetMonData(pp, MON_DATA_HELD_ITEM, 0);
-        debug_printf("AI Calcing base damage using species = %d, hp = %d, attack = %d, and attack stage =%d \n",AttackingMon.species, AttackingMon.hp, attack, atkstate);
+        //debug_printf("AI Calcing base damage using species = %d, hp = %d, attack = %d, and attack stage =%d \n",AttackingMon.species, AttackingMon.hp, attack, atkstate);
 
         defense = BattlePokemonParamGet(sp, defender, BATTLE_MON_DATA_DEF, NULL);
         sp_defense = BattlePokemonParamGet(sp, defender, BATTLE_MON_DATA_SPDEF, NULL);

@@ -796,3 +796,16 @@ Save_VarsFlags_SetStarter = 0x2066AE0 | 1;
 
 /* Map Name Popup */
 FieldDrawMapName_Reset = 0x021EFACC | 1;
+
+/* Hatch only in Daycare */
+Save_Daycare_GetMonX = 0x020292DC | 1;
+DaycareMon_GetSteps = 0x020292EC | 1;
+Save_Daycare_GetEggCycleCounter = 0x02029314 | 1;
+DaycareMon_AddSteps = 0x02029324 | 1;
+Save_Daycare_SetEggCycleCounter = 0x0202933C | 1;
+Save_Daycare_HasEgg = 0x020292F8 | 1;
+Save_Daycare_CalcCompatibilityInternal = 0x0206CCC4 | 1;
+GetEggCyclesToSubtract = 0x0206CB34 | 1;
+sub_0206CCD8 = 0x0206CCD8 | 1;
+GenerateEggPID = 0x0206C274 | 1;
+sub_0209316C = 0x0209316C | 1;

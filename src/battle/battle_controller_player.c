@@ -8,6 +8,7 @@
 #include "../../include/npc_trade.h"
 #include "../../include/constants/file.h"
 #include "../../include/constants/species.h"
+#include "../../include/pokeheartgold.h"
 
 void overrideItemUsage(struct BattleSystem *bsys, struct BattleStruct *ctx)
 {
@@ -26,7 +27,7 @@ void overrideItemUsage(struct BattleSystem *bsys, struct BattleStruct *ctx)
                 ov12_022639B8(bsys, battlerId, mp);
                 ctx->com_seq_no[battlerId] = SSI_STATE_15;
                 ctx->ret_seq_no[battlerId] = SSI_STATE_SELECT_COMMAND_INIT;
-            } else if (checkAreaCaughtFlag(bsys, bsys->location)
+            } else if (checkAreaCaughtFlag(bsys->location)
                        && CheckScriptFlag(FLAG_NUZLOCKE_MODE))
             {
                 mp.msg_id = BATTLE_MSG_AREA_ALREADY_CAUGHT_POKEMON; //msg.id  = msg_0197_01574; // You have already caught a Pokémon in this Area!
@@ -119,19 +120,6 @@ BOOL CheckEvoLineCaught(struct BattleSystem *bsys, u16 species, u16 form_no)
     return FALSE;
 }
 
-void setAreaCaughtFlag(struct BattleSystem *bsys, u8 mapSec)
-{
-    u16 varID = VAR_MAPSEC_1 + (int)((int)mapSec / 16);
-    SetScriptVar(varID , GetScriptVar(varID) | (1 << (mapSec % 16)));
-}
-
-BOOL checkAreaCaughtFlag(struct BattleSystem *bsys, u8 mapSec)
-{
-    u16 varID = VAR_MAPSEC_1 + (int)(mapSec / 16);
-    u16 varValue = GetScriptVar(varID);
-    return varValue & (1 << mapSec % 16);
-}
-
 void ov12_0224D464(struct BattleSystem *bsys, struct BattleStruct *ctx) {
     if (BattleSystem_GetBattleOutcomeFlags(bsys) & BATTLE_RESULT_TRY_FLEE) {
         ctx->server_seq_no = CONTROLLER_COMMAND_44;
@@ -153,7 +141,7 @@ void ov12_0224D464(struct BattleSystem *bsys, struct BattleStruct *ctx) {
     if (!(BattleTypeGet(bsys) & BATTLE_TYPE_TRAINER)
         && !CheckEvoLineCaught(bsys, ctx->battlemon[BATTLER_ENEMY].species, ctx->battlemon[BATTLER_ENEMY].form_no))
     {
-        setAreaCaughtFlag(bsys, bsys->location);
+        setAreaCaughtFlag(bsys->location);
     }
 
     ctx->fight_end_flag = TRUE;
@@ -167,7 +155,7 @@ void BattleSystem_SetPokedexCaught(struct BattleSystem *bsys, int battlerId) {
         struct PartyPokemon *mon = Battle_GetClientPartyMon(bsys, battlerId, selectedMonIndex);
         if (!CheckEvoLineCaught(bsys, bsys->sp->battlemon[BATTLER_ENEMY].species, bsys->sp->battlemon[BATTLER_ENEMY].form_no))
         {
-            setAreaCaughtFlag(bsys, bsys->location);
+            setAreaCaughtFlag(bsys->location);
         }
         SetPokemonGet(bsys->pokedex, mon);
     }

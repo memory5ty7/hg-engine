@@ -552,3 +552,6 @@ arm9 CopyBoxPokemonToPokemon 02071780 2
 arm9 ScrCmd_SetStarterChoice 02043964 1
 
 0014 ov14_021E61BC_hook 021E61BC 2
+
+# Hatch only in Daycare
+arm9 HandleDaycareStep 0206CD1C 3

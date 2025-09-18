@@ -16,8 +16,6 @@ BOOL LONG_CALL BattleContext_Main(struct BattleSystem *bsys, struct BattleStruct
 BOOL LONG_CALL BattleSystem_CheckMonCaught(struct BattleSystem *bsys, int battlerId);
 
 BOOL CheckEvoLineCaught(struct BattleSystem *bsys, u16 species, u16 form_no);
-void setAreaCaughtFlag(struct BattleSystem *bsys, u8 mapSec);
-BOOL checkAreaCaughtFlag(struct BattleSystem *bsys, u8 mapSec);
 void ov12_0224D464(struct BattleSystem *bsys, struct BattleStruct *ctx);
 int LONG_CALL ov12_022581D4(struct BattleSystem *bsys, struct BattleStruct *ctx, int var, int battlerId);
 void LONG_CALL ReadBattleScriptFromNarc(struct BattleStruct *ctx, int narcId, int fileId);

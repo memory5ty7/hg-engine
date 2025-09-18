@@ -1,5 +1,6 @@
 #include "../include/script.h"
 #include "../include/pokemon.h"
+#include "../include/constants/map_sections.h"
 
 void LONG_CALL Save_VarsFlags_SetStarter(void *state, u16 starter);
 
@@ -27,6 +28,8 @@ BOOL ScrCmd_SetStarterChoice(SCRIPTCONTEXT *ctx) {
         
     }
 
+    int location = METLOC_FARAWAY_PLACE;
+    SetMonData(partyMon, MON_DATA_MET_LOCATION, &location);
 
     return FALSE;
 }
