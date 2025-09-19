@@ -64,8 +64,8 @@ Oh?
 {STRVAR_1 0, 0, 0} hatched from the Egg!
 Would you like to give a nickname to the\nnewly hatched {STRVAR_1 0, 0, 0}?
 The repellent’s effect wore off!
-             
-                   
+Vous activez le Répulsif.
+Vous désactivez le Répulsif.               
 I’m very sorry.\rWe are working underground right now.\nIt’s off-limits to the public.\rPlease try later on.
                                                                                               
                                                                                           

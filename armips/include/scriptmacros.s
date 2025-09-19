@@ -6762,6 +6762,16 @@ RunNewCommand NEW_COMMAND_QUEUE_NEW_REPEL, 0x800C
 .halfword unk
 .endmacro
 
+.equ NEW_COMMAND_UPDATE_REPELLENT, 0
+
+.macro RunNewCommand2,slot,unk
+DummyTextTreasure slot, unk
+.endmacro
+
+.macro ScriptUpdateRepellent
+RunNewCommand2 NEW_COMMAND_UPDATE_REPELLENT, 0x800C
+.endmacro
+
 .macro TextMapName,slot,location
 .halfword 210
 .byte slot

@@ -752,17 +752,14 @@ BagApp_TryUseRepel:
 	pop {r3, r4, r5, pc}
 
 RepelNotInUse:
-	add r0, r5, #0
-	mov r1, #2
-	mov r2, #6
-	bl GetItemData
-	mov r1, #10
+	mov r1, #0
+	add r1, r0, #0
 	lsl r1, r1, #0x18
 	add r0, r4, #0
 	lsr r1, r1, #0x18
 	bl 0x21F993C // BagApp_GetRepelStepCountAddr
 	mov r0, #0x680>>6
-	mov r1, #2
+	mov r1, #0
 	lsl r0, r0, #6
 	strh r1, [r4, r0]
 	sub r0, #0x680-1535 // SEQ_SE_DP_CARD2

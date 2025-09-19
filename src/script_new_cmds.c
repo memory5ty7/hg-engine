@@ -44,3 +44,23 @@ BOOL Script_RunNewCmd(SCRIPTCONTEXT *ctx) {
 
     return FALSE;
 }
+
+BOOL ScriptUpdateRepellent(SCRIPTCONTEXT *ctx)
+{
+    u16 unused = ScriptReadByte(ctx);
+    u16 *destVar = ScriptGetVarPointer(ctx);
+
+    SaveData *saveData = ctx->fsys->savedata;
+    void *roamerSaveData = EncDataSave_GetSaveDataPtr(saveData);
+    u8* repel_addr = SaveData_GetRepelPtr(roamerSaveData);
+    u8 buf[64];
+
+    BOOL ret = *repel_addr;
+    sprintf(buf,"ret: %d, value: %d\n",ret,*repel_addr);
+    debugsyscall(buf);
+    
+    *repel_addr = 1 - *repel_addr;
+    *destVar = ret;
+
+    return FALSE;
+}
