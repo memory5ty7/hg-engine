@@ -4034,3 +4034,16 @@ BOOL btl_scr_cmd_permanentterrain(void *bw UNUSED, struct BattleStruct *sp) {
 
     return FALSE;
 }
+
+BOOL LONG_CALL IsPartyPokemonGrounded(struct BattleStruct *sp, struct PartyPokemon *partyMon) {
+    u32 item = GetMonData(partyMon, MON_DATA_HELD_ITEM, NULL);
+    u8 holdeffect = GetItemData(item, ITEM_PARAM_HOLD_EFFECT, 5);
+
+    if ((GetMonData(partyMon, MON_DATA_ABILITY, NULL) != ABILITY_LEVITATE && holdeffect != HOLD_EFFECT_UNGROUND_DESTROYED_ON_HIT  // not holding Air Balloon
+         && (!(GetMonData(partyMon, MON_DATA_TYPE_1, NULL) == TYPE_FLYING) && !(GetMonData(partyMon, MON_DATA_TYPE_2, NULL) == TYPE_FLYING))) ||
+        (holdeffect == HOLD_EFFECT_SPEED_DOWN_GROUNDED                             // holding Iron Ball
+         || (sp->field_condition & FIELD_STATUS_GRAVITY))) {
+    }
+
+    return FALSE;
+}

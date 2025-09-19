@@ -56,8 +56,6 @@ BOOL ScriptUpdateRepellent(SCRIPTCONTEXT *ctx)
     u8 buf[64];
 
     BOOL ret = *repel_addr;
-    sprintf(buf,"ret: %d, value: %d\n",ret,*repel_addr);
-    debugsyscall(buf);
     
     *repel_addr = 1 - *repel_addr;
     *destVar = ret;

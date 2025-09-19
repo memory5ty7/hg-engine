@@ -13,7 +13,6 @@
 #include "../../include/constants/species.h"
 #include "../../include/q412.h"
 
-
 struct PACKED sDamageCalc
 {
     u16 species;

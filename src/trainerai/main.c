@@ -85,6 +85,9 @@ typedef struct {
     int attackerMovePPRemaining;
     int attackerMinRollMoveDamages[4];
     int attackerMaxDamageOutputMinRoll;
+
+    int attackerMaxRollMoveDamages[4];
+    int attackerRandomRollMoveDamages[4];
 } AIContext;
 
 typedef struct {
@@ -163,7 +166,7 @@ enum AIActionChoice __attribute__((section (".init"))) TrainerAI_Main(struct Bat
 
         moveScores[target][i] += BasicAI(bsys, ai->attacker, i, ai);
 
-        sprintf(buf, "Move: %d, Score: %d (Damage : %d/%d)\n", i + 1, moveScores[target][i] - 100, ai->attackerMinRollMoveDamages[i], ai->defenderMaxHP);
+        sprintf(buf, "Move: %d, Score: %d (Random Roll : %d/%d)\n", i + 1, moveScores[target][i] - 100, ai->attackerRandomRollMoveDamages[i], ai->defenderMaxHP);
         debugsyscall(buf);
     }
     ctx->aiWorkTable.ai_dir_select_client[ai->attacker] = target;                   //target is always 0 in single battles (the player)
@@ -968,17 +971,17 @@ int BasicDamage(struct BattleSystem *bsys, u32 attacker, int i, AIContext *ai)
         return 0;
     }
     for(int j = 0; j < ai->attackerMovesKnown; j++){
-        if ( i != j && ai->attackerMinRollMoveDamages[i] < ai->attackerMinRollMoveDamages[j]){
+        if ( i != j && ai->attackerRandomRollMoveDamages[i] < ai->attackerRandomRollMoveDamages[j]){
             is_current_move_not_strongest = TRUE;
         }
     }
 
-    if (ai->attackerMinRollMoveDamages[i] >= ai->defenderHP){
+    if (ai->attackerRandomRollMoveDamages[i] >= ai->defenderHP){
         /*Fast Kill*/
-        if(ai->attackerMovesFirst){
+        if(ai->attackerMovesFirst || ai->isSpeedTie || ai->attackerItem == ITEM_QUICK_CLAW){
             moveScore += 12;
         }
-        /*Slow Kill (slower or speed tie)*/
+        /*Slow Kill*/
         else{
             moveScore += 9;
         }
@@ -1273,7 +1276,7 @@ BOOL LONG_CALL MoveIsStrongest(struct BattleSystem *bsys, struct BattleStruct *c
     BOOL is_strongest = TRUE;
     for (int i = 0; i < 4; i++){
         if(i != moveIndex){
-            if(ai->attackerMinRollMoveDamages[moveIndex] < ai->attackerMinRollMoveDamages[i]){
+            if(ai->attackerRandomRollMoveDamages[moveIndex] < ai->attackerRandomRollMoveDamages[i]){
                 return FALSE;
             }
         }
@@ -1474,6 +1477,8 @@ void SetupStateVariables(struct BattleSystem *bsys, u32 attacker, u32 defender, 
         
     }
 
+    u64 buf[64];
+
     /*Loop over all moves for checking certain conditions*/
     /*Set up max roll damage calculations for all known moves.
     Also check if user has a super-effective move*/
@@ -1486,18 +1491,18 @@ void SetupStateVariables(struct BattleSystem *bsys, u32 attacker, u32 defender, 
         if(attackerEffectCheck == MOVE_EFFECT_RANDOM_POWER_10_CASES){ //average magnitude power
             specialMovePower = 71;
         }
-        ai->attackerMinRollMoveDamages[i] = CalcBaseDamage(bsys, ctx, attackerMoveCheck, ctx->side_condition[ai->defenderSide],ctx->field_condition, specialMovePower, 0, ai->attacker, ai->defender, 0, 0, 0, NULL);
-
-        ai->attackerMinRollMoveDamages[i] = ServerDoTypeCalcMod(bsys, ctx, attackerMoveCheck, 0, attacker, ai->defender, ai->attackerMinRollMoveDamages[i], &temp) *85 / 100; //85% is min roll.
-        
-        ai->attackerMinRollMoveDamages[i] = AdjustUnusualMoveDamage(bsys, ai->attacker, ai->defender, ai->attackerMinRollMoveDamages[i], attackerMoveCheck, ai);
+        ai->attackerMaxRollMoveDamages[i] = CalcBaseDamage(bsys, ctx, attackerMoveCheck, ctx->side_condition[ai->defenderSide],ctx->field_condition, specialMovePower, 0, ai->attacker, ai->defender, 0, 0, 0, NULL);
+        ai->attackerMaxRollMoveDamages[i] = ServerDoTypeCalcMod(bsys, ctx, attackerMoveCheck, 0, attacker, ai->defender, ai->attackerMaxRollMoveDamages[i], &temp);
+        ai->attackerMaxRollMoveDamages[i] = AdjustUnusualMoveDamage(bsys, ai->attacker, ai->defender, ai->attackerMaxRollMoveDamages[i], attackerEffectCheck, ai);
+        ai->attackerMinRollMoveDamages[i] = ai->attackerMaxRollMoveDamages[i] * 85 / 100;
+        ai->attackerRandomRollMoveDamages[i] = ai->attackerMaxRollMoveDamages[i] * (100 - (gf_rand() % 15)) / 100;
 
         /*Record our highest damage output*/
-        if(ai->attackerMinRollMoveDamages[i] > ai->attackerMaxDamageOutputMinRoll){
-            ai->attackerMaxDamageOutputMinRoll = ai->attackerMinRollMoveDamages[i];
+        if(ai->attackerRandomRollMoveDamages[i] > ai->attackerMaxDamageOutputMinRoll){
+            ai->attackerMaxDamageOutputMinRoll = ai->attackerRandomRollMoveDamages[i];
         }
 
-        if(ai->attackerMinRollMoveDamages[i] > 0){
+        if(ai->attackerRandomRollMoveDamages[i] > 0){
             ai->attackerHasDamagingMove = 1;
         }
         if(attackerMoveCheck == MOVE_PSYCH_UP){
@@ -1513,9 +1518,9 @@ void SetupStateVariables(struct BattleSystem *bsys, u32 attacker, u32 defender, 
 }
 
 /*Adjusts the computed damage for attacks like multihit or flat damage moves.*/
-int AdjustUnusualMoveDamage(struct BattleSystem *bsys, u32 attacker, u32 defender, int damage, int move, AIContext *ai){
+int AdjustUnusualMoveDamage(struct BattleSystem *bsys, u32 attacker, u32 defender, int damage, int effect, AIContext *ai){
     struct BattleStruct *ctx = bsys->sp;
-    switch(move){
+    switch(effect){
         case MOVE_EFFECT_MULTI_HIT:
             return damage *= 3;
         case MOVE_EFFECT_LEVEL_DAMAGE_FLAT:
@@ -1527,6 +1532,8 @@ int AdjustUnusualMoveDamage(struct BattleSystem *bsys, u32 attacker, u32 defende
             return 40;
         case MOVE_EFFECT_POISON_MULTI_HIT:
         case MOVE_EFFECT_HIT_TWICE:
-            return damage *= 2;     
+            return damage *= 2; 
+        default:
+            return damage;   
     }
 }

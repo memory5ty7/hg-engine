@@ -15,7 +15,6 @@
 #include "../../include/overlay.h"
 #include "../../include/q412.h"
 
-
 extern const u8 StatBoostModifiers[][2];
 
 typedef struct
@@ -3547,8 +3546,8 @@ int LONG_CALL BattleAI_PostKOSwitchIn(struct BattleSystem *battleSys, int battle
     BOOL monIsFaster[6] = {0};
     u32 monMoveDamagesDealt[4] = {0};
     u32 monMoveDamagesReceived[4] = {0};
-    u32 minRollMaxDamageDealt[6] = {0};
-    u32 minRollMaxDamageReceived[6] = {0};
+    u32 maxRollMaxDamageDealt[6] = {0};
+    u32 maxRollMaxDamageReceived[6] = {0};
     u32 monTieIndices[6] = {0};
 
     u32 monSwapScore[6] = {0};
@@ -3558,6 +3557,8 @@ int LONG_CALL BattleAI_PostKOSwitchIn(struct BattleSystem *battleSys, int battle
     u32 defenderMove = 0;
     u32 highestMonScore = 0;
 
+    u8 buf[64];
+    
     struct PartyPokemon *mon;
     struct BattleStruct *battleCtx = battleSys->sp;
     int battleType = BattleTypeGet(battleSys);
@@ -3612,13 +3613,16 @@ int LONG_CALL BattleAI_PostKOSwitchIn(struct BattleSystem *battleSys, int battle
                 if(battleCtx->moveTbl[move].split != SPLIT_STATUS && battleCtx->moveTbl[move].power){
                     currentDamage = AI_CalcBaseDamage(battleSys, battleCtx, move, battleCtx->side_condition[BATTLER_IS_ENEMY(defender)],
                      battleCtx->field_condition, battleCtx->moveTbl[move].power, battleCtx->moveTbl[move].type, battler, defender, 0, 1, 0, mon);
-                     //debug_printf("BEFORE TYPE MOD: operating on %d which can deal  %d damage with move slot %d\n",i, currentDamage, j);
-                    currentDamage = AI_ServerDoTypeCalcMod(battleSys, battleCtx, move, battleCtx->moveTbl[move].type, battler, defender, currentDamage, &moveStatusFlags, 1, 0, mon) * 85 / 100;
-                    //debug_printf("AFTER TYPE MOD: operating on %d which can deal  %d damage with move slot %d\n",i, currentDamage, j);
-
+                    //sprintf(buf,"after AI_CalcBaseDamage: %d\n",currentDamage);
+                    //debugsyscall(buf);
+                    currentDamage = AI_ServerDoTypeCalcMod(battleSys, battleCtx, move, battleCtx->moveTbl[move].type, battler, defender, currentDamage, &moveStatusFlags, 1, 0, mon);
+                    //sprintf(buf,"after AI_ServerDoTypeCalcMod: %d\n",currentDamage);
+                    //debugsyscall(buf);
                 }
-                if(currentDamage > minRollMaxDamageDealt[i]){
-                    minRollMaxDamageDealt[i] = currentDamage;
+                if(currentDamage > maxRollMaxDamageDealt[i]){
+                    maxRollMaxDamageDealt[i] = currentDamage;
+                    //sprintf(buf,"maxRollMaxDamageDealt: %d\n",maxRollMaxDamageDealt[i]);
+                    //debugsyscall(buf);
                 }
                 if(currentDamage){
                     monHasDamagingMove[i] = TRUE;
@@ -3632,11 +3636,17 @@ int LONG_CALL BattleAI_PostKOSwitchIn(struct BattleSystem *battleSys, int battle
                 defenderMove = battleCtx->battlemon[defender].move[j];
                 if(battleCtx->moveTbl[defenderMove].split != SPLIT_STATUS && battleCtx->moveTbl[defenderMove].power){
                     currentDamage = AI_CalcBaseDamage(battleSys, battleCtx, defenderMove, battleCtx->side_condition[BATTLER_IS_ENEMY(battler)],
-                     battleCtx->field_condition, battleCtx->moveTbl[defenderMove].power, battleCtx->moveTbl[defenderMove].type, defender, battler, 0, 0, 1, mon);
-                     currentDamage = AI_ServerDoTypeCalcMod(battleSys, battleCtx, defenderMove, battleCtx->moveTbl[defenderMove].type, defender, battler, currentDamage, &moveStatusFlags, 0, 1, mon) * 85 / 100;
+                    battleCtx->field_condition, battleCtx->moveTbl[defenderMove].power, battleCtx->moveTbl[defenderMove].type, defender, battler, 0, 0, 1, mon);
+                    //sprintf(buf,"after AI_CalcBaseDamage: %d\n",currentDamage);
+                    //debugsyscall(buf);
+                    currentDamage = AI_ServerDoTypeCalcMod(battleSys, battleCtx, defenderMove, battleCtx->moveTbl[defenderMove].type, defender, battler, currentDamage, &moveStatusFlags, 0, 1, mon);
+                    //sprintf(buf,"after AI_ServerDoTypeCalcMod: %d\n",currentDamage);
+                    //debugsyscall(buf);
                 }
-                if(currentDamage > minRollMaxDamageReceived[i]){
-                    minRollMaxDamageReceived[i] = currentDamage;
+                if(currentDamage > maxRollMaxDamageReceived[i]){
+                    maxRollMaxDamageReceived[i] = currentDamage;
+                    //sprintf(buf,"maxRollMaxDamageReceived: %d\n",maxRollMaxDamageReceived[i]);
+                    //debugsyscall(buf);
                 }
                 if(currentDamage){
                     if(currentDamage > GetMonData(mon, MON_DATA_HP, 0)){
@@ -3659,7 +3669,7 @@ int LONG_CALL BattleAI_PostKOSwitchIn(struct BattleSystem *battleSys, int battle
                     monSwapScore[i] += 5;
                 }
                 else{
-                    if(minRollMaxDamageDealt[i] * 100 / battleCtx->battlemon[defender].hp > minRollMaxDamageReceived[i] * 100 / GetMonData(mon, MON_DATA_HP, 0)){
+                    if(maxRollMaxDamageDealt[i] * 100 / battleCtx->battlemon[defender].hp > maxRollMaxDamageReceived[i] * 100 / GetMonData(mon, MON_DATA_HP, 0)){
                         monSwapScore[i] += 3;
                     }
                     else{
@@ -3676,7 +3686,7 @@ int LONG_CALL BattleAI_PostKOSwitchIn(struct BattleSystem *battleSys, int battle
                         monSwapScore[i] += 4;
                     }
                     else{
-                        if(minRollMaxDamageDealt[i] * 100 / battleCtx->battlemon[defender].hp > minRollMaxDamageReceived[i] * 100 / GetMonData(mon, MON_DATA_HP, 0)){
+                        if(maxRollMaxDamageDealt[i] * 100 / battleCtx->battlemon[defender].hp > maxRollMaxDamageReceived[i] * 100 / GetMonData(mon, MON_DATA_HP, 0)){
                             monSwapScore[i] += 2;
                         }
                         else{
@@ -3709,12 +3719,9 @@ int LONG_CALL BattleAI_PostKOSwitchIn(struct BattleSystem *battleSys, int battle
     /*Now that all the scores have been computed, select the highest one (and if tie, select randomly)*/
     int j_tie_index = 0;
     int num_mon_score_ties = 0;
-
-    u8 buf[64];
-    sprintf(buf,"--------------------\n");
-    debugsyscall(buf);      
+    
     for (int mon_no = 0; mon_no < partySize; mon_no++){   
-        sprintf(buf, "Switch-in Score %d: %d (Faster : %s, OHKO : %s)\n", mon_no + 1, monSwapScore[mon_no] - 10, (monIsFaster[i] ? "true" : "false"), (monCanOHKO[i] ? "true" : "false"));
+        sprintf(buf, "Switch-in Score %d: %d (Faster : %s, OHKO : %s, Max Roll : %d/%d)\n", mon_no + 1, monSwapScore[mon_no] - 10, (monIsFaster[mon_no] ? "true" : "false"), (monCanOHKO[mon_no] ? "true" : "false"), maxRollMaxDamageDealt[mon_no],battleCtx->battlemon[defender].maxhp);
         debugsyscall(buf);
         //debug_printf("The swap index %d has score %d\n",mon_no,monSwapScore[mon_no]);       //check for ties
         if(monSwapScore[mon_no] == highestMonScore){
@@ -3723,6 +3730,8 @@ int LONG_CALL BattleAI_PostKOSwitchIn(struct BattleSystem *battleSys, int battle
             j_tie_index++;
         }
     }
+    sprintf(buf,"--------------------\n");
+    debugsyscall(buf);
     picked = monTieIndices[BattleRand(battleSys) % num_mon_score_ties];
     //debug_printf("Picking index number %d\n\n",picked);
     return picked;
@@ -4032,26 +4041,16 @@ u8 LONG_CALL AI_CalcSpeed(void *bw, struct BattleStruct *sp, int client1, int cl
 
     if (priority1 == priority2)
     {
-        if ((quick_claw1) && (quick_claw2)) // both mons quick claws activates/items that put them first
+        if (speed1 < speed2)
         {
-            if (speed1 < speed2)
-            {
-                ret = 1; // client 2 goes
-            }
-            else if ((speed1 == speed2) && (BattleRand(bw) & 1))
-            {
-                ret = 2; // random roll
-            }
+            ret = 1; // client 2 goes
         }
-        else if ((quick_claw1 == 0) && (quick_claw2)) // client2 quick claw activate
+        else if ((speed1 == speed2) && (BattleRand(bw) & 1))
         {
-            ret = 1;
+            ret = 2; // random roll
         }
-        else if ((quick_claw1) && (quick_claw2 == 0)) // client1 quick claw activate
-        {
-            ret = 0;
-        }
-        else if ((move_last1) && (move_last2)) // both clients have lagging tail
+
+        if ((move_last1) && (move_last2)) // both clients have lagging tail
         {
             if (speed1 > speed2) // if client1 is faster with lagging tail, it moves last
             {
@@ -4102,6 +4101,11 @@ u8 LONG_CALL AI_CalcSpeed(void *bw, struct BattleStruct *sp, int client1, int cl
         }
     }
     else if (priority1 < priority2)
+    {
+        ret = 1;
+    }
+
+    if (GetBattleMonItem(sp, client1) == ITEM_QUICK_CLAW)
     {
         ret = 1;
     }
@@ -5872,17 +5876,4 @@ int LONG_CALL AI_CalcBaseDamage(void *bw, struct BattleStruct *sp, int moveno, u
     
 
     return damage + 2;
-}
-
-BOOL IsPartyPokemonGrounded(struct BattleStruct *sp, struct PartyPokemon *partyMon) {
-    u32 item = GetMonData(partyMon, MON_DATA_HELD_ITEM, NULL);
-    u8 holdeffect = GetItemData(item, ITEM_PARAM_HOLD_EFFECT, 5);
-
-    if ((GetMonData(partyMon, MON_DATA_ABILITY, NULL) != ABILITY_LEVITATE && holdeffect != HOLD_EFFECT_UNGROUND_DESTROYED_ON_HIT  // not holding Air Balloon
-         && (!(GetMonData(partyMon, MON_DATA_TYPE_1, NULL) == TYPE_FLYING) && !(GetMonData(partyMon, MON_DATA_TYPE_2, NULL) == TYPE_FLYING))) ||
-        (holdeffect == HOLD_EFFECT_SPEED_DOWN_GROUNDED                             // holding Iron Ball
-         || (sp->field_condition & FIELD_STATUS_GRAVITY))) {
-    }
-
-    return FALSE;
 }

@@ -8,8 +8,26 @@
 #include "../../include/constants/species.h"
 #include "../../include/constants/battle_script_constants.h"
 #include "../../include/constants/battle_message_constants.h"
+#include "../../include/constants/item.h"
+#include "../../include/constants/hold_item_effects.h"
+#include "../../include/constants/move_effects.h"
+#include "../../include/constants/moves.h"
+#include "../../include/constants/file.h"
 
-BOOL TrainerAI_ShouldSwitch(struct BattleSystem *battleSys, int battler);
+BOOL TrainerAI_ShouldSwitch(struct BattleSystem *bsys, int attacker);
+/*Helper Functions (ported from Pokeplatinum)*/
+BOOL AI_PerishSongKO(struct BattleStruct *battleCtx, int battler);
+BOOL AI_CannotDamageWonderGuard(struct BattleSystem *battleSys, struct BattleStruct *battleCtx, int battler);
+BOOL AI_OnlyIneffectiveMoves(struct BattleSystem *battleSys, struct BattleStruct *battleCtx, int battler);
+BOOL AI_HasSuperEffectiveMove(struct BattleSystem *battleSys, struct BattleStruct *battleCtx, int battler, BOOL alwaysSwitch);
+BOOL AI_HasAbsorbAbilityInParty(struct BattleSystem *battleSys, struct BattleStruct *battleCtx, int battler);
+BOOL AI_HasPartyMemberWithSuperEffectiveMove(struct BattleSystem *battleSys, struct BattleStruct *battleCtx, int battler, u32 checkEffectiveness, u8 rand);
+BOOL AI_IsAsleepWithNaturalCure(struct BattleSystem *battleSys,struct BattleStruct *battleCtx, int battler);
+BOOL AI_IsHeavilyStatBoosted(struct BattleSystem *battleSys, struct BattleStruct *battleCtx, int battler);
+BOOL TrainerAI_ShouldUseItem(struct BattleSystem *battleSys, int battler);
+
+int LONG_CALL BattleAI_PostKOSwitchIn(struct BattleSystem *battleSys, int battler); //defined in src/battle/ai.c
+int TypeMatchupMultiplier(u8 attackingType, u8 defendingType1, u8 defendingType2);
 
 int TrainerAI_PickCommand(struct BattleSystem *battleSys, int battler)
 {
