@@ -98,6 +98,19 @@ void getAllEvolutions(u16 specieswithform, u16 *results) {
     }
 }
 
+void setAreaCaughtFlag(u8 mapSec)
+{
+    u16 varID = VAR_MAPSEC_1 + (int)((int)mapSec / 16);
+    SetScriptVar(varID , GetScriptVar(varID) | (1 << (mapSec % 16)));
+}
+
+BOOL checkAreaCaughtFlag(u8 mapSec)
+{
+    u16 varID = VAR_MAPSEC_1 + (int)(mapSec / 16);
+    u16 varValue = GetScriptVar(varID);
+    return varValue & (1 << mapSec % 16);
+}
+
 BOOL CheckEvoLineCaught(struct BattleSystem *bsys, u16 species, u16 form_no)
 {
     u8 buf[200];

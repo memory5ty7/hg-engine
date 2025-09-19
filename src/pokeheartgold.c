@@ -33,13 +33,16 @@ void CopyBoxPokemonToPokemon(const struct BoxPokemon *src, struct PartyPokemon *
     //SetMonData(dest, MON_DATA_HP, &curHP);
 }
 
-void setAreaCaughtFlag(u8 mapSec)
+void setAreaCaughtFlag(int mapSec)
 {
+    u8 buf[64];
+    sprintf(buf,"SetAreaCaughtFlag %d\n",mapSec);
+    debugsyscall(buf);
     u16 varID = VAR_MAPSEC_1 + (int)((int)mapSec / 16);
     SetScriptVar(varID , GetScriptVar(varID) | (1 << (mapSec % 16)));
 }
 
-BOOL checkAreaCaughtFlag(u8 mapSec)
+BOOL checkAreaCaughtFlag(int mapSec)
 {
     u16 varID = VAR_MAPSEC_1 + (int)(mapSec / 16);
     u16 varValue = GetScriptVar(varID);

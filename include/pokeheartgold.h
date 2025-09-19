@@ -17,9 +17,6 @@ u32 LONG_CALL CalcMonChecksum(void *_data, u32 size);
 String* LONG_CALL GetSpeciesName(u16 species, int heapID);
 void LONG_CALL String_Copy(String *dest, const String *src);
 
-void setAreaCaughtFlag(u8 mapSec);
-BOOL checkAreaCaughtFlag(u8 mapSec);
-
 DaycareMon* LONG_CALL Save_Daycare_GetMonX(Daycare *daycare, s32 i);
 u32 LONG_CALL DaycareMon_GetSteps(DaycareMon *dcmon);
 u8 LONG_CALL Save_Daycare_GetEggCycleCounter(Daycare *daycare);
