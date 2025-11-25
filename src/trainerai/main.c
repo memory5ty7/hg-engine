@@ -85,9 +85,17 @@ typedef struct {
     int attackerMovePPRemaining;
     int attackerMinRollMoveDamages[4];
     int attackerMaxDamageOutputMinRoll;
+    int attackerMoveRange;
+    int attackerMoveEffectChance;
 
     int attackerMaxRollMoveDamages[4];
     int attackerRandomRollMoveDamages[4];
+
+    int turnsToKill;
+    int turnsToGetKilled;
+
+    BOOL defenderHasPhysicalMove;
+    BOOL defenderHasSpecialMove;
 } AIContext;
 
 typedef struct {
@@ -106,7 +114,7 @@ int AttackerMonWithHighestDamage(struct BattleSystem *bsys, u32 attacker, AICont
 int BattlerPositiveStatChangesSum(struct BattleSystem *bsys, u32 battler, AIContext *ai);
 BOOL BattlerHasStatBoostGreater(struct BattleSystem *bsys, u32 battler, u32 boost_amount, AIContext *ai);
 BOOL BattlerHasStatBoostLesser(struct BattleSystem *bsys, u32 battler, u32 drop_amount, AIContext *ai);
-BOOL BattlerKnowsMove(struct BattleSystem *bsys, u32 battler, u32 move, AIContext *ai);
+BOOL BattlerKnowsMove(struct BattleSystem *bsys, u32 battler, u32 move);
 BOOL BattlerHasMoveSplit(struct BattleSystem *bsys, u32 battler, u32 move_split, AIContext *ai);
 BOOL BattlerHasMoveEffect(struct BattleSystem *bsys, u32 battler, u32 move_effect, AIContext *ai);
 BOOL BattlerHasTypeDamagingMove (struct BattleSystem *bsys, u32 battler, u32 type, AIContext *ai);
@@ -121,9 +129,12 @@ BOOL LONG_CALL BattlerMovesFirstDoubles(struct BattleSystem *bsys, struct Battle
 BOOL LONG_CALL MoveIsStrongest(struct BattleSystem *bsys, struct BattleStruct *ctx, int moveIndex, AIContext *ai);
 void SetupStateVariables(struct BattleSystem *bsys, u32 attacker, u32 defender, AIContext *ai);
 int AdjustUnusualMoveDamage(struct BattleSystem *bsys, u32 attacker, u32 defender, int damage, int move, AIContext *ai);
+int AdjustUnusualMovePower(struct BattleSystem *bsys, u32 attacker, u32 defender, int moveEffect, AIContext *ai);
+u32 LONG_CALL MaskOfFlagNo(int flagno);
 
-// quick hello world example that just runs through the moves and selects the highest base power one
-// likely breaks roamers, but we'll get there when we get there
+int BasicOffensiveSetup(struct BattleSystem *bsys, u32 attacker, int i, AIContext *ai);
+int BasicDefensiveSetup(struct BattleSystem *bsys, u32 attacker, int i, AIContext *ai);
+
 enum AIActionChoice __attribute__((section (".init"))) TrainerAI_Main(struct BattleSystem *bsys, u32 battler)
 {
     struct BattleStruct *ctx = bsys->sp;
@@ -159,6 +170,8 @@ enum AIActionChoice __attribute__((section (".init"))) TrainerAI_Main(struct Bat
         /*Move-relevant variables*/
         ai->attackerMove = ctx->battlemon[ai->attacker].move[i];
         ai->attackerMoveEffect = ctx->moveTbl[ai->attackerMove].effect;
+        ai->attackerMoveEffectChance = ctx->moveTbl[ai->attackerMove].secondaryEffectChance;
+        ai->attackerMoveRange = ctx->moveTbl[ai->attackerMove].target;
         ai->attackerMoveEffectiveness = 0;       
         ai->attackerMoveType = ctx->moveTbl[ai->attackerMove].type;
         ai->attackerMovePPRemaining = ctx->battlemon[ai->attacker].pp[i];
@@ -646,6 +659,11 @@ int BasicAI (struct BattleSystem *bsys, u32 attacker, int i, AIContext *ai){
         moveScore += BasicDamage(bsys, attacker, i, ai);
     }
 
+    u8 struggleFlags = StruggleCheck(bsys, ctx, attacker, 0, -1);
+    if (struggleFlags & MaskOfFlagNo(i)) {
+        moveScore = 0;
+    }
+
     return moveScore;
 }
 
@@ -955,12 +973,229 @@ int BasicImmunity(struct BattleSystem *bsys, u32 attacker, int i, AIContext *ai)
     return 0;
 }
 
+int statDropPreventingAbilities[] = {
+    ABILITY_CLEAR_BODY,
+    ABILITY_WHITE_SMOKE,
+    ABILITY_CONTRARY,
+};
+
+int weatherPreventingAbilities[] = {
+    ABILITY_AIR_LOCK,
+    ABILITY_CLOUD_NINE,
+};
+
+BOOL isInArray(int val, int* array, int arraySize){
+    for(int i = 0; i < arraySize; i++){
+        if(array[i] == val) return TRUE;
+    }
+    return FALSE;
+}
+
+BOOL batllerKnowsMove(struct BattleSystem *bsys, u32 battler, int move){
+    struct BattleStruct *ctx = bsys->sp;
+    for(int i = 0; i < 4; i++){
+        if(ctx->battlemon[battler].move[i] == move) return TRUE;
+    }
+    return FALSE;
+}
+
 int BasicStatus(struct BattleSystem *bsys, u32 attacker, int i, AIContext *ai)
 {
-    int moveScore = 6;
+    int moveScore = 0;
+
+    switch(ai->attackerMoveEffect)
+    {
+        case MOVE_EFFECT_WEATHER_RAIN:
+            if (!(bsys->sp->field_condition & WEATHER_RAIN_ANY) && !isInArray(ai->defenderAbility, weatherPreventingAbilities, sizeof(weatherPreventingAbilities)/sizeof(int)) )
+                {
+                    moveScore = 11;
+                }
+            break;
+        case MOVE_EFFECT_WEATHER_SUN:
+            if (!(bsys->sp->field_condition & WEATHER_SUNNY_ANY) && !isInArray(ai->defenderAbility, weatherPreventingAbilities, sizeof(weatherPreventingAbilities)/sizeof(int)) )
+                {
+                    moveScore = 11;
+                }
+            break;
+        case MOVE_EFFECT_WEATHER_SANDSTORM:
+            if (!(bsys->sp->field_condition & WEATHER_SANDSTORM_ANY) && !isInArray(ai->defenderAbility, weatherPreventingAbilities, sizeof(weatherPreventingAbilities)/sizeof(int)) )
+                {
+                    moveScore = 11;
+                }
+            break;
+        case MOVE_EFFECT_WEATHER_HAIL:
+            if (!(bsys->sp->field_condition & WEATHER_HAIL_ANY) && !isInArray(ai->defenderAbility, weatherPreventingAbilities, sizeof(weatherPreventingAbilities)/sizeof(int)) )
+                {
+                    moveScore = 11;
+                }
+            break;
+        case MOVE_EFFECT_APPLY_TERRAINS:
+            switch(ai->attackerMove)
+            {
+                case MOVE_GRASSY_TERRAIN:
+                    if (bsys->sp->terrainOverlay.type != GRASSY_TERRAIN || bsys->sp->terrainOverlay.numberOfTurnsLeft == 0)
+                    {
+                        moveScore = 11;
+                    }
+                    break;
+                case MOVE_MISTY_TERRAIN:
+                    if (bsys->sp->terrainOverlay.type != MISTY_TERRAIN || bsys->sp->terrainOverlay.numberOfTurnsLeft == 0)
+                    {
+                        moveScore = 11;
+                    }
+                    break;
+                case MOVE_ELECTRIC_TERRAIN:
+                    if (bsys->sp->terrainOverlay.type != ELECTRIC_TERRAIN || bsys->sp->terrainOverlay.numberOfTurnsLeft == 0)
+                    {
+                        moveScore = 11;
+                    }
+                    break;
+                case MOVE_PSYCHIC_TERRAIN:
+                    if (bsys->sp->terrainOverlay.type != PSYCHIC_TERRAIN || bsys->sp->terrainOverlay.numberOfTurnsLeft == 0)
+                    {
+                        moveScore = 11;
+                    }
+                    break;
+                default:
+                    break;
+            }
+        case MOVE_EFFECT_STICKY_WEB:
+            if (ai->attackerTurnsOnField == 0)
+            {
+                moveScore = 12;
+            } else {
+                moveScore = 9;
+            }
+            break;
+        case MOVE_EFFECT_STEALTH_ROCK:
+            if (ai->attackerTurnsOnField == 0)
+            {
+                moveScore = 9;
+            } else {
+                moveScore = 7;
+            }
+            break;
+        case MOVE_EFFECT_TOXIC_SPIKES:
+            if (ai->attackerTurnsOnField == 0)
+            {
+                moveScore = 9 - bsys->sp->scw[ai->defenderSide].toxicSpikesLayers;
+            } else {
+                moveScore = 7 - bsys->sp->scw[ai->defenderSide].toxicSpikesLayers;
+            }    
+            break;
+        case MOVE_EFFECT_SET_SPIKES:
+            if (ai->attackerTurnsOnField == 0)
+            {
+                moveScore = 9 - bsys->sp->scw[ai->defenderSide].spikesLayers;
+            } else {
+                moveScore = 7 - bsys->sp->scw[ai->defenderSide].spikesLayers;
+            }      
+            break; 
+        case MOVE_EFFECT_STATUS_SLEEP:
+            moveScore = 6; 
+            if (
+                (BattlerKnowsMove(bsys, ai->attacker, MOVE_NIGHTMARE) || BattlerKnowsMove(bsys, ai->attacker, MOVE_DREAM_EATER))
+                && !(BattlerKnowsMove(bsys, ai->defender, MOVE_SLEEP_TALK) || BattlerKnowsMove(bsys, ai->defender, MOVE_SNORE))
+            )
+            {
+                moveScore +=1;
+
+                if (BattlerKnowsMove(bsys, ai->attacker, MOVE_HEX))
+                {
+                    moveScore +=1;
+                }
+            }
+            break;
+        case MOVE_EFFECT_ATK_SPEED_UP:
+        case MOVE_EFFECT_SPEED_UP_2_ATK_UP:
+        case MOVE_EFFECT_ATK_UP_2:
+        case MOVE_EFFECT_ATK_UP:
+            moveScore = BasicOffensiveSetup(bsys, attacker, i, ai);
+            break;
+        case MOVE_EFFECT_DEF_UP_2:
+        case MOVE_EFFECT_DEF_UP_3:
+        case MOVE_EFFECT_DEF_UP:
+        case MOVE_EFFECT_STOCKPILE:
+        case MOVE_EFFECT_DEF_SP_DEF_UP:
+            moveScore = BasicDefensiveSetup(bsys, attacker, i, ai);
+            break;
+        case MOVE_EFFECT_ATK_DEF_UP:
+        case MOVE_EFFECT_ATK_DEF_SPEED_UP:
+        case MOVE_EFFECT_CURSE:
+            // Handle Ghost Type Curse
+            moveScore = 6;
+            if(ai->defenderHasPhysicalMove && !ai->defenderHasSpecialMove)
+            {
+                moveScore = BasicDefensiveSetup(bsys, attacker, i, ai);
+            } else {
+                moveScore = BasicOffensiveSetup(bsys, attacker, i, ai);
+            }
+            break;
+        case MOVE_EFFECT_SP_ATK_SP_DEF_UP:
+        case MOVE_EFFECT_SP_ATK_SP_DEF_SPEED_UP:
+            moveScore = 6;
+            if(ai->defenderHasSpecialMove && !ai->defenderHasPhysicalMove)
+            {
+                moveScore = BasicDefensiveSetup(bsys, attacker, i, ai);
+            } else {
+                moveScore = BasicOffensiveSetup(bsys, attacker, i, ai);
+            }
+            break;
+        case MOVE_EFFECT_ALL_FAINT_3_TURNS:
+            moveScore = 6;
+            break;
+        case MOVE_EFFECT_STATUS_BURN:
+            moveScore = 6;
+            if (ai->defenderHasPhysicalMove)
+            {
+                moveScore += 1;
+            }
+            if (BattlerKnowsMove(bsys, ai->defender, MOVE_HEX))
+            {
+                moveScore += 1;
+            }
+            break;
+        case MOVE_EFFECT_STATUS_PARALYZE:
+            moveScore = 7;
+            if (BattlerKnowsMove(bsys, ai->attacker, MOVE_HEX)
+                || bsys->sp->battlemon[ai->defender].condition2 & STATUS2_CONFUSION
+                || bsys->sp->battlemon[ai->defender].condition2 & STATUS2_ATTRACT)
+            {
+                moveScore += 1;
+            }
+        default:
+            break;
+    } 
 
     return moveScore;
 }
+
+int BasicOffensiveSetup(struct BattleSystem *bsys, u32 attacker, int i, AIContext *ai)
+{
+    int moveScore = 6;
+
+    if (!ai->attackerMovesFirst && ai->turnsToGetKilled <= 2)
+    {
+        moveScore -= 5;
+    }
+
+    return moveScore;
+}
+
+int BasicDefensiveSetup(struct BattleSystem *bsys, u32 attacker, int i, AIContext *ai)
+{
+    int moveScore = 6;
+
+    if(!ai->attackerMovesFirst && ai->turnsToGetKilled <= 2)
+    {
+        moveScore -= 5;
+    }
+
+    return moveScore;
+}
+
+
+#define BATTLE_TYPE_DOUBLE_ANY (BATTLE_TYPE_MULTI | BATTLE_TYPE_DOUBLE | BATTLE_TYPE_TAG)
 
 int BasicDamage(struct BattleSystem *bsys, u32 attacker, int i, AIContext *ai)
 {
@@ -978,7 +1213,7 @@ int BasicDamage(struct BattleSystem *bsys, u32 attacker, int i, AIContext *ai)
 
     if (ai->attackerRandomRollMoveDamages[i] >= ai->defenderHP){
         /*Fast Kill*/
-        if(ai->attackerMovesFirst || ai->isSpeedTie || ai->attackerItem == ITEM_QUICK_CLAW){
+        if(ai->attackerMovesFirst || ai->isSpeedTie || ai->attackerItem == ITEM_QUICK_CLAW || (!ai->attackerMovesFirst && ctx->moveTbl[ai->attackerMove].priority > 0)){
             moveScore += 12;
         }
         /*Slow Kill*/
@@ -986,6 +1221,68 @@ int BasicDamage(struct BattleSystem *bsys, u32 attacker, int i, AIContext *ai)
             moveScore += 9;
         }
     } else if (!is_current_move_not_strongest) moveScore += 6;
+
+    switch(ai->attackerMoveEffect)
+    {
+        case MOVE_EFFECT_THUNDER:
+        case MOVE_EFFECT_HURRICANE:
+        case MOVE_EFFECT_HIT_FLY:
+        case MOVE_EFFECT_DOUBLE_DAMAGE_FLY_OR_BOUNCE:
+        case MOVE_EFFECT_FLINCH_DOUBLE_DAMAGE_FLY_OR_BOUNCE:
+        //case MOVE_EFFECT_SMACK_DOWN:
+        //case MOVE_EFFECT_THOUSAND_ARROWS:
+            if (ai->attackerMovesFirst
+                && bsys->sp->battlemon[ai->defender].effect_of_moves & MOVE_EFFECT_FLAG_FLYING_IN_AIR)
+                {
+                    moveScore += 20;
+                }
+            break;
+        case MOVE_EFFECT_RANDOM_POWER_10_CASES:
+        case MOVE_EFFECT_DOUBLE_DAMAGE_DIG:
+        //case MOVE_EFFECT_FISSURE:
+            if (ai->attackerMovesFirst
+                && bsys->sp->battlemon[ai->defender].effect_of_moves & MOVE_EFFECT_FLAG_DIGGING)
+                {
+                    moveScore += 20;
+
+                }
+            break;
+        case MOVE_EFFECT_DOUBLE_DAMAGE_DIVE:
+        case MOVE_EFFECT_WHIRLPOOL:
+            if (ai->attackerMovesFirst
+                && bsys->sp->battlemon[ai->defender].effect_of_moves & MOVE_EFFECT_FLAG_IS_DIVING)
+                {
+                    moveScore += 20;
+                    
+                }
+            break;  
+        case MOVE_EFFECT_RAISE_SPEED_HIT:
+            if (is_current_move_not_strongest && !ai->attackerMovesFirst)
+                {
+                    moveScore += 7;
+                }
+            break;
+        case MOVE_EFFECT_LOWER_SPEED_HIT:
+            if (is_current_move_not_strongest && ai->attackerMoveEffectChance == 100)
+            {
+                if (!ai->attackerMovesFirst && !isInArray(ai->defenderAbility, statDropPreventingAbilities, sizeof(statDropPreventingAbilities)/sizeof(int)) )
+                    {
+                        moveScore += 6;
+                    }
+                else
+                    {
+                        moveScore += 5;
+                    }
+                if ((BattleTypeGet(bsys) & BATTLE_TYPE_DOUBLE_ANY) && (ai->attackerMoveRange == RANGE_ADJACENT_OPPONENTS || ai->attackerMoveRange == RANGE_ALL_ADJACENT))
+                    {
+                        moveScore += 1;
+                    }
+            }
+            break;
+        //case MOVE_EFFECT_FELL_STINGER:
+        default:
+            break;
+    }
 
     return moveScore;
 }
@@ -1063,7 +1360,7 @@ BOOL BattlerHasStatBoostLesser (struct BattleSystem *bsys, u32 battler, u32 drop
 }
 
 /*Returns true if user has a particular move in their 4 move slots.*/
-BOOL BattlerKnowsMove (struct BattleSystem *bsys, u32 battler, u32 move, AIContext *ai){
+BOOL BattlerKnowsMove (struct BattleSystem *bsys, u32 battler, u32 move){
     BOOL knowsMove = 0;
     struct BattleStruct *ctx = bsys->sp;
     for(int i = 0; i < 4; i++){
@@ -1454,6 +1751,9 @@ void SetupStateVariables(struct BattleSystem *bsys, u32 attacker, u32 defender, 
     ai->attackerMovesKnown = GetBattlerLearnedMoveCount(bsys, ctx, attacker);
     ai->attackerHasSupereffectiveMove = 0;
     ai->attackerHasDamagingMove = 0;
+    ai->turnsToGetKilled = 0;
+    ai->defenderHasPhysicalMove = 0;
+    ai->defenderHasSpecialMove = 0;
 
     int attackerMoveCheck;
     int attackerEffectCheck;
@@ -1473,9 +1773,17 @@ void SetupStateVariables(struct BattleSystem *bsys, u32 attacker, u32 defender, 
             if(currentReceivedDamage > ai->maxDamageReceived){
                 ai->maxDamageReceived = currentReceivedDamage;
             }
+
+            if(ctx->moveTbl[ctx->battlemon[ai->defender].move[i]].split == SPLIT_PHYSICAL)
+            {
+                ai->defenderHasPhysicalMove = 1;
+            } else {
+                ai->defenderHasSpecialMove = 1;
+            }
         }
         
     }
+    ai->turnsToGetKilled = ai->attackerHP / (ai->maxDamageReceived + 1) + 1;
 
     u64 buf[64];
 
@@ -1515,6 +1823,7 @@ void SetupStateVariables(struct BattleSystem *bsys, u32 attacker, u32 defender, 
         }
 
     }
+    ai->turnsToKill = ai->defenderHP / (ai->attackerMaxDamageOutputMinRoll + 1) + 1;
 }
 
 /*Adjusts the computed damage for attacks like multihit or flat damage moves.*/
@@ -1522,6 +1831,15 @@ int AdjustUnusualMoveDamage(struct BattleSystem *bsys, u32 attacker, u32 defende
     struct BattleStruct *ctx = bsys->sp;
     switch(effect){
         case MOVE_EFFECT_MULTI_HIT:
+            if (ctx->battlemon[attacker].ability == ABILITY_SKILL_LINK){
+                return damage *= 5;
+            }
+            else if(ctx->battlemon[attacker].item == ITEM_LOADED_DICE){
+                return damage *= 4;
+            }
+            else{
+                return damage *= 3; //average of 2-5 hits
+            }
             return damage *= 3;
         case MOVE_EFFECT_LEVEL_DAMAGE_FLAT:
         case MOVE_EFFECT_RANDOM_DAMAGE_1_TO_150_LEVEL:
@@ -1533,7 +1851,44 @@ int AdjustUnusualMoveDamage(struct BattleSystem *bsys, u32 attacker, u32 defende
         case MOVE_EFFECT_POISON_MULTI_HIT:
         case MOVE_EFFECT_HIT_TWICE:
             return damage *= 2; 
+        case MOVE_EFFECT_HALVE_HP:
+            return ctx->battlemon[defender].hp / 2;
+        case MOVE_EFFECT_SET_HP_EQUAL_TO_USER:
+            return ctx->battlemon[defender].hp - ctx->battlemon[attacker].hp;
+        case MOVE_EFFECT_DOUBLE_DAMAGE_ON_STATUS:
+            if(!ctx->battlemon[defender].condition & STATUS_NONE){
+                return damage * 2;
+            }
         default:
             return damage;   
     }
+}
+
+/*Returns the true move power of variable power moves like reversal or magnitude*/
+int AdjustUnusualMovePower(struct BattleSystem *bsys, u32 attacker, u32 defender, int moveEffect, AIContext *ai){
+    struct BattleStruct *ctx = bsys->sp;
+    switch(moveEffect){
+        case MOVE_EFFECT_RANDOM_POWER_10_CASES:
+            return 71; //average power
+        case MOVE_EFFECT_INCREASE_POWER_WITH_LESS_HP:
+            if(ai->attackerPercentHP <= 4){
+                return 200;
+            }
+            else if(ai->attackerPercentHP <= 10){
+                return 150;
+            }
+            else if(ai->attackerPercentHP <= 21){
+                return 100;
+            }
+            else if(ai->attackerPercentHP <= 35){
+                return 80;
+            }
+            else if(ai->attackerPercentHP <= 69){
+                return 40;
+            }
+            else{
+                return 20;
+            }
+    }
+    return 0;
 }

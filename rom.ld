@@ -809,3 +809,6 @@ GetEggCyclesToSubtract = 0x0206CB34 | 1;
 sub_0206CCD8 = 0x0206CCD8 | 1;
 GenerateEggPID = 0x0206C274 | 1;
 sub_0209316C = 0x0209316C | 1;
+
+/* Trainer AI */
+MaskOfFlagNo = 0x020726C0 | 1;
