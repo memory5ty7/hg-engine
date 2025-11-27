@@ -36,7 +36,7 @@ movedata MOVE_POUND, "Écras'Face"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x05
     contesttype CONTEST_TOUGH
     terminatedata
@@ -52,7 +52,7 @@ movedata MOVE_KARATE_CHOP, "Poing Karaté"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x05
     contesttype CONTEST_TOUGH
     terminatedata
@@ -68,7 +68,7 @@ movedata MOVE_DOUBLE_SLAP, "Torgnoles"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x07
     contesttype CONTEST_TOUGH
     terminatedata
@@ -84,7 +84,7 @@ movedata MOVE_COMET_PUNCH, "Poing Comète"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x07
     contesttype CONTEST_TOUGH
     terminatedata
@@ -100,7 +100,7 @@ movedata MOVE_MEGA_PUNCH, "Ultimapoing"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x12
     contesttype CONTEST_TOUGH
     terminatedata
@@ -116,7 +116,7 @@ movedata MOVE_PAY_DAY, "Jackpot"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x17
     contesttype CONTEST_SMART
     terminatedata
@@ -180,7 +180,7 @@ movedata MOVE_SCRATCH, "Griffe"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x05
     contesttype CONTEST_TOUGH
     terminatedata
@@ -196,7 +196,7 @@ movedata MOVE_VICE_GRIP, "Force Poigne"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x05
     contesttype CONTEST_TOUGH
     terminatedata
@@ -228,7 +228,7 @@ movedata MOVE_RAZOR_WIND, "Coupe-Vent"
     effectchance 0
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x06
     contesttype CONTEST_COOL
     terminatedata
@@ -260,7 +260,7 @@ movedata MOVE_CUT, "Coupe"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x05
     contesttype CONTEST_COOL
     terminatedata
@@ -276,7 +276,7 @@ movedata MOVE_GUST, "Tornade"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x05
     contesttype CONTEST_SMART
     terminatedata
@@ -292,7 +292,7 @@ movedata MOVE_WING_ATTACK, "Cru-Ailes"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x05
     contesttype CONTEST_COOL
     terminatedata
@@ -324,7 +324,7 @@ movedata MOVE_FLY, "Vol"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_HIDE_SHADOW | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_HIDE_SHADOW | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x06
     contesttype CONTEST_SMART
     terminatedata
@@ -340,7 +340,7 @@ movedata MOVE_BIND, "Étreinte"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x15
     contesttype CONTEST_TOUGH
     terminatedata
@@ -356,7 +356,7 @@ movedata MOVE_SLAM, "Souplesse"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x05
     contesttype CONTEST_TOUGH
     terminatedata
@@ -372,7 +372,7 @@ movedata MOVE_VINE_WHIP, "Fouet Lianes"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x05
     contesttype CONTEST_COOL
     terminatedata
@@ -404,7 +404,7 @@ movedata MOVE_DOUBLE_KICK, "Double Pied"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x07
     contesttype CONTEST_COOL
     terminatedata
@@ -420,7 +420,7 @@ movedata MOVE_MEGA_KICK, "Ultimawashi"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_HIDE_SHADOW | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_HIDE_SHADOW | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x12
     contesttype CONTEST_COOL
     terminatedata
@@ -436,7 +436,7 @@ movedata MOVE_JUMP_KICK, "Pied Sauté"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x05
     contesttype CONTEST_COOL
     terminatedata
@@ -452,7 +452,7 @@ movedata MOVE_ROLLING_KICK, "Mawashi Geri"
     effectchance 30
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x05
     contesttype CONTEST_COOL
     terminatedata
@@ -500,7 +500,7 @@ movedata MOVE_HORN_ATTACK, "Koud'Korne"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x05
     contesttype CONTEST_COOL
     terminatedata
@@ -516,7 +516,7 @@ movedata MOVE_FURY_ATTACK, "Furie"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x07
     contesttype CONTEST_COOL
     terminatedata
@@ -548,7 +548,7 @@ movedata MOVE_TACKLE, "Charge"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x05
     contesttype CONTEST_TOUGH
     terminatedata
@@ -580,7 +580,7 @@ movedata MOVE_WRAP, "Ligotage"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x15
     contesttype CONTEST_TOUGH
     terminatedata
@@ -596,7 +596,7 @@ movedata MOVE_TAKE_DOWN, "Bélier"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x05
     contesttype CONTEST_TOUGH
     terminatedata
@@ -612,7 +612,7 @@ movedata MOVE_THRASH, "Mania"
     effectchance 0
     target RANGE_RANDOM_OPPONENT
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x07
     contesttype CONTEST_TOUGH
     terminatedata
@@ -628,7 +628,7 @@ movedata MOVE_DOUBLE_EDGE, "Damoclès"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_HIDE_SHADOW | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_HIDE_SHADOW | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x09
     contesttype CONTEST_TOUGH
     terminatedata
@@ -676,7 +676,7 @@ movedata MOVE_TWINEEDLE, "Double Dard"
     effectchance 20
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x07
     contesttype CONTEST_COOL
     terminatedata
@@ -692,7 +692,7 @@ movedata MOVE_PIN_MISSILE, "Dard-Nuée"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x07
     contesttype CONTEST_COOL
     terminatedata
@@ -804,7 +804,7 @@ movedata MOVE_SONIC_BOOM, "Sonic Boom"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x05
     contesttype CONTEST_COOL
     terminatedata
@@ -900,7 +900,7 @@ movedata MOVE_WATER_GUN, "Pistolet à O"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x05
     contesttype CONTEST_CUTE
     terminatedata
@@ -916,7 +916,7 @@ movedata MOVE_HYDRO_PUMP, "Hydrocanon"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_HIDE_SHADOW | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_HIDE_SHADOW | FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x11
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -932,7 +932,7 @@ movedata MOVE_SURF, "Surf"
     effectchance 0
     target RANGE_ALL_ADJACENT
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x11
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -1028,7 +1028,7 @@ movedata MOVE_HYPER_BEAM, "Ultralaser"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_HIDE_SHADOW | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_HIDE_SHADOW | FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x16
     contesttype CONTEST_COOL
     terminatedata
@@ -1044,7 +1044,7 @@ movedata MOVE_PECK, "Picpic"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x05
     contesttype CONTEST_COOL
     terminatedata
@@ -1060,7 +1060,7 @@ movedata MOVE_DRILL_PECK, "Bec Vrille"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x05
     contesttype CONTEST_COOL
     terminatedata
@@ -1076,7 +1076,7 @@ movedata MOVE_SUBMISSION, "Sacrifice"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x05
     contesttype CONTEST_COOL
     terminatedata
@@ -1092,7 +1092,7 @@ movedata MOVE_LOW_KICK, "Balayage"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x05
     contesttype CONTEST_TOUGH
     terminatedata
@@ -1124,7 +1124,7 @@ movedata MOVE_SEISMIC_TOSS, "Frappe Atlas"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_HIDE_SHADOW | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_HIDE_SHADOW | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x05
     contesttype CONTEST_TOUGH
     terminatedata
@@ -1140,7 +1140,7 @@ movedata MOVE_STRENGTH, "Force"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x05
     contesttype CONTEST_TOUGH
     terminatedata
@@ -1220,7 +1220,7 @@ movedata MOVE_RAZOR_LEAF, "Tranch'Herbe"
     effectchance 0
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x05
     contesttype CONTEST_COOL
     terminatedata
@@ -1236,7 +1236,7 @@ movedata MOVE_SOLAR_BEAM, "Lance-Soleil"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x06
     contesttype CONTEST_COOL
     terminatedata
@@ -1300,7 +1300,7 @@ movedata MOVE_PETAL_DANCE, "Danse Fleurs"
     effectchance 0
     target RANGE_RANDOM_OPPONENT
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x15
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -1332,7 +1332,7 @@ movedata MOVE_DRAGON_RAGE, "Draco-Rage"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x05
     contesttype CONTEST_COOL
     terminatedata
@@ -1348,7 +1348,7 @@ movedata MOVE_FIRE_SPIN, "Danse Flammes"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x15
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -1428,7 +1428,7 @@ movedata MOVE_ROCK_THROW, "Jet-Pierres"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x05
     contesttype CONTEST_TOUGH
     terminatedata
@@ -1444,7 +1444,7 @@ movedata MOVE_EARTHQUAKE, "Séisme"
     effectchance 0
     target RANGE_ALL_ADJACENT
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x12
     contesttype CONTEST_TOUGH
     terminatedata
@@ -1476,7 +1476,7 @@ movedata MOVE_DIG, "Tunnel"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x06
     contesttype CONTEST_SMART
     terminatedata
@@ -1556,7 +1556,7 @@ movedata MOVE_MEDITATE, "Yoga"
     effectchance 0
     target RANGE_USER
     priority 0
-    flags FLAG_SNATCH
+    flags FLAG_SNATCH | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x0B
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -1588,7 +1588,7 @@ movedata MOVE_QUICK_ATTACK, "Vive-attaque"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 1
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x01
     contesttype CONTEST_COOL
     terminatedata
@@ -1604,7 +1604,7 @@ movedata MOVE_RAGE, "Frénésie"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x0B
     contesttype CONTEST_COOL
     terminatedata
@@ -1636,7 +1636,7 @@ movedata MOVE_NIGHT_SHADE, "Ombre Nocturne"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x05
     contesttype CONTEST_SMART
     terminatedata
@@ -1812,7 +1812,7 @@ movedata MOVE_BARRIER, "Bouclier"
     effectchance 0
     target RANGE_USER
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_SNATCH
+    flags FLAG_KEEP_HP_BAR | FLAG_SNATCH | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x0D
     contesttype CONTEST_COOL
     terminatedata
@@ -1892,7 +1892,7 @@ movedata MOVE_BIDE, "Patience"
     effectchance 0
     target RANGE_USER
     priority 1
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_CONTACT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x0F
     contesttype CONTEST_TOUGH
     terminatedata
@@ -1924,7 +1924,7 @@ movedata MOVE_MIRROR_MOVE, "Mimique"
     effectchance 0
     target RANGE_SINGLE_TARGET_SPECIAL
     priority 0
-    flags 0
+    flags FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x0F
     contesttype CONTEST_SMART
     terminatedata
@@ -1940,7 +1940,7 @@ movedata MOVE_SELF_DESTRUCT, "Destruction"
     effectchance 0
     target RANGE_ALL_ADJACENT
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x09
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -1956,7 +1956,7 @@ movedata MOVE_EGG_BOMB, "Bombe Œuf"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x05
     contesttype CONTEST_TOUGH
     terminatedata
@@ -2020,7 +2020,7 @@ movedata MOVE_BONE_CLUB, "Massd'Os"
     effectchance 10
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x05
     contesttype CONTEST_TOUGH
     terminatedata
@@ -2052,7 +2052,7 @@ movedata MOVE_WATERFALL, "Cascade"
     effectchance 20
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_HIDE_SHADOW | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_HIDE_SHADOW | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x05
     contesttype CONTEST_TOUGH
     terminatedata
@@ -2068,7 +2068,7 @@ movedata MOVE_CLAMP, "Claquoir"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x05
     contesttype CONTEST_TOUGH
     terminatedata
@@ -2084,7 +2084,7 @@ movedata MOVE_SWIFT, "Météores"
     effectchance 0
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x11
     contesttype CONTEST_COOL
     terminatedata
@@ -2100,7 +2100,7 @@ movedata MOVE_SKULL_BASH, "Coud'Krâne"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x06
     contesttype CONTEST_TOUGH
     terminatedata
@@ -2116,7 +2116,7 @@ movedata MOVE_SPIKE_CANNON, "Picanon"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x07
     contesttype CONTEST_COOL
     terminatedata
@@ -2132,7 +2132,7 @@ movedata MOVE_CONSTRICT, "Constriction"
     effectchance 10
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x15
     contesttype CONTEST_TOUGH
     terminatedata
@@ -2164,7 +2164,7 @@ movedata MOVE_KINESIS, "Télékinésie"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_MAGIC_COAT | FLAG_PROTECT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_MAGIC_COAT | FLAG_PROTECT | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x0B
     contesttype CONTEST_SMART
     terminatedata
@@ -2196,7 +2196,7 @@ movedata MOVE_HIGH_JUMP_KICK, "Pied Voltige"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x05
     contesttype CONTEST_COOL
     terminatedata
@@ -2260,7 +2260,7 @@ movedata MOVE_BARRAGE, "Pilonnage"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x07
     contesttype CONTEST_TOUGH
     terminatedata
@@ -2308,7 +2308,7 @@ movedata MOVE_SKY_ATTACK, "Piqué"
     effectchance 30
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x06
     contesttype CONTEST_COOL
     terminatedata
@@ -2340,7 +2340,7 @@ movedata MOVE_BUBBLE, "Écume"
     effectchance 10
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x02
     contesttype CONTEST_CUTE
     terminatedata
@@ -2356,7 +2356,7 @@ movedata MOVE_DIZZY_PUNCH, "Uppercut"
     effectchance 20
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x10
     contesttype CONTEST_COOL
     terminatedata
@@ -2388,7 +2388,7 @@ movedata MOVE_FLASH, "Flash"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_HIDE_SHADOW | FLAG_MIRROR_MOVE | FLAG_MAGIC_COAT | FLAG_PROTECT
+    flags FLAG_HIDE_SHADOW | FLAG_MIRROR_MOVE | FLAG_MAGIC_COAT | FLAG_PROTECT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x0A
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -2404,7 +2404,7 @@ movedata MOVE_PSYWAVE, "Vague Psy"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x05
     contesttype CONTEST_SMART
     terminatedata
@@ -2452,7 +2452,7 @@ movedata MOVE_CRABHAMMER, "Pince-Masse"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x12
     contesttype CONTEST_TOUGH
     terminatedata
@@ -2468,7 +2468,7 @@ movedata MOVE_EXPLOSION, "Explosion"
     effectchance 0
     target RANGE_ALL_ADJACENT
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x09
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -2484,7 +2484,7 @@ movedata MOVE_FURY_SWIPES, "Combo-Griffe"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x07
     contesttype CONTEST_TOUGH
     terminatedata
@@ -2500,7 +2500,7 @@ movedata MOVE_BONEMERANG, "Osmerang"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x07
     contesttype CONTEST_TOUGH
     terminatedata
@@ -2548,7 +2548,7 @@ movedata MOVE_HYPER_FANG, "Croc de Mort"
     effectchance 10
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x12
     contesttype CONTEST_COOL
     terminatedata
@@ -2564,7 +2564,7 @@ movedata MOVE_SHARPEN, "Affûtage"
     effectchance 0
     target RANGE_USER
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_SNATCH
+    flags FLAG_KEEP_HP_BAR | FLAG_SNATCH | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x0B
     contesttype CONTEST_CUTE
     terminatedata
@@ -2628,7 +2628,7 @@ movedata MOVE_SLASH, "Tranche"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x05
     contesttype CONTEST_COOL
     terminatedata
@@ -2660,7 +2660,7 @@ movedata MOVE_STRUGGLE, "Lutte"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x05
     contesttype CONTEST_COOL
     terminatedata
@@ -2676,7 +2676,7 @@ movedata MOVE_SKETCH, "Gribouille"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags 0
+    flags FLAG_UNUSABLE_IN_GEN_8
     appeal 0x17
     contesttype CONTEST_SMART
     terminatedata
@@ -2692,7 +2692,7 @@ movedata MOVE_TRIPLE_KICK, "Triple Pied"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x07
     contesttype CONTEST_COOL
     terminatedata
@@ -2724,7 +2724,7 @@ movedata MOVE_SPIDER_WEB, "Toile"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_MAGIC_COAT
+    flags FLAG_MIRROR_MOVE | FLAG_MAGIC_COAT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x0D
     contesttype CONTEST_SMART
     terminatedata
@@ -2740,7 +2740,7 @@ movedata MOVE_MIND_READER, "Lire-Esprit"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x14
     contesttype CONTEST_SMART
     terminatedata
@@ -2756,7 +2756,7 @@ movedata MOVE_NIGHTMARE, "Cauchemar"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x13
     contesttype CONTEST_SMART
     terminatedata
@@ -2788,7 +2788,7 @@ movedata MOVE_SNORE, "Ronflement"
     effectchance 30
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x05
     contesttype CONTEST_CUTE
     terminatedata
@@ -2820,7 +2820,7 @@ movedata MOVE_FLAIL, "Gigotage"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x0F
     contesttype CONTEST_CUTE
     terminatedata
@@ -2852,7 +2852,7 @@ movedata MOVE_AEROBLAST, "Aéroblast"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_HIDE_SHADOW | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_HIDE_SHADOW | FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x16
     contesttype CONTEST_COOL
     terminatedata
@@ -2884,7 +2884,7 @@ movedata MOVE_REVERSAL, "Contre"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x0F
     contesttype CONTEST_COOL
     terminatedata
@@ -2948,7 +2948,7 @@ movedata MOVE_MACH_PUNCH, "Mach Punch"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 1
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x01
     contesttype CONTEST_COOL
     terminatedata
@@ -2980,7 +2980,7 @@ movedata MOVE_FEINT_ATTACK, "Feinte"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x12
     contesttype CONTEST_SMART
     terminatedata
@@ -3108,7 +3108,7 @@ movedata MOVE_FORESIGHT, "Clairvoyance"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x14
     contesttype CONTEST_SMART
     terminatedata
@@ -3188,7 +3188,7 @@ movedata MOVE_BONE_RUSH, "Charge Os"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x07
     contesttype CONTEST_TOUGH
     terminatedata
@@ -3220,7 +3220,7 @@ movedata MOVE_OUTRAGE, "Colère"
     effectchance 0
     target RANGE_RANDOM_OPPONENT
     priority 0
-    flags FLAG_HIDE_SHADOW | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_HIDE_SHADOW | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x07
     contesttype CONTEST_COOL
     terminatedata
@@ -3300,7 +3300,7 @@ movedata MOVE_ROLLOUT, "Roulade"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x07
     contesttype CONTEST_TOUGH
     terminatedata
@@ -3316,7 +3316,7 @@ movedata MOVE_FALSE_SWIPE, "Faux-Chage"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x10
     contesttype CONTEST_COOL
     terminatedata
@@ -3380,7 +3380,7 @@ movedata MOVE_FURY_CUTTER, "Taillade"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x07
     contesttype CONTEST_COOL
     terminatedata
@@ -3396,7 +3396,7 @@ movedata MOVE_STEEL_WING, "Ailes d'Acier"
     effectchance 10
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x05
     contesttype CONTEST_COOL
     terminatedata
@@ -3476,7 +3476,7 @@ movedata MOVE_RETURN, "Retour"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x11
     contesttype CONTEST_CUTE
     terminatedata
@@ -3508,7 +3508,7 @@ movedata MOVE_FRUSTRATION, "Frustration"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x12
     contesttype CONTEST_CUTE
     terminatedata
@@ -3572,7 +3572,7 @@ movedata MOVE_MAGNITUDE, "Ampleur"
     effectchance 0
     target RANGE_ALL_ADJACENT
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x12
     contesttype CONTEST_TOUGH
     terminatedata
@@ -3604,7 +3604,7 @@ movedata MOVE_MEGAHORN, "Mégacorne"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_HIDE_SHADOW | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_HIDE_SHADOW | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x12
     contesttype CONTEST_COOL
     terminatedata
@@ -3620,7 +3620,7 @@ movedata MOVE_DRAGON_BREATH, "Draco-Souffle"
     effectchance 30
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x11
     contesttype CONTEST_COOL
     terminatedata
@@ -3668,7 +3668,7 @@ movedata MOVE_PURSUIT, "Poursuite"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_HIDE_SHADOW | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_HIDE_SHADOW | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x14
     contesttype CONTEST_SMART
     terminatedata
@@ -3684,7 +3684,7 @@ movedata MOVE_RAPID_SPIN, "Tour Rapide"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x11
     contesttype CONTEST_COOL
     terminatedata
@@ -3748,14 +3748,14 @@ movedata MOVE_VITAL_THROW, "Corps Perdu"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority -1
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x02
     contesttype CONTEST_COOL
     terminatedata
     movedescription MOVE_VITAL_THROW, "The user allows the\nfoe to attack first.\nIn return, this throw\nmove is guaranteed\nnot to miss."
 
 movedata MOVE_MORNING_SUN, "Aurore"
-    battleeffect MOVE_EFFECT_HEAL_HALF_MORE_IN_SUN
+    battleeffect MOVE_EFFECT_HEAL_HALF_DIFFERENT_IN_WEATHER
     pss SPLIT_STATUS
     basepower 0
     type TYPE_NORMAL
@@ -3771,7 +3771,7 @@ movedata MOVE_MORNING_SUN, "Aurore"
     movedescription MOVE_MORNING_SUN, "The user restores its\nown HP.\nThe amount of HP\nregained varies with\nthe weather."
 
 movedata MOVE_SYNTHESIS, "Synthèse"
-    battleeffect MOVE_EFFECT_HEAL_HALF_MORE_IN_SUN
+    battleeffect MOVE_EFFECT_HEAL_HALF_DIFFERENT_IN_WEATHER
     pss SPLIT_STATUS
     basepower 0
     type TYPE_GRASS
@@ -3787,7 +3787,7 @@ movedata MOVE_SYNTHESIS, "Synthèse"
     movedescription MOVE_SYNTHESIS, "The user restores its\nown HP.\nThe amount of HP\nregained varies with\nthe weather."
 
 movedata MOVE_MOONLIGHT, "Rayon Lune"
-    battleeffect MOVE_EFFECT_HEAL_HALF_MORE_IN_SUN
+    battleeffect MOVE_EFFECT_HEAL_HALF_DIFFERENT_IN_WEATHER
     pss SPLIT_STATUS
     basepower 0
     type FAIRY_TYPE_IMPLEMENTED ? TYPE_FAIRY : TYPE_NORMAL
@@ -3812,7 +3812,7 @@ movedatalongname MOVE_HIDDEN_POWER, "Puis. Cachée", "Puissance Cachée"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x17
     contesttype CONTEST_SMART
     terminatedata
@@ -3828,7 +3828,7 @@ movedata MOVE_CROSS_CHOP, "Coup Croix"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x12
     contesttype CONTEST_COOL
     terminatedata
@@ -3844,7 +3844,7 @@ movedata MOVE_TWISTER, "Ouragan"
     effectchance 20
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x05
     contesttype CONTEST_COOL
     terminatedata
@@ -3940,7 +3940,7 @@ movedata MOVE_EXTREME_SPEED, "Vitesse Extrême"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 2
-    flags FLAG_HIDE_SHADOW | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_HIDE_SHADOW | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x01
     contesttype CONTEST_COOL
     terminatedata
@@ -4020,7 +4020,7 @@ movedata MOVE_WHIRLPOOL, "Siphon"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_HIDE_SHADOW | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_HIDE_SHADOW | FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x15
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -4036,7 +4036,7 @@ movedata MOVE_BEAT_UP, "Baston"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x07
     contesttype CONTEST_SMART
     terminatedata
@@ -4068,7 +4068,7 @@ movedata MOVE_UPROAR, "Brouhaha"
     effectchance 0
     target RANGE_RANDOM_OPPONENT
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x0A
     contesttype CONTEST_CUTE
     terminatedata
@@ -4100,7 +4100,7 @@ movedata MOVE_SPIT_UP, "Relâche"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_PROTECT
+    flags FLAG_PROTECT
     appeal 0x12
     contesttype CONTEST_TOUGH
     terminatedata
@@ -4148,7 +4148,7 @@ movedata MOVE_HAIL, "Grêle"
     effectchance 0
     target RANGE_FIELD
     priority 0
-    flags 0
+    flags FLAG_UNUSABLE_IN_GEN_9
     appeal 0x0D
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -4260,7 +4260,7 @@ movedata MOVE_SMELLING_SALTS, "Stimulant"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x10
     contesttype CONTEST_SMART
     terminatedata
@@ -4292,7 +4292,7 @@ movedata MOVE_NATURE_POWER, "Force Nature"
     effectchance 0
     target RANGE_SINGLE_TARGET_SPECIAL
     priority 0
-    flags FLAG_KEEP_HP_BAR
+    flags FLAG_KEEP_HP_BAR | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x0E
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -4404,7 +4404,7 @@ movedata MOVE_ASSIST, "Assistance"
     effectchance 0
     target RANGE_SINGLE_TARGET_SPECIAL
     priority 0
-    flags 0
+    flags FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x0E
     contesttype CONTEST_CUTE
     terminatedata
@@ -4452,7 +4452,7 @@ movedata MOVE_MAGIC_COAT, "Reflet Magik"
     effectchance 0
     target RANGE_SINGLE_TARGET_SPECIAL
     priority 4
-    flags 0
+    flags FLAG_UNUSABLE_IN_GEN_9
     appeal 0x0F
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -4484,7 +4484,7 @@ movedata MOVE_REVENGE, "Vendetta"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority -4
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x0F
     contesttype CONTEST_TOUGH
     terminatedata
@@ -4500,7 +4500,7 @@ movedata MOVE_BRICK_BREAK, "Casse-Brique"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x05
     contesttype CONTEST_COOL
     terminatedata
@@ -4548,7 +4548,7 @@ movedata MOVE_ENDEAVOR, "Effort"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x0F
     contesttype CONTEST_TOUGH
     terminatedata
@@ -4564,7 +4564,7 @@ movedata MOVE_ERUPTION, "Éruption"
     effectchance 0
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x12
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -4612,7 +4612,7 @@ movedata MOVE_REFRESH, "Régénération"
     effectchance 0
     target RANGE_USER
     priority 0
-    flags FLAG_SNATCH
+    flags FLAG_SNATCH | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x08
     contesttype CONTEST_CUTE
     terminatedata
@@ -4628,7 +4628,7 @@ movedata MOVE_GRUDGE, "Rancune"
     effectchance 0
     target RANGE_USER
     priority 0
-    flags 0
+    flags FLAG_UNUSABLE_IN_GEN_9
     appeal 0x0A
     contesttype CONTEST_TOUGH
     terminatedata
@@ -4644,7 +4644,7 @@ movedata MOVE_SNATCH, "Saisie"
     effectchance 0
     target RANGE_SINGLE_TARGET_SPECIAL
     priority 4
-    flags 0
+    flags FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x0C
     contesttype CONTEST_SMART
     terminatedata
@@ -4660,7 +4660,7 @@ movedata MOVE_SECRET_POWER, "Force Cachée"
     effectchance 30
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x0E
     contesttype CONTEST_SMART
     terminatedata
@@ -4676,7 +4676,7 @@ movedata MOVE_DIVE, "Plongée"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x06
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -4692,7 +4692,7 @@ movedata MOVE_ARM_THRUST, "Cogne"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x07
     contesttype CONTEST_TOUGH
     terminatedata
@@ -4708,7 +4708,7 @@ movedata MOVE_CAMOUFLAGE, "Camouflage"
     effectchance 0
     target RANGE_USER
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_SNATCH
+    flags FLAG_KEEP_HP_BAR | FLAG_SNATCH | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x0D
     contesttype CONTEST_SMART
     terminatedata
@@ -4724,7 +4724,7 @@ movedata MOVE_TAIL_GLOW, "Lumi-Queue"
     effectchance 0
     target RANGE_USER
     priority 0
-    flags FLAG_SNATCH
+    flags FLAG_SNATCH | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x0B
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -4820,7 +4820,7 @@ movedata MOVE_MUD_SPORT, "Lance-Boue"
     effectchance 0
     target RANGE_FIELD
     priority 0
-    flags 0
+    flags FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x0D
     contesttype CONTEST_CUTE
     terminatedata
@@ -4836,7 +4836,7 @@ movedata MOVE_ICE_BALL, "Ball'Glace"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x07
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -4852,7 +4852,7 @@ movedata MOVE_NEEDLE_ARM, "Poing Dard"
     effectchance 30
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x05
     contesttype CONTEST_SMART
     terminatedata
@@ -4932,7 +4932,7 @@ movedata MOVE_BLAST_BURN, "Rafale Feu"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x16
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -4948,7 +4948,7 @@ movedata MOVE_HYDRO_CANNON, "Hydroblast"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_HIDE_SHADOW | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_HIDE_SHADOW | FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x16
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -4964,7 +4964,7 @@ movedata MOVE_METEOR_MASH, "Poing Météore"
     effectchance 20
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x12
     contesttype CONTEST_COOL
     terminatedata
@@ -4996,7 +4996,7 @@ movedata MOVE_WEATHER_BALL, "Ball'Météo"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x04
     contesttype CONTEST_SMART
     terminatedata
@@ -5011,7 +5011,7 @@ movedata MOVE_AROMATHERAPY, "Aromathérapie"
     pp 5
     effectchance 0
     target RANGE_USER_SIDE
-    priority 0
+    priority FLAG_UNUSABLE_IN_GEN_9
     flags FLAG_SNATCH
     appeal 0x08
     contesttype CONTEST_SMART
@@ -5044,7 +5044,7 @@ movedata MOVE_AIR_CUTTER, "Tranch'Air"
     effectchance 0
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x05
     contesttype CONTEST_COOL
     terminatedata
@@ -5060,7 +5060,7 @@ movedata MOVE_OVERHEAT, "Surchauffe"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_HIDE_SHADOW | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_HIDE_SHADOW | FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x16
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -5076,7 +5076,7 @@ movedata MOVE_ODOR_SLEUTH, "Flair"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x14
     contesttype CONTEST_SMART
     terminatedata
@@ -5108,7 +5108,7 @@ movedata MOVE_SILVER_WIND, "Vent Argenté"
     effectchance 10
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x04
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -5140,7 +5140,7 @@ movedata MOVE_GRASS_WHISTLE, "Siffl'Herbe"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_MAGIC_COAT | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_MAGIC_COAT | FLAG_PROTECT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x13
     contesttype CONTEST_SMART
     terminatedata
@@ -5204,7 +5204,7 @@ movedata MOVE_SIGNAL_BEAM, "Rayon Signal"
     effectchance 10
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x04
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -5220,7 +5220,7 @@ movedata MOVE_SHADOW_PUNCH, "Poing Ombre"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x11
     contesttype CONTEST_SMART
     terminatedata
@@ -5252,7 +5252,7 @@ movedata MOVE_SKY_UPPERCUT, "Stratopercut"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_HIDE_SHADOW | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_HIDE_SHADOW | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x11
     contesttype CONTEST_COOL
     terminatedata
@@ -5268,7 +5268,7 @@ movedata MOVE_SAND_TOMB, "Tourbi-Sable"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x15
     contesttype CONTEST_SMART
     terminatedata
@@ -5300,7 +5300,7 @@ movedata MOVE_MUDDY_WATER, "Ocroupi"
     effectchance 30
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x12
     contesttype CONTEST_TOUGH
     terminatedata
@@ -5316,7 +5316,7 @@ movedata MOVE_BULLET_SEED, "Balle Graine"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x07
     contesttype CONTEST_COOL
     terminatedata
@@ -5332,7 +5332,7 @@ movedata MOVE_AERIAL_ACE, "Aéropique"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x11
     contesttype CONTEST_COOL
     terminatedata
@@ -5348,7 +5348,7 @@ movedata MOVE_ICICLE_SPEAR, "Stalagtite"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x07
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -5387,20 +5387,20 @@ movedata MOVE_BLOCK, "Barrage"
     movedescription MOVE_BLOCK, "The user blocks the\nfoe’s way with arms\nspread wide to\nprevent escape.\n"
 
 movedata MOVE_HOWL, "Grondement"
-    battleeffect MOVE_EFFECT_ATK_UP
+    battleeffect MOVE_EFFECT_HOWL
     pss SPLIT_STATUS
     basepower 0
     type TYPE_NORMAL
     accuracy 0
     pp 40
     effectchance 0
-    target RANGE_USER
+    target RANGE_USER_SIDE
     priority 0
     flags FLAG_SNATCH
     appeal 0x0B
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_HOWL, "The user howls loudly\nto raise its spirit,\nboosting its Attack\nstat.\n"
+    movedescription MOVE_HOWL, "The user howls\nloudly to rouse\nitself and its\nallies. This boosts\ntheir Attack stats."
 
 movedata MOVE_DRAGON_CLAW, "Draco-Griffe"
     battleeffect MOVE_EFFECT_HIT
@@ -5412,7 +5412,7 @@ movedata MOVE_DRAGON_CLAW, "Draco-Griffe"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x11
     contesttype CONTEST_COOL
     terminatedata
@@ -5428,7 +5428,7 @@ movedata MOVE_FRENZY_PLANT, "Végé-Attaque"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_HIDE_SHADOW | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_HIDE_SHADOW | FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x16
     contesttype CONTEST_COOL
     terminatedata
@@ -5460,7 +5460,7 @@ movedata MOVE_BOUNCE, "Rebond"
     effectchance 30
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x06
     contesttype CONTEST_CUTE
     terminatedata
@@ -5476,7 +5476,7 @@ movedata MOVE_MUD_SHOT, "Tir de Boue"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x02
     contesttype CONTEST_TOUGH
     terminatedata
@@ -5492,7 +5492,7 @@ movedata MOVE_POISON_TAIL, "Queue-Poison"
     effectchance 10
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x04
     contesttype CONTEST_SMART
     terminatedata
@@ -5524,7 +5524,7 @@ movedata MOVE_VOLT_TACKLE, "Électacle"
     effectchance 10
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_HIDE_SHADOW | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_HIDE_SHADOW | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x16
     contesttype CONTEST_COOL
     terminatedata
@@ -5540,7 +5540,7 @@ movedata MOVE_MAGICAL_LEAF, "Feuille Magik"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x11
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -5556,7 +5556,7 @@ movedata MOVE_WATER_SPORT, "Tourniquet"
     effectchance 0
     target RANGE_FIELD
     priority 0
-    flags 0
+    flags FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x0D
     contesttype CONTEST_CUTE
     terminatedata
@@ -5588,7 +5588,7 @@ movedata MOVE_LEAF_BLADE, "Lame Feuille"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x11
     contesttype CONTEST_COOL
     terminatedata
@@ -5620,7 +5620,7 @@ movedata MOVE_ROCK_BLAST, "Boule Roc"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x07
     contesttype CONTEST_TOUGH
     terminatedata
@@ -5636,7 +5636,7 @@ movedata MOVE_SHOCK_WAVE, "Onde de Choc"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x11
     contesttype CONTEST_COOL
     terminatedata
@@ -5652,7 +5652,7 @@ movedata MOVE_WATER_PULSE, "Vibraqua"
     effectchance 20
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_HIDE_SHADOW | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_HIDE_SHADOW | FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x11
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -5684,7 +5684,7 @@ movedata MOVE_PSYCHO_BOOST, "Psycho-Boost"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_HIDE_SHADOW | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_HIDE_SHADOW | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x16
     contesttype CONTEST_SMART
     terminatedata
@@ -5732,7 +5732,7 @@ movedata MOVE_MIRACLE_EYE, "Œil Miracle"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x14
     contesttype CONTEST_CUTE
     terminatedata
@@ -5748,7 +5748,7 @@ movedata MOVE_WAKE_UP_SLAP, "Réveil Forcé"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x10
     contesttype CONTEST_SMART
     terminatedata
@@ -5764,7 +5764,7 @@ movedata MOVE_HAMMER_ARM, "Marto-Poing"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x02
     contesttype CONTEST_COOL
     terminatedata
@@ -5780,7 +5780,7 @@ movedata MOVE_GYRO_BALL, "Gyroballe"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x0F
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -5812,7 +5812,7 @@ movedata MOVE_BRINE, "Saumure"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x04
     contesttype CONTEST_SMART
     terminatedata
@@ -5828,7 +5828,7 @@ movedata MOVE_NATURAL_GIFT, "Don Naturel"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x12
     contesttype CONTEST_COOL
     terminatedata
@@ -5860,7 +5860,7 @@ movedata MOVE_PLUCK, "Picore"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x0C
     contesttype CONTEST_CUTE
     terminatedata
@@ -5924,7 +5924,7 @@ movedata MOVE_U_TURN, "Demi-Tour"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x10
     contesttype CONTEST_CUTE
     terminatedata
@@ -5940,7 +5940,7 @@ movedata MOVE_CLOSE_COMBAT, "Close Combat"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_HIDE_SHADOW | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_HIDE_SHADOW | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x16
     contesttype CONTEST_SMART
     terminatedata
@@ -5956,7 +5956,7 @@ movedata MOVE_PAYBACK, "Représailles"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x06
     contesttype CONTEST_COOL
     terminatedata
@@ -5972,7 +5972,7 @@ movedata MOVE_ASSURANCE, "Assurance"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x0F
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -5988,7 +5988,7 @@ movedata MOVE_EMBARGO, "Embargo"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x0D
     contesttype CONTEST_CUTE
     terminatedata
@@ -6020,7 +6020,7 @@ movedata MOVE_PSYCHO_SHIFT, "Échange Psy"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x10
     contesttype CONTEST_COOL
     terminatedata
@@ -6036,7 +6036,7 @@ movedata MOVE_TRUMP_CARD, "Atout"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x15
     contesttype CONTEST_COOL
     terminatedata
@@ -6052,7 +6052,7 @@ movedata MOVE_HEAL_BLOCK, "Anti-Soin"
     effectchance 0
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x0D
     contesttype CONTEST_CUTE
     terminatedata
@@ -6068,7 +6068,7 @@ movedata MOVE_WRING_OUT, "Essorage"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x16
     contesttype CONTEST_SMART
     terminatedata
@@ -6116,7 +6116,7 @@ movedata MOVE_LUCKY_CHANT, "Air Veinard"
     effectchance 0
     target RANGE_USER_SIDE
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_SNATCH
+    flags FLAG_KEEP_HP_BAR | FLAG_SNATCH | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x0D
     contesttype CONTEST_CUTE
     terminatedata
@@ -6132,7 +6132,7 @@ movedata MOVE_ME_FIRST, "Moi d'Abord"
     effectchance 0
     target RANGE_FRONT
     priority 0
-    flags FLAG_PROTECT
+    flags FLAG_PROTECT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x01
     contesttype CONTEST_CUTE
     terminatedata
@@ -6196,7 +6196,7 @@ movedata MOVE_PUNISHMENT, "Punition"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x17
     contesttype CONTEST_SMART
     terminatedata
@@ -6212,7 +6212,7 @@ movedata MOVE_LAST_RESORT, "Dernier Recours"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x15
     contesttype CONTEST_CUTE
     terminatedata
@@ -6244,7 +6244,7 @@ movedata MOVE_SUCKER_PUNCH, "Coup Bas"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 1
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x01
     contesttype CONTEST_SMART
     terminatedata
@@ -6276,7 +6276,7 @@ movedata MOVE_HEART_SWAP, "Permucœur"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x10
     contesttype CONTEST_COOL
     terminatedata
@@ -6340,7 +6340,7 @@ movedata MOVE_FORCE_PALM, "Forte-Paume"
     effectchance 30
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x12
     contesttype CONTEST_COOL
     terminatedata
@@ -6356,7 +6356,7 @@ movedata MOVE_AURA_SPHERE, "Aurasphère"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_HIDE_SHADOW | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_HIDE_SHADOW | FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x11
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -6388,7 +6388,7 @@ movedata MOVE_POISON_JAB, "Direct Toxik"
     effectchance 30
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x04
     contesttype CONTEST_SMART
     terminatedata
@@ -6404,7 +6404,7 @@ movedata MOVE_DARK_PULSE, "Vibrobscur"
     effectchance 20
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x11
     contesttype CONTEST_COOL
     terminatedata
@@ -6420,7 +6420,7 @@ movedata MOVE_NIGHT_SLASH, "Tranche-Nuit"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x05
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -6436,7 +6436,7 @@ movedata MOVE_AQUA_TAIL, "Hydro-Queue"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x05
     contesttype CONTEST_CUTE
     terminatedata
@@ -6452,7 +6452,7 @@ movedata MOVE_SEED_BOMB, "Canon Graine"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x05
     contesttype CONTEST_SMART
     terminatedata
@@ -6468,7 +6468,7 @@ movedata MOVE_AIR_SLASH, "Lame d'Air"
     effectchance 30
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x11
     contesttype CONTEST_COOL
     terminatedata
@@ -6484,7 +6484,7 @@ movedata MOVE_X_SCISSOR, "Plaie Croix"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x11
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -6516,7 +6516,7 @@ movedata MOVE_DRAGON_PULSE, "Draco-Choc"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x04
     contesttype CONTEST_SMART
     terminatedata
@@ -6532,7 +6532,7 @@ movedata MOVE_DRAGON_RUSH, "Draco-Charge"
     effectchance 20
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x12
     contesttype CONTEST_COOL
     terminatedata
@@ -6548,7 +6548,7 @@ movedata MOVE_POWER_GEM, "Rayon Gemme"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x05
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -6564,7 +6564,7 @@ movedata MOVE_DRAIN_PUNCH, "Vampi-Poing"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x14
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -6580,7 +6580,7 @@ movedata MOVE_VACUUM_WAVE, "Onde Vide"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 1
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x01
     contesttype CONTEST_SMART
     terminatedata
@@ -6628,7 +6628,7 @@ movedata MOVE_BRAVE_BIRD, "Rapace"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_HIDE_SHADOW | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_HIDE_SHADOW | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x12
     contesttype CONTEST_CUTE
     terminatedata
@@ -6644,7 +6644,7 @@ movedata MOVE_EARTH_POWER, "Telluriforce"
     effectchance 10
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x12
     contesttype CONTEST_SMART
     terminatedata
@@ -6676,7 +6676,7 @@ movedata MOVE_GIGA_IMPACT, "Giga Impact"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_HIDE_SHADOW | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_HIDE_SHADOW | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x16
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -6708,7 +6708,7 @@ movedata MOVE_BULLET_PUNCH, "Pisto-Poing"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 1
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x01
     contesttype CONTEST_SMART
     terminatedata
@@ -6724,7 +6724,7 @@ movedata MOVE_AVALANCHE, "Avalanche"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority -4
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x0F
     contesttype CONTEST_COOL
     terminatedata
@@ -6740,7 +6740,7 @@ movedata MOVE_ICE_SHARD, "Éclats Glace"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 1
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x01
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -6756,7 +6756,7 @@ movedata MOVE_SHADOW_CLAW, "Griffe Ombre"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x11
     contesttype CONTEST_CUTE
     terminatedata
@@ -6772,7 +6772,7 @@ movedata MOVE_THUNDER_FANG, "Crocs Éclair"
     effectchance 10
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x05
     contesttype CONTEST_SMART
     terminatedata
@@ -6788,7 +6788,7 @@ movedata MOVE_ICE_FANG, "Crocs Givre"
     effectchance 10
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x05
     contesttype CONTEST_COOL
     terminatedata
@@ -6804,7 +6804,7 @@ movedata MOVE_FIRE_FANG, "Crocs Feu"
     effectchance 10
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x05
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -6820,7 +6820,7 @@ movedata MOVE_SHADOW_SNEAK, "Ombre Portée"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 1
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x01
     contesttype CONTEST_SMART
     terminatedata
@@ -6836,7 +6836,7 @@ movedata MOVE_MUD_BOMB, "Boue-Bombe"
     effectchance 30
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x12
     contesttype CONTEST_SMART
     terminatedata
@@ -6852,7 +6852,7 @@ movedata MOVE_PSYCHO_CUT, "Coupe Psycho"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x11
     contesttype CONTEST_COOL
     terminatedata
@@ -6868,7 +6868,7 @@ movedata MOVE_ZEN_HEADBUTT, "Psykoud'Boul"
     effectchance 20
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x12
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -6884,7 +6884,7 @@ movedata MOVE_MIRROR_SHOT, "Miroi-Tir"
     effectchance 30
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x11
     contesttype CONTEST_CUTE
     terminatedata
@@ -6900,7 +6900,7 @@ movedata MOVE_FLASH_CANNON, "Luminocanon"
     effectchance 10
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x11
     contesttype CONTEST_SMART
     terminatedata
@@ -6916,7 +6916,7 @@ movedata MOVE_ROCK_CLIMB, "Escalade"
     effectchance 20
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x12
     contesttype CONTEST_COOL
     terminatedata
@@ -6964,7 +6964,7 @@ movedata MOVE_DRACO_METEOR, "Draco-Météore"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x16
     contesttype CONTEST_SMART
     terminatedata
@@ -6980,7 +6980,7 @@ movedata MOVE_DISCHARGE, "Coup d'Jus"
     effectchance 30
     target RANGE_ALL_ADJACENT
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x11
     contesttype CONTEST_COOL
     terminatedata
@@ -6996,7 +6996,7 @@ movedata MOVE_LAVA_PLUME, "Ébullilave"
     effectchance 30
     target RANGE_ALL_ADJACENT
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x11
     contesttype CONTEST_TOUGH
     terminatedata
@@ -7012,7 +7012,7 @@ movedata MOVE_LEAF_STORM, "Tempête Verte"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_HIDE_SHADOW | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_HIDE_SHADOW | FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x16
     contesttype CONTEST_CUTE
     terminatedata
@@ -7028,7 +7028,7 @@ movedata MOVE_POWER_WHIP, "Mégafouet"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_HIDE_SHADOW | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_HIDE_SHADOW | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x05
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -7044,7 +7044,7 @@ movedata MOVE_ROCK_WRECKER, "Roc-Boulet"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_HIDE_SHADOW | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_HIDE_SHADOW | FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x16
     contesttype CONTEST_TOUGH
     terminatedata
@@ -7060,7 +7060,7 @@ movedata MOVE_CROSS_POISON, "Poison Croix"
     effectchance 10
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x05
     contesttype CONTEST_COOL
     terminatedata
@@ -7076,7 +7076,7 @@ movedata MOVE_GUNK_SHOT, "Détricanon"
     effectchance 30
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_HIDE_SHADOW | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_HIDE_SHADOW | FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x05
     contesttype CONTEST_COOL
     terminatedata
@@ -7092,7 +7092,7 @@ movedata MOVE_IRON_HEAD, "Tête de Fer"
     effectchance 30
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x12
     contesttype CONTEST_TOUGH
     terminatedata
@@ -7108,7 +7108,7 @@ movedata MOVE_MAGNET_BOMB, "Bombe Aimant"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x05
     contesttype CONTEST_COOL
     terminatedata
@@ -7124,7 +7124,7 @@ movedata MOVE_STONE_EDGE, "Lame de Roc"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x04
     contesttype CONTEST_TOUGH
     terminatedata
@@ -7140,7 +7140,7 @@ movedata MOVE_CAPTIVATE, "Séduction"
     effectchance 0
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_MAGIC_COAT | FLAG_PROTECT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_MAGIC_COAT | FLAG_PROTECT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x13
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -7172,7 +7172,7 @@ movedata MOVE_GRASS_KNOT, "Nœud Herbe"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x04
     contesttype CONTEST_SMART
     terminatedata
@@ -7188,7 +7188,7 @@ movedata MOVE_CHATTER, "Babil"
     effectchance DEBUG_NEEDS_TESTING ? 100 : 0 // always confuse
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x17
     contesttype CONTEST_SMART
     terminatedata
@@ -7204,7 +7204,7 @@ movedata MOVE_JUDGMENT, "Jugement"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x0E
     contesttype CONTEST_SMART
     terminatedata
@@ -7220,7 +7220,7 @@ movedata MOVE_BUG_BITE, "Piqûre"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x0C
     contesttype CONTEST_TOUGH
     terminatedata
@@ -7236,7 +7236,7 @@ movedata MOVE_CHARGE_BEAM, "Rayon Chargé"
     effectchance 70
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x11
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -7252,7 +7252,7 @@ movedata MOVE_WOOD_HAMMER, "Martobois"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x12
     contesttype CONTEST_TOUGH
     terminatedata
@@ -7268,7 +7268,7 @@ movedata MOVE_AQUA_JET, "Aqua-Jet"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 1
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x01
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -7284,7 +7284,7 @@ movedata MOVE_ATTACK_ORDER, "Appel Attak"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x04
     contesttype CONTEST_SMART
     terminatedata
@@ -7316,7 +7316,7 @@ movedata MOVE_HEAL_ORDER, "Appel Soins"
     effectchance 0
     target RANGE_USER
     priority 0
-    flags FLAG_SNATCH
+    flags FLAG_SNATCH | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x08
     contesttype CONTEST_SMART
     terminatedata
@@ -7332,7 +7332,7 @@ movedata MOVE_HEAD_SMASH, "Fracass'Tête"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_HIDE_SHADOW | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_HIDE_SHADOW | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x16
     contesttype CONTEST_TOUGH
     terminatedata
@@ -7348,7 +7348,7 @@ movedata MOVE_DOUBLE_HIT, "Coup Double"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x07
     contesttype CONTEST_SMART
     terminatedata
@@ -7364,7 +7364,7 @@ movedata MOVE_ROAR_OF_TIME, "Hurle-Temps"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x16
     contesttype CONTEST_COOL
     terminatedata
@@ -7380,7 +7380,7 @@ movedata MOVE_SPACIAL_REND, "Spatio-Rift"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_HIDE_SHADOW | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_HIDE_SHADOW | FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x04
     contesttype CONTEST_TOUGH
     terminatedata
@@ -7412,7 +7412,7 @@ movedata MOVE_CRUSH_GRIP, "Presse"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x0F
     contesttype CONTEST_TOUGH
     terminatedata
@@ -7428,7 +7428,7 @@ movedata MOVE_MAGMA_STORM, "Vortex Magma"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_HIDE_SHADOW | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_HIDE_SHADOW | FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x07
     contesttype CONTEST_TOUGH
     terminatedata
@@ -7444,7 +7444,7 @@ movedata MOVE_DARK_VOID, "Trou Noir"
     effectchance 0
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags FLAG_HIDE_SHADOW | FLAG_MIRROR_MOVE | FLAG_MAGIC_COAT | FLAG_PROTECT
+    flags FLAG_HIDE_SHADOW | FLAG_MIRROR_MOVE | FLAG_MAGIC_COAT | FLAG_PROTECT | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x13
     contesttype CONTEST_SMART
     terminatedata
@@ -7460,7 +7460,7 @@ movedata MOVE_SEED_FLARE, "Fulmigraine"
     effectchance 40
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_HIDE_SHADOW | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_HIDE_SHADOW | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x16
     contesttype CONTEST_COOL
     terminatedata
@@ -7476,7 +7476,7 @@ movedata MOVE_OMINOUS_WIND, "Vent Mauvais"
     effectchance 10
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x0B
     contesttype CONTEST_SMART
     terminatedata
@@ -7492,7 +7492,7 @@ movedata MOVE_SHADOW_FORCE, "Revenant"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x16
     contesttype CONTEST_SMART
     terminatedata
@@ -7508,7 +7508,7 @@ movedata MOVE_468, "MOVE_468"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x10
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -7524,7 +7524,7 @@ movedata MOVE_469, "MOVE_469"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x11
     contesttype CONTEST_CUTE
     terminatedata
@@ -7540,7 +7540,7 @@ movedata MOVE_470, "MOVE_470"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT
     appeal 0x12
     contesttype CONTEST_SMART
     terminatedata
@@ -7620,7 +7620,7 @@ movedata MOVE_WONDER_ROOM, "Zone Étrange"
     effectchance 0
     target RANGE_USER
     priority 0
-    flags FLAG_MIRROR_MOVE
+    flags FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -7636,7 +7636,7 @@ movedata MOVE_PSYSHOCK, "Choc Psy"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -7652,7 +7652,7 @@ movedata MOVE_VENOSHOCK, "Choc Venin"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -7668,7 +7668,7 @@ movedata MOVE_AUTOTOMIZE, "Allègement"
     effectchance 0
     target RANGE_USER
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_SNATCH
+    flags FLAG_KEEP_HP_BAR | FLAG_SNATCH | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -7700,7 +7700,7 @@ movedata MOVE_TELEKINESIS, "Lévikinésie"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_MIRROR_MOVE
+    flags FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9 | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -7716,7 +7716,7 @@ movedata MOVE_MAGIC_ROOM, "Zone Magique"
     effectchance 0
     target RANGE_USER
     priority 0
-    flags FLAG_MIRROR_MOVE
+    flags FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -7732,7 +7732,7 @@ movedata MOVE_SMACK_DOWN, "Anti-Air"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -7748,7 +7748,7 @@ movedata MOVE_STORM_THROW, "Yama Arashi"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -7764,7 +7764,7 @@ movedata MOVE_FLAME_BURST, "Rebondifeu"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -7812,7 +7812,7 @@ movedata MOVE_HEAVY_SLAM, "Tacle Lourd"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -7828,7 +7828,7 @@ movedata MOVE_SYNCHRONOISE, "Synchropeine"
     effectchance 0
     target RANGE_ALL_ADJACENT
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9 | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -7844,7 +7844,7 @@ movedata MOVE_ELECTRO_BALL, "Boule Élek"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -7862,7 +7862,7 @@ movedata MOVE_SOAK, "Détrempage"
     priority 0
     flags FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_MIRROR_MOVE
     appeal 0x00
-    contesttype CONTEST_COOL
+    contesttype CONTEST_CUTE
     terminatedata
     movedescription MOVE_SOAK, "The user shoots a\ntorrent of water at\nthe target and\nchanges the target’s\ntype to Water."
 
@@ -7876,7 +7876,7 @@ movedata MOVE_FLAME_CHARGE, "Nitrocharge"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_CONTACT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_CONTACT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -7908,7 +7908,7 @@ movedata MOVE_LOW_SWEEP, "Balayette"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -7924,7 +7924,7 @@ movedata MOVE_ACID_SPRAY, "Bombe Acide"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -7940,7 +7940,7 @@ movedata MOVE_FOUL_PLAY, "Tricherie"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -7963,7 +7963,7 @@ movedata MOVE_SIMPLE_BEAM, "Rayon Simple"
     movedescription MOVE_SIMPLE_BEAM, "The user’s\nmysterious psychic\nwave changes the\ntarget’s Ability to\nSimple."
 
 movedata MOVE_ENTRAINMENT, "Ten-Danse"
-    battleeffect MOVE_EFFECT_HIT
+    battleeffect MOVE_EFFECT_ENTRAINMENT
     pss SPLIT_STATUS
     basepower 0
     type TYPE_NORMAL
@@ -7972,7 +7972,7 @@ movedata MOVE_ENTRAINMENT, "Ten-Danse"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_MIRROR_MOVE
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8004,7 +8004,7 @@ movedata MOVE_ROUND, "Chant Canon"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8020,7 +8020,7 @@ movedata MOVE_ECHOED_VOICE, "Écho"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8036,14 +8036,14 @@ movedata MOVE_CHIP_AWAY, "Attrition"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
     movedescription MOVE_CHIP_AWAY, "An attack which is\nnot affected by the\ntarget’s stat\nchanges."
 
 movedata MOVE_CLEAR_SMOG, "Bain de Smog"
-    battleeffect MOVE_EFFECT_HIT
+    battleeffect MOVE_EFFECT_CLEAR_SMOG
     pss SPLIT_SPECIAL
     basepower 50
     type TYPE_POISON
@@ -8052,7 +8052,7 @@ movedata MOVE_CLEAR_SMOG, "Bain de Smog"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8068,7 +8068,7 @@ movedata MOVE_STORED_POWER, "Force Ajoutée"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8100,7 +8100,7 @@ movedata MOVE_ALLY_SWITCH, "Interversion"
     effectchance 0
     target RANGE_USER
     priority 2
-    flags FLAG_KEEP_HP_BAR
+    flags FLAG_KEEP_HP_BAR | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8116,7 +8116,7 @@ movedata MOVE_SCALD, "Ébullition"
     effectchance 30
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8139,7 +8139,7 @@ movedata MOVE_SHELL_SMASH, "Exuviation"
     movedescription MOVE_SHELL_SMASH, "Sharply raises\nAttack, Sp. Atk, and\nSpeed, but lowers\nDefense and Sp. Def."
 
 movedata MOVE_HEAL_PULSE, "Vibra Soin"
-    battleeffect MOVE_EFFECT_HIT
+    battleeffect MOVE_EFFECT_HEAL_TARGET
     pss SPLIT_STATUS
     basepower 0
     type TYPE_PSYCHIC
@@ -8148,7 +8148,7 @@ movedata MOVE_HEAL_PULSE, "Vibra Soin"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8164,7 +8164,7 @@ movedata MOVE_HEX, "Châtiment"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8180,7 +8180,7 @@ movedata MOVE_SKY_DROP, "Chute Libre"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9 | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8212,14 +8212,14 @@ movedata MOVE_CIRCLE_THROW, "Projection"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority -6
-    flags FLAG_KEEP_HP_BAR | FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE
+    flags FLAG_KEEP_HP_BAR | FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
     movedescription MOVE_CIRCLE_THROW, "The foe is made to\nswitch out with an\nally. In the wild,\nthe battle ends."
 
 movedata MOVE_INCINERATE, "Calcination"
-    battleeffect MOVE_EFFECT_HIT
+    battleeffect MOVE_EFFECT_INCINERATE
     pss SPLIT_SPECIAL
     basepower 60
     type TYPE_FIRE
@@ -8228,7 +8228,7 @@ movedata MOVE_INCINERATE, "Calcination"
     effectchance 100
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8260,7 +8260,7 @@ movedata MOVE_ACROBATICS, "Acrobatie"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8276,7 +8276,7 @@ movedata MOVE_REFLECT_TYPE, "Copie-Type"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_SNATCH
+    flags FLAG_KEEP_HP_BAR | FLAG_SNATCH | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8292,7 +8292,7 @@ movedata MOVE_RETALIATE, "Vengeance"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8308,7 +8308,7 @@ movedata MOVE_FINAL_GAMBIT, "Tout ou Rien"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8324,7 +8324,7 @@ movedata MOVE_BESTOW, "Passe-Cadeau"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR
+    flags FLAG_KEEP_HP_BAR | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9 | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8356,7 +8356,7 @@ movedata MOVE_WATER_PLEDGE, "Aire d'Eau"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8372,7 +8372,7 @@ movedata MOVE_FIRE_PLEDGE, "Aire de Feu"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8388,7 +8388,7 @@ movedata MOVE_GRASS_PLEDGE, "Aire d'Herbe"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8404,7 +8404,7 @@ movedata MOVE_VOLT_SWITCH, "Change Éclair"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8436,7 +8436,7 @@ movedata MOVE_BULLDOZE, "Piétisol"
     effectchance 100
     target RANGE_ALL_ADJACENT
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8452,7 +8452,7 @@ movedata MOVE_FROST_BREATH, "Souffle Glacé"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8468,7 +8468,7 @@ movedata MOVE_DRAGON_TAIL, "Draco-Queue"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority -6
-    flags FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE
+    flags FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8500,7 +8500,7 @@ movedata MOVE_ELECTROWEB, "Toile Élek"
     effectchance 100
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8516,7 +8516,7 @@ movedata MOVE_WILD_CHARGE, "Éclair Fou"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8532,7 +8532,7 @@ movedata MOVE_DRILL_RUN, "Tunnelier"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8548,7 +8548,7 @@ movedata MOVE_DUAL_CHOP, "Double Baffe"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8564,7 +8564,7 @@ movedata MOVE_HEART_STAMP, "Crèvecœur"
     effectchance 30
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE
+    flags FLAG_KEEP_HP_BAR | FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8596,7 +8596,7 @@ movedata MOVE_SACRED_SWORD, "Lame Sainte"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8628,7 +8628,7 @@ movedata MOVE_HEAT_CRASH, "Tacle Feu"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8644,7 +8644,7 @@ movedata MOVE_LEAF_TORNADO, "Phytomixeur"
     effectchance 50
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8660,7 +8660,7 @@ movedata MOVE_STEAMROLLER, "Bulldoboule"
     effectchance 30
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE
+    flags FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8692,7 +8692,7 @@ movedata MOVE_NIGHT_DAZE, "Explonuit"
     effectchance 40
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8708,7 +8708,7 @@ movedata MOVE_PSYSTRIKE, "Frappe Psy"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8724,7 +8724,7 @@ movedata MOVE_TAIL_SLAP, "Plumo-Queue"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8740,7 +8740,7 @@ movedata MOVE_HURRICANE, "Vent Violent"
     effectchance 30
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8756,7 +8756,7 @@ movedata MOVE_HEAD_CHARGE, "Peignée"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8772,7 +8772,7 @@ movedata MOVE_GEAR_GRIND, "Lancécrou"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8788,7 +8788,7 @@ movedata MOVE_SEARING_SHOT, "Incendie"
     effectchance 30
     target RANGE_ALL_ADJACENT
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8804,7 +8804,7 @@ movedata MOVE_TECHNO_BLAST, "Techno-Buster"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8836,7 +8836,7 @@ movedata MOVE_SECRET_SWORD, "Lame Ouinte"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8868,7 +8868,7 @@ movedata MOVE_BOLT_STRIKE, "Charge Foudre"
     effectchance 20
     target RANGE_SINGLE_TARGET
     priority 0
-    flags  FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags  FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8884,7 +8884,7 @@ movedata MOVE_BLUE_FLARE, "Flamme Bleue"
     effectchance 20
     target RANGE_SINGLE_TARGET
     priority 0
-    flags  FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags  FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8900,7 +8900,7 @@ movedata MOVE_FIERY_DANCE, "Danse du Feu"
     effectchance 50
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8916,7 +8916,7 @@ movedata MOVE_FREEZE_SHOCK, "Éclair Gelé"
     effectchance 30
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8932,7 +8932,7 @@ movedata MOVE_ICE_BURN, "Feu Glacé"
     effectchance 30
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8948,7 +8948,7 @@ movedata MOVE_SNARL, "Aboiement"
     effectchance 100
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8980,7 +8980,7 @@ movedata MOVE_V_CREATE, "Coup Victoire"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags  FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags  FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8996,7 +8996,7 @@ movedata MOVE_FUSION_FLARE, "Flamme Croix"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags  FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags  FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9012,7 +9012,7 @@ movedata MOVE_FUSION_BOLT, "Éclair Croix"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags  FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags  FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9029,7 +9029,7 @@ movedata MOVE_FLYING_PRESS, "Flying Press"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9045,7 +9045,7 @@ movedata MOVE_MAT_BLOCK, "Tatamigaeshi"
     effectchance 0
     target RANGE_USER_SIDE
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9061,7 +9061,7 @@ movedata MOVE_BELCH, "Éructation"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9077,7 +9077,7 @@ movedata MOVE_ROTOTILLER, "Fertilisation"
     effectchance 100
     target RANGE_USER | RANGE_ALL_ADJACENT
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_MAGIC_COAT
+    flags FLAG_MIRROR_MOVE | FLAG_MAGIC_COAT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9 | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9100,7 +9100,7 @@ movedata MOVE_STICKY_WEB, "Toile Gluante"
     movedescription MOVE_STICKY_WEB, "The user weaves a web\naround the foe.\nIt lowers the foes\nSpeed upon switching\nin."
 
 movedata MOVE_FELL_STINGER, "Dard Mortel"
-    battleeffect MOVE_EFFECT_HIT
+    battleeffect MOVE_EFFECT_FELL_STINGER
     pss SPLIT_PHYSICAL
     basepower 50
     type TYPE_BUG
@@ -9109,7 +9109,7 @@ movedata MOVE_FELL_STINGER, "Dard Mortel"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9125,14 +9125,14 @@ movedata MOVE_PHANTOM_FORCE, "Hantise"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_PHANTOM_FORCE, "---"
+    movedescription MOVE_PHANTOM_FORCE, "The user disappears,\nthen strikes the foe\non the second turn.\nIt hits even if the\nfoe protects itself."
 
 movedata MOVE_TRICK_OR_TREAT, "Halloween"
-    battleeffect MOVE_EFFECT_HIT
+    battleeffect MOVE_EFFECT_ADD_THIRD_TYPE_GHOST
     pss SPLIT_STATUS
     basepower 0
     type TYPE_GHOST
@@ -9143,7 +9143,7 @@ movedata MOVE_TRICK_OR_TREAT, "Halloween"
     priority 0
     flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
     appeal 0x00
-    contesttype CONTEST_COOL
+    contesttype CONTEST_CUTE
     terminatedata
     movedescription MOVE_TRICK_OR_TREAT, "The user takes the\ntarget\ntrick-or-treating.\nThis adds Ghost type\nto the target's type."
 
@@ -9173,7 +9173,7 @@ movedatalongname MOVE_ION_DELUGE, "DélugePlasmique", "Déluge Plasmique"
     effectchance 0
     target RANGE_FIELD
     priority 1
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9 | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9189,14 +9189,14 @@ movedata MOVE_PARABOLIC_CHARGE, "Parabocharge"
     effectchance 0
     target RANGE_ALL_ADJACENT
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
-    contesttype CONTEST_COOL
+    contesttype CONTEST_SMART
     terminatedata
-    movedescription MOVE_PARABOLIC_CHARGE, "---"
+    movedescription MOVE_PARABOLIC_CHARGE, "An energy-draining\nshockwave. The user’s\nHP is restored by\nhalf the damage taken\nby those hit."
 
 movedata MOVE_FORESTS_CURSE, "MaléficeSylvain"
-    battleeffect MOVE_EFFECT_HIT
+    battleeffect MOVE_EFFECT_ADD_THIRD_TYPE_GRASS
     pss SPLIT_STATUS
     basepower 0
     type TYPE_GRASS
@@ -9207,7 +9207,7 @@ movedata MOVE_FORESTS_CURSE, "MaléficeSylvain"
     priority 0
     flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
     appeal 0x00
-    contesttype CONTEST_COOL
+    contesttype CONTEST_SMART
     terminatedata
     movedescription MOVE_FORESTS_CURSE, "The user puts a forest\ncurse on the target.\nThis adds Grass type\nto the target's type."
 
@@ -9221,7 +9221,7 @@ movedata MOVE_PETAL_BLIZZARD, "Tempête Florale"
     effectchance 0
     target RANGE_ALL_ADJACENT
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9237,7 +9237,7 @@ movedata MOVE_FREEZE_DRY, "Lyophilisation"
     effectchance 10
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9253,14 +9253,14 @@ movedata MOVE_DISARMING_VOICE, "Voix Enjôleuse"
     effectchance 0
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
     movedescription MOVE_DISARMING_VOICE, "Letting out a charming\ncry, the user does\nemotional damage to\nopposing Pokémon. This\nattack never misses."
 
 movedata MOVE_PARTING_SHOT, "Dernier Mot"
-    battleeffect MOVE_EFFECT_HIT
+    battleeffect MOVE_EFFECT_PARTING_SHOT
     pss SPLIT_STATUS
     basepower 0
     type TYPE_DARK
@@ -9285,7 +9285,7 @@ movedata MOVE_TOPSY_TURVY, "Renversement"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9301,11 +9301,11 @@ movedata MOVE_DRAINING_KISS, "Vampibaiser"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
-    contesttype CONTEST_COOL
+    contesttype CONTEST_CUTE
     terminatedata
-    movedescription MOVE_DRAINING_KISS, "---"
+    movedescription MOVE_DRAINING_KISS, "An energy-stealing\nkiss. The user’s\nHP is restored by\nhalf the damage taken\nby the target."
 
 movedata MOVE_CRAFTY_SHIELD, "Vigilance"
     battleeffect MOVE_EFFECT_PROTECT_USER_SIDE
@@ -9317,7 +9317,7 @@ movedata MOVE_CRAFTY_SHIELD, "Vigilance"
     effectchance 0
     target RANGE_USER_SIDE
     priority 3
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9333,7 +9333,7 @@ movedata MOVE_FLOWER_SHIELD, "Garde Florale"
     effectchance 100
     target RANGE_USER | RANGE_ALL_ADJACENT
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_MAGIC_COAT
+    flags FLAG_MIRROR_MOVE | FLAG_MAGIC_COAT | FLAG_UNUSABLE_IN_GEN_9 | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9369,7 +9369,7 @@ movedata MOVE_MISTY_TERRAIN, "Champ Brumeux"
     appeal 0x05
     contesttype CONTEST_BEAUTY
     terminatedata
-    movedescription MOVE_MISTY_TERRAIN, "---"
+    movedescription MOVE_MISTY_TERRAIN, "Sets a Misty Terrain\nfor five turns. This\nprevents status\nailments and weakens\nDragon-Type moves."
 
 movedata MOVE_ELECTRIFY, "Électrisation"
     battleeffect MOVE_EFFECT_HIT
@@ -9381,7 +9381,7 @@ movedata MOVE_ELECTRIFY, "Électrisation"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9397,7 +9397,7 @@ movedata MOVE_PLAY_ROUGH, "Câlinerie"
     effectchance 10
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9413,7 +9413,7 @@ movedata MOVE_FAIRY_WIND, "Vent Féérique"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9429,7 +9429,7 @@ movedata MOVE_MOONBLAST, "Pouvoir Lunaire"
     effectchance 30
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9445,7 +9445,7 @@ movedata MOVE_BOOMBURST, "Bang Sonique"
     effectchance 0
     target RANGE_ALL_ADJACENT
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9461,7 +9461,7 @@ movedata MOVE_FAIRY_LOCK, "Verrou Enchanté"
     effectchance 0
     target RANGE_FIELD
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9495,9 +9495,9 @@ movedata MOVE_PLAY_NICE, "Camaraderie"
     priority 0
     flags FLAG_MIRROR_MOVE | FLAG_MAGIC_COAT
     appeal 0x00
-    contesttype CONTEST_COOL
+    contesttype CONTEST_CUTE
     terminatedata
-    movedescription MOVE_PLAY_NICE, "---"
+    movedescription MOVE_PLAY_NICE, "The user and the\ntarget become pals,\nlowering the target's\nAttack stat.\nBypasses Protect."
 
 movedata MOVE_CONFIDE, "Confidence"
     battleeffect MOVE_EFFECT_HIT
@@ -9509,7 +9509,7 @@ movedata MOVE_CONFIDE, "Confidence"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_MAGIC_COAT
+    flags FLAG_MIRROR_MOVE | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9525,7 +9525,7 @@ movedata MOVE_DIAMOND_STORM, "Orage Adamantin"
     effectchance 50
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags  FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags  FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9541,7 +9541,7 @@ movedata MOVE_STEAM_ERUPTION, "Jet de Vapeur"
     effectchance 30
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9557,7 +9557,7 @@ movedatalongname MOVE_HYPERSPACE_HOLE, "Trou Dimension", "Trou Dimensionnel"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9573,7 +9573,7 @@ movedata MOVE_WATER_SHURIKEN, "Sheauriken"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 1
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9589,7 +9589,7 @@ movedata MOVE_MYSTICAL_FIRE, "Feu Ensorcelé"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9621,7 +9621,7 @@ movedata MOVE_AROMATIC_MIST, "Brume Capiteuse"
     effectchance 0
     target RANGE_ALLY
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_MAGIC_COAT
+    flags FLAG_MIRROR_MOVE | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9637,7 +9637,7 @@ movedata MOVE_EERIE_IMPULSE, "Ondes Étranges"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9653,7 +9653,7 @@ movedata MOVE_VENOM_DRENCH, "Piège de Venin"
     effectchance 100
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9667,9 +9667,9 @@ movedata MOVE_POWDER, "Nuée de Poudre"
     accuracy 100
     pp 20
     effectchance 0
-    target RANGE_SINGLE_TARGET
+    target RANGE_SINGLE_TARGET | FLAG_UNUSABLE_UNIMPLEMENTED
     priority 1
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9701,7 +9701,7 @@ movedata MOVE_MAGNETIC_FLUX, "Magné-Contrôle"
     effectchance 0
     target RANGE_USER_SIDE
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9749,7 +9749,7 @@ movedata MOVE_DAZZLING_GLEAM, "Éclat Magique"
     effectchance 0
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9799,9 +9799,9 @@ movedata MOVE_BABY_DOLL_EYES, "Regard Touchant"
     priority 1
     flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
     appeal 0x00
-    contesttype CONTEST_COOL
+    contesttype CONTEST_CUTE
     terminatedata
-    movedescription MOVE_BABY_DOLL_EYES, "---"
+    movedescription MOVE_BABY_DOLL_EYES, "The user stares at\nthe target with its\nbaby-eyes, lowering\nits Attack stat.\nAlways goes first."
 
 movedatalongname MOVE_NUZZLE, "FrotteFrimousse", "Frotte-Frimousse"
     battleeffect MOVE_EFFECT_PARALYZE_HIT
@@ -9813,7 +9813,7 @@ movedatalongname MOVE_NUZZLE, "FrotteFrimousse", "Frotte-Frimousse"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9829,14 +9829,14 @@ movedata MOVE_HOLD_BACK, "Retenue"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
     movedescription MOVE_HOLD_BACK, "The user holds back\nwhen it attacks, and\nthe target is left\nwith at least 1 HP."
 
 movedata MOVE_INFESTATION, "Harcèlement"
-    battleeffect MOVE_EFFECT_HIT
+    battleeffect MOVE_EFFECT_BIND_HIT
     pss SPLIT_SPECIAL
     basepower 20
     type TYPE_BUG
@@ -9845,7 +9845,7 @@ movedata MOVE_INFESTATION, "Harcèlement"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9861,7 +9861,7 @@ movedata MOVE_POWER_UP_PUNCH, "Poing Boost"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9877,7 +9877,7 @@ movedata MOVE_OBLIVION_WING, "Mort'Ailes"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags  FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags  FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9893,7 +9893,7 @@ movedata MOVE_THOUSAND_ARROWS, "Myria-Flèches"
     effectchance 100
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9909,7 +9909,7 @@ movedata MOVE_THOUSAND_WAVES, "Myria-Vagues"
     effectchance 0
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9925,7 +9925,7 @@ movedatalongname MOVE_LANDS_WRATH, "ForceChtonienne", "Force Chtonienne"
     effectchance 0
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9941,7 +9941,7 @@ movedatalongname MOVE_LIGHT_OF_RUIN, "LumièreDuNéant", "Lumière du Néant"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9957,7 +9957,7 @@ movedata MOVE_ORIGIN_PULSE, "Onde Originelle"
     effectchance 0
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9973,7 +9973,7 @@ movedata MOVE_PRECIPICE_BLADES, "Lame Pangéenne"
     effectchance 0
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9989,7 +9989,7 @@ movedata MOVE_DRAGON_ASCENT, "Draco-Ascension"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10005,7 +10005,7 @@ movedata MOVE_HYPERSPACE_FURY, "Furie Dimension"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10021,7 +10021,7 @@ movedatalongname MOVE_BREAKNECK_BLITZ_PHYSICAL, "ChargeBulldozer", "Turbo-Charge
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10037,7 +10037,7 @@ movedatalongname MOVE_BREAKNECK_BLITZ_SPECIAL, "ChargeBulldozer", "Turbo-Charge 
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10053,7 +10053,7 @@ movedatalongname MOVE_ALL_OUT_PUMMELING_PHYSICAL, "Hyper-Furie", "Combo Hyper-Fu
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10069,7 +10069,7 @@ movedatalongname MOVE_ALL_OUT_PUMMELING_SPECIAL, "Hyper-Furie", "Combo Hyper-Fur
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10085,7 +10085,7 @@ movedatalongname MOVE_SUPERSONIC_SKYSTRIKE_PHYSICAL, "PiquéSupersonik", "Piqué
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10101,7 +10101,7 @@ movedatalongname MOVE_SUPERSONIC_SKYSTRIKE_SPECIAL, "PiquéSupersonik", "Piqué 
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10117,7 +10117,7 @@ movedatalongname MOVE_ACID_DOWNPOUR_PHYSICAL, "Déluge Toxique", "Déluge Causti
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10133,7 +10133,7 @@ movedatalongname MOVE_ACID_DOWNPOUR_SPECIAL, "Déluge Toxique", "Déluge Causti-
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10149,7 +10149,7 @@ movedatalongname MOVE_TECTONIC_RAGE_PHYSICAL, "Éruption Sismik", "Éruption Gé
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10165,7 +10165,7 @@ movedatalongname MOVE_TECTONIC_RAGE_SPECIAL, "Éruption Sismik", "Éruption Géo
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10181,7 +10181,7 @@ movedatalongname MOVE_CONTINENTAL_CRUSH_PHYSICAL, "Apo. Gigalithik", "Apocalypse
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10197,7 +10197,7 @@ movedatalongname MOVE_CONTINENTAL_CRUSH_SPECIAL, "Apo. Gigalithik", "Apocalypse 
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10213,7 +10213,7 @@ movedata MOVE_SAVAGE_SPIN_OUT_PHYSICAL, "Cocon Fatal"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10229,7 +10229,7 @@ movedata MOVE_SAVAGE_SPIN_OUT_SPECIAL, "Cocon Fatal"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10245,7 +10245,7 @@ movedatalongname MOVE_NEVER_ENDING_NIGHTMARE_PHYSICAL, "Ombre Éternelle", "Appe
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10261,7 +10261,7 @@ movedatalongname MOVE_NEVER_ENDING_NIGHTMARE_SPECIAL, "Ombre Éternelle", "Appel
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10277,7 +10277,7 @@ movedata MOVE_CORKSCREW_CRASH_PHYSICAL, "Vrille Maximum"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10293,7 +10293,7 @@ movedata MOVE_CORKSCREW_CRASH_SPECIAL, "Vrille Maximum"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10309,7 +10309,7 @@ movedatalongname MOVE_INFERNO_OVERDRIVE_PHYSICAL, "Pyro-Explosion", "Pyro-Explos
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10325,7 +10325,7 @@ movedatalongname MOVE_INFERNO_OVERDRIVE_SPECIAL, "Pyro-Explosion", "Pyro-Explosi
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10341,7 +10341,7 @@ movedatalongname MOVE_HYDRO_VORTEX_PHYSICAL, "Tourb. Abyssal", "Super Tourbillon
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10357,7 +10357,7 @@ movedatalongname MOVE_HYDRO_VORTEX_SPECIAL, "Tourb. Abyssal", "Super Tourbillon 
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10373,7 +10373,7 @@ movedatalongname MOVE_BLOOM_DOOM_PHYSICAL, "Pétalexplosion", "Pétalexplosion �
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10389,7 +10389,7 @@ movedatalongname MOVE_BLOOM_DOOM_SPECIAL, "Pétalexplosion", "Pétalexplosion É
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10405,7 +10405,7 @@ movedatalongname MOVE_GIGAVOLT_HAVOC_PHYSICAL, "Fulguro-Lance", "Fulguro-Lance G
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10421,7 +10421,7 @@ movedatalongname MOVE_GIGAVOLT_HAVOC_SPECIAL, "Fulguro-Lance", "Fulguro-Lance Gi
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10437,7 +10437,7 @@ movedatalongname MOVE_SHATTERED_PSYCHE_PHYSICAL, "Pulvérisation", "Psycho-Pulv�
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10453,7 +10453,7 @@ movedatalongname MOVE_SHATTERED_PSYCHE_SPECIAL, "Pulvérisation", "Psycho-Pulvé
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10469,7 +10469,7 @@ movedatalongname MOVE_SUBZERO_SLAMMER_PHYSICAL, "Laser Cryogénik", "Laser Cryog
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10485,7 +10485,7 @@ movedatalongname MOVE_SUBZERO_SLAMMER_SPECIAL, "Laser Cryogénik", "Laser Cryog�
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10501,7 +10501,7 @@ movedatalongname MOVE_DEVASTATING_DRAKE_PHYSICAL, "ChaosDraconique", "Chaos Drac
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10517,7 +10517,7 @@ movedatalongname MOVE_DEVASTATING_DRAKE_SPECIAL, "ChaosDraconique", "Chaos Draco
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10533,7 +10533,7 @@ movedatalongname MOVE_BLACK_HOLE_ECLIPSE_PHYSICAL, "TrouNoirD'Ombre", "Trou Noir
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10549,7 +10549,7 @@ movedatalongname MOVE_BLACK_HOLE_ECLIPSE_SPECIAL, "TrouNoirD'Ombre", "Trou Noir 
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10565,7 +10565,7 @@ movedatalongname MOVE_TWINKLE_TACKLE_PHYSICAL, "ImpctChoupinova", "Impact Choupi
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10581,7 +10581,7 @@ movedatalongname MOVE_TWINKLE_TACKLE_SPECIAL, "ImpctChoupinova", "Impact Choupin
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10597,14 +10597,14 @@ movedatalongname MOVE_CATASTROPIKA, "Pikachute", "Pikachute Foudroyante"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
     movedescription MOVE_CATASTROPIKA, "---"
 
 movedata MOVE_SHORE_UP, "Amass'Sable"
-    battleeffect MOVE_EFFECT_HIT
+    battleeffect MOVE_EFFECT_HEAL_HALF_DIFFERENT_IN_WEATHER
     pss SPLIT_STATUS
     basepower 0
     type TYPE_GROUND
@@ -10620,7 +10620,7 @@ movedata MOVE_SHORE_UP, "Amass'Sable"
     movedescription MOVE_SHORE_UP, "The user restores its\nown HP by up to half\nits max HP.\nIt regains more HP\nin a sandstorm."
 
 movedata MOVE_FIRST_IMPRESSION, "Escarmouche"
-    battleeffect MOVE_EFFECT_ALWAYS_FLINCH_FIRST_TURN_ONLY
+    battleeffect MOVE_EFFECT_FIRST_TURN_ONLY
     pss SPLIT_PHYSICAL
     basepower 90
     type TYPE_BUG
@@ -10629,7 +10629,7 @@ movedata MOVE_FIRST_IMPRESSION, "Escarmouche"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 2
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10661,7 +10661,7 @@ movedata MOVE_SPIRIT_SHACKLE, "Tisse Ombre"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10677,14 +10677,14 @@ movedata MOVE_DARKEST_LARIAT, "Dark Lariat"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
     movedescription MOVE_DARKEST_LARIAT, "---"
 
 movedata MOVE_SPARKLING_ARIA, "Aria de l'Écume"
-    battleeffect MOVE_EFFECT_HIT // handle in ov12_0224D368
+    battleeffect MOVE_EFFECT_HIT // handled in BattleController_MoveEndInternal
     pss SPLIT_SPECIAL
     basepower 90
     type TYPE_WATER
@@ -10693,7 +10693,7 @@ movedata MOVE_SPARKLING_ARIA, "Aria de l'Écume"
     effectchance 0
     target RANGE_ALL_ADJACENT
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10709,7 +10709,7 @@ movedatalongname MOVE_ICE_HAMMER, "MarteauDeGlace", "Marteau de Glace"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10725,7 +10725,7 @@ movedatalongname MOVE_FLORAL_HEALING, "Soin Floral", "Cavalerie Lourde"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10741,7 +10741,7 @@ movedata MOVE_HIGH_HORSEPOWER, "CavalerieLourde"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10757,7 +10757,7 @@ movedata MOVE_STRENGTH_SAP, "Vole-Force"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10773,7 +10773,7 @@ movedata MOVE_SOLAR_BLADE, "Lame Solaire"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10789,7 +10789,7 @@ movedata MOVE_LEAFAGE, "Feuillage"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10805,7 +10805,7 @@ movedata MOVE_SPOTLIGHT, "Projecteur"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 3
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10821,7 +10821,7 @@ movedata MOVE_TOXIC_THREAD, "Fil Toxique"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10837,7 +10837,7 @@ movedata MOVE_LASER_FOCUS, "Affilage"
     effectchance 0
     target RANGE_USER
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_IN_GEN_9 | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10853,7 +10853,7 @@ movedata MOVE_GEAR_UP, "Engrenage"
     effectchance 0
     target RANGE_USER_SIDE
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_IN_GEN_9 | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10869,14 +10869,14 @@ movedata MOVE_THROAT_CHOP, "Exécu-Son"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
     movedescription MOVE_THROAT_CHOP, "The user attacks the\ntarget's throat,\npreventing the target\nfrom using sound-based\nmoves for two turns."
 
 movedata MOVE_POLLEN_PUFF, "Boule Pollen"
-    battleeffect MOVE_EFFECT_HIT
+    battleeffect MOVE_EFFECT_POLLEN_PUFF
     pss SPLIT_SPECIAL
     basepower 90
     type TYPE_BUG
@@ -10885,7 +10885,7 @@ movedata MOVE_POLLEN_PUFF, "Boule Pollen"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10901,7 +10901,7 @@ movedata MOVE_ANCHOR_SHOT, "Ancrage"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10933,7 +10933,7 @@ movedata MOVE_LUNGE, "Furie-Bond"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10949,7 +10949,7 @@ movedata MOVE_FIRE_LASH, "Fouet de Feu"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10965,7 +10965,7 @@ movedata MOVE_POWER_TRIP, "Arrogance"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10981,7 +10981,7 @@ movedata MOVE_BURN_UP, "Flamme Ultime"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10997,7 +10997,7 @@ movedata MOVE_SPEED_SWAP, "Permuvitesse"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11013,7 +11013,7 @@ movedata MOVE_SMART_STRIKE, "Estocorne"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11029,7 +11029,7 @@ movedata MOVE_PURIFY, "Purification"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11045,7 +11045,7 @@ movedata MOVE_REVELATION_DANCE, "Danse Éveil"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11061,7 +11061,7 @@ movedatalongname MOVE_CORE_ENFORCER, "SanctionSuprême", "Sanction Suprême"
     effectchance 0
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags  FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags  FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11077,7 +11077,7 @@ movedata MOVE_TROP_KICK, "Botte Sucrette"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11093,7 +11093,7 @@ movedata MOVE_INSTRUCT, "Sommation"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11109,7 +11109,7 @@ movedata MOVE_BEAK_BLAST, "Bec-Canon"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority -3
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11125,7 +11125,7 @@ movedata MOVE_CLANGING_SCALES, "Vibrécaille"
     effectchance 100
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11141,7 +11141,7 @@ movedata MOVE_DRAGON_HAMMER, "Draco-Marteau"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11157,14 +11157,14 @@ movedata MOVE_BRUTAL_SWING, "Centrifugifle"
     effectchance 0
     target RANGE_ALL_ADJACENT
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
     movedescription MOVE_BRUTAL_SWING, "The user swings its\nbody around violently\nto inflict damage on\neverything in its\nvicinity."
 
 movedata MOVE_AURORA_VEIL, "Voile Aurore"
-    battleeffect MOVE_EFFECT_HIT
+    battleeffect MOVE_EFFECT_SET_AURORA_VEIL
     pss SPLIT_STATUS
     basepower 0
     type TYPE_ICE
@@ -11175,11 +11175,11 @@ movedata MOVE_AURORA_VEIL, "Voile Aurore"
     priority 0
     flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
     appeal 0x00
-    contesttype CONTEST_COOL
+    contesttype CONTEST_BEAUTY
     terminatedata
     movedescription MOVE_AURORA_VEIL, "---"
 
-movedatalongname MOVE_SINISTER_ARROW_RAID, "Plume Spectrale", "Fureur des Plumes Spectrales"
+movedatalongname MOVE_SINISTER_ARROW_RAID, "Sinister Raid", "Sinister Arrow Raid"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_PHYSICAL
     basepower 180
@@ -11189,7 +11189,7 @@ movedatalongname MOVE_SINISTER_ARROW_RAID, "Plume Spectrale", "Fureur des Plumes
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11205,7 +11205,7 @@ movedata MOVE_MALICIOUS_MOONSAULT, "Dark Body Press"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11221,7 +11221,7 @@ movedatalongname MOVE_OCEANIC_OPERETTA, "SymphonieOndine", "Symphonie des Ondine
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11237,7 +11237,7 @@ movedatalongname MOVE_GUARDIAN_OF_ALOLA, "Gardien d'Alola", "Colère du Gardien 
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11253,7 +11253,7 @@ movedatalongname MOVE_SOUL_STEALING_7_STAR_STRIKE, "Fauche-Âme", "Fauche-Âme d
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11269,7 +11269,7 @@ movedatalongname MOVE_STOKED_SPARKSURFER, "Électro-Surf", "Électro-Surf Survol
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11285,7 +11285,7 @@ movedata MOVE_PULVERIZING_PANCAKE, "Gare au Ronflex"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11301,7 +11301,7 @@ movedata MOVE_EXTREME_EVOBOOST, "Neuf pour Un"
     effectchance 100
     target RANGE_USER
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11317,7 +11317,7 @@ movedatalongname MOVE_GENESIS_SUPERNOVA, "Supernova", "Supernova Originelle"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11333,7 +11333,7 @@ movedata MOVE_SHELL_TRAP, "Carapiège"
     effectchance 0
     target RANGE_ADJACENT_OPPONENTS
     priority -3
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11349,7 +11349,7 @@ movedata MOVE_FLEUR_CANNON, "Canon Floral"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags  FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags  FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11365,7 +11365,7 @@ movedata MOVE_PSYCHIC_FANGS, "Psycho-Croc"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11381,7 +11381,7 @@ movedata MOVE_STOMPING_TANTRUM, "Trépignement"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11397,7 +11397,7 @@ movedata MOVE_SHADOW_BONE, "Os Ombre"
     effectchance 20
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11413,7 +11413,7 @@ movedata MOVE_ACCELEROCK, "Vif Roc"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 1
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11429,7 +11429,7 @@ movedata MOVE_LIQUIDATION, "Aqua-Brèche"
     effectchance 20
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11445,7 +11445,7 @@ movedata MOVE_PRISMATIC_LASER, "Laser Prisme"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags  FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags  FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11461,7 +11461,7 @@ movedata MOVE_SPECTRAL_THIEF, "Clepto-Mânes"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT | FLAG_UNUSABLE_IN_GEN_9 | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11477,7 +11477,7 @@ movedata MOVE_SUNSTEEL_STRIKE, "Choc Météore"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11493,7 +11493,7 @@ movedata MOVE_MOONGEIST_BEAM, "Rayon Spectral"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11511,9 +11511,9 @@ movedata MOVE_TEARFUL_LOOK, "Larme à l'Œil"
     priority 0
     flags FLAG_MIRROR_MOVE | FLAG_MAGIC_COAT
     appeal 0x00
-    contesttype CONTEST_COOL
+    contesttype CONTEST_CUTE
     terminatedata
-    movedescription MOVE_TEARFUL_LOOK, "---"
+    movedescription MOVE_TEARFUL_LOOK, "The user tears up,\nlowering the target's\nAttack and Sp. Atk\nstats.\nBypasses Protect."
 
 movedata MOVE_ZING_ZAP, "Électrikipik"
     battleeffect MOVE_EFFECT_FLINCH_HIT
@@ -11525,7 +11525,7 @@ movedata MOVE_ZING_ZAP, "Électrikipik"
     effectchance 30
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11541,7 +11541,7 @@ movedatalongname MOVE_NATURES_MADNESS, "IreDeLaNature", "Ire de la Nature"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags  FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags  FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11557,7 +11557,7 @@ movedata MOVE_MULTI_ATTACK, "Coup Varia-Type"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11573,7 +11573,7 @@ movedata MOVE_10_000_000_VOLT_THUNDERBOLT, "Giga-Tonnerre"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11589,7 +11589,7 @@ movedata MOVE_MIND_BLOWN, "Caboche-Kaboum"
     effectchance 0
     target RANGE_ALL_ADJACENT
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11605,7 +11605,7 @@ movedata MOVE_PLASMA_FISTS, "Plasma Punch"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11621,7 +11621,7 @@ movedata MOVE_PHOTON_GEYSER, "Photo-Geyser"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags  FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags  FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11637,7 +11637,7 @@ movedatalongname MOVE_LIGHT_THAT_BURNS_THE_SKY, "ApocalypsisLumi", "Apocalypsis 
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11653,7 +11653,7 @@ movedatalongname MOVE_SEARING_SUNRAZE_SMASH, "Hélio-Choc", "Hélio-Choc Dévast
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11669,7 +11669,7 @@ movedatalongname MOVE_MENACING_MOONRAZE_MAELSTROM, "RayonsSélénites", "Rayons 
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11685,7 +11685,7 @@ movedatalongname MOVE_LETS_SNUGGLE_FOREVER, "PatatiPatatrape", "Patati-Patattrap
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11701,7 +11701,7 @@ movedatalongname MOVE_SPLINTERED_STORMSHARDS, "Roches-Lames", "Hurlement des Roc
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11717,7 +11717,7 @@ movedatalongname MOVE_CLANGOROUS_SOULBLAZE, "Dracacophonie", "Dracacophonie Flam
     effectchance 100
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11733,7 +11733,7 @@ movedata MOVE_ZIPPY_ZAP, "Pika-Sprint"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 2
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_CONTACT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11749,7 +11749,7 @@ movedata MOVE_SPLISHY_SPLASH, "Pika-Splash"
     effectchance 30
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11765,7 +11765,7 @@ movedata MOVE_FLOATY_FALL, "Pika-Piqué"
     effectchance 30
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11781,7 +11781,7 @@ movedata MOVE_PIKA_PAPOW, "Pika-Fracas"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11797,7 +11797,7 @@ movedata MOVE_BOUNCY_BUBBLE, "Évo-Thalasso"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11813,7 +11813,7 @@ movedata MOVE_BUZZY_BUZZ, "Évo-Dynamo"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11829,7 +11829,7 @@ movedata MOVE_SIZZLY_SLIDE, "Évo-Flambo"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11845,7 +11845,7 @@ movedata MOVE_GLITZY_GLOW, "Évo-Psycho"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11861,7 +11861,7 @@ movedata MOVE_BADDY_BAD, "Évo-Ténébro"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11877,7 +11877,7 @@ movedata MOVE_SAPPY_SEED, "Évo-Écolo"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_MAGIC_COAT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_MAGIC_COAT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11893,7 +11893,7 @@ movedata MOVE_FREEZY_FROST, "Évo-Congélo"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11909,7 +11909,7 @@ movedata MOVE_SPARKLY_SWIRL, "Évo-Fabulo"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11925,7 +11925,7 @@ movedata MOVE_VEEVEE_VOLLEY, "Évo-Chardasso"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11941,7 +11941,7 @@ movedata MOVE_DOUBLE_IRON_BASH, "Écrous d'Poing"
     effectchance 30
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11957,7 +11957,7 @@ movedata MOVE_MAX_GUARD, "Gardomax"
     effectchance 0
     target RANGE_USER
     priority 4
-    flags 0
+    flags FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11973,7 +11973,7 @@ movedata MOVE_DYNAMAX_CANNON, "Canon Dynamax"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags  FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags  FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11989,7 +11989,7 @@ movedatalongname MOVE_SNIPE_SHOT, "TirDePrécision", "Tir de Précision"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12005,7 +12005,7 @@ movedata MOVE_JAW_LOCK, "Croque Fort"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12021,7 +12021,7 @@ movedata MOVE_STUFF_CHEEKS, "Garde-à-Joues"
     effectchance 100
     target RANGE_USER
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12037,7 +12037,7 @@ movedata MOVE_NO_RETREAT, "Ultime Bastion"
     effectchance 100
     target RANGE_USER
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12053,14 +12053,14 @@ movedata MOVE_TAR_SHOT, "Goudronnage"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
-    contesttype CONTEST_COOL
+    contesttype CONTEST_SMART
     terminatedata
-    movedescription MOVE_TAR_SHOT, "---"
+    movedescription MOVE_TAR_SHOT, "The user pours tar on\nthe target, dropping\ntheir Speed stat.\nFire attacks deal\nmore damage."
 
 movedata MOVE_MAGIC_POWDER, "Poudre Magique"
-    battleeffect MOVE_EFFECT_HIT
+    battleeffect MOVE_EFFECT_CHANGE_TO_PSYCHIC_TYPE
     pss SPLIT_STATUS
     basepower 0
     type TYPE_PSYCHIC
@@ -12071,7 +12071,7 @@ movedata MOVE_MAGIC_POWDER, "Poudre Magique"
     priority 0
     flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
     appeal 0x00
-    contesttype CONTEST_COOL
+    contesttype CONTEST_BEAUTY
     terminatedata
     movedescription MOVE_MAGIC_POWDER, "The user scatters a\ncloud of magic powder\nthat changes the\ntarget's type to\nPsychic."
 
@@ -12085,7 +12085,7 @@ movedata MOVE_DRAGON_DARTS, "Draco-Flèches"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12101,7 +12101,7 @@ movedata MOVE_TEATIME, "Thérémonie"
     effectchance 0
     target RANGE_USER | RANGE_ALL_ADJACENT
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_MAGIC_COAT
+    flags FLAG_MIRROR_MOVE | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12117,14 +12117,14 @@ movedata MOVE_OCTOLOCK, "Octoprise"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
     movedescription MOVE_OCTOLOCK, "---"
 
 movedata MOVE_BOLT_BEAK, "Prise de Bec"
-    battleeffect MOVE_EFFECT_HIT
+    battleeffect MOVE_EFFECT_DOUBLE_POWER_IF_FASTER
     pss SPLIT_PHYSICAL
     basepower 85
     type TYPE_ELECTRIC
@@ -12133,14 +12133,14 @@ movedata MOVE_BOLT_BEAK, "Prise de Bec"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
     movedescription MOVE_BOLT_BEAK, "---"
 
 movedata MOVE_FISHIOUS_REND, "Branchicrok"
-    battleeffect MOVE_EFFECT_HIT
+    battleeffect MOVE_EFFECT_DOUBLE_POWER_IF_FASTER
     pss SPLIT_PHYSICAL
     basepower 85
     type TYPE_WATER
@@ -12149,7 +12149,7 @@ movedata MOVE_FISHIOUS_REND, "Branchicrok"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12165,7 +12165,7 @@ movedata MOVE_COURT_CHANGE, "Change-Côté"
     effectchance 0
     target RANGE_FIELD
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12181,7 +12181,7 @@ movedata MOVE_MAX_FLARE, "Pyromax"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12197,7 +12197,7 @@ movedata MOVE_MAX_FLUTTERBY, "Insectomax"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12213,7 +12213,7 @@ movedata MOVE_MAX_LIGHTNING, "Fulguromax"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12229,7 +12229,7 @@ movedata MOVE_MAX_STRIKE, "Normalomax"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12245,7 +12245,7 @@ movedata MOVE_MAX_KNUCKLE, "Pugilomax"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12261,7 +12261,7 @@ movedata MOVE_MAX_PHANTASM, "Spectromax"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12277,7 +12277,7 @@ movedata MOVE_MAX_HAILSTORM, "Cryomax"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12293,7 +12293,7 @@ movedata MOVE_MAX_OOZE, "Toxinomax"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12309,7 +12309,7 @@ movedata MOVE_MAX_GEYSER, "Hydromax"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12325,7 +12325,7 @@ movedata MOVE_MAX_AIRSTREAM, "Aéromax"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12341,7 +12341,7 @@ movedata MOVE_MAX_STARFALL, "Enchantomax"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12357,7 +12357,7 @@ movedata MOVE_MAX_WYRMWIND, "Dracomax"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12373,7 +12373,7 @@ movedata MOVE_MAX_MINDSTORM, "Psychomax"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12389,7 +12389,7 @@ movedata MOVE_MAX_ROCKFALL, "Lithomax"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12405,7 +12405,7 @@ movedata MOVE_MAX_QUAKE, "Sismomax"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12421,7 +12421,7 @@ movedata MOVE_MAX_DARKNESS, "Sinistromax"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12437,7 +12437,7 @@ movedata MOVE_MAX_OVERGROWTH, "Phytomax"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12453,7 +12453,7 @@ movedata MOVE_MAX_STEELSPIKE, "Métallomax"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12485,14 +12485,14 @@ movedata MOVE_BODY_PRESS, "Big Splash"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
     movedescription MOVE_BODY_PRESS, "---"
 
 movedata MOVE_DECORATE, "Nappage"
-    battleeffect MOVE_EFFECT_HIT
+    battleeffect MOVE_EFFECT_DECORATE
     pss SPLIT_STATUS
     basepower 0
     type (FAIRY_TYPE_IMPLEMENTED) ? TYPE_FAIRY : TYPE_NORMAL
@@ -12501,7 +12501,7 @@ movedata MOVE_DECORATE, "Nappage"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_MAGIC_COAT
+    flags FLAG_MIRROR_MOVE | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12517,7 +12517,7 @@ movedata MOVE_DRUM_BEATING, "Tambour Battant"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12533,7 +12533,7 @@ movedata MOVE_SNAP_TRAP, "Troquenard"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12549,7 +12549,7 @@ movedata MOVE_PYRO_BALL, "Ballon Brûlant"
     effectchance 10
     target RANGE_SINGLE_TARGET
     priority 0
-    flags  FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags  FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12565,7 +12565,7 @@ movedata MOVE_BEHEMOTH_BLADE, "Gladius Maximus"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12581,7 +12581,7 @@ movedata MOVE_BEHEMOTH_BASH, "Aegis Maxima"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12597,7 +12597,7 @@ movedata MOVE_AURA_WHEEL, "Roue Libre"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12613,7 +12613,7 @@ movedata MOVE_BREAKING_SWIPE, "Abattage"
     effectchance 100
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12629,7 +12629,7 @@ movedata MOVE_BRANCH_POKE, "Tapotige"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12645,7 +12645,7 @@ movedata MOVE_OVERDRIVE, "Overdrive"
     effectchance 0
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12661,7 +12661,7 @@ movedata MOVE_APPLE_ACID, "Acide Malique"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12677,7 +12677,7 @@ movedata MOVE_GRAV_APPLE, "Force G"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12693,7 +12693,7 @@ movedata MOVE_SPIRIT_BREAK, "Choc Émotionnel"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12709,14 +12709,14 @@ movedata MOVE_STRANGE_STEAM, "Vapeur Féérique"
     effectchance 20
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
     movedescription MOVE_STRANGE_STEAM, "The user attacks the\ntarget by emitting\nsteam.\nThis may also\nconfuse the target."
 
 movedata MOVE_LIFE_DEW, "Fontaine de Vie"
-    battleeffect MOVE_EFFECT_HIT
+    battleeffect MOVE_EFFECT_LIFE_DEW
     pss SPLIT_STATUS
     basepower 0
     type TYPE_WATER
@@ -12725,11 +12725,11 @@ movedata MOVE_LIFE_DEW, "Fontaine de Vie"
     effectchance 0
     target RANGE_USER_SIDE
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_LIFE_DEW, "---"
+    movedescription MOVE_LIFE_DEW, "The user scatters\nwater around and\nrestores the HP of\nitself and its ally\nPokémon in battle."
 
 movedata MOVE_OBSTRUCT, "Blocage"
     battleeffect MOVE_EFFECT_PROTECT
@@ -12757,7 +12757,7 @@ movedata MOVE_FALSE_SURRENDER, "Fourbette"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12773,7 +12773,7 @@ movedata MOVE_METEOR_ASSAULT, "Joute Astrale"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12789,7 +12789,7 @@ movedata MOVE_ETERNABEAM, "Laser Infinimax"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags  FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags  FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12805,7 +12805,7 @@ movedata MOVE_STEEL_BEAM, "Métalaser"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12821,14 +12821,14 @@ movedata MOVE_EXPANDING_FORCE, "Vaste Pouvoir"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
     movedescription MOVE_EXPANDING_FORCE, "---"
 
 movedata MOVE_STEEL_ROLLER, "Métalliroue"
-    battleeffect MOVE_EFFECT_HIT
+    battleeffect MOVE_EFFECT_END_TERRAIN
     pss SPLIT_PHYSICAL
     basepower 130
     type TYPE_STEEL
@@ -12837,7 +12837,7 @@ movedata MOVE_STEEL_ROLLER, "Métalliroue"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12853,7 +12853,7 @@ movedata MOVE_SCALE_SHOT, "Rafale Écailles"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12869,7 +12869,7 @@ movedata MOVE_METEOR_BEAM, "Laser Météore"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12885,7 +12885,7 @@ movedata MOVE_SHELL_SIDE_ARM, "Kokiyarme"
     effectchance 20
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12901,7 +12901,7 @@ movedata MOVE_MISTY_EXPLOSION, "Explo-Brume"
     effectchance 0
     target RANGE_ALL_ADJACENT
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12917,7 +12917,7 @@ movedata MOVE_GRASSY_GLIDE, "Gliss'Herbe"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12933,7 +12933,7 @@ movedata MOVE_RISING_VOLTAGE, "Monte-Tension"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12949,7 +12949,7 @@ movedata MOVE_TERRAIN_PULSE, "Champlification"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12965,7 +12965,7 @@ movedata MOVE_SKITTER_SMACK, "Ravage Rampant"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12981,7 +12981,7 @@ movedata MOVE_BURNING_JEALOUSY, "Feu Envieux"
     effectchance 100
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12997,7 +12997,7 @@ movedata MOVE_LASH_OUT, "Cent Rancunes"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13013,7 +13013,7 @@ movedata MOVE_POLTERGEIST, "Esprit Frappeur"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13029,23 +13029,23 @@ movedata MOVE_CORROSIVE_GAS, "Gaz Corrosif"
     effectchance 0
     target RANGE_ALL_ADJACENT
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
     movedescription MOVE_CORROSIVE_GAS, "The user surrounds\neverything around it\nwith highly acidic gas\nand melts away items\nheld by other Pokémon."
 
 movedata MOVE_COACHING, "Coaching"
-    battleeffect MOVE_EFFECT_HIT
+    battleeffect MOVE_EFFECT_COACHING
     pss SPLIT_STATUS
     basepower 0
     type TYPE_FIGHTING
     accuracy 0
     pp 10
-    effectchance 100
-    target RANGE_USER_SIDE
+    effectchance 0
+    target RANGE_ALLY
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags FLAG_MIRROR_MOVE | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13061,7 +13061,7 @@ movedata MOVE_FLIP_TURN, "Eau Revoir"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13077,7 +13077,7 @@ movedata MOVE_TRIPLE_AXEL, "Triple Axel"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13093,7 +13093,7 @@ movedata MOVE_DUAL_WINGBEAT, "Double Volée"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13109,7 +13109,7 @@ movedata MOVE_SCORCHING_SANDS, "Sable Ardent"
     effectchance 30
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13125,7 +13125,7 @@ movedatalongname MOVE_JUNGLE_HEALING, "SelveSalvatrice", "Selve Salvatrice"
     effectchance 0
     target RANGE_USER_SIDE
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13141,7 +13141,7 @@ movedata MOVE_WICKED_BLOW, "Poing Obscur"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13157,7 +13157,7 @@ movedatalongname MOVE_SURGING_STRIKES, "TorrentDeCoups", "Torrent de Coups"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13173,7 +13173,7 @@ movedata MOVE_THUNDER_CAGE, "Voltageôle"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13189,7 +13189,7 @@ movedata MOVE_DRAGON_ENERGY, "Draco-Énergie"
     effectchance 0
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13205,7 +13205,7 @@ movedata MOVE_FREEZING_GLARE, "Regard Glaçant"
     effectchance 10
     target RANGE_SINGLE_TARGET
     priority 0
-    flags  FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags  FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13221,7 +13221,7 @@ movedata MOVE_FIERY_WRATH, "Fureur Ardente"
     effectchance 20
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13237,7 +13237,7 @@ movedata MOVE_THUNDEROUS_KICK, "Coup Fulgurant"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13253,7 +13253,7 @@ movedata MOVE_GLACIAL_LANCE, "Lance de Glace"
     effectchance 0
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags  FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags  FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13269,7 +13269,7 @@ movedata MOVE_ASTRAL_BARRAGE, "Éclat Spectral"
     effectchance 0
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags  FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags  FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13285,7 +13285,7 @@ movedata MOVE_EERIE_SPELL, "Sort Sinistre"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13301,7 +13301,7 @@ movedatalongname MOVE_DIRE_CLAW, "GriffesFunestes", "Griffes Funestes"
     effectchance 50
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13317,7 +13317,7 @@ movedata MOVE_PSYSHIELD_BASH, "Sprint Bouclier"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13349,7 +13349,7 @@ movedata MOVE_STONE_AXE, "Hache de Pierre"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13365,7 +13365,7 @@ movedatalongname MOVE_SPRINGTIDE_STORM, "TyphonPassionné", "Typhon Passionné"
     effectchance 30
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13381,7 +13381,7 @@ movedata MOVE_MYSTICAL_POWER, "Force Mystique"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13397,7 +13397,7 @@ movedata MOVE_RAGING_FURY, "Grand Courroux"
     effectchance 0
     target RANGE_RANDOM_OPPONENT
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13413,14 +13413,14 @@ movedata MOVE_WAVE_CRASH, "Aquatacle"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
     movedescription MOVE_WAVE_CRASH, "---"
 
 movedata MOVE_CHLOROBLAST, "Herblast"
-    battleeffect MOVE_EFFECT_RECOIL_HALF
+    battleeffect MOVE_EFFECT_HIT
     pss SPLIT_SPECIAL
     basepower 150
     type TYPE_GRASS
@@ -13429,7 +13429,7 @@ movedata MOVE_CHLOROBLAST, "Herblast"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13445,7 +13445,7 @@ movedata MOVE_MOUNTAIN_GALE, "Bise Glaciaire"
     effectchance 30
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13477,7 +13477,7 @@ movedata MOVE_HEADLONG_RUSH, "Assaut Frontal"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13493,7 +13493,7 @@ movedata MOVE_BARB_BARRAGE, "Multitoxik"
     effectchance 50
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13509,7 +13509,7 @@ movedata MOVE_ESPER_WING, "Ailes Psycho"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13525,7 +13525,7 @@ movedata MOVE_BITTER_MALICE, "Cœur de Rancœur"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13557,7 +13557,7 @@ movedata MOVE_TRIPLE_ARROWS, "Triple Flèche"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13573,7 +13573,7 @@ movedata MOVE_INFERNAL_PARADE, "Cortège Funèbre"
     effectchance 30
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13589,7 +13589,7 @@ movedata MOVE_CEASELESS_EDGE, "Vagues à Lames"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13605,7 +13605,7 @@ movedata MOVE_BLEAKWIND_STORM, "Typhon Hivernal"
     effectchance 30
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13621,7 +13621,7 @@ movedatalongname MOVE_WILDBOLT_STORM, "TyphonFulgurant", "Typhon Fulgurant"
     effectchance 30
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13637,7 +13637,7 @@ movedatalongname MOVE_SANDSEAR_STORM, "TyphonPyrosable", "Typhon Pyrosable"
     effectchance 30
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13653,7 +13653,7 @@ movedata MOVE_LUNAR_BLESSING, "Prière Lunaire"
     effectchance 0
     target RANGE_ALLY
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13685,7 +13685,7 @@ movedata MOVE_TERA_BLAST, "Téra Explosion"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13717,7 +13717,7 @@ movedata MOVE_AXE_KICK, "Talon-Marteau"
     effectchance 30
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13733,7 +13733,7 @@ movedatalongname MOVE_LAST_RESPECTS, "HommagePosthume", "Hommage Posthume"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13749,7 +13749,7 @@ movedata MOVE_LUMINA_CRASH, "Lumino-Impact"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13765,7 +13765,7 @@ movedata MOVE_ORDER_UP, "Plat du Jour"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13781,7 +13781,7 @@ movedata MOVE_JET_PUNCH, "Poing Sonique"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 1
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13813,7 +13813,7 @@ movedata MOVE_SPIN_OUT, "Dérapage"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13829,14 +13829,14 @@ movedata MOVE_POPULATION_BOMB, "Prolifération"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
     movedescription MOVE_POPULATION_BOMB, "The user’s fellows\ngather in droves to\nperform a combo attack\nthat hits the target one\nto ten times in a row."
 
 movedata MOVE_ICE_SPINNER, "Cryo-Pirouette"
-    battleeffect MOVE_EFFECT_HIT
+    battleeffect MOVE_EFFECT_END_TERRAIN
     pss SPLIT_PHYSICAL
     basepower 80
     type TYPE_ICE
@@ -13845,7 +13845,7 @@ movedata MOVE_ICE_SPINNER, "Cryo-Pirouette"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13861,7 +13861,7 @@ movedata MOVE_GLAIVE_RUSH, "Charge Glaive"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13877,7 +13877,7 @@ movedata MOVE_REVIVAL_BLESSING, "Second Souffle"
     effectchance 0
     target RANGE_USER
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13893,7 +13893,7 @@ movedata MOVE_SALT_CURE, "Salaison"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13909,7 +13909,7 @@ movedata MOVE_TRIPLE_DIVE, "Triple Plongeon"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13925,7 +13925,7 @@ movedata MOVE_MORTAL_SPIN, "Toupie Éclat"
     effectchance 100
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13941,7 +13941,7 @@ movedata MOVE_DOODLE, "Décalquage"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13973,7 +13973,7 @@ movedata MOVE_KOWTOW_CLEAVE, "Génusection"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13989,7 +13989,7 @@ movedata MOVE_FLOWER_TRICK, "Magie Florale"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14005,7 +14005,7 @@ movedatalongname MOVE_TORCH_SONG, "ChantFlamboyant", "Chant Flamboyant"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14021,7 +14021,7 @@ movedata MOVE_AQUA_STEP, "Danse Aquatique"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14037,7 +14037,7 @@ movedata MOVE_RAGING_BULL, "Taurogne"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14053,7 +14053,7 @@ movedata MOVE_MAKE_IT_RAIN, "Ruée d'Or"
     effectchance 0
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14069,7 +14069,7 @@ movedata MOVE_PSYBLADE, "Lame Psychique"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14085,7 +14085,7 @@ movedata MOVE_HYDRO_STEAM, "Hydrovapeur"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14101,7 +14101,7 @@ movedata MOVE_RUINATION, "Cataclysme"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14117,7 +14117,7 @@ movedata MOVE_COLLISION_COURSE, "Nitro Crash"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14133,7 +14133,7 @@ movedata MOVE_ELECTRO_DRIFT, "Turbo Volt"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14165,7 +14165,7 @@ movedata MOVE_CHILLY_RECEPTION, "Neigeux de Mots"
     effectchance 0
     target RANGE_FIELD
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14213,7 +14213,7 @@ movedata MOVE_POUNCE, "Bond"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14229,7 +14229,7 @@ movedata MOVE_TRAILBLAZE, "Désherbaffe"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14245,7 +14245,7 @@ movedata MOVE_CHILLING_WATER, "Douche Froide"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14261,7 +14261,7 @@ movedata MOVE_HYPER_DRILL, "Hyperceuse"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14277,7 +14277,7 @@ movedata MOVE_TWIN_BEAM, "Double Laser"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14293,7 +14293,7 @@ movedata MOVE_RAGE_FIST, "Poing de Colère"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14309,7 +14309,7 @@ movedata MOVE_ARMOR_CANNON, "Canon Blindé"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags  FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags  FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14325,7 +14325,7 @@ movedata MOVE_BITTER_BLADE, "Lame en Peine"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14341,7 +14341,7 @@ movedata MOVE_DOUBLE_SHOCK, "Double Décharge"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14357,7 +14357,7 @@ movedata MOVE_GIGATON_HAMMER, "Marteau Mastoc"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14373,7 +14373,7 @@ movedata MOVE_COMEUPPANCE, "Vindicte"
     effectchance 0
     target RANGE_SINGLE_TARGET_SPECIAL
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14389,7 +14389,7 @@ movedata MOVE_AQUA_CUTTER, "Tranch'Aqua"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14405,7 +14405,7 @@ movedata MOVE_BLAZING_TORQUE, "Crash Brûlant"
     effectchance 30
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14421,7 +14421,7 @@ movedata MOVE_WICKED_TORQUE, "Crash Obscur"
     effectchance 10
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14437,7 +14437,7 @@ movedata MOVE_NOXIOUS_TORQUE, "Crash Toxique"
     effectchance 30
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14453,7 +14453,7 @@ movedata MOVE_COMBAT_TORQUE, "Crash Musclé"
     effectchance 30
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14469,7 +14469,7 @@ movedata MOVE_MAGICAL_TORQUE, "Crash Magique"
     effectchance 30
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14485,7 +14485,7 @@ movedata MOVE_BLOOD_MOON, "Lune Rouge"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14501,7 +14501,7 @@ movedata MOVE_MATCHA_GOTCHA, "Mortier Matcha"
     effectchance 20
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14517,7 +14517,7 @@ movedata MOVE_SYRUP_BOMB, "Bombe au Sirop"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14533,7 +14533,7 @@ movedata MOVE_IVY_CUDGEL, "Massue Liane"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14549,7 +14549,7 @@ movedata MOVE_ELECTRO_SHOT, "Fulgurayon"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14565,7 +14565,7 @@ movedatalongname MOVE_TERA_STARSTORM, "PluieTérastrale", "Pluie Térastrale"
     effectchance 0
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14581,7 +14581,7 @@ movedata MOVE_FICKLE_BEAM, "Laser Hasard"
     effectchance 100 // handled by random in the move eff
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14613,7 +14613,7 @@ movedata MOVE_THUNDERCLAP, "Vif Éclair"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 1
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14629,7 +14629,7 @@ movedata MOVE_MIGHTY_CLEAVE, "Lame Puissante"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14645,7 +14645,7 @@ movedatalongname MOVE_TACHYON_CUTTER, "LameTachyonique", "Lame Tachyonique"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14661,7 +14661,7 @@ movedatalongname MOVE_HARD_PRESS, "PressionExtrême", "Pression Extrême"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14677,7 +14677,7 @@ movedata MOVE_DRAGON_CHEER, "Cri Draconique"
     effectchance 0
     target RANGE_ALLY
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14693,7 +14693,7 @@ movedata MOVE_ALLURING_VOICE, "Voix Envoûtante"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14709,7 +14709,7 @@ movedata MOVE_TEMPER_FLARE, "Indignition"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14725,7 +14725,7 @@ movedata MOVE_SUPERCELL_SLAM, "Volt Assaut"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14741,7 +14741,7 @@ movedata MOVE_PSYCHIC_NOISE, "Dissonance Psy"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14757,7 +14757,7 @@ movedata MOVE_UPPER_HAND, "Prio-Parade"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 3
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT | FLAG_UNUSABLE_UNIMPLEMENTED
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14773,7 +14773,7 @@ movedata MOVE_MALIGNANT_CHAIN, "Chaîne Malsaine"
     effectchance 50
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata

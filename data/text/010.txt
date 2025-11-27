@@ -53,7 +53,7 @@ Impossible de tenir {STRVAR_1 8, 0, 0}!
                              
 Jeter combien de\n{STRVAR_1 8, 0, 0}(s)?
 {STRVAR_1 51, 1, 0} {STRVAR_1 8, 0, 0} en moins.
-{STRVAR_1 8, 0, 0}:\nen jeter {STRVAR_1 52, 1, 0}?
+En jeter {STRVAR_1 52, 1, 0}?\n
                                          
 Impossible de descendre de\nBicyclette ici.
 Jetons: {STRVAR_1 54, 0, 0}

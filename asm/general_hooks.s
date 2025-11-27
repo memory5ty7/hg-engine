@@ -122,6 +122,23 @@ bl PartyMenu_ItemUseFunc_ReuseItem
 ldr r3, =0x02081398 | 1
 bx r3
 
+.global Bag_RenderMachineMoveSlot_hook
+Bag_RenderMachineMoveSlot_hook:
+ldr r3, [sp, #0x28]
+sub sp, #8
+str r3, [sp, #0]
+mov r0, r5
+mov r1, r6
+mov r3, r4
+bl  Bag_RenderMachineMoveSlot
+ldr r3, [r4, #0]
+cmp r0, #0
+add sp, #8
+ldr r2, =0x021FF662 | 1
+bx  r2
+
+.pool
+
 .global ov14_021E61BC_hook
 ov14_021E61BC_hook:
     push {r3, r4, r5, r6, lr}
