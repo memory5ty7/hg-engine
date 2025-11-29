@@ -15,6 +15,8 @@
 
 
 //u16 GetBattleMonItem(struct BattleStruct *sp, int client_no);
+int CalcBaseDamage(void *bw, struct BattleStruct *sp, int moveno, u32 side_cond,
+                   u32 field_cond, u16 pow, u8 type, u8 attacker, u8 defender, u8 critical);
 void CalcDamageOverall(void *bw, struct BattleStruct *sp);
 int AdjustDamageForRoll(void *bw, struct BattleStruct *sp, int damage);
 

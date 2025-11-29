@@ -12,6 +12,9 @@
 #include "../../include/constants/item.h"
 #include "../../include/item.h"
 
+int LONG_CALL CalcBaseDamage(void *bw, struct BattleStruct *sp, int moveno, u32 side_cond,
+                   u32 field_cond, u16 pow, u8 type, u8 attacker, u8 defender, u8 critical);
+
 typedef struct {
     /*Field/Pokemon state relavent variables*/
     BOOL defenderImmuneToPoison;
@@ -1303,7 +1306,7 @@ int AttackerMonWithHighestDamage (struct BattleSystem *bsys, u32 attacker, AICon
         if(GetMonData(currentMonAttacking, MON_DATA_HP, 0) != 0){
             for (int attack_index = 0; attack_index < 4; attack_index++){
                 int current_move = GetMonData(currentMonAttacking, MON_DATA_MOVE1 + attack_index, NULL);
-                int damage = CalcBaseDamage(bsys, ctx, current_move, ctx->side_condition[ai->defenderSide], ctx->field_condition, 0, 0, attacker, ai->defender, 0, 0, 0, NULL);
+                int damage = CalcBaseDamage(bsys, ctx, current_move, ctx->side_condition[ai->defenderSide], ctx->field_condition, 0, 0, attacker, ai->defender, NULL);
                 if(damage > maxDamage){
                     maxDamage = damage;
                     maxDamageIndex = i;
@@ -1767,7 +1770,7 @@ void SetupStateVariables(struct BattleSystem *bsys, u32 attacker, u32 defender, 
             if(attackerEffectCheck == MOVE_EFFECT_RANDOM_POWER_10_CASES){ //average magnitude power
                 specialMovePower = 71;
             }
-            currentReceivedDamage = CalcBaseDamage(bsys, ctx, ctx->battlemon[ai->defender].move[i], ctx->side_condition[ai->attackerSide],ctx->field_condition, specialMovePower, 0, ai->attacker, ai->defender, 0, 0, 0, NULL);
+            currentReceivedDamage = CalcBaseDamage(bsys, ctx, ctx->battlemon[ai->defender].move[i], ctx->side_condition[ai->attackerSide],ctx->field_condition, specialMovePower, 0, ai->attacker, ai->defender, ctx->critical);
             currentReceivedDamage = ServerDoTypeCalcMod(bsys, ctx, ctx->battlemon[ai->defender].move[i], 0, ai->defender, ai->attacker, currentReceivedDamage, &temp); // looking at MAX ROLL, not min roll. 
             currentReceivedDamage = AdjustUnusualMoveDamage(bsys, ai->defender, ai->attacker, currentReceivedDamage, ctx->battlemon[ai->defender].move[i], ai);
             if(currentReceivedDamage > ai->maxDamageReceived){
@@ -1785,7 +1788,6 @@ void SetupStateVariables(struct BattleSystem *bsys, u32 attacker, u32 defender, 
     }
     ai->turnsToGetKilled = ai->attackerHP / (ai->maxDamageReceived + 1) + 1;
 
-    u64 buf[64];
 
     /*Loop over all moves for checking certain conditions*/
     /*Set up max roll damage calculations for all known moves.
@@ -1799,7 +1801,7 @@ void SetupStateVariables(struct BattleSystem *bsys, u32 attacker, u32 defender, 
         if(attackerEffectCheck == MOVE_EFFECT_RANDOM_POWER_10_CASES){ //average magnitude power
             specialMovePower = 71;
         }
-        ai->attackerMaxRollMoveDamages[i] = CalcBaseDamage(bsys, ctx, attackerMoveCheck, ctx->side_condition[ai->defenderSide],ctx->field_condition, specialMovePower, 0, ai->attacker, ai->defender, 0, 0, 0, NULL);
+        ai->attackerMaxRollMoveDamages[i] = CalcBaseDamage(bsys, ctx, attackerMoveCheck, ctx->side_condition[ai->defenderSide],ctx->field_condition, specialMovePower, 0, ai->attacker, ai->defender, NULL);
         ai->attackerMaxRollMoveDamages[i] = ServerDoTypeCalcMod(bsys, ctx, attackerMoveCheck, 0, attacker, ai->defender, ai->attackerMaxRollMoveDamages[i], &temp);
         ai->attackerMaxRollMoveDamages[i] = AdjustUnusualMoveDamage(bsys, ai->attacker, ai->defender, ai->attackerMaxRollMoveDamages[i], attackerEffectCheck, ai);
         ai->attackerMinRollMoveDamages[i] = ai->attackerMaxRollMoveDamages[i] * 85 / 100;

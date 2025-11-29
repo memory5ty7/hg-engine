@@ -30,7 +30,7 @@ void overrideItemUsage(struct BattleSystem *bsys, struct BattleStruct *ctx)
             } else if (checkAreaCaughtFlag(bsys->location)
                        && CheckScriptFlag(FLAG_NUZLOCKE_MODE))
             {
-                mp.msg_id = BATTLE_MSG_AREA_ALREADY_CAUGHT_POKEMON; //msg.id  = msg_0197_01574; // You have already caught a Pokémon in this Area!
+                mp.msg_id = BATTLE_MSG_AREA_ALREADY_CAUGHT_POKEMON; //msg.id  = msg_0197_01609; // You have already caught a Pokémon in this Area!
                 mp.msg_tag = TAG_NONE;
                 ov12_022639B8(bsys, battlerId, mp);
                 ctx->com_seq_no[battlerId] = SSI_STATE_15;
@@ -38,7 +38,7 @@ void overrideItemUsage(struct BattleSystem *bsys, struct BattleStruct *ctx)
             } else if (CheckEvoLineCaught(bsys, ctx->battlemon[BATTLER_ENEMY].species, ctx->battlemon[BATTLER_ENEMY].form_no)
                        && CheckScriptFlag(FLAG_NUZLOCKE_MODE))
             {
-                mp.msg_id = BATTLE_MSG_ALREADY_CAUGHT_POKEMON; //msg.id  = msg_0197_01575; // You have already caught this Pokémon (or its Evolution Line)!
+                mp.msg_id = BATTLE_MSG_ALREADY_CAUGHT_POKEMON; //msg.id  = msg_0197_01610; // You have already caught this Pokémon (or its Evolution Line)!
                 mp.msg_tag = TAG_NONE;
                 ov12_022639B8(bsys, battlerId, mp);
                 ctx->com_seq_no[battlerId] = SSI_STATE_15;
