@@ -1,1 +1,2 @@
-Custom item description
+A candy that is packed with energy.\nIt raises the level of a single Pokémon\nby one.
+An item that prevents weak wild\nPokémon from appearing after its use.
