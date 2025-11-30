@@ -14,6 +14,7 @@
 #include "../../include/q412.h"
 
 
+
 static const u8 HeldItemPowerUpTable[][2]={
     {HOLD_EFFECT_STRENGTHEN_BUG, TYPE_BUG},
     {HOLD_EFFECT_STRENGTHEN_STEEL, TYPE_STEEL},

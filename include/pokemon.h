@@ -1921,13 +1921,12 @@ BOOL LONG_CALL CanUseItemOnPokemon(struct PartyPokemon *mon, u16 itemID, s32 mov
 void LONG_CALL correct_zacian_zamazenta_kyurem_moves_for_form(struct PartyPokemon *param, unsigned int expected_form, int *a3);
 
 void LONG_CALL ChangeToBattleForm(struct PartyPokemon *pp);
+void LONG_CALL LoadMonEvolutionTable(u16 species, struct Evolution *evoTable);
 
 void LONG_CALL MonApplyFriendshipMod(struct PartyPokemon *mon, u8 kind, u16 location);
 
 u8 LONG_CALL GetMoveMaxPP(u16 moveId, u8 ppUps);
 
 void LONG_CALL ApplyMonMoodModifier(struct PartyPokemon *mon, int modifierId);
-
-void LONG_CALL LoadMonEvolutionTable(u16 species, struct Evolution *evoTable);
 
 #endif

@@ -3952,7 +3952,6 @@ int GetSanitisedType(int type);
 
 BOOL StrongWindsShouldWeaken(struct BattleSystem *bw, struct BattleStruct *sp, int typeTableEntryNo, int defender_type);
 
-
 int LONG_CALL PokeParty_GetPokeCount(const struct Party *party);
 
 #define BATTLE_IN_PROGRESS          0

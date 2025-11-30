@@ -51,9 +51,9 @@ Impossible de tenir {STRVAR_1 8, 0, 0}!
                     
                 
                              
-Jeter combien de\n{STRVAR_1 8, 0, 0}(s)?
-{STRVAR_1 51, 1, 0} {STRVAR_1 8, 0, 0} en moins.
-En jeter {STRVAR_1 52, 1, 0}?\n
+Throw away how many\n{STRVAR_1 8, 0, 0}(s)?
+Threw away {STRVAR_1 51, 1, 0} {STRVAR_1 8, 0, 0}.
+Is it OK to throw away\n{STRVAR_1 52, 1, 0} {STRVAR_1 8, 0, 0}?
                                          
 Impossible de descendre de\nBicyclette ici.
 Jetons: {STRVAR_1 54, 0, 0}

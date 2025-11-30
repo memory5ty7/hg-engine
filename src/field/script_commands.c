@@ -19,6 +19,7 @@
 #include "../../include/constants/weather_numbers.h"
 #include "../../include/constants/generated/learnsets.h"
 #include "../../include/constants/vars_flags.h"
+#include "../../include/constants/generated/learnsets.h"
 
 /**
  *  @brief script command to give an egg adapted to set the hidden ability
