@@ -771,6 +771,17 @@ PrintItemSlotQuantity = 0x021FF66C | 1;
 
 PlayerProfile_TestBadgeFlag = 0x02028F98 | 1;
 InitMartUI = 0x02256D34 | 1;
+
+sBattleBgProfileTable = 0x0226E70C;
+
+BattleSetup_New_Tutorial = 0x02051AAC | 1;
+BattleSetup_GetWildTransitionEffect = 0x020517E8 | 1;
+BattleSetup_GetWildBattleMusic = 0x020517FC | 1;
+Encounter_New = 0x020506BC | 1;
+TaskManager_Call = 0x02050530 | 1;
+Task_TutorialBattle = 0x0205128C | 1;
+
+GetItemAttrSub = 0x02077E48 | 1;
 /* Nuzlocke Mode Healing */
 MonMoveCanRestorePP = 0x020908CC | 1;
 MonMoveRestorePP = 0x0209091C | 1;
