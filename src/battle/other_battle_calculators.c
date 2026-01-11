@@ -4523,6 +4523,12 @@ u8 LONG_CALL AI_CalcSpeed(void *bw, struct BattleStruct *sp, int client1, int cl
        }
    
      }
+
+    // Handle resist berries
+    if ((flag[0] & MOVE_STATUS_FLAG_SUPER_EFFECTIVE) && (base_power) && (typeToBerryMapping[move_type] == GetBattleMonItem(sp, defence_client)))
+        {
+            damage = damage * 50 / 100;
+        }
      
      return damage;
  }

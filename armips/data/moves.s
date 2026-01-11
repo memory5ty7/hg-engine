@@ -255,7 +255,7 @@ movedata MOVE_CUT, "Coupe"
     pss SPLIT_PHYSICAL
     basepower 50
     type TYPE_NORMAL
-    accuracy 95
+    accuracy 100
     pp 30
     effectchance 0
     target RANGE_SINGLE_TARGET
@@ -319,7 +319,7 @@ movedata MOVE_FLY, "Vol"
     pss SPLIT_PHYSICAL
     basepower 90
     type TYPE_FLYING
-    accuracy 95
+    accuracy 100
     pp 15
     effectchance 0
     target RANGE_SINGLE_TARGET
@@ -575,7 +575,7 @@ movedata MOVE_WRAP, "Ligotage"
     pss SPLIT_PHYSICAL
     basepower 15
     type TYPE_NORMAL
-    accuracy 90
+    accuracy 100
     pp 20
     effectchance 0
     target RANGE_SINGLE_TARGET
@@ -687,7 +687,7 @@ movedata MOVE_PIN_MISSILE, "Dard-Nuée"
     pss SPLIT_PHYSICAL
     basepower 25
     type TYPE_BUG
-    accuracy 95
+    accuracy 100
     pp 20
     effectchance 0
     target RANGE_SINGLE_TARGET
@@ -799,7 +799,7 @@ movedata MOVE_SONIC_BOOM, "Sonic Boom"
     pss SPLIT_SPECIAL
     basepower 1
     type TYPE_NORMAL
-    accuracy 90
+    accuracy 100
     pp 20
     effectchance 0
     target RANGE_SINGLE_TARGET
@@ -1023,7 +1023,7 @@ movedata MOVE_HYPER_BEAM, "Ultralaser"
     pss SPLIT_SPECIAL
     basepower 150
     type TYPE_NORMAL
-    accuracy 90
+    accuracy 100
     pp 5
     effectchance 0
     target RANGE_SINGLE_TARGET
@@ -1215,7 +1215,7 @@ movedata MOVE_RAZOR_LEAF, "Tranch'Herbe"
     pss SPLIT_PHYSICAL
     basepower 55
     type TYPE_GRASS
-    accuracy 95
+    accuracy 100
     pp 25
     effectchance 0
     target RANGE_ADJACENT_OPPONENTS
@@ -1311,7 +1311,7 @@ movedata MOVE_STRING_SHOT, "Sécrétion"
     pss SPLIT_STATUS
     basepower 0
     type TYPE_BUG
-    accuracy 95
+    accuracy 100
     pp 40
     effectchance 0
     target RANGE_ADJACENT_OPPONENTS
@@ -1391,7 +1391,7 @@ movedata MOVE_THUNDER_WAVE, "Cage Éclair"
     pss SPLIT_STATUS
     basepower 0
     type TYPE_ELECTRIC
-    accuracy 90
+    accuracy 100
     pp 20
     effectchance 0
     target RANGE_SINGLE_TARGET
@@ -1423,7 +1423,7 @@ movedata MOVE_ROCK_THROW, "Jet-Pierres"
     pss SPLIT_PHYSICAL
     basepower 50
     type TYPE_ROCK
-    accuracy 90
+    accuracy 100
     pp 15
     effectchance 0
     target RANGE_SINGLE_TARGET
@@ -1487,7 +1487,7 @@ movedata MOVE_TOXIC, "Toxik"
     pss SPLIT_STATUS
     basepower 0
     type TYPE_POISON
-    accuracy 90
+    accuracy 100
     pp 10
     effectchance 0
     target RANGE_SINGLE_TARGET
@@ -2239,7 +2239,7 @@ movedata MOVE_POISON_GAS, "Gaz Toxik"
     pss SPLIT_STATUS
     basepower 0
     type TYPE_POISON
-    accuracy 90
+    accuracy 100
     pp 40
     effectchance 0
     target DEBUG_NEEDS_TESTING ? RANGE_ADJACENT_OPPONENTS : RANGE_SINGLE_TARGET
@@ -2303,7 +2303,7 @@ movedata MOVE_SKY_ATTACK, "Piqué"
     pss SPLIT_PHYSICAL
     basepower 140
     type TYPE_FLYING
-    accuracy 90
+    accuracy 100
     pp 5
     effectchance 30
     target RANGE_SINGLE_TARGET
@@ -2447,7 +2447,7 @@ movedata MOVE_CRABHAMMER, "Pince-Masse"
     pss SPLIT_PHYSICAL
     basepower 100
     type TYPE_WATER
-    accuracy 90
+    accuracy 100
     pp 10
     effectchance 0
     target RANGE_SINGLE_TARGET
@@ -2495,7 +2495,7 @@ movedata MOVE_BONEMERANG, "Osmerang"
     pss SPLIT_PHYSICAL
     basepower 50
     type TYPE_GROUND
-    accuracy 90
+    accuracy 100
     pp 10
     effectchance 0
     target RANGE_SINGLE_TARGET
@@ -2527,7 +2527,7 @@ movedata MOVE_ROCK_SLIDE, "Éboulement"
     pss SPLIT_PHYSICAL
     basepower 75
     type TYPE_ROCK
-    accuracy 90
+    accuracy 100
     pp 10
     effectchance 30
     target RANGE_ADJACENT_OPPONENTS
@@ -2543,7 +2543,7 @@ movedata MOVE_HYPER_FANG, "Croc de Mort"
     pss SPLIT_PHYSICAL
     basepower 80
     type TYPE_NORMAL
-    accuracy 90
+    accuracy 100
     pp 15
     effectchance 10
     target RANGE_SINGLE_TARGET
@@ -2607,7 +2607,7 @@ movedata MOVE_SUPER_FANG, "Croc Fatal"
     pss SPLIT_PHYSICAL
     basepower 1
     type TYPE_NORMAL
-    accuracy 90
+    accuracy 100
     pp 10
     effectchance 0
     target RANGE_SINGLE_TARGET
@@ -2687,7 +2687,7 @@ movedata MOVE_TRIPLE_KICK, "Triple Pied"
     pss SPLIT_PHYSICAL
     basepower 10
     type TYPE_FIGHTING
-    accuracy 90
+    accuracy 100
     pp 10
     effectchance 0
     target RANGE_SINGLE_TARGET
@@ -2847,7 +2847,7 @@ movedata MOVE_AEROBLAST, "Aéroblast"
     pss SPLIT_SPECIAL
     basepower 100
     type TYPE_FLYING
-    accuracy 95
+    accuracy 100
     pp 5
     effectchance 0
     target RANGE_SINGLE_TARGET
@@ -3151,7 +3151,7 @@ movedata MOVE_ICY_WIND, "Vent Glace"
     pss SPLIT_SPECIAL
     basepower 55
     type TYPE_ICE
-    accuracy 95
+    accuracy 100
     pp 15
     effectchance 100
     target RANGE_ADJACENT_OPPONENTS
@@ -3183,7 +3183,7 @@ movedata MOVE_BONE_RUSH, "Charge Os"
     pss SPLIT_PHYSICAL
     basepower 25
     type TYPE_GROUND
-    accuracy 90
+    accuracy 100
     pp 10
     effectchance 0
     target RANGE_SINGLE_TARGET
@@ -3391,7 +3391,7 @@ movedata MOVE_STEEL_WING, "Ailes d'Acier"
     pss SPLIT_PHYSICAL
     basepower 70
     type TYPE_STEEL
-    accuracy 90
+    accuracy 100
     pp 25
     effectchance 10
     target RANGE_SINGLE_TARGET
@@ -3487,7 +3487,7 @@ movedata MOVE_PRESENT, "Cadeau"
     pss SPLIT_PHYSICAL
     basepower 1
     type TYPE_NORMAL
-    accuracy 90
+    accuracy 100
     pp 15
     effectchance 0
     target RANGE_SINGLE_TARGET
@@ -3551,7 +3551,7 @@ movedata MOVE_SACRED_FIRE, "Feu Sacré"
     pss SPLIT_PHYSICAL
     basepower 100
     type TYPE_FIRE
-    accuracy 95
+    accuracy 100
     pp 5
     effectchance 50
     target RANGE_SINGLE_TARGET
@@ -3727,7 +3727,7 @@ movedata MOVE_METAL_CLAW, "Griffe Acier"
     pss SPLIT_PHYSICAL
     basepower 50
     type TYPE_STEEL
-    accuracy 95
+    accuracy 100
     pp 35
     effectchance 10
     target RANGE_SINGLE_TARGET
@@ -4001,7 +4001,7 @@ movedata MOVE_ROCK_SMASH, "Éclate-Roc"
     type TYPE_FIGHTING
     accuracy 100
     pp 15
-    effectchance 50
+    effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
     flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
@@ -4127,7 +4127,7 @@ movedata MOVE_HEAT_WAVE, "Canicule"
     pss SPLIT_SPECIAL
     basepower 95
     type TYPE_FIRE
-    accuracy 90
+    accuracy 100
     pp 10
     effectchance 10
     target RANGE_ADJACENT_OPPONENTS
@@ -4799,7 +4799,7 @@ movedata MOVE_BLAZE_KICK, "Pied Brûleur"
     pss SPLIT_PHYSICAL
     basepower 85
     type TYPE_FIRE
-    accuracy 90
+    accuracy 100
     pp 10
     effectchance 10
     target RANGE_SINGLE_TARGET
@@ -4911,7 +4911,7 @@ movedata MOVE_CRUSH_CLAW, "Éclate Griffe"
     pss SPLIT_PHYSICAL
     basepower 75
     type TYPE_NORMAL
-    accuracy 95
+    accuracy 100
     pp 10
     effectchance 50
     target RANGE_SINGLE_TARGET
@@ -4927,7 +4927,7 @@ movedata MOVE_BLAST_BURN, "Rafale Feu"
     pss SPLIT_SPECIAL
     basepower 150
     type TYPE_FIRE
-    accuracy 90
+    accuracy 100
     pp 5
     effectchance 0
     target RANGE_SINGLE_TARGET
@@ -4943,7 +4943,7 @@ movedata MOVE_HYDRO_CANNON, "Hydroblast"
     pss SPLIT_SPECIAL
     basepower 150
     type TYPE_WATER
-    accuracy 90
+    accuracy 100
     pp 5
     effectchance 0
     target RANGE_SINGLE_TARGET
@@ -4959,7 +4959,7 @@ movedata MOVE_METEOR_MASH, "Poing Météore"
     pss SPLIT_PHYSICAL
     basepower 90
     type TYPE_STEEL
-    accuracy 90
+    accuracy 100
     pp 10
     effectchance 20
     target RANGE_SINGLE_TARGET
@@ -5039,7 +5039,7 @@ movedata MOVE_AIR_CUTTER, "Tranch'Air"
     pss SPLIT_SPECIAL
     basepower 60
     type TYPE_FLYING
-    accuracy 95
+    accuracy 100
     pp 25
     effectchance 0
     target RANGE_ADJACENT_OPPONENTS
@@ -5055,7 +5055,7 @@ movedata MOVE_OVERHEAT, "Surchauffe"
     pss SPLIT_SPECIAL
     basepower 130
     type TYPE_FIRE
-    accuracy 90
+    accuracy 100
     pp 5
     effectchance 100
     target RANGE_SINGLE_TARGET
@@ -5087,7 +5087,7 @@ movedata MOVE_ROCK_TOMB, "Tomberoche"
     pss SPLIT_PHYSICAL
     basepower 60
     type TYPE_ROCK
-    accuracy 95
+    accuracy 100
     pp 15
     effectchance 100
     target RANGE_SINGLE_TARGET
@@ -5247,7 +5247,7 @@ movedata MOVE_SKY_UPPERCUT, "Stratopercut"
     pss SPLIT_PHYSICAL
     basepower 85
     type TYPE_FIGHTING
-    accuracy 90
+    accuracy 100
     pp 15
     effectchance 0
     target RANGE_SINGLE_TARGET
@@ -5423,7 +5423,7 @@ movedata MOVE_FRENZY_PLANT, "Végé-Attaque"
     pss SPLIT_SPECIAL
     basepower 150
     type TYPE_GRASS
-    accuracy 90
+    accuracy 100
     pp 5
     effectchance 0
     target RANGE_SINGLE_TARGET
@@ -5471,7 +5471,7 @@ movedata MOVE_MUD_SHOT, "Tir de Boue"
     pss SPLIT_SPECIAL
     basepower 55
     type TYPE_GROUND
-    accuracy 95
+    accuracy 100
     pp 15
     effectchance 100
     target RANGE_SINGLE_TARGET
@@ -5615,7 +5615,7 @@ movedata MOVE_ROCK_BLAST, "Boule Roc"
     pss SPLIT_PHYSICAL
     basepower 25
     type TYPE_ROCK
-    accuracy 90
+    accuracy 100
     pp 10
     effectchance 0
     target RANGE_SINGLE_TARGET
@@ -5679,7 +5679,7 @@ movedata MOVE_PSYCHO_BOOST, "Psycho-Boost"
     pss SPLIT_SPECIAL
     basepower 140
     type TYPE_PSYCHIC
-    accuracy 90
+    accuracy 100
     pp 5
     effectchance 100
     target RANGE_SINGLE_TARGET
@@ -5759,7 +5759,7 @@ movedata MOVE_HAMMER_ARM, "Marto-Poing"
     pss SPLIT_PHYSICAL
     basepower 100
     type TYPE_FIGHTING
-    accuracy 90
+    accuracy 100
     pp 10
     effectchance 0
     target RANGE_SINGLE_TARGET
@@ -6431,7 +6431,7 @@ movedata MOVE_AQUA_TAIL, "Hydro-Queue"
     pss SPLIT_PHYSICAL
     basepower 90
     type TYPE_WATER
-    accuracy 90
+    accuracy 95
     pp 10
     effectchance 0
     target RANGE_SINGLE_TARGET
@@ -6463,7 +6463,7 @@ movedata MOVE_AIR_SLASH, "Lame d'Air"
     pss SPLIT_SPECIAL
     basepower 75
     type TYPE_FLYING
-    accuracy 95
+    accuracy 100
     pp 15
     effectchance 30
     target RANGE_SINGLE_TARGET
@@ -6671,7 +6671,7 @@ movedata MOVE_GIGA_IMPACT, "Giga Impact"
     pss SPLIT_PHYSICAL
     basepower 150
     type TYPE_NORMAL
-    accuracy 90
+    accuracy 100
     pp 5
     effectchance 0
     target RANGE_SINGLE_TARGET
@@ -6767,7 +6767,7 @@ movedata MOVE_THUNDER_FANG, "Crocs Éclair"
     pss SPLIT_PHYSICAL
     basepower 65
     type TYPE_ELECTRIC
-    accuracy 95
+    accuracy 100
     pp 15
     effectchance 10
     target RANGE_SINGLE_TARGET
@@ -6783,7 +6783,7 @@ movedata MOVE_ICE_FANG, "Crocs Givre"
     pss SPLIT_PHYSICAL
     basepower 65
     type TYPE_ICE
-    accuracy 95
+    accuracy 100
     pp 15
     effectchance 10
     target RANGE_SINGLE_TARGET
@@ -6799,7 +6799,7 @@ movedata MOVE_FIRE_FANG, "Crocs Feu"
     pss SPLIT_PHYSICAL
     basepower 65
     type TYPE_FIRE
-    accuracy 95
+    accuracy 100
     pp 15
     effectchance 10
     target RANGE_SINGLE_TARGET
@@ -6863,7 +6863,7 @@ movedata MOVE_ZEN_HEADBUTT, "Psykoud'Boul"
     pss SPLIT_PHYSICAL
     basepower 80
     type TYPE_PSYCHIC
-    accuracy 90
+    accuracy 100
     pp 15
     effectchance 20
     target RANGE_SINGLE_TARGET
@@ -6959,7 +6959,7 @@ movedata MOVE_DRACO_METEOR, "Draco-Météore"
     pss SPLIT_SPECIAL
     basepower 130
     type TYPE_DRAGON
-    accuracy 90
+    accuracy 100
     pp 5
     effectchance 100
     target RANGE_SINGLE_TARGET
@@ -7007,7 +7007,7 @@ movedata MOVE_LEAF_STORM, "Tempête Verte"
     pss SPLIT_SPECIAL
     basepower 130
     type TYPE_GRASS
-    accuracy 90
+    accuracy 100
     pp 5
     effectchance 100
     target RANGE_SINGLE_TARGET
@@ -7039,7 +7039,7 @@ movedata MOVE_ROCK_WRECKER, "Roc-Boulet"
     pss SPLIT_PHYSICAL
     basepower 150
     type TYPE_ROCK
-    accuracy 90
+    accuracy 100
     pp 5
     effectchance 0
     target RANGE_SINGLE_TARGET
@@ -7231,7 +7231,7 @@ movedata MOVE_CHARGE_BEAM, "Rayon Chargé"
     pss SPLIT_SPECIAL
     basepower 50
     type TYPE_ELECTRIC
-    accuracy 90
+    accuracy 100
     pp 10
     effectchance 70
     target RANGE_SINGLE_TARGET
@@ -7343,7 +7343,7 @@ movedata MOVE_DOUBLE_HIT, "Coup Double"
     pss SPLIT_PHYSICAL
     basepower 35
     type TYPE_NORMAL
-    accuracy 90
+    accuracy 100
     pp 10
     effectchance 0
     target RANGE_SINGLE_TARGET
@@ -7359,7 +7359,7 @@ movedata MOVE_ROAR_OF_TIME, "Hurle-Temps"
     pss SPLIT_SPECIAL
     basepower 150
     type TYPE_DRAGON
-    accuracy 90
+    accuracy 100
     pp 5
     effectchance 0
     target RANGE_SINGLE_TARGET
@@ -7375,7 +7375,7 @@ movedata MOVE_SPACIAL_REND, "Spatio-Rift"
     pss SPLIT_SPECIAL
     basepower 100
     type TYPE_DRAGON
-    accuracy 95
+    accuracy 100
     pp 5
     effectchance 0
     target RANGE_SINGLE_TARGET
@@ -7621,7 +7621,7 @@ movedata MOVE_WONDER_ROOM, "Zone Étrange"
     effectchance 0
     target RANGE_USER
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_SMART
     terminatedata
@@ -7701,7 +7701,7 @@ movedata MOVE_TELEKINESIS, "Lévikinésie"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9 | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_SMART
     terminatedata
@@ -7717,7 +7717,7 @@ movedata MOVE_MAGIC_ROOM, "Zone Magique"
     effectchance 0
     target RANGE_USER
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_SMART
     terminatedata
@@ -7733,7 +7733,7 @@ movedata MOVE_SMACK_DOWN, "Anti-Air"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_TOUGH
     terminatedata
@@ -7829,7 +7829,7 @@ movedata MOVE_SYNCHRONOISE, "Synchropeine"
     effectchance 0
     target RANGE_ALL_ADJACENT
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9 | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_SMART
     terminatedata
@@ -7973,7 +7973,7 @@ movedata MOVE_ENTRAINMENT, "Ten-Danse"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_CUTE
     terminatedata
@@ -8005,7 +8005,7 @@ movedata MOVE_ROUND, "Chant Canon"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -8021,7 +8021,7 @@ movedata MOVE_ECHOED_VOICE, "Écho"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -8053,7 +8053,7 @@ movedata MOVE_CLEAR_SMOG, "Bain de Smog"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -8101,7 +8101,7 @@ movedata MOVE_ALLY_SWITCH, "Interversion"
     effectchance 0
     target RANGE_USER
     priority 2
-    flags FLAG_KEEP_HP_BAR | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR
     appeal 0x00
     contesttype CONTEST_SMART
     terminatedata
@@ -8149,7 +8149,7 @@ movedata MOVE_HEAL_PULSE, "Vibra Soin"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MAGIC_COAT
     appeal 0x00
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -8181,7 +8181,7 @@ movedata MOVE_SKY_DROP, "Chute Libre"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9 | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_TOUGH
     terminatedata
@@ -8208,12 +8208,12 @@ movedata MOVE_CIRCLE_THROW, "Projection"
     pss SPLIT_PHYSICAL
     basepower 60
     type TYPE_FIGHTING
-    accuracy 90
+    accuracy 100
     pp 10
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority -6
-    flags FLAG_KEEP_HP_BAR | FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8277,7 +8277,7 @@ movedata MOVE_REFLECT_TYPE, "Copie-Type"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_SNATCH | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_SNATCH
     appeal 0x00
     contesttype CONTEST_SMART
     terminatedata
@@ -8293,7 +8293,7 @@ movedata MOVE_RETALIATE, "Vengeance"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8309,7 +8309,7 @@ movedata MOVE_FINAL_GAMBIT, "Tout ou Rien"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_PROTECT
     appeal 0x00
     contesttype CONTEST_TOUGH
     terminatedata
@@ -8325,7 +8325,7 @@ movedata MOVE_BESTOW, "Passe-Cadeau"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9 | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_CUTE
     terminatedata
@@ -8357,7 +8357,7 @@ movedata MOVE_WATER_PLEDGE, "Aire d'Eau"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -8373,7 +8373,7 @@ movedata MOVE_FIRE_PLEDGE, "Aire de Feu"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -8389,7 +8389,7 @@ movedata MOVE_GRASS_PLEDGE, "Aire d'Herbe"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -8448,7 +8448,7 @@ movedata MOVE_FROST_BREATH, "Souffle Glacé"
     pss SPLIT_SPECIAL
     basepower 60
     type TYPE_ICE
-    accuracy 90
+    accuracy 100
     pp 10
     effectchance 0
     target RANGE_SINGLE_TARGET
@@ -8464,12 +8464,12 @@ movedata MOVE_DRAGON_TAIL, "Draco-Queue"
     pss SPLIT_PHYSICAL
     basepower 60
     type TYPE_DRAGON
-    accuracy 90
+    accuracy 100
     pp 10
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority -6
-    flags FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_TOUGH
     terminatedata
@@ -8496,7 +8496,7 @@ movedata MOVE_ELECTROWEB, "Toile Élek"
     pss SPLIT_SPECIAL
     basepower 55
     type TYPE_ELECTRIC
-    accuracy 95
+    accuracy 100
     pp 15
     effectchance 100
     target RANGE_ADJACENT_OPPONENTS
@@ -8528,7 +8528,7 @@ movedata MOVE_DRILL_RUN, "Tunnelier"
     pss SPLIT_PHYSICAL
     basepower 80
     type TYPE_GROUND
-    accuracy 95
+    accuracy 100
     pp 10
     effectchance 0
     target RANGE_SINGLE_TARGET
@@ -8544,7 +8544,7 @@ movedata MOVE_DUAL_CHOP, "Double Baffe"
     pss SPLIT_PHYSICAL
     basepower 40
     type TYPE_DRAGON
-    accuracy 90
+    accuracy 100
     pp 15
     effectchance 0
     target RANGE_SINGLE_TARGET
@@ -8608,7 +8608,7 @@ movedata MOVE_RAZOR_SHELL, "Coqui-Lame"
     pss SPLIT_PHYSICAL
     basepower 75
     type TYPE_WATER
-    accuracy 95
+    accuracy 100
     pp 10
     effectchance 50
     target RANGE_SINGLE_TARGET
@@ -8640,7 +8640,7 @@ movedata MOVE_LEAF_TORNADO, "Phytomixeur"
     pss SPLIT_SPECIAL
     basepower 65
     type TYPE_GRASS
-    accuracy 90
+    accuracy 100
     pp 10
     effectchance 50
     target RANGE_SINGLE_TARGET
@@ -8688,7 +8688,7 @@ movedata MOVE_NIGHT_DAZE, "Explonuit"
     pss SPLIT_SPECIAL
     basepower 85
     type TYPE_DARK
-    accuracy 95
+    accuracy 100
     pp 10
     effectchance 40
     target RANGE_SINGLE_TARGET
@@ -8848,7 +8848,7 @@ movedata MOVE_GLACIATE, "Ère Glaciaire"
     pss SPLIT_SPECIAL
     basepower 65
     type TYPE_ICE
-    accuracy 95
+    accuracy 100
     pp 10
     effectchance 100
     target RANGE_ADJACENT_OPPONENTS
@@ -8912,7 +8912,7 @@ movedata MOVE_FREEZE_SHOCK, "Éclair Gelé"
     pss SPLIT_SPECIAL
     basepower 140
     type TYPE_ICE
-    accuracy 90
+    accuracy 100
     pp 5
     effectchance 30
     target RANGE_SINGLE_TARGET
@@ -8928,7 +8928,7 @@ movedata MOVE_ICE_BURN, "Feu Glacé"
     pss SPLIT_SPECIAL
     basepower 140
     type TYPE_ICE
-    accuracy 90
+    accuracy 100
     pp 5
     effectchance 30
     target RANGE_SINGLE_TARGET
@@ -8944,7 +8944,7 @@ movedata MOVE_SNARL, "Aboiement"
     pss SPLIT_SPECIAL
     basepower 55
     type TYPE_DARK
-    accuracy 95
+    accuracy 100
     pp 15
     effectchance 100
     target RANGE_ADJACENT_OPPONENTS
@@ -8960,7 +8960,7 @@ movedata MOVE_ICICLE_CRASH, "Chute Glace"
     pss SPLIT_PHYSICAL
     basepower 85
     type TYPE_ICE
-    accuracy 90
+    accuracy 100
     pp 10
     effectchance 30
     target RANGE_SINGLE_TARGET
@@ -8976,7 +8976,7 @@ movedata MOVE_V_CREATE, "Coup Victoire"
     pss SPLIT_PHYSICAL
     basepower 180
     type TYPE_FIRE
-    accuracy 95
+    accuracy 100
     pp 5
     effectchance 100
     target RANGE_SINGLE_TARGET
@@ -8997,7 +8997,7 @@ movedata MOVE_FUSION_FLARE, "Flamme Croix"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags  FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags  FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -9013,7 +9013,7 @@ movedata MOVE_FUSION_BOLT, "Éclair Croix"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags  FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags  FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9024,12 +9024,12 @@ movedata MOVE_FLYING_PRESS, "Flying Press"
     pss SPLIT_PHYSICAL
     basepower 100
     type TYPE_FIGHTING
-    accuracy 95
+    accuracy 100
     pp 10
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_TOUGH
     terminatedata
@@ -9056,12 +9056,12 @@ movedata MOVE_BELCH, "Éructation"
     pss SPLIT_SPECIAL
     basepower 120
     type TYPE_POISON
-    accuracy 90
+    accuracy 100
     pp 10
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_TOUGH
     terminatedata
@@ -9077,7 +9077,7 @@ movedata MOVE_ROTOTILLER, "Fertilisation"
     effectchance 100
     target RANGE_USER | RANGE_ALL_ADJACENT
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_MAGIC_COAT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9 | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_MIRROR_MOVE | FLAG_MAGIC_COAT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_TOUGH
     terminatedata
@@ -9237,7 +9237,7 @@ movedata MOVE_FREEZE_DRY, "Lyophilisation"
     effectchance 10
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -9285,7 +9285,7 @@ movedata MOVE_TOPSY_TURVY, "Renversement"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
     appeal 0x00
     contesttype CONTEST_SMART
     terminatedata
@@ -9333,7 +9333,7 @@ movedata MOVE_FLOWER_SHIELD, "Garde Florale"
     effectchance 100
     target RANGE_USER | RANGE_ALL_ADJACENT
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_MAGIC_COAT | FLAG_UNUSABLE_IN_GEN_9 | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_MIRROR_MOVE | FLAG_MAGIC_COAT | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -9381,7 +9381,7 @@ movedata MOVE_ELECTRIFY, "Électrisation"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
     appeal 0x00
     contesttype CONTEST_SMART
     terminatedata
@@ -9392,7 +9392,7 @@ movedata MOVE_PLAY_ROUGH, "Câlinerie"
     pss SPLIT_PHYSICAL
     basepower 90
     type (FAIRY_TYPE_IMPLEMENTED) ? TYPE_FAIRY : TYPE_NORMAL
-    accuracy 90
+    accuracy 100
     pp 10
     effectchance 10
     target RANGE_SINGLE_TARGET
@@ -9461,7 +9461,7 @@ movedata MOVE_FAIRY_LOCK, "Verrou Enchanté"
     effectchance 0
     target RANGE_FIELD
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
     appeal 0x00
     contesttype CONTEST_SMART
     terminatedata
@@ -9509,7 +9509,7 @@ movedata MOVE_CONFIDE, "Confidence"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_MIRROR_MOVE | FLAG_MAGIC_COAT
     appeal 0x00
     contesttype CONTEST_CUTE
     terminatedata
@@ -9520,7 +9520,7 @@ movedata MOVE_DIAMOND_STORM, "Orage Adamantin"
     pss SPLIT_PHYSICAL
     basepower 100
     type TYPE_ROCK
-    accuracy 95
+    accuracy 100
     pp 5
     effectchance 50
     target RANGE_ADJACENT_OPPONENTS
@@ -9536,7 +9536,7 @@ movedata MOVE_STEAM_ERUPTION, "Jet de Vapeur"
     pss SPLIT_SPECIAL
     basepower 110
     type TYPE_WATER
-    accuracy 95
+    accuracy 100
     pp 5
     effectchance 30
     target RANGE_SINGLE_TARGET
@@ -9621,7 +9621,7 @@ movedata MOVE_AROMATIC_MIST, "Brume Capiteuse"
     effectchance 0
     target RANGE_ALLY
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_MIRROR_MOVE | FLAG_MAGIC_COAT
     appeal 0x00
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -9667,7 +9667,7 @@ movedata MOVE_POWDER, "Nuée de Poudre"
     accuracy 100
     pp 20
     effectchance 0
-    target RANGE_SINGLE_TARGET | FLAG_UNUSABLE_UNIMPLEMENTED
+    target RANGE_SINGLE_TARGET
     priority 1
     flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
@@ -9701,7 +9701,7 @@ movedata MOVE_MAGNETIC_FLUX, "Magné-Contrôle"
     effectchance 0
     target RANGE_USER_SIDE
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
     appeal 0x00
     contesttype CONTEST_SMART
     terminatedata
@@ -9893,7 +9893,7 @@ movedata MOVE_THOUSAND_ARROWS, "Myria-Flèches"
     effectchance 100
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_BEAUTY
     terminatedata
@@ -9936,7 +9936,7 @@ movedatalongname MOVE_LIGHT_OF_RUIN, "LumièreDuNéant", "Lumière du Néant"
     pss SPLIT_SPECIAL
     basepower 140
     type (FAIRY_TYPE_IMPLEMENTED) ? TYPE_FAIRY : TYPE_NORMAL
-    accuracy 90
+    accuracy 100
     pp 5
     effectchance 0
     target RANGE_SINGLE_TARGET
@@ -10706,7 +10706,7 @@ movedatalongname MOVE_ICE_HAMMER, "MarteauDeGlace", "Marteau de Glace"
     pss SPLIT_PHYSICAL
     basepower 100
     type TYPE_ICE
-    accuracy 90
+    accuracy 100
     pp 10
     effectchance 100
     target RANGE_SINGLE_TARGET
@@ -10727,18 +10727,18 @@ movedatalongname MOVE_FLORAL_HEALING, "Soin Floral", "Cavalerie Lourde"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
     movedescription MOVE_FLORAL_HEALING, "The user restores the\ntarget's HP by up to\nhalf of its max HP. It\nrestores more HP when\nthe terrain is grass."
 
-movedata MOVE_HIGH_HORSEPOWER, "CavalerieLourde"
+movedatalongname MOVE_HIGH_HORSEPOWER, "CavalerieLourde", "Cavalerie Lourde"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_PHYSICAL
     basepower 95
     type TYPE_GROUND
-    accuracy 95
+    accuracy 100
     pp 10
     effectchance 0
     target RANGE_SINGLE_TARGET
@@ -10759,7 +10759,7 @@ movedata MOVE_STRENGTH_SAP, "Vole-Force"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10839,7 +10839,7 @@ movedata MOVE_LASER_FOCUS, "Affilage"
     effectchance 0
     target RANGE_USER
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_IN_GEN_9 | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10855,7 +10855,7 @@ movedata MOVE_GEAR_UP, "Engrenage"
     effectchance 0
     target RANGE_USER_SIDE
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_IN_GEN_9 | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10871,7 +10871,7 @@ movedata MOVE_THROAT_CHOP, "Exécu-Son"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10887,7 +10887,7 @@ movedata MOVE_POLLEN_PUFF, "Boule Pollen"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10967,7 +10967,7 @@ movedata MOVE_POWER_TRIP, "Arrogance"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10983,7 +10983,7 @@ movedata MOVE_BURN_UP, "Flamme Ultime"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10999,7 +10999,7 @@ movedata MOVE_SPEED_SWAP, "Permuvitesse"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11031,7 +11031,7 @@ movedata MOVE_PURIFY, "Purification"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11063,7 +11063,7 @@ movedatalongname MOVE_CORE_ENFORCER, "SanctionSuprême", "Sanction Suprême"
     effectchance 0
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags  FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags  FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11095,7 +11095,7 @@ movedata MOVE_INSTRUCT, "Sommation"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11111,7 +11111,7 @@ movedata MOVE_BEAK_BLAST, "Bec-Canon"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority -3
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8 | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_8
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11339,7 +11339,7 @@ movedata MOVE_SHELL_TRAP, "Carapiège"
     effectchance 0
     target RANGE_ADJACENT_OPPONENTS
     priority -3
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11350,7 +11350,7 @@ movedata MOVE_FLEUR_CANNON, "Canon Floral"
     pss SPLIT_SPECIAL
     basepower 130
     type (FAIRY_TYPE_IMPLEMENTED) ? TYPE_FAIRY : TYPE_NORMAL
-    accuracy 90
+    accuracy 100
     pp 5
     effectchance 100
     target RANGE_SINGLE_TARGET
@@ -11387,7 +11387,7 @@ movedata MOVE_STOMPING_TANTRUM, "Trépignement"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11467,7 +11467,7 @@ movedata MOVE_SPECTRAL_THIEF, "Clepto-Mânes"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT | FLAG_UNUSABLE_IN_GEN_9 | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11483,7 +11483,7 @@ movedata MOVE_SUNSTEEL_STRIKE, "Choc Météore"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11499,7 +11499,7 @@ movedata MOVE_MOONGEIST_BEAM, "Rayon Spectral"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11542,7 +11542,7 @@ movedatalongname MOVE_NATURES_MADNESS, "IreDeLaNature", "Ire de la Nature"
     pss SPLIT_SPECIAL
     basepower 0
     type (FAIRY_TYPE_IMPLEMENTED) ? TYPE_FAIRY : TYPE_NORMAL
-    accuracy 90
+    accuracy 100
     pp 10
     effectchance 0
     target RANGE_SINGLE_TARGET
@@ -11595,7 +11595,7 @@ movedata MOVE_MIND_BLOWN, "Caboche-Kaboum"
     effectchance 0
     target RANGE_ALL_ADJACENT
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12027,7 +12027,7 @@ movedata MOVE_STUFF_CHEEKS, "Garde-à-Joues"
     effectchance 100
     target RANGE_USER
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12043,7 +12043,7 @@ movedata MOVE_NO_RETREAT, "Ultime Bastion"
     effectchance 100
     target RANGE_USER
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12059,7 +12059,7 @@ movedata MOVE_TAR_SHOT, "Goudronnage"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
     appeal 0x00
     contesttype CONTEST_SMART
     terminatedata
@@ -12091,7 +12091,7 @@ movedata MOVE_DRAGON_DARTS, "Draco-Flèches"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12107,7 +12107,7 @@ movedata MOVE_TEATIME, "Thérémonie"
     effectchance 0
     target RANGE_USER | RANGE_ALL_ADJACENT
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_MIRROR_MOVE | FLAG_MAGIC_COAT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12123,7 +12123,7 @@ movedata MOVE_OCTOLOCK, "Octoprise"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12139,7 +12139,7 @@ movedata MOVE_BOLT_BEAK, "Prise de Bec"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12155,7 +12155,7 @@ movedata MOVE_FISHIOUS_REND, "Branchicrok"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12171,7 +12171,7 @@ movedata MOVE_COURT_CHANGE, "Change-Côté"
     effectchance 0
     target RANGE_FIELD
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12187,7 +12187,7 @@ movedata MOVE_MAX_FLARE, "Pyromax"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9 | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12203,7 +12203,7 @@ movedata MOVE_MAX_FLUTTERBY, "Insectomax"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9 | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12219,7 +12219,7 @@ movedata MOVE_MAX_LIGHTNING, "Fulguromax"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9 | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12235,7 +12235,7 @@ movedata MOVE_MAX_STRIKE, "Normalomax"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9 | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12251,7 +12251,7 @@ movedata MOVE_MAX_KNUCKLE, "Pugilomax"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9 | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12267,7 +12267,7 @@ movedata MOVE_MAX_PHANTASM, "Spectromax"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9 | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12283,7 +12283,7 @@ movedata MOVE_MAX_HAILSTORM, "Cryomax"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9 | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12299,7 +12299,7 @@ movedata MOVE_MAX_OOZE, "Toxinomax"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9 | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12315,7 +12315,7 @@ movedata MOVE_MAX_GEYSER, "Hydromax"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9 | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12331,7 +12331,7 @@ movedata MOVE_MAX_AIRSTREAM, "Aéromax"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9 | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12347,7 +12347,7 @@ movedata MOVE_MAX_STARFALL, "Enchantomax"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9 | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12363,7 +12363,7 @@ movedata MOVE_MAX_WYRMWIND, "Dracomax"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9 | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12379,7 +12379,7 @@ movedata MOVE_MAX_MINDSTORM, "Psychomax"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9 | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12395,7 +12395,7 @@ movedata MOVE_MAX_ROCKFALL, "Lithomax"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9 | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12411,7 +12411,7 @@ movedata MOVE_MAX_QUAKE, "Sismomax"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9 | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12427,7 +12427,7 @@ movedata MOVE_MAX_DARKNESS, "Sinistromax"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9 | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12443,7 +12443,7 @@ movedata MOVE_MAX_OVERGROWTH, "Phytomax"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9 | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12459,7 +12459,7 @@ movedata MOVE_MAX_STEELSPIKE, "Métallomax"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9 | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_IN_GEN_9
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12507,7 +12507,7 @@ movedata MOVE_DECORATE, "Nappage"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_MIRROR_MOVE | FLAG_MAGIC_COAT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12539,7 +12539,7 @@ movedata MOVE_SNAP_TRAP, "Troquenard"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12603,7 +12603,7 @@ movedata MOVE_AURA_WHEEL, "Roue Libre"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12710,7 +12710,7 @@ movedata MOVE_STRANGE_STEAM, "Vapeur Féérique"
     pss SPLIT_SPECIAL
     basepower 90
     type (FAIRY_TYPE_IMPLEMENTED) ? TYPE_FAIRY : TYPE_NORMAL
-    accuracy 95
+    accuracy 100
     pp 10
     effectchance 20
     target RANGE_SINGLE_TARGET
@@ -12790,7 +12790,7 @@ movedata MOVE_ETERNABEAM, "Laser Infinimax"
     pss SPLIT_SPECIAL
     basepower 160
     type TYPE_DRAGON
-    accuracy 90
+    accuracy 100
     pp 5
     effectchance 0
     target RANGE_SINGLE_TARGET
@@ -12806,12 +12806,12 @@ movedata MOVE_STEEL_BEAM, "Métalaser"
     pss SPLIT_SPECIAL
     basepower 140
     type TYPE_STEEL
-    accuracy 95
+    accuracy 100
     pp 5
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12843,7 +12843,7 @@ movedata MOVE_STEEL_ROLLER, "Métalliroue"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12854,12 +12854,12 @@ movedata MOVE_SCALE_SHOT, "Rafale Écailles"
     pss SPLIT_PHYSICAL
     basepower 25
     type TYPE_DRAGON
-    accuracy 90
+    accuracy 100
     pp 20
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12870,7 +12870,7 @@ movedata MOVE_METEOR_BEAM, "Laser Météore"
     pss SPLIT_SPECIAL
     basepower 120
     type TYPE_ROCK
-    accuracy 90
+    accuracy 100
     pp 10
     effectchance 100
     target RANGE_SINGLE_TARGET
@@ -12891,7 +12891,7 @@ movedata MOVE_SHELL_SIDE_ARM, "Kokiyarme"
     effectchance 20
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12955,7 +12955,7 @@ movedata MOVE_TERRAIN_PULSE, "Champlification"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12966,7 +12966,7 @@ movedata MOVE_SKITTER_SMACK, "Ravage Rampant"
     pss SPLIT_PHYSICAL
     basepower 70
     type TYPE_BUG
-    accuracy 90
+    accuracy 100
     pp 10
     effectchance 100
     target RANGE_SINGLE_TARGET
@@ -12987,7 +12987,7 @@ movedata MOVE_BURNING_JEALOUSY, "Feu Envieux"
     effectchance 100
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13003,7 +13003,7 @@ movedata MOVE_LASH_OUT, "Cent Rancunes"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13035,7 +13035,7 @@ movedata MOVE_CORROSIVE_GAS, "Gaz Corrosif"
     effectchance 0
     target RANGE_ALL_ADJACENT
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13051,7 +13051,7 @@ movedata MOVE_COACHING, "Coaching"
     effectchance 0
     target RANGE_ALLY
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_MIRROR_MOVE | FLAG_MAGIC_COAT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13094,7 +13094,7 @@ movedata MOVE_DUAL_WINGBEAT, "Double Volée"
     pss SPLIT_PHYSICAL
     basepower 40
     type TYPE_FLYING
-    accuracy 90
+    accuracy 100
     pp 10
     effectchance 0
     target RANGE_SINGLE_TARGET
@@ -13131,7 +13131,7 @@ movedatalongname MOVE_JUNGLE_HEALING, "SelveSalvatrice", "Selve Salvatrice"
     effectchance 0
     target RANGE_USER_SIDE
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13174,12 +13174,12 @@ movedata MOVE_THUNDER_CAGE, "Voltageôle"
     pss SPLIT_SPECIAL
     basepower 80
     type TYPE_ELECTRIC
-    accuracy 90
+    accuracy 100
     pp 15
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13291,7 +13291,7 @@ movedata MOVE_EERIE_SPELL, "Sort Sinistre"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13319,7 +13319,7 @@ movedata MOVE_PSYSHIELD_BASH, "Sprint Bouclier"
     pss SPLIT_PHYSICAL
     basepower 70
     type TYPE_PSYCHIC
-    accuracy 90
+    accuracy 100
     pp 10
     effectchance 100
     target RANGE_SINGLE_TARGET
@@ -13383,7 +13383,7 @@ movedata MOVE_MYSTICAL_POWER, "Force Mystique"
     pss SPLIT_SPECIAL
     basepower 70
     type TYPE_PSYCHIC
-    accuracy 90
+    accuracy 100
     pp 10
     effectchance 100
     target RANGE_SINGLE_TARGET
@@ -13431,12 +13431,12 @@ movedata MOVE_CHLOROBLAST, "Herblast"
     pss SPLIT_SPECIAL
     basepower 150
     type TYPE_GRASS
-    accuracy 95
+    accuracy 100
     pp 5
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13564,7 +13564,7 @@ movedata MOVE_TRIPLE_ARROWS, "Triple Flèche"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13660,7 +13660,7 @@ movedata MOVE_LUNAR_BLESSING, "Prière Lunaire"
     effectchance 0
     target RANGE_ALLY
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13693,7 +13693,7 @@ movedata MOVE_TERA_BLAST, "Téra Explosion"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13741,7 +13741,7 @@ movedatalongname MOVE_LAST_RESPECTS, "HommagePosthume", "Hommage Posthume"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13773,7 +13773,7 @@ movedata MOVE_ORDER_UP, "Plat du Jour"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13869,7 +13869,7 @@ movedata MOVE_GLAIVE_RUSH, "Charge Glaive"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13885,7 +13885,7 @@ movedata MOVE_REVIVAL_BLESSING, "Second Souffle"
     effectchance 0
     target RANGE_USER
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13901,7 +13901,7 @@ movedata MOVE_SALT_CURE, "Salaison"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13949,7 +13949,7 @@ movedata MOVE_DOODLE, "Décalquage"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14104,7 +14104,7 @@ movedata MOVE_RUINATION, "Cataclysme"
     pss SPLIT_SPECIAL
     basepower 1
     type TYPE_DARK
-    accuracy 90
+    accuracy 100
     pp 10
     effectchance 0
     target RANGE_SINGLE_TARGET
@@ -14173,7 +14173,7 @@ movedata MOVE_CHILLY_RECEPTION, "Neigeux de Mots"
     effectchance 0
     target RANGE_FIELD
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14301,7 +14301,7 @@ movedata MOVE_RAGE_FIST, "Poing de Colère"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14349,7 +14349,7 @@ movedata MOVE_DOUBLE_SHOCK, "Double Décharge"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14527,7 +14527,7 @@ movedata MOVE_SYRUP_BOMB, "Bombe au Sirop"
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14575,7 +14575,7 @@ movedatalongname MOVE_TERA_STARSTORM, "PluieTérastrale", "Pluie Térastrale"
     effectchance 0
     target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14671,7 +14671,7 @@ movedatalongname MOVE_HARD_PRESS, "PressionExtrême", "Pression Extrême"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14687,7 +14687,7 @@ movedata MOVE_DRAGON_CHEER, "Cri Draconique"
     effectchance 0
     target RANGE_ALLY
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14703,7 +14703,7 @@ movedata MOVE_ALLURING_VOICE, "Voix Envoûtante"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14767,7 +14767,7 @@ movedata MOVE_UPPER_HAND, "Prio-Parade"
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 3
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT | FLAG_UNUSABLE_UNIMPLEMENTED
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata

@@ -37,7 +37,7 @@ void setAreaCaughtFlag(int mapSec)
 {
     u8 buf[64];
     sprintf(buf,"SetAreaCaughtFlag %d\n",mapSec);
-    debugsyscall(buf);
+    //debugsyscall(buf);
     u16 varID = VAR_MAPSEC_1 + (int)((int)mapSec / 16);
     SetScriptVar(varID , GetScriptVar(varID) | (1 << (mapSec % 16)));
 }

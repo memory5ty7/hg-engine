@@ -14,11 +14,6 @@ typedef struct Encounter {
     BattleSetup *setup;
 } Encounter;
 
-struct BattleSetup {
-    u32 battleType;
-    u8 padding[0x1D0-0x4];
-};
-
 void LONG_CALL MapObjectManager_PauseAllMovement(void *manager);
 void LONG_CALL sub_02055218(TaskManager *man, int effect, int bgm);
 void LONG_CALL sub_02050724(BattleSetup *setup, FieldSystem *fieldSystem);
@@ -72,7 +67,7 @@ BOOL Task_StartEncounter(TaskManager *taskManager) {
         fieldSystem->unk7C = 0;
 
         if (Encounter_GetResult(encounter, fieldSystem) == FALSE) {
-            if (encounter->setup->battleType & BATTLE_TYPE_11) {
+            if (encounter->setup->battleType & (1 << 11)) {
                 ClearScriptFlag(FLAG_NUZLOCKE_MODE);
                 HealParty(SaveData_GetPlayerPartyPtr(fieldSystem->savedata));
             } else {

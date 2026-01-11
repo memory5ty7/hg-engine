@@ -1,1 +1,2 @@
-a {COLOR 255}Custom Item{COLOR 0}
+{COLOR 255}Bonbon Infini{COLOR 0}
+{COLOR 255}Répulsif{COLOR 0}
