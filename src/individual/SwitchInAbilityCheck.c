@@ -274,28 +274,28 @@ int UNUSED SwitchInAbilityCheck(void *bw, struct BattleStruct *sp)
                             switch (GetBattlerAbility(sp, client_no)) {
                                 case ABILITY_DRIZZLE:
                                     sp->battlemon[client_no].ability_activated_flag = 1;
-                                    if ((sp->field_condition & WEATHER_RAIN_ANY) == 0) {
+                                    if ((sp->field_condition & WEATHER_RAIN_PERMANENT) == 0) {
                                         scriptnum = SUB_SEQ_DRIZZLE;
                                         ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
                                     }
                                     break;
                                 case ABILITY_SAND_STREAM:
                                     sp->battlemon[client_no].ability_activated_flag = 1;
-                                    if ((sp->field_condition & WEATHER_SANDSTORM_ANY) == 0) {
+                                    if ((sp->field_condition & WEATHER_SANDSTORM_PERMANENT) == 0) {
                                         scriptnum = SUB_SEQ_SAND_STREAM;
                                         ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
                                     }
                                     break;
                                 case ABILITY_DROUGHT:
                                     sp->battlemon[client_no].ability_activated_flag = 1;
-                                    if ((sp->field_condition & WEATHER_SUNNY_ANY) == 0) {
+                                    if ((sp->field_condition & WEATHER_SUNNY_PERMANENT) == 0) {
                                         scriptnum = SUB_SEQ_DROUGHT;
                                         ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
                                     }
                                     break;
                                 case ABILITY_SNOW_WARNING:
                                     sp->battlemon[client_no].ability_activated_flag = 1;
-                                    if ((sp->field_condition & WEATHER_HAIL_ANY) == 0) {
+                                    if ((sp->field_condition & WEATHER_HAIL_PERMANENT) == 0) {
                                         scriptnum = SUB_SEQ_SNOW_WARNING;
                                         ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
                                     }

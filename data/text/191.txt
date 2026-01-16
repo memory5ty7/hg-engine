@@ -93,7 +93,7 @@ Vous pouvez regarder des photos\nsouvenir.
 
 
 ANNULER
-
+DONNER POKéMON
 
 
 
@@ -101,7 +101,7 @@ ANNULER
 SOIGNER ₧₦
 STATUS ₧₦
 DEGATS ₧₦
-
+DIVERS ₧₦
 
 
 

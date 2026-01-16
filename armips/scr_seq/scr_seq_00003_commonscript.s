@@ -787,7 +787,7 @@ _0A2E:
     menu_item_add 100, 255, 10
     menu_item_add 101, 255, 11
     menu_item_add 102, 255, 12
-    menu_item_add 63, 255, 1
+    menu_item_add 103, 255, 13
     goto_if_set FLAG_GAME_CLEAR, _0A8C
     goto_if_unset FLAG_GAME_CLEAR, _0AD1
     goto _0AD1
@@ -815,10 +815,10 @@ _0AD1:
     menu_exec
     switch VAR_SPECIAL_x8006
     case 0, _0B01
-    case 1, _0C23
     case 10, healPokemon
     case 11, status
     case 12, preDamage
+    case 13, utility
     goto _0DF0
 
 healPokemon:
@@ -893,6 +893,29 @@ freeze_mon:
 
 poison_mon:
     DummyTextTrap 4, VAR_SPECIAL_x8005
+    goto _0A2E
+
+utility:
+    npc_msg 121
+    menu_init_std_gmm 1, 1, 0, 1, VAR_SPECIAL_x8006
+    menu_item_add 95, 255, 10  // Give Pokémon
+    menu_item_add 94, 255, 2   // Cancel
+    menu_exec
+    switch VAR_SPECIAL_x8006
+    case 10, givePokemon
+    case 2, _0A2E
+    goto _0A2E
+
+givePokemon:
+    closemsg
+	fade_screen 6, 1, 0, RGB_BLACK
+	wait_fade
+    prompt_number VAR_SPECIAL_x8004
+    prompt_number VAR_SPECIAL_x8005
+	fade_screen 6, 1, 1, RGB_BLACK
+	wait_fade
+    setvar VAR_SPECIAL_x8006, 0 // Form
+    GivePokemon VAR_SPECIAL_x8004,VAR_SPECIAL_x8005,0,VAR_SPECIAL_x8006,0,VAR_SPECIAL_RESULT
     goto _0A2E
 
 _0B01:

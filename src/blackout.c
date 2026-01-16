@@ -3,6 +3,7 @@
 #include "../include/use_item_on_mon.h"
 #include "../include/battle.h"
 #include "../include/map_events_internal.h"
+#include "../include/pokeheartgold.h"
 
 typedef struct BattleSetup BattleSetup;
 
@@ -21,12 +22,11 @@ BOOL LONG_CALL sub_02093070(FieldSystem *sys);
 BOOL LONG_CALL sub_020930C4(FieldSystem *sys);
 void LONG_CALL sub_02051660(FieldSystem *fieldSystem, BattleSetup *setup);
 
-void LONG_CALL CallTask_LeaveOverworld(TaskManager *taskManager);
 void LONG_CALL CallTask_StartBattle(TaskManager *taskManager, BattleSetup *setup);
 BOOL LONG_CALL Encounter_GetResult(Encounter *encounter, FieldSystem *fieldSystem);
 void LONG_CALL Encounter_Delete(Encounter *encounter);
 BOOL LONG_CALL Save_VarsFlags_CheckHaveFollower(void *state);
-void LONG_CALL CallTask_RestoreOverworld(TaskManager *taskManager);
+
 void LONG_CALL CallTask_FadeFromBlack(TaskManager *taskManager);
 
 void LONG_CALL CallTask_Blackout(TaskManager *taskManager);

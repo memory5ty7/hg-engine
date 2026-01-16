@@ -4,6 +4,10 @@
 #include "types.h"
 #include "pokemon.h"
 #include "message.h"
+#include "task.h"
+
+void LONG_CALL CallTask_LeaveOverworld(TaskManager *taskManager);
+void LONG_CALL CallTask_RestoreOverworld(TaskManager *taskManager);
 
 u32 LONG_CALL BattleSystem_GetBattleType(void *bsys);
 BOOL LONG_CALL TrainerMessageWithIdPairExists(u32 trainer_idx, u32 msg_id, int heapId);
@@ -27,5 +31,18 @@ u8 LONG_CALL GetEggCyclesToSubtract(struct Party *party);
 u8 LONG_CALL sub_0206CCD8(FieldSystem *fieldSystem);
 void LONG_CALL GenerateEggPID(Daycare *dayCare);
 BOOL LONG_CALL sub_0209316C(FieldSystem *sys);
+
+void LONG_CALL CallTask_NamingScreen(void *taskman, int type, int species, int maxLen, int partyIdx, const u16 *defaultStr, u16 *retVar);
+FieldSystem* LONG_CALL TaskManager_GetFieldSystem(TaskManager *taskManager);
+void* LONG_CALL TaskManager_GetEnvironment(TaskManager *taskManager);
+void LONG_CALL CallApplicationAsTask(TaskManager *taskManager, void *tmplt, void *work);
+int LONG_CALL String_Compare(String *a, String *b);
+u16* LONG_CALL String_cstr(String *string);
+s64 LONG_CALL String_atoi(String *str, BOOL *flag);
+void* LONG_CALL Save_FriendGroup_Get(void *saveData);
+BOOL LONG_CALL sub_0202C88C(void *group, u16 *a1);
+void LONG_CALL SetName(TaskManager *taskman);
+void LONG_CALL NamingScreen_DeleteArgs(void *namingScreenArgs);
+String* LONG_CALL _get_species_name(u16 species, int heapID);
 
 #endif // POKEHEARTGOLD_H

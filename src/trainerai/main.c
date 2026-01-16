@@ -13,6 +13,8 @@
 #include "../../include/item.h"
 #include "../../include/macros.h"
 
+#define BATTLE_TYPE_DOUBLE_ANY (BATTLE_TYPE_MULTI | BATTLE_TYPE_DOUBLE | BATTLE_TYPE_TAG)
+
 int LONG_CALL CalcBaseDamage(void *bw, struct BattleStruct *sp, int moveno, u32 side_cond,
                    u32 field_cond, u16 pow, u8 type, u8 attacker, u8 defender, u8 critical);
 
@@ -1188,8 +1190,56 @@ int BasicStatus(struct BattleSystem *bsys, u32 attacker, int i, AIContext *ai)
                 moveScore += 1;
             }
             break;
+        case MOVE_EFFECT_STATUS_BADLY_POISON: // Toxic
+            moveScore = 7;
+            if (BattlerKnowsMove(bsys, ai->defender, MOVE_HEX)
+                || BattlerKnowsMove(bsys, ai->defender, MOVE_VENOSHOCK))
+            {
+                moveScore += 1;
+            }
+            break;       
         case MOVE_EFFECT_PREVENT_ESCAPE:    // Mean Look
-                moveScore += 6;
+                moveScore = 6;
+            break;
+        case MOVE_EFFECT_PROTECT:           // Protect, Spiky Shield, King's Shield, Detect, ...
+                moveScore = 6;
+                if ((bsys->sp->battlemon[ai->defender].condition | STATUS_POISON_ALL)
+                    || (bsys->sp->battlemon[ai->defender].condition & STATUS_BURN)
+                    || (bsys->sp->battlemon[ai->defender].condition2 & STATUS2_CURSE)                    
+                    || (bsys->sp->battlemon[ai->defender].condition2 & STATUS2_ATTRACT)
+                    || (bsys->sp->battlemon[ai->defender].effect_of_moves & MOVE_EFFECT_FLAG_PERISH_SONG_ACTIVE)
+                    || (bsys->sp->battlemon[ai->defender].effect_of_moves & MOVE_EFFECT_FLAG_LEECH_SEED_ACTIVE)
+                    || (bsys->sp->battlemon[ai->defender].effect_of_moves & MOVE_EFFECT_STATUS_SLEEP_NEXT_TURN)
+                )
+                    {
+                        moveScore += 1;
+                    }
+                if ((bsys->sp->battlemon[ai->attacker].condition | STATUS_POISON_ALL)
+                    || (bsys->sp->battlemon[ai->attacker].condition & STATUS_BURN)
+                    || (bsys->sp->battlemon[ai->attacker].condition2 & STATUS2_CURSE)
+                    || (bsys->sp->battlemon[ai->attacker].condition2 & STATUS2_ATTRACT)  
+                    || (bsys->sp->battlemon[ai->attacker].effect_of_moves & MOVE_EFFECT_FLAG_PERISH_SONG_ACTIVE)
+                    || (bsys->sp->battlemon[ai->attacker].effect_of_moves & MOVE_EFFECT_FLAG_LEECH_SEED_ACTIVE)
+                    || (bsys->sp->battlemon[ai->attacker].effect_of_moves & MOVE_EFFECT_STATUS_SLEEP_NEXT_TURN)
+                )
+                    {
+                        moveScore -= 2;
+                    }
+                if (ai->attackerTurnsOnField == 0 && !(BattleTypeGet(bsys) & BATTLE_TYPE_DOUBLE_ANY))
+                {
+                    moveScore -= 1;
+                }
+                if (ai->defenderLastUsedMoveEffect == MOVE_EFFECT_PROTECT)
+                {
+                    return -20;
+                }
+                int hpPercentage = bsys->sp->battlemon[ai->attacker].hp / bsys->sp->battlemon[ai->attacker].maxhp;
+                if (((hpPercentage < 7) && (bsys->sp->battlemon[ai->defender].condition & STATUS_BURN) && ai->attackerAbility != ABILITY_MAGIC_GUARD)
+                || ((hpPercentage < 7) && (bsys->sp->battlemon[ai->defender].condition & STATUS_POISON) && ai->attackerAbility != ABILITY_MAGIC_GUARD && ai->attackerAbility != ABILITY_POISON_HEAL)
+                )
+                {
+                    return -20;
+                }
             break;
         default:
             break;
@@ -1231,9 +1281,6 @@ int BasicDefensiveSetup(struct BattleSystem *bsys, u32 attacker, int i, AIContex
 
     return moveScore;
 }
-
-
-#define BATTLE_TYPE_DOUBLE_ANY (BATTLE_TYPE_MULTI | BATTLE_TYPE_DOUBLE | BATTLE_TYPE_TAG)
 
 int BasicDamage(struct BattleSystem *bsys, u32 attacker, int i, AIContext *ai)
 {
@@ -1289,6 +1336,12 @@ int BasicDamage(struct BattleSystem *bsys, u32 attacker, int i, AIContext *ai)
             break;
     }
 
+    if (ai->defenderMovesFirst && ai->turnsToGetKilled <= 1
+        && ctx->moveTbl[ctx->battlemon[attacker].move[i]].priority > 0)
+    {
+        return 15;
+    }
+
     if (ai->attackerRandomRollMoveDamages[i] >= ai->defenderHP){
         /*Fast Kill*/
         if(ai->attackerMovesFirst || ai->isSpeedTie || ai->attackerItem == ITEM_QUICK_CLAW || (!ai->attackerMovesFirst && ctx->moveTbl[ai->attackerMove].priority > 0))
@@ -1298,7 +1351,7 @@ int BasicDamage(struct BattleSystem *bsys, u32 attacker, int i, AIContext *ai)
         /*Slow Kill*/
         else
         {
-            moveScore = MAX(moveScore, 12);
+            moveScore = MAX(moveScore, 9);
         }
     } else if (!is_current_move_not_strongest)
     {
@@ -1829,18 +1882,28 @@ void SetupStateVariables(struct BattleSystem *bsys, u32 attacker, u32 defender, 
     int attackerMoveCheck;
     int attackerEffectCheck;
     int attackerMoveTypeCheck;
+    int defenderMoveCheck;
+    int defenderEffectCheck;
+    int defenderMoveTypeCheck;
     int specialMovePower = 0;
 
     /*Loop over defender's moves, and compute the max of all min roll damages*/
     int currentReceivedDamage = 0;
     for (int i = 0; i < GetBattlerLearnedMoveCount(bsys, ctx, ai->defender); i++){
         if(ctx->moveTbl[ctx->battlemon[ai->defender].move[i]].split != SPLIT_STATUS){
-            if(attackerEffectCheck == MOVE_EFFECT_RANDOM_POWER_10_CASES){ //average magnitude power
+
+            defenderMoveCheck = ctx->battlemon[defender].move[i];
+            defenderEffectCheck = ctx->moveTbl[defenderMoveCheck].effect;
+            defenderMoveTypeCheck = ctx->moveTbl[defenderMoveCheck].type;
+            specialMovePower = 0;
+            if(defenderEffectCheck == MOVE_EFFECT_RANDOM_POWER_10_CASES){ //average magnitude power
                 specialMovePower = 71;
             }
             currentReceivedDamage = CalcBaseDamage(bsys, ctx, ctx->battlemon[ai->defender].move[i], ctx->side_condition[ai->attackerSide],ctx->field_condition, specialMovePower, 0, ai->attacker, ai->defender, ctx->critical);
             currentReceivedDamage = ServerDoTypeCalcMod(bsys, ctx, ctx->battlemon[ai->defender].move[i], 0, ai->defender, ai->attacker, currentReceivedDamage, &temp); // looking at MAX ROLL, not min roll. 
             currentReceivedDamage = AdjustUnusualMoveDamage(bsys, ai->defender, ai->attacker, currentReceivedDamage, ctx->battlemon[ai->defender].move[i], ai);
+            currentReceivedDamage = AdjustSpecialDamage(bsys, ai->defender, ai->attacker, currentReceivedDamage, defenderEffectCheck, ai);
+            
             if(currentReceivedDamage > ai->maxDamageReceived){
                 ai->maxDamageReceived = currentReceivedDamage;
             }
@@ -1854,8 +1917,9 @@ void SetupStateVariables(struct BattleSystem *bsys, u32 attacker, u32 defender, 
         }
         
     }
-    ai->turnsToGetKilled = ai->attackerHP / (ai->maxDamageReceived + 1) + 1;
 
+    int damagePerTurn = ai->maxDamageReceived + 1;
+    ai->turnsToGetKilled = ai->turnsToGetKilled = (ai->attackerHP + damagePerTurn - 1) / damagePerTurn;
 
     /*Loop over all moves for checking certain conditions*/
     /*Set up max roll damage calculations for all known moves.
@@ -1872,7 +1936,6 @@ void SetupStateVariables(struct BattleSystem *bsys, u32 attacker, u32 defender, 
         ai->attackerMaxRollMoveDamages[i] = CalcBaseDamage(bsys, ctx, attackerMoveCheck, ctx->side_condition[ai->defenderSide],ctx->field_condition, specialMovePower, 0, ai->attacker, ai->defender, NULL);
         ai->attackerMaxRollMoveDamages[i] = ServerDoTypeCalcMod(bsys, ctx, attackerMoveCheck, 0, attacker, ai->defender, ai->attackerMaxRollMoveDamages[i], &temp);
         ai->attackerMaxRollMoveDamages[i] = AdjustUnusualMoveDamage(bsys, ai->attacker, ai->defender, ai->attackerMaxRollMoveDamages[i], attackerEffectCheck, ai);
-        
         ai->attackerMaxRollMoveDamages[i] = AdjustSpecialDamage(bsys, ai->attacker, ai->defender, ai->attackerMaxRollMoveDamages[i], attackerEffectCheck, ai);
 
         ai->attackerMinRollMoveDamages[i] = ai->attackerMaxRollMoveDamages[i] * 85 / 100;
@@ -1896,7 +1959,13 @@ void SetupStateVariables(struct BattleSystem *bsys, u32 attacker, u32 defender, 
         }
 
     }
-    ai->turnsToKill = ai->defenderHP / (ai->attackerMaxDamageOutputMinRoll + 1) + 1;
+
+    damagePerTurn = ai->attackerMaxDamageOutputMinRoll + 1;
+    ai->turnsToKill = (ai->defenderHP + damagePerTurn - 1) / damagePerTurn;
+
+    u8 buf[64];
+    sprintf(buf, "Turns to kill : %d (%d/%d), Turns to get killed : %d (%d/%d)\n", ai->turnsToKill, ai->attackerMaxDamageOutputMinRoll, ai->defenderHP, ai->turnsToGetKilled, ai->attackerHP, ai->maxDamageReceived);
+    debugsyscall(buf);
 }
 
 /*Adjusts the computed damage for attacks like multihit or flat damage moves.*/
@@ -1953,8 +2022,17 @@ int AdjustSpecialDamage(struct BattleSystem *bsys, u32 attacker, u32 defender, i
             }
             break;
         default:
-            return damage;
+            break;
     }
+
+    if ((MoldBreakerAbilityCheck(ctx, attacker, defender, ABILITY_STURDY) == TRUE)
+        && (ctx->battlemon[defender].hp == (s32)ctx->battlemon[defender].maxhp)
+        && (damage >= ctx->battlemon[defender].maxhp))
+    {
+        return ctx->battlemon[defender].maxhp - 1;
+    }
+
+    return damage;
 }
 
 /*Returns the true move power of variable power moves like reversal or magnitude*/
