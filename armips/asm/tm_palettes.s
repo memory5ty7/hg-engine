@@ -52,7 +52,7 @@ PALETTE_FAIRY equ 401
 
 // TM005 ROAR
 .skip 2
-.halfword PALETTE_NORMAL
+.halfword PALETTE_FAIRY
 .skip 4
 
 // TM006 FIRE_PUNCH
@@ -127,7 +127,7 @@ PALETTE_FAIRY equ 401
 
 // TM020 SAFEGUARD
 .skip 2
-.halfword PALETTE_NORMAL
+.halfword PALETTE_WATER
 .skip 4
 
 // TM021 TAILWIND
@@ -187,12 +187,12 @@ PALETTE_FAIRY equ 401
 
 // TM032 DOUBLE_TEAM
 .skip 2
-.halfword PALETTE_NORMAL
+.halfword PALETTE_DRAGON
 .skip 4
 
 // TM033 REFLECT
 .skip 2
-.halfword PALETTE_PSYCHIC
+.halfword PALETTE_POISON
 .skip 4
 
 // TM034 SHOCK_WAVE
@@ -212,7 +212,7 @@ PALETTE_FAIRY equ 401
 
 // TM037 SANDSTORM
 .skip 2
-.halfword PALETTE_ROCK
+.halfword PALETTE_DARK
 .skip 4
 
 // TM038 FIRE_BLAST
@@ -252,7 +252,7 @@ PALETTE_FAIRY equ 401
 
 // TM045 ATTRACT
 .skip 2
-.halfword PALETTE_NORMAL
+.halfword PALETTE_WATER
 .skip 4
 
 // TM046 WEATHER_BALL
@@ -317,7 +317,7 @@ PALETTE_FAIRY equ 401
 
 // TM058 ENDURE
 .skip 2
-.halfword PALETTE_NORMAL
+.halfword PALETTE_WATER
 .skip 4
 
 // TM059 DRAGON_PULSE
@@ -377,7 +377,7 @@ PALETTE_FAIRY equ 401
 
 // TM070 FLASH
 .skip 2
-.halfword PALETTE_NORMAL
+.halfword PALETTE_FIGHTING
 .skip 4
 
 // TM071 STONE_EDGE
@@ -477,7 +477,7 @@ PALETTE_FAIRY equ 401
 
 // TM090 PLAY_ROUGH
 .skip 2
-.halfword PALETTE_NORMAL
+.halfword PALETTE_FAIRY
 .skip 4
 
 // TM091 FLASH_CANNON

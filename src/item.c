@@ -13,98 +13,98 @@
 
 static const u16 sMachineMoves[] = {
     // vanilla TMs
-    MOVE_FOCUS_PUNCH,      // TM001
+    MOVE_HIGH_HORSEPOWER,      // TM001
     MOVE_DRAGON_CLAW,      // TM002
     MOVE_WATER_PULSE,      // TM003
-    MOVE_CALM_MIND,        // TM004
-    MOVE_ROAR,             // TM005
-    MOVE_TOXIC,            // TM006
-    MOVE_HAIL,             // TM007
-    MOVE_BULK_UP,          // TM008
+    MOVE_FEINT_ATTACK,        // TM004
+    MOVE_MOONBLAST,             // TM005
+    MOVE_FIRE_PUNCH,            // TM006
+    MOVE_THUNDER_PUNCH,             // TM007
+    MOVE_ICE_PUNCH,          // TM008
     MOVE_BULLET_SEED,      // TM009
-    MOVE_HIDDEN_POWER,     // TM010
-    MOVE_SUNNY_DAY,        // TM011
+    MOVE_MAGICAL_LEAF,     // TM010
+    MOVE_LIQUIDATION,        // TM011
     MOVE_TAUNT,            // TM012
     MOVE_ICE_BEAM,         // TM013
     MOVE_BLIZZARD,         // TM014
-    MOVE_HYPER_BEAM,       // TM015
-    MOVE_LIGHT_SCREEN,     // TM016
+    MOVE_SEISMIC_TOSS,       // TM015
+    MOVE_PSYBEAM,     // TM016
     MOVE_PROTECT,          // TM017
-    MOVE_RAIN_DANCE,       // TM018
+    MOVE_BREAKING_SWIPE,       // TM018
     MOVE_GIGA_DRAIN,       // TM019
-    MOVE_SAFEGUARD,        // TM020
-    MOVE_FRUSTRATION,      // TM021
+    MOVE_DIVE,        // TM020
+    MOVE_TAILWIND,      // TM021
     MOVE_SOLAR_BEAM,       // TM022
-    MOVE_IRON_TAIL,        // TM023
+    MOVE_SOLAR_BLADE,        // TM023
     MOVE_THUNDERBOLT,      // TM024
     MOVE_THUNDER,          // TM025
     MOVE_EARTHQUAKE,       // TM026
-    MOVE_RETURN,           // TM027
-    MOVE_DIG,              // TM028
+    MOVE_ICY_WIND,           // TM027
+    MOVE_HYDRO_PUMP,              // TM028
     MOVE_PSYCHIC,          // TM029
     MOVE_SHADOW_BALL,      // TM030
     MOVE_BRICK_BREAK,      // TM031
-    MOVE_DOUBLE_TEAM,      // TM032
-    MOVE_REFLECT,          // TM033
+    MOVE_DRACO_METEOR,      // TM032
+    MOVE_TOXIC,          // TM033
     MOVE_SHOCK_WAVE,       // TM034
     MOVE_FLAMETHROWER,     // TM035
     MOVE_SLUDGE_BOMB,      // TM036
-    MOVE_SANDSTORM,        // TM037
+    MOVE_KNOCK_OFF,        // TM037
     MOVE_FIRE_BLAST,       // TM038
     MOVE_ROCK_TOMB,        // TM039
     MOVE_AERIAL_ACE,       // TM040
-    MOVE_TORMENT,          // TM041
+    MOVE_NIGHT_SHADE,          // TM041
     MOVE_FACADE,           // TM042
-    MOVE_SECRET_POWER,     // TM043
-    MOVE_REST,             // TM044
-    MOVE_ATTRACT,          // TM045
-    MOVE_THIEF,            // TM046
+    MOVE_HYPER_VOICE,     // TM043
+    MOVE_RAPID_SPIN,             // TM044
+    MOVE_SCALD,          // TM045
+    MOVE_WEATHER_BALL,            // TM046
     MOVE_STEEL_WING,       // TM047
-    MOVE_SKILL_SWAP,       // TM048
-    MOVE_SNATCH,           // TM049
+    MOVE_VOLT_SWITCH,       // TM048
+    MOVE_BODY_PRESS,           // TM049
     MOVE_OVERHEAT,         // TM050
     MOVE_ROOST,            // TM051
     MOVE_FOCUS_BLAST,      // TM052
     MOVE_ENERGY_BALL,      // TM053
-    MOVE_FALSE_SWIPE,      // TM054
-    MOVE_BRINE,            // TM055
-    MOVE_FLING,            // TM056
-    MOVE_CHARGE_BEAM,      // TM057
-    MOVE_ENDURE,           // TM058
+    MOVE_ROCK_BLAST,      // TM054
+    MOVE_HEAVY_SLAM,            // TM055
+    MOVE_AURA_SPHERE,            // TM056
+    MOVE_DUAL_WINGBEAT,      // TM057
+    MOVE_FLIP_TURN,           // TM058
     MOVE_DRAGON_PULSE,     // TM059
-    MOVE_DRAIN_PUNCH,      // TM060
+    MOVE_ICICLE_CRASH,      // TM060
     MOVE_WILL_O_WISP,      // TM061
-    MOVE_SILVER_WIND,      // TM062
-    MOVE_EMBARGO,          // TM063
+    MOVE_BUG_BITE,      // TM062
+    MOVE_PSYCHIC_FANGS,          // TM063
     MOVE_EXPLOSION,        // TM064
     MOVE_SHADOW_CLAW,      // TM065
     MOVE_PAYBACK,          // TM066
-    MOVE_RECYCLE,          // TM067
-    MOVE_GIGA_IMPACT,      // TM068
-    MOVE_ROCK_POLISH,      // TM069
-    MOVE_FLASH,            // TM070
+    MOVE_SMART_STRIKE,          // TM067
+    MOVE_EARTH_POWER,      // TM068
+    MOVE_ZEN_HEADBUTT,      // TM069
+    MOVE_LOW_SWEEP,            // TM070
     MOVE_STONE_EDGE,       // TM071
     MOVE_AVALANCHE,        // TM072
     MOVE_THUNDER_WAVE,     // TM073
     MOVE_GYRO_BALL,        // TM074
-    MOVE_SWORDS_DANCE,     // TM075
-    MOVE_STEALTH_ROCK,     // TM076
-    MOVE_PSYCH_UP,         // TM077
-    MOVE_CAPTIVATE,        // TM078
+    MOVE_IRON_HEAD,     // TM075
+    MOVE_STRUGGLE_BUG,     // TM076
+    MOVE_HURRICANE,         // TM077
+    MOVE_FROST_BREATH,        // TM078
     MOVE_DARK_PULSE,       // TM079
     MOVE_ROCK_SLIDE,       // TM080
     MOVE_X_SCISSOR,        // TM081
-    MOVE_SLEEP_TALK,       // TM082
-    MOVE_NATURAL_GIFT,     // TM083
+    MOVE_ELECTROWEB,       // TM082
+    MOVE_BULLDOZE,     // TM083
     MOVE_POISON_JAB,       // TM084
-    MOVE_DREAM_EATER,      // TM085
+    MOVE_DEFOG,      // TM085
     MOVE_GRASS_KNOT,       // TM086
-    MOVE_SWAGGER,          // TM087
+    MOVE_DRAINING_KISS,          // TM087
     MOVE_PLUCK,            // TM088
     MOVE_U_TURN,           // TM089
-    MOVE_SUBSTITUTE,       // TM090
+    MOVE_PLAY_ROUGH,       // TM090
     MOVE_FLASH_CANNON,     // TM091
-    MOVE_TRICK_ROOM,       // TM092
+    MOVE_DAZZLING_GLEAM,       // TM092
 
     // vanilla HMs
     MOVE_CUT,              // HM01
