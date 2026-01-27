@@ -221,8 +221,6 @@ int GetSpeciesIdFromInput(String *inputString) {
         if (sameArray == TRUE)
         {
             foundId = i;
-            sprintf(buf,"Found ID : %d\n",foundId);
-            //debugsyscall(buf);
             break;
         }
     }
@@ -303,7 +301,7 @@ BOOL Task_NamingScreen(TaskManager *taskman) {
         }
 
         foundVar = GetNumberFromInput(args->nameInputString);
-        if(foundVar != 0 && foundVar < 101)
+        if(foundVar != 0)
         {
             *retVar = foundVar;
         }
@@ -314,4 +312,27 @@ BOOL Task_NamingScreen(TaskManager *taskman) {
         return TRUE;
     }
     return FALSE;
+}
+
+// repurpose DummyCheckGameCompleted
+BOOL ScrCmd_SetClearFlag(SCRIPTCONTEXT *ctx) {
+    u16 *flag_var = ScriptGetVarPointer(ctx);
+    u16 flag_id = *flag_var;
+    u8 buf[64];
+    sprintf(buf, "Var id : %d\n", flag_id);
+    debugsyscall(buf);
+    if (CheckScriptFlag(flag_id))
+    {
+        ClearScriptFlag(flag_id);
+    } else {
+        SetScriptFlag(flag_id);
+    }
+    return TRUE;
+}
+
+// repurpose DummyGameCompleted
+BOOL ScrCmd_SetWeather(SCRIPTCONTEXT *ctx) {
+    u16 *var = ScriptGetVarPointer(ctx);
+    u16 weather = *var;
+    return TRUE;
 }

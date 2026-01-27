@@ -7283,6 +7283,11 @@ RunNewCommand2 NEW_COMMAND_UPDATE_REPELLENT, 0x800C
 .halfword arg0
 .endmacro
 
+.macro setClearFlag,arg0
+.halfword 305
+.halfword arg0
+.endmacro
+
 .macro DummyGameCompleted
 .halfword 306
 .endmacro

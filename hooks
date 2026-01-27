@@ -641,3 +641,5 @@ arm9 HandleDaycareStep 0206CD1C 3
 # Debug Menu
 arm9 ScrCmd_NamePlayer 0204E71C 1
 arm9 Task_NamingScreen 0203F580 1
+arm9 ScrCmd_SetClearFlag 0204E88C 1
+arm9 ScrCmd_SetWeather 0204E8B8 1

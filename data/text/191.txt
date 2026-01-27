@@ -94,8 +94,8 @@ Vous pouvez regarder des photos\nsouvenir.
 
 ANNULER
 DONNER POKéMON
-
-
+DONNER OBJET
+SET/CLEAR FLAG
 
 
 SOIGNER ₧₦

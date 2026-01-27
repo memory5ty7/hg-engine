@@ -899,10 +899,14 @@ utility:
     npc_msg 121
     menu_init_std_gmm 1, 1, 0, 1, VAR_SPECIAL_x8006
     menu_item_add 95, 255, 10  // Give Pokémon
+    menu_item_add 96, 255, 11 // Give Item
+    menu_item_add 97, 255, 12 // Set/Clear Flag
     menu_item_add 94, 255, 2   // Cancel
     menu_exec
     switch VAR_SPECIAL_x8006
     case 10, givePokemon
+    case 11, giveItem
+    case 12, setClearFlag
     case 2, _0A2E
     goto _0A2E
 
@@ -912,11 +916,45 @@ givePokemon:
 	wait_fade
     prompt_number VAR_SPECIAL_x8004
     prompt_number VAR_SPECIAL_x8005
+    prompt_number VAR_SPECIAL_x8006
 	fade_screen 6, 1, 1, RGB_BLACK
 	wait_fade
-    setvar VAR_SPECIAL_x8006, 0 // Form
+    compare VAR_SPECIAL_x8004, 0
+    goto_if_eq wrongInput
+    compare VAR_SPECIAL_x8005, 0
+    goto_if_eq wrongInput
     GivePokemon VAR_SPECIAL_x8004,VAR_SPECIAL_x8005,0,VAR_SPECIAL_x8006,0,VAR_SPECIAL_RESULT
     goto _0A2E
+
+wrongInput:
+    goto _0A2E    
+
+giveItem:
+    closemsg
+	fade_screen 6, 1, 0, RGB_BLACK
+	wait_fade
+    prompt_number VAR_SPECIAL_x8004
+    prompt_number VAR_SPECIAL_x8005
+	fade_screen 6, 1, 1, RGB_BLACK
+	wait_fade
+    compare VAR_SPECIAL_x8004, 0
+    goto_if_eq wrongInput
+    compare VAR_SPECIAL_x8005, 0
+    goto_if_eq wrongInput
+    giveitem VAR_SPECIAL_x8004, VAR_SPECIAL_x8005, VAR_SPECIAL_RESULT
+    goto _0A2E
+
+setClearFlag:
+    closemsg
+	fade_screen 6, 1, 0, RGB_BLACK
+	wait_fade
+    prompt_number VAR_SPECIAL_x8004
+	fade_screen 6, 1, 1, RGB_BLACK
+	wait_fade
+    compare VAR_SPECIAL_x8004, 0
+    goto_if_eq wrongInput
+    setClearFlag VAR_SPECIAL_x8004
+    goto _0A2E    
 
 _0B01:
     play_se SEQ_SE_DP_PC_LOGIN
