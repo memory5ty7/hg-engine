@@ -131,6 +131,7 @@ u32 LoadCaptureSuccessSPAStarEmitter(u32 id);
 u32 LoadCaptureSuccessSPANumEmitters(u32 id);
 
 BOOL btl_scr_cmd_permanentterrain(void *bw, struct BattleStruct *sp);
+BOOL btl_scr_cmd_fieldperishsong(void *bw, struct BattleStruct *sp);
 
 #ifdef DEBUG_BATTLE_SCRIPT_COMMANDS
 #pragma GCC diagnostic push
@@ -408,13 +409,14 @@ const u8 *BattleScrCmdNames[] =
     "GoToIfTerastallized",
     // "YourCustomCommand",
     "PermanentTerrain",
+    "FieldPerishSong",
 };
 
 u32 cmdAddress = 0;
 #pragma GCC diagnostic pop
 #endif // DEBUG_BATTLE_SCRIPT_COMMANDS
 
-#define BASE_ENGINE_BTL_SCR_CMDS_MAX 0x107
+#define BASE_ENGINE_BTL_SCR_CMDS_MAX 0x10C
 
 const btl_scr_cmd_func NewBattleScriptCmdTable[] =
 {
@@ -464,6 +466,7 @@ const btl_scr_cmd_func NewBattleScriptCmdTable[] =
     [0x10C - START_OF_NEW_BTL_SCR_CMDS] = btl_scr_cmd_10C_gotoifterastallized,
     // [BASE_ENGINE_BTL_SCR_CMDS_MAX - START_OF_NEW_BTL_SCR_CMDS + 1] = btl_scr_cmd_custom_01_your_custom_command,
     [BASE_ENGINE_BTL_SCR_CMDS_MAX - START_OF_NEW_BTL_SCR_CMDS + 1] = btl_scr_cmd_permanentterrain,
+    [BASE_ENGINE_BTL_SCR_CMDS_MAX - START_OF_NEW_BTL_SCR_CMDS + 2] = btl_scr_cmd_fieldperishsong,
 };
 
 // entries before 0xFFFE are banned for mimic and metronome--after is just banned for metronome.  table ends with 0xFFFF
@@ -4471,6 +4474,20 @@ BOOL btl_scr_cmd_permanentterrain(void *bw UNUSED, struct BattleStruct *sp) {
             sp->terrainOverlay.numberOfTurnsLeft = 0;
         }
     }
+
+    return FALSE;
+}
+
+BOOL btl_scr_cmd_fieldperishsong(void *bw UNUSED, struct BattleStruct *sp) {
+    u8 buf[64];
+    sprintf(buf, "btl_scr_cmd_fieldperishsong\n");
+    debugsyscall(buf);
+    IncrementBattleScriptPtr(sp, 1);
+
+    int adrs = read_battle_script_param(sp);
+
+    sp->battlemon[sp->defence_client].effect_of_moves |= MOVE_EFFECT_FLAG_PERISH_SONG_ACTIVE;
+    sp->battlemon[sp->defence_client].moveeffect.perishSongTurns = 3;
 
     return FALSE;
 }

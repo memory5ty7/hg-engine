@@ -494,6 +494,7 @@
 #define SUB_SEQ_OVERWORLD_TAILWIND                    (MAX_BASE_SUBSCRIPT_NUM + 2)
 #define SUB_SEQ_OVERWORLD_TERRAIN                     (MAX_BASE_SUBSCRIPT_NUM + 3)
 #define SUB_SEQ_PERMANENT_TRICK_ROOM                  (MAX_BASE_SUBSCRIPT_NUM + 4)
+#define SUB_SEQ_OVERWORLD_PERISH_SONG                 (MAX_BASE_SUBSCRIPT_NUM + 5)
 
 // add status effect constants--used in battle effect scripts to queue up a subscript through the table in src/moves.c
 

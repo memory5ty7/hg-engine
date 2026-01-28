@@ -1489,4 +1489,9 @@
     .long (((\arg_1 - .) / 4) - 1)
     .endm
 
+    .macro FieldPerishSong arg_0
+    .long (BASE_ENGINE_BTL_SCR_CMDS_MAX + 2)
+    .long (((\arg_0 - .) / 4) - 1)
+    .endm
+
 .endif

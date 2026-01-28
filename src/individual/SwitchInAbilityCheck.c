@@ -139,8 +139,38 @@ int UNUSED SwitchInAbilityCheck(void *bw, struct BattleStruct *sp)
                 sp->switch_in_check_seq_no++;
             }
                 break;
-            case SWITCH_IN_CHECK_FIELD: // TODO come back to this
-                sp->switch_in_check_seq_no++;
+            case SWITCH_IN_CHECK_FIELD: {
+                for (i = 0; i < client_set_max; i++) {
+                    client_no = sp->turnOrder[i];
+
+                    {
+                        if ((BattleWorkWeatherGet(bw) == WEATHER_SYS_PERISH_SONG)
+                            && !(sp->battlemon[client_no].effect_of_moves & MOVE_EFFECT_FLAG_PERISH_SONG_ACTIVE)
+                            && (sp->battlemon[client_no].hp)
+                            && (!IsClientEnemy(bw, client_no)))
+                        {
+                            u8 buf[64];
+                            sprintf(buf, "Weather Sys Perish Song\n");
+                            debugsyscall(buf);
+                            sp->current_move_index = MOVE_PERISH_SONG;
+                            sp->attack_client = BATTLER_ENEMY;
+                            sp->defence_client = client_no;
+                            scriptnum = SUB_SEQ_OVERWORLD_PERISH_SONG;                  
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            break;    
+                        }
+                    }
+
+                    // Need to trigger script
+                    if (ret == SWITCH_IN_CHECK_MOVE_SCRIPT) {
+                        break;
+                    }
+                }
+
+                if (i == client_set_max) {
+                    sp->switch_in_check_seq_no++;
+                }
+            }
                 break;
             // https://bulbapedia.bulbagarden.net/wiki/User:FIQ/Turn_sequence
             case SWITCH_IN_CHECK_ENTRY_EFFECT_NEUTRALIZING_GAS_TERA_SHIFT: {
