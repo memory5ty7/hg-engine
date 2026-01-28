@@ -265,7 +265,7 @@ void __attribute__((section (".init"))) BattleController_BeforeMove(struct Battl
 #ifdef DEBUG_BATTLE_SCENARIOS
                 ret = 0;
 #else
-                ret = ServerBadgeCheck(bsys, ctx, &seq_no);  // 8013610h
+                ret = 0; // ServerBadgeCheck(bsys, ctx, &seq_no);  // 8013610h
 #endif
                 if (ret) {
                     switch (ret) {
@@ -1757,9 +1757,9 @@ BOOL BattleController_CheckMoveFailures1(struct BattleSystem *bsys, struct Battl
 
     // TODO: client Transformed into the correct species can use the move as well
     // Dark Void when user isn't Darkrai
-    if ((currentMoveIndex == MOVE_DARK_VOID && attackClient.species != SPECIES_DARKRAI)
+    if (//(currentMoveIndex == MOVE_DARK_VOID && attackClient.species != SPECIES_DARKRAI)
     // Hyperspace Fury when user isn't Hoopa
-    || (currentMoveIndex == MOVE_HYPERSPACE_FURY && attackClient.species != SPECIES_HOOPA)
+    /*||*/ (currentMoveIndex == MOVE_HYPERSPACE_FURY && attackClient.species != SPECIES_HOOPA)
     // Aura Wheel when user isn't Morpeko
     || (currentMoveIndex == MOVE_AURA_WHEEL && attackClient.species != SPECIES_MORPEKO)) {
         BattleController_ResetGeneralMoveFailureFlags(ctx, ctx->attack_client, TRUE);
@@ -4308,6 +4308,8 @@ BOOL BattleController_TryConsumeDamageReductionBerry(struct BattleSystem *bsys U
         LoadBattleSubSeqScript(ctx, ARC_BATTLE_SUB_SEQ, SUB_SEQ_PLAY_EAT_BERRY_ANIMATION);
         ctx->next_server_seq_no = ctx->server_seq_no;
         ctx->server_seq_no = CONTROLLER_COMMAND_RUN_SCRIPT;
+        ctx->onceOnlyMoveConditionFlags[SanitizeClientForTeamAccess(bsys, defender)][ctx->sel_mons_no[defender]].berryEatenAndCanBelch = TRUE;
+
         return TRUE;
     }
     return FALSE;

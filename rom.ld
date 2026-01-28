@@ -242,6 +242,7 @@ CreateNicknameTag = 0x022522E0 | 1;
 JumpToMoveEffectScript = 0x02245518 | 1;
 BGCallback_Waza = 0x0226748C | 1;
 TryEatOpponentBerry = 0x02255A2C | 1;
+TryFling = 0x02255F7C | 1;
 
 /* Trainer data expansion */
 gf_get_seed = 0x0201FD2C | 1;
@@ -590,6 +591,11 @@ TryAppendMonMove = 0x0207137C | 1;
 
 BattleControllerPlayer_CalcExecutionOrder = 0x02249190 | 1;
 
+InitBattleMsgData = 0x022478F4 | 1;
+InitBattleMsg = 0x022479C0 | 1;
+BattleController_EmitPrintMessage = 0x022633F0 | 1;
+BattleController_EmitPrintAttackMessage = 0x022633B8 | 1;
+
 Mon_UpdateRotomForm = 0x02071EC0 | 1;
 Mon_UpdateShayminForm = 0x02071D6C | 1;
 Daycare_GetBothBoxMonsPtr = 0x0206C1C8 | 1;
@@ -700,7 +706,7 @@ sub_0207D1C8 = 0x0207D1C8 | 1;
 PartyMenu_PrintMessageOnWindow33 = 0x0207DAD8 | 1;
 thunk_Sprite_SetPalIndex = 0x0200DD08 | 1;
 
-FreeToHeapExplicit = 0x0201AB80 | 1;
+Heap_FreeExplicit = 0x0201AB80 | 1;
 
 BattleControllerPlayer_ItemInput = 0x0224AAF0 | 1;
 BattleControllerPlayer_PokemonInput = 0x0224AC50 | 1;
@@ -712,6 +718,8 @@ LowestFlagNo = 0x020726E0 | 1;
 Battler_GetRandomOpposingBattlerId = 0x02253DA0 | 1;
 GetBattlerLearnedMoveCount = 0x02252EA8 | 1;
 CanSwitchMon = 0x02252890 | 1;
+BattleMon_AddVar = 0x0224F7AC | 1;
+GetFlavorPreferenceFromPID = 0x020718E8 | 1;
 
 ov12_0224DD74 = 0x0224DD74 | 1;
 ov12_02261258 = 0x02261258 | 1;

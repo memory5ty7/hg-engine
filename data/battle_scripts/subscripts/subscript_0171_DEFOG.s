@@ -19,10 +19,10 @@ Start:
     CompareVarToValue OPCODE_FLAG_SET, BSCRIPT_VAR_SIDE_CONDITION_ATTACKER, SIDE_CONDITION_STEALTH_ROCKS, _playMoveAndAnim
     CompareVarToValue OPCODE_FLAG_SET, BSCRIPT_VAR_SIDE_CONDITION_ATTACKER, SIDE_CONDITION_STICKY_WEB, _playMoveAndAnim
     CompareVarToValue OPCODE_FLAG_SET, BSCRIPT_VAR_FIELD_CONDITION, FIELD_CONDITION_FOG, _playMoveAndAnim
-    GotoIfTerrainOverlayIsType GRASSY_TERRAIN, _playMoveAndAnim
-    GotoIfTerrainOverlayIsType MISTY_TERRAIN, _playMoveAndAnim
-    GotoIfTerrainOverlayIsType ELECTRIC_TERRAIN, _playMoveAndAnim
-    GotoIfTerrainOverlayIsType PSYCHIC_TERRAIN, _playMoveAndAnim
+    //GotoIfTerrainOverlayIsType GRASSY_TERRAIN, _playMoveAndAnim
+    //GotoIfTerrainOverlayIsType MISTY_TERRAIN, _playMoveAndAnim
+    //GotoIfTerrainOverlayIsType ELECTRIC_TERRAIN, _playMoveAndAnim
+    //GotoIfTerrainOverlayIsType PSYCHIC_TERRAIN, _playMoveAndAnim
     GoTo _lowerEvasion
 
 _playMoveAndAnim:
@@ -126,10 +126,10 @@ _clearPlayerStickyWeb:
     Call BATTLE_SUBSCRIPT_DEFOG_MESSAGE
 
 _clearTerrain:
-    GotoIfTerrainOverlayIsType GRASSY_TERRAIN, _clearGrassyTerrain
-    GotoIfTerrainOverlayIsType MISTY_TERRAIN, _clearMistyTerrain
-    GotoIfTerrainOverlayIsType ELECTRIC_TERRAIN, _clearElectricTerrain
-    GotoIfTerrainOverlayIsType PSYCHIC_TERRAIN, _clearPsychicTerrain
+    //GotoIfTerrainOverlayIsType GRASSY_TERRAIN, _clearGrassyTerrain
+    //GotoIfTerrainOverlayIsType MISTY_TERRAIN, _clearMistyTerrain
+    //GotoIfTerrainOverlayIsType ELECTRIC_TERRAIN, _clearElectricTerrain
+    //GotoIfTerrainOverlayIsType PSYCHIC_TERRAIN, _clearPsychicTerrain
     GoTo _clearFog
 
 _clearGrassyTerrain:

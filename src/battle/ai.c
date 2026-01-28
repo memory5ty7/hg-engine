@@ -3,6 +3,7 @@
 #include "../../include/debug.h"
 #include "../../include/pokemon.h"
 #include "../../include/types.h"
+#include "../../include/overlay.h"
 #include "../../include/constants/ability.h"
 #include "../../include/constants/hold_item_effects.h"
 #include "../../include/constants/battle_script_constants.h"
@@ -110,4 +111,48 @@ void AITypeCalc(struct BattleStruct *sp, u32 move, u32 type, int atkAbility, int
     }
 
     return;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// in hooks
+// 0012 BattleAI_PostKOSwitchIn 02258800 2
+int LONG_CALL BattleAI_PostKOSwitchIn(struct BattleSystem *bsys, int attacker)
+{
+    // return 6;
+
+    u32 offset;
+    int ret;
+    int (*internalFunc)(struct BattleSystem *bsys, int attacker);
+
+    u32 loadNeeded = IsOverlayLoaded(OVERLAY_BATTLE_ANIMS) ? OVERLAY_BATTLE_ANIMS : 0;
+    if (loadNeeded) {
+        UnloadOverlayByID(OVERLAY_BATTLE_ANIMS); // unload colliding overlay so that this can be loaded
+    }
+
+    offset = 0x0221BE20 | 1; // this is *almost* BattleAI_PostKOSwitchIn_Internal in ov10
+    HandleLoadOverlay(OVERLAY_TRAINER_AI, 2);
+    internalFunc = (int (*)(struct BattleSystem *bsys, int attacker))(offset);
+    attacker = attacker + 10;
+    ret = internalFunc(bsys, attacker);
+    UnloadOverlayByID(OVERLAY_TRAINER_AI);
+
+    if (loadNeeded) {
+        HandleLoadOverlay(OVERLAY_BATTLE_ANIMS, 2);
+    }
+
+    return ret;
 }
