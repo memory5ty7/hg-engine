@@ -317,7 +317,7 @@ VAR_UNK_4130 equ                       0x4130
 VAR_UNK_4131 equ                       0x4131
 VAR_UNK_4132 equ                       0x4132
 VAR_UNK_4133 equ                       0x4133
-VAR_UNK_4134 equ                       0x4134
+VAR_MIDGAME_BADGES equ                 0x4134
 VAR_UNK_4135 equ                       0x4135
 VAR_UNK_4136 equ                       0x4136
 VAR_UNK_4137 equ                       0x4137

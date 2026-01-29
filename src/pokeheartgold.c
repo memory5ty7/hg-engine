@@ -10,6 +10,7 @@
 #include "../include/task.h"
 #include "../include/nitro.h"
 #include "../include/constants/species.h"
+#include "../include/local_field_data.h"
 
 void CopyBoxPokemonToPokemon(const struct BoxPokemon *src, struct PartyPokemon *dest)
 {
@@ -332,7 +333,15 @@ BOOL ScrCmd_SetClearFlag(SCRIPTCONTEXT *ctx) {
 
 // repurpose DummyGameCompleted
 BOOL ScrCmd_SetWeather(SCRIPTCONTEXT *ctx) {
-    u16 *var = ScriptGetVarPointer(ctx);
-    u16 weather = *var;
+    u16 weather = ScriptReadHalfword(ctx);
+
+    u8 buf[64];
+    sprintf(buf, "Weather id : %d\n", weather);
+    debugsyscall(buf);
+
+    LocalFieldData *localFieldData = Save_LocalFieldData_Get(ctx->fsys->savedata);
+    LocalFieldData_SetWeatherType(localFieldData, weather);
+    FieldWeatherUpdate_UsedFlash(ctx->fsys->unk4->unk0C, LocalFieldData_GetWeatherType(localFieldData));
+
     return TRUE;
 }

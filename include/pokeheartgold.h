@@ -5,6 +5,7 @@
 #include "pokemon.h"
 #include "message.h"
 #include "task.h"
+#include "local_field_data.h"
 
 void LONG_CALL CallTask_LeaveOverworld(TaskManager *taskManager);
 void LONG_CALL CallTask_RestoreOverworld(TaskManager *taskManager);
@@ -44,5 +45,10 @@ BOOL LONG_CALL sub_0202C88C(void *group, u16 *a1);
 void LONG_CALL SetName(TaskManager *taskman);
 void LONG_CALL NamingScreen_DeleteArgs(void *namingScreenArgs);
 String* LONG_CALL _get_species_name(u16 species, int heapID);
+
+LocalFieldData* LONG_CALL Save_LocalFieldData_Get(void *saveData);
+u16 LONG_CALL LocalFieldData_GetWeatherType(LocalFieldData *localFieldData);
+void LONG_CALL LocalFieldData_SetWeatherType(LocalFieldData *localFieldData, const u16 weather);
+void LONG_CALL FieldWeatherUpdate_UsedFlash(void *unkWeatherRelated, int weatherType);
 
 #endif // POKEHEARTGOLD_H

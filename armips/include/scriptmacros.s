@@ -2073,8 +2073,9 @@ BADGE_EARTH    equ 15
 .halfword arg0
 .endmacro
 
-.macro scrcmd_306
+.macro setweather, arg0
 .halfword 306
+.halfword arg0
 .endmacro
 
 .macro scrcmd_307,arg0,arg1,arg2,arg3,arg4

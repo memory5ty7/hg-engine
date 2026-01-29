@@ -864,3 +864,8 @@ SetName = 0x0203F650 | 1;
 NamingScreen_DeleteArgs = 0x0208311C | 1;
 GetSpeciesNameIntoArray = 0x0200BC28 | 1;
 GetSpeciesName = 0x0200BCDC | 1;
+
+Save_LocalFieldData_Get = 0x0203B9C4 | 1;
+LocalFieldData_SetWeatherType = 0x0203B98C | 1;
+LocalFieldData_GetWeatherType = 0x0203B984 | 1;
+FieldWeatherUpdate_UsedFlash = 0x021EB2B8 | 1;
