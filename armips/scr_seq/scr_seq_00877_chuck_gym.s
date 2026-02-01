@@ -32,7 +32,7 @@ scr_seq_T24GYM0101_000:
 	goto_if_eq _00EE
 	npc_msg 0
 	closemsg
-	trainer_battle 34, 0, 0, 0
+	trainer_battle 34, 34, 0, 0
 	check_battle_won VAR_SPECIAL_RESULT
 	compare VAR_SPECIAL_RESULT, 0
 	goto_if_eq _0104
