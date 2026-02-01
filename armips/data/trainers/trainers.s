@@ -2206,7 +2206,7 @@ trainerdata 34, "Morgan"
         abilityslot 0
         level 48
         pokemon SPECIES_SCRAFTY
-        item ITEM_SITRUS_BERRY
+        item ITEM_SCRAFTINITE
         move MOVE_CRUNCH
         move MOVE_DRAIN_PUNCH
         move MOVE_FAKE_OUT
