@@ -3097,6 +3097,18 @@ _1AD0: // Trainer 630
 _ktvdarkcave:
     trainertextentry 738, TEXT_DEFEATED_IN_BATTLE, "Quoi? Mes Pokémon!"
 
+_ktvroute33:
+    trainertextentry 739, TEXT_DEFEATED_IN_BATTLE, "Hey\nC'était vraiment pas mal!"
+
+_ktvgoldenrod:
+    trainertextentry 740, TEXT_DEFEATED_IN_BATTLE, "Mes espoirs s'envolent..."
+
+_ktvbelltower:
+    trainertextentry 741, TEXT_DEFEATED_IN_BATTLE, "Ta force me surpasse!"
+
+_ktvnationalpark:
+    trainertextentry 742, TEXT_DEFEATED_IN_BATTLE, "Waouh!\nBien joué!"
+
 .close
 
 
@@ -3842,5 +3854,9 @@ _ktvdarkcave:
 /* Trainer 736 */ .halfword _0000
 /* Trainer 737 */ .halfword _0000
 /* Trainer 738 */ .halfword _ktvdarkcave
+/* Trainer 739 */ .halfword _ktvroute33
+/* Trainer 740 */ .halfword _ktvgoldenrod
+/* Trainer 741 */ .halfword _ktvbelltower
+/* Trainer 742 */ .halfword _ktvnationalpark
 
 .close

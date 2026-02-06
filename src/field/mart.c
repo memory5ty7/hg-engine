@@ -20,34 +20,26 @@ struct BadgeMartItems {
 // note: limited to 203 items (~34 pages)
 const struct BadgeMartItems sBadgeMart[] = {
     { ITEM_POKE_BALL,      0 },
-    { ITEM_GREAT_BALL,     3 },
-    { ITEM_ULTRA_BALL,     5 },
-    { ITEM_POTION,         0 },
-    { ITEM_SUPER_POTION,   1 },
-    { ITEM_HYPER_POTION,   5 },
-    { ITEM_MAX_POTION,     7 },
-    { ITEM_FULL_RESTORE,   8 },
-    { ITEM_REVIVE,         3 },
-    { ITEM_ANTIDOTE,       0 },
-    { ITEM_PARALYZE_HEAL,  0 },
-    { ITEM_AWAKENING,      1 },
-    { ITEM_BURN_HEAL,      1 },
-    { ITEM_ICE_HEAL,       1 },
-    { ITEM_FULL_HEAL,      5 },
-    { ITEM_ESCAPE_ROPE,    1 },
-    { ITEM_REPEL,          1 },
-    { ITEM_SUPER_REPEL,    3 },
-    { ITEM_MAX_REPEL,      5 },
+    { ITEM_POTION,     0 },
+    { ITEM_SUPER_POTION,     0 },
+    { ITEM_MAX_POTION,         0 },
+    { ITEM_FULL_RESTORE,   0 },
+    { ITEM_FULL_HEAL,   0 },
+    { ITEM_ETHER,     0 },
+    { ITEM_MAX_ETHER,   0 },
+    { ITEM_ELIXIR,         0 },
+    { ITEM_MAX_ELIXIR,       0 },
+    { ITEM_ESCAPE_ROPE,  0 },
 };
 
 void LONG_CALL InitMartUI(void *taskManager, FieldSystem *fieldSystem, const u16 *items, int kind, int buySell, int decoWhich, const struct MartItem *priceOverrides);
 
-u16 sCherrygroveCityMart[] = {
-    ITEM_AIR_MAIL, ITEM_HEAL_BALL, 0xFFFF
+u16 sCherrygroveCityMart[] = { // Relocate Safari Gate
+    ITEM_TM001, ITEM_TM014, ITEM_TM025, ITEM_TM028, ITEM_TM038, ITEM_TM077, 0xFFFF
 };
 
-u16 sVioletCityMart[] = {
-    ITEM_TUNNEL_MAIL, ITEM_HEAL_BALL, ITEM_NET_BALL, 0xFFFF
+u16 sVioletCityMart[] = { // Relocate Seafoam Islands
+    ITEM_TM013, ITEM_TM035, ITEM_TM061, 0xFFFF
 };
 
 u16 sAzaleaCityMart[] = {
@@ -72,14 +64,11 @@ u16 sGoldenrodDepartment3F[] = {
 };
 
 u16 sGoldenrodDepartment4F[] = {
-    ITEM_PROTEIN, ITEM_IRON, ITEM_CALCIUM, ITEM_ZINC, ITEM_CARBOS,
-    ITEM_HP_UP, 0xFFFF
+    ITEM_FIRE_STONE, ITEM_WATER_STONE, ITEM_THUNDER_STONE, ITEM_LEAF_STONE, ITEM_SUN_STONE, ITEM_MOON_STONE, ITEM_DAWN_STONE, ITEM_DUSK_STONE, ITEM_SHINY_STONE, ITEM_ICE_STONE, 0xFFFF
 };
 
 u16 sGoldenrodDepartment5F[] = {
-    ITEM_TM070, ITEM_TM017, ITEM_TM054, ITEM_TM083, ITEM_TM016,
-    ITEM_TM033, ITEM_TM022, ITEM_TM052, ITEM_TM038, ITEM_TM025,
-    ITEM_TM014, ITEM_TM015, 0xFFFF
+    ITEM_TM006, ITEM_TM007, ITEM_TM008, ITEM_TM010, ITEM_TM015, ITEM_TM034, ITEM_TM040, ITEM_TM067, 0xFFFF
 };
 
 u16 sGoldenrodHerbs[] = {
@@ -87,16 +76,15 @@ u16 sGoldenrodHerbs[] = {
 };
 
 u16 sEcruteakMart[] = {
-    ITEM_HEART_MAIL, ITEM_HEAL_BALL, ITEM_NET_BALL, 0xFFFF
+    ITEM_TM027, ITEM_TM031, ITEM_TM039, ITEM_TM063, ITEM_TM070, ITEM_TM082, ITEM_TM085, 0xFFFF
 };
 
 u16 sOlivineMart[] = {
-    ITEM_HEART_MAIL, ITEM_HEAL_BALL, ITEM_NET_BALL, 0xFFFF
+    ITEM_TM056, 0xFFFF
 };
 
 u16 sCianwoodPharmacy[] = {
-    ITEM_POTION, ITEM_SUPER_POTION, ITEM_HYPER_POTION, ITEM_FULL_HEAL, ITEM_REVIVE,
-    0xFFFF
+    ITEM_TM069, ITEM_TM075, ITEM_TM079, ITEM_TM080, 0xFFFF
 };
 
 u16 sBlackthornAndBattleFrontierMart[] = {
@@ -109,19 +97,19 @@ u16 sIndigoPlateau[] = {
 };
 
 u16 sVermilionAndSafariMart[] = {
-    ITEM_AIR_MAIL, ITEM_NEST_BALL, ITEM_DUSK_BALL, ITEM_QUICK_BALL, 0xFFFF
+    ITEM_TM024, ITEM_TM073, 0xFFFF
 };
 
 u16 sSaffronMart[] = {
-    ITEM_AIR_MAIL, ITEM_DUSK_BALL, ITEM_QUICK_BALL, 0xFFFF
+    ITEM_TM005, ITEM_TM029, 0xFFFF
 };
 
 u16 sLavenderMart[] = {
-    ITEM_AIR_MAIL, ITEM_DUSK_BALL, ITEM_QUICK_BALL, 0xFFFF
+    ITEM_TM030, 0xFFFF
 };
 
 u16 sCeruleanMart[] = {
-    ITEM_AIR_MAIL, ITEM_QUICK_BALL, 0xFFFF
+    ITEM_TM011, ITEM_TM045, 0xFFFF
 };
 
 u16 sCeladonDepartmentUpper2F[] = {
@@ -137,9 +125,7 @@ u16 sCeladonDepartmentLower2F[] = {
 };
 
 u16 sCeladonDepartment3F[] = {
-    ITEM_TM021, ITEM_TM027, ITEM_TM087, ITEM_TM078, ITEM_TM012,
-    ITEM_TM041, ITEM_TM020, ITEM_TM028, ITEM_TM076, ITEM_TM055,
-    ITEM_TM072, ITEM_TM079, 0xFFFF
+    ITEM_TM022, ITEM_TM023, ITEM_TM053, 0xFFFF
 };
 
 u16 sCeladonDepartment4F[] = {
@@ -157,15 +143,15 @@ u16 sCeladonDepartmentRight5F[] = {
 };
 
 u16 sFuschiaMart[] = {
-    ITEM_STEEL_MAIL, ITEM_DUSK_BALL, ITEM_QUICK_BALL, 0xFFFF
+    ITEM_TM033, ITEM_TM036, 0xFFFF
 };
 
 u16 sPewterMart[] = {
-    ITEM_STEEL_MAIL, ITEM_NEST_BALL, ITEM_QUICK_BALL, 0xFFFF
+    ITEM_TM068, ITEM_TM071, 0xFFFF
 };
 
 u16 sViridianMart[] = {
-    ITEM_STEEL_MAIL, ITEM_NET_BALL, ITEM_HEAL_BALL, 0xFFFF
+    ITEM_TM032, 0xFFFF
 };
 
 u16 sMtMoonSquare[] = {
@@ -174,12 +160,11 @@ u16 sMtMoonSquare[] = {
 };
 
 u16 sMahoganyPreRocketHideout[] = {
-    ITEM_TINY_MUSHROOM, ITEM_POKE_BALL, ITEM_POTION, 0xFFFF
+    ITEM_TM020, ITEM_TM066, ITEM_TM072, ITEM_TM078, 0xFFFF
 };
 
 u16 sMahoganyPostRocketHideout[] = {
-    ITEM_GREAT_BALL, ITEM_SUPER_POTION, ITEM_HYPER_POTION, ITEM_ANTIDOTE, ITEM_PARALYZE_HEAL,
-    ITEM_SUPER_REPEL, ITEM_REVIVE, ITEM_AIR_MAIL, 0xFFFF
+    ITEM_TM020, ITEM_TM066, ITEM_TM072, ITEM_TM078, 0xFFFF
 };
 
 BOOL ScrCmd_MartBuy(SCRIPTCONTEXT *ctx) {

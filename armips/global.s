@@ -55,4 +55,4 @@ plus all the c injection stuff.  we are not worried about that here, that is dyn
 */
 
 .include "armips/asm/custom/repellent.s"
-.include "armips/asm/custom/mart_items.s"
+//.include "armips/asm/custom/mart_items.s"
