@@ -1,47 +1,47 @@
-{COLOR 255}Clefablites{COLOR 0}
-{COLOR 255}Victreebelites{COLOR 0}
-{COLOR 255}Starminites{COLOR 0}
-{COLOR 255}Dragoninites{COLOR 0}
-{COLOR 255}Meganiumites{COLOR 0}
-{COLOR 255}Feraligites{COLOR 0}
-{COLOR 255}Skarmorites{COLOR 0}
-{COLOR 255}Froslassites{COLOR 0}
-{COLOR 255}Emboarites{COLOR 0}
-{COLOR 255}Excadrites{COLOR 0}
-{COLOR 255}Scolipites{COLOR 0}
-{COLOR 255}Scraftinites{COLOR 0}
-{COLOR 255}Eelektrossites{COLOR 0}
-{COLOR 255}Chandelurites{COLOR 0}
-{COLOR 255}Chesnaughtites{COLOR 0}
-{COLOR 255}Delphoxites{COLOR 0}
-{COLOR 255}Greninjites{COLOR 0}
-{COLOR 255}Pyroarites{COLOR 0}
-{COLOR 255}Floettites{COLOR 0}
-{COLOR 255}Malamarites{COLOR 0}
-{COLOR 255}Barbaracites{COLOR 0}
-{COLOR 255}Dragalgites{COLOR 0}
-{COLOR 255}Hawluchanites{COLOR 0}
-{COLOR 255}Zygardites{COLOR 0}
-{COLOR 255}Drampanites{COLOR 0}
-{COLOR 255}Falinksites{COLOR 0}
-{COLOR 255}Raichunites X{COLOR 0}
-{COLOR 255}Raichunites Y{COLOR 0}
-{COLOR 255}Chimechites{COLOR 0}
-{COLOR 255}Absolites Z{COLOR 0}
-{COLOR 255}Staraptites{COLOR 0}
-{COLOR 255}Garchompites Z{COLOR 0}
-{COLOR 255}Lucarionites Z{COLOR 0}
-{COLOR 255}Heatranites{COLOR 0}
-{COLOR 255}Darkranites{COLOR 0}
-{COLOR 255}Golurkites{COLOR 0}
-{COLOR 255}Meowsticites{COLOR 0}
-{COLOR 255}Crabominites{COLOR 0}
-{COLOR 255}Golisopites{COLOR 0}
-{COLOR 255}Magearnites{COLOR 0}
-{COLOR 255}Zeraorites{COLOR 0}
-{COLOR 255}Scovillainites{COLOR 0}
-{COLOR 255}Glimmoranites{COLOR 0}
-{COLOR 255}Tatsugirinites{COLOR 0}
-{COLOR 255}Baxcalibrites{COLOR 0}
+{COLOR 255}Mélodelfite{COLOR 0}
+{COLOR 255}Empiflorite{COLOR 0}
+{COLOR 255}Starossite{COLOR 0}
+{COLOR 255}Dracolossite{COLOR 0}
+{COLOR 255}Méganiumite{COLOR 0}
+{COLOR 255}Aligatueurite{COLOR 0}
+{COLOR 255}Airmurite{COLOR 0}
+{COLOR 255}Momartikite{COLOR 0}
+{COLOR 255}Roitiflamite{COLOR 0}
+{COLOR 255}Minotaupite{COLOR 0}
+{COLOR 255}Brutapodite{COLOR 0}
+{COLOR 255}Baggaïdite{COLOR 0}
+{COLOR 255}Ohmassacrite{COLOR 0}
+{COLOR 255}Lugulabrite{COLOR 0}
+{COLOR 255}Blindépiquite{COLOR 0}
+{COLOR 255}Goupelinite{COLOR 0}
+{COLOR 255}Amphinolite{COLOR 0}
+{COLOR 255}Néméliosite{COLOR 0}
+{COLOR 255}Floettite{COLOR 0}
+{COLOR 255}Sepiatrocite{COLOR 0}
+{COLOR 255}Golgopathite{COLOR 0}
+{COLOR 255}Kravarekite{COLOR 0}
+{COLOR 255}Brutalibrite{COLOR 0}
+{COLOR 255}Zygardite{COLOR 0}
+{COLOR 255}Draïeulite{COLOR 0}
+{COLOR 255}Hexadronite{COLOR 0}
+{COLOR 255}Raichuïte X{COLOR 0}
+{COLOR 255}Raichuïte Y{COLOR 0}
+{COLOR 255}Éokite{COLOR 0}
+{COLOR 255}Absolite Z{COLOR 0}
+{COLOR 255}Étouraptorite{COLOR 0}
+{COLOR 255}Carchacrokite Z{COLOR 0}
+{COLOR 255}Lucarite Z{COLOR 0}
+{COLOR 255}Heatranite{COLOR 0}
+{COLOR 255}Darkraïte{COLOR 0}
+{COLOR 255}Golemastokite{COLOR 0}
+{COLOR 255}Mistigrixite{COLOR 0}
+{COLOR 255}Crabominablite{COLOR 0}
+{COLOR 255}Sarmuraïte{COLOR 0}
+{COLOR 255}Magearnite{COLOR 0}
+{COLOR 255}Zeraorite{COLOR 0}
+{COLOR 255}Scovilainite{COLOR 0}
+{COLOR 255}Floréclatite{COLOR 0}
+{COLOR 255}Nigirigonite{COLOR 0}
+{COLOR 255}Glaivodite{COLOR 0}
 {COLOR 255}Bonbon Infini{COLOR 0}
 {COLOR 255}Répulsif{COLOR 0}

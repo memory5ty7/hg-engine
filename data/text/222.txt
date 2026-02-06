@@ -38,8 +38,8 @@ Poudre Soin
 Herbe Rappel
 Huile
 Huile Max
-Elixir
-Max Elixir
+Élixir
+Élixir Max
 Lava Cookie
 Jus de Baie
 Cendresacrée
@@ -52,930 +52,930 @@ Super Bonbon
 PP Plus
 Zinc
 PP Max
-Old Gateau
-Guard Spec.
-Dire Hit
-X Attack
-X Defense
-X Speed
-X Accuracy
-X Sp. Atk
-X Sp. Def
-Poké Doll
-Fluffy Tail
-Blue Flute
-Yellow Flute
-Red Flute
-Black Flute
-White Flute
-Shoal Salt
-Shoal Shell
-Red Shard
-Blue Shard
-Yellow Shard
-Green Shard
-Super Repel
-Max Repel
-Escape Rope
-Repel
-Sun Stone
-Moon Stone
-Fire Stone
-Thunder Stone
-Water Stone
-Leaf Stone
-Tiny Mushroom
-Big Mushroom
-Pearl
-Big Pearl
-Stardust
-Star Piece
-Nugget
-Heart Scale
-Honey
-Growth Mulch
-Damp Mulch
-Stable Mulch
-Gooey Mulch
-Root Fossil
-Claw Fossil
-Helix Fossil
-Dome Fossil
-Old Amber
-Armor Fossil
-Skull Fossil
-Rare Bone
-Shiny Stone
-Dusk Stone
-Dawn Stone
-Oval Stone
-Odd Keystone
-Griseous Orb
-Tea
+Vieux Gâteau
+Garde-Stats
+Muscle +
+Attaque +
+Défense +
+Vitesse +
+Précision +
+Atq. Spé. +
+Def. Spé. +
+Poké Poupée
+Queue Skitty
+Flûte Bleue
+Flûte Jaune
+Flûte Rouge
+Flûte Noire
+Flûte Blanche
+Sel Trefonds
+CoquilleTréfonds
+Tesson Rouge
+Tesson Bleu
+Tesson Jaune
+Tesson Vert
+Superepousse
+Repousse Max
+Corde Sortie
+Repousse
+Pierre Soleil
+Pierre Lune
+Pierre Feu
+Pierre Foudre
+Pierre Eau
+Pierre Plante
+Petit Champi
+Gros Champi
+Perle
+Grande Perle
+Poussière Étoile
+Morceau d’Étoile
+Pépite
+Écaille Cœur
+Miel
+Fertipousse
+Fertihumide
+Fertistable
+Fertiglu
+Fossile Racine
+Fossile Griffe
+Fossile Nautile
+Fossile Dôme
+Vieil Ambre
+Fossile Armure
+Fossile Crâne
+Os Rare
+Pierre Éclat
+Pierre Nuit
+Pierre Aube
+Pierre Ovale
+Clé de Voûte
+Orbe Platiné
+Thé
 ???
-Autograph
-Douse Drive
-Shock Drive
-Burn Drive
-Chill Drive
+Dédicace de Bob
+Module Aqua
+Module Choc
+Module Pyro
+Module Cryo
 ???
 Pokémon Box Link
-Medicine Pocket
-TM Case
-Candy Jar
-Power-Up Pocket
-Clothing Trunk
-Catching Pocket
-Battle Pocket
+Trousse de Soins
+Boîte CT
+Bonbonnière
+Poche à Renforts
+Malle à Costumes
+Poche de Capture
+Poche de Combat
 ???
 ???
 ???
 ???
 ???
-Sweet Heart
-Adamant Orb
-Lustrous Orb
-Greet Mail
-Favored Mail
-RSVP Mail
-Thanks Mail
-Inquiry Mail
-Like Mail
-Reply Mail
-Bridge Mail S
-Bridge Mail D
-Bridge Mail T
-Bridge Mail V
-Bridge Mail M
-Cheri Berry
-Chesto Berry
-Pecha Berry
-Rawst Berry
-Aspear Berry
-Leppa Berry
-Oran Berry
-Persim Berry
-Lum Berry
-Sitrus Berry
-Figy Berry
-Wiki Berry
-Mago Berry
-Aguav Berry
-Iapapa Berry
-Razz Berry
-Bluk Berry
-Nanab Berry
-Wepear Berry
-Pinap Berry
-Pomeg Berry
-Kelpsy Berry
-Qualot Berry
-Hondew Berry
-Grepa Berry
-Tamato Berry
-Cornn Berry
-Magost Berry
-Rabuta Berry
-Nomel Berry
-Spelon Berry
-Pamtre Berry
-Watmel Berry
-Durin Berry
-Belue Berry
-Occa Berry
-Passho Berry
-Wacan Berry
-Rindo Berry
-Yache Berry
-Chople Berry
-Kebia Berry
-Shuca Berry
-Coba Berry
-Payapa Berry
-Tanga Berry
-Charti Berry
-Kasib Berry
-Haban Berry
-Colbur Berry
-Babiri Berry
-Chilan Berry
-Liechi Berry
-Ganlon Berry
-Salac Berry
-Petaya Berry
-Apicot Berry
-Lansat Berry
-Starf Berry
-Enigma Berry
-Micle Berry
-Custap Berry
-Jaboca Berry
-Rowap Berry
-Bright Powder
-White Herb
-Macho Brace
-Exp. Share
-Quick Claw
-Soothe Bell
-Mental Herb
-Choice Band
-King’s Rock
-Silver Powder
-Amulet Coin
-Cleanse Tag
-Soul Dew
-Deep Sea Tooth
-Deep Sea Scale
-Smoke Ball
-Everstone
-Focus Band
-Lucky Egg
-Scope Lens
-Metal Coat
-Leftovers
-Dragon Scale
-Light Ball
-Soft Sand
-Hard Stone
-Miracle Seed
-Black Glasses
-Black Belt
-Magnet
-Mystic Water
-Sharp Beak
-Poison Barb
-Never-Melt Ice
-Spell Tag
-Twisted Spoon
-Charcoal
-Dragon Fang
-Silk Scarf
-Upgrade
-Shell Bell
-Sea Incense
-Lax Incense
-Lucky Punch
-Metal Powder
-Thick Club
-Leek
-Red Scarf
-Blue Scarf
-Pink Scarf
-Green Scarf
-Yellow Scarf
-Wide Lens
-Muscle Band
-Wise Glasses
-Expert Belt
-Light Clay
-Life Orb
-Power Herb
-Toxic Orb
-Flame Orb
-Quick Powder
-Focus Sash
-Zoom Lens
-Metronome
-Iron Ball
-Lagging Tail
-Destiny Knot
-Black Sludge
-Icy Rock
-Smooth Rock
-Heat Rock
-Damp Rock
-Grip Claw
-Choice Scarf
-Sticky Barb
-Power Bracer
-Power Belt
-Power Lens
-Power Band
-Power Anklet
-Power Weight
-Shed Shell
-Big Root
-Choice Specs
-Flame Plate
-Splash Plate
-Zap Plate
-Meadow Plate
-Icicle Plate
-Fist Plate
-Toxic Plate
-Earth Plate
-Sky Plate
-Mind Plate
-Insect Plate
-Stone Plate
-Spooky Plate
-Draco Plate
-Dread Plate
-Iron Plate
-Odd Incense
-Rock Incense
-Full Incense
-Wave Incense
-Rose Incense
-Luck Incense
-Pure Incense
-Protector
-Electirizer
-Magmarizer
-Dubious Disc
-Reaper Cloth
-Razor Claw
-Razor Fang
-TM001
-TM002
-TM003
-TM004
-TM005
-TM006
-TM007
-TM008
-TM009
-TM010
-TM011
-TM012
-TM013
-TM014
-TM015
-TM016
-TM017
-TM018
-TM019
-TM020
-TM021
-TM022
-TM023
-TM024
-TM025
-TM026
-TM027
-TM028
-TM029
-TM030
-TM031
-TM032
-TM033
-TM034
-TM035
-TM036
-TM037
-TM038
-TM039
-TM040
-TM041
-TM042
-TM043
-TM044
-TM045
-TM046
-TM047
-TM048
-TM049
-TM050
-TM051
-TM052
-TM053
-TM054
-TM055
-TM056
-TM057
-TM058
-TM059
-TM060
-TM061
-TM062
-TM063
-TM064
-TM065
-TM066
-TM067
-TM068
-TM069
-TM070
-TM071
-TM072
-TM073
-TM074
-TM075
-TM076
-TM077
-TM078
-TM079
-TM080
-TM081
-TM082
-TM083
-TM084
-TM085
-TM086
-TM087
-TM088
-TM089
-TM090
-TM091
-TM092
-HM01
-HM02
-HM03
-HM04
-HM05
-HM06
-HM07
-HM08
-Explorer Kit
-Loot Sack
-Rule Book
+Chococœur
+Orbe Adamant
+Orbe Perlé
+Lettre Salut
+Lettre Fan
+Lettre Invit
+Lettre Merci
+Lettre Demande
+Lettre Avis
+Lettre Réponse
+Lettre Pont S
+Lettre Pont Y
+Lettre Pont F
+Lettre Pont H
+Lettre Pont I
+Baie Ceriz
+Baie Maron
+Baie Pêcha
+Baie Fraive
+Baie Willia
+Baie Mepo
+Baie Oran
+Baie Kika
+Baie Prine
+Baie Sitrus
+Baie Figuy
+Baie Wiki
+Baie Mago
+Baie Gowav
+Baie Papaya
+Baie Framby
+Baie Remu
+Baie Nanab
+Baie Repoi
+Baie Nanana
+Baie Grena
+Baie Alga
+Baie Qualot
+Baie Lonme
+Baie Résin
+Baie Tamato
+Baie Siam
+Baie Mangou
+Baie Rabuta
+Baie Tronci
+Baie Kiwan
+Baie Palma
+Baie Stekpa
+Baie Durin
+Baie Myrte
+Baie Chocco
+Baie Pocpoc
+Baie Parma
+Baie Ratam
+Baie Nanone
+Baie Pomroz
+Baie Kébia
+Baie Jouca
+Baie Cobaba
+Baie Yapap
+Baie Panga
+Baie Charti
+Baie Sédra
+Baie Fraigo
+Baie Lampou
+Baie Babiri
+Baie Zalis
+Baie Lichii
+Baie Lingan
+Baie Sailak
+Baie Pitaye
+Baie Abriko
+Baie Lansat
+Baie Frista
+Baie Enigma
+Baie Micle
+Baie Chérim
+Baie Jacoba
+Baie Pommo
+Poudre Claire
+Herbe Blanche
+Bracelet Macho
+Multi Exp
+Vive Griffe
+Grelot Zen
+Herbe Mental
+Bandeau Choix
+Roche Royale
+Poudre Argentée
+Piece Rune
+Rune Purifiante
+Rosée Âme
+Dent Océan
+Écaille Océan
+Boule Fumée
+Pierre Stase
+Bandeau
+Œuf Chance
+Lentilscope
+Peau Metal
+Restes
+Écaille Draco
+Ballelumiere
+Sable Doux
+Pierre Dure
+Grain Miracle
+Lunettes Noires
+Ceinture Noire
+Aimant
+Eau Mystique
+Bec Pointu
+Pic Venin
+Glace Éternelle
+Rune Sort
+Cuiller Tordue
+Charbon
+Croc Dragon
+Mouchoir Soie
+Améliorator
+Grelot Coque
+Encens Mer
+Encens Doux
+Poing Chance
+Poudre Metal
+Masse Os
+Poireau
+Foul. Rouge
+Foul. Bleu
+Foul. Rose
+Foul. Vert
+Foul. Jaune
+Loupe
+Bandeau Muscle
+Lunettes Sages
+Ceinture Pro
+Lumargile
+Orbe Vie
+Herbe Pouvoir
+Orbe Toxique
+Orbe Flamme
+Poudre Vite
+Ceinture Force
+Lentille Zoom
+Métronome
+Balle Fer
+Ralentiqueue
+Nœud Destin
+Boue Noire
+Roche Glace
+Roche Lisse
+Roche Chaude
+Roche Humide
+Accro Griffe
+Mouchoir Choix
+Piquants
+Poignée Pouvoir
+Ceinture Pouvoir
+Lentille Pouvoir
+Bandeau Pouvoir
+Chaîne Pouvoir
+Poids Pouvoir
+Carapace Mue
+Grosse Racine
+Lunettes Choix
+Plaque Flam
+Plaque Hydro
+Plaque Volt
+Plaque Herbe
+Plaque Glace
+Plaque Poing
+Plaque Toxic
+Plaque Terre
+Plaque Ciel
+Plaque Esprit
+Plaquinsect
+Plaque Roc
+Plaque Fantô
+Plaque Draco
+Plaque Ombre
+Plaque Fer
+Encens Bizarre
+Encens Roc
+Encens Plein
+Encens Vague
+Encens Fleur
+Encens Veine
+Encens Pur
+Protecteur
+Électiriseur
+Magmariseur
+CD Douteux
+Tissu Fauche
+Griffe Rasoir
+Croc Rasoir
+CT001
+CT002
+CT003
+CT004
+CT005
+CT006
+CT007
+CT008
+CT009
+CT010
+CT011
+CT012
+CT013
+CT014
+CT015
+CT016
+CT017
+CT018
+CT019
+CT020
+CT021
+CT022
+CT023
+CT024
+CT025
+CT026
+CT027
+CT028
+CT029
+CT030
+CT031
+CT032
+CT033
+CT034
+CT035
+CT036
+CT037
+CT038
+CT039
+CT040
+CT041
+CT042
+CT043
+CT044
+CT045
+CT046
+CT047
+CT048
+CT049
+CT050
+CT051
+CT052
+CT053
+CT054
+CT055
+CT056
+CT057
+CT058
+CT059
+CT060
+CT061
+CT062
+CT063
+CT064
+CT065
+CT066
+CT067
+CT068
+CT069
+CT070
+CT071
+CT072
+CT073
+CT074
+CT075
+CT076
+CT077
+CT078
+CT079
+CT080
+CT081
+CT082
+CT083
+CT084
+CT085
+CT086
+CT087
+CT088
+CT089
+CT090
+CT091
+CT092
+CS01
+CS02
+CS03
+CS04
+CS05
+CS06
+CS07
+CS08
+Explorakit
+Sac Butin
+Livre Règles
 Poké Radar
-Point Card
-Guidebook
+Carte Points
+Journal
 Sticker Case
-Fashion Case
+Coffret Mode
 Sticker Bag
-Pal Pad
-Works Key
-Old Charm
-Galactic Key
-Red Chain
-Town Map
-Vs. Seeker
-Coin Case
-Old Rod
-Good Rod
-Super Rod
-Sprayduck
-Poffin Case
+Registre Ami
+Clé Centrale
+Vieux Grigri
+Clé Galaxie
+Chaîne Rouge
+Carte
+Cherch’Combat
+Boîte Jetons
+Canne
+Super Canne
+Méga Canne
+Kwakarrosoir
+Boîte Poffin
 Bike
-Suite Key
-Oak’s Letter
-Lunar Feather
-Member Card
-Azure Flute
-S.S. Ticket
-Contest Pass
-Magma Stone
-Parcel
-Coupon 1
-Coupon 2
-Coupon 3
-Storage Key
-Secret Medicine
-Vs. Recorder
-Gracidea
-Secret Key
-Apricorn Box
-Unown Report
-Berry Pots
-Dowsing Machine
-Blue Card
-Slowpoke Tail
-Clear Bell
-Card Key
-Basement Key
-Squirt Bottle
-Red Scale
-Lost Item
-Pass
-Machine Part
-Silver Feather
-Rainbow Feather
-Mystery Egg
-Red Apricorn
-Yellow Apricorn
-Blue Apricorn
-Green Apricorn
-Pink Apricorn
-White Apricorn
-Black Apricorn
-Fast Ball
-Level Ball
-Lure Ball
-Heavy Ball
+Clé Chambre
+Lettre Chen
+Lun’Aile
+Carte Membre
+Flûte Azur
+Passe Bateau
+Passe Concours
+Pierre Magma
+Colis
+Bon 1
+Bon 2
+Bon 3
+Clé Stockage
+Potion Secrète
+Magnéto VS
+Gracidée
+Clé Secrète
+Boîte Noigrume
+Carnet Zarbi
+Plante-Baies
+Cherch’Objet
+Carte Bleue
+Queueramolos
+Glas Transparent
+Cle Magnetique
+Clé Sous-Sol
+Carapuce à O
+Écaille Rouge
+Objet perdu
+Passe Train
+Piece Meca.
+Argent’Aile
+Arc-en-Ci’Aile
+Œuf Mystère
+Noigrume Rouge
+Noigrume Jaune
+Noigrume Bleu
+Noigrume Vert
+Noigrume Rose
+Noigrume Blanc
+Noigrume Noir
+Speed Ball
+Niveau Ball
+Appât Ball
+Masse Ball
 Love Ball
-Friend Ball
-Moon Ball
-Sport Ball
-Park Ball
-Photo Album
-GB Sounds
-Tidal Bell
-Rage Candy Bar
-Data Card 01
-Data Card 02
-Data Card 03
-Data Card 04
-Data Card 05
-Data Card 06
-Data Card 07
-Data Card 08
-Data Card 09
-Data Card 10
-Data Card 11
-Data Card 12
-Data Card 13
-Data Card 14
-Data Card 15
-Data Card 16
-Data Card 17
-Data Card 18
-Data Card 19
-Data Card 20
-Data Card 21
-Data Card 22
-Data Card 23
-Data Card 24
-Data Card 25
-Data Card 26
-Data Card 27
-Jade Orb
-Lock Capsule
-Red Orb
-Blue Orb
-Enigma Stone
-Prism Scale
-Eviolite
-Float Stone
-Rocky Helmet
-Air Balloon
-Red Card
-Ring Target
-Binding Band
-Absorb Bulb
-Cell Battery
-Eject Button
-Fire Gem
-Water Gem
-Electric Gem
-Grass Gem
-Ice Gem
-Fighting Gem
-Poison Gem
-Ground Gem
-Flying Gem
-Psychic Gem
-Bug Gem
-Rock Gem
-Ghost Gem
-Dragon Gem
-Dark Gem
-Steel Gem
-Normal Gem
-Health Feather
-Muscle Feather
-Resist Feather
-Genius Feather
-Clever Feather
-Swift Feather
-Pretty Feather
-Cover Fossil
-Plume Fossil
-Liberty Pass
-Pass Orb
-Dream Ball
-Poké Toy
-Prop Case
-Dragon Skull
-Balm Mushroom
-Big Nugget
-Pearl String
-Comet Shard
-Relic Copper
-Relic Silver
-Relic Gold
-Relic Vase
-Relic Band
-Relic Statue
-Relic Crown
-Casteliacone
-Dire Hit 2
-X Speed 2
-X Sp. Atk 2
-X Sp. Def 2
-X Defense 2
-X Attack 2
-X Accuracy 2
-X Speed 3
-X Sp. Atk 3
-X Sp. Def 3
-X Defense 3
-X Attack 3
-X Accuracy 3
-X Speed 6
-X Sp. Atk 6
-X Sp. Def 6
-X Defense 6
-X Attack 6
-X Accuracy 6
-Ability Urge
-Item Drop
-Item Urge
-Reset Urge
-Dire Hit 3
-Light Stone
-Dark Stone
-TM093
-TM094
-TM095
-Xtransceiver
+Copain Ball
+Lune Ball
+Compét’Ball
+Parc Ball
+Album Photo
+Lecteur GB
+Glas Tempête
+Bonbon Rage
+Carte Mémo 01
+Carte Mémo 02
+Carte Mémo 03
+Carte Mémo 04
+Carte Mémo 05
+Carte Mémo 06
+Carte Mémo 07
+Carte Mémo 08
+Carte Mémo 09
+Carte Mémo 10
+Carte Mémo 11
+Carte Mémo 12
+Carte Mémo 13
+Carte Mémo 14
+Carte Mémo 15
+Carte Mémo 16
+Carte Mémo 17
+Carte Mémo 18
+Carte Mémo 19
+Carte Mémo 20
+Carte Mémo 21
+Carte Mémo 22
+Carte Mémo 23
+Carte Mémo 24
+Carte Mémo 25
+Carte Mémo 26
+Carte Mémo 27
+Orbe Vert
+Poké Écrin
+Gemme Rouge
+Gemme Bleue
+Mystécristal
+Bel’Écaille
+Évoluroc
+Pierrallégée
+Casque Brut
+Ballon
+Carton Rouge
+Point de Mire
+Bande Étreinte
+Bulbe
+Pile
+Bouton Fuite
+Joyau Feu
+Joyau Eau
+Joyau Électr
+Joyau Plante
+Joyau Glace
+Joyau Combat
+Joyau Poison
+Joyau Sol
+Joyau Vol
+Joyau Psy
+Joyau Insecte
+Joyau Roche
+Joyau Spectre
+Joyau Dragon
+Joyau Ténèbres
+Joyau Acier
+Joyau Normal
+Plume Santé
+Plume Force
+Plume Armure
+Plume Esprit
+Plume Mental
+Plume Sprint
+Jolie Plume
+Fossile Plaque
+Fossile Plume
+Passe Liberté
+Offrisphère
+Rêve Ball
+Poké Plumet
+Boîte Parure
+Crâne Dragon
+Champi Suave
+Maxi Pépite
+Perle Triple
+Morceau Comète
+Vieux Sou
+Vieil Écu
+Vieux Ducat
+Vieux Vase
+Vieux Bijou
+Vieux Santon
+Vieux Tortil
+Glace Volute
+Muscle 2
+Vitesse 2
+Atq. Spé. 2
+Déf. Spé. 2
+Défense 2
+Attaque 2
+Précision 2
+Vitesse 3
+Atq. Spé. 3
+Déf. Spé. 3
+Défense 3
+Attaque 3
+Précision 3
+Vitesse 6
+Atq. Spé. 6
+Déf. Spé. 6
+Défense 6
+Attaque 6
+Précision 6
+Appel Talent
+Jette Objet
+Appel Objet
+Réamorçage
+Muscle 3
+Galet Blanc
+Galet Noir
+CT093
+CT094
+CT095
+Vokit
 ???
-Gram 1
-Gram 2
-Gram 3
-Xtransceiver
-Medal Box
-DNA Splicers
-DNA Splicers
-Permit
-Oval Charm
-Shiny Charm
-Plasma Card
-Grubby Hanky
-Colress Machine
-Dropped Item
-Dropped Item
-Reveal Glass
-Weakness Policy
-Assault Vest
-Holo Caster
-Prof’s Letter
-Roller Skates
-Pixie Plate
-Ability Capsule
-Whipped Dream
-Sachet
-Luminous Moss
-Snowball
-Safety Goggles
-Poké Flute
-Rich Mulch
-Surprise Mulch
-Boost Mulch
-Amaze Mulch
-Gengarite
+Courrier 1
+Courrier 2
+Courrier 3
+Vokit
+Boîte Médailles
+Pointeau ADN
+Pointeau ADN
+Permis
+Charme Ovale
+Charme Chroma
+Carte Plasma
+Mouchoir Sale
+Nikodule
+Objet Trouvé
+Objet Trouvé
+Miroir Sacré
+Vulné-Assurance
+Veste de Combat
+Holokit
+Lettre du Prof
+Rollers
+Plaque Pixie
+Pilule Talent
+Chantibonbon
+Sachet Senteur
+Lichen Lumineux
+Boule de Neige
+Lunettes Filtre
+Poké Flûte
+Fertibondance
+Fertistantané
+Fertibérance
+Fertiprodige
+Ectoplasmite
 Gardevoirite
-Ampharosite
-Venusaurite
-Charizardite X
-Blastoisinite
-Mewtwonite X
-Mewtwonite Y
-Blazikenite
-Medichamite
-Houndoominite
-Aggronite
-Banettite
-Tyranitarite
-Scizorite
-Pinsirite
-Aerodactylite
-Lucarionite
-Abomasite
-Kangaskhanite
-Gyaradosite
+Pharampite
+Florizarrite
+Dracaufite X
+Tortankite
+Mewtwoïte X
+Mewtwoïte Y
+Braségalite
+Charminite
+Démolossite
+Galekingite
+Branettite
+Tyranocivite
+Cizayoxite
+Scarabruite
+Ptéraïte
+Lucarite
+Blizzarite
+Kangourexite
+Léviatorite
 Absolite
-Charizardite Y
-Alakazite
-Heracronite
-Mawilite
-Manectite
-Garchompite
+Dracaufite Y
+Alakazamite
+Scarhinoïte
+Mysdibulite
+Élecsprintite
+Carchacrokite
 Latiasite
 Latiosite
-Roseli Berry
-Kee Berry
-Maranga Berry
-Sprinklotad
-TM096
-TM097
-TM098
-TM099
-TM100
-Power Plant Pass
-Mega Ring
-Intriguing Stone
+Baie Selro
+Baie Éka
+Baie Rangma
+Nénurrosoir
+CT096
+CT097
+CT098
+CT099
+CT100
+Passe Centrale
+Méga-Anneau
+Pierre Insolite
 Common Stone
-Discount Coupon
-Elevator Key
-TMV Pass
-Honor of Kalos
-Adventure Guide
-Strange Souvenir
-Lens Case
-Makeup Bag
+Bon Réduction
+Clé Ascenseur
+Passe CTV
+Insigne de Kalos
+ABC Aventure
+Bibelot Bizarre
+Boîte Lentilles
+Trousse Beauté
 Travel Trunk
-Lumiose Galette
-Shalour Sable
-Jaw Fossil
-Sail Fossil
-Looker Ticket
+Galette Illumis
+Sablé Yantreizh
+Fossile Mâchoire
+Fossile Nageoire
+Ticket Beladonis
 Bike
-Holo Caster
-Fairy Gem
-Mega Charm
-Mega Glove
-Mach Bike
-Acro Bike
-Wailmer Pail
-Devon Parts
-Soot Sack
-Basement Key
-Pokéblock Kit
-Letter
-Eon Ticket
+Holokit
+Joyau Fée
+Méga-Charme
+Méga-Gant
+Vélo de Course
+Vélo Cross
+Wailmerrosoir
+Pack Devon
+Sac à Suie
+Clé Sous-Sol
+Kit Pokébloc
+Lettre à Pierre
+Passe Éon
 Scanner
-Go-Goggles
-Meteorite
-Key to Room 1
-Key to Room 2
-Key to Room 4
-Key to Room 6
-Storage Key
+Lunettes Sable
+Météorite
+Clé Salle 1
+Clé Salle 2
+Clé Salle 4
+Clé Salle 6
+Clé Stockage
 Devon Scope
-S.S. Ticket
-HM07
-Devon Scuba Gear
-Contest Costume
-Contest Costume
-Magma Suit
-Aqua Suit
-Pair of Tickets
-Mega Bracelet
-Mega Pendant
-Mega Glasses
-Mega Anchor
-Mega Stickpin
-Mega Tiara
-Mega Anklet
-Meteorite
-Swampertite
-Sceptilite
-Sablenite
-Altarianite
-Galladite
-Audinite
-Metagrossite
-Sharpedonite
-Slowbronite
+Passe Bateau
+CS07
+Plongeur Devon
+Robe Live
+Robe Live
+Scaph. Magma
+Scaphandre Aqua
+Ticket Duo
+Méga-Bracelet
+Méga-Pendentif
+Méga-Lunettes
+Méga-Ancre
+Méga-Pin’s
+Méga-Tiare
+Méga-Grève
+Météorite
+Laggronite
+Jungkite
+Ténéfixite
+Altarite
+Gallamite
+Nanméouïte
+Métalossite
+Sharpedite
+Flagadossite
 Steelixite
-Pidgeotite
-Glalitite
+Roucarnagite
+Oniglalite
 Diancite
-Prison Bottle
-Mega Cuff
-Cameruptite
-Lopunnite
-Salamencite
-Beedrillite
-Meteorite
-Meteorite
-Key Stone
-Meteorite Shard
-Eon Flute
-Normalium Z
-Firium Z
-Waterium Z
-Electrium Z
-Grassium Z
-Icium Z
-Fightinium Z
-Poisonium Z
-Groundium Z
-Flyinium Z
-Psychium Z
-Buginium Z
-Rockium Z
-Ghostium Z
-Dragonium Z
-Darkinium Z
-Steelium Z
-Fairium Z
-Pikanium Z
-Bottle Cap
-Gold Bottle Cap
-Z-Ring
-Decidium Z
-Incinium Z
-Primarium Z
-Tapunium Z
-Marshadium Z
-Aloraichium Z
-Snorlium Z
-Eevium Z
-Mewnium Z
-Normalium Z
-Firium Z
-Waterium Z
-Electrium Z
-Grassium Z
-Icium Z
-Fightinium Z
-Poisonium Z
-Groundium Z
-Flyinium Z
-Psychium Z
-Buginium Z
-Rockium Z
-Ghostium Z
-Dragonium Z
-Darkinium Z
-Steelium Z
-Fairium Z
-Pikanium Z
-Decidium Z
-Incinium Z
-Primarium Z
-Tapunium Z
-Marshadium Z
-Aloraichium Z
-Snorlium Z
-Eevium Z
-Mewnium Z
-Pikashunium Z
-Pikashunium Z
+Vase Scellé
+Méga-Manchette
+Caméruptite
+Lockpinite
+Drattakite
+Dardargnite
+Météorite
+Météorite
+Gemme Sésame
+Éclat Météorite
+Flûte Éon
+Normazélite
+Pyrozélite
+Aquazélite
+Voltazélite
+Florazélite
+Cryozélite
+Combazélite
+Toxizélite
+Terrazélite
+Aérozélite
+Psychézélite
+Insectozélite
+Rocazélite
+Spectrozélite
+Dracozélite
+Ténébrozélite
+Métallozélite
+Nymphézélite
+Pikazélite
+Capsule d’Argent
+Capsule d’Or
+Bracelet Z
+Archézélite
+Félinozélite
+Oratozélite
+Tokozélite
+Marshadozélite
+Aloraïzélite
+Ronflézélite
+Évolizélite
+Mewzélite
+Normazélite
+Pyrozélite
+Aquazélite
+Voltazélite
+Florazélite
+Cryozélite
+Combazélite
+Toxizélite
+Terrazélite
+Aérozélite
+Psychézélite
+Insectozélite
+Rocazélite
+Spectrozélite
+Dracozélite
+Ténébrozélite
+Métallozélite
+Nymphézélite
+Pikazélite
+Archézélite
+Félinozélite
+Oratozélite
+Tokozélite
+Marshadozélite
+Aloraïzélite
+Ronflézélite
+Évolizélite
+Mewzélite
+Pikachazélite
+Pikachazélite
 ???
 ???
 ???
 ???
-Forage Bag
-Fishing Rod
+Sac Ingrédients
+Canne à Pêche
 Professor’s Mask
-Festival Ticket
-Sparkling Stone
-Adrenaline Orb
-Zygarde Cube
+Festicket
+Gemme Lumière
+Orbe Frousse
+Boîte Zygarde
 ???
-Ice Stone
-Ride Pager
-Beast Ball
-Big Malasada
-Red Nectar
-Yellow Nectar
-Pink Nectar
-Purple Nectar
-Sun Flute
-Moon Flute
+Pierre Glace
+Appel-Monture
+Ultra Ball
+Malasada Maxi
+Nectar Rouge
+Nectar Jaune
+Nectar Rose
+Nectar Mauve
+Flûte du Soleil
+Flûte de la Lune
 ???
-Enigmatic Card
-Silver Razz Berry
-Golden Razz Berry
-Silver Nanab Berry
-Golden Nanab Berry
-Silver Pinap Berry
-Golden Pinap Berry
-???
-???
+Message Mystère
+Baie Framby argentée
+Baie Framby dorée
+Baie Nanab argentée
+Baie Nanab dorée
+Baie Nanana argentée
+Baie Nanana dorée
 ???
 ???
 ???
-Secret Key
-S.S. Ticket
-Silph Scope
-Parcel
-Card Key
-Gold Teeth
-Lift Key
-Terrain Extender
-Protective Pads
-Electric Seed
-Psychic Seed
-Misty Seed
-Grassy Seed
-Stretchy Spring
-Chalky Stone
-Marble
-Lone Earring
-Beach Glass
-Gold Leaf
-Silver Leaf
-Polished Mud Ball
-Tropical Shell
-Leaf Letter
-Leaf Letter
-Small Bouquet
+???
+???
+Clé Secrète
+Passe Bateau
+Scope Sylphe
+Colis
+Cle Magnetique
+Dentier en Or
+Clé Ascenseur
+Champ’Duit
+Pare-Effet
+Graine Électrik
+Graine Psychique
+Graine Brume
+Graine Herbe
+Ressort Détendu
+Craie
+Bille
+Boucle d’Oreille
+Galet de Verre
+Feuille Dorée
+Feuille Argentée
+Boulette de Boue
+Coquille du Sud
+Lettre Végétale
+Lettre Végétale
+Petit Bouquet
 ???
 ???
 ???
-Lure
-Super Lure
-Max Lure
-Pewter Crunchies
-Fighting Memory
-Flying Memory
-Poison Memory
-Ground Memory
-Rock Memory
-Bug Memory
-Ghost Memory
-Steel Memory
-Fire Memory
-Water Memory
-Grass Memory
-Electric Memory
-Psychic Memory
-Ice Memory
-Dragon Memory
-Dark Memory
-Fairy Memory
-Solganium Z
-Lunalium Z
-Ultranecrozium Z
-Mimikium Z
-Lycanium Z
-Kommonium Z
-Solganium Z
-Lunalium Z
-Ultranecrozium Z
-Mimikium Z
-Lycanium Z
-Kommonium Z
-Z-Power Ring
-Pink Petal
-Orange Petal
-Blue Petal
-Red Petal
-Green Petal
-Yellow Petal
-Purple Petal
-Rainbow Flower
-Surge Badge
-N-Solarizer
-N-Lunarizer
-N-Solarizer
-N-Lunarizer
+Parfum
+Super Parfum
+Parfum Max
+Crok’Argenta
+ROM Combat
+ROM Vol
+ROM Poison
+ROM Sol
+ROM Roche
+ROM Insecte
+ROM Spectre
+ROM Acier
+ROM Feu
+ROM Eau
+ROM Plante
+ROM Électrik
+ROM Psy
+ROM Glace
+ROM Dragon
+ROM Ténèbres
+ROM Fée
+Solgazélite
+Lunazélite
+Ultranécrozélite
+Mimiquizélite
+Lougarozélite
+Ékaïzélite
+Solgazélite
+Lunazélite
+Ultranécrozélite
+Mimiquizélite
+Lougarozélite
+Ékaïzélite
+Super Bracelet Z
+Pétale Rose
+Pétale Orange
+Pétale Bleu
+Pétale Rouge
+Pétale Vert
+Pétale Jaune
+Pétale Violet
+Fleur 7 Couleurs
+Fulguro-Badge
+Necrosol
+Necroluna
+Necrosol
+Necroluna
 Ilima’s Normalium Z
-Left Poké Ball
-Roto Hatch
-Roto Bargain
-Roto Prize Money
-Roto Exp. Points
-Roto Friendship
-Roto Encounter
-Roto Stealth
-Roto HP Restore
-Roto PP Restore
-Roto Boost
-Roto Catch
-Health Candy
-Mighty Candy
-Tough Candy
-Smart Candy
-Courage Candy
-Quick Candy
-Health Candy L
-Mighty Candy L
-Tough Candy L
-Smart Candy L
-Courage Candy L
-Quick Candy L
-Health Candy XL
-Mighty Candy XL
-Tough Candy XL
-Smart Candy XL
-Courage Candy XL
-Quick Candy XL
+Poké Ball donnée
+Moti-Couveuse
+Moti-Promo
+Moti-Magot
+Molti-Exp
+Moti-Cœur
+Moti-Appât
+Moti-Camouflage
+Moti-Récup’ PV
+Moti-Récup’ PP
+Moti-Soutien
+Moti-Capture
+Bonbon Santé S
+Bonbon Force S
+Bonbon Armure S
+Bonbon Esprit S
+Bonbon Mental S
+Bonbon Sprint S
+Bonbon Santé M
+Bonbon Force M
+Bonbon Armure M
+Bonbon Esprit M
+Bonbon Mental M
+Bonbon Sprint M
+Bonbon Santé L
+Bonbon Force L
+Bonbon Armure L
+Bonbon Esprit L
+Bonbon Mental L
+Bonbon Sprint L
 Bulbasaur Candy
 Charmander Candy
 Squirtle Candy
@@ -1072,56 +1072,56 @@ Magmar Candy
 ???
 ???
 ???
-Endorsement
+Recommandation
 Pokémon Box Link
-Wishing Star
-Dynamax Band
+Étoile Vœu
+Poignet Dynamax
 ???
 ???
-Fishing Rod
-Rotom Bike
+Canne à Pêche
+Moticyclette
 ???
 ???
-Sausages
+Saucisses
 Bob’s Food Tin
 Bach’s Food Tin
-Tin of Beans
-Bread
-Pasta
-Mixed Mushrooms
-Smoke-Poke Tail
-Large Leek
-Fancy Apple
-Brittle Bones
-Pack of Potatoes
-Pungent Root
-Salad Mix
-Fried Food
-Boiled Egg
-Camping Gear
+Haricots
+Pain de Mie
+Pâtes
+Champignons
+Queue Fumée
+Gros Poireau
+Pomme Juteuse
+Os à Moelle
+Pommes de Terre
+Tubercule
+Légumes
+Fritures
+Œuf Dur
+Kit de Camping
 ???
 ???
-Rusted Sword
-Rusted Shield
-Fossilized Bird
-Fossilized Fish
-Fossilized Drake
-Fossilized Dino
-Strawberry Sweet
-Love Sweet
-Berry Sweet
-Clover Sweet
-Flower Sweet
-Star Sweet
-Ribbon Sweet
-Sweet Apple
-Tart Apple
-Throat Spray
-Eject Pack
-Heavy-Duty Boots
-Blunder Policy
-Room Service
-Utility Umbrella
+Épée Rouillée
+Bouclier Rouillé
+Fossile Oiseau
+Fossile Poisson
+Fossile Dragon
+Fossile Aileron
+Fraise en Sucre
+Cœur en Sucre
+Baie en Sucre
+Trèfle en Sucre
+Fleur en Sucre
+Étoile en Sucre
+Ruban en Sucre
+Pomme Sucrée
+Pomme Acidulée
+Spray Gorge
+Sac Fuite
+Grosses Bottes
+Assurance Échec
+Chariot Distordu
+Parapluie Solide
 Exp. Candy XS
 Exp. Candy S
 Exp. Candy M
@@ -1228,47 +1228,47 @@ TR96
 TR97
 TR98
 TR99
-TM00
-Lonely Mint
-Adamant Mint
-Naughty Mint
-Brave Mint
-Bold Mint
-Impish Mint
-Lax Mint
-Relaxed Mint
-Modest Mint
-Mild Mint
-Rash Mint
-Quiet Mint
-Calm Mint
-Gentle Mint
-Careful Mint
-Sassy Mint
-Timid Mint
-Hasty Mint
-Jolly Mint
-Naive Mint
-Serious Mint
+CT00
+Aromate Solo
+Aromate Rigide
+Aromade Mauvais
+Aromate Brave
+Aromate Assuré
+Aromate Malin
+Aromate Lâche
+Aromate Relax
+Aromate Modeste
+Aromate Doux
+Aromate Foufou
+Aromate Discret
+Aromate Calme
+Aromate Gentil
+Aromate Prudent
+Aromate Malpoli
+Aromate Timide
+Aromate Pressé
+Aromate Jovial
+Aromate Naïf
+Aromate Sérieux
 Wishing Piece
-Cracked Pot
-Chipped Pot
-Hi-tech Earbuds
-Fruit Bunch
-Moomoo Cheese
-Spice Mix
-Fresh Cream
-Packaged Curry
-Coconut Milk
-Instant Noodles
-Precooked Burger
-Gigantamix
+Théière Fêlée
+Théière Ébréchée
+Bouchons Audio
+Fruits
+Fromage Meumeu
+Épices
+Crème Fraîche
+Curry Instantané
+Lait de Coco
+Nouilles
+Steak Haché
+Poudre Gigamax
 Wishing Chip
-Rotom Bike
-Catching Charm
+Moticyclette
+Charme Stabilité
 ???
-Old Letter
-Band Autograph
+Lettre Jaunie
+Dédicace
 Sonia’s Book
 ???
 ???
@@ -1276,7 +1276,7 @@ Sonia’s Book
 ???
 ???
 ???
-Rotom Catalog
+Moti-Catalogue
 ★And458
 ★And15
 ★And337
@@ -1580,17 +1580,17 @@ Rotom Catalog
 Max Honey
 Max Mushrooms
 Galarica Twig
-Galarica Cuff
+Bracelet Galanoa
 Style Card
 Armor Pass
-Rotom Bike
-Rotom Bike
+Moticyclette
+Moticyclette
 Exp. Charm
 Armorite Ore
 Mark Charm
 Reins of Unity
 Reins of Unity
-Galarica Wreath
+Couronne Galanoa
 Legendary Clue 1
 Legendary Clue 2
 Legendary Clue 3
@@ -1614,7 +1614,7 @@ Hometown Muffin
 Apricorn
 Jubilife Muffin
 Aux Powerguard
-Dire Hit
+Muscle +
 Choice Dumpling
 Twice-Spiced Radish
 Swap Snack
@@ -1639,15 +1639,15 @@ Wood
 King’s Leaf
 Marsh Balm
 Poké Ball
-Great Ball
-Ultra Ball
+Super Ball
+Hyper Ball
 Feather Ball
 Pokéshi Doll
 ???
 Smoke Bomb
 Scatter Bang
 Sticky Glob
-Star Piece
+Morceau d’Étoile
 Mushroom Cake
 Bugwort
 Honey Cake
@@ -1657,23 +1657,23 @@ Salt Cake
 Potion
 Super Potion
 Hyper Potion
-Max Potion
-Full Restore
+Potion Max
+Guérison
 Remedy
 Fine Remedy
 Superb Remedy
-Old Gateau
+Vieux Gâteau
 Jubilife Muffin
-Full Heal
-Revive
-Max Revive
-Max Ether
-Max Elixir
+Total Soin
+Rappel
+Rappel Max
+Huile Max
+Élixir Max
 Stealth Spray
 ???
 Aux Power
 Aux Guard
-Dire Hit
+Muscle +
 Aux Evasion
 Aux Powerguard
 Forest Balm
@@ -1687,7 +1687,7 @@ Ball of Mud
 Pop Pod
 Sootfoot Root
 Spoiled Apricorn
-Snowball
+Boule de Neige
 Sticky Glob
 Black Augurite
 Peat Block
@@ -1709,8 +1709,8 @@ Tempting Charm Y
 Candy Truffle
 Cake-Lure Base
 Poké Ball
-Great Ball
-Ultra Ball
+Super Ball
+Hyper Ball
 Feather Ball
 ???
 ???
@@ -1746,12 +1746,12 @@ Basculegion Food
 Old Journal
 Wing Ball
 Jet Ball
-Heavy Ball
+Masse Ball
 Leaden Ball
 Gigaton Ball
 Wing Ball
 Jet Ball
-Heavy Ball
+Masse Ball
 Hopo Berry
 Superb Remedy
 Aux Power
@@ -1761,7 +1761,7 @@ Grit Dust
 Grit Gravel
 Grit Pebble
 Grit Rock
-Secret Medicine
+Potion Secrète
 Tempting Charm R
 Lost Satchel
 Lost Satchel
@@ -1783,7 +1783,7 @@ Blank Plate
 Crafting Kit
 Leaden Ball
 Gigaton Ball
-Strange Ball
+Étrange Ball
 Pokédex
 Old Verse 1
 Old Verse 2
@@ -1878,13 +1878,13 @@ Dragon Tera Shard
 Dark Tera Shard
 Steel Tera Shard
 Fairy Tera Shard
-Booster Energy
-Ability Shield
-Clear Amulet
-Mirror Herb
-Punching Glove
-Covert Cloak
-Loaded Dice
+Énergie Booster
+Garde-Talent
+Talisman Sain
+Feuille Copieuse
+Gant de Boxe
+Cape Obscure
+Dé Pipé
 
 Baguette
 Mayonnaise
@@ -2158,136 +2158,136 @@ Tinkatink Hair
 Charcadet Soot
 Toedscool Flaps
 Wooper Slime
-TM100
-TM101
-TM102
-TM103
-TM104
-TM105
-TM106
-TM107
-TM108
-TM109
-TM110
-TM111
-TM112
-TM113
-TM114
-TM115
-TM116
-TM117
-TM118
-TM119
-TM120
-TM121
-TM122
-TM123
-TM124
-TM125
-TM126
-TM127
-TM128
-TM129
-TM130
-TM131
-TM132
-TM133
-TM134
-TM135
-TM136
-TM137
-TM138
-TM139
-TM140
-TM141
-TM142
-TM143
-TM144
-TM145
-TM146
-TM147
-TM148
-TM149
-TM150
-TM151
-TM152
-TM153
-TM154
-TM155
-TM156
-TM157
-TM158
-TM159
-TM160
-TM161
-TM162
-TM163
-TM164
-TM165
-TM166
-TM167
-TM168
-TM169
-TM170
-TM171
-TM172
-TM173
-TM174
-TM175
-TM176
-TM177
-TM178
-TM179
-TM180
-TM181
-TM182
-TM183
-TM184
-TM185
-TM186
-TM187
-TM188
-TM189
-TM190
-TM191
-TM192
-TM193
-TM194
-TM195
-TM196
-TM197
-TM198
-TM199
-TM200
-TM201
-TM202
-TM203
-TM204
-TM205
-TM206
-TM207
-TM208
-TM209
-TM210
-TM211
-TM212
-TM213
-TM214
-TM215
-TM216
-TM217
-TM218
-TM219
-TM220
-TM221
-TM222
-TM223
-TM224
-TM225
-TM226
-TM227
-TM228
-TM229
+CT100
+CT101
+CT102
+CT103
+CT104
+CT105
+CT106
+CT107
+CT108
+CT109
+CT110
+CT111
+CT112
+CT113
+CT114
+CT115
+CT116
+CT117
+CT118
+CT119
+CT120
+CT121
+CT122
+CT123
+CT124
+CT125
+CT126
+CT127
+CT128
+CT129
+CT130
+CT131
+CT132
+CT133
+CT134
+CT135
+CT136
+CT137
+CT138
+CT139
+CT140
+CT141
+CT142
+CT143
+CT144
+CT145
+CT146
+CT147
+CT148
+CT149
+CT150
+CT151
+CT152
+CT153
+CT154
+CT155
+CT156
+CT157
+CT158
+CT159
+CT160
+CT161
+CT162
+CT163
+CT164
+CT165
+CT166
+CT167
+CT168
+CT169
+CT170
+CT171
+CT172
+CT173
+CT174
+CT175
+CT176
+CT177
+CT178
+CT179
+CT180
+CT181
+CT182
+CT183
+CT184
+CT185
+CT186
+CT187
+CT188
+CT189
+CT190
+CT191
+CT192
+CT193
+CT194
+CT195
+CT196
+CT197
+CT198
+CT199
+CT200
+CT201
+CT202
+CT203
+CT204
+CT205
+CT206
+CT207
+CT208
+CT209
+CT210
+CT211
+CT212
+CT213
+CT214
+CT215
+CT216
+CT217
+CT218
+CT219
+CT220
+CT221
+CT222
+CT223
+CT224
+CT225
+CT226
+CT227
+CT228
+CT229
 
 
 
@@ -2399,14 +2399,14 @@ Orange Dish
 Red Dish
 White Dish
 Yellow Dish
-Fairy Feather
-Syrupy Apple
-Unremarkable Teacup
-Masterpiece Teacup
-Teal Mask
-Cornerstone Mask
-Wellspring Mask
-Hearthflame Mask
+Plume Enchantée
+Pomme Nectar
+Bol Médiocre
+Bol Exceptionnel
+Masque Turquoise
+Masque de la Pierre
+Masque du Puits
+Masque du Fourneau
 Teal Style Card
 Crystal Cluster
 Health Mochi
@@ -2480,7 +2480,7 @@ Poltchageist Powder
 Fresh-Start Mochi
 Roto-Stick
 Glimmering Charm
-Metal Alloy
+Métal Composite
 Indigo Style Card
 Oddish Leaf
 Tentacool Stinger
@@ -2552,54 +2552,54 @@ Mythical Pecha Berry
 Blueberry Tablecloth
 Blueberry Chairs
 Synchro Machine
-Meteorite
+Météorite
 Scarlet Book
 Violet Book
 Briar’s Book
-Clefablite
-Victreebelite
-Starminite
-Dragoninite
-Meganiumite
-Feraligite
-Skarmorite
-Froslassite
-Emboarite
-Excadrite
-Scolipite
-Scraftinite
-Eelektrossite
-Chandelurite
-Chesnaughtite
-Delphoxite
-Greninjite
-Pyroarite
+Mélodelfite
+Empiflorite
+Starossite
+Dracolossite
+Méganiumite
+Aligatueurite
+Airmurite
+Momartikite
+Roitiflamite
+Minotaupite
+Brutapodite
+Baggaïdite
+Ohmassacrite
+Lugulabrite
+Blindépiquite
+Goupelinite
+Amphinolite
+Néméliosite
 Floettite
-Malamarite
-Barbaracite
-Dragalgite
-Hawluchanite
+Sepiatrocite
+Golgopathite
+Kravarekite
+Brutalibrite
 Zygardite
-Drampanite
-Falinksite
-Raichunite X
-Raichunite Y
-Chimechite
+Draïeulite
+Hexadronite
+Raichuïte X
+Raichuïte Y
+Éokite
 Absolite Z
-Staraptite
-Garchompite Z
-Lucarionite Z
+Étouraptorite
+Carchacrokite Z
+Lucarite Z
 Heatranite
-Darkranite
-Golurkite
-Meowsticite
-Crabominite
-Golisopite
+Darkraïte
+Golemastokite
+Mistigrixite
+Crabominablite
+Sarmuraïte
 Magearnite
 Zeraorite
-Scovillainite
-Glimmoranite
-Tatsugirinite
-Baxcalibrite
+Scovilainite
+Floréclatite
+Nigirigonite
+Glaivodite
 Bonbon Infini
 Répulsif

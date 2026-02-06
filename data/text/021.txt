@@ -1,135 +1,135 @@
-Apricorn Box
-CLOSE
-USE
-TASTE
-CANCEL
+Bte Noigrume
+FERMER
+UTILISER
+GOUTER
+ANNULER
 OK
-CLOSE
-Red Apricorn
-Yellow Apricorn
-Blue Apricorn
-Green Apricorn
-Pink Apricorn
-White Apricorn
-Black Apricorn
-Holden
-Elaine
-Gilmore
-Krise
-Victor
-NoFlav Juice
-Power Juice
-Stam. Juice
-Skill Juice
-Jump Juice
-Speed Juice
+FERMER
+Noigrume Rge
+Noigrume Jne
+Noigrume Blu
+Noigrume Ver
+Noigrume Ros
+Noigrume Blc
+Noigrume Noi
+Julian
+Simone
+Gilles
+Jezebel
+Clyde
+D. insipide
+Drink Force
+D. Endurance
+D. Habileté
+Drink Saut
+D. Vitesse
 
 
 {STRVAR_1 51, 0, 0}
-Collected Apricorns are inside.
-Put the Apricorn in the Apriblender.
-Haven’t blended enough yet...
-Juice is almost done...
-Just a bit longer for juice to be ready.
-The Aprijuice is ready!
-Can still put in {STRVAR_1 50, 0, 0} Apricorns.
-Cannot put in any more Apricorns.
-What will you do with the Aprijuice?
-Tasted the Aprijuice!
-Select which Apricorns to give.
-Give how many?
-Give {STRVAR_1 51, 1, 0} {STRVAR_1 8, 0, 0}?
-Red Apricorn\nA red Apricorn.\nIt assails your nostrils.
-Yellow Apricorn\nA yellow Apricorn.\nIt has an invigorating scent.
-Blue Apricorn\nA blue Apricorn.\nIt smells a bit like grass.
-Green Apricorn\nA green Apricorn.\nIt has a mysterious, aromatic scent.
-Pink Apricorn\nA pink Apricorn.\nIt has a nice, sweet scent.
-White Apricorn\nA white Apricorn.\nIt doesn’t smell like anything.
-Black Apricorn\nA black Apricorn.\nIt has an indescribable scent.
-Apriblender
-{STRVAR_1 8, 0, 0}\nFlavor {STRVAR_1 52, 1, 0} Mildness {STRVAR_1 52, 2, 0}\nCan still put in {STRVAR_1 50, 3, 0}
-~How to Make Aprijuice~\nCollect Apricorns and put them\nin the Apriblender!\rYou can make a drink with one,\nbut the more Apricorns,\nthe better the taste!\rPut the Apricorns in and blend\nby running to the next town!
-Made Aprijuice!
-The Aprijuice’s flavor\nhas changed!
-The Aprijuice is not done!\nPut Apricorns in the Apriblender\nand blend by walking!
-Can’t put in any more!\nRun and shake the Apriblender!
-Aprijuice is being made!\nShake by walking!
-Improving the Aprijuice!\nShake by walking!
-It’s a spicy flavor.
-A pungent flavor!
-So spicy, you’ll sweat!
-So spicy, it causes coughing!
-A resounding spiciness!
-The ultimate spiciness!
-A little sour.
-An invigorating flavor.
-Mmmmmph! Sour!
-Unbearably sour!
-A deep sourness!
-An extremely sour taste!
-A refined, dry taste.
-A strong, dry taste!
-Incredibly dry!
-A pervadingly dry taste!
-A deep-seated, dry taste!
-An extremely dry taste!
-A somewhat bitter taste.
-A slightly bitter flavor.
-An intense bitterness!
-A massively bitter taste!
-A sinking bitterness!
-The peak of bitterness!
-A sweet taste.
-A nice, sweet taste.
-Very sweet!
-A sickly-sweet flavor!
-A melt-in-your-mouth sweetness.
-So incredibly sweet!
-A hint of spicy taste...
-A little salty...
-Quite spicy...
-A strong spiciness...
-A hint of sourness...
-A little sour...
-Quite sour...
-Intensely sour...
-A slight dry taste...
-A light dry taste...
-A quite dry taste...
-An intensely dry taste...
-Barely a hint of bitterness...
-Just a little bitter...
-A strongly bitter taste...
-Intensely bitter...
-Barely a hint of sweetness...
-Just a little sweet...
-A strongly sweet taste...
-An intensely sweet taste...
-A very faint spiciness.
-Merely a hint of spiciness.
-The spiciness comes through.
-A very faint sourness.
-Merely a hint of sourness.
-The sourness comes through.
-A very faint dry taste.
-A hint of dry taste.
-The dryness comes through.
-A very faint bitterness.
-Merely a hint of bitterness.
-The bitterness comes through.
-A very faint sweetness.
-Merely a hint of sweetness.
-The sweetness comes through.
-A disgusting aftertaste.
-A refreshing aftertaste!
-Eliminating spiciness...
-Eliminating sourness...
-Eliminating dry flavor...
-Eliminating bitterness...
-Eliminating sweetness...
-The flavor is still quite weak. It\nwould be good to put in some\nApricorns with color...
-Unspeakably incredible flavor!\nIts tastes are evenly balanced.\nI can’t tell what kind of flavor!
-Incredibly unspeakable flavor!\nIts tastes are all competing.\nI can’t tell what kind of flavor!
-There’s absolutely no flavor!\nIt seems like you need to put in\na colored Apricorn.
-Spicy {STRVAR_1 51, 0, 0} Sour {STRVAR_1 51, 1, 0} Dry {STRVAR_1 51, 2, 0}\nBitter {STRVAR_1 51, 3, 0} Sweet {STRVAR_1 51, 4, 0}\nMild {STRVAR_1 51, 5, 0} Flavor {STRVAR_1 51, 6, 0}
-Now {STRVAR_1 59, 0, 0} Steps Stock {STRVAR_1 50, 1, 0}\n1: {STRVAR_1 50, 2, 0} 2: {STRVAR_1 50, 3, 0} 3: {STRVAR_1 50, 4, 0} 4: {STRVAR_1 50, 5, 0} 5: {STRVAR_1 50, 6, 0}\nJuice START {STRVAR_1 59, 7, 0} Steps  Left: {STRVAR_1 52, 8, 0}\nMild START {STRVAR_1 59, 9, 0} Steps Left: {STRVAR_1 52, 10, 0}
+Vos Noigrumes y sont stockés.
+Le Shaker peut contenir des Noigrumes.
+Le Drink n’est pas suffisamment secoué.
+Le Drink est bientôt prêt!
+Encore un peu et le Drink est prêt!
+Le Noigrume Drink est prêt!
+Noigrumes à rajouter: {STRVAR_1 50, 0, 0}.
+Impossible de rajouter des Noigrumes!
+Que faire avec le Noigrume Drink?
+Il a goûté le Noigrume Drink!
+Choisissez les Noigrumes à donner.
+Combien voulez-vous en donner?
+Donner {STRVAR_1 51, 1, 0} {STRVAR_1 8, 0, 0}?
+Noigrume Rge\nUn Noigrume de couleur rouge.\nIl dégage un puissant arôme.
+Noigrume Jne\nUn Noigrume de couleur jaune.\nIl dégage un arôme délicat.
+Noigrume Blu\nUn Noigrume de couleur bleue.\nIl dégage un arôme un peu aigre.
+Noigrume Ver\nUn Noigrume de couleur verte.\nIl dégage un arôme étonnamment riche.
+Noigrume Ros\nUn Noigrume de couleur rose.\nIl dégage un arôme sucré.
+Noigrume Blc\nUn Noigrume de couleur blanche.\nIl ne dégage aucun arôme.
+Noigrume Noi\nUn Noigrume de couleur noire.\nIl dégage un arôme indéfinissable.
+Noig. Shaker
+{STRVAR_1 8, 0, 0}\nGoût: {STRVAR_1 52, 1, 0}; Onctuosité: {STRVAR_1 52, 2, 0}.\nNombre de Noigrumes ajoutables: {STRVAR_1 50, 3, 0}.
+PREPARATION D’UN NOIG. DRINK\nRamassez des Noigrumes et\nmettez-les dans le Shaker!\rUn Noigrume suffit, mais\nrajoutez-en pour améliorer\nle goût et l’effet!\rEnsuite, courez jusqu’à la\nprochaine ville pour secouer!
+Le Noigrume Drink est prêt!
+Le goût du Noigrume Drink\na changé!
+Le Drink n’est pas prêt! Mettez\ndes Noigrumes dans le Shaker,\net marchez pour le secouer.
+Impossible d’en rajouter!\nCourez pour secouer le Drink!
+Drink en préparation.\nMarchez pour le secouer!
+Drink en cours d’élaboration!\nMarchez pour le secouer!
+Le goût est épicé.
+Quel goût revigorant!
+C’est épicé à en être en nage!
+C’est épicé à en tousser!
+C’est épicé à cracher du feu!
+C’est plus épicé qu’épicé!
+Le goût est acidulé.
+Quel goût rafraîchissant!
+Ah! C’est acide!
+Quelle acidité!
+C’est terriblement acide!
+C’est l’acidité incarnée!
+Le goût est sec.
+Le goût est bien sec!
+Ah! Que c’est sec!
+Quel goût sec!
+C’est excessivement sec!
+Impossible d’être plus sec!
+Le goût est amer.
+C’est doux-amer.
+Ah! C’est amer!
+Quelle amertume!
+C’est horriblement amer!
+C’est l’amertume absolue!
+Le goût est sucré.
+C’est sucré.
+C’est très sucré!
+Que c’est sucré!
+C’est outrageusement sucré!
+C’est plus sucré que le sucre!
+C’est très légèrement épicé...
+C’est un peu épicé...
+C’est pas mal épicé...
+C’est super épicé!
+C’est très légèrement acide...
+C’est un peu acide...
+C’est pas mal acide...
+C’est super acide!
+C’est très légèrement sec...
+C’est un peu sec...
+C’est pas mal sec...
+C’est super sec!
+C’est très légèrement amer...
+C’est un peu amer...
+C’est pas mal amer..
+C’est super amer!
+C’est très légèrement sucré...
+C’est un peu sucré...
+C’est pas mal sucré...
+C’est super sucré!
+C’est à peine si c’est épicé.
+On devine bien la saveur épicée.
+On sent bien la saveur épicée.
+C’est à peine si c’est acide.
+On devine bien la saveur acide.
+On sent bien la saveur acide.
+C’est à peine si c’est sec.
+On devine bien la saveur sèche.
+On sent bien la saveur sèche.
+C’est à peine si c’est amer.
+On devine bien la saveur amère.
+On sent bien la saveur amère.
+C’est à peine si c’est sucré.
+On devine bien la saveur sucrée.
+On sent bien la saveur sucrée.
+Le goût en bouche est bizarre.
+Ça laisse un goût net en bouche!
+Ça efface la saveur épicée.
+Ça efface la saveur acide.
+Ça efface la saveur sèche.
+Ça efface la saveur amère.
+Ça efface la saveur sucrée.
+Le goût est encore léger...\nIl vaudrait mieux rajouter des\nNoigrumes colorés.
+Le goût est indéfinissable!\nLes saveurs s’équilibrent.\nImpossible de dire ce que c’est.
+Le goût est indéfinissable! Les\nsaveurs s’annulent. Impossible\nde dire ce qu’il y a dedans.
+Ça n’a aucun goût!\nIl vaudrait mieux rajouter des\nNoigrumes colorés.
+Epicé: {STRVAR_1 51, 0, 0} Acide: {STRVAR_1 51, 1, 0} Sec: {STRVAR_1 51, 2, 0}\nAmer: {STRVAR_1 51, 3, 0} Sucré: {STRVAR_1 51, 4, 0}\nOnctuosité: {STRVAR_1 51, 5, 0} Goût: {STRVAR_1 51, 6, 0}
+{STRVAR_1 59, 0, 0} pas Stocks:{STRVAR_1 50, 1, 0} Noigrumes\n1.{STRVAR_1 50, 2, 0} 2.{STRVAR_1 50, 3, 0} 3.{STRVAR_1 50, 4, 0} 4.{STRVAR_1 50, 5, 0} 5.{STRVAR_1 50, 6, 0}\nBoisson début: {STRVAR_1 59, 7, 0} pas Encore {STRVAR_1 52, 8, 0} pas\nOnctuosité début:{STRVAR_1 59, 9, 0} pas Encore {STRVAR_1 52, 10, 0} pas
