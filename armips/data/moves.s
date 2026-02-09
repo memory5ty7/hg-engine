@@ -8121,7 +8121,7 @@ movedata MOVE_SCALD, "Ébullition"
     appeal 0x00
     contesttype CONTEST_TOUGH
     terminatedata
-    movedescription MOVE_SCALD, "Le lanceur projette\nun jet d’eau bouil-\nlante sur la cible, ce\nqui peut aussi la brûler."
+    movedescription MOVE_SCALD, "Le lanceur projette\nun jet d’eau bouil-\nlante sur la cible,\nce qui peut aussi\nla brûler."
 
 movedata MOVE_SHELL_SMASH, "Exuviation"
     battleeffect MOVE_EFFECT_ATK_SP_ATK_SPEED_UP_2_DEF_SP_DEF_DOWN
@@ -10619,7 +10619,7 @@ movedata MOVE_SHORE_UP, "Amass'Sable"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_SHORE_UP, "The user restores its\nown HP by up to half\nits max HP.\nIt regains more HP\nin a sandstorm."
+    movedescription MOVE_SHORE_UP, "Le lanceur récupère\nla moitié de ses PV\nmax. Durant une tem-\npête de sable, il en\nrécupère encore plus."
 
 movedata MOVE_FIRST_IMPRESSION, "Escarmouche"
     battleeffect MOVE_EFFECT_FIRST_TURN_ONLY
@@ -10635,7 +10635,7 @@ movedata MOVE_FIRST_IMPRESSION, "Escarmouche"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_FIRST_IMPRESSION, "Although this move has\ngreat power, it works\nonly on the first turn\neach time the user\nenters battle."
+    movedescription MOVE_FIRST_IMPRESSION, "Une capacité très\npuissante, mais qui\nne fonctionne que\nlorsque le lanceur\nentre au combat."
 
 movedata MOVE_BANEFUL_BUNKER, "Blockhaus"
     battleeffect MOVE_EFFECT_PROTECT
@@ -10651,7 +10651,7 @@ movedata MOVE_BANEFUL_BUNKER, "Blockhaus"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_BANEFUL_BUNKER, "The user protects\nitself from attacks\nwhile poisoning any\nattacker that makes\ndirect contact."
+    movedescription MOVE_BANEFUL_BUNKER, "Le lanceur se protège\ncontre les attaques.\nSi un assaillant utilise\nune attaque directe,\nil l’empoisonne."
 
 movedata MOVE_SPIRIT_SHACKLE, "Tisse Ombre"
     battleeffect MOVE_EFFECT_PREVENT_ESCAPE_HIT
@@ -10667,7 +10667,7 @@ movedata MOVE_SPIRIT_SHACKLE, "Tisse Ombre"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_SPIRIT_SHACKLE, "The user attacks while\nsimultaneously stitching\nthe target's shadow to\nthe ground to prevent\nthe target from fleeing."
+    movedescription MOVE_SPIRIT_SHACKLE, "Une attaque qui coud\nla cible à son ombre,\nce qui l’empêche de\ns’enfuir."
 
 movedata MOVE_DARKEST_LARIAT, "Dark Lariat"
     battleeffect MOVE_EFFECT_HIT // Defense is handled in CalcBaseDamage.c and Evasion is in other_battle_calculators.c.
@@ -10683,7 +10683,7 @@ movedata MOVE_DARKEST_LARIAT, "Dark Lariat"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_DARKEST_LARIAT, "The user swings both\narms and hits the\ntarget, ignoring changes\nto the target's Defense\nand Evasion."
+    movedescription MOVE_DARKEST_LARIAT, "Le lanceur inflige des\ndégâts et ignore les\nchangements de stats\nde la cible."
 
 movedata MOVE_SPARKLING_ARIA, "Aria de l'Écume"
     battleeffect MOVE_EFFECT_HIT // Handled in BattleController_MoveEndInternal.
@@ -10699,7 +10699,7 @@ movedata MOVE_SPARKLING_ARIA, "Aria de l'Écume"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_SPARKLING_ARIA, "The user bursts into\nsong, emitting bubbles.\nAny Pokémon suffering\nfrom a burn will be\ncured by their touch."
+    movedescription MOVE_SPARKLING_ARIA, "Le lanceur émet des\nbulles en chantant.\nSoigne les brûlures\ndes Pokémon tou-\nchés par ces bulles."
 
 movedatalongname MOVE_ICE_HAMMER, "MarteauDeGlace", "Marteau de Glace"
     battleeffect MOVE_EFFECT_USER_SPEED_DOWN_HIT
@@ -10715,7 +10715,7 @@ movedatalongname MOVE_ICE_HAMMER, "MarteauDeGlace", "Marteau de Glace"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_ICE_HAMMER, "The user swings and\nhits with its strong,\nheavy fist.\nIt lowers the user's\nSpeed, however."
+    movedescription MOVE_ICE_HAMMER, "Le lanceur donne un\npuissant coup de\npoing à la cible, ce\nqui réduit la Vitesse\ndu lanceur."
 
 movedatalongname MOVE_FLORAL_HEALING, "Soin Floral", "Cavalerie Lourde"
     battleeffect MOVE_EFFECT_HIT
@@ -10731,7 +10731,7 @@ movedatalongname MOVE_FLORAL_HEALING, "Soin Floral", "Cavalerie Lourde"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_FLORAL_HEALING, "The user restores the\ntarget's HP by up to\nhalf of its max HP. It\nrestores more HP when\nthe terrain is grass."
+    movedescription MOVE_FLORAL_HEALING, "Rend la moitié de ses\nPV max à la cible.\nPlus efficace sur un\nchamp herbu."
 
 movedatalongname MOVE_HIGH_HORSEPOWER, "CavalerieLourde", "Cavalerie Lourde"
     battleeffect MOVE_EFFECT_HIT
@@ -10747,7 +10747,7 @@ movedatalongname MOVE_HIGH_HORSEPOWER, "CavalerieLourde", "Cavalerie Lourde"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_HIGH_HORSEPOWER, "The user fiercely\nattacks the target\nusing its entire body."
+    movedescription MOVE_HIGH_HORSEPOWER, "Le lanceur attaque\nviolemment en\nutilisant\ntout son poids."
 
 movedata MOVE_STRENGTH_SAP, "Vole-Force"
     battleeffect MOVE_EFFECT_HIT
@@ -10763,7 +10763,7 @@ movedata MOVE_STRENGTH_SAP, "Vole-Force"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_STRENGTH_SAP, "The user restores its\nHP by the same amount\nas the target's Attack\nstat. It also lowers the\ntarget's Attack stat."
+    movedescription MOVE_STRENGTH_SAP, "Rend au lanceur une\nquantité de PV équi-\nvalente à la stat\nd’Attaque de la cible,\npuis baisse celle-ci."
 
 movedata MOVE_SOLAR_BLADE, "Lame Solaire"
     battleeffect MOVE_EFFECT_CHARGE_TURN_SUN_SKIPS
@@ -10779,7 +10779,7 @@ movedata MOVE_SOLAR_BLADE, "Lame Solaire"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_SOLAR_BLADE, "The user fills a blade\nwith light's energy on\nthe first turn, then\nattacks on the next\nturn."
+    movedescription MOVE_SOLAR_BLADE, "Absorbe la lumière\nau premier tour et\nenvoie une lame\npuissante au tour\nsuivant."
 
 movedata MOVE_LEAFAGE, "Feuillage"
     battleeffect MOVE_EFFECT_HIT
@@ -10795,7 +10795,7 @@ movedata MOVE_LEAFAGE, "Feuillage"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_LEAFAGE, "The user attacks by\npelting the target\nwith leaves."
+    movedescription MOVE_LEAFAGE, "Le lanceur attaque\nla cible avec\ndes feuilles."
 
 movedata MOVE_SPOTLIGHT, "Projecteur"
     battleeffect MOVE_EFFECT_MAKE_GLOBAL_TARGET
@@ -10811,7 +10811,7 @@ movedata MOVE_SPOTLIGHT, "Projecteur"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_SPOTLIGHT, "The user shines a\nspotlight on the target\nso that only the target\nwill be attacked during\nthe turn."
+    movedescription MOVE_SPOTLIGHT, "Met un Pokémon\nsous le feu des\nprojecteurs et force\ntout le monde à\nle viser."
 
 movedata MOVE_TOXIC_THREAD, "Fil Toxique"
     battleeffect MOVE_EFFECT_TOXIC_THREAD
@@ -10827,7 +10827,7 @@ movedata MOVE_TOXIC_THREAD, "Fil Toxique"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_TOXIC_THREAD, "The user shoots\npoisonous threads\nto poison the target\nand lower the\ntarget's Speed stat."
+    movedescription MOVE_TOXIC_THREAD, "Tisse un fil imprégné\nde venin. Empoisonne\nla cible et baisse sa\nVitesse."
 
 movedata MOVE_LASER_FOCUS, "Affilage"
     battleeffect MOVE_EFFECT_HIT
@@ -10843,7 +10843,7 @@ movedata MOVE_LASER_FOCUS, "Affilage"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_LASER_FOCUS, "The user concentrates\nintensely.\nThe attack on the next\nturn always results in\na critical hit."
+    movedescription MOVE_LASER_FOCUS, "Le lanceur se con-\ncentre pour être sûr\nde porter un coup\ncritique au tour\nsuivant."
 
 movedata MOVE_GEAR_UP, "Engrenage"
     battleeffect MOVE_EFFECT_HIT
@@ -10859,7 +10859,7 @@ movedata MOVE_GEAR_UP, "Engrenage"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_GEAR_UP, "The user engages its\ngears to raise the\nAttack and Sp. Atk\nstats of ally Pokémon\nwith Plus or Minus."
+    movedescription MOVE_GEAR_UP, "Change de réglage\npour augmenter l'Atk.\net l'Atk. Spé. des\nalliés ayant les\ntalents Plus ou Minus."
 
 movedata MOVE_THROAT_CHOP, "Exécu-Son"
     battleeffect MOVE_EFFECT_HIT
@@ -10875,7 +10875,7 @@ movedata MOVE_THROAT_CHOP, "Exécu-Son"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_THROAT_CHOP, "The user attacks the\ntarget's throat,\npreventing the target\nfrom using sound-based\nmoves for two turns."
+    movedescription MOVE_THROAT_CHOP, "Inflige une douleur\ntellement violente à la\ncible qu’elle ne peut\nplus émettre de sons\npendant deux tours."
 
 movedata MOVE_POLLEN_PUFF, "Boule Pollen"
     battleeffect MOVE_EFFECT_POLLEN_PUFF
@@ -10891,7 +10891,7 @@ movedata MOVE_POLLEN_PUFF, "Boule Pollen"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_POLLEN_PUFF, "The user attacks with\nan exploding pollen\npuff. If the target is\nan ally, it restores\nits HP instead."
+    movedescription MOVE_POLLEN_PUFF, "Sur un ennemi,\nfait des dégâts.\nSur un allié, fait\nrécupérer des PV."
 
 movedata MOVE_ANCHOR_SHOT, "Ancrage"
     battleeffect MOVE_EFFECT_PREVENT_ESCAPE_HIT
@@ -10907,7 +10907,7 @@ movedata MOVE_ANCHOR_SHOT, "Ancrage"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_ANCHOR_SHOT, "The user entangles the\ntarget with its anchor\nchain while attacking.\nThe target becomes\nunable to flee."
+    movedescription MOVE_ANCHOR_SHOT, "Le lanceur jette son\nancre sur la cible\nqui l’empêche de\nquitter le terrain."
 
 movedata MOVE_PSYCHIC_TERRAIN, "Champ Psychique"
     battleeffect MOVE_EFFECT_APPLY_TERRAINS
@@ -10923,7 +10923,7 @@ movedata MOVE_PSYCHIC_TERRAIN, "Champ Psychique"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_PSYCHIC_TERRAIN, "This protects Pokémon\non the ground from\npriority moves and\npowers up Psychic-type\nmoves for five turns."
+    movedescription MOVE_PSYCHIC_TERRAIN, "Pendant cinq tours,\nles Pokémon au sol ne\npeuvent plus subir\nd’attaques prioritaires."
 
 movedata MOVE_LUNGE, "Furie-Bond"
     battleeffect MOVE_EFFECT_LOWER_ATTACK_HIT
@@ -10939,7 +10939,7 @@ movedata MOVE_LUNGE, "Furie-Bond"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_LUNGE, "The user makes a lunge\nat the target, attacking\nwith full force.\nThis also lowers the\ntarget's Attack stat."
+    movedescription MOVE_LUNGE, "Le lanceur se jette\nsur la cible de toutes\nses forces pour lui\ninfliger des dégâts\net baisser son Atk."
 
 movedata MOVE_FIRE_LASH, "Fouet de Feu"
     battleeffect MOVE_EFFECT_LOWER_DEFENSE_HIT
@@ -10955,7 +10955,7 @@ movedata MOVE_FIRE_LASH, "Fouet de Feu"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_FIRE_LASH, "The user strikes the\ntarget with a burning\nlash.\nThis also lowers the\ntarget's Defense stat."
+    movedescription MOVE_FIRE_LASH, "Frappe la cible avec\nun fouet\nincandescent et\nbaisse sa Défense."
 
 movedata MOVE_POWER_TRIP, "Arrogance"
     battleeffect MOVE_EFFECT_HIT
@@ -10971,7 +10971,7 @@ movedata MOVE_POWER_TRIP, "Arrogance"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_POWER_TRIP, "The user flaunts its\nstrength. The more the\nuser's stats are\nboosted, the greater\nthe move's power."
+    movedescription MOVE_POWER_TRIP, "Plus les stats du lan-\nceur ont été augmen-\ntées, plus la puissance\nde cette capacité\naugmente."
 
 movedata MOVE_BURN_UP, "Flamme Ultime"
     battleeffect MOVE_EFFECT_HIT
@@ -10987,7 +10987,7 @@ movedata MOVE_BURN_UP, "Flamme Ultime"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_BURN_UP, "To inflict massive\ndamage, the user burns\nitself out. After using\nthis move, the user will\nno longer be Fire type."
+    movedescription MOVE_BURN_UP, "Le Pokémon se con-\nsume et inflige des\ndégâts.\nLe lanceur perd le\ntype Feu."
 
 movedata MOVE_SPEED_SWAP, "Permuvitesse"
     battleeffect MOVE_EFFECT_HIT
@@ -11003,7 +11003,7 @@ movedata MOVE_SPEED_SWAP, "Permuvitesse"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_SPEED_SWAP, "The user exchanges\nSpeed stats with the\ntarget."
+    movedescription MOVE_SPEED_SWAP, "Intervertit la Vitesse\ndu lanceur et celle\nde la cible."
 
 movedata MOVE_SMART_STRIKE, "Estocorne"
     battleeffect MOVE_EFFECT_BYPASS_ACCURACY
@@ -11019,7 +11019,7 @@ movedata MOVE_SMART_STRIKE, "Estocorne"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_SMART_STRIKE, "The user stabs the\ntarget with a sharp\nhorn.\nThis attack never\nmisses."
+    movedescription MOVE_SMART_STRIKE, "Le lanceur trans-\nperce la cible avec\nsa corne effilée.\nN’échoue jamais."
 
 movedata MOVE_PURIFY, "Purification"
     battleeffect MOVE_EFFECT_HIT
@@ -11035,7 +11035,7 @@ movedata MOVE_PURIFY, "Purification"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_PURIFY, "The user cures the\ntarget's status\ncondition. If the move\nsucceeds, it also\nrestores the user's HP."
+    movedescription MOVE_PURIFY, "Le lanceur soigne\nles altérations de\nstatut de la cible,\nce qui lui permet de\nregagner des PV."
 
 movedata MOVE_REVELATION_DANCE, "Danse Éveil"
     battleeffect MOVE_EFFECT_HIT
@@ -11051,7 +11051,7 @@ movedata MOVE_REVELATION_DANCE, "Danse Éveil"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_REVELATION_DANCE, "The user attacks the\ntarget by dancing with\nall its might. This\nmove becomes the same\ntype as the user's type."
+    movedescription MOVE_REVELATION_DANCE, "Le lanceur attaque en\ndansant avec enthou-\nsiasme. Le type de la\ncapacité est le même\nque celui du lanceur."
 
 movedatalongname MOVE_CORE_ENFORCER, "SanctionSuprême", "Sanction Suprême"
     battleeffect MOVE_EFFECT_HIT
@@ -11067,7 +11067,7 @@ movedatalongname MOVE_CORE_ENFORCER, "SanctionSuprême", "Sanction Suprême"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_CORE_ENFORCER, "If a target has already\nused their move this\nturn, this move\neliminates the effects\nof their Ability."
+    movedescription MOVE_CORE_ENFORCER, "La cible subit des\ndégâts et, si elle a\ndéjà agi pendant\nce tour, elle perd\naussi son talent."
 
 movedata MOVE_TROP_KICK, "Botte Sucrette"
     battleeffect MOVE_EFFECT_LOWER_ATTACK_HIT
@@ -11083,7 +11083,7 @@ movedata MOVE_TROP_KICK, "Botte Sucrette"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_TROP_KICK, "The user lands an\nintense kick of tropical\norigins on the target.\nThis also lowers the\ntarget's Attack stat."
+    movedescription MOVE_TROP_KICK, "Un coup de pied\nchaud comme les\ntropiques qui inflige\ndes dégâts à la cible\net baisse son Atk."
 
 movedata MOVE_INSTRUCT, "Sommation"
     battleeffect MOVE_EFFECT_HIT
@@ -11099,7 +11099,7 @@ movedata MOVE_INSTRUCT, "Sommation"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_INSTRUCT, "The user instructs the\ntarget to reuse the\nmove last used by the\ntarget."
+    movedescription MOVE_INSTRUCT, "Force la cible à lancer\nimmédiatement la\ndernière capacité\nqu’elle a utilisée."
 
 movedata MOVE_BEAK_BLAST, "Bec-Canon"
     battleeffect MOVE_EFFECT_HIT
@@ -11115,7 +11115,7 @@ movedata MOVE_BEAK_BLAST, "Bec-Canon"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_BEAK_BLAST, "The user heats up its\nbeak before attacking.\nMaking contact before\nthe user attacks\nresults in a burn."
+    movedescription MOVE_BEAK_BLAST, "Le lanceur fait chauf-\nfer son bec avant d’at-\ntaquer. S’il subit une\nattaque directe,\nl’attaquant sera brûlé."
 
 movedata MOVE_CLANGING_SCALES, "Vibrécaille"
     battleeffect MOVE_EFFECT_USER_DEF_DOWN_HIT
@@ -11131,7 +11131,7 @@ movedata MOVE_CLANGING_SCALES, "Vibrécaille"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_CLANGING_SCALES, "The user rubs its\nscales to make a huge\nnoise. The user's\nDefense stat is lowered\nafter the attack."
+    movedescription MOVE_CLANGING_SCALES, "Le lanceur déclenche\nun vacarme en frot-\ntant ses écailles.\nBaisse la Défense\ndu lanceur."
 
 movedata MOVE_DRAGON_HAMMER, "Draco-Marteau"
     battleeffect MOVE_EFFECT_HIT
@@ -11147,7 +11147,7 @@ movedata MOVE_DRAGON_HAMMER, "Draco-Marteau"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_DRAGON_HAMMER, "The user wields its\nbody like a hammer to\nattack the target and\ninflict damage."
+    movedescription MOVE_DRAGON_HAMMER, "Le lanceur utilise son\ncorps comme un véri-\ntable marteau pour\nécraser la cible."
 
 movedata MOVE_BRUTAL_SWING, "Centrifugifle"
     battleeffect MOVE_EFFECT_HIT
@@ -11163,7 +11163,7 @@ movedata MOVE_BRUTAL_SWING, "Centrifugifle"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_BRUTAL_SWING, "The user swings its\nbody around violently\nto inflict damage on\neverything in its\nvicinity."
+    movedescription MOVE_BRUTAL_SWING, "Le lanceur pivote\npour prendre de\nl’élan et infliger\ndes dégâts."
 
 movedata MOVE_AURORA_VEIL, "Voile Aurore"
     battleeffect MOVE_EFFECT_SET_AURORA_VEIL
@@ -11180,9 +11180,9 @@ movedata MOVE_AURORA_VEIL, "Voile Aurore"
     contesttype CONTEST_BEAUTY
     terminatedata
 .if SNOW_WARNING_GENERATION >= 9
-    movedescription MOVE_AURORA_VEIL, "This move reduces damage\nfrom most moves for five\nturns. It can be used\nonly when it is snowing."
+    movedescription MOVE_AURORA_VEIL, "Crée un voile rédui-\nsant les dégâts phy-\nsiques et spéciaux.\nNe peut être utilisée\nque lorsqu’il neige."
 .else
-    movedescription MOVE_AURORA_VEIL, "This move reduces damage\nfrom most moves for five\nturns. It can be used\nonly in a hailstorm."
+    movedescription MOVE_AURORA_VEIL, "Crée un voile rédui-\nsant les dégâts phy-\nsiques et spéciaux.\nNe peut être utilisée\nque lorsqu’il grêle."
 .endif
 
 movedatalongname MOVE_SINISTER_ARROW_RAID, "Sinister Raid", "Sinister Arrow Raid"
@@ -11343,7 +11343,7 @@ movedata MOVE_SHELL_TRAP, "Carapiège"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_SHELL_TRAP, "The user sets a shell\ntrap. If hit by a\nphysical move, the\ntrap will explode and\ninflict damage."
+    movedescription MOVE_SHELL_TRAP, "Si un Pokémon at-\ntaque le lanceur avec\nune capacité phys-\nique, inflige des\ndégâts à l’assaillant."
 
 movedata MOVE_FLEUR_CANNON, "Canon Floral"
     battleeffect MOVE_EFFECT_USER_SP_ATK_DOWN_2
@@ -11359,7 +11359,7 @@ movedata MOVE_FLEUR_CANNON, "Canon Floral"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_FLEUR_CANNON, "The user unleashes a\nstrong beam.\nThe attack's recoil\nharshly lowers the\nuser's Sp. Atk stat."
+    movedescription MOVE_FLEUR_CANNON, "Envoie un rayon laser\ndévastateur. Baisse\nbeaucoup l’Attaque\nSpéciale du lanceur."
 
 movedata MOVE_PSYCHIC_FANGS, "Psycho-Croc"
     battleeffect MOVE_EFFECT_REMOVE_SCREENS
@@ -11375,7 +11375,7 @@ movedata MOVE_PSYCHIC_FANGS, "Psycho-Croc"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_PSYCHIC_FANGS, "The user bites the\ntarget with its psychic\ncapabilities. This can\nalso destroy Light\nScreen and Reflect."
+    movedescription MOVE_PSYCHIC_FANGS, "Le lanceur mord la\ncible avec ses pou-\nvoirs psychiques.\nBrise aussi les\nbarrières."
 
 movedata MOVE_STOMPING_TANTRUM, "Trépignement"
     battleeffect MOVE_EFFECT_HIT
@@ -11391,7 +11391,7 @@ movedata MOVE_STOMPING_TANTRUM, "Trépignement"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_STOMPING_TANTRUM, "Driven by frustration,\nthe user attacks. This\nmove's power is\ndoubled if the user's\nprevious move failed."
+    movedescription MOVE_STOMPING_TANTRUM, "S’il le lanceur a utilisé\nune capacité qui a\néchoué au tour\nprécédent, la puis-\nsance est doublée."
 
 movedata MOVE_SHADOW_BONE, "Os Ombre"
     battleeffect MOVE_EFFECT_LOWER_DEFENSE_HIT
@@ -11407,7 +11407,7 @@ movedata MOVE_SHADOW_BONE, "Os Ombre"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_SHADOW_BONE, "The user beats the\ntarget with a bone that\ncontains a spirit. This\nmay also lower the\ntarget's Defense stat."
+    movedescription MOVE_SHADOW_BONE, "Le lanceur frappe\navec un os possédé\npar l’âme d’un défunt.\nPeut aussi baisser la\nDéfense de la cible."
 
 movedata MOVE_ACCELEROCK, "Vif Roc"
     battleeffect MOVE_EFFECT_PRIORITY_1
@@ -11423,7 +11423,7 @@ movedata MOVE_ACCELEROCK, "Vif Roc"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_ACCELEROCK, "The user smashes into\nthe target at high\nspeed.\nThis move always goes\nfirst."
+    movedescription MOVE_ACCELEROCK, "Le lanceur charge\nla cible à toute\nvitesse.\nFrappe en priorité."
 
 movedata MOVE_LIQUIDATION, "Aqua-Brèche"
     battleeffect MOVE_EFFECT_LOWER_DEFENSE_HIT
@@ -11439,7 +11439,7 @@ movedata MOVE_LIQUIDATION, "Aqua-Brèche"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_LIQUIDATION, "The user slams into\nthe target using a\nblast of water. This\nmay also lower the\ntarget's Defense stat."
+    movedescription MOVE_LIQUIDATION, "Le lanceur utilise la\nforce de l’eau pour\nattaquer. Peut aussi\nbaisser la Défense\nde la cible."
 
 movedata MOVE_PRISMATIC_LASER, "Laser Prisme"
     battleeffect MOVE_EFFECT_RECHARGE_AFTER
@@ -11455,7 +11455,7 @@ movedata MOVE_PRISMATIC_LASER, "Laser Prisme"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_PRISMATIC_LASER, "The user shoots\npowerful lasers using\nthe power of a prism.\nThe user can't move on\nthe next turn."
+    movedescription MOVE_PRISMATIC_LASER, "Le lanceur utilise la\npuissance d’un\nprisme pour envoyer\nun laser. Il doit se re-\nposer au tour suivant."
 
 movedata MOVE_SPECTRAL_THIEF, "Clepto-Mânes"
     battleeffect MOVE_EFFECT_HIT
@@ -11471,7 +11471,7 @@ movedata MOVE_SPECTRAL_THIEF, "Clepto-Mânes"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_SPECTRAL_THIEF, "The user hides in the\ntarget's shadow,\nsteals the target's\nstat boosts,\nand then attacks"
+    movedescription MOVE_SPECTRAL_THIEF, "Le lanceur plonge\ndans l’ombre de la\ncible, vole ses aug-\nmentations de stats\net l’attaque."
 
 movedata MOVE_SUNSTEEL_STRIKE, "Choc Météore"
     battleeffect MOVE_EFFECT_HIT
@@ -11487,7 +11487,7 @@ movedata MOVE_SUNSTEEL_STRIKE, "Choc Météore"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_SUNSTEEL_STRIKE, "The user attacks with\nmeteoric force. This\nmove can be used on\nthe target regardless\nof its Ability."
+    movedescription MOVE_SUNSTEEL_STRIKE, "Le lanceur fonce sur\nla cible avec la puis-\nsance d’une\nmétéorite. Ignore le\ntalent de la cible."
 
 movedata MOVE_MOONGEIST_BEAM, "Rayon Spectral"
     battleeffect MOVE_EFFECT_HIT
@@ -11503,7 +11503,7 @@ movedata MOVE_MOONGEIST_BEAM, "Rayon Spectral"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_MOONGEIST_BEAM, "The user emits a\nsinister ray. This\nmove can be used on\nthe target regardless\nof its Ability."
+    movedescription MOVE_MOONGEIST_BEAM, "Le lanceur attaque\navec un rayon de\nlumière mystérieux.\nIgnore le talent de\nla cible."
 
 movedata MOVE_TEARFUL_LOOK, "Larme à l'Œil"
     battleeffect MOVE_EFFECT_ATK_SP_ATK_DOWN
@@ -11519,7 +11519,7 @@ movedata MOVE_TEARFUL_LOOK, "Larme à l'Œil"
     appeal 0x00
     contesttype CONTEST_CUTE
     terminatedata
-    movedescription MOVE_TEARFUL_LOOK, "The user tears up,\nlowering the target's\nAttack and Sp. Atk\nstats.\nBypasses Protect."
+    movedescription MOVE_TEARFUL_LOOK, "Le lanceur regarde\nla cible avec des yeux\nremplis de larmes.\nElle voit son Atk. et\nson Atk. Spé. baisser."
 
 movedata MOVE_ZING_ZAP, "Électrikipik"
     battleeffect MOVE_EFFECT_FLINCH_HIT
@@ -11535,7 +11535,7 @@ movedata MOVE_ZING_ZAP, "Électrikipik"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_ZING_ZAP, "The user crashes into\nthe target, delivering\na powerful electric\nshock. This may also\nmake the target flinch."
+    movedescription MOVE_ZING_ZAP, "Le lanceur fonce sur\nla cible et lui envoie\nun puissant choc\nélectrique, ce qui\npeut aussi l’effrayer."
 
 movedatalongname MOVE_NATURES_MADNESS, "IreDeLaNature", "Ire de la Nature"
     battleeffect MOVE_EFFECT_HALVE_HP
@@ -11551,7 +11551,7 @@ movedatalongname MOVE_NATURES_MADNESS, "IreDeLaNature", "Ire de la Nature"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_NATURES_MADNESS, "The user hits the\ntarget with the full\nwrath of nature.\nThis cuts the target's\nHP in half."
+    movedescription MOVE_NATURES_MADNESS, "Le lanceur déchaîne\ntoute la colère de la\nnature pour baisser\nles PV de la cible\nde moitié."
 
 movedata MOVE_MULTI_ATTACK, "Coup Varia-Type"
     battleeffect MOVE_EFFECT_MULTI_ATTACK
@@ -11567,7 +11567,7 @@ movedata MOVE_MULTI_ATTACK, "Coup Varia-Type"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_MULTI_ATTACK, "Cloaking itself in high\nenergy, the user slams\ninto the target. The\nmemory held determines\nthe move's type."
+    movedescription MOVE_MULTI_ATTACK, "Le type de la capacité\ndépend de la ROM\ninstallée."
 
 movedata MOVE_10_000_000_VOLT_THUNDERBOLT, "Giga-Tonnerre"
     battleeffect MOVE_EFFECT_HIT
@@ -11599,7 +11599,7 @@ movedata MOVE_MIND_BLOWN, "Caboche-Kaboum"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_MIND_BLOWN, "The user attacks\neverything around it by\ncausing its own head to\nexplode. This also\ndamages the user."
+    movedescription MOVE_MIND_BLOWN, "Le lanceur fait explo-\nser sa tête pour\nattaquer toutes les\ncibles. Il subit aussi\ndes dégâts."
 
 movedata MOVE_PLASMA_FISTS, "Plasma Punch"
     battleeffect MOVE_EFFECT_ION_DELUGE_HIT
@@ -11615,7 +11615,7 @@ movedata MOVE_PLASMA_FISTS, "Plasma Punch"
     appeal 0x00
     contesttype CONTEST_BEAUTY // Reflects the contest type for Ion Deluge.
     terminatedata
-    movedescription MOVE_PLASMA_FISTS, "The user attacks with\nelectrically charged\nfists. This move\nchanges Normal-type\nmoves to Electric."
+    movedescription MOVE_PLASMA_FISTS, "Le lanceur attaque en\nprojetant de l’électri-\ncité avec ses poings.\nConvertit les attaques\nde Normal en Électrik."
 
 movedata MOVE_PHOTON_GEYSER, "Photo-Geyser"
     battleeffect MOVE_EFFECT_HIT
@@ -11631,7 +11631,7 @@ movedata MOVE_PHOTON_GEYSER, "Photo-Geyser"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_PHOTON_GEYSER, "The user attacks with a\npillar of light. This\ncan inflict damage using\nAttack or Sp. Atk-\nwhichever is higher."
+    movedescription MOVE_PHOTON_GEYSER, "Compare l’Atk. et\nl’Atk. Spé., et utilise\ncelle qui infligera le\nplus de dégâts."
 
 movedatalongname MOVE_LIGHT_THAT_BURNS_THE_SKY, "ApocalypsisLumi", "Apocalypsis Luminis"
     battleeffect MOVE_EFFECT_HIT
@@ -11951,7 +11951,7 @@ movedata MOVE_DOUBLE_IRON_BASH, "Écrous d'Poing"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_DOUBLE_IRON_BASH, "The user spins on its\nnut, striking the target\nwith its arms twice in a\nrow. This may also make\nthe target flinch."
+    movedescription MOVE_DOUBLE_IRON_BASH, "Le lanceur frappe la\ncible avec ses bras\ndeux fois d’affilée,\nce qui peut aussi\napeurer celle-ci."
 
 movedata MOVE_MAX_GUARD, "Gardomax"
     battleeffect MOVE_EFFECT_PROTECT
