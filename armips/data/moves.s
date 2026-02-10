@@ -13312,7 +13312,7 @@ movedatalongname MOVE_DIRE_CLAW, "GriffesFunestes", "Griffes Funestes"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_DIRE_CLAW, "The user lashes out\nat the target with\nruinous claws. May\nalso poison, paralyze,\nor sleep the target."
+    movedescription MOVE_DIRE_CLAW, "Le lanceur attaque\navec des griffes. La\ncible peut aussi être\nempoisonnée, para-\nlysée, ou endormie."
 
 movedata MOVE_PSYSHIELD_BASH, "Sprint Bouclier"
     battleeffect MOVE_EFFECT_RAISE_DEF_HIT
@@ -13328,7 +13328,7 @@ movedata MOVE_PSYSHIELD_BASH, "Sprint Bouclier"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_PSYSHIELD_BASH, "Cloaked in psychic\nenergy, the user slams\ninto the target. This\nalso boosts the user’s\nDefense stat."
+    movedescription MOVE_PSYSHIELD_BASH, "Le lanceur s’enve-\nloppe d’énergie psy-\nchique et frappe sa\ncible. Augmente\nla Déf. du lanceur."
 
 movedata MOVE_POWER_SHIFT, "Échange Force"
     battleeffect MOVE_EFFECT_SWAP_ATK_DEF
@@ -13344,7 +13344,7 @@ movedata MOVE_POWER_SHIFT, "Échange Force"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_POWER_SHIFT, "The user swaps its\nAttack and Defense\nstats."
+    movedescription MOVE_POWER_SHIFT, "Le lanceur échange\nson Attaque avec\nsa Défense."
 
 movedata MOVE_STONE_AXE, "Hache de Pierre"
     battleeffect MOVE_EFFECT_STEALTH_ROCK_HIT
@@ -13360,7 +13360,7 @@ movedata MOVE_STONE_AXE, "Hache de Pierre"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_STONE_AXE, "The user swings its\nstone axes at the\ntarget. Splinters left\nbehind by this attack\nfloat around the target."
+    movedescription MOVE_STONE_AXE, "Le lanceur attaque sa\nhache de pierre. Les\ndébris de pierre se\nmettent alors à flotter\nautour de la cible."
 
 movedatalongname MOVE_SPRINGTIDE_STORM, "TyphonPassionné", "Typhon Passionné"
     battleeffect MOVE_EFFECT_LOWER_ATTACK_HIT
@@ -13376,7 +13376,7 @@ movedatalongname MOVE_SPRINGTIDE_STORM, "TyphonPassionné", "Typhon Passionné"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_SPRINGTIDE_STORM, "The user wraps foes in\nfierce winds brimming\nwith love and hate.\nThis may also lower\ntheir Attack stats."
+    movedescription MOVE_SPRINGTIDE_STORM, "Le lanceur déclenche\nun violent typhon qui\ns’abat sur la cible.\nPeut baisser l’Attaque\nde celle-ci."
 
 movedata MOVE_MYSTICAL_POWER, "Force Mystique"
     battleeffect MOVE_EFFECT_RAISE_SP_ATK_HIT
@@ -13392,7 +13392,7 @@ movedata MOVE_MYSTICAL_POWER, "Force Mystique"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_MYSTICAL_POWER, "The user attacks by\nemitting a mysterious\npower.\nThis also boosts the\nuser’s Sp. Atk stat."
+    movedescription MOVE_MYSTICAL_POWER, "Le lanceur attaque\nen libérant un pou-\nvoir mystique. Cela\naugmente également\nson Atk. Spé."
 
 movedata MOVE_RAGING_FURY, "Grand Courroux"
     battleeffect MOVE_EFFECT_CONTINUE_AND_CONFUSE_SELF
@@ -13408,7 +13408,7 @@ movedata MOVE_RAGING_FURY, "Grand Courroux"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_RAGING_FURY, "The user rampages\naround spewing flames\nfor two to three turns.\nThe user then becomes\nconfused."
+    movedescription MOVE_RAGING_FURY, "Le lanceur attaque en\nprojetant de violentes\nflammes pendant deux\nou trois tours. Il devient\nensuite confus."
 
 movedata MOVE_WAVE_CRASH, "Aquatacle"
     battleeffect MOVE_EFFECT_RECOIL_THIRD
@@ -13424,7 +13424,7 @@ movedata MOVE_WAVE_CRASH, "Aquatacle"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_WAVE_CRASH, "The user shrouds\nitself in water and\nslams into the target.\nThis also damages the\nuser quite a lot."
+    movedescription MOVE_WAVE_CRASH, "Le lanceur se recou-\nvre entièrement d’eau\net charge sa cible.\nCela blesse aussi\ngravement le lanceur."
 
 movedata MOVE_CHLOROBLAST, "Herblast"
     battleeffect MOVE_EFFECT_HIT
@@ -13440,7 +13440,7 @@ movedata MOVE_CHLOROBLAST, "Herblast"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_CHLOROBLAST, "The user launches its\namassed chlorophyll\nto inflict damage on\nthe target. This also\ndamages the user."
+    movedescription MOVE_CHLOROBLAST, "Le lanceur tire un\nconcentré de sa\npropre chlorophylle\nsur la cible, ce qui le\nblesse également."
 
 movedata MOVE_MOUNTAIN_GALE, "Bise Glaciaire"
     battleeffect MOVE_EFFECT_FLINCH_HIT
@@ -13456,7 +13456,7 @@ movedata MOVE_MOUNTAIN_GALE, "Bise Glaciaire"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_MOUNTAIN_GALE, "The user hurls giant\nchunks of ice at the\ntarget to inflict\ndamage. This may also\nmake the target flinch."
+    movedescription MOVE_MOUNTAIN_GALE, "Le lanceur envoie un\nbloc de glace de la\ntaille d’un iceberg sur\nla cible, ce qui peut\naussi l’apeurer."
 
 movedata MOVE_VICTORY_DANCE, "Danse Victoire"
     battleeffect MOVE_EFFECT_ATK_DEF_SPEED_UP
@@ -13472,7 +13472,7 @@ movedata MOVE_VICTORY_DANCE, "Danse Victoire"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_VICTORY_DANCE, "The user performs an\nintense dance to usher\nin victory, boosting\nits Attack, Defense,\nand Speed stats."
+    movedescription MOVE_VICTORY_DANCE, "Le lanceur danse\npour invoquer la\nvictoire, ce qui aug-\nmente son Atk.,\nsa Déf. et sa Vitesse."
 
 movedata MOVE_HEADLONG_RUSH, "Assaut Frontal"
     battleeffect MOVE_EFFECT_USER_DEF_SP_DEF_DOWN_HIT
@@ -13488,7 +13488,7 @@ movedata MOVE_HEADLONG_RUSH, "Assaut Frontal"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_HEADLONG_RUSH, "The user smashes into\nthe target in a\nfull-body tackle. This\nalso lowers the user’s\nDefense and Sp. Def."
+    movedescription MOVE_HEADLONG_RUSH, "Le lanceur charge la\ncible de toutes ses\nforces, ce qui baisse\nla Déf. et la Déf. Spé.\ndu lanceur."
 
 movedata MOVE_BARB_BARRAGE, "Multitoxik"
     battleeffect MOVE_EFFECT_POISON_HIT_DOUBLE_POWER_ON_POISONED
@@ -13504,7 +13504,7 @@ movedata MOVE_BARB_BARRAGE, "Multitoxik"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_BARB_BARRAGE, "The user launches barbs\nwhich may poison the\ntarget. Its power is\ndoubled if the target\nis already poisoned."
+    movedescription MOVE_BARB_BARRAGE, "Peut empoisonner.\nLa puissance est\ndoublée si la cible\nest déjà empoi-\nsonnée."
 
 movedata MOVE_ESPER_WING, "Ailes Psycho"
     battleeffect MOVE_EFFECT_HIGH_CRITICAL_RAISE_SPEED_HIT
@@ -13520,7 +13520,7 @@ movedata MOVE_ESPER_WING, "Ailes Psycho"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_ESPER_WING, "The user slashes with\naura-enriched wings and\nboosts its Speed. This\nmove has a heightened\ncritical hit chance."
+    movedescription MOVE_ESPER_WING, "Le lanceur entaille la\ncible avec ses ailes.\nTaux de critiques\nélevé. Augmente la\nVitesse du lanceur."
 
 movedata MOVE_BITTER_MALICE, "Cœur de Rancœur"
     battleeffect MOVE_EFFECT_LOWER_ATTACK_HIT
@@ -13536,7 +13536,7 @@ movedata MOVE_BITTER_MALICE, "Cœur de Rancœur"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_BITTER_MALICE, "The user attacks the\ntarget with spine-\nchilling resentment.\nThis also lowers the\ntarget’s Attack stat."
+    movedescription MOVE_BITTER_MALICE, "Une rancœur glaciale\nfrappe la cible et\nbaisse son Attaque."
 
 movedata MOVE_SHELTER, "Mur Fumigène"
     battleeffect MOVE_EFFECT_DEF_UP_2
@@ -13552,7 +13552,7 @@ movedata MOVE_SHELTER, "Mur Fumigène"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_SHELTER, "The user makes its\nskin as hard as an\niron shield,\nsharply boosting\nits Defense stat."
+    movedescription MOVE_SHELTER, "Rend la peau du\nlanceur dure comme\nun mur de fer, ce qui\naugmente beaucoup\nsa Défense."
 
 movedata MOVE_TRIPLE_ARROWS, "Triple Flèche"
     battleeffect MOVE_EFFECT_HIT
@@ -13568,7 +13568,7 @@ movedata MOVE_TRIPLE_ARROWS, "Triple Flèche"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_TRIPLE_ARROWS, "The user kicks and fires\nthree arrows. This has a\nhigh critical hit chance\nand may lower Defense or\nmake the target flinch."
+    movedescription MOVE_TRIPLE_ARROWS, "Peut baisser la Déf.\nde la cible ou\nl’apeurer. Taux de\ncritiques élevé."
 
 movedata MOVE_INFERNAL_PARADE, "Cortège Funèbre"
     battleeffect MOVE_EFFECT_BURN_HIT_DOUBLE_POWER_ON_STATUS
@@ -13584,7 +13584,7 @@ movedata MOVE_INFERNAL_PARADE, "Cortège Funèbre"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_INFERNAL_PARADE, "The user summons myriad\nfireballs which may burn\nthe target. Its power is\ndoubled if the target\nhas a status condition."
+    movedescription MOVE_INFERNAL_PARADE, "Peut brûler la cible.\nLa puissance est\ndoublée si celle-ci\nsouffre d’une alté-\nration de statut."
 
 movedata MOVE_CEASELESS_EDGE, "Vagues à Lames"
     battleeffect MOVE_EFFECT_SET_SPIKES_HIT
@@ -13600,7 +13600,7 @@ movedata MOVE_CEASELESS_EDGE, "Vagues à Lames"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_CEASELESS_EDGE, "The user slashes its\nshell blade at the\ntarget. Shell\nsplinters left behind\nremain as spikes."
+    movedescription MOVE_CEASELESS_EDGE, "Les débris de coquil-\nlage se répandent\nsous la forme de\npicots aux pieds\nde la cible."
 
 movedata MOVE_BLEAKWIND_STORM, "Typhon Hivernal"
     battleeffect MOVE_EFFECT_BLEAKWIND_STORM // Accuracy in rain handled in other_battle_calculators.c.
@@ -13616,7 +13616,7 @@ movedata MOVE_BLEAKWIND_STORM, "Typhon Hivernal"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_BLEAKWIND_STORM, "The user attacks with\nsavagely cold winds.\nThis may also lower\nthe Speed stats of\nopposing Pokémon."
+    movedescription MOVE_BLEAKWIND_STORM, "Le lanceur déclenche\nun typhon froid et\nbrutal, ce qui peut\naussi baisser\nsa Vitesse."
 
 movedatalongname MOVE_WILDBOLT_STORM, "TyphonFulgurant", "Typhon Fulgurant"
     battleeffect MOVE_EFFECT_WILDBOLT_STORM // Accuracy in rain handled in other_battle_calculators.c.
@@ -13632,7 +13632,7 @@ movedatalongname MOVE_WILDBOLT_STORM, "TyphonFulgurant", "Typhon Fulgurant"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_WILDBOLT_STORM, "The user savagely\nattacks with\nlightning and wind.\nIt may also leave\nopponents paralyzed."
+    movedescription MOVE_WILDBOLT_STORM, "Le lanceur déclenche\nun violent typhon\norageux, ce qui peut\naussi la paralyser."
 
 movedatalongname MOVE_SANDSEAR_STORM, "TyphonPyrosable", "Typhon Pyrosable"
     battleeffect MOVE_EFFECT_SANDSEAR_STORM // Accuracy in rain handled in other_battle_calculators.c.
@@ -13648,7 +13648,7 @@ movedatalongname MOVE_SANDSEAR_STORM, "TyphonPyrosable", "Typhon Pyrosable"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_SANDSEAR_STORM, "The user wraps opposing\nPokémon in fierce winds\nand searingly hot sand.\nThis may also leave them\nwith a burn."
+    movedescription MOVE_SANDSEAR_STORM, "Le lanceur déclenche\nun violent typhon\nmêlé à du sable\nardent, ce qui peut\nbrûler la cible."
 
 movedata MOVE_LUNAR_BLESSING, "Prière Lunaire"
     battleeffect MOVE_EFFECT_HIT
@@ -13664,7 +13664,7 @@ movedata MOVE_LUNAR_BLESSING, "Prière Lunaire"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_LUNAR_BLESSING, "The user receives a\nblessing from the moon,\nrestoring HP and curing\nstatus conditions for\nitself and its allies."
+    movedescription MOVE_LUNAR_BLESSING, "Le lanceur adresse\nune prière pour\nrestaurer les PV et\nsoigner ses alté-\nrations de statut et\ncelles de ses alliés."
 
 movedata MOVE_TAKE_HEART, "Extravaillance"
     battleeffect MOVE_EFFECT_TAKE_HEART
@@ -13680,7 +13680,7 @@ movedata MOVE_TAKE_HEART, "Extravaillance"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_TAKE_HEART, "The user lifts its\nspirits, curing its\nown status conditions\nand boosting its Sp.\nAtk and Sp. Def stats."
+    movedescription MOVE_TAKE_HEART, "Le lanceur fait preuve\nde bravoure. Il soigne\nses altérations de\nstatut et augmente son\nAtk. Spé. et sa Déf. Spé."
 
 // Moves introduced in Generation IX:
 movedata MOVE_TERA_BLAST, "Téra Explosion"
