@@ -14419,7 +14419,7 @@ movedata MOVE_BLAZING_TORQUE, "Crash Brûlant"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_BLAZING_TORQUE, "The user rams into the\ntarget with blazing\nenergy. This may also\nleave the target with\na burn."
+    movedescription MOVE_BLAZING_TORQUE, "Le lanceur fonce\ndans la cible avec\nune énergie brûlante.\nPeut brûler la cible."
 
 movedata MOVE_WICKED_TORQUE, "Crash Obscur"
     battleeffect MOVE_EFFECT_SLEEP_HIT
@@ -14435,7 +14435,7 @@ movedata MOVE_WICKED_TORQUE, "Crash Obscur"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_WICKED_TORQUE, "The user rams into the\ntarget with malicious\nintent. This may put\nthe target to sleep."
+    movedescription MOVE_WICKED_TORQUE, "Le lanceur fonce\ndans la cible avec\nune intension mal-\nsaine. Peut\nendormir la cible."
 
 movedata MOVE_NOXIOUS_TORQUE, "Crash Toxique"
     battleeffect MOVE_EFFECT_POISON_HIT
@@ -14451,7 +14451,7 @@ movedata MOVE_NOXIOUS_TORQUE, "Crash Toxique"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_NOXIOUS_TORQUE, "The user rams into the\ntarget with a\npoisonous end. This\nmay also poison the\ntarget."
+    movedescription MOVE_NOXIOUS_TORQUE, "Le lanceur fonce\ndans la cible avec\nun boût empoi-\nsonné. Peut empoi-\nsonner la cible."
 
 movedata MOVE_COMBAT_TORQUE, "Crash Musclé"
     battleeffect MOVE_EFFECT_PARALYZE_HIT
@@ -14467,7 +14467,7 @@ movedata MOVE_COMBAT_TORQUE, "Crash Musclé"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_COMBAT_TORQUE, "The user rams into the\ntarget with great\nforce. This may also\nleave the target with\nparalysis."
+    movedescription MOVE_COMBAT_TORQUE, "Le lanceur fonce\ndans la cible avec\ngrande force.\nPeut paralyser\nla cible."
 
 movedata MOVE_MAGICAL_TORQUE, "Crash Magique"
     battleeffect MOVE_EFFECT_CONFUSE_HIT
@@ -14483,7 +14483,7 @@ movedata MOVE_MAGICAL_TORQUE, "Crash Magique"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_MAGICAL_TORQUE, "The user rams into the\ntarget with a fae-like\nforce. This may also\nconfuse the target."
+    movedescription MOVE_MAGICAL_TORQUE, "Le lanceur fonce\ndans la cible avec\nune énergie fé-\nérique. Peut rendre\nla cible confuse."
 
 movedata MOVE_BLOOD_MOON, "Lune Rouge"
     battleeffect MOVE_EFFECT_HIT
@@ -14499,7 +14499,7 @@ movedata MOVE_BLOOD_MOON, "Lune Rouge"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_BLOOD_MOON, "The user unleashes the\nfull brunt of its spirit\nfrom a full moon.\nThis move can't be used\ntwice in a row."
+    movedescription MOVE_BLOOD_MOON, "Le lanceur projette\nune énergie lunaire\nsur la cible. Ne peut\npas être utilisée\ndeux fois d'affilée."
 
 movedata MOVE_MATCHA_GOTCHA, "Mortier Matcha"
     battleeffect MOVE_EFFECT_RECOVER_HALF_DAMAGE_DEALT_BURN_HIT
@@ -14515,7 +14515,7 @@ movedata MOVE_MATCHA_GOTCHA, "Mortier Matcha"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_MATCHA_GOTCHA, "The user fires a blast\nof tea, restoring HP\nby up to half the\ndamage dealt. This may\nalso burn the target."
+    movedescription MOVE_MATCHA_GOTCHA, "Le lanceur remue son\nthé et en bombarde la\ncible. Convertir des\ndégâts en PV et peut\naussi brûler la cible."
 
 movedata MOVE_SYRUP_BOMB, "Bombe au Sirop"
     battleeffect MOVE_EFFECT_HIT
@@ -14531,7 +14531,7 @@ movedata MOVE_SYRUP_BOMB, "Bombe au Sirop"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_SYRUP_BOMB, "The user sets off a\ngooey explosion, which\ncauses the target's\nSpeed stat to drop each\nturn for three turns."
+    movedescription MOVE_SYRUP_BOMB, "Le lanceur fait pro-\ngressivement baisser\nla Vitesse de la cible\npendant trois tours."
 
 movedata MOVE_IVY_CUDGEL, "Massue Liane"
     battleeffect MOVE_EFFECT_HIT // Typing portion handled in other_battle_calculators.c.
@@ -14547,7 +14547,7 @@ movedata MOVE_IVY_CUDGEL, "Massue Liane"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_IVY_CUDGEL, "The user strikes with a\ncudgel. It has a high\ncritical hit chance, and\nits type changes with\nthe user's mask."
+    movedescription MOVE_IVY_CUDGEL, "Le type de cette cap-\nacité varie en fonction\ndu masque que porte\nle lanceur. Taux de\ncritiques élevé."
 
 movedata MOVE_ELECTRO_SHOT, "Fulgurayon"
     battleeffect MOVE_EFFECT_CHARGE_TURN_SP_ATK_UP_RAIN_SKIPS
@@ -14563,7 +14563,7 @@ movedata MOVE_ELECTRO_SHOT, "Fulgurayon"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_ELECTRO_SHOT, "A two-turn attack.\nThe user gathers\nlight, then fires a\nhigh voltage shot\non the second turn."
+    movedescription MOVE_ELECTRO_SHOT, "Le lanceur absorbe\npuis envoie une puis-\nsante décharge. S'il\npleut, il l'envoie au\npremier tour."
 
 movedatalongname MOVE_TERA_STARSTORM, "PluieTérastrale", "Pluie Térastrale"
     battleeffect MOVE_EFFECT_HIT
@@ -14579,7 +14579,7 @@ movedatalongname MOVE_TERA_STARSTORM, "PluieTérastrale", "Pluie Térastrale"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_TERA_STARSTORM, "The user bombards the\ntarget with crystalline\npower. When used by\nStellar Terapagos, this\nmove damages all foes."
+    movedescription MOVE_TERA_STARSTORM, "Si le lanceur est\nTerapagos sous sa\nForme Stellaire, la\ncapacité touche\ntous les ennemis."
 
 movedata MOVE_FICKLE_BEAM, "Laser Hasard"
     battleeffect MOVE_EFFECT_FICKLE_BEAM
@@ -14595,7 +14595,7 @@ movedata MOVE_FICKLE_BEAM, "Laser Hasard"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_FICKLE_BEAM, "The user shoots a beam\nof light. Sometimes\nthe user's heads shoot\nin unison, doubling\nthe move's power."
+    movedescription MOVE_FICKLE_BEAM, "Le lanceur attaque\nen tirant un rayon\nlumineux. Puissance\nparfois doublée."
 
 movedata MOVE_BURNING_BULWARK, "Rempart Brûlant"
     battleeffect MOVE_EFFECT_PROTECT
@@ -14611,7 +14611,7 @@ movedata MOVE_BURNING_BULWARK, "Rempart Brûlant"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_BURNING_BULWARK, "The user’s intensely hot\nfur protects it from\nattacks and also burns\nany attacker that makes\ndirect contact with it."
+    movedescription MOVE_BURNING_BULWARK, "Le lanceur se protège.\nSi un assaillant utilise\nune attaque directe\ncontre lui, il le brûle."
 
 movedata MOVE_THUNDERCLAP, "Vif Éclair"
     battleeffect MOVE_EFFECT_HIT_FIRST_IF_TARGET_ATTACKING
@@ -14627,7 +14627,7 @@ movedata MOVE_THUNDERCLAP, "Vif Éclair"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_THUNDERCLAP, "The user attacks first\nwith a jolt of\nelectricity. This move\nfails if the target is\nnot readying an attack."
+    movedescription MOVE_THUNDERCLAP, "Attaquer la cible en\npriorité avec une\ndécharge électrique.\nÉchoue si la cible\nn’attaque pas."
 
 movedata MOVE_MIGHTY_CLEAVE, "Lame Puissante"
     battleeffect MOVE_EFFECT_HIT
@@ -14643,7 +14643,7 @@ movedata MOVE_MIGHTY_CLEAVE, "Lame Puissante"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_MIGHTY_CLEAVE, "Light from atop the\nuser's head cleaves the\ntarget. This move hits\neven if the target\nprotects itself."
+    movedescription MOVE_MIGHTY_CLEAVE, "Le lanceur pourfend\nla cible. Cette\nattaque passe outre\nles protections."
 
 movedatalongname MOVE_TACHYON_CUTTER, "LameTachyonique", "Lame Tachyonique"
     battleeffect MOVE_EFFECT_HIT_TWICE
@@ -14659,7 +14659,7 @@ movedatalongname MOVE_TACHYON_CUTTER, "LameTachyonique", "Lame Tachyonique"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_TACHYON_CUTTER, "The user attacks by\nlaunching particle\nblades at the target\ntwice in a row. This\nattack never misses."
+    movedescription MOVE_TACHYON_CUTTER, "Le lanceur inflige\ndes dégâts à la cible\ndeux fois d'affilée.\nN'échoue jamais."
 
 movedatalongname MOVE_HARD_PRESS, "PressionExtrême", "Pression Extrême"
     battleeffect MOVE_EFFECT_HIT
@@ -14675,7 +14675,7 @@ movedatalongname MOVE_HARD_PRESS, "PressionExtrême", "Pression Extrême"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_HARD_PRESS, "The target is crushed by\nthe user. The more HP\nthe target has left, the\ngreater the move's\npower."
+    movedescription MOVE_HARD_PRESS, "Le lanceur écrase la\ncible avec ses bras.\nPlus il reste de PV\nà la cible, plus la\npuissance augmente."
 
 movedata MOVE_DRAGON_CHEER, "Cri Draconique"
     battleeffect MOVE_EFFECT_HIT
@@ -14691,7 +14691,7 @@ movedata MOVE_DRAGON_CHEER, "Cri Draconique"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_DRAGON_CHEER, "Allies’ morale is raised\nwith a draconic cry,\nboosting their critical\nhit rate. This rouses\nDragon types more."
+    movedescription MOVE_DRAGON_CHEER, "Augmente leur taux\nde critiques des\nalliés. L'effet est plus\npuissant si les alliés\nont le type Dragon."
 
 movedata MOVE_ALLURING_VOICE, "Voix Envoûtante"
     battleeffect MOVE_EFFECT_HIT
@@ -14707,7 +14707,7 @@ movedata MOVE_ALLURING_VOICE, "Voix Envoûtante"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_ALLURING_VOICE, "The user attacks using\nits angelic voice. This\nalso confuses the target\nif its stats have been\nboosted during the turn."
+    movedescription MOVE_ALLURING_VOICE, "end la cible confuse\nsi ses stats ont\naugmenté pendant\nce tour."
 
 movedata MOVE_TEMPER_FLARE, "Indignition"
     battleeffect MOVE_EFFECT_HIT
@@ -14723,7 +14723,7 @@ movedata MOVE_TEMPER_FLARE, "Indignition"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_TEMPER_FLARE, "The user desperately\nattacks the target. This\nmove's power is doubled\nif the user's previous\nmove failed."
+    movedescription MOVE_TEMPER_FLARE, "Si le lanceur a utilisé\nune capacité qui a\néchoué au tour pré-\ncédent, la puissance\nest doublée."
 
 movedata MOVE_SUPERCELL_SLAM, "Volt Assaut"
     battleeffect MOVE_EFFECT_CRASH_ON_MISS
@@ -14739,7 +14739,7 @@ movedata MOVE_SUPERCELL_SLAM, "Volt Assaut"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_SUPERCELL_SLAM, "The user electrifies its\nbody and drops onto the\ntarget. If this move\nmisses, the user takes\ndamage instead."
+    movedescription MOVE_SUPERCELL_SLAM, "Le lanceur se charge\nen électricité et fond\nsur la cible. S'il\néchoue, le lanceur\nse blesse."
 
 movedata MOVE_PSYCHIC_NOISE, "Dissonance Psy"
     battleeffect MOVE_EFFECT_PREVENT_HEALING_HIT
@@ -14755,7 +14755,7 @@ movedata MOVE_PSYCHIC_NOISE, "Dissonance Psy"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_PSYCHIC_NOISE, "The user attacks with\nunpleasant sound waves.\nFor two turns, the\ntarget is prevented\nfrom recovering HP."
+    movedescription MOVE_PSYCHIC_NOISE, "Empêche la cible de\nrécupérer des PV\npendant 2 tours."
 
 movedata MOVE_UPPER_HAND, "Prio-Parade"
     battleeffect MOVE_EFFECT_HIT
@@ -14771,7 +14771,7 @@ movedata MOVE_UPPER_HAND, "Prio-Parade"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_UPPER_HAND, "The user strikes\nreactively, making the\ntarget flinch. This move\nfails if the target is\nnot readying a priority\nmove."
+    movedescription MOVE_UPPER_HAND, "Donne un coup de\npaume qui apeure la\ncible. Échoue si elle\nn'a pas utilisé une\nattaque prioritaire."
 
 movedata MOVE_MALIGNANT_CHAIN, "Chaîne Malsaine"
     battleeffect MOVE_EFFECT_BADLY_POISON_HIT
@@ -14787,7 +14787,7 @@ movedata MOVE_MALIGNANT_CHAIN, "Chaîne Malsaine"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_MALIGNANT_CHAIN, "The user pours toxins\ninto the target through\na corrosive chain. This\nmay also leave the\ntarget badly poisoned."
+    movedescription MOVE_MALIGNANT_CHAIN, "Le lanceur ligote la\ncible avec une chaîne\nfaite de poison ce qui\npeut gravement\nl'empoisonner."
 
 movedatanoname NUM_OF_MOVES
     battleeffect MOVE_EFFECT_HIT
