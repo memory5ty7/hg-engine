@@ -236,8 +236,12 @@ ITEM_SLOT *Bag_GetItemSlotForRemove(BAG_DATA *bag, u16 itemId, u16 quantity, int
 }
 
 BOOL Bag_TakeItem(BAG_DATA *bag, u16 itemId, u16 quantity, int heap_id) {
+    u8 buf[64];
+    sprintf(buf,"Bag_TakeItem: itemId=%d, quantity=%d\n", itemId, quantity);
+    debugsyscall(buf);
+
     ITEM_SLOT *slot = Bag_GetItemSlotForRemove(bag, itemId, quantity, heap_id);
-    if (slot == NULL) {
+    if (slot == NULL || itemId == ITEM_INFINITE_CANDY || itemId == ITEM_REPELLENT) {
         return FALSE;
     }
     slot->quantity -= quantity;
@@ -255,8 +259,12 @@ BOOL Bag_TakeItem(BAG_DATA *bag, u16 itemId, u16 quantity, int heap_id) {
 }
 
 BOOL Pocket_TakeItem(ITEM_SLOT *slots, u32 count, u16 itemId, u16 quantity) {
+    u8 buf[64];
+    sprintf(buf,"Pocket_TakeItem: itemId=%d, quantity=%d\n", itemId, quantity);
+    debugsyscall(buf);
+
     ITEM_SLOT *slot = Pocket_GetItemSlotForRemove(slots, count, itemId, quantity);
-    if (slot == NULL) {
+    if (slot == NULL || itemId == ITEM_INFINITE_CANDY || itemId == ITEM_REPELLENT) {
         return FALSE;
     }
     slot->quantity -= quantity;

@@ -7,31 +7,12 @@
 
 void Repel_SetCurrentType();
 
-#ifdef IMPLEMENT_REUSABLE_REPELS
 u16 ALIGN4 CurrentRepelType = 0;
 
 bool32 PlayerStepEvent_RepelCounterDecrement(SaveData *saveData, FieldSystem *fieldSystem) {
-    void *roamerSaveData = EncDataSave_GetSaveDataPtr(saveData);
-    u8* repel_addr = SaveData_GetRepelPtr(roamerSaveData);
-
-    if (*repel_addr != 0) {
-        (*repel_addr)--;
-
-        if (*repel_addr == 0) {
-            BAG_DATA *bag = Sav2_Bag_get(saveData);
-            u16 currentRepel = Repel_GetMostRecent();
-            if (Bag_HasItem(bag, currentRepel, 1, HEAPID_WORLD)) {
-                EventSet_Script(fieldSystem, 2072, NULL);
-            } else {
-                EventSet_Script(fieldSystem, 2022, NULL);
-            }
-
-            return TRUE;
-        }
-    }
-
     return FALSE;
 }
+
 
 u16 Repel_GetMostRecent() {
     Repel_SetCurrentType();
@@ -43,6 +24,7 @@ BOOL Repel_Use(u16 item_id, u32 heap_id) {
     void *roamerSaveData = EncDataSave_GetSaveDataPtr(saveData);
     u8* repel_addr = SaveData_GetRepelPtr(roamerSaveData);
 
+    /*
     BAG_DATA *bag = Sav2_Bag_get(saveData);
 
     item_id = Repel_GetMostRecent();
@@ -53,15 +35,19 @@ BOOL Repel_Use(u16 item_id, u32 heap_id) {
     }
 
     return FALSE;
+    */
+
+    u8 repel_steps = *repel_addr;
+    *repel_addr = 1 - repel_steps;
+    return TRUE;
 }
 
 u8 Repel_GetSteps(u16 item_id, u32 heap_id) {
-    return GetItemData(item_id, ITEM_PARAM_HOLD_EFFECT_PARAM, heap_id);
+    return 1;
 }
-#endif
 
 void Repel_SetCurrentType() {
-#ifdef IMPLEMENT_REUSABLE_REPELS
+    /*
     u16 item_id = 0;
     BAG_DATA *bag = Sav2_Bag_get(SaveBlock2_get());
     if (Bag_HasItem(bag, ITEM_MAX_REPEL, 1, HEAPID_MAIN_HEAP))
@@ -70,7 +56,6 @@ void Repel_SetCurrentType() {
         item_id = ITEM_SUPER_REPEL;
     else
         item_id = ITEM_REPEL;
-
-    CurrentRepelType = item_id;
-#endif
+    */
+    CurrentRepelType = ITEM_REPELLENT;
 }

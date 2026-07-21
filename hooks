@@ -512,10 +512,8 @@ arm9 form_evo_hook_1 02077224 1
 # actually setting the new mon form
 arm9 form_evo_hook_2 0207641C 0
 
-#ifdef IMPLEMENT_REUSABLE_REPELS
 0002 PlayerStepEvent_RepelCounterDecrement 0224BAE4 2
 0015 BagApp_GetRepelStepCountAddr 021F993C 3
-#endif
 
 0012 BattleContext_Main 022486B0 2
 
@@ -634,3 +632,9 @@ arm9 EncounterSlot_WildMonSlotRoll_Surfing 02247720 0
 arm9 EncounterSlot_WildMonSlotRoll_Fishing 02247764 1
 arm9 EncounterSlot_WildMonSlotRoll_RockSmash 0224779C 0
 arm9 EncounterSlot_WildMonSlotRoll_Headbutt 022477C0 0
+
+# Repel
+0015 BagApp_TryUseRepel 021FBA9C 2
+
+# Last Mon Theme
+0012 CheckTrainerMessage 02250D4C 2

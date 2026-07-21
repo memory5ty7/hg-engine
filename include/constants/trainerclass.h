@@ -130,6 +130,8 @@
 #define TRAINERCLASS_PKMN_TRAINER_DAWN_DP   126
 #define TRAINERCLASS_PKMN_TRAINER_LUCAS_PT  127
 #define TRAINERCLASS_PKMN_TRAINER_DAWN_PT   128
+#define TRAINERCLASS_MAGNATIX               129
+#define TRAINERCLASS_MEMORY5TY7             130
 
 // Only used to display attributes of phone contacts
 #define TRAINERCLASS_PHONE_MOM               200

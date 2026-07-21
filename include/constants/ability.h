@@ -333,5 +333,4 @@
 #define ABILITY_TEMP4 317
 #define ABILITY_SPICY_SPRAY 318
 
-
 #endif

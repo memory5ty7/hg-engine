@@ -1397,6 +1397,36 @@ BOOL LONG_CALL GiveMon(int heapId, void *saveData, int species, int level, int f
     }
     sys_FreeMemoryEz(pokemon);
 
+    if (species == SPECIES_CYNDAQUIL) {
+        int metLoc = 3002;
+        SetMonData(pokemon, MON_DATA_MET_LOCATION, &metLoc);
+    }
+
+    int setIVS = 0;
+    u32 rand;
+    int setIVstats[] = {-1, -1, -1}; 
+
+    while (setIVS < 3) {
+        rand = gf_rand() % 6 + MON_DATA_HP_IV;
+
+        BOOL isDuplicate = FALSE;
+        for (int i = 0; i < 3; i++) {
+            if (setIVstats[i] == rand) {
+                isDuplicate = TRUE;
+                break;
+            }
+        }
+
+        if (isDuplicate) {
+            continue; 
+        }
+
+        int ivStat = 31;
+        SetMonData(pokemon, rand, &ivStat);
+        setIVstats[setIVS] = rand;
+        setIVS++;
+    }
+
     return result;
 }
 
@@ -2178,7 +2208,7 @@ const u8 sTrainerGenders[] = {
     [TRAINERCLASS_CAMERAMAN] = TRAINER_MALE,
     [TRAINERCLASS_REPORTER] = TRAINER_FEMALE,
     [TRAINERCLASS_IDOL] = TRAINER_FEMALE,
-    [TRAINERCLASS_CHAMPION] = TRAINER_MALE,
+    [TRAINERCLASS_CHAMPION] = TRAINER_FEMALE,
     [TRAINERCLASS_ELITE_FOUR_WILL] = TRAINER_FEMALE,
     [TRAINERCLASS_ELITE_FOUR_KAREN] = TRAINER_FEMALE,
     [TRAINERCLASS_ELITE_FOUR_KOGA] = TRAINER_FEMALE,
@@ -2221,6 +2251,8 @@ const u8 sTrainerGenders[] = {
     [TRAINERCLASS_PKMN_TRAINER_DAWN_DP] = TRAINER_FEMALE,
     [TRAINERCLASS_PKMN_TRAINER_LUCAS_PT] = TRAINER_MALE,
     [TRAINERCLASS_PKMN_TRAINER_DAWN_PT] = TRAINER_FEMALE,
+    [TRAINERCLASS_MAGNATIX] = TRAINER_MALE,
+    [TRAINERCLASS_MEMORY5TY7] = TRAINER_MALE,
 };
 
 TrainerGender LONG_CALL TT_TrainerTypeSexGet(int tr_type)

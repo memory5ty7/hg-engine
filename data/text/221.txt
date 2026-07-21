@@ -1,1 +1,2 @@
-Custom item description
+A candy that is packed with energy.\nIf consumed, it raises a Pokémon’s\nlevel by one.
+An item that prevents low-level wild\nPokémon from jumping out at you.

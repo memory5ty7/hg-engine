@@ -876,3 +876,10 @@ SetRoamerData = 0x0202DAB8 | 1;
 Roamers_GetRoamMonStats = 0x0202DA54 | 1;
 Roamer_GetLocation = 0x0202D9F8 | 1;
 ApplyRoamerLocation = 0x02067914 | 1;
+
+/* Last Mon Theme */
+BattleSystem_GetBattleType = 0x0223A7E0 | 1;
+BattleSystem_GetTrainerIndex = 0x0223A9AC | 1;
+TrainerMessageWithIdPairExists = 0x020734D0 | 1;
+BattleSystem_GetParty = 0x0223A7F4 | 1;
+BattleSystem_GetTrainer = 0x0223A9F4 | 1;

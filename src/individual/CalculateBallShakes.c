@@ -60,6 +60,10 @@ u32 __attribute__((section (".init"))) CalculateBallShakesInternal(void *bw, str
     int badges, missingBadges;
     BOOL isCriticalCatch = FALSE;
 
+    return 4;
+
+    /*
+
     if (BattleTypeGet(bw) & (BATTLE_TYPE_PAL_PARK | BATTLE_TYPE_CATCHING_DEMO)) // poke park and safari zone always succeed
     {
         return 4;
@@ -627,6 +631,7 @@ u32 __attribute__((section (".init"))) CalculateBallShakesInternal(void *bw, str
 #endif
     return i & ~CRITICAL_CAPTURE_MASK; //(i == (0 | CRITICAL_CAPTURE_MASK) ? 0 : i);
 #endif
+    */
 }
 
 // fuck it be a coward and pre-calulate the values

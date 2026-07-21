@@ -4262,4 +4262,6 @@ int LONG_CALL ov12_0223ABB8(struct BattleSystem *bsys, int battlerId, int side);
 
 void LONG_CALL HandleTransform(struct BattleStruct *sp);
 
+int LONG_CALL PokeParty_GetPokeCount(const struct Party *party);
+
 #endif // BATTLE_H

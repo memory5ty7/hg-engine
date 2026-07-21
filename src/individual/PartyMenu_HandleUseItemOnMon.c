@@ -89,14 +89,20 @@ int __attribute__((section (".init"))) PartyMenu_HandleUseItemOnMon_Internal(str
 
     if (CanUseItemOnMonInParty(partyMenu->args->party, partyMenu->args->itemId, partyMenu->partyMonIndex, 0, HEAP_ID_PARTY_MENU) == TRUE) {
         if (GetItemAttr_PreloadedItemData(itemData, ITEM_PARAM_EVOLUTION)) {
-            Bag_TakeItem(partyMenu->args->bag, partyMenu->args->itemId, 1, HEAP_ID_PARTY_MENU);
+            if (partyMenu->args->itemId != ITEM_RARE_CANDY)
+            {
+                Bag_TakeItem(partyMenu->args->bag, partyMenu->args->itemId, 1, HEAP_ID_PARTY_MENU);
+            }
             struct PartyPokemon *mon = Party_GetMonByIndex(partyMenu->args->party, partyMenu->partyMonIndex);
             partyMenu->args->species = GetMonEvolution(NULL, mon, EVOCTX_ITEM_USE, partyMenu->args->itemId, &partyMenu->args->evoMethod);
             partyMenu->args->selectedAction = 8;
             sys_FreeMemoryEz(itemData);
             return PARTY_MENU_STATE_BEGIN_EXIT;
         } else {
-            Bag_TakeItem(partyMenu->args->bag, partyMenu->args->itemId, 1, HEAP_ID_PARTY_MENU);
+            if (partyMenu->args->itemId != ITEM_RARE_CANDY)
+            {
+                Bag_TakeItem(partyMenu->args->bag, partyMenu->args->itemId, 1, HEAP_ID_PARTY_MENU);
+            }
             PartyMenu_SetItemUseFuncFromBagSelection(partyMenu);
         }
     } else {
