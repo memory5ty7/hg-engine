@@ -896,3 +896,6 @@ BattleSystem_GetParty = 0x0223A7F4 | 1;
 BattleSystem_GetTrainer = 0x0223A9F4 | 1;
 ov07_02232F60 = 0x02232F60 | 1;
 ov07_02233ECC = 0x02233ECC | 1;
+
+/* Map Name Popup */
+FieldDrawMapName_Reset = 0x021EFACC | 1;

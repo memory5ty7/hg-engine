@@ -589,8 +589,22 @@ typedef struct FollowMon {
     u32 unk1C;
 } FollowMon;
 
+typedef struct FieldSystemUnkSub4 {
+    u32 unk0;
+    void *unk04; // padding for field3dObjectTaskManager
+    void *drawMapNameInfo;
+    void *unk0C; // weather related?
+    void *unk10; // padding for removed UnkStruct_ov01_021EB1E8 *unk10;
+    u32 unk14;
+    u32 unk18;
+    u32 unk1c;
+    u32 unk20;
+    void *unk24; // padding for legendCutsceneCamera
+} FieldSystemUnkSub4;
+
 typedef struct FieldSystem {
-    /*  0x0 */ u8 unk0[0x8];
+    /*  0x0 */ struct FieldSystemUnkSub0 *unk0;
+    /*  0x4 */ FieldSystemUnkSub4 *unk4;
     /*  0x8 */ void *bg_config;
     /*  0xc */ void *savedata; // SAVEDATA* savedata;
     /* 0x10 */ void *taskman; // TaskManager* taskman;

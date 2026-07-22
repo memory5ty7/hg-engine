@@ -648,3 +648,12 @@ arm9 EncounterSlot_WildMonSlotRoll_Headbutt 022477C0 0
 0012 GetPokemon_CheckIfTrainer_hook 2246704 0
 0012 GetPokemon_BallBlocked_hook 02247094 0
 0012 BattleSystem_AdjustMessageForSide 0223C558 2
+
+# **** Iridium: Added hooks to support the portable relearner. ****
+
+# pc anywhere
+0001 ClearOverworldRequestFlags 021E6880 1
+# hook from where y button is checked
+0001 SetOverworldRequestFlags_hook 021E6982 0
+# hook from near beginning of function
+0001 CheckOverworldRequestFlags_hook 021E6AF6 3
