@@ -795,6 +795,8 @@ typedef struct WildEncounterWork {
     u16 minLevel;
 } WildEncounterWork;
 
+void LONG_CALL arrayShuffle(int array[], int n);
+
 /**
  *  @brief allocate enough space for a PartyPokemon and zero it out
  *

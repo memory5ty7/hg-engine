@@ -19,7 +19,7 @@
 static int GetKeyStoneVariantFromTrainerClass(int trainerClass) {
     switch (trainerClass) {
         default:
-            return ITEM_KEY_STONE;
+            return ITEM_MEGA_RING;
             break;
     }
 }

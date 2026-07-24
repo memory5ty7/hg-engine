@@ -441,7 +441,7 @@ def writeall():
                 if "ORIGIN" in line:
                     address = int(line.split()[4][len("0x"):-1], 0x10)
                     break
-        with open(f"base/overlay/overlay_{newOverlay:04}.bin", 'wb+') as rom:
+        with open(f"base/overlay/overlay_{newOverlay:04}.bin", 'wb') as rom:
             with open(NEW_OVERLAYS[i], 'rb') as binary:
                 rom.seek(0)
                 rom.write(binary.read())
@@ -571,7 +571,7 @@ def offset():
                 rom.close()
 
 
-OVERLAYS_TO_DECOMPRESS = [1, 2, 6, 7, 8, 10, 12, 14, 15, 18, 23, 31, 61, 63, 64, 68, 94, 96, 112, 123]
+OVERLAYS_TO_DECOMPRESS = [1, 2, 6, 7, 8, 10, 12, 14, 15, 18, 23, 31, 61, 63, 64, 68, 94, 96, 101, 112, 123]
 
 
 def decompress():
