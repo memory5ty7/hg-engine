@@ -273,7 +273,7 @@ const ITEMDATA __data[] =
 
 [ITEM_POKE_BALL] =
 {
-    ITEM_PRICE(200),
+    ITEM_PRICE(20),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -1508,7 +1508,7 @@ const ITEMDATA __data[] =
 
 [ITEM_FULL_RESTORE] =
 {
-    ITEM_PRICE(3000),
+    ITEM_PRICE(200),
     .holdEffect = 0,
     .holdEffectParam = 255,
     .pluckEffect = 0,
@@ -1573,7 +1573,7 @@ const ITEMDATA __data[] =
 
 [ITEM_MAX_POTION] =
 {
-    ITEM_PRICE(2500),
+    ITEM_PRICE(100),
     .holdEffect = 0,
     .holdEffectParam = 255,
     .pluckEffect = 0,
@@ -1768,7 +1768,7 @@ const ITEMDATA __data[] =
 
 [ITEM_FULL_HEAL] =
 {
-    ITEM_PRICE(400),
+    ITEM_PRICE(50),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -5083,7 +5083,7 @@ const ITEMDATA __data[] =
 
 [ITEM_ESCAPE_ROPE] =
 {
-    ITEM_PRICE(550),
+    ITEM_PRICE(50),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -9698,7 +9698,7 @@ const ITEMDATA __data[] =
 
 [ITEM_CHERI_BERRY] =
 {
-    ITEM_PRICE(80),
+    ITEM_PRICE(20),
     .holdEffect = HOLD_EFFECT_PRZ_RESTORE,
     .holdEffectParam = 0,
     .pluckEffect = 1,
@@ -9763,7 +9763,7 @@ const ITEMDATA __data[] =
 
 [ITEM_CHESTO_BERRY] =
 {
-    ITEM_PRICE(80),
+    ITEM_PRICE(20),
     .holdEffect = HOLD_EFFECT_SLP_RESTORE,
     .holdEffectParam = 0,
     .pluckEffect = 2,
@@ -9828,7 +9828,7 @@ const ITEMDATA __data[] =
 
 [ITEM_PECHA_BERRY] =
 {
-    ITEM_PRICE(80),
+    ITEM_PRICE(20),
     .holdEffect = HOLD_EFFECT_PSN_RESTORE,
     .holdEffectParam = 0,
     .pluckEffect = 3,
@@ -9893,7 +9893,7 @@ const ITEMDATA __data[] =
 
 [ITEM_RAWST_BERRY] =
 {
-    ITEM_PRICE(80),
+    ITEM_PRICE(20),
     .holdEffect = HOLD_EFFECT_BRN_RESTORE,
     .holdEffectParam = 0,
     .pluckEffect = 4,
@@ -9958,7 +9958,7 @@ const ITEMDATA __data[] =
 
 [ITEM_ASPEAR_BERRY] =
 {
-    ITEM_PRICE(80),
+    ITEM_PRICE(20),
     .holdEffect = HOLD_EFFECT_FRZ_RESTORE,
     .holdEffectParam = 0,
     .pluckEffect = 5,
@@ -10088,7 +10088,7 @@ const ITEMDATA __data[] =
 
 [ITEM_ORAN_BERRY] =
 {
-    ITEM_PRICE(80),
+    ITEM_PRICE(20),
     .holdEffect = HOLD_EFFECT_HP_RESTORE,
     .holdEffectParam = 10,
     .pluckEffect = 7,
@@ -10153,7 +10153,7 @@ const ITEMDATA __data[] =
 
 [ITEM_PERSIM_BERRY] =
 {
-    ITEM_PRICE(80),
+    ITEM_PRICE(20),
     .holdEffect = HOLD_EFFECT_CONFUSE_RESTORE,
     .holdEffectParam = 0,
     .pluckEffect = 8,
@@ -10283,7 +10283,7 @@ const ITEMDATA __data[] =
 
 [ITEM_SITRUS_BERRY] =
 {
-    ITEM_PRICE(80),
+    ITEM_PRICE(50),
     .holdEffect = HOLD_EFFECT_HP_PCT_RESTORE,
     .holdEffectParam = 25,
     .pluckEffect = 10,
@@ -29012,10 +29012,10 @@ const ITEMDATA __data[] =
     .naturalGiftPower = 0,
     .naturalGiftType = 31,
     .prevent_toss = TRUE,
-    .selectable = TRUE,
+    .selectable = FALSE,
     .fieldPocket = POCKET_KEY_ITEMS,
     .battlePocket = BATTLE_POCKET_NONE,
-    .fieldUseFunc = 17,
+    .fieldUseFunc = 0,
     .battleUseFunc = 0,
     .partyUse = 0,
     .partyUseParam = {
@@ -29077,10 +29077,10 @@ const ITEMDATA __data[] =
     .naturalGiftPower = 0,
     .naturalGiftType = 31,
     .prevent_toss = TRUE,
-    .selectable = TRUE,
+    .selectable = FALSE,
     .fieldPocket = POCKET_KEY_ITEMS,
     .battlePocket = BATTLE_POCKET_NONE,
-    .fieldUseFunc = 18,
+    .fieldUseFunc = 0,
     .battleUseFunc = 0,
     .partyUse = 0,
     .partyUseParam = {
@@ -172783,7 +172783,7 @@ const ITEMDATA __data[] =
 
 [ITEM_HYPER_LUM_BERRY] =
 {
-    ITEM_PRICE(80),
+    ITEM_PRICE(50),
     .holdEffect = HOLD_EFFECT_STATUS_RESTORE,
     .holdEffectParam = 0,
     .pluckEffect = 9,
