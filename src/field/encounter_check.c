@@ -52,13 +52,13 @@ u8 LONG_CALL EncounterSlot_WildMonSlotRoll_Surfing(void)
 {
     u8 rnd = LCRandRange(100);
 
-    if (rnd < 60) {
+    if (rnd < 40) {
         return 0;
-    } else if (rnd >= 60 && rnd < 90) {
+    } else if (rnd >= 40 && rnd < 70) {
         return 1;
-    } else if (rnd >= 90 && rnd < 95) {
+    } else if (rnd >= 70 && rnd < 85) {
         return 2;
-    } else if (rnd >= 95 && rnd < 99) {
+    } else if (rnd >= 85 && rnd < 95) {
         return 3;
     } else {
         return 4;
@@ -106,4 +106,24 @@ u8 LONG_CALL EncounterSlot_WildMonSlotRoll_Headbutt(void)
     } else {
         return 5;
     }
+}
+
+void LONG_CALL EncSlotArray_Update_NightFishing(void *encData, u8 rodType, void *encSlots) {
+    return;
+}
+
+void LONG_CALL EncSlotArray_Update_HoennSinnohSounds(FieldSystem *fieldSystem, void *encData, void *encSlots) {
+    return;
+}
+
+void LONG_CALL EncSlots_Update_LandSwarm(FieldSystem *fieldSystem, void *encData, void *encSlotA, void *encSlotB) {
+    return;
+}
+
+void LONG_CALL EncSlots_Update_SurfingSwarm(FieldSystem *fieldSystem, void *encData, void *encSlot) {
+    return;
+}
+
+void LONG_CALL EncSlots_Update_FishingSwarm(FieldSystem *fieldSystem, u8 rodType, void *encData, void *encSlots) {
+    return;
 }
