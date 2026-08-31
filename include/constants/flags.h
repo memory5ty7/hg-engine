@@ -202,7 +202,7 @@
 #define FLAG_GOT_TM01_FROM_CHUCK                        0xBA
 #define FLAG_GOT_HM02                                   0xBB
 #define FLAG_UNK_0BC                                    0xBC
-#define FLAG_GOT_GOOD_ROD                               0xBD
+#define FLAG_NUZLOCKE_MODE                              0xBD
 #define FLAG_TRADE_OLIVINE_CITY_KRABBY_VOLTORB          0xBE
 #define FLAG_GOT_LOAN_SHUCKLE                           0xBF
 #define FLAG_UNK_0C0                                    0xC0
@@ -236,7 +236,7 @@
 #define FLAG_GOT_DRATINI_FROM_MASTER_JUST_NOW           0xDC
 #define FLAG_GOT_DRATINI_FROM_MASTER_LONG_AGO           0xDD
 #define FLAG_UNK_0DE                                    0xDE
-#define FLAG_GOT_BLACKGLASSES_FROM_DARK_CAVE_MAN        0xDF
+#define PORTA_PC_BLOCKED						        0xDF
 #define FLAG_UNK_0E0                                    0xE0
 #define FLAG_UNK_0E1                                    0xE1
 #define FLAG_UNK_0E2                                    0xE2
@@ -281,8 +281,8 @@
 #define FLAG_UNK_109                                    0x109
 #define FLAG_UNK_10A                                    0x10A
 #define FLAG_UNK_10B                                    0x10B
-#define FLAG_GOT_TYROGUE_FROM_KARATE_KING               0x10C
-#define FLAG_BEAT_KARATE_KING                           0x10D
+#define FLAG_I_AM_REDEMPTION                            0x10C
+#define FLAG_CUTSCENE_TAG                               0x10D
 #define FLAG_GOT_QUICK_CLAW_FROM_NATIONAL_PARK_WOMAN    0x10E
 #define FLAG_UNK_10F                                    0x10F
 #define FLAG_GOT_UNOWN_REPORT                           0x110

@@ -635,7 +635,9 @@ void __attribute__((section(".init"))) BattleController_BeforeMove(struct Battle
             // If the type is not typeless (Struggle)
             && (type != TYPE_TYPELESS)
             // If any active type is not the move's type
-            && (!HasType(ctx, ctx->attack_client, type))
+            && ((ctx->battlemon[ctx->attack_client].type1 != type)
+                || (ctx->battlemon[ctx->attack_client].type2 != type)
+                || ((ctx->battlemon[ctx->attack_client].type3 != TYPE_TYPELESS) && (ctx->battlemon[ctx->attack_client].type3 != type)))
             // Protean cannot activate if the client is Terastallized
             && (!ctx->battlemon[ctx->attack_client].is_currently_terastallized)
             // Protean should activate only once per switch-in if gen 9 behavior
@@ -2174,7 +2176,7 @@ BOOL BattleController_CheckAbilityFailures1(struct BattleSystem *bsys, struct Ba
             || CheckSideAbility(bsys, ctx, CHECK_ABILITY_SAME_SIDE_HP, defender, ABILITY_DAZZLING)
             || CheckSideAbility(bsys, ctx, CHECK_ABILITY_SAME_SIDE_HP, defender, ABILITY_ARMOR_TAIL))
         && CLIENT_DOES_NOT_HAVE_MOLD_BREAKER_VARIATIONS(ctx, attacker)) {
-        if (IsAttackerOnField(ctx) && ctx->clientPriority[ctx->attack_client] && CurrentMoveShouldNotBeExemptedFromPriorityBlocking(ctx, attacker, defender)) {
+        if (IsAttackerOnField(ctx) && (ctx->clientPriority[ctx->attack_client] > 0) && CurrentMoveShouldNotBeExemptedFromPriorityBlocking(ctx, attacker, defender)) {
             BattleController_ResetGeneralMoveFailureFlags(ctx, ctx->attack_client, TRUE);
             LoadBattleSubSeqScript(ctx, ARC_BATTLE_SUB_SEQ, SUB_SEQ_CANNOT_USE_MOVE);
             ctx->next_server_seq_no = CONTROLLER_COMMAND_25;
@@ -2618,7 +2620,7 @@ BOOL BattleController_CheckPsychicTerrain(struct BattleSystem *bsys UNUSED, stru
         && !ctx->futureSightHitTurn
         && ctx->terrainOverlay.numberOfTurnsLeft > 0
         && MoldBreakerIsClientGrounded(ctx, ctx->attack_client, defender)
-        && ctx->clientPriority[ctx->attack_client]
+        && ((s8)ctx->clientPriority[ctx->attack_client] > 0)
         && CurrentMoveShouldNotBeExemptedFromPriorityBlocking(ctx, ctx->attack_client, defender)) {
         BattleController_ResetGeneralMoveFailureFlags(ctx, ctx->attack_client, TRUE);
         ctx->battlerIdTemp = defender;

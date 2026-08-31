@@ -2,6 +2,8 @@
 #include "../include/script.h"
 #include "../include/types.h"
 #include "../include/battle.h"
+#include "../include/constants/flags.h"
+#include "../include/pokeheartgold.h"
 
 #define SCRIPT_NEW_CMD_MAX          256
 
@@ -25,16 +27,22 @@ BOOL Script_RunNewCmd(SCRIPTCONTEXT *ctx) {
     {
         switch (sw) {
         case 1:
-            condition = STATUS_PARALYSIS;
-            break;
-        case 2:
             condition = STATUS_BURN;
             break;
-        case 3:
+        case 2:
             condition = STATUS_FREEZE;
+            break;
+        case 3:
+            condition = STATUS_PARALYSIS;
             break;
         case 4:
             condition = STATUS_POISON;
+            break;
+        case 5:
+            condition = STATUS_BAD_POISON;
+            break;
+        case 6:
+            condition = STATUS_SLEEP_0;
             break;
         default:
             condition = GetMonData(partyMon, MON_DATA_STATUS, NULL);
@@ -68,4 +76,10 @@ BOOL ScriptUpdateRepellent(SCRIPTCONTEXT *ctx)
     *destVar = ret;
 
     return FALSE;
+}
+
+BOOL ScrCmd_WhiteOut(SCRIPTCONTEXT *ctx) {
+    ClearScriptFlag(FLAG_NUZLOCKE_MODE);
+    CallTask_Blackout(ctx->taskman);
+    return TRUE;
 }

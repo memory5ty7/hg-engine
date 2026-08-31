@@ -410,11 +410,11 @@ arm9 0204B94C FC
 0012 02246560 FC
 
 # MainMusicComboTable combo range
-arm9 080517AA 2D
-arm9 080517D4 2D
+arm9 080517AA 2E
+arm9 080517D4 2E
 
 # TrainerClassToMusicCombo table range
-arm9 08051886 20
+arm9 08051886 22
 
 # PokemonBattleMusic table range
 arm9 080518CA 0B
@@ -513,3 +513,15 @@ arm9 02000E54 24 00 00 00 04 5C 1E 02
 
 # make sure that the original antipiracy method is patched to vanilla
 arm9 02000A18 1E FF 2F E1
+
+# Fast levelup
+arm9 02081CDA 00 00 00 00 00 00
+
+# Oak's Speech
+0053 021E70DC 2C
+
+# Double Battle Music
+arm9 02051779 E0
+
+# AdAstra Starter Edit
+arm9 02044DC4 78 B5 81 B0 06 1C 31 1C 80 31 0D 68 FB F7 2C F8 04 1C 30 1C FB F7 28 F8 02 1C 28 6A 21 1C 00 68 01 23 00 90 E8 6B 24 F0 05 FE 01 21 1A F0 4E FC 00 20 01 B0 78 BD C0 46

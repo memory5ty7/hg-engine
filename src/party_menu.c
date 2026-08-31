@@ -11,6 +11,9 @@
 #include "../include/constants/item.h"
 #include "../include/constants/moves.h"
 #include "../include/constants/species.h"
+#include "../include/constants/sndseq.h"
+#include "../include/pokeheartgold.h"
+#include "../include/summary.h"
 
 extern const u16 sButtonFrameTileOffsets[];
 extern const u8 sButtonRects[][4];
@@ -56,25 +59,17 @@ u8 LONG_CALL sub_0207B0B0(struct PartyMenu *wk, u8 *buf)
             buf[count] = PARTY_MON_CONTEXT_MENU_QUIT;
             ++count;
 
-            // here is where a custom check would go.  replace the below for loop with your own checks
-
-            for (i = 0; i < MAX_MON_MOVES; ++i)
-            {
-                move = GetMonData(pp, MON_DATA_MOVE1 + i, NULL);
-                if (move == MOVE_NONE)
-                {
-                    break;
-                }
-
+            move = MOVE_FLY;
+            if (Bag_HasItem(wk->args->bag, ITEM_HM02, 1, HEAP_ID_PARTY_MENU)) {
                 fieldEffect = MoveId_GetFieldEffectId(move);
-                if (fieldEffect != 0xFF)
-                {
-                    buf[count] = fieldEffect;
-                    ++count;
-                    PartyMenu_ContextMenuAddFieldMove(wk, move, fieldMoveIndex);
-                    ++fieldMoveIndex;
-                }
+                buf[count] = fieldEffect;
+                ++count;
+                PartyMenu_ContextMenuAddFieldMove(wk, move, fieldMoveIndex);
+                ++fieldMoveIndex;
             }
+            
+            
+
         }
         else
         {

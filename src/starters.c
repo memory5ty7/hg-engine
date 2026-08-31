@@ -57,34 +57,6 @@ void LONG_CALL CreateStarter_CreateMon(struct PartyPokemon *mon, int species, in
     if (form != 0) {
         SetMonData(mon, MON_DATA_FORM, &form);
     }
-
-    int setIVS = 0;
-    u32 rand;
-    int setIVstats[] = {-1, -1, -1}; 
-
-    while (setIVS < 3) {
-        rand = gf_rand() % 6 + MON_DATA_HP_IV;
-
-        BOOL isDuplicate = FALSE;
-        for (int i = 0; i < 3; i++) {
-            if (setIVstats[i] == rand) {
-                isDuplicate = TRUE;
-                break;
-            }
-        }
-
-        if (isDuplicate) {
-            continue; 
-        }
-
-        int ivStat = 31;
-        SetMonData(mon, rand, &ivStat);
-        setIVstats[setIVS] = rand;
-        setIVS++;
-    }
-
-    int metLoc = 3002;
-    SetMonData(mon, MON_DATA_MET_LOCATION, &metLoc);
 }
 
 /**

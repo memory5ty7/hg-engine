@@ -899,3 +899,58 @@ ov07_02233ECC = 0x02233ECC | 1;
 
 /* Map Name Popup */
 FieldDrawMapName_Reset = 0x021EFACC | 1;
+
+/* Starters */
+Save_VarsFlags_SetStarter = 0x02066AE0 | 1;
+
+/* Nuzlocke Healing */
+CallTask_Blackout = 0x0205297C | 1;
+MonMoveCanRestorePP	= 0x020908CC | 1;
+MonMoveRestorePP = 0x0209091C | 1;
+
+/* Debug */
+CallTask_NamingScreen = 0x0203F6E0 | 1;
+TaskManager_GetFieldSystem = 0x0205064C | 1;
+TaskManager_GetEnvironment = 0x02050650 | 1;
+CallApplicationAsTask = 0x02050624 | 1;
+String_Compare = 0x020267A4 | 1;
+String_cstr = 0x02026AA4| 1;
+String_atoi = 0x020266FC | 1;
+Save_FriendGroup_Get = 0x0202C854 | 1;
+sub_0202C88C = 0x0202C88C | 1;
+SetName = 0x0203F650 | 1;
+NamingScreen_DeleteArgs = 0x0208311C | 1;
+GetSpeciesNameIntoArray = 0x0200BC28 | 1;
+GetSpeciesName = 0x0200BCDC | 1;
+
+CallTask_LeaveOverworld = 0x0205525C | 1;
+CallTask_RestoreOverworld = 0x020552A4 | 1;
+
+# Fast Candy
+RestoreMonHPBy = 0x02090A44 | 1;
+AddMonData = 0x0206F558 | 1;
+BoostMonMovePpUpBy = 0x0209099C | 1;
+TryModEV = 0x02090A84 | 1;
+ApplyItemEffectOnMonMood = 0x02097EF4 | 1;
+DoItemFriendshipMod	= 0x02090B68 | 1;
+
+# Tag Battle
+NPCTrainerGetBattleIntroAndMusicParam = 0x02051868 | 1;
+WildPokemonGetBattleIntroAndMusicParam = 0x02051894 | 1;
+
+# Items gen9 fix
+LoadScriptsAndMessagesParameterized = 0x02040168 | 1;
+LoadScriptsAndMessagesForCurrentMap	= 0x0204018C | 1;
+MapObject_GetSpriteID = 0x0205F25C | 1;
+
+# Fast levelup
+PartyMenu_CommitPartyMonPanelWindowsToVram_InVBlank = 0x0207D6A0 | 1;
+PartyMenu_ItemUseFunc_LevelUpLearnMovesLoop = 0x02081C50 | 1;
+PartyMenu_ItemUseFunc_HPRestoreAnimLoop = 0x02081720 | 1;
+BufferIntegerAsString = 0x0200BFCC | 1;
+UseItemOnMonInParty = 0x020908AC | 1;
+Mon_GetBoxMon = 0x02070DB0 | 1;
+PartyMenu_DrawMonStatusIcon = 0x0207EFC4 | 1;
+PartyMenu_PrintMonLevelOnWindow = 0x0207D3E4 | 1;
+sub_0207A7F4 = 0x0207A7F4 | 1;
+sub_0207D5DC = 0x0207D5DC | 1;

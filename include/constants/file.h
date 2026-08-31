@@ -46,6 +46,8 @@
 #define PRIMAL_REVERSION_ALPHA_GFX     (363)
 #define MEGA_ICON_SELECTED_GFX         (365)
 #define MEGA_ICON_BLANK_GFX            (367)
+#define BATTLE_GFX_SNOW_NCGR           369
+#define BATTLE_GFX_SNOW_NCLR           370
 
 // a028 file indexes
 #define CODE_ADDON_HIDDEN_ABILITY_LIST    7

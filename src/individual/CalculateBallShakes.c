@@ -60,6 +60,20 @@ u32 __attribute__((section (".init"))) CalculateBallShakesInternal(void *bw, str
     int badges, missingBadges;
     BOOL isCriticalCatch = FALSE;
 
+    switch (sp->battlemon[sp->defence_client].species)
+    {
+        case SPECIES_SUDOWOODO:
+        case SPECIES_HO_OH:
+            return 0;
+        case SPECIES_ELECTRODE:
+            if (sp->battlemon[sp->defence_client].form_no == 0)
+            {
+                return 0;
+            }
+        default:
+            return 4;
+    }
+
     return 4;
 
     /*

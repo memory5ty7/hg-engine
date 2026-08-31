@@ -659,3 +659,43 @@ arm9 EncounterSlot_WildMonSlotRoll_Headbutt 022477C0 0
 # AI
 0012 TrainerAI_PickCommand_hook 0225E10C 0
 0012 BattleAI_PostKOSwitchIn 02258800 2
+
+# encounters
+0002 EncSlotArray_Update_NightFishing 02246AD4 3
+0002 EncSlotArray_Update_HoennSinnohSounds 02246B00 3
+0002 EncSlots_Update_LandSwarm 02246B58 4
+0002 EncSlots_Update_SurfingSwarm 02246B9C 3
+0002 EncSlots_Update_FishingSwarm 02246BD8 4
+
+# Starters
+arm9 ScrCmd_SetStarterChoice 02043964 1
+
+# Rock Smash
+0002 FieldSystem_PerformRockSmashEncounterCheck 022470A0 2
+
+# Nuzlocke Healing
+arm9 ScrCmd_WhiteOut 020498C8 1
+arm9 HealParty 02090C1C 1
+
+# HM use by learnset
+arm9 ScrCmd_GetPartySlotWithMove 0204D3CC 1
+arm9 GetIdxOfFirstPartyMonThatCanLearnMove 020542E8 2
+
+# Debug Menu
+arm9 ScrCmd_NamePlayer 0204E71C 1
+arm9 Task_NamingScreen 0203F580 1
+arm9 ScrCmd_SetClearFlag 0204E88C 1
+arm9 ScrCmd_DebugSetVar 0204E8B8 1
+arm9 UseItemOnPokemon 020902D0 5
+
+# Disable Headbutt Encounters
+0001 Task_TryHeadbuttEncounter 02204EFC 1
+
+# Egg Cycles
+arm9 Daycare_GetEggCycleLength 0206CCD8  1
+
+# Items gen9 fix
+arm9 LoadScriptsAndMessagesByMapId 02040114 3
+
+# Fast levelup
+arm9 PartyMenu_ItemUseFunc_LevelUp 02081A74 1

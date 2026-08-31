@@ -431,7 +431,7 @@
     | WEATHER_STRONG_WINDS)
 
 // weather that has indicators on the bottom screen
-#define WEATHER_ANY_ICONS (WEATHER_RAIN_ANY | WEATHER_SANDSTORM_ANY | WEATHER_SUNNY_ANY | WEATHER_HAIL_ANY | FIELD_STATUS_FOG)
+#define WEATHER_ANY_ICONS (WEATHER_RAIN_ANY | WEATHER_SANDSTORM_ANY | WEATHER_SUNNY_ANY | WEATHER_HAIL_ANY | FIELD_STATUS_FOG | WEATHER_SNOW_ANY)
 
 #define FIELD_CONDITION_UPROAR_SHIFT     8
 #define FIELD_CONDITION_GRAVITY_SHIFT    12
@@ -4296,7 +4296,6 @@ int LONG_CALL ov12_0223ABB8(struct BattleSystem *bsys, int battlerId, int side);
 
 void LONG_CALL HandleTransform(struct BattleStruct *sp);
 
-int LONG_CALL PokeParty_GetPokeCount(const struct Party *party);
 struct BattleSetup LONG_CALL *BattleSetup_New(u32 heapID, u32 battleFlags);
 void LONG_CALL BattleSetup_InitFromFieldSystem(BattleSetup *setup, FieldSystem *fieldSystem);
 void LONG_CALL ov02_02247F30(FieldSystem *fieldSystem, u16 mon, u8 level, BOOL shiny, BattleSetup *setup);

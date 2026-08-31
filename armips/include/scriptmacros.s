@@ -10382,6 +10382,22 @@ PHOTO_BLUE                                  equ 92
 .byte arg1
 .endmacro
 
+.macro prompt_number,arg0
+.halfword 297
+.halfword arg0
+.endmacro
+
+.macro setClearFlag,arg0
+.halfword 305
+.halfword arg0
+.endmacro
+
+.macro debugSetVar,arg0,arg1
+.halfword 306
+.halfword arg0
+.halfword arg1
+.endmacro
+
 // Convenience macros
 
 // Generic compare macro which attempts to deduce argument types based on their values

@@ -757,15 +757,13 @@ _09F5:
 scr_seq_0003_010:
     scrcmd_609
     lockall
-    play_se SEQ_SE_DP_PC_ON
     call _0A18
-    buffer_players_name 0
-    npc_msg 33
     touchscreen_menu_hide
     goto _0A2E
 
 _0A18:
     goto_if_set 0x18F, _skipPCOnOff
+    play_se SEQ_SE_DP_PC_ON
     scrcmd_500 90
     scrcmd_501 90
     scrcmd_308 90
@@ -782,10 +780,11 @@ _0A2E:
     buffer_players_name 0
     npc_msg 34
     menu_init_std_gmm 1, 1, 0, 1, VAR_SPECIAL_x8006
-    call_if_unset FLAG_SYS_MET_BILL, _0A78
-    call_if_set FLAG_SYS_MET_BILL, _0A82
-    menu_item_add 60, 255, 6
-    menu_item_add 63, 255, 1
+    call_if_unset 0xDF, _PCAvailable
+    menu_item_add 60, 255, 6 // Heal Pokémon
+    menu_item_add 86, 255, 11 // Status Pokémon
+    menu_item_add 71, 255, 8 // Move Relearner
+    menu_item_add 93, 255, 7 // Debug
     goto _0AD1
     .byte 0x02, 0x00
 _0A78:
@@ -796,6 +795,11 @@ _0A82:
     menu_item_add 62, 255, 0
     return
 
+_PCAvailable:
+    call_if_unset FLAG_SYS_MET_BILL, _0A78 // Someone's PC (1)
+    call_if_set FLAG_SYS_MET_BILL, _0A82 // Bill's PC (1)
+    return
+
 _0A8C:
     menu_item_add 64, 255, 2
     menu_item_add 66, 255, 3
@@ -803,16 +807,22 @@ _0A8C:
     switch VAR_SPECIAL_x8006
     case 0, _0B01
     case 1, _0C23
-    case 2, _0DBA
+    case 11, _statusPokemon
+    case 6, _healPokemon
+    case 8, _moveRelearner
+    case 7, _debug
     goto _0DF0
 
 _0AD1:
-    menu_item_add 66, 255, 2
+    menu_item_add 66, 255, 2 // Switch Off
     menu_exec
     switch VAR_SPECIAL_x8006
     case 0, _0B01
     case 1, _0C23
+    case 11, _statusPokemon
     case 6, _healPokemon
+    case 8, _moveRelearner
+    case 7, _debug
     goto _0DF0
 
 _healPokemon:
@@ -824,6 +834,176 @@ _healPokemon:
     heal_party
     fade_screen 6, 1, 1, RGB_BLACK
     wait_fade
+    goto _0A2E
+
+_statusPokemon:
+    menu_init_std_gmm 1, 1, 0, 1, VAR_SPECIAL_x8006
+    menu_item_add 87, 255, 1
+    menu_item_add 88, 255, 2
+    menu_item_add 89, 255, 3
+    menu_item_add 90, 255, 4
+    menu_item_add 91, 255, 5
+    menu_item_add 92, 255, 6
+    menu_item_add 94, 255, 10
+    menu_exec
+    compare VAR_SPECIAL_x8006, 10
+    goto_if_ne statusMain
+
+    goto _0DF0 
+
+statusMain:
+    setflag 0x18F
+    closemsg
+    playfanfare SEQ_SE_DP_SELECT
+	fade_screen 6, 1, 0, RGB_BLACK
+	wait_fade 
+	party_select_ui 
+	getselectedpartyslot VAR_SPECIAL_x8005
+	returnscreen
+	fade_screen 6, 1, 1, RGB_BLACK
+	wait_fade 
+
+    switch VAR_SPECIAL_x8006
+    case 1, burn_mon
+    case 2, freeze_mon
+    case 3, paralyze_mon
+    case 4, poison_mon
+    case 5, toxic_mon
+    case 6, sleep_mon
+    goto _0A2E
+
+burn_mon:
+    DummyTextTrap 1, VAR_SPECIAL_x8005
+    goto _0A2E
+
+freeze_mon:
+    DummyTextTrap 2, VAR_SPECIAL_x8005
+    goto _0A2E
+
+paralyze_mon:
+    DummyTextTrap 3, VAR_SPECIAL_x8005
+    goto _0A2E
+
+poison_mon:
+    DummyTextTrap 4, VAR_SPECIAL_x8005
+    goto _0A2E
+    
+toxic_mon:
+    DummyTextTrap 5, VAR_SPECIAL_x8005
+    goto _0A2E
+
+sleep_mon:
+    DummyTextTrap 6, VAR_SPECIAL_x8005
+    goto _0A2E
+
+_debug:
+    npc_msg 96
+    menu_init_std_gmm 1, 1, 0, 1, VAR_SPECIAL_x8006
+    menu_item_add 97, 255, 1 // Give Pokémon
+    menu_item_add 98, 255, 2 // Give Item
+    menu_item_add 99, 255, 3 // Toggle Flag
+    menu_item_add 100, 255, 4 // Set Var
+    menu_item_add 94, 255, 10 // Cancel
+    menu_exec
+    compare VAR_SPECIAL_x8006, 1
+    goto_if_eq _giveMon
+    compare VAR_SPECIAL_x8006, 2
+    goto_if_eq _giveItem
+    compare VAR_SPECIAL_x8006, 3
+    goto_if_eq _toggleFlag
+    compare VAR_SPECIAL_x8006, 4
+    goto_if_eq _setVar
+    goto _0DF0 
+
+_giveMon:
+    closemsg
+	fade_screen 6, 1, 0, RGB_BLACK
+	wait_fade
+    prompt_number VAR_SPECIAL_x8004
+    prompt_number VAR_SPECIAL_x8005
+    prompt_number VAR_SPECIAL_x8006
+	fade_screen 6, 1, 1, RGB_BLACK
+	wait_fade
+    compare VAR_SPECIAL_x8004, 0
+    goto_if_eq wrongInput
+    compare VAR_SPECIAL_x8005, 0
+    goto_if_eq wrongInput
+    GivePokemon VAR_SPECIAL_x8004,VAR_SPECIAL_x8005,0,VAR_SPECIAL_x8006,0,VAR_SPECIAL_RESULT
+    goto _0A2E
+
+_giveItem:
+    closemsg
+	fade_screen 6, 1, 0, RGB_BLACK
+	wait_fade
+    prompt_number VAR_SPECIAL_x8004
+    prompt_number VAR_SPECIAL_x8005
+	fade_screen 6, 1, 1, RGB_BLACK
+	wait_fade
+    compare VAR_SPECIAL_x8004, 0
+    goto_if_eq wrongInput
+    compare VAR_SPECIAL_x8005, 0
+    goto_if_eq wrongInput
+    giveitem VAR_SPECIAL_x8004, VAR_SPECIAL_x8005, VAR_SPECIAL_RESULT
+    goto _0A2E
+
+_toggleFlag:
+    closemsg
+	fade_screen 6, 1, 0, RGB_BLACK
+	wait_fade
+    prompt_number VAR_SPECIAL_x8004
+	fade_screen 6, 1, 1, RGB_BLACK
+	wait_fade
+    compare VAR_SPECIAL_x8004, 0
+    goto_if_eq wrongInput
+    setClearFlag VAR_SPECIAL_x8004
+    goto _0A2E  
+
+_setVar:
+    closemsg
+	fade_screen 6, 1, 0, RGB_BLACK
+	wait_fade
+    prompt_number VAR_SPECIAL_x8004
+    prompt_number VAR_SPECIAL_x8005
+	fade_screen 6, 1, 1, RGB_BLACK
+	wait_fade
+    compare VAR_SPECIAL_x8004, 0
+    goto_if_eq wrongInput
+    compare VAR_SPECIAL_x8005, 0
+    goto_if_eq wrongInput
+    debugSetVar VAR_SPECIAL_x8004, VAR_SPECIAL_x8005
+    goto _0A2E 
+
+wrongInput:
+    goto _0A2E
+
+_moveRelearner:
+    closemsg
+	fade_screen 6, 1, 0, RGB_BLACK
+	wait_fade 
+	party_select_ui 
+	getselectedpartyslot VAR_SPECIAL_x8005
+	returnscreen 
+	fade_screen 6, 1, 1, RGB_BLACK
+	wait_fade 
+
+    compare_var_to_value VAR_SPECIAL_x8005, 255
+    goto_if_eq _0A2E
+
+	getpartypokemonid VAR_SPECIAL_x8005, VAR_SPECIAL_RESULT
+    compare_var_to_value VAR_SPECIAL_RESULT, 0
+    goto_if_eq _0A2E
+
+	scrcmd_466 VAR_SPECIAL_RESULT, VAR_SPECIAL_x8005
+    compare_var_to_value VAR_SPECIAL_RESULT, 0
+    goto_if_eq _0A2E
+
+	fade_screen 6, 1, 0, RGB_BLACK
+	wait_fade 
+	move_relearner_init VAR_SPECIAL_x8005
+	move_relearner_get_result VAR_SPECIAL_RESULT
+	returnscreen 
+	fade_screen 6, 1, 1, RGB_BLACK
+	wait_fade 
     goto _0A2E
 
 _0B01:
@@ -1014,6 +1194,7 @@ _0DE7:
 _0DF0:
     closemsg
     play_se SEQ_SE_DP_PC_LOGOFF
+    call _checkLanceRoom
     goto_if_set 0x18F, _skipPCOff
     call _0A23
 _skipPCOff:
@@ -1021,6 +1202,16 @@ _skipPCOff:
     touchscreen_menu_show
     releaseall
     end
+
+_checkLanceRoom:
+    GetCurrentHeaderID VAR_SPECIAL_RESULT
+    CompareVarValue VAR_SPECIAL_RESULT, 305
+    goto_if_eq _setSkipPCFlag
+    return
+
+_setSkipPCFlag:
+    setflag 0x18F
+    return
 
 _0E02:
     call _0A18
