@@ -52,13 +52,13 @@ u8 LONG_CALL EncounterSlot_WildMonSlotRoll_Surfing(void)
 {
     u8 rnd = LCRandRange(100);
 
-    if (rnd < 40) {
+    if (rnd < 20) {
         return 0;
-    } else if (rnd >= 40 && rnd < 70) {
+    } else if (rnd >= 20 && rnd < 40) {
         return 1;
-    } else if (rnd >= 70 && rnd < 85) {
+    } else if (rnd >= 40 && rnd < 60) {
         return 2;
-    } else if (rnd >= 85 && rnd < 95) {
+    } else if (rnd >= 60 && rnd < 80) {
         return 3;
     } else {
         return 4;
@@ -69,13 +69,13 @@ u8 LONG_CALL EncounterSlot_WildMonSlotRoll_Fishing(int rodType UNUSED)
 {
     u8 rnd = LCRandRange(100);
 
-    if (rnd < 40) {
+    if (rnd < 20) {
         return 0;
-    } else if (rnd < 70) {
+    } else if (rnd < 40) {
         return 1;
-    } else if (rnd < 85) {
+    } else if (rnd < 60) {
         return 2;
-    } else if (rnd < 95) {
+    } else if (rnd < 80) {
         return 3;
     } else {
         return 4;

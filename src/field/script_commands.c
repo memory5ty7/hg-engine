@@ -9,14 +9,10 @@
 #include "../../include/rtc.h"
 #include "../../include/save.h"
 #include "../../include/script.h"
-#include "../../include/constants/ability.h"
-#include "../../include/constants/file.h"
-#include "../../include/constants/game.h"
-#include "../../include/constants/hold_item_effects.h"
 #include "../../include/constants/item.h"
 #include "../../include/constants/moves.h"
 #include "../../include/constants/species.h"
-#include "../../include/constants/weather_numbers.h"
+#include "../../include/constants/flags.h"
 #include "../../include/constants/generated/learnsets.h"
 
 void SetupAndStartTotemBattle(TaskManager *taskManager, u16 species, u8 level, u32 *winFlag, BOOL shiny);
@@ -93,7 +89,19 @@ BOOL ScrCmd_GiveTogepiEgg(SCRIPTCONTEXT *ctx) {
     togepi = AllocMonZeroed(11);
     ZeroMonData(togepi);
 
-    SetEggStats(togepi, SPECIES_TOGEPI, 1, profile, 3, sub_02017FE4(1, 13));
+    u16 species;
+    if (CheckScriptFlag(FLAG_I_AM_REDEMPTION))
+    {
+        species = SPECIES_PAWMI;
+    }
+    else
+    {
+        species = SPECIES_TOGEDEMARU;
+    }
+
+    SetEggStats(togepi, species, 1, profile, 3, sub_02017FE4(1, 13));
+
+    
 
     //SetMonData(togepi, MON_DATA_FORM, &form); // add form capability
 
@@ -110,18 +118,18 @@ BOOL ScrCmd_GiveTogepiEgg(SCRIPTCONTEXT *ctx) {
         i = 3;
     }
 
-    moveData = MOVE_EXTRASENSORY; // add extrasensory to the togepi
-    SetMonData(togepi, MON_DATA_MOVE1 + i, &moveData);
+    //moveData = MOVE_EXTRASENSORY; // add extrasensory to the togepi
+    //SetMonData(togepi, MON_DATA_MOVE1 + i, &moveData);
 
-    pp = GetMonData(togepi, MON_DATA_MOVE1MAXPP + i, 0);
-    SetMonData(togepi, MON_DATA_MOVE1PP + i, &pp);
+    //pp = GetMonData(togepi, MON_DATA_MOVE1MAXPP + i, 0);
+    //SetMonData(togepi, MON_DATA_MOVE1PP + i, &pp);
 
-    if (CheckScriptFlag(HIDDEN_ABILITIES_FLAG) == 1) // add HA capability
-    {
-        SET_MON_HIDDEN_ABILITY_BIT(togepi)
-        ResetPartyPokemonAbility(togepi);
-        ClearScriptFlag(HIDDEN_ABILITIES_FLAG);
-    }
+    //if (CheckScriptFlag(HIDDEN_ABILITIES_FLAG) == 1) // add HA capability
+    //{
+    //    SET_MON_HIDDEN_ABILITY_BIT(togepi)
+    //    ResetPartyPokemonAbility(togepi);
+    //    ClearScriptFlag(HIDDEN_ABILITIES_FLAG);
+    //}
 
 
     PokeParty_Add(party, togepi);
@@ -318,24 +326,67 @@ BOOL ScrCmd_DaycareSanitizeMon(SCRIPTCONTEXT *ctx) {
     return FALSE;
 }
 
-BOOL ScrCmd_WildBattle(SCRIPTCONTEXT *ctx) {
+void LONG_CALL Save_VarsFlags_SetStarter(void *state, u16 starter);
+
+BOOL ScrCmd_SetStarterChoice(SCRIPTCONTEXT *ctx) {
+    u16 choice = ScriptGetVar(ctx);
+    Save_VarsFlags_SetStarter(SaveData_GetEventPtr(ctx->fsys->savedata), choice);
+
+    void * party = SaveData_GetPlayerPartyPtr(ctx->fsys->savedata);
+    struct PartyPokemon *partyMon = Party_GetMonByIndex(party, 0);
+
+    int setIVS = 0;
+    u32 rand;
+    int setIVstats[] = {-1, -1, -1}; 
+
+    while (setIVS < 3) {
+        rand = gf_rand() % 6 + MON_DATA_HP_IV;
+
+        BOOL isDuplicate = FALSE;
+        for (int i = 0; i < 3; i++) {
+            if (setIVstats[i] == rand) {
+                isDuplicate = TRUE;
+                break;
+            }
+        }
+
+        if (isDuplicate) {
+            continue; 
+        }
+
+        int ivStat = 31;
+        SetMonData(partyMon, rand, &ivStat);
+        setIVstats[setIVS] = rand;
+        setIVS++;
+    }
+
+    int location = 3002;
+    SetMonData(partyMon, MON_DATA_MET_LOCATION, &location);
+
+    return FALSE;
+}
+
+BOOL FieldSystem_PerformRockSmashEncounterCheck(FieldSystem *fieldSystem, BattleSetup **pBattleSetup) {
+    return FALSE;
+}
+
+BOOL ScrCmd_WildBattle(SCRIPTCONTEXT *ctx)
+{
     u32 *winFlag = FieldSysGetAttrAddr(ctx->fsys, 24); // SCRIPTENV_BATTLE_WIN_FLAG = 24
     u16 species = ScriptGetVar(ctx);
     u16 level = ScriptGetVar(ctx);
     u8 shiny = ScriptReadByte(ctx);
     // Set this var to 1 in DSPRE just prior to starting a forced wild battle to turn it into a Totem battle.
-    if (GetScriptVar(0x800B))
-    {
+    if (GetScriptVar(0x800B)) {
         SetupAndStartTotemBattle(ctx->taskman, species, level, winFlag, shiny);
-    }
-    else
-    {
+    } else {
         SetupAndStartWildBattle(ctx->taskman, species, level, winFlag, TRUE, shiny);
     }
     return TRUE;
 }
 
-void SetupAndStartTotemBattle(TaskManager *taskManager, u16 species, u8 level, u32 *winFlag, BOOL shiny) {
+void SetupAndStartTotemBattle(TaskManager *taskManager, u16 species, u8 level, u32 *winFlag, BOOL shiny)
+{
     FieldSystem *fieldSystem = taskManager->fieldSystem;
     struct BattleSetup *setup = BattleSetup_New(HEAPID_WORLD, BATTLE_TYPE_TOTEM);
     BattleSetup_InitFromFieldSystem(setup, fieldSystem);
@@ -344,8 +395,7 @@ void SetupAndStartTotemBattle(TaskManager *taskManager, u16 species, u8 level, u
     // Uncomment this line if you want to manually adjust specific elements according to Totem Species.
     // struct PartyPokemon *totem = Party_GetMonByIndex(setup->party[BATTLER_ENEMY], 0);
 
-    switch (species)
-    {
+    switch (species) {
         // You can use the case below as a template:
         /*case SPECIES_GYARADOS:
             // Ability:
@@ -406,7 +456,8 @@ void SetupAndStartTotemBattle(TaskManager *taskManager, u16 species, u8 level, u
             SetMonData(totem, MON_DATA_PERSONALITY, &pid_1);
             break;*/
 
-        default: break;
+    default:
+        break;
     }
 
     GameStats_Inc(Save_GameStats_Get(fieldSystem->savedata), GAME_STAT_WILD_ENCOUNTERS);

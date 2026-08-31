@@ -21,7 +21,7 @@
     { .tag = NEW_NPC_TAG_START + num, .gfx = NEW_NPC_GFX_START + num, .callback_params = 0 },
 
 // adjust this depending on the amount of new npc's that you have added
-#define MON_OVERWORLD_GFX_START (297)
+#define MON_OVERWORLD_GFX_START (299)
 
 #define MON_FOLLOWER_ENTRY(species, cbparams) \
     { .tag = MON_OVERWORLD_TAG_START + species, .gfx = MON_OVERWORLD_GFX_START + species, .callback_params = cbparams },
@@ -1690,6 +1690,9 @@ struct OVERWORLD_TAG gOWTagToFileNum[] = // skip down a bit to see the parts tha
         MON_FOLLOWER_ENTRY(SPECIES_IRON_CROWN, OVERWORLD_SIZE_SMALL)
         MON_FOLLOWER_ENTRY(SPECIES_TERAPAGOS, OVERWORLD_SIZE_SMALL)
         MON_FOLLOWER_ENTRY(SPECIES_PECHARUNT, OVERWORLD_SIZE_SMALL)
+
+        NEW_NPC_ENTRY(0) // Memory5ty7
+        NEW_NPC_ENTRY(1) // Magnatix
 
         { 0xFFFF, 0, 0 },
     };

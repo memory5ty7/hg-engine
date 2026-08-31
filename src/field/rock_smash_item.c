@@ -102,6 +102,9 @@ BOOL LONG_CALL CheckRockSmashItemDrop(FieldSystem *fieldSystem, RockSmashItemChe
 int LONG_CALL DrawRockSmashIdx(FieldSystem *fieldSystem);
 
 BOOL LONG_CALL CheckRockSmashItemDrop(FieldSystem *fieldSystem, RockSmashItemCheckWork *env) {
+    return FALSE;
+   
+    /*
     int ability;
     RockSmashMapData data;
 
@@ -165,7 +168,7 @@ BOOL LONG_CALL CheckRockSmashItemDrop(FieldSystem *fieldSystem, RockSmashItemChe
         env->rockSmash = data;
         return TRUE;
     }
-    return FALSE;
+    return FALSE;*/
 }
 
 // Exposing this lets us mess with the odds and total number of items in the rock smash tables.
