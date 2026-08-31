@@ -1358,31 +1358,33 @@ u32 LONG_CALL GetAdjustedMoveTypeBasics(struct BattleStruct *sp, u32 move, u32 a
     {
         typeLocal = TYPE_NORMAL;
     }
-    else if (sp->moveTbl[move].type == TYPE_NORMAL && MoveIsAffectedByNormalizeVariants(sp->current_move_index))
+    else if (sp->moveTbl[move].type == TYPE_NORMAL && MoveIsAffectedByNormalizeVariants(sp->current_move_index)
+    && (ability == ABILITY_PIXILATE
+        || ability == ABILITY_REFRIGERATE
+        || ability == ABILITY_AERILATE
+        || ability == ABILITY_GALVANIZE
+        || ability == ABILITY_DRAGONIZE))
     {
-        if (ability == ABILITY_PIXILATE)
+        switch(ability)
         {
-            typeLocal = TYPE_FAIRY;
-        }
-        else if (ability == ABILITY_REFRIGERATE)
-        {
-            typeLocal = TYPE_ICE;
-        }
-        else if (ability == ABILITY_AERILATE)
-        {
-            typeLocal = TYPE_FLYING;
-        }
-        else if (ability == ABILITY_GALVANIZE)
-        {
-            typeLocal = TYPE_ELECTRIC;
-        }
-        if (ability == ABILITY_DRAGONIZE)
-        {
-            typeLocal = TYPE_DRAGON;
-        }
-        else // needs to be for sure initialized
-        {
-            typeLocal = TYPE_NORMAL;
+            case ABILITY_PIXILATE:
+                typeLocal = TYPE_FAIRY;
+                break;
+            case ABILITY_REFRIGERATE:
+                typeLocal = TYPE_ICE;
+                break;
+            case ABILITY_AERILATE:
+                typeLocal = TYPE_FLYING;
+                break;
+            case ABILITY_GALVANIZE:
+                typeLocal = TYPE_ELECTRIC;
+                break;
+            case ABILITY_DRAGONIZE:
+                typeLocal = TYPE_DRAGON;
+                break;
+            default:
+                typeLocal = TYPE_NORMAL;
+                break;
         }
     }
     else if (type)

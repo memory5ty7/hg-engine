@@ -2245,6 +2245,15 @@ BOOL BtlCmd_TryRestoreStatusOnSwitch(struct BattleSystem *bw, struct BattleStruc
             SetMonData(pp, MON_DATA_FORM, (u8 *)&form_no);
         }
 
+        if ((sp->battlemon[client_no].species == SPECIES_AEGISLASH
+            && sp->battlemon[client_no].ability == ABILITY_STANCE_CHANGE)
+            && (sp->battlemon[client_no].form_no != 0)) {
+            u32 form_no = 0;
+            sp->battlemon[client_no].form_no = form_no;
+            BattleFormChange(sp->battlerIdTemp, sp->battlemon[sp->battlerIdTemp].form_no, bw, sp, 1);
+            SetMonData(pp, MON_DATA_FORM, (u8 *)&form_no);
+        }
+
         // natural cure is checked for here but handled by SwitchAbilityStatusRecoverCheck/the battle scripts this command is used in
         if ((sp->battlemon[client_no].ability != ABILITY_NATURAL_CURE)
             && (CheckStatusRecoverFromAbilityOnSwitchWrapper(sp, ability, condition) == FALSE)) {

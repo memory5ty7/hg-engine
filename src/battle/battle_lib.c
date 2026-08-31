@@ -76,10 +76,10 @@ BOOL CheckTrainerMessage(void *bsys, struct BattleStruct *ctx) {
                     case TRAINERCLASS_LEADER_CHUCK:
                     case TRAINERCLASS_LEADER_PRYCE:
                     case TRAINERCLASS_LEADER_CLAIR:
-                    case TRAINERCLASS_ELITE_FOUR_WILL:
-                    case TRAINERCLASS_ELITE_FOUR_KOGA:
-                    case TRAINERCLASS_ELITE_FOUR_BRUNO:
-                    case TRAINERCLASS_ELITE_FOUR_KAREN:
+                    //case TRAINERCLASS_ELITE_FOUR_WILL:
+                    //case TRAINERCLASS_ELITE_FOUR_KOGA:
+                    //case TRAINERCLASS_ELITE_FOUR_BRUNO:
+                    //case TRAINERCLASS_ELITE_FOUR_KAREN:
                     case TRAINERCLASS_CHAMPION:
                     case TRAINERCLASS_LEADER_BROCK:
                     case TRAINERCLASS_LEADER_MISTY:

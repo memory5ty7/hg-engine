@@ -744,6 +744,19 @@ void CalcDamageOverall(void *bw, struct BattleStruct *sp)
             }
         }
 
+        if ((sp->rawSpeedNonRNGClientOrder[i] == defender)
+            && MoldBreakerAbilityCheck(sp, attacker, defender, ABILITY_AURA_GUARD)) {
+            // 6.9.6 Aura Guard (contact moves)
+            if (IsContactBeingMade(GetBattlerAbility(sp, sp->attack_client), attackerItemHeldEffect, HeldItemHoldEffectGet(sp, sp->defence_client), sp->current_move_index, sp->moveTbl[sp->current_move_index].flag)) {
+                finalModifier = QMul_RoundUp(finalModifier, UQ412__0_5);
+#ifdef DEBUG_DAMAGE_CALC
+                debug_printf("\n=================\n");
+                debug_printf("[CalcBaseDamage] 6.9.6 Aura Guard (contact moves)\n");
+                debug_printf("[CalcBaseDamage] finalModifier: %d\n", finalModifier);
+#endif
+            }
+        }
+
         // 6.9.5 Multiscale / Shadow Shield
         if ((sp->rawSpeedNonRNGClientOrder[i] == defender)
             && ((MoldBreakerAbilityCheck(sp, attacker, defender, ABILITY_MULTISCALE))

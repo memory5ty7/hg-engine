@@ -206,6 +206,8 @@ void Sub_PokeIconResourceLoad(struct BI_PARAM *bip)
             nclr = BATTLE_GFX_SANDSTORM_NCLR;
         } else if (bip->bw->sp->field_condition & WEATHER_HAIL_ANY) {
             nclr = BATTLE_GFX_HAIL_NCLR;
+        } else if (bip->bw->sp->field_condition & WEATHER_SNOW_ANY) {
+            nclr = BATTLE_GFX_SNOW_NCLR;
         } else // fog
         {
             nclr = BATTLE_GFX_FOG_NCLR;
@@ -333,6 +335,8 @@ void LoadMegaIcon(struct BI_PARAM *bip)
             ncgr = BATTLE_GFX_SANDSTORM_NCGR;
         } else if (bip->bw->sp->field_condition & WEATHER_HAIL_ANY) {
             ncgr = BATTLE_GFX_HAIL_NCGR;
+        } else if (bip->bw->sp->field_condition & WEATHER_SNOW_ANY) {
+            ncgr = BATTLE_GFX_SNOW_NCGR;
         } else // fog
         {
             ncgr = BATTLE_GFX_FOG_NCGR;
