@@ -95,6 +95,10 @@ int LONG_CALL BattleAI_CalcBaseDamage(void *bw, struct BattleStruct *sp, int mov
     case MOVE_HEAVY_SLAM:
     case MOVE_HEAT_CRASH:
         switch (attacker->weight / defender->weight) {
+        case 0:
+        case 1:
+            movepower = 40;
+            break;
         case 2:
             movepower = 60;
             break;
@@ -107,9 +111,9 @@ int LONG_CALL BattleAI_CalcBaseDamage(void *bw, struct BattleStruct *sp, int mov
         case 5:
             movepower = 120;
             break;
-            // less than 2
+            // greater than 5
         default:
-            movepower = 40;
+            movepower = 120;
             break;
         }
         break;
@@ -1156,7 +1160,7 @@ int LONG_CALL BattleAI_CalcDamageInternal(void *bw, struct BattleStruct *sp, int
     movetype = BattleAI_GetDynamicMoveType(bw, sp, attacker, moveno);
 
     BOOL moveCanHit = TRUE;
-    if (defender->effect_of_moves & MOVE_EFFECT_FLAG_SEMI_INVULNERABLE) {
+    /*if (defender->effect_of_moves & MOVE_EFFECT_FLAG_SEMI_INVULNERABLE) {
         moveCanHit = FALSE;
         switch (sp->current_move_index) {
         case MOVE_SURF:
@@ -1192,7 +1196,7 @@ int LONG_CALL BattleAI_CalcDamageInternal(void *bw, struct BattleStruct *sp, int
         && attacker->ability != ABILITY_NO_GUARD
         && (move.priority > 0 || attacker->speed > defender->speed)) {
         return 0;
-    }
+    }*/
 
     if (!attackerHasMoldBreaker) {
         switch (defender->ability) {
@@ -1627,6 +1631,13 @@ int LONG_CALL BattleAI_CalcDamageInternal(void *bw, struct BattleStruct *sp, int
         // 6.9.10 Fluffy (Fire-type moves)
         if (type == TYPE_FIRE) {
             finalModifier = QMul_RoundUp(finalModifier, UQ412__2_0);
+        }
+    }
+
+    if (!attackerHasMoldBreaker && defender->ability == ABILITY_AURA_GUARD) {
+        // 6.9.6 Aura Guard (contact moves)
+        if (IsContactBeingMade(attacker->ability, attacker->item_held_effect, defender->item_held_effect, moveno, sp->moveTbl[moveno].flag)) {
+            finalModifier = QMul_RoundUp(finalModifier, UQ412__0_5);
         }
     }
 

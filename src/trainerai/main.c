@@ -57,7 +57,7 @@ enum AIActionChoice __attribute__((section(".init"))) TrainerAI_Main(struct Batt
     struct AIContext *ai2 = &aiContextOp2;
     enum AIActionChoice result = AI_ENEMY_ATTACK_1;
 
-    int highestScoredMove = 0;
+    int highestScoredMove = -10000;
     int highestScoredMoveAcross = 0;
     int moveScores[4][4] = { 0 }; // account for BATTLER_OPPONENT (0), attacker (1), BATTLER_ACROSS(2), BATTLER_ALLY(3),  4 moves each or
                                   // account for BATTLER_OPPONENT (2), attacker (3), BATTLER_ACROSS(0), BATTLER_ALLY(1),  4 moves each
@@ -140,12 +140,30 @@ enum AIActionChoice __attribute__((section(".init"))) TrainerAI_Main(struct Batt
     }
     ctx->aiWorkTable.ai_dir_select_client[attacker] = target;
 
+    u8 buf[64];
 #ifdef BATTLE_DEBUG_OUTPUT
+    sprintf(buf, "-------\n");
+    debugsyscall(buf);
+
     u8 j = 0;
     for (int k = 0; k < 4; k++) {
         for (u8 i = 0; i < 4; i++) // movesScore
         {
             debug_printf("%4d/%4d  ", moveScores[k][i], damages[k][i]);
+
+            if (moveScores[k][i] != 0)
+            {
+                if (damages[k][i] != 0)
+                {
+                    sprintf(buf, "Move %d : %d (Damage: %d)\n", i + 1, moveScores[k][i] - 1000, damages[k][i]);
+                    debugsyscall(buf);
+                } else {
+                    sprintf(buf, "Move %d : %d\n", i + 1, moveScores[k][i] - 1000);
+                    debugsyscall(buf);
+                }
+
+            }
+
         }
 
         if (targets[j] == k) {
@@ -677,6 +695,7 @@ int LONG_CALL DamagingMoveScoring(struct BattleSystem *bsys, u32 attacker, int i
     int moveScore = 0;
     struct BattleStruct *ctx = bsys->sp;
     BOOL isMoveHighestDamage = FALSE;
+    u8 buf[64];
 
     if (ctx->moveTbl[ai->attackerMove].split == SPLIT_STATUS) {
         return 0;
@@ -721,6 +740,9 @@ int LONG_CALL DamagingMoveScoring(struct BattleSystem *bsys, u32 attacker, int i
             moveScore += 2;
         }
     }
+
+    //sprintf(buf, "After check 1: %d (highest damage : %d)\n", moveScore, isMoveHighestDamage);
+    //debugsyscall(buf);
 
     if (ai->monCanOneShotPlayerWithMove[i]) // if ai sees kill with this move
     {
@@ -790,7 +812,12 @@ int LONG_CALL DamagingMoveScoring(struct BattleSystem *bsys, u32 attacker, int i
             }
         }
     }
-    if (!isMoveHighestDamage && ctx->moveTbl[ai->attackerMove].secondaryEffectChance == 100)
+
+    //sprintf(buf, "After check 2: %d\n", moveScore);
+    //debugsyscall(buf);
+
+    if (!isMoveHighestDamage && ctx->moveTbl[ai->attackerMove].secondaryEffectChance == 100
+    && (ai->attackerMoveEffect == MOVE_EFFECT_LOWER_SP_ATK_HIT || ai->attackerMoveEffect == MOVE_EFFECT_LOWER_ATTACK_HIT))
     {
         if (!ai->defenderImmuneToStatDrop
             && ((ai->attackerMoveEffect == MOVE_EFFECT_LOWER_SP_ATK_HIT && ai->defenderHasAtleastOneSpecialMove)
@@ -808,6 +835,8 @@ int LONG_CALL DamagingMoveScoring(struct BattleSystem *bsys, u32 attacker, int i
         }
     }
 
+    //sprintf(buf, "After check 3: %d\n", moveScore);
+    //debugsyscall(buf);
 
     if (!isMoveHighestDamage && ai->attackerMoveEffect == MOVE_EFFECT_SWITCH_HIT) { // TODO Parting shot
         if (ai->effectivenessOnPlayer[i] > TYPE_MUL_NO_EFFECT) { // no immunity
@@ -946,6 +975,9 @@ int LONG_CALL DamagingMoveScoring(struct BattleSystem *bsys, u32 attacker, int i
         break;
     }
 
+    //sprintf(buf, "Final score: %d\n", moveScore);
+    //debugsyscall(buf);
+
     return moveScore;
 }
 
@@ -1029,12 +1061,14 @@ int LONG_CALL SetupScoring(struct BattleSystem *bsys, u32 attacker, int i, struc
         if (ctx->field_condition & WEATHER_RAIN_ANY) {
             moveScore -= NEVER_USE_MOVE_20;
         } else {
-            if (ai->attackerMon.ability == ABILITY_SWIFT_SWIM
+            /*if (ai->attackerMon.ability == ABILITY_SWIFT_SWIM
                 || ai->attackerMon.ability == ABILITY_RAIN_DISH
                 || ai->attackerMon.ability == ABILITY_HYDRATION
                 || ai->attackerMon.ability == ABILITY_DRY_SKIN) {
                 moveScore += 9;
-            }
+            }*/
+            moveScore += 8;
+
             if (ai->attackerMon.item == ITEM_DAMP_ROCK) {
                 moveScore += 1;
             }
@@ -1046,11 +1080,13 @@ int LONG_CALL SetupScoring(struct BattleSystem *bsys, u32 attacker, int i, struc
         if (ctx->field_condition & (WEATHER_HAIL_ANY | WEATHER_SNOW_ANY)) {
             moveScore -= NEVER_USE_MOVE_20;
         } else {
-            if (HasType(ctx, attacker, TYPE_ICE)
+            /*if (HasType(ctx, attacker, TYPE_ICE)
                 || ai->attackerMon.ability == ABILITY_ICE_BODY || ai->attackerMon.ability == ABILITY_SNOW_CLOAK
                 || ai->attackerMon.ability == ABILITY_SLUSH_RUSH) {
                 moveScore += 9;
-            }
+            }*/
+            moveScore += 8;
+
             if (ai->attackerMon.item == ITEM_ICY_ROCK) {
                 moveScore += 1;
             }
@@ -1060,9 +1096,11 @@ int LONG_CALL SetupScoring(struct BattleSystem *bsys, u32 attacker, int i, struc
         if (ctx->field_condition & WEATHER_SUNNY_ANY) {
             moveScore -= NEVER_USE_MOVE_20;
         } else {
-            if (HasType(ctx, attacker, TYPE_FIRE) || ai->attackerMon.ability == ABILITY_SOLAR_POWER) { //|| ai->attackerMon.ability == ABILITY_CHLOROPHYL
+            /*if (HasType(ctx, attacker, TYPE_FIRE) || ai->attackerMon.ability == ABILITY_SOLAR_POWER) { //|| ai->attackerMon.ability == ABILITY_CHLOROPHYL
                 moveScore += 9;
-            }
+            }*/
+            moveScore += 8;
+
             if (ai->attackerMon.item == ITEM_HEAT_ROCK) {
                 moveScore += 1;
             }
@@ -1072,10 +1110,12 @@ int LONG_CALL SetupScoring(struct BattleSystem *bsys, u32 attacker, int i, struc
         if (ctx->field_condition & WEATHER_SANDSTORM_ANY) {
             moveScore -= NEVER_USE_MOVE_20;
         } else {
-            if (HasType(ctx, attacker, TYPE_ROCK) || HasType(ctx, attacker, TYPE_GROUND) || HasType(ctx, attacker, TYPE_STEEL)
+            /*if (HasType(ctx, attacker, TYPE_ROCK) || HasType(ctx, attacker, TYPE_GROUND) || HasType(ctx, attacker, TYPE_STEEL)
                 || ai->attackerMon.ability == ABILITY_SAND_FORCE || ai->attackerMon.ability == ABILITY_SAND_RUSH || ai->attackerMon.ability == ABILITY_SAND_VEIL) {
                 moveScore += 9;
-            }
+            }*/
+            moveScore += 8;
+
             if (ai->attackerMon.item == ITEM_SMOOTH_ROCK) {
                 moveScore += 1;
             }

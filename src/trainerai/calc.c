@@ -765,21 +765,33 @@ int LONG_CALL BattleAI_GetDynamicMoveType(struct BattleSystem *bsys, struct Batt
 
     if (attacker->ability == ABILITY_NORMALIZE) {
         typeLocal = TYPE_NORMAL;
-    } else if (ctx->moveTbl[moveNo].type == TYPE_NORMAL && MoveIsAffectedByNormalizeVariants(moveNo)) {
-        if (attacker->ability == ABILITY_PIXILATE) {
-            typeLocal = TYPE_FAIRY;
-        } else if (attacker->ability == ABILITY_REFRIGERATE) {
-            typeLocal = TYPE_ICE;
-        } else if (attacker->ability == ABILITY_AERILATE) {
-            typeLocal = TYPE_FLYING;
-        } else if (attacker->ability == ABILITY_GALVANIZE) {
-            typeLocal = TYPE_ELECTRIC;
-        } else if (attacker->ability == ABILITY_DRAGONIZE) {
-            typeLocal = TYPE_DRAGON;
-        }
-        else // needs to be for sure initialized
+    } else if (ctx->moveTbl[moveNo].type == TYPE_NORMAL && MoveIsAffectedByNormalizeVariants(moveNo)
+        && (attacker->ability == ABILITY_PIXILATE
+        || attacker->ability == ABILITY_REFRIGERATE
+        || attacker->ability == ABILITY_AERILATE
+        || attacker->ability == ABILITY_GALVANIZE
+        || attacker->ability == ABILITY_DRAGONIZE)) {
+
+        switch(attacker->ability)
         {
-            typeLocal = TYPE_NORMAL;
+            case ABILITY_PIXILATE:
+                typeLocal = TYPE_FAIRY;
+                break;
+            case ABILITY_REFRIGERATE:
+                typeLocal = TYPE_ICE;
+                break;
+            case ABILITY_AERILATE:
+                typeLocal = TYPE_FLYING;
+                break;
+            case ABILITY_GALVANIZE:
+                typeLocal = TYPE_ELECTRIC;
+                break;
+            case ABILITY_DRAGONIZE:
+                typeLocal = TYPE_DRAGON;
+                break;
+            default:
+                typeLocal = TYPE_NORMAL;
+                break;
         }
     } else if (type) {
         typeLocal = type;

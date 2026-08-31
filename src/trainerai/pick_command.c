@@ -87,7 +87,7 @@ void LONG_CALL CalcTurnStateDamagesAndScores(struct BattleSystem *bsys, u32 atta
 
 BOOL TrainerAI_ShouldSwitch(struct BattleSystem *bsys, int attacker)
 {
-    return FALSE;
+    //return FALSE;
     debug_printf("TrainerAI_ShouldSwitch:\n");
     struct BattleStruct *ctx = bsys->sp;
     u32 battleType = BattleTypeGet(bsys);
@@ -123,12 +123,16 @@ BOOL TrainerAI_ShouldSwitch(struct BattleSystem *bsys, int attacker)
 
     }
 
-
     u32 defender = BATTLER_OPPONENT(attacker);
     CalcTurnStateDamagesAndScores(bsys, attacker, defender, ai1, ai2, turnState);
 
+    if (aiContextOp1.livingMembersAttacker == 1)
+    {
+        return FALSE;
+    }
+
     
-    if (ai1->isDoubleBattle && ai1->isAllyAlive) {
+    /*if (ai1->isDoubleBattle && ai1->isAllyAlive) {
         attacker = BATTLER_ALLY(attacker);
         defender = BATTLER_OPPONENT(attacker);
         CalcTurnStateDamagesAndScores(bsys, attacker, defender, aiAlly1, aiAlly2, turnStateAlly);
@@ -148,6 +152,17 @@ BOOL TrainerAI_ShouldSwitch(struct BattleSystem *bsys, int attacker)
             }
         }
 
+    }*/
+
+    if (turnState->highestScoredMove[attacker] - 1000 <= -5)
+    {
+        return TRUE;
+    }
+
+    if (ctx->battlemon[attacker].effect_of_moves & MOVE_EFFECT_FLAG_PERISH_SONG_ACTIVE
+        && ctx->battlemon[attacker].moveeffect.perishSongTurns == 1)
+    {
+        return TRUE;
     }
 
     /*
