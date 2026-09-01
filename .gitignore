@@ -112,3 +112,9 @@ test_logs.txt
 dumped_armips/
 dumped_c/
 test_filter.txt
+
+# MelonDS
+melonDS.exe
+melonDS.toml
+rtc.bin
+wfcsettings.bin
