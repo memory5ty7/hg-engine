@@ -38,3 +38,20 @@ BOOL LONG_CALL ScrCmd_CreateRoamer(SCRIPTCONTEXT *ctx)
     return FALSE;
 }
 #endif // EXPAND_ROAMERS
+
+BOOL ScriptUpdateRepellent(SCRIPTCONTEXT *ctx)
+{
+    u16 unused = ScriptReadByte(ctx);
+    u16 *destVar = ScriptGetVarPointer(ctx);
+
+    SaveData *saveData = ctx->fsys->savedata;
+    void *roamerSaveData = EncDataSave_GetSaveDataPtr(saveData);
+    u8* repel_addr = SaveData_GetRepelPtr(roamerSaveData);
+
+    BOOL ret = *repel_addr;
+
+    *repel_addr = 1 - *repel_addr;
+    *destVar = ret;
+
+    return FALSE;
+}

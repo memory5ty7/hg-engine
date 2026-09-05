@@ -675,3 +675,6 @@
 
 .equ FALSE, (0)
 .equ TRUE, (1)
+
+// items
+.equ ITEM_REPELLENT, (2684 + 2)

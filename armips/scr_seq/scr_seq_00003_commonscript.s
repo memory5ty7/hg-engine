@@ -1296,19 +1296,18 @@ scr_seq_0003_022:
     end
 
 scr_seq_0003_072_repels:
-    play_se SEQ_SE_DP_SELECT
-    lockall
-    npc_msg 118
-    yesno VAR_SPECIAL_RESULT
-    compare VAR_SPECIAL_RESULT, 1
-    goto_if_eq scr_seq_0003_072_end
-    QueueNewRepel
-    PlayFanfare SEQ_SE_DP_CARD2
-    buffer_players_name 0
-    buffer_item_name 1, VAR_SPECIAL_RESULT
-    npc_msg 119
-    wait_button_or_walk_away
-scr_seq_0003_072_end:
+    ScriptUpdateRepellent
+    compare VAR_SPECIAL_RESULT, 0
+    goto_if_eq RepelNotInUse    
+    npc_msg 67
+    wait_button
+    closemsg
+    releaseall
+    end
+RepelNotInUse:
+	play_se SEQ_SE_DP_CARD2
+    npc_msg 66
+    wait_button
     closemsg
     releaseall
     end

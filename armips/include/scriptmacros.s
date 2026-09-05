@@ -10555,3 +10555,14 @@ Up                  equ 0
 Down                equ 1
 Left                equ 2
 Right               equ 3
+
+
+.equ NEW_COMMAND_UPDATE_REPELLENT, 0
+
+.macro RunNewCommand2,slot,unk
+DummyTextTreasure slot, unk
+.endmacro
+
+.macro ScriptUpdateRepellent
+RunNewCommand2 NEW_COMMAND_UPDATE_REPELLENT, 0x800C
+.endmacro

@@ -563,3 +563,6 @@ arm9 020649B4 64 E2 0F 02
 #else
 0053 080016BA FC 00
 #endif
+
+# Fast levelup
+arm9 02081CDA 00 00 00 00 00 00

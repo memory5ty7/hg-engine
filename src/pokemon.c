@@ -23,6 +23,9 @@
 #include "script.h"
 #include "sound.h"
 
+#include "pokeheartgold.h"
+#include "use_item_on_mon.h"
+
 extern u32 word_to_store_form_at;
 struct OVERWORLD_TAG *LONG_CALL ObjectEvent_GetGraphicsInfo(u32 spriteId);
 // [preevo] = {species, form}, [postevo] = {species, form},
@@ -1129,7 +1132,7 @@ BOOL LONG_CALL CanUseItemOnMonInParty(struct Party *party, u16 itemID, s32 party
 {
     struct PartyPokemon *mon = Party_GetMonByIndex(party, partyIdx);
 
-    if (GetItemData(itemID, ITEM_PARAM_LEVEL_UP, heapID) && GetMonData(mon, MON_DATA_LEVEL, NULL) == 100 && GetMonEvolution(party, mon, EVOCTX_LEVELUP, itemID, NULL)) {
+    if (GetItemData(itemID, ITEM_PARAM_LEVEL_UP, heapID) && GetMonData(mon, MON_DATA_LEVEL, NULL) == GetLevelCap() && GetMonEvolution(party, mon, EVOCTX_LEVELUP, itemID, NULL)) {
         return TRUE;
     }
 
@@ -1140,7 +1143,7 @@ BOOL LONG_CALL CanUseItemOnMonInParty(struct Party *party, u16 itemID, s32 party
 #if defined(IMPLEMENT_LEVEL_CAP) && defined(UNCAP_CANDIES_FROM_LEVEL_CAP)
     int currentLevel = GetMonData(mon, MON_DATA_LEVEL, NULL);
     if (GetItemData(itemID, ITEM_PARAM_LEVEL_UP, heapID)) {
-        if (currentLevel < 100 && itemID == ITEM_RARE_CANDY) {
+        if (currentLevel < 100 && itemID == ITEM_INFINITE_CANDY) {
             return TRUE;
         }
     }
@@ -1988,41 +1991,84 @@ u32 MonTryLearnMoveOnLevelUp(struct PartyPokemon *mon, int *last_i, u16 *sp0)
 
     LoadLevelUpLearnset_HandleAlternateForm(species, (int)form, levelUpLearnset);
 
-    if (isMonEvolving && LEVEL_UP_LEARNSET_LEVEL(levelUpLearnset[*last_i]) == 0) { // when evolving, try to learn moves at level 0
-        level = 0;
-    }
+    if (isMonEvolving)
+    {
+        while (levelUpLearnset[*last_i] != LEVEL_UP_LEARNSET_END) {
+            u32 learnsetLevel = LEVEL_UP_LEARNSET_LEVEL(levelUpLearnset[*last_i]);
 
-    if (levelUpLearnset[*last_i] == LEVEL_UP_LEARNSET_END) {
-        sys_FreeMemoryEz(levelUpLearnset);
-        return 0;
-    }
-    while ((levelUpLearnset[*last_i] & LEVEL_UP_LEARNSET_LEVEL_MASK) != (level << LEVEL_UP_LEARNSET_LEVEL_SHIFT)) {
-        (*last_i)++;
-        if (levelUpLearnset[*last_i] == LEVEL_UP_LEARNSET_END) {
-            sys_FreeMemoryEz(levelUpLearnset);
-            return 0;
-        }
-        if (isMonEvolving) // if a mon is evolving, it is possible that the current level move also corresponds with a move that it learns on evolution.  need to skip the entry if it has already been attempted to learn a move
-        {
-            u32 currMove = LEVEL_UP_LEARNSET_MOVE(levelUpLearnset[*last_i]);
-            for (s32 i = 0; i < *last_i; i++) {
-                if (LEVEL_UP_LEARNSET_MOVE(levelUpLearnset[i]) == currMove && LEVEL_UP_LEARNSET_LEVEL(levelUpLearnset[i]) == 0) {
-                    (*last_i)++;
-                    break;
+            // During evolution, only try moves learned at level 0 or the
+            // Pokémon's current level.
+            if (learnsetLevel != 0 && learnsetLevel != level) {
+                (*last_i)++;
+                continue;
+            }
+
+            if (learnsetLevel > level) {
+                break;
+            }
+
+            *sp0 = LEVEL_UP_LEARNSET_MOVE(levelUpLearnset[*last_i]);
+            (*last_i)++;
+
+            if (isMonEvolving) // Skip moves already attempted at level 0 during evolution.
+            {
+                BOOL alreadyAttempted = FALSE;
+                for (s32 i = 0; i < *last_i - 1; i++) {
+                    if (LEVEL_UP_LEARNSET_MOVE(levelUpLearnset[i]) == *sp0
+                        && LEVEL_UP_LEARNSET_LEVEL(levelUpLearnset[i]) == 0) {
+                        alreadyAttempted = TRUE;
+                        break;
+                    }
+                }
+                if (alreadyAttempted) {
+                    continue;
                 }
             }
+    #ifdef BLOCK_LEARNING_UNIMPLEMENTED_MOVES
+            if (!IsMoveUnimplemented(*sp0))
+    #endif
+            {
+                ret = TryAppendMonMove(mon, *sp0);
+            }
+            break;
         }
+    } else {
+        while (levelUpLearnset[*last_i] != LEVEL_UP_LEARNSET_END) {
+            u32 learnsetLevel = LEVEL_UP_LEARNSET_LEVEL(levelUpLearnset[*last_i]);
+
+            // Learnset entries are ordered by level.  Stop once the remaining
+            // entries are above the Pokémon's current level.
+            if (learnsetLevel > level) {
+                break;
+            }
+
+            *sp0 = LEVEL_UP_LEARNSET_MOVE(levelUpLearnset[*last_i]);
+            (*last_i)++;
+
+            if (isMonEvolving) // Skip moves already attempted at level 0 during evolution.
+            {
+                BOOL alreadyAttempted = FALSE;
+                for (s32 i = 0; i < *last_i - 1; i++) {
+                    if (LEVEL_UP_LEARNSET_MOVE(levelUpLearnset[i]) == *sp0
+                        && LEVEL_UP_LEARNSET_LEVEL(levelUpLearnset[i]) == 0) {
+                        alreadyAttempted = TRUE;
+                        break;
+                    }
+                }
+                if (alreadyAttempted) {
+                    continue;
+                }
+            }
+    #ifdef BLOCK_LEARNING_UNIMPLEMENTED_MOVES
+            if (!IsMoveUnimplemented(*sp0))
+    #endif
+            {
+                ret = TryAppendMonMove(mon, *sp0);
+            }
+            break;
+        } 
     }
-    if ((levelUpLearnset[*last_i] & LEVEL_UP_LEARNSET_LEVEL_MASK) == (level << LEVEL_UP_LEARNSET_LEVEL_SHIFT)) {
-        *sp0 = LEVEL_UP_LEARNSET_MOVE(levelUpLearnset[*last_i]);
-        (*last_i)++;
-#ifdef BLOCK_LEARNING_UNIMPLEMENTED_MOVES
-        if (!IsMoveUnimplemented(*sp0))
-#endif
-        {
-            ret = TryAppendMonMove(mon, *sp0);
-        }
-    }
+
     sys_FreeMemoryEz(levelUpLearnset);
     return ret;
 }
@@ -2299,4 +2345,269 @@ void LONG_CALL LoadLevelUpLearnset_HandleAlternateForm(int species, int form, u3
         }
     }
 #endif
+}
+
+u32 CalcBoxMonExpToLevel(struct BoxPokemon *boxMon, u16 level) {
+    u16 species = (u16)GetBoxMonData(boxMon, MON_DATA_SPECIES, NULL);
+    u32 cur = GetBoxMonData(boxMon, MON_DATA_EXPERIENCE, NULL);
+    u32 hi = PokeLevelExpGet(species, level);
+    return hi - cur;
+}
+
+u32 CalcMonExpToLevel(struct PartyPokemon *mon, u16 level) {
+    return CalcBoxMonExpToLevel(&mon->box, level);
+}
+
+BOOL LONG_CALL UseItemOnPokemon(struct PartyPokemon *mon, u16 itemID, u16 moveIdx, u16 location, int heapID) {
+    s32 stack_data[8];
+#define sp70 stack_data[7]
+#define sp6C stack_data[6]
+#define sp68 stack_data[5]
+#define sp64 stack_data[4]
+#define sp60 stack_data[3]
+#define sp5C stack_data[2]
+#define sp58 stack_data[1]
+#define sp54 stack_data[0]
+    BOOL hadEffect;
+    BOOL effectFound;
+
+    struct ItemData *itemData = LoadItemDataOrGfx(itemID, 0, heapID);
+    if (GetItemAttr_PreloadedItemData(itemData, ITEM_PARAM_PARTY) != 1) {
+        sys_FreeMemoryEz(itemData);
+        return FALSE;
+    }
+
+    hadEffect = FALSE;
+    effectFound = FALSE;
+
+    sp58 = sp54 = GetMonData(mon, MON_DATA_STATUS, NULL);
+    if (GetItemAttr_PreloadedItemData(itemData, ITEM_PARAM_SLEEP_RECOVERY)) {
+        sp58 &= ~0x7;
+        effectFound = TRUE;
+    }
+
+    if (GetItemAttr_PreloadedItemData(itemData, ITEM_PARAM_POISON_RECOVERY)) {
+        sp58 &= ~(0x8 | 0x80 | 0xF00);
+        effectFound = TRUE;
+    }
+
+    if (GetItemAttr_PreloadedItemData(itemData, ITEM_PARAM_BURN_RECOVERY)) {
+        sp58 &= ~0x10;
+        effectFound = TRUE;
+    }
+
+    if (GetItemAttr_PreloadedItemData(itemData, ITEM_PARAM_FREEZE_RECOVERY)) {
+        sp58 &= ~0x20;
+        effectFound = TRUE;
+    }
+
+    if (GetItemAttr_PreloadedItemData(itemData, ITEM_PARAM_PARALYZE_RECOVERY)) {
+        sp58 &= ~0x40;
+        effectFound = TRUE;
+    }
+
+    if (sp54 != sp58) {
+        SetMonData(mon, MON_DATA_STATUS, &sp58);
+        hadEffect = TRUE;
+    }
+
+    sp54 = GetMonData(mon, MON_DATA_HP, NULL);
+    sp58 = GetMonData(mon, MON_DATA_MAXHP, NULL);
+    if ((GetItemAttr_PreloadedItemData(itemData, ITEM_PARAM_DEATH_RECOVERY) || GetItemAttr_PreloadedItemData(itemData, ITEM_PARAM_ALL_DEATH_RECOVERY)) && GetItemAttr_PreloadedItemData(itemData, ITEM_PARAM_LEVEL_UP)) {
+        if (sp54 == 0) {
+            RestoreMonHPBy(mon, sp54, sp58, GetItemAttr_PreloadedItemData(itemData, ITEM_PARAM_HP_RECOVERY_POINT));
+            hadEffect = TRUE;
+        }
+        effectFound = TRUE;
+    } else if (GetItemAttr_PreloadedItemData(itemData, ITEM_PARAM_HP_RECOVERY)) {
+        if (sp54 < sp58) {
+            RestoreMonHPBy(mon, sp54, sp58, GetItemAttr_PreloadedItemData(itemData, ITEM_PARAM_HP_RECOVERY_POINT));
+            hadEffect = TRUE;
+        }
+        effectFound = TRUE;
+    }
+
+    sp5C = GetMonData(mon, MON_DATA_LEVEL, NULL);
+    if (GetItemAttr_PreloadedItemData(itemData, ITEM_PARAM_LEVEL_UP)) {
+        if (sp5C < 100) {
+            #if defined(IMPLEMENT_LEVEL_CAP)
+            u16 levelCap = GetLevelCap();
+            AddMonData(mon, MON_DATA_EXPERIENCE, CalcMonExpToLevel(mon, levelCap));
+            RecalcPartyPokemonStats(mon);
+            if (sp54 == 0) {
+                sp60 = GetMonData(mon, MON_DATA_MAXHP, NULL);
+                RestoreMonHPBy(mon, sp54, sp60, sp60 - sp58);
+            }
+            hadEffect = TRUE;
+            #else
+            AddMonData(mon, MON_DATA_EXPERIENCE, CalcMonExpToNextLevel(mon));
+            RecalcPartyPokemonStats(mon);
+            if (sp54 == 0) {
+                sp60 = GetMonData(mon, MON_DATA_MAXHP, NULL);
+                RestoreMonHPBy(mon, sp54, sp60, sp60 - sp58);
+            }
+            hadEffect = TRUE;
+            #endif
+        }
+        effectFound = TRUE;
+    }
+
+    if (GetItemAttr_PreloadedItemData(itemData, ITEM_PARAM_EVOLUTION)) {
+        effectFound = TRUE;
+    }
+
+    if (GetItemAttr_PreloadedItemData(itemData, ITEM_PARAM_PP_UP)) {
+        if (BoostMonMovePpUpBy(mon, moveIdx, 1) == TRUE) {
+            hadEffect = TRUE;
+        }
+        effectFound = TRUE;
+    } else if (GetItemAttr_PreloadedItemData(itemData, ITEM_PARAM_PP_MAX)) {
+        if (BoostMonMovePpUpBy(mon, moveIdx, 3) == TRUE) {
+            hadEffect = TRUE;
+        }
+        effectFound = TRUE;
+    }
+
+    if (GetItemAttr_PreloadedItemData(itemData, ITEM_PARAM_PP_RECOVERY)) {
+        if (MonMoveRestorePP(mon, moveIdx, GetItemAttr_PreloadedItemData(itemData, ITEM_PARAM_PP_RECOVERY_POINT)) == 1) {
+            hadEffect = TRUE;
+        }
+        effectFound = TRUE;
+    } else if (GetItemAttr_PreloadedItemData(itemData, ITEM_PARAM_ALL_PP_RECOVERY)) {
+        sp54 = 0;
+        for (; sp54 < MAX_MON_MOVES; sp54++) {
+            if (MonMoveRestorePP(mon, sp54, GetItemAttr_PreloadedItemData(itemData, ITEM_PARAM_PP_RECOVERY_POINT)) == 1) {
+                hadEffect = TRUE;
+            }
+        }
+        effectFound = TRUE;
+    }
+
+    sp54 = GetMonData(mon, MON_DATA_HP_EV, NULL);
+    sp58 = GetMonData(mon, MON_DATA_ATK_EV, NULL);
+    sp5C = GetMonData(mon, MON_DATA_DEF_EV, NULL);
+    sp60 = GetMonData(mon, MON_DATA_SPEED_EV, NULL);
+    sp64 = GetMonData(mon, MON_DATA_SPATK_EV, NULL);
+    sp68 = GetMonData(mon, MON_DATA_SPDEF_EV, NULL);
+    if (GetMonData(mon, MON_DATA_SPECIES, NULL) != SPECIES_SHEDINJA && GetItemAttr_PreloadedItemData(itemData, ITEM_PARAM_HP_EVS)) {
+        sp70 = GetItemAttr_PreloadedItemData(itemData, ITEM_PARAM_HP_EVS_POINT);
+        sp6C = TryModEV(sp54, sp58 + sp5C + sp60 + sp64 + sp68, sp70);
+        if (sp6C != -1) {
+            sp54 = sp6C;
+            SetMonData(mon, MON_DATA_HP_EV, &sp54);
+            RecalcPartyPokemonStats(mon);
+            hadEffect = TRUE;
+        }
+
+        if (sp70 > 0) {
+            effectFound = TRUE;
+        }
+    }
+
+    if (GetItemAttr_PreloadedItemData(itemData, ITEM_PARAM_ATTACK_EVS)) {
+        sp70 = GetItemAttr_PreloadedItemData(itemData, ITEM_PARAM_ATTACK_EVS_POINT);
+        sp6C = TryModEV(sp58, sp54 + sp5C + sp60 + sp64 + sp68, sp70);
+        if (sp6C != -1) {
+            sp58 = sp6C;
+            SetMonData(mon, MON_DATA_ATK_EV, &sp58);
+            RecalcPartyPokemonStats(mon);
+            hadEffect = TRUE;
+        }
+
+        if (sp70 > 0) {
+            effectFound = TRUE;
+        }
+    }
+
+    if (GetItemAttr_PreloadedItemData(itemData, ITEM_PARAM_DEFENSE_EVS)) {
+        sp70 = GetItemAttr_PreloadedItemData(itemData, ITEM_PARAM_DEFENSE_EVS_POINT);
+        sp6C = TryModEV(sp5C, sp54 + sp58 + sp60 + sp64 + sp68, sp70);
+        if (sp6C != -1) {
+            sp5C = sp6C;
+            SetMonData(mon, MON_DATA_DEF_EV, &sp5C);
+            RecalcPartyPokemonStats(mon);
+            hadEffect = TRUE;
+        }
+
+        if (sp70 > 0) {
+            effectFound = TRUE;
+        }
+    }
+
+    if (GetItemAttr_PreloadedItemData(itemData, ITEM_PARAM_SPEED_EVS)) {
+        sp70 = GetItemAttr_PreloadedItemData(itemData, ITEM_PARAM_SPEED_EVS_POINT);
+        sp6C = TryModEV(sp60, sp54 + sp58 + sp5C + sp64 + sp68, sp70);
+        if (sp6C != -1) {
+            sp60 = sp6C;
+            SetMonData(mon, MON_DATA_SPEED_EV, &sp60);
+            RecalcPartyPokemonStats(mon);
+            hadEffect = TRUE;
+        }
+
+        if (sp70 > 0) {
+            effectFound = TRUE;
+        }
+    }
+
+    if (GetItemAttr_PreloadedItemData(itemData, ITEM_PARAM_SP_ATTACK_EVS)) {
+        sp70 = GetItemAttr_PreloadedItemData(itemData, ITEM_PARAM_SP_ATTACK_EVS_POINT);
+        sp6C = TryModEV(sp64, sp54 + sp58 + sp5C + sp60 + sp68, sp70);
+        if (sp6C != -1) {
+            sp64 = sp6C;
+            SetMonData(mon, MON_DATA_SPATK_EV, &sp64);
+            RecalcPartyPokemonStats(mon);
+            hadEffect = TRUE;
+        }
+
+        if (sp70 > 0) {
+            effectFound = TRUE;
+        }
+    }
+
+    if (GetItemAttr_PreloadedItemData(itemData, ITEM_PARAM_SP_DEFENSE_EVS)) {
+        sp70 = GetItemAttr_PreloadedItemData(itemData, ITEM_PARAM_SP_DEFENCE_EVS_POINT);
+        sp6C = TryModEV(sp68, sp54 + sp58 + sp5C + sp60 + sp64, sp70);
+        if (sp6C != -1) {
+            sp68 = sp6C;
+            SetMonData(mon, MON_DATA_SPDEF_EV, &sp68);
+            RecalcPartyPokemonStats(mon);
+            hadEffect = TRUE;
+        }
+
+        if (sp70 > 0) {
+            effectFound = TRUE;
+        }
+    }
+
+    if (hadEffect == FALSE && effectFound == TRUE) {
+        sys_FreeMemoryEz(itemData);
+        return FALSE;
+    }
+
+    sp54 = GetMonData(mon, MON_DATA_FRIENDSHIP, NULL);
+    if (sp54 < 100) {
+        if (GetItemAttr_PreloadedItemData(itemData, ITEM_PARAM_FRIENDSHIP_1)) {
+            ApplyItemEffectOnMonMood(mon, itemID);
+            DoItemFriendshipMod(mon, sp54, GetItemAttr_PreloadedItemData(itemData, ITEM_PARAM_FRIENDSHIP_1_POINT), location, heapID);
+            sys_FreeMemoryEz(itemData);
+            return hadEffect;
+        }
+    } else if (sp54 >= 100 && sp54 < 200) {
+        if (GetItemAttr_PreloadedItemData(itemData, ITEM_PARAM_FRIENDSHIP_2)) {
+            ApplyItemEffectOnMonMood(mon, itemID);
+            DoItemFriendshipMod(mon, sp54, GetItemAttr_PreloadedItemData(itemData, ITEM_PARAM_FRIENDSHIP_2_POINT), location, heapID);
+            sys_FreeMemoryEz(itemData);
+            return hadEffect;
+        }
+    } else if (sp54 >= 200 && sp54 <= 255) {
+        if (GetItemAttr_PreloadedItemData(itemData, ITEM_PARAM_FRIENDSHIP_3)) {
+            ApplyItemEffectOnMonMood(mon, itemID);
+            DoItemFriendshipMod(mon, sp54, GetItemAttr_PreloadedItemData(itemData, ITEM_PARAM_FRIENDSHIP_3_POINT), location, heapID);
+            sys_FreeMemoryEz(itemData);
+            return hadEffect;
+        }
+    }
+
+    sys_FreeMemoryEz(itemData);
+    return hadEffect;
 }

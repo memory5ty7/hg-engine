@@ -906,3 +906,26 @@ BattleSystem_GetPokepicManager = 0x0223A8D4 | 1;
 ov12_0223B750 = 0x0223B750 | 1;
 sub_0207294C = 0x0207294C | 1;
 sub_02017068 = 0x02017068 | 1;
+
+# Fast Candy
+RestoreMonHPBy = 0x02090A44 | 1;
+AddMonData = 0x0206F558 | 1;
+BoostMonMovePpUpBy = 0x0209099C | 1;
+TryModEV = 0x02090A84 | 1;
+ApplyItemEffectOnMonMood = 0x02097EF4 | 1;
+DoItemFriendshipMod	= 0x02090B68 | 1;
+
+# Fast levelup
+PartyMenu_CommitPartyMonPanelWindowsToVram_InVBlank = 0x0207D6A0 | 1;
+PartyMenu_ItemUseFunc_LevelUpLearnMovesLoop = 0x02081C50 | 1;
+PartyMenu_ItemUseFunc_HPRestoreAnimLoop = 0x02081720 | 1;
+BufferIntegerAsString = 0x0200BFCC | 1;
+UseItemOnMonInParty = 0x020908AC | 1;
+Mon_GetBoxMon = 0x02070DB0 | 1;
+PartyMenu_DrawMonStatusIcon = 0x0207EFC4 | 1;
+PartyMenu_PrintMonLevelOnWindow = 0x0207D3E4 | 1;
+sub_0207A7F4 = 0x0207A7F4 | 1;
+sub_0207D5DC = 0x0207D5DC | 1;
+
+MonMoveCanRestorePP	= 0x020908CC | 1;
+MonMoveRestorePP = 0x0209091C | 1;

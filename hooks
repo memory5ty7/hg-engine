@@ -519,10 +519,8 @@ arm9 form_evo_hook_1 02077224 1
 # actually setting the new mon form
 arm9 form_evo_hook_2 0207641C 0
 
-#ifdef IMPLEMENT_REUSABLE_REPELS
 0002 PlayerStepEvent_RepelCounterDecrement 0224BAE4 2
 0015 BagApp_GetRepelStepCountAddr 021F993C 3
-#endif
 
 0012 BattleContext_Main 022486B0 2
 
@@ -654,3 +652,10 @@ arm9 EncounterSlot_WildMonSlotRoll_Headbutt 022477C0 0
 # Custom Trainer AI
 0012 TrainerAI_PickCommand_hook 0225E10C 0
 0012 BattleAI_PostKOSwitchIn 02258800 2
+
+# Repel
+0015 BagApp_TryUseRepel 021FBA9C 2
+
+# Fast levelup
+arm9 PartyMenu_ItemUseFunc_LevelUp 02081A74 1
+arm9 UseItemOnPokemon 020902D0 5
