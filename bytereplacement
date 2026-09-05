@@ -565,4 +565,4 @@ arm9 020649B4 64 E2 0F 02
 #endif
 
 # Fast levelup
-arm9 02081CDA 00 00 00 00 00 00
+arm9 02081CDA 00 00 00 00 00 00 00 00
