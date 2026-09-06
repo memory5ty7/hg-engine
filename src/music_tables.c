@@ -8,6 +8,7 @@
 
 #ifdef EXPAND_MUSIC_TABLES
 u16 MainMusicComboTable[][2] = {
+    /*
     [ANIM_MUSIC_COMBO_FALKNER] = { 0xC, SEQ_GS_VS_GYMREADER },
     [ANIM_MUSIC_COMBO_BUGSY] = { 0xD, SEQ_GS_VS_GYMREADER },
     [ANIM_MUSIC_COMBO_WHITNEY] = { 0xE, SEQ_GS_VS_GYMREADER },
@@ -53,12 +54,20 @@ u16 MainMusicComboTable[][2] = {
     [ANIM_MUSIC_COMBO_JOHTO_WILD_THEME] = { 0xFFFF, SEQ_GS_VS_NORAPOKE },
     [ANIM_MUSIC_COMBO_KIMONO_GIRL] = { 0x2D, SEQ_GS_VS_TRAINER },
     [ANIM_MUSIC_COMBO_RED] = { 0x2E, SEQ_GS_VS_CHAMP },
+    */
+    [ANIM_MUSIC_COMBO_JOHTO_TRAINER_1] = { 0x25, SEQ_GS_VS_TRAINER },
+    [ANIM_MUSIC_COMBO_JOHTO_TRAINER_2] = { 0x25, SEQ_GS_VS_TRAINER },
+    [ANIM_MUSIC_COMBO_JOHTO_TRAINER_3] = { 0x26, SEQ_GS_VS_TRAINER },
+    [ANIM_MUSIC_COMBO_JOHTO_WILD_BATTLE_38] = { 0x26, SEQ_GS_VS_NORAPOKE },
+    [ANIM_MUSIC_COMBO_JOHTO_TRAINER] = { 0xFFFF, SEQ_GS_VS_TRAINER },
+    [ANIM_MUSIC_COMBO_JOHTO_WILD_THEME] = { 0xFFFF, SEQ_GS_VS_NORAPOKE },
     // (***END OF VANILLA ENTRIES***)
 };
 
 // format is one byte for trainer class, then one byte for combo (combo increments by 4 because each combo is four bytes long)
 
 u8 TrainerClassToMusicCombo[][2] = {
+    /*
     { TRAINERCLASS_LEADER_FALKNER, ANIM_MUSIC_COMBO_FALKNER * 4 },
     { TRAINERCLASS_LEADER_BUGSY, ANIM_MUSIC_COMBO_BUGSY * 4 },
     { TRAINERCLASS_LEADER_WHITNEY, ANIM_MUSIC_COMBO_WHITNEY * 4 },
@@ -91,6 +100,7 @@ u8 TrainerClassToMusicCombo[][2] = {
     { TRAINERCLASS_TEAM_ROCKET_F, ANIM_MUSIC_COMBO_ROCKET_GRUNTS * 4 },
     { TRAINERCLASS_KIMONO_GIRL, ANIM_MUSIC_COMBO_KIMONO_GIRL * 4 },
     { TRAINERCLASS_PKMN_TRAINER_RED, ANIM_MUSIC_COMBO_RED * 4 },
+    */
     // (***END OF VANILLA ENTRIES***)
 };
 
@@ -122,6 +132,7 @@ struct TrainerMusic {
 
 struct TrainerMusic sTrainerEncounterMusicParam[] = // cues which music sequence occurs upon eyes meeting
     {
+        /*
         { .class = TRAINERCLASS_YOUNGSTER, .music1 = SEQ_GS_EYE_J_SHOUNEN, .music2 = SEQ_GS_EYE_J_SHOUNEN },
         { .class = TRAINERCLASS_LASS, .music1 = SEQ_GS_EYE_K_SHOUJO, .music2 = SEQ_GS_EYE_K_SHOUJO },
         { .class = TRAINERCLASS_CAMPER, .music1 = SEQ_GS_EYE_J_SHOUNEN, .music2 = SEQ_GS_EYE_J_SHOUNEN },
@@ -166,5 +177,6 @@ struct TrainerMusic sTrainerEncounterMusicParam[] = // cues which music sequence
         { .class = TRAINERCLASS_EXECUTIVE_ARCHER, .music1 = SEQ_GS_EYE_ROCKET, .music2 = SEQ_GS_EYE_ROCKET },
         { .class = TRAINERCLASS_EXECUTIVE_PROTON, .music1 = SEQ_GS_EYE_ROCKET, .music2 = SEQ_GS_EYE_ROCKET },
         { .class = TRAINERCLASS_EXECUTIVE_PETREL, .music1 = SEQ_GS_EYE_ROCKET, .music2 = SEQ_GS_EYE_ROCKET },
+        */
     };
 #endif // EXPAND_MUSIC_TABLES
