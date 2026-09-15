@@ -929,3 +929,8 @@ sub_0207D5DC = 0x0207D5DC | 1;
 
 MonMoveCanRestorePP	= 0x020908CC | 1;
 MonMoveRestorePP = 0x0209091C | 1;
+
+# Script Message with Face
+DrawPokemonPicFromSpecies = 0x0200F4A0 | 1;
+LoadUserFrameGfx2 = 0x0200E644 | 1;
+DrawFrameAndWindow2 = 0x0200E998 | 1;

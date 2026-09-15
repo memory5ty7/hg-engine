@@ -4,6 +4,7 @@
 #include "types.h"
 
 #include "save.h"
+#include "pokepic.h"
 
 // pokeheartgold coming through
 
@@ -114,5 +115,7 @@ u32 LONG_CALL Fsys_GetWeather_HandleDiamondDust(FieldSystem *fsys, u32 mapID);
 
 #define ScriptGetVarPointer(ctx) GetVarPointer(ctx->fsys, ScriptReadHalfword(ctx))
 #define ScriptGetVar(ctx)        VarGet(ctx->fsys, ScriptReadHalfword(ctx))
+
+struct PokepicManager *LONG_CALL DrawPokemonPicFromSpecies(void *bgConfig, int layer, int x, int y, u8 paletteNum, u16 baseTile, u16 species, u8 gender, int heapID);
 
 #endif

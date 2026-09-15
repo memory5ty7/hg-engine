@@ -1628,6 +1628,10 @@ RunNewCommand NEW_COMMAND_QUEUE_NEW_REPEL, 0x800C
 .halfword 223
 .endmacro
 
+.macro hide_npc_face
+.halfword 223
+.endmacro
+
 .macro scrcmd_224
 .halfword 224
 .endmacro
@@ -2506,6 +2510,12 @@ BADGE_EARTH    equ 15
 .halfword 381
 .halfword arg0
 .halfword arg1
+.endmacro
+
+.macro show_npc_face,msg_id,face_id
+.halfword 381
+.halfword msg_id
+.halfword face_id
 .endmacro
 
 .macro mon_get_friendship,arg0,arg1

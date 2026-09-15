@@ -19,6 +19,8 @@
 #include "rtc.h"
 #include "save.h"
 #include "script.h"
+#include "party_menu.h"
+#include "window.h"
 
 void SetupAndStartTotemBattle(TaskManager *taskManager, u16 species, u8 level, u32 *winFlag, BOOL shiny);
 
@@ -412,4 +414,68 @@ void SetupAndStartTotemBattle(TaskManager *taskManager, u16 species, u8 level, u
     GameStats_Inc(Save_GameStats_Get(fieldSystem->savedata), GAME_STAT_WILD_ENCOUNTERS);
 
     CallTask_StartEncounter(taskManager, setup, BattleSetup_GetWildTransitionEffect(setup), BattleSetup_GetWildBattleMusic(setup), winFlag);
+}
+
+typedef struct NameWindowWork {
+    BOOL active;
+    struct Window window;
+} NameWindowWork;
+
+static NameWindowWork sNameWindow;
+
+// Repurpose DummyGetRandom (ScrCmd_381)
+BOOL ScrCmd_381(SCRIPTCONTEXT *ctx) {
+    u16 msgId = ScriptReadHalfword(ctx);
+    u16 faceId = ScriptReadHalfword(ctx);
+
+    // Show Face (ShowPokemonPic | ScrCmd_452)
+    //if (face_id != 0) {
+    //    struct PokepicManager **p_work = FieldSysGetAttrAddr(ctx->fsys, 21);
+    //    LoadUserFrameGfx1(ctx->fsys->bg_config, 3, 0x3D9, 11, 0, HEAPID_FIELD1);
+    //    *p_work = DrawPokemonPicFromSpecies(ctx->fsys->bg_config, 3, 10, 9, 11, 0x3D9, face_id, POKEMON_GENDER_MALE, HEAPID_FIELD1);
+    //}
+
+    // Show NPC Name Window
+    #define textbox_x 2
+    #define textbox_y 15
+    #define textbox_u 7
+    #define textbox_v 2
+
+    if (!sNameWindow.active) {
+        struct OPTIONS *options = Save_PlayerData_GetOptionsAddr(ctx->fsys->savedata);
+
+        AddWindowParameterized(ctx->fsys->bg_config, &sNameWindow.window, 3, textbox_x, textbox_y, textbox_u, textbox_v, 13, 1);
+        LoadUserFrameGfx2(ctx->fsys->bg_config, 3, 0x3D9, 10, CONFIG_GetWindowType(options), HEAPID_FIELD1);
+        DrawFrameAndWindow2(&sNameWindow.window, FALSE, 0x3E2, 10);
+        FillWindowPixelBuffer(&sNameWindow.window, 15);
+
+        sNameWindow.active = TRUE;
+    }
+
+    // Show NPC Name
+    MsgData *msgData = NewMsgDataFromNarc(MSGDATA_LOAD_LAZY, ARC_MSG_DATA, 35, HEAPID_FIELD1);
+    String *name = NewString_ReadMsgData(msgData, msgId);
+
+    AddTextPrinterParameterized(&sNameWindow.window, 0, name, 0, 0, 0xFF, NULL);
+    String_Delete(name);
+    DestroyMsgData(msgData);
+    CopyWindowToVram(&sNameWindow.window);
+
+    return FALSE;
+}
+
+// Repurpose DummyTrainerBattle (ScrCmd_223)
+BOOL ScrCmd_223(SCRIPTCONTEXT *ctx) {
+    // Hide NPC Name
+    if (sNameWindow.active) {
+        ClearFrameAndWindow2(&sNameWindow.window, FALSE);
+        RemoveWindow(&sNameWindow.window);
+        sNameWindow.active = FALSE;
+    }
+
+    // Hide Face (HidePokemonPic | ScrCmd_453)
+    //u8 **r0 = FieldSysGetAttrAddr(ctx->fsys, 21);
+    //**r0 = 1;
+
+    return FALSE;
 }

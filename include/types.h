@@ -250,4 +250,7 @@ static inline void G2_SetBG0Priority(int priority)
 
 #define RGB(r, g, b) (((b & 0x1F) << 10) | ((g & 0x1F) << 5) | (r & 0x1F))
 
+void LONG_CALL LoadUserFrameGfx2(void *bgConfig, int layer, u16 baseTile, u8 paletteNum, u8 frame, int heapID);
+void LONG_CALL DrawFrameAndWindow2(void *window, BOOL dont_copy_to_vram, u16 baseTile, u8 palette_num);
+
 #endif
