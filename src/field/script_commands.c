@@ -457,7 +457,6 @@ BOOL ScrCmd_381(SCRIPTCONTEXT *ctx) {
     }
 
     // Show NPC Name
-    /*
     MsgData *msgData = NewMsgDataFromNarc(MSGDATA_LOAD_LAZY, ARC_MSG_DATA, 35, HEAPID_FIELD1);
     String *name = NewString_ReadMsgData(msgData, msgId);
 
@@ -465,7 +464,6 @@ BOOL ScrCmd_381(SCRIPTCONTEXT *ctx) {
     String_Delete(name);
     DestroyMsgData(msgData);
     CopyWindowToVram(&sNameWindow.window);
-    */
 
     return FALSE;
 }
