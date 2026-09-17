@@ -22,6 +22,8 @@
 #include "party_menu.h"
 #include "window.h"
 
+#include "pokeheartgold.h"
+
 void SetupAndStartTotemBattle(TaskManager *taskManager, u16 species, u8 level, u32 *winFlag, BOOL shiny);
 
 /**
@@ -418,7 +420,8 @@ void SetupAndStartTotemBattle(TaskManager *taskManager, u16 species, u8 level, u
 
 typedef struct NameWindowWork {
     BOOL active;
-    struct Window window;
+    struct Window *window;
+    PokemonPreview *preview;
 } NameWindowWork;
 
 static NameWindowWork sNameWindow;
@@ -428,31 +431,49 @@ BOOL ScrCmd_381(SCRIPTCONTEXT *ctx) {
     u16 msgId = ScriptReadHalfword(ctx);
     u16 faceId = ScriptReadHalfword(ctx);
 
+    faceId += 1476;
+
     // Show Face (ShowPokemonPic | ScrCmd_452)
-    //if (face_id != 0) {
-    //    struct PokepicManager **p_work = FieldSysGetAttrAddr(ctx->fsys, 21);
-    //    LoadUserFrameGfx1(ctx->fsys->bg_config, 3, 0x3D9, 11, 0, HEAPID_FIELD1);
-    //    *p_work = DrawPokemonPicFromSpecies(ctx->fsys->bg_config, 3, 10, 9, 11, 0x3D9, face_id, POKEMON_GENDER_MALE, HEAPID_FIELD1);
-    //}
+    if (faceId != 0) {
+        #define face_x 1
+        #define face_y 9
+
+        struct PokepicManager **p_work = FieldSysGetAttrAddr(ctx->fsys, 21);
+        LoadUserFrameGfx1(ctx->fsys->bg_config, 3, 0x3D9, 11, 0, HEAPID_FIELD1);
+        *p_work = DrawPokemonPicFromSpecies(ctx->fsys->bg_config, 3, face_x, face_y, 11, 0x3D9, faceId, POKEMON_GENDER_MALE, HEAPID_FIELD1);
+        /*
+        PokemonPreview *preview = sub_0200F5C4(ctx->fsys->bg_config, 3, face_x, face_y, HEAPID_FIELD1);
+
+        sub_0200F600(preview, HEAPID_FIELD1);
+        sub_0200F62C(preview);
+        sub_0200F684(preview, face_x, face_y);
+        sub_0200F6D4(&preview->spriteManager, faceId, POKEMON_GENDER_MALE);
+        sub_0200F82C(sNameWindow.preview, 11, 0x3D9);
+        Bg_CopyTilemapBufferToVRAM(ctx->fsys->bg_config, 3);
+
+        *p_work = &sNameWindow.preview->state;
+        */
+        
+    }
 
     // Show NPC Name Window
-    #define textbox_x 2
-    #define textbox_y 15
-    #define textbox_u 7
-    #define textbox_v 2
-
+    /*
     if (!sNameWindow.active) {
-        struct OPTIONS *options = Save_PlayerData_GetOptionsAddr(ctx->fsys->savedata);
+        #define textbox_x 13
+        #define textbox_y 15
+        #define textbox_u 6
+        #define textbox_v 2
 
+        struct OPTIONS *options = Save_PlayerData_GetOptionsAddr(ctx->fsys->savedata);
         AddWindowParameterized(ctx->fsys->bg_config, &sNameWindow.window, 3, textbox_x, textbox_y, textbox_u, textbox_v, 13, 1);
-        LoadUserFrameGfx2(ctx->fsys->bg_config, 3, 0x3D9, 10, CONFIG_GetWindowType(options), HEAPID_FIELD1);
-        DrawFrameAndWindow2(&sNameWindow.window, FALSE, 0x3E2, 10);
-        FillWindowPixelBuffer(&sNameWindow.window, 15);
+        //Tr_TextBoxWindow(&sNameWindow.window);
 
         sNameWindow.active = TRUE;
     }
+    */
 
     // Show NPC Name
+    /*
     MsgData *msgData = NewMsgDataFromNarc(MSGDATA_LOAD_LAZY, ARC_MSG_DATA, 35, HEAPID_FIELD1);
     String *name = NewString_ReadMsgData(msgData, msgId);
 
@@ -460,6 +481,7 @@ BOOL ScrCmd_381(SCRIPTCONTEXT *ctx) {
     String_Delete(name);
     DestroyMsgData(msgData);
     CopyWindowToVram(&sNameWindow.window);
+    */
 
     return FALSE;
 }
@@ -474,8 +496,8 @@ BOOL ScrCmd_223(SCRIPTCONTEXT *ctx) {
     }
 
     // Hide Face (HidePokemonPic | ScrCmd_453)
-    //u8 **r0 = FieldSysGetAttrAddr(ctx->fsys, 21);
-    //**r0 = 1;
+    u8 **r0 = FieldSysGetAttrAddr(ctx->fsys, 21);
+    **r0 = 1;
 
     return FALSE;
 }

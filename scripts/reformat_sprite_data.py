@@ -113,6 +113,26 @@ def path_resolver_btx(inputPath: str, speciesDict: dict) -> str:
     return inputPath
 
 
+def AppendInazumaFrontSprites(output, startIndex: int):
+    inazumaDir = os.path.join("data", "graphics", "sprites", "_inazuma")
+    if not os.path.isdir(inazumaDir):
+        return
+
+    for spriteIndex, spriteName in enumerate(sorted(
+        f for f in os.listdir(inazumaDir)
+        if f.lower().endswith(".png")
+    ), start=startIndex):
+        outputPath = "build/pokemonpic/{:04d}".format(spriteIndex)
+        sourcePath = os.path.join(inazumaDir, spriteName).replace("\\", "/")
+        output.write(outputPath + "-00.NCGR: " + sourcePath + "\n" + ncgr_gen_format)
+        output.write(outputPath + "-01.NCGR: " + sourcePath + "\n" + ncgr_gen_format)
+        output.write(outputPath + "-02.NCGR: " + sourcePath + "\n" + ncgr_gen_format)
+        output.write(outputPath + "-03.NCGR: " + sourcePath + "\n" + ncgr_gen_format)
+        output.write(outputPath + "-04.NCLR: " + sourcePath + "\n" + nclr_front_gen_format)
+        output.write(outputPath + "-05.NCLR: " + sourcePath + "\n" + nclr_back_gen_format.format(outputPath))
+        output.write("POKEGRA_DEPENDENCIES += " + outputPath + "-00.NCGR " + outputPath + "-01.NCGR " + outputPath + "-02.NCGR " + outputPath + "-03.NCGR " + outputPath + "-04.NCLR " + outputPath + "-05.NCLR\n")
+
+
 def GenMakefile(outputPath: str, speciesDict: dict):
     output = open(outputPath, "w")
 # header
@@ -166,6 +186,10 @@ ICONGFX_RAWDATA_DIR := rawdata/files_from_a020
         output.write(btxSrcStr + "\n")
         output.write(btxDepStr + "\n")
         output.write(convertedIcon + ".NCGR: data/graphics/sprites/" + speciesName + "/icon.png\n" + icon_format.format(convertedIcon))
+
+    if speciesDict:
+        nextIndex = 1475 + 1
+        AppendInazumaFrontSprites(output, nextIndex)
 
 # footer
     output.write("""$(POKEGRA_NARC): $(POKEGRA_DEPENDENCIES)

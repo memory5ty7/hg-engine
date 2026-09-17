@@ -1,0 +1,11 @@
+.nds
+.thumb
+
+.open "base/arm9.bin", 0x2000000
+
+.org 0x0200F4D8
+
+    .word 0x0, 0x0, 0x0, 0x0, 0x0
+
+.pool
+.close
