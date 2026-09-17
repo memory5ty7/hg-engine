@@ -437,27 +437,12 @@ BOOL ScrCmd_381(SCRIPTCONTEXT *ctx) {
     if (faceId != 0) {
         #define face_x 1
         #define face_y 9
-
         struct PokepicManager **p_work = FieldSysGetAttrAddr(ctx->fsys, 21);
         LoadUserFrameGfx1(ctx->fsys->bg_config, 3, 0x3D9, 11, 0, HEAPID_FIELD1);
-        *p_work = DrawPokemonPicFromSpecies(ctx->fsys->bg_config, 3, face_x, face_y, 11, 0x3D9, faceId, POKEMON_GENDER_MALE, HEAPID_FIELD1);
-        /*
-        PokemonPreview *preview = sub_0200F5C4(ctx->fsys->bg_config, 3, face_x, face_y, HEAPID_FIELD1);
-
-        sub_0200F600(preview, HEAPID_FIELD1);
-        sub_0200F62C(preview);
-        sub_0200F684(preview, face_x, face_y);
-        sub_0200F6D4(&preview->spriteManager, faceId, POKEMON_GENDER_MALE);
-        sub_0200F82C(sNameWindow.preview, 11, 0x3D9);
-        Bg_CopyTilemapBufferToVRAM(ctx->fsys->bg_config, 3);
-
-        *p_work = &sNameWindow.preview->state;
-        */
-        
+        *p_work = DrawPokemonPicFromSpecies(ctx->fsys->bg_config, 3, face_x, face_y, 11, 0x3D9, faceId, POKEMON_GENDER_MALE, HEAPID_FIELD1);    
     }
 
     // Show NPC Name Window
-    /*
     if (!sNameWindow.active) {
         #define textbox_x 13
         #define textbox_y 15
@@ -466,11 +451,10 @@ BOOL ScrCmd_381(SCRIPTCONTEXT *ctx) {
 
         struct OPTIONS *options = Save_PlayerData_GetOptionsAddr(ctx->fsys->savedata);
         AddWindowParameterized(ctx->fsys->bg_config, &sNameWindow.window, 3, textbox_x, textbox_y, textbox_u, textbox_v, 13, 1);
-        //Tr_TextBoxWindow(&sNameWindow.window);
+        Tr_TextBoxWindow(&sNameWindow.window);
 
         sNameWindow.active = TRUE;
     }
-    */
 
     // Show NPC Name
     /*
