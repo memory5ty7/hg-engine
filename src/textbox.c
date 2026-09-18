@@ -32,6 +32,8 @@ void FieldMsgPrintInit(u32 type, u32 init) // FieldMessage_LoadTextPalettes
 
 void Tr_TextBoxWindow(struct Window *win)
 {
+    FillWindowPixelBuffer(win, 0xFF);
+
     u8 type = 0; // force type 0 window from options
     reg_G2_BLDCNT = 0x1b4f; // 0001 1011 0100 1111 -> in order from lsb to msb -> bg0-3, alpha blending, BG0/1/3 + OBJ
     reg_G2_BLDALPHA = 0x0510; // alpha blend 1st with 8, second with 5

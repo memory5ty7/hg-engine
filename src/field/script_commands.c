@@ -421,7 +421,6 @@ void SetupAndStartTotemBattle(TaskManager *taskManager, u16 species, u8 level, u
 typedef struct NameWindowWork {
     BOOL active;
     struct Window *window;
-    PokemonPreview *preview;
 } NameWindowWork;
 
 static NameWindowWork sNameWindow;
@@ -446,13 +445,12 @@ BOOL ScrCmd_381(SCRIPTCONTEXT *ctx) {
     if (!sNameWindow.active) {
         #define textbox_x 13
         #define textbox_y 15
-        #define textbox_u 6
+        #define textbox_u 5
         #define textbox_v 2
 
         struct OPTIONS *options = Save_PlayerData_GetOptionsAddr(ctx->fsys->savedata);
-        AddWindowParameterized(ctx->fsys->bg_config, &sNameWindow.window, 3, textbox_x, textbox_y, textbox_u, textbox_v, 13, 1);
+        AddWindowParameterized(ctx->fsys->bg_config, &sNameWindow.window, 3, textbox_x, textbox_y, textbox_u, textbox_v, 12, 707);
         Tr_TextBoxWindow(&sNameWindow.window);
-
         sNameWindow.active = TRUE;
     }
 
