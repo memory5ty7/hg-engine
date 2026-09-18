@@ -1,59 +1,57 @@
-Mark
-Axel
-Nathan
-Jack
-Kevin
-Tod
-Erik
-Bobby
-Steve
-Willy
-Max
-Tim
-Jim
-Sam
-Silvia
-Nelly
-Celia
-Sharp
-Jude
-Samford
-King
+{ALN_CENTER}Mark
+{ALN_CENTER}Axel
+{ALN_CENTER}Nathan
+{ALN_CENTER}Jack
+{ALN_CENTER}Kevin
+{ALN_CENTER}Tod
+{ALN_CENTER}Erik
+{ALN_CENTER}Bobby
+{ALN_CENTER}Steve
+{ALN_CENTER}Willy
+{ALN_CENTER}Max
+{ALN_CENTER}Tim
+{ALN_CENTER}Jim
+{ALN_CENTER}Sam
+{ALN_CENTER}Silvia
+{ALN_CENTER}Nelly
+{ALN_CENTER}Celia
+{ALN_CENTER}Sharp
+{ALN_CENTER}Jude
+{ALN_CENTER}Samford
+{ALN_CENTER}King
 
-Maddie
+{ALN_CENTER}Maddie
 
-Tassman
+{ALN_CENTER}Tassman
 
-Edmonds
+{ALN_CENTER}Edmonds
 
-Tallgease
+{ALN_CENTER}Tallgease
 
-Machine
-Feldt
-Turner
+{ALN_CENTER}Machine
+{ALN_CENTER}Feldt
+{ALN_CENTER}Turner
 
-Samantha
+{ALN_CENTER}Samantha
 
-Gambling
+{ALN_CENTER}Gambling
 
-Hillman
+{ALN_CENTER}Hillman
 
-Bluesea
+{ALN_CENTER}Bluesea
 
-Hillvalley
+{ALN_CENTER}Hillvalley
 
-Marvin
-Thomas
-Tyler
-Malcolm
+{ALN_CENTER}Marvin
+{ALN_CENTER}Thomas
+{ALN_CENTER}Tyler
+{ALN_CENTER}Malcolm
 
-Aphrodite
+{ALN_CENTER}Aphrodite
 
-Paul
-Shadow
-Horse Jr.
-
-
+{ALN_CENTER}Paul
+{ALN_CENTER}Shadow
+{ALN_CENTER}Horse Jr.
 
 
 
@@ -71,14 +69,16 @@ Horse Jr.
 
 
 
-Saggy
-Sonny
-Veteran
-Dark
-Wintersea
-Firewill
-David
-Julia
-Dad
-Mom
-Memory5ty7
+
+
+{ALN_CENTER}Saggy
+{ALN_CENTER}Sonny
+{ALN_CENTER}Veteran
+{ALN_CENTER}Dark
+{ALN_CENTER}Wintersea
+{ALN_CENTER}Firewill
+{ALN_CENTER}David
+{ALN_CENTER}Julia
+{ALN_CENTER}Dad
+{ALN_CENTER}Mom
+{ALN_CENTER}Memory5ty7
