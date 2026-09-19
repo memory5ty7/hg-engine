@@ -443,9 +443,9 @@ BOOL ScrCmd_381(SCRIPTCONTEXT *ctx) {
 
     // Show NPC Name Window
     if (!sNameWindow.active) {
-        #define textbox_x 13
+        #define textbox_x 12
         #define textbox_y 15
-        #define textbox_u 5
+        #define textbox_u 7
         #define textbox_v 2
 
         struct OPTIONS *options = Save_PlayerData_GetOptionsAddr(ctx->fsys->savedata);

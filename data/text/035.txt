@@ -1,84 +1,51 @@
-{ALN_CENTER}Mark
-{ALN_CENTER}Axel
-{ALN_CENTER}Nathan
-{ALN_CENTER}Jack
-{ALN_CENTER}Kevin
-{ALN_CENTER}Tod
-{ALN_CENTER}Erik
-{ALN_CENTER}Bobby
-{ALN_CENTER}Steve
-{ALN_CENTER}Willy
-{ALN_CENTER}Max
-{ALN_CENTER}Tim
-{ALN_CENTER}Jim
-{ALN_CENTER}Sam
-{ALN_CENTER}Silvia
-{ALN_CENTER}Nelly
-{ALN_CENTER}Celia
-{ALN_CENTER}Sharp
-{ALN_CENTER}Jude
-{ALN_CENTER}Samford
-{ALN_CENTER}King
-
-{ALN_CENTER}Maddie
-
-{ALN_CENTER}Tassman
-
-{ALN_CENTER}Edmonds
-
-{ALN_CENTER}Tallgease
-
-{ALN_CENTER}Machine
-{ALN_CENTER}Feldt
-{ALN_CENTER}Turner
-
-{ALN_CENTER}Samantha
-
-{ALN_CENTER}Gambling
-
-{ALN_CENTER}Hillman
-
-{ALN_CENTER}Bluesea
-
-{ALN_CENTER}Hillvalley
-
-{ALN_CENTER}Marvin
-{ALN_CENTER}Thomas
-{ALN_CENTER}Tyler
-{ALN_CENTER}Malcolm
-
-{ALN_CENTER}Aphrodite
-
-{ALN_CENTER}Paul
-{ALN_CENTER}Shadow
-{ALN_CENTER}Horse Jr.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{ALN_CENTER}Saggy
-{ALN_CENTER}Sonny
-{ALN_CENTER}Veteran
-{ALN_CENTER}Dark
-{ALN_CENTER}Wintersea
-{ALN_CENTER}Firewill
-{ALN_CENTER}David
-{ALN_CENTER}Julia
-{ALN_CENTER}Dad
-{ALN_CENTER}Mom
-{ALN_CENTER}Memory5ty7
+{ALN_CENTER} Mark
+{ALN_CENTER} Axel
+{ALN_CENTER} Nathan
+{ALN_CENTER} Jack
+{ALN_CENTER} Kevin
+{ALN_CENTER} Tod
+{ALN_CENTER} Erik
+{ALN_CENTER} Bobby
+{ALN_CENTER} Steve
+{ALN_CENTER} Willy
+{ALN_CENTER} Max
+{ALN_CENTER} Tim
+{ALN_CENTER} Jim
+{ALN_CENTER} Sam
+{ALN_CENTER} Silvia
+{ALN_CENTER} Nelly
+{ALN_CENTER} Celia
+{ALN_CENTER} Sharp
+{ALN_CENTER} Jude
+{ALN_CENTER} Samford
+{ALN_CENTER} King
+{ALN_CENTER} Maddie
+{ALN_CENTER} Tassman
+{ALN_CENTER} Edmonds
+{ALN_CENTER} Tallgease
+{ALN_CENTER} Feldt
+{ALN_CENTER} Turner
+{ALN_CENTER} Samantha
+{ALN_CENTER} Gambling
+{ALN_CENTER} Hillman
+{ALN_CENTER} Bluesea
+{ALN_CENTER} Hillvalley
+{ALN_CENTER} Marvin
+{ALN_CENTER} Thomas
+{ALN_CENTER} Tyler
+{ALN_CENTER} Malcolm
+{ALN_CENTER} Aphrodite
+{ALN_CENTER} Paul
+{ALN_CENTER} Shadow
+{ALN_CENTER} Horse Jr.
+{ALN_CENTER} Saggy
+{ALN_CENTER} Sonny
+{ALN_CENTER} Veteran
+{ALN_CENTER} Dark
+{ALN_CENTER} Wintersea
+{ALN_CENTER} Firewill
+{ALN_CENTER} David
+{ALN_CENTER} Julia
+{ALN_CENTER} Dad
+{ALN_CENTER} Mom
+{ALN_CENTER} Memory5ty7
