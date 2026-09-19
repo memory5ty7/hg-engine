@@ -46758,6 +46758,402 @@ build/pokemonpic/1512-05.NCLR: data/graphics/sprites/_inazuma/036.png
 	fi
 POKEGRA_DEPENDENCIES += build/pokemonpic/1512-00.NCGR build/pokemonpic/1512-01.NCGR build/pokemonpic/1512-02.NCGR build/pokemonpic/1512-03.NCGR build/pokemonpic/1512-04.NCLR build/pokemonpic/1512-05.NCLR
 POKEGRA_DEPENDENCIES += build/pokemonpic/1512-00.NCGR build/pokemonpic/1512-01.NCGR build/pokemonpic/1512-02.NCGR build/pokemonpic/1512-03.NCGR build/pokemonpic/1512-04.NCLR build/pokemonpic/1512-05.NCLR
+build/pokemonpic/1513-00.NCGR: data/graphics/sprites/_inazuma/037.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1513-01.NCGR: data/graphics/sprites/_inazuma/037.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1513-02.NCGR: data/graphics/sprites/_inazuma/037.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1513-03.NCGR: data/graphics/sprites/_inazuma/037.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1513-04.NCLR: data/graphics/sprites/_inazuma/037.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+build/pokemonpic/1513-05.NCLR: data/graphics/sprites/_inazuma/037.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+POKEGRA_DEPENDENCIES += build/pokemonpic/1513-00.NCGR build/pokemonpic/1513-01.NCGR build/pokemonpic/1513-02.NCGR build/pokemonpic/1513-03.NCGR build/pokemonpic/1513-04.NCLR build/pokemonpic/1513-05.NCLR
+POKEGRA_DEPENDENCIES += build/pokemonpic/1513-00.NCGR build/pokemonpic/1513-01.NCGR build/pokemonpic/1513-02.NCGR build/pokemonpic/1513-03.NCGR build/pokemonpic/1513-04.NCLR build/pokemonpic/1513-05.NCLR
+build/pokemonpic/1514-00.NCGR: data/graphics/sprites/_inazuma/038.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1514-01.NCGR: data/graphics/sprites/_inazuma/038.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1514-02.NCGR: data/graphics/sprites/_inazuma/038.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1514-03.NCGR: data/graphics/sprites/_inazuma/038.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1514-04.NCLR: data/graphics/sprites/_inazuma/038.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+build/pokemonpic/1514-05.NCLR: data/graphics/sprites/_inazuma/038.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+POKEGRA_DEPENDENCIES += build/pokemonpic/1514-00.NCGR build/pokemonpic/1514-01.NCGR build/pokemonpic/1514-02.NCGR build/pokemonpic/1514-03.NCGR build/pokemonpic/1514-04.NCLR build/pokemonpic/1514-05.NCLR
+POKEGRA_DEPENDENCIES += build/pokemonpic/1514-00.NCGR build/pokemonpic/1514-01.NCGR build/pokemonpic/1514-02.NCGR build/pokemonpic/1514-03.NCGR build/pokemonpic/1514-04.NCLR build/pokemonpic/1514-05.NCLR
+build/pokemonpic/1515-00.NCGR: data/graphics/sprites/_inazuma/039.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1515-01.NCGR: data/graphics/sprites/_inazuma/039.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1515-02.NCGR: data/graphics/sprites/_inazuma/039.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1515-03.NCGR: data/graphics/sprites/_inazuma/039.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1515-04.NCLR: data/graphics/sprites/_inazuma/039.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+build/pokemonpic/1515-05.NCLR: data/graphics/sprites/_inazuma/039.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+POKEGRA_DEPENDENCIES += build/pokemonpic/1515-00.NCGR build/pokemonpic/1515-01.NCGR build/pokemonpic/1515-02.NCGR build/pokemonpic/1515-03.NCGR build/pokemonpic/1515-04.NCLR build/pokemonpic/1515-05.NCLR
+POKEGRA_DEPENDENCIES += build/pokemonpic/1515-00.NCGR build/pokemonpic/1515-01.NCGR build/pokemonpic/1515-02.NCGR build/pokemonpic/1515-03.NCGR build/pokemonpic/1515-04.NCLR build/pokemonpic/1515-05.NCLR
+build/pokemonpic/1516-00.NCGR: data/graphics/sprites/_inazuma/040.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1516-01.NCGR: data/graphics/sprites/_inazuma/040.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1516-02.NCGR: data/graphics/sprites/_inazuma/040.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1516-03.NCGR: data/graphics/sprites/_inazuma/040.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1516-04.NCLR: data/graphics/sprites/_inazuma/040.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+build/pokemonpic/1516-05.NCLR: data/graphics/sprites/_inazuma/040.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+POKEGRA_DEPENDENCIES += build/pokemonpic/1516-00.NCGR build/pokemonpic/1516-01.NCGR build/pokemonpic/1516-02.NCGR build/pokemonpic/1516-03.NCGR build/pokemonpic/1516-04.NCLR build/pokemonpic/1516-05.NCLR
+POKEGRA_DEPENDENCIES += build/pokemonpic/1516-00.NCGR build/pokemonpic/1516-01.NCGR build/pokemonpic/1516-02.NCGR build/pokemonpic/1516-03.NCGR build/pokemonpic/1516-04.NCLR build/pokemonpic/1516-05.NCLR
+build/pokemonpic/1517-00.NCGR: data/graphics/sprites/_inazuma/041.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1517-01.NCGR: data/graphics/sprites/_inazuma/041.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1517-02.NCGR: data/graphics/sprites/_inazuma/041.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1517-03.NCGR: data/graphics/sprites/_inazuma/041.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1517-04.NCLR: data/graphics/sprites/_inazuma/041.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+build/pokemonpic/1517-05.NCLR: data/graphics/sprites/_inazuma/041.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+POKEGRA_DEPENDENCIES += build/pokemonpic/1517-00.NCGR build/pokemonpic/1517-01.NCGR build/pokemonpic/1517-02.NCGR build/pokemonpic/1517-03.NCGR build/pokemonpic/1517-04.NCLR build/pokemonpic/1517-05.NCLR
+POKEGRA_DEPENDENCIES += build/pokemonpic/1517-00.NCGR build/pokemonpic/1517-01.NCGR build/pokemonpic/1517-02.NCGR build/pokemonpic/1517-03.NCGR build/pokemonpic/1517-04.NCLR build/pokemonpic/1517-05.NCLR
+build/pokemonpic/1518-00.NCGR: data/graphics/sprites/_inazuma/042.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1518-01.NCGR: data/graphics/sprites/_inazuma/042.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1518-02.NCGR: data/graphics/sprites/_inazuma/042.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1518-03.NCGR: data/graphics/sprites/_inazuma/042.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1518-04.NCLR: data/graphics/sprites/_inazuma/042.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+build/pokemonpic/1518-05.NCLR: data/graphics/sprites/_inazuma/042.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+POKEGRA_DEPENDENCIES += build/pokemonpic/1518-00.NCGR build/pokemonpic/1518-01.NCGR build/pokemonpic/1518-02.NCGR build/pokemonpic/1518-03.NCGR build/pokemonpic/1518-04.NCLR build/pokemonpic/1518-05.NCLR
+POKEGRA_DEPENDENCIES += build/pokemonpic/1518-00.NCGR build/pokemonpic/1518-01.NCGR build/pokemonpic/1518-02.NCGR build/pokemonpic/1518-03.NCGR build/pokemonpic/1518-04.NCLR build/pokemonpic/1518-05.NCLR
+build/pokemonpic/1519-00.NCGR: data/graphics/sprites/_inazuma/043.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1519-01.NCGR: data/graphics/sprites/_inazuma/043.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1519-02.NCGR: data/graphics/sprites/_inazuma/043.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1519-03.NCGR: data/graphics/sprites/_inazuma/043.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1519-04.NCLR: data/graphics/sprites/_inazuma/043.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+build/pokemonpic/1519-05.NCLR: data/graphics/sprites/_inazuma/043.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+POKEGRA_DEPENDENCIES += build/pokemonpic/1519-00.NCGR build/pokemonpic/1519-01.NCGR build/pokemonpic/1519-02.NCGR build/pokemonpic/1519-03.NCGR build/pokemonpic/1519-04.NCLR build/pokemonpic/1519-05.NCLR
+POKEGRA_DEPENDENCIES += build/pokemonpic/1519-00.NCGR build/pokemonpic/1519-01.NCGR build/pokemonpic/1519-02.NCGR build/pokemonpic/1519-03.NCGR build/pokemonpic/1519-04.NCLR build/pokemonpic/1519-05.NCLR
+build/pokemonpic/1520-00.NCGR: data/graphics/sprites/_inazuma/044.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1520-01.NCGR: data/graphics/sprites/_inazuma/044.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1520-02.NCGR: data/graphics/sprites/_inazuma/044.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1520-03.NCGR: data/graphics/sprites/_inazuma/044.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1520-04.NCLR: data/graphics/sprites/_inazuma/044.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+build/pokemonpic/1520-05.NCLR: data/graphics/sprites/_inazuma/044.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+POKEGRA_DEPENDENCIES += build/pokemonpic/1520-00.NCGR build/pokemonpic/1520-01.NCGR build/pokemonpic/1520-02.NCGR build/pokemonpic/1520-03.NCGR build/pokemonpic/1520-04.NCLR build/pokemonpic/1520-05.NCLR
+POKEGRA_DEPENDENCIES += build/pokemonpic/1520-00.NCGR build/pokemonpic/1520-01.NCGR build/pokemonpic/1520-02.NCGR build/pokemonpic/1520-03.NCGR build/pokemonpic/1520-04.NCLR build/pokemonpic/1520-05.NCLR
+build/pokemonpic/1521-00.NCGR: data/graphics/sprites/_inazuma/045.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1521-01.NCGR: data/graphics/sprites/_inazuma/045.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1521-02.NCGR: data/graphics/sprites/_inazuma/045.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1521-03.NCGR: data/graphics/sprites/_inazuma/045.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1521-04.NCLR: data/graphics/sprites/_inazuma/045.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+build/pokemonpic/1521-05.NCLR: data/graphics/sprites/_inazuma/045.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+POKEGRA_DEPENDENCIES += build/pokemonpic/1521-00.NCGR build/pokemonpic/1521-01.NCGR build/pokemonpic/1521-02.NCGR build/pokemonpic/1521-03.NCGR build/pokemonpic/1521-04.NCLR build/pokemonpic/1521-05.NCLR
+POKEGRA_DEPENDENCIES += build/pokemonpic/1521-00.NCGR build/pokemonpic/1521-01.NCGR build/pokemonpic/1521-02.NCGR build/pokemonpic/1521-03.NCGR build/pokemonpic/1521-04.NCLR build/pokemonpic/1521-05.NCLR
+build/pokemonpic/1522-00.NCGR: data/graphics/sprites/_inazuma/046.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1522-01.NCGR: data/graphics/sprites/_inazuma/046.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1522-02.NCGR: data/graphics/sprites/_inazuma/046.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1522-03.NCGR: data/graphics/sprites/_inazuma/046.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1522-04.NCLR: data/graphics/sprites/_inazuma/046.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+build/pokemonpic/1522-05.NCLR: data/graphics/sprites/_inazuma/046.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+POKEGRA_DEPENDENCIES += build/pokemonpic/1522-00.NCGR build/pokemonpic/1522-01.NCGR build/pokemonpic/1522-02.NCGR build/pokemonpic/1522-03.NCGR build/pokemonpic/1522-04.NCLR build/pokemonpic/1522-05.NCLR
+POKEGRA_DEPENDENCIES += build/pokemonpic/1522-00.NCGR build/pokemonpic/1522-01.NCGR build/pokemonpic/1522-02.NCGR build/pokemonpic/1522-03.NCGR build/pokemonpic/1522-04.NCLR build/pokemonpic/1522-05.NCLR
+build/pokemonpic/1523-00.NCGR: data/graphics/sprites/_inazuma/047.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1523-01.NCGR: data/graphics/sprites/_inazuma/047.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1523-02.NCGR: data/graphics/sprites/_inazuma/047.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1523-03.NCGR: data/graphics/sprites/_inazuma/047.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1523-04.NCLR: data/graphics/sprites/_inazuma/047.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+build/pokemonpic/1523-05.NCLR: data/graphics/sprites/_inazuma/047.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+POKEGRA_DEPENDENCIES += build/pokemonpic/1523-00.NCGR build/pokemonpic/1523-01.NCGR build/pokemonpic/1523-02.NCGR build/pokemonpic/1523-03.NCGR build/pokemonpic/1523-04.NCLR build/pokemonpic/1523-05.NCLR
+POKEGRA_DEPENDENCIES += build/pokemonpic/1523-00.NCGR build/pokemonpic/1523-01.NCGR build/pokemonpic/1523-02.NCGR build/pokemonpic/1523-03.NCGR build/pokemonpic/1523-04.NCLR build/pokemonpic/1523-05.NCLR
+build/pokemonpic/1524-00.NCGR: data/graphics/sprites/_inazuma/048.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1524-01.NCGR: data/graphics/sprites/_inazuma/048.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1524-02.NCGR: data/graphics/sprites/_inazuma/048.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1524-03.NCGR: data/graphics/sprites/_inazuma/048.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1524-04.NCLR: data/graphics/sprites/_inazuma/048.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+build/pokemonpic/1524-05.NCLR: data/graphics/sprites/_inazuma/048.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+POKEGRA_DEPENDENCIES += build/pokemonpic/1524-00.NCGR build/pokemonpic/1524-01.NCGR build/pokemonpic/1524-02.NCGR build/pokemonpic/1524-03.NCGR build/pokemonpic/1524-04.NCLR build/pokemonpic/1524-05.NCLR
+POKEGRA_DEPENDENCIES += build/pokemonpic/1524-00.NCGR build/pokemonpic/1524-01.NCGR build/pokemonpic/1524-02.NCGR build/pokemonpic/1524-03.NCGR build/pokemonpic/1524-04.NCLR build/pokemonpic/1524-05.NCLR
+build/pokemonpic/1525-00.NCGR: data/graphics/sprites/_inazuma/049.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1525-01.NCGR: data/graphics/sprites/_inazuma/049.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1525-02.NCGR: data/graphics/sprites/_inazuma/049.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1525-03.NCGR: data/graphics/sprites/_inazuma/049.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1525-04.NCLR: data/graphics/sprites/_inazuma/049.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+build/pokemonpic/1525-05.NCLR: data/graphics/sprites/_inazuma/049.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+POKEGRA_DEPENDENCIES += build/pokemonpic/1525-00.NCGR build/pokemonpic/1525-01.NCGR build/pokemonpic/1525-02.NCGR build/pokemonpic/1525-03.NCGR build/pokemonpic/1525-04.NCLR build/pokemonpic/1525-05.NCLR
+POKEGRA_DEPENDENCIES += build/pokemonpic/1525-00.NCGR build/pokemonpic/1525-01.NCGR build/pokemonpic/1525-02.NCGR build/pokemonpic/1525-03.NCGR build/pokemonpic/1525-04.NCLR build/pokemonpic/1525-05.NCLR
+build/pokemonpic/1526-00.NCGR: data/graphics/sprites/_inazuma/050.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1526-01.NCGR: data/graphics/sprites/_inazuma/050.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1526-02.NCGR: data/graphics/sprites/_inazuma/050.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1526-03.NCGR: data/graphics/sprites/_inazuma/050.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1526-04.NCLR: data/graphics/sprites/_inazuma/050.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+build/pokemonpic/1526-05.NCLR: data/graphics/sprites/_inazuma/050.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+POKEGRA_DEPENDENCIES += build/pokemonpic/1526-00.NCGR build/pokemonpic/1526-01.NCGR build/pokemonpic/1526-02.NCGR build/pokemonpic/1526-03.NCGR build/pokemonpic/1526-04.NCLR build/pokemonpic/1526-05.NCLR
+POKEGRA_DEPENDENCIES += build/pokemonpic/1526-00.NCGR build/pokemonpic/1526-01.NCGR build/pokemonpic/1526-02.NCGR build/pokemonpic/1526-03.NCGR build/pokemonpic/1526-04.NCLR build/pokemonpic/1526-05.NCLR
+build/pokemonpic/1527-00.NCGR: data/graphics/sprites/_inazuma/051.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1527-01.NCGR: data/graphics/sprites/_inazuma/051.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1527-02.NCGR: data/graphics/sprites/_inazuma/051.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1527-03.NCGR: data/graphics/sprites/_inazuma/051.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1527-04.NCLR: data/graphics/sprites/_inazuma/051.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+build/pokemonpic/1527-05.NCLR: data/graphics/sprites/_inazuma/051.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+POKEGRA_DEPENDENCIES += build/pokemonpic/1527-00.NCGR build/pokemonpic/1527-01.NCGR build/pokemonpic/1527-02.NCGR build/pokemonpic/1527-03.NCGR build/pokemonpic/1527-04.NCLR build/pokemonpic/1527-05.NCLR
+POKEGRA_DEPENDENCIES += build/pokemonpic/1527-00.NCGR build/pokemonpic/1527-01.NCGR build/pokemonpic/1527-02.NCGR build/pokemonpic/1527-03.NCGR build/pokemonpic/1527-04.NCLR build/pokemonpic/1527-05.NCLR
+build/pokemonpic/1528-00.NCGR: data/graphics/sprites/_inazuma/052.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1528-01.NCGR: data/graphics/sprites/_inazuma/052.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1528-02.NCGR: data/graphics/sprites/_inazuma/052.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1528-03.NCGR: data/graphics/sprites/_inazuma/052.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1528-04.NCLR: data/graphics/sprites/_inazuma/052.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+build/pokemonpic/1528-05.NCLR: data/graphics/sprites/_inazuma/052.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+POKEGRA_DEPENDENCIES += build/pokemonpic/1528-00.NCGR build/pokemonpic/1528-01.NCGR build/pokemonpic/1528-02.NCGR build/pokemonpic/1528-03.NCGR build/pokemonpic/1528-04.NCLR build/pokemonpic/1528-05.NCLR
+POKEGRA_DEPENDENCIES += build/pokemonpic/1528-00.NCGR build/pokemonpic/1528-01.NCGR build/pokemonpic/1528-02.NCGR build/pokemonpic/1528-03.NCGR build/pokemonpic/1528-04.NCLR build/pokemonpic/1528-05.NCLR
+build/pokemonpic/1529-00.NCGR: data/graphics/sprites/_inazuma/053.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1529-01.NCGR: data/graphics/sprites/_inazuma/053.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1529-02.NCGR: data/graphics/sprites/_inazuma/053.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1529-03.NCGR: data/graphics/sprites/_inazuma/053.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1529-04.NCLR: data/graphics/sprites/_inazuma/053.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+build/pokemonpic/1529-05.NCLR: data/graphics/sprites/_inazuma/053.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+POKEGRA_DEPENDENCIES += build/pokemonpic/1529-00.NCGR build/pokemonpic/1529-01.NCGR build/pokemonpic/1529-02.NCGR build/pokemonpic/1529-03.NCGR build/pokemonpic/1529-04.NCLR build/pokemonpic/1529-05.NCLR
+POKEGRA_DEPENDENCIES += build/pokemonpic/1529-00.NCGR build/pokemonpic/1529-01.NCGR build/pokemonpic/1529-02.NCGR build/pokemonpic/1529-03.NCGR build/pokemonpic/1529-04.NCLR build/pokemonpic/1529-05.NCLR
+build/pokemonpic/1530-00.NCGR: data/graphics/sprites/_inazuma/054.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1530-01.NCGR: data/graphics/sprites/_inazuma/054.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1530-02.NCGR: data/graphics/sprites/_inazuma/054.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1530-03.NCGR: data/graphics/sprites/_inazuma/054.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1530-04.NCLR: data/graphics/sprites/_inazuma/054.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+build/pokemonpic/1530-05.NCLR: data/graphics/sprites/_inazuma/054.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+POKEGRA_DEPENDENCIES += build/pokemonpic/1530-00.NCGR build/pokemonpic/1530-01.NCGR build/pokemonpic/1530-02.NCGR build/pokemonpic/1530-03.NCGR build/pokemonpic/1530-04.NCLR build/pokemonpic/1530-05.NCLR
+POKEGRA_DEPENDENCIES += build/pokemonpic/1530-00.NCGR build/pokemonpic/1530-01.NCGR build/pokemonpic/1530-02.NCGR build/pokemonpic/1530-03.NCGR build/pokemonpic/1530-04.NCLR build/pokemonpic/1530-05.NCLR
 $(POKEGRA_NARC): $(POKEGRA_DEPENDENCIES)
 	$(NARCHIVE) create $@ $(POKEGRA_BUILD_DIR) -nf
 

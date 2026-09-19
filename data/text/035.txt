@@ -48,4 +48,9 @@
 {ALN_CENTER} Julia
 {ALN_CENTER} Dad
 {ALN_CENTER} Mom
+{ALN_CENTER} Smith
+{ALN_CENTER} Zak
+{ALN_CENTER} Nichols
+{ALN_CENTER} Andy
+{ALN_CENTER} Aurelia
 {ALN_CENTER} Memory5ty7
