@@ -139,6 +139,32 @@ static u8* pStrmBufL = NULL;
 
 static void update(StreamInfo* sInfo);
 static void StrmThread(void* arg);
+
+// The hardware channel volume is already at its maximum. Boost samples here
+// so quiet NWAV files are played louder without affecting other game audio.
+static void amplifySamples(u8* buffer, int length)
+{
+    int i;
+
+    if (hInfo.format)
+    {
+        s16* samples = (s16*)buffer;
+        for (i = 0; i < length / 2; i++)
+        {
+            s32 sample = (s32)samples[i] * 2;
+            samples[i] = (s16)MATH_CLAMP(sample, -32768, 32767);
+        }
+    }
+    else
+    {
+        s8* samples = (s8*)buffer;
+        for (i = 0; i < length; i++)
+        {
+            s32 sample = (s32)samples[i] * 2;
+            samples[i] = (s8)MATH_CLAMP(sample, -128, 127);
+        }
+    }
+}
 	
 
 
@@ -332,6 +358,7 @@ static void updateCheckEnd(StreamInfo* sInfo, int len, u32 offset)
                 */
                 // Read Left
                 FS_ReadFile(&file, pStrmBufL + offset + len, leftOver);
+                amplifySamples(pStrmBufL + offset + len, leftOver);
                 //DC_InvalidateRange(pStrmBufL + offset + len, leftOver);
                 //DC_FlushRange(pStrmBufL + offset + len, leftOver);
 
@@ -399,6 +426,8 @@ static void update(StreamInfo* sInfo)
     //}
     if (len > 0) {
         s32 bytesRead = FS_ReadFile(&file, pStrmBufL + offset, len);
+        if (bytesRead > 0)
+            amplifySamples(pStrmBufL + offset, bytesRead);
         
         // EOF FAILSAFE: Force the loop wrap if the physical file ends early
         if (bytesRead < len && sInfo->loops) {
@@ -599,8 +628,8 @@ void NWAVPlayer_play(int fileID)
     sInfo.samplesPerUpdate = (STRM_BUF_PAGESIZE / sInfo.bytesPerSample);
 
     // If the converter tool stores loop points as bytes, divide them back into samples
-    hInfo.loopStart /= sInfo.bytesPerSample;
-    hInfo.loopEnd   /= sInfo.bytesPerSample;
+    //hInfo.loopStart /= sInfo.bytesPerSample;
+    //hInfo.loopEnd   /= sInfo.bytesPerSample;
 
     if (sInfo.bytesPerSample == 2) {
         hInfo.loopStart &= ~1;
