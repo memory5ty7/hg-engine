@@ -934,3 +934,37 @@ MonMoveRestorePP = 0x0209091C | 1;
 DrawPokemonPicFromSpecies = 0x0200F4A0 | 1;
 LoadUserFrameGfx2 = 0x0200E644 | 1;
 DrawFrameAndWindow2 = 0x0200E998 | 1;
+
+/*Streamed Audio*/
+/* implies arm function, 4 byte instructions no need for | 1*/
+/* If 2 byte instruction, then thumb mode, then need | 1. */
+/* Looks like they are all thumb functions */
+
+/*OS_Panic = ?, MI_CpuFill8 = ?*/
+OS_CreateThread = 0x020D1AD4;
+OS_WakeUpThreadDirect = 0x020D1F34;
+OS_InitMessageQueue = 0x020D2388;
+OS_SendMessage = 0x020D23B0;
+OS_ReceiveMessage = 0x020D2444;
+OS_Terminate = 0x020D3F48;
+
+SND_SetupChannelPcm = 0x020D52E8;
+SND_SetChannelVolume = 0x020D52A0;
+SND_LockChannel =   0x020D5240;
+SND_SetupAlarm =    0x020D5200; 
+SND_StartTimer =    0x020D5174;
+SND_StopTimer =     0x020D519C;
+
+NNS_SndSetMasterVolume = 0x020C7988;
+
+FS_InitFile =       0x020D7F98;
+FS_OpenFileFast =   0x020D8208;
+FS_ReadFile =       0x020D83CC;
+FS_SeekFile =       0x020D83DC;
+FS_CloseFile =      0x020D82C0;
+FS_FindArchive =    0x020D7958;
+
+DC_FlushRange =     0x020D2894;
+DC_InvalidateRange = 0x020D285C;
+
+MI_CpuFill8 =       0x020D4994;
