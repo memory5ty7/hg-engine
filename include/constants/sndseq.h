@@ -1374,6 +1374,29 @@
 #define SEQ_SE_GS_XBUTTON_SYUKUSHOU   2377
 #define SEQ_SE_END                    2378
 
+// NWAV sound files
+#define NWAV_RAIMON1                  0
+#define NWAV_RAIMON2                  1
+#define NWAV_TOWER                    2
+#define NWAV_RIVER                    3
+#define NWAV_SHOP                     4
+#define NWAV_WILLY                    5
+#define NWAV_NELLY                    6
+#define NWAV_JULIA                    7
+#define NWAV_STADIUM                  8
+#define NWAV_ROYAL                    9
+#define NWAV_ZEUS                     10
+#define NWAV_BA_WILD                  11
+#define NWAV_BA_TRAINER               12
+#define NWAV_BA_BOSS                  13
+#define NWAV_BA_INABIKARI             14
+#define NWAV_BA_ROYAL                 15
+#define NWAV_BA_ZEUS                  16
+#define NWAV_BA_GIRLS                 17
+#define NWAV_BA_AXEL                  18
+#define NWAV_BA_JUDE                  19
+#define NWAV_TITLE_SCREEN             20
+
 // Sounds marked BANK, WAVE, PLAYER, GROUP not ported over from pokeheartgold/include/constants/sndseq.h
 
 enum {
