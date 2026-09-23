@@ -20,8 +20,8 @@ typedef struct {
 //Use this array to override specific sequences that cannot be reassigned via music_tables.c or DSPRE's header editor
 static const NWAV_Override sNwavOverrides[] = {
     //{example_sseq, example_nwav}
-    //{1008, 0},  // Title screen -> iris network
-    //{SEQ_GS_C_YOSHINO, 0},
+    {SEQ_GS_POKEMON_THEME, NWAV_TITLE_SCREEN},  // Title screen
+    //{SEQ_GS_C_YOSHINO, NWAV_RAIMON1},
     //{1004, 31}, // Opening  -> feelings risen
     
 };

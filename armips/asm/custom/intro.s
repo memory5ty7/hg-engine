@@ -1,0 +1,10 @@
+.nds
+.thumb
+
+.open "base/arm9.bin", 0x0
+
+; Skip intro
+.org 0xE58
+    .byte 0xE0, 0xAF, 0x1E, 0x02
+
+.close
