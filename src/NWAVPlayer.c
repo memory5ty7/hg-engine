@@ -188,11 +188,20 @@ static void NWAV_StopHw(void) {
     SND_StopTimer(CHANNEL_MASK, noCapture, 1 << sWork->alarmNo, flags);
 }
 
-void NWAV_Init(void) {
-    u32 raw = (u32)sys_AllocMemory(NWAV_HEAP_ID, sizeof(NWAVWork) + CACHE_LINE_SIZE - 1);
-    NWAVWork *work = (NWAVWork *)((raw + CACHE_LINE_SIZE - 1) & ~(CACHE_LINE_SIZE - 1));
+// Set up on the first stream rather than at boot, like the reference implementation which runs on hardware.
+static BOOL NWAV_SetupWork(void) {
+    u32 raw;
+    NWAVWork *work;
     s32 msgCount = 1;
 
+    if (sWork != NULL) {
+        return TRUE;
+    }
+    raw = (u32)sys_AllocMemory(NWAV_HEAP_ID, sizeof(NWAVWork) + CACHE_LINE_SIZE - 1);
+    if (raw == 0) {
+        return FALSE;
+    }
+    work = (NWAVWork *)((raw + CACHE_LINE_SIZE - 1) & ~(CACHE_LINE_SIZE - 1));
     sWork = work;
     MI_CpuClear8(work, sizeof(NWAVWork));
     work->volume = NWAV_VOLUME_MAX;
@@ -202,6 +211,7 @@ void NWAV_Init(void) {
     OS_InitMessageQueue(&work->msgQueue, &work->msgBuf, msgCount);
     OS_CreateThread(&work->thread, NWAV_StreamThread, NULL, work->threadStack + NELEMS(work->threadStack), sizeof(work->threadStack), STREAM_THREAD_PRIO);
     OS_WakeUpThreadDirect(&work->thread);
+    return TRUE;
 }
 
 static BOOL NWAV_ReserveHw(void) {
@@ -252,9 +262,14 @@ static BOOL NWAV_ReadHeader(void) {
 }
 
 BOOL NWAV_PlayTrack(int track, u32 startSample) {
-    NWAVWork *work = sWork;
-    FSFileID fileID = work->firstFileID;
+    NWAVWork *work;
+    FSFileID fileID;
 
+    if (!NWAV_SetupWork()) {
+        return FALSE;
+    }
+    work = sWork;
+    fileID = work->firstFileID;
     NWAV_Stop();
 
     if (fileID.arc == NULL) {
@@ -322,7 +337,7 @@ void NWAV_SetPaused(BOOL paused) {
 
 void NWAV_Main(void) {
     // The last page of silence was played, release the stream.
-    if (sWork->isPlaying && NWAV_IsFinished()) {
+    if (sWork != NULL && sWork->isPlaying && NWAV_IsFinished()) {
         NWAV_Stop();
     }
 }

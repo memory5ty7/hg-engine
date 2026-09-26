@@ -52,11 +52,6 @@ static StreamedBGM sStreamedBGM;
 
 static void Sound_UpdateStreamedBGM(void);
 
-void LONG_CALL NNS_SndInit_Hook(void) {
-    NNS_SndInit_Original();
-    NWAV_Init();
-}
-
 void LONG_CALL NNS_SndMain_Hook(void) {
     // Must run before NNS_SndMain, which starts the sequences prepared this frame.
     Sound_UpdateStreamedBGM();

@@ -27,7 +27,7 @@
 // #define DEBUG_PRINT_OVERLAY_LOADS
 
 // DEBUG_SOUND_SSEQ_LOADS prints out sseq loads from the SDAT and the free space left after the load.
-#define DEBUG_SOUND_SSEQ_LOADS
+// #define DEBUG_SOUND_SSEQ_LOADS
 
 // DEBUG_SOUND_SBNK_LOADS prints out sseq loads from the SDAT and the free space left after the load.
 // #define DEBUG_SOUND_SBNK_LOADS

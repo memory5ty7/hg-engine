@@ -16,22 +16,6 @@ mov pc, r1
 .pool
 
 
-.global NNS_SndInit_ASM
-NNS_SndInit_ASM:
-    push {lr}
-    blx NNS_SndInit_Hook
-    pop {pc}
-
-.global NNS_SndInit_Original
-NNS_SndInit_Original:
-    push {r3, lr}
-    ldr r0, =0x021DD420   
-    ldr r1, [r0, #0xc]
-    ldr r3, =0x020C78DC
-    bx r3
-.pool
-
-
 .global NNS_SndMain_ASM
 NNS_SndMain_ASM:
     push {lr}
