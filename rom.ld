@@ -936,35 +936,40 @@ LoadUserFrameGfx2 = 0x0200E644 | 1;
 DrawFrameAndWindow2 = 0x0200E998 | 1;
 
 /*Streamed Audio*/
-/* implies arm function, 4 byte instructions no need for | 1*/
-/* If 2 byte instruction, then thumb mode, then need | 1. */
-/* Looks like they are all thumb functions */
+/* ARM functions need no | 1, thumb functions do. */
+GF_GetSoundHandle = 0x020047E8 | 1;
 
-/*OS_Panic = ?, MI_CpuFill8 = ?*/
+NNS_SndLockChannel = 0x020C7B78;
+NNS_SndUnlockChannel = 0x020C7BC0;
+NNS_SndAllocAlarm = 0x020C7C0C;
+NNS_SndFreeAlarm = 0x020C7C54;
+NNS_SndPlayerStopSeqByPlayerNo = 0x020C8068;
+NNS_SndHandleReleaseSeq = 0x020C81D0;
+NNS_SndPlayerSetTrackAllocatableChannel = 0x020C82BC;
+
 OS_CreateThread = 0x020D1AD4;
 OS_WakeUpThreadDirect = 0x020D1F34;
 OS_InitMessageQueue = 0x020D2388;
 OS_SendMessage = 0x020D23B0;
 OS_ReceiveMessage = 0x020D2444;
-OS_Terminate = 0x020D3F48;
+OS_InitMutex = 0x020D2600;
+OS_LockMutex = 0x020D2618;
+OS_UnlockMutex = 0x020D269C;
 
-SND_SetupChannelPcm = 0x020D52E8;
+SND_StartTimer = 0x020D5174;
+SND_StopTimer = 0x020D519C;
+SND_SetupAlarm = 0x020D5200;
 SND_SetChannelVolume = 0x020D52A0;
-SND_LockChannel =   0x020D5240;
-SND_SetupAlarm =    0x020D5200; 
-SND_StartTimer =    0x020D5174;
-SND_StopTimer =     0x020D519C;
+SND_SetupChannelPcm = 0x020D52E8;
+SND_RecvCommandReply = 0x020D5604;
 
-NNS_SndSetMasterVolume = 0x020C7988;
+FS_InitFile = 0x020D7F98;
+FS_ConvertPathToFileID = 0x020D8180;
+FS_OpenFileFast = 0x020D8208;
+FS_CloseFile = 0x020D82C0;
+FS_ReadFile = 0x020D83CC;
+FS_SeekFile = 0x020D83DC;
 
-FS_InitFile =       0x020D7F98;
-FS_OpenFileFast =   0x020D8208;
-FS_ReadFile =       0x020D83CC;
-FS_SeekFile =       0x020D83DC;
-FS_CloseFile =      0x020D82C0;
-FS_FindArchive =    0x020D7958;
+DC_FlushRange = 0x020D2894;
 
-DC_FlushRange =     0x020D2894;
-DC_InvalidateRange = 0x020D285C;
-
-MI_CpuFill8 =       0x020D4994;
+MI_CpuFill8 = 0x020D4994;

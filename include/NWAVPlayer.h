@@ -19,83 +19,55 @@
 #ifndef _NWAVPLAYER_H
 #define _NWAVPLAYER_H
 
-#define NWAV 0x5641574E
-#define FX32_CAST(x) ((fx32)x)
-#define FX32_SHIFT 12
-
-//#include "nitro_if.h"
 #include "types.h"
 #include "config.h"
 #include "debug.h"
 #include "sound.h"
 
+#define NWAV_MAGIC 0x5641574E // 'NWAV'
 
+// Streams are opened by file ID, relative to the first file of the waves directory (base/root/waves).
+#define NWAV_FIRST_FILE "waves/00_raimon1.nwav"
 
+// Heap used for the stream buffers and thread, allocated once at boot.
+#define NWAV_HEAP_ID 0
 
-//The function type of the function that will handle the events.
-typedef void(*NWAVPlayer_EventHandler)(int); 
+#define NWAV_VOLUME_MAX 127
 
-/// <summary>Initializes the player system. (Hook after SND_Init)</summary>
-void NWAVPlayer_init(void);
+void NWAV_Init(void);
 
-/// <summary>Updates the game fading. (Hook after SND_Main)</summary>
-BOOL NWAVPlayer_updateFade(void);
+void NWAV_Main(void);
 
-/// <summary>Plays a music.</summary>
-/// <param name="fileID">The file ID of the music file to play.</param>
-void NWAVPlayer_play(int fileID);
+BOOL NWAV_PlayTrack(int track, u32 startSample);
 
-/// <summary>Stops the music playing.</summary>
-/// <param name="frames">Number of frames where the volume shift occurs.</param>
-void NWAVPlayer_stop(int frames);
+u32 NWAV_GetPosition(void);
 
-/// <summary>Gets the music volume.</summary>
-/// <returns>The music volume.</returns>
-int  NWAVPlayer_getVolume(void);
+void NWAV_Stop(void);
 
-/// <summary>Sets the music volume.</summary>
-/// <param name="volume">The target volume. Value range = [0, 127]</param>
-/// <param name="frames">Number of frames where the volume shift occurs.</param>
-void NWAVPlayer_setVolume(int volume, int frames);
+void NWAV_SetVolume(int volume);
 
-/// <summary>Gets the music speed.</summary>
-/// <returns>The current music speed.</returns>
-fx32 NWAVPlayer_getSpeed(void);
-
-/// <summary>Sets the music speed.</summary>
-/// <param name="speed">The target speed for the music to be played at.</param>
-void NWAVPlayer_setSpeed(fx32 speed);
-
-/// <summary>Gets if the music is paused.</summary>
-/// <returns>True if the music is paused. False otherwise.</returns>
-BOOL NWAVPlayer_getPaused(void);
-
-/// <summary>Sets if the music is paused.</summary>
-/// <param name="paused">Sets the music as paused when true, unpauses when false.</param>
-void NWAVPlayer_setPaused(BOOL paused);
-
-/// <summary>Sets the event handler function.</summary>
-/// <param name="func">The function pointer of the event handler.</param>
-void NWAVPlayer_setEventHandler(NWAVPlayer_EventHandler func);
-
-
+void NWAV_SetPaused(BOOL paused);
 
 // Streamed Audio
 void LONG_CALL NNS_SndInit_Original(void);
 void LONG_CALL NNS_SndMain_Original(void);
-void LONG_CALL PlayBGM_Original(u16 seqno);
-void LONG_CALL NNS_SndPlayerSetTempoRatio_Original(int handle, int tempo);
-void LONG_CALL NNS_SndPlayerStopSeqByPlayerNo_Original(u8 playerID, int fadeFrame);
-void LONG_CALL GF_SndHandleMoveVolume_Original(int param1, int volume, int frames);
-void LONG_CALL NNS_SndPlayerPauseByPlayerNo_Original(u8 playerID, BOOL paused); // playerID can be either PLAYER_FIELD or PLAYER_BGM (1 or 7)
 
-typedef u8 FSFile[72];
-typedef u8 OSThread[200];
-typedef u8 OSMessageQueue[32];
+// NitroSDK types, only used through pointers
+typedef struct { u32 data[0x48 / sizeof(u32)]; } FSFile;
+typedef struct { u32 data[0xC8 / sizeof(u32)]; } OSThread;
+typedef struct { u32 data[0x18 / sizeof(u32)]; } OSMutex;
+typedef struct { u32 data[0x20 / sizeof(u32)]; } OSMessageQueue;
+
+typedef struct FSFileID {
+    void *arc;
+    u32 file_id;
+} FSFileID;
 
 typedef void *OSMessage;
-typedef void (*SNDAlarmHandler)(void*);
+typedef void (*SNDAlarmHandler)(void *arg);
 
+#define OS_MESSAGE_NOBLOCK 0
+#define OS_MESSAGE_BLOCK   1
 
 typedef enum
 {
@@ -128,42 +100,37 @@ typedef enum
 	FS_SEEK_END
 } FSSeekFileMode;
 
-#define FX32_CAST(x) ((fx32)x)
-#define FX32_SHIFT 12
-
-//void OS_Panic();
 void LONG_CALL OS_WakeUpThreadDirect(OSThread *thread);
 void LONG_CALL OS_CreateThread(OSThread *thread, void (*func)(void *), void *arg, void *stack, u32 stackSize, u32 prio);
 BOOL LONG_CALL OS_ReceiveMessage(OSMessageQueue *mq, OSMessage *msg, s32 flags);
 BOOL LONG_CALL OS_SendMessage(OSMessageQueue *mq, OSMessage msg, s32 flags);
 void LONG_CALL OS_InitMessageQueue(OSMessageQueue *mq, OSMessage *msgArray, s32 msgCount);
+void LONG_CALL OS_InitMutex(OSMutex *mutex);
+void LONG_CALL OS_LockMutex(OSMutex *mutex);
+void LONG_CALL OS_UnlockMutex(OSMutex *mutex);
 
-void MI_CpuFill8(void *dest, u8 data, u32 size);
+void LONG_CALL MI_CpuFill8(void *dest, u8 data, u32 size);
 static inline void MI_CpuClear8(void *dest, u32 size) {
     MI_CpuFill8(dest, 0, size);
 }
 
 void LONG_CALL SND_SetupChannelPcm(int chNo, SNDWaveFormat format, const void *dataAddr, SNDChannelLoop loop, int loopStart, int dataLen, int volume, SNDChannelDataShift shift, int timer, int pan);
 void LONG_CALL SND_SetChannelVolume(u32 chBitMask, int volume, SNDChannelDataShift shift);
-void LONG_CALL SND_LockChannel(u32 chBitMask, u32 flags);
 void LONG_CALL SND_SetupAlarm(int alarmNo, u32 tick, u32 period, SNDAlarmHandler handler, void *arg);
 void LONG_CALL SND_StopTimer(u32 chBitMask, u32 capBitMask, u32 alarmBitMask, u32 flags);
 void LONG_CALL SND_StartTimer(u32 chBitMask, u32 capBitMask, u32 alarmBitMask, u32 flags);
-void LONG_CALL NNS_SndSetMasterVolume(int volume);
+BOOL LONG_CALL NNS_SndLockChannel(u32 chBitFlag);
+void LONG_CALL NNS_SndUnlockChannel(u32 chBitFlag);
+int LONG_CALL NNS_SndAllocAlarm(void);
+void LONG_CALL NNS_SndFreeAlarm(int alarmNo);
 
+BOOL LONG_CALL FS_ConvertPathToFileID(FSFileID *p_fileid, const char *path);
 BOOL LONG_CALL FS_SeekFile(FSFile *p_file, s32 offset, FSSeekFileMode origin);
 s32  LONG_CALL FS_ReadFile(FSFile *p_file, void *dst, s32 len);
 BOOL LONG_CALL FS_CloseFile(FSFile *p_file);
-BOOL LONG_CALL FS_OpenFileFast(FSFile* p_file, void* archivePtr, int file_id);
+BOOL LONG_CALL FS_OpenFileFast(FSFile *p_file, FSFileID fileID);
 void LONG_CALL FS_InitFile(FSFile *p_file);
-void* LONG_CALL FS_FindArchive(const char* name, int len);
 
-void DC_FlushRange(const void *vAddr, u32 size);
-void DC_InvalidateRange(void *vAddr, u32 size);
-
-
-static inline fx32 FX_MulInline(fx32 v1, fx32 v2) {
-    return FX32_CAST(((s64)(v1)*v2 + 0x800LL) >> FX32_SHIFT);
-}
+void LONG_CALL DC_FlushRange(const void *vAddr, u32 size);
 
 #endif //!_NWAVPLAYER_H

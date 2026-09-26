@@ -3,8 +3,6 @@
 
 #include "config.h"
 #include "types.h"
-#include "config.h"
-#include "debug.h"
 
 #define SND_HEAP_SIZE 0xBEAE0
 #define SND_HANDLE_MAX 9
@@ -169,10 +167,83 @@ void LONG_CALL SND_AssignWaveArc(SNDBankData *bank, int index, SNDWaveArc *waveA
 void LONG_CALL PlayCry(u16 species, u8 forme);
 void LONG_CALL PlaySE(u32 se);
 
+enum SoundHandleNo {
+    SND_HANDLE_FIELD,
+    SND_HANDLE_PV,
+    SND_HANDLE_ME,
+    SND_HANDLE_SE_1,
+    SND_HANDLE_SE_2,
+    SND_HANDLE_SE_3,
+    SND_HANDLE_SE_4,
+    SND_HANDLE_BGM,
+    SND_HANDLE_CHORUS,
+};
+
+#define PLAYER_FIELD 1
+#define PLAYER_BGM   7
+
+typedef struct NNSSndHandle {
+    struct NNSSndSeqPlayer *player;
+} NNSSndHandle;
+
+typedef struct NNSSndFader {
+    int origin;
+    int target;
+    int counter;
+    int frame;
+} NNSSndFader;
+
+typedef struct NNSSndPlayer {
+    u8 seqPlayerList[0xC];
+    u8 heapList[0xC];
+    u32 playableSeqCount;
+    u32 allocChBitFlag;
+    u8 volume;
+    u8 padding[3];
+} NNSSndPlayer; // size: 0x24
+
+typedef enum NNSSndSeqPlayerStatus {
+    NNS_SND_SEQ_PLAYER_STATUS_FREE,
+    NNS_SND_SEQ_PLAYER_STATUS_PLAYING,
+    NNS_SND_SEQ_PLAYER_STATUS_STOPPING,
+} NNSSndSeqPlayerStatus;
+
+#define NNS_SND_SEQ_TYPE_SEQ    1
+#define NNS_SND_SEQ_TYPE_SEQARC 2
+
+typedef struct NNSSndSeqPlayer {
+    NNSSndHandle *handle;
+    NNSSndPlayer *player;
+    void *heap;
+    u8 playerLink[0x8];
+    u8 prioLink[0x8];
+    NNSSndFader fader;
+    u8 status;
+    u8 startFlag;
+    u8 pauseFlag;
+    u8 prepareFlag;
+    u32 commandTag;
+    u16 seqType;
+    u8 unk_36[2];
+    u16 seqNo;
+    u16 seqArcNo;
+    u8 playerNo;
+    u8 prio;
+    s16 lastVolume;
+    u8 initVolume;
+    u8 volume;
+    u8 padding[2];
+} NNSSndSeqPlayer; // size: 0x44
+
+NNSSndHandle *LONG_CALL GF_GetSoundHandle(int handleNo);
+void LONG_CALL NNS_SndPlayerStopSeqByPlayerNo(int playerNo, int fadeFrame);
+void LONG_CALL NNS_SndHandleReleaseSeq(NNSSndHandle *handle);
+void LONG_CALL NNS_SndPlayerSetTrackAllocatableChannel(NNSSndHandle *handle, u32 trackBitMask, u32 chBitFlag);
+
 // defined in src/sound.c
 BOOL LONG_CALL GF_Snd_LoadSeq(int seqNo);
 int LONG_CALL NNSi_SndArcLoadBank(int bankNo, u32 loadFlag, void *heap, BOOL bSetAddr, struct SNDBankData **pData);
-
-
+void LONG_CALL GF_SndStopPlayerBgm(void);
+void LONG_CALL GF_SndStopPlayerField(void);
 
 #endif // SOUND_H

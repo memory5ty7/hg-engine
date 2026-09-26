@@ -665,5 +665,5 @@ arm9 ScrCmd_381 02044DC4 1
 arm9 ScrCmd_223 020499AC 1
 
 #Streamed Audio
-arm9 PlayBGM_Hook 02005D48 1
-arm9 GF_SndHandleMoveVolume_Hook 02005408 3
+arm9 GF_SndStopPlayerBgm 020048F0 0
+arm9 GF_SndStopPlayerField 02004908 0

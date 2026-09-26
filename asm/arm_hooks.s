@@ -38,44 +38,18 @@ NNS_SndMain_ASM:
     blx NNS_SndMain_Hook
     pop {pc}
 
+// The hook overwrites the first 3 instructions, including the start of the reply loop,
+// so the loop is rebuilt here and the original resumes right after it.
 .global NNS_SndMain_Original
 NNS_SndMain_Original:
     push {r4, lr}
-    mov r4, #0   
-    ldr r3, =0x020C7960
-    bx r3
-.pool
-
-
-
-
-
-.global NNS_SndPlayerStopSeqByPlayerNo_ASM
-NNS_SndPlayerStopSeqByPlayerNo_ASM:
-    push {lr}
-    blx NNS_SndPlayerStopSeqByPlayerNo_Hook
-    pop {pc}
-
-.global NNS_SndPlayerStopSeqByPlayerNo_Original
-NNS_SndPlayerStopSeqByPlayerNo_Original:
-    push {r3, r4, r5, r6, r7, lr}
-    ldr r3, =0x021DFDC4
-    ldr ip, =0x020C8070
-    bx ip
-.pool
-
-
-.global NNS_SndPlayerPauseByPlayerNo_ASM
-NNS_SndPlayerPauseByPlayerNo_ASM:
-    push {lr}
-    blx NNS_SndPlayerPauseByPlayerNo_Hook
-    pop {pc}
-
-.global NNS_SndPlayerPauseByPlayerNo_Original
-NNS_SndPlayerPauseByPlayerNo_Original:
-    push {r4, r5, r6, r7, r8, lr}
-    mov  r2, #0x24
-    ldr r3, =0x020C8174
+    mov r4, #0
+NNS_SndMain_RecvReplyLoop:
+    mov r0, r4
+    bl SND_RecvCommandReply
+    cmp r0, #0
+    bne NNS_SndMain_RecvReplyLoop
+    ldr r3, =0x020C7970
     bx r3
 .pool
 
