@@ -1373,50 +1373,49 @@
 #define SEQ_SE_GS_GEARSEALHAMERU      2376
 #define SEQ_SE_GS_XBUTTON_SYUKUSHOU   2377
 #define SEQ_SE_END                    2378
+// Inazuma DS Placeholders
+#define NWAV_RAIMON1              1000
+#define NWAV_RAIMON2              1001
+#define NWAV_TOWER                1002
+#define NWAV_RIVER                1003
+#define NWAV_SHOP                 1004
+#define NWAV_WILLY                1005
+#define NWAV_NELLY                1006
+#define NWAV_JULIA                1007
+#define NWAV_STADIUM              1008
+#define NWAV_ROYAL                1009
+#define NWAV_ZEUS                 1010
+#define NWAV_BA_WILD              1011
+#define NWAV_BA_TRAINER           1012
+#define NWAV_BA_BOSS              1013
+#define NWAV_BA_INABIKARI         1014
+#define NWAV_BA_ROYAL             1015
+#define NWAV_BA_ZEUS              1016
+#define NWAV_BA_GIRLS             1017
+#define NWAV_BA_AXEL              1018
+#define NWAV_BA_JUDE              1019
+#define NWAV_TITLE_SCREEN         1020
+#define NWAV_BA_KIDS              1021
+#define NWAV_EN_KID               1022
+#define NWAV_INABIKARI            1023
+#define NWAV_EN_TRAINER           1024
+#define NWAV_VICTORY_1            1025
+#define NWAV_VICTORY_2            1026
+#define NWAV_JINGLE_1             1027
+#define NWAV_JINGLE_2             1028
+#define NWAV_JINGLE_3             1029
+#define NWAV_JINGLE_4             1030
+
+#define LAST_NWAV NWAV_JINGLE_4             
 
 // NWAV sound files
-#define NWAV_RAIMON1                  0
-#define NWAV_RAIMON2                  1
-#define NWAV_TOWER                    2
-#define NWAV_RIVER                    3
-#define NWAV_SHOP                     4
-#define NWAV_WILLY                    5
-#define NWAV_NELLY                    6
-#define NWAV_JULIA                    7
-#define NWAV_STADIUM                  8
-#define NWAV_ROYAL                    9
-#define NWAV_ZEUS                     10
-#define NWAV_BA_WILD                  11
-#define NWAV_BA_TRAINER               12
-#define NWAV_BA_BOSS                  13
-#define NWAV_BA_INABIKARI             14
-#define NWAV_BA_ROYAL                 15
-#define NWAV_BA_ZEUS                  16
-#define NWAV_BA_GIRLS                 17
-#define NWAV_BA_AXEL                  18
-#define NWAV_BA_JUDE                  19
-#define NWAV_TITLE_SCREEN             20
+#define NWAV_FILE(x) (x - NWAV_RAIMON1)
+#define IS_NWAV(x) (x >= NWAV_RAIMON1 && x <= LAST_NWAV)
 
 // Sounds marked BANK, WAVE, PLAYER, GROUP not ported over from pokeheartgold/include/constants/sndseq.h
 
 enum {
-    ANIM_MUSIC_COMBO_ROYAL,
-    ANIM_MUSIC_COMBO_ZEUS,
-    ANIM_MUSIC_COMBO_KIDS,
-    ANIM_MUSIC_COMBO_GIRLS,
-    ANIM_MUSIC_COMBO_INABIKARI,
-
-    ANIM_MUSIC_COMBO_AXEL,
-    ANIM_MUSIC_COMBO_JUDE,
-    ANIM_MUSIC_COMBO_TASSMAN,
-    ANIM_MUSIC_COMBO_TALLGEASE,
-    ANIM_MUSIC_COMBO_FELDT,
-    ANIM_MUSIC_COMBO_GAMBLING,
-    ANIM_MUSIC_COMBO_BLUESEA,
-    ANIM_MUSIC_COMBO_HILLVALLEY,
-    ANIM_MUSIC_COMBO_MARVIN,
-    ANIM_MUSIC_COMBO_APHRODITE,
-    /*ANIM_MUSIC_COMBO_FALKNER,
+    ANIM_MUSIC_COMBO_FALKNER,
     ANIM_MUSIC_COMBO_BUGSY,
     ANIM_MUSIC_COMBO_WHITNEY,
     ANIM_MUSIC_COMBO_MORTY,
@@ -1450,17 +1449,34 @@ enum {
     ANIM_MUSIC_COMBO_PROTON,
     ANIM_MUSIC_COMBO_ARCHER,
     ANIM_MUSIC_COMBO_ARIANA,
-    ANIM_MUSIC_COMBO_GIOVANNI, */
-    ANIM_MUSIC_COMBO_JOHTO_TRAINER_1 = 35,
+    ANIM_MUSIC_COMBO_GIOVANNI,
+    ANIM_MUSIC_COMBO_JOHTO_TRAINER_1,
     ANIM_MUSIC_COMBO_JOHTO_TRAINER_2,
     ANIM_MUSIC_COMBO_JOHTO_TRAINER_3,
     ANIM_MUSIC_COMBO_JOHTO_WILD_BATTLE_38,
-    //ANIM_MUSIC_COMBO_FRONTIER_BRAIN,
-    //ANIM_MUSIC_COMBO_GYM_LEADER_38,
-    ANIM_MUSIC_COMBO_JOHTO_TRAINER = 41,
+    ANIM_MUSIC_COMBO_FRONTIER_BRAIN,
+    ANIM_MUSIC_COMBO_GYM_LEADER_38,
+    ANIM_MUSIC_COMBO_JOHTO_TRAINER,
     ANIM_MUSIC_COMBO_JOHTO_WILD_THEME,
-    //ANIM_MUSIC_COMBO_KIMONO_GIRL,
-    //ANIM_MUSIC_COMBO_RED,
+    ANIM_MUSIC_COMBO_KIMONO_GIRL,
+    ANIM_MUSIC_COMBO_RED,
+
+    ANIM_MUSIC_COMBO_ROYAL,
+    ANIM_MUSIC_COMBO_ZEUS,
+    ANIM_MUSIC_COMBO_KIDS,
+    ANIM_MUSIC_COMBO_GIRLS,
+    ANIM_MUSIC_COMBO_INABIKARI,
+
+    ANIM_MUSIC_COMBO_AXEL,
+    ANIM_MUSIC_COMBO_JUDE,
+    ANIM_MUSIC_COMBO_TASSMAN,
+    ANIM_MUSIC_COMBO_TALLGEASE,
+    ANIM_MUSIC_COMBO_FELDT,
+    ANIM_MUSIC_COMBO_GAMBLING,
+    ANIM_MUSIC_COMBO_BLUESEA,
+    ANIM_MUSIC_COMBO_HILLVALLEY,
+    ANIM_MUSIC_COMBO_MARVIN,
+    ANIM_MUSIC_COMBO_APHRODITE,
 };
 
 #endif // POKEHEARTGOLD_CONSTANTS_SNDSEQ_H
