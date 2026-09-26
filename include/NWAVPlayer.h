@@ -34,6 +34,10 @@
 
 #define NWAV_VOLUME_MAX 127
 
+// Stream amplification: number of hardware channels (from channel 4) playing the stream together.
+// Each doubling adds about 6 dB, but every channel is taken away from the sequences and sound effects.
+#define NWAV_CHANNEL_COUNT 2
+
 void NWAV_Init(void);
 
 void NWAV_Main(void);

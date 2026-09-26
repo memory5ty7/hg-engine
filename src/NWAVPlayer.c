@@ -18,7 +18,8 @@
 #include "NWAVPlayer.h"
 
 #define CHANNEL_NUM        4
-#define CHANNEL_MASK       (1 << CHANNEL_NUM)
+// The same buffer plays on several channels at once, as a single channel is quiet next to the sequences.
+#define CHANNEL_MASK       (((1 << NWAV_CHANNEL_COUNT) - 1) << CHANNEL_NUM)
 #define CHANNEL_PAN_CENTER 64
 #define STREAM_THREAD_PRIO 1
 #define THREAD_STACK_SIZE  0x800
@@ -172,7 +173,10 @@ static void NWAV_StartHw(void) {
         NWAV_FillPage();
     }
 
-    SND_SetupChannelPcm(CHANNEL_NUM, work->header.format, work->streamBuf, SND_CHANNEL_LOOP_REPEAT, loopStart, STRM_BUF_SIZE / sizeof(u32), work->volume, SND_CHANNEL_DATASHIFT_NONE, timer, CHANNEL_PAN_CENTER);
+    // The channels start together with the timer, so they stay in sync.
+    for (i = CHANNEL_NUM; i < CHANNEL_NUM + NWAV_CHANNEL_COUNT; i++) {
+        SND_SetupChannelPcm(i, work->header.format, work->streamBuf, SND_CHANNEL_LOOP_REPEAT, loopStart, STRM_BUF_SIZE / sizeof(u32), work->volume, SND_CHANNEL_DATASHIFT_NONE, timer, CHANNEL_PAN_CENTER);
+    }
     SND_SetupAlarm(work->alarmNo, alarmPeriod, alarmPeriod, NWAV_AlarmHandler, NULL);
     SND_StartTimer(CHANNEL_MASK, noCapture, 1 << work->alarmNo, flags);
 }
