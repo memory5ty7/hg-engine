@@ -127,16 +127,22 @@ void LONG_CALL PlayBGM_Hook(u16 seqno)
         return;
     }
 
-    BOOL next_is_seq = GetIfSequenced(seqno);
-    int wavID = firstWavID + seqno;
+    BOOL next_is_seq = TRUE;
+    int wavID = seqno;
 
     int num_overrides = sizeof(sNwavOverrides) / sizeof(sNwavOverrides[0]);
     for (int i = 0; i < num_overrides; i++) {
         if(seqno == sNwavOverrides[i].vanilla_seq) {
             next_is_seq = FALSE;
-            wavID = firstWavID + sNwavOverrides[i].nwav_id;
+            wavID = firstWavID + NWAV_FILE(sNwavOverrides[i].nwav_id);
             break;
         }
+    }
+
+    if (next_is_seq && IS_NWAV(seqno))
+    {
+        next_is_seq = FALSE;
+        wavID = firstWavID + NWAV_FILE(seqno);
     }
 
     if(current_is_nwav){
