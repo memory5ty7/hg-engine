@@ -18,7 +18,7 @@
 #include "NWAVPlayer.h"
 
 #define CHANNEL_NUM        4
-// The same buffer plays on several channels at once, as a single channel is quiet next to the sequences.
+
 #define CHANNEL_MASK       (((1 << NWAV_CHANNEL_COUNT) - 1) << CHANNEL_NUM)
 #define CHANNEL_PAN_CENTER 64
 #define STREAM_THREAD_PRIO 1
@@ -44,7 +44,6 @@ typedef struct NWAVHeader {
     u8 padding;
 } NWAVHeader;
 
-// Allocated on the heap, as the code region has no room for the buffers.
 typedef struct NWAVWork {
     BOOL isPlaying;
     BOOL isPaused;
@@ -57,9 +56,9 @@ typedef struct NWAVWork {
     int bytesPerSample;
     int bufPage;
     u32 pagesFilled;
-    volatile u32 pagesPlayed; // Incremented by the alarm, each time a page was played
+    volatile u32 pagesPlayed;
     BOOL dataEnded;
-    int silentPages; // Pages filled with silence since the end of the data
+    int silentPages;
     NWAVHeader header;
     FSFileID firstFileID;
     FSFile file;
@@ -117,7 +116,7 @@ static void NWAV_FillPage(void) {
             pos += n * work->bytesPerSample;
         }
     } else if (work->silentPages < STRM_BUF_PAGES) {
-        // Every page must play the silence before the stream is over.
+
         work->silentPages++;
     }
 
@@ -142,8 +141,7 @@ static void NWAV_StreamThread(void *arg) {
     while (TRUE) {
         OS_ReceiveMessage(&work->msgQueue, &msg, OS_MESSAGE_BLOCK);
         OS_LockMutex(&work->mutex);
-        // Refill every page played since the last wake up, so a late thread (e.g. while the game loads files)
-        // doesn't leave the buffer out of phase with the hardware, which would buzz until the stream is restarted.
+
         while (work->isPlaying && !work->isPaused && work->pagesFilled != work->pagesPlayed) {
             NWAV_FillPage();
             work->pagesFilled++;
@@ -173,7 +171,6 @@ static void NWAV_StartHw(void) {
         NWAV_FillPage();
     }
 
-    // The channels start together with the timer, so they stay in sync.
     for (i = CHANNEL_NUM; i < CHANNEL_NUM + NWAV_CHANNEL_COUNT; i++) {
         SND_SetupChannelPcm(i, work->header.format, work->streamBuf, SND_CHANNEL_LOOP_REPEAT, loopStart, STRM_BUF_SIZE / sizeof(u32), work->volume, SND_CHANNEL_DATASHIFT_NONE, timer, CHANNEL_PAN_CENTER);
     }
@@ -188,7 +185,6 @@ static void NWAV_StopHw(void) {
     SND_StopTimer(CHANNEL_MASK, noCapture, 1 << sWork->alarmNo, flags);
 }
 
-// Set up on the first stream rather than at boot, like the reference implementation which runs on hardware.
 static BOOL NWAV_SetupWork(void) {
     u32 raw;
     NWAVWork *work;
@@ -235,7 +231,7 @@ static BOOL NWAV_ReadHeader(void) {
 
     if (FS_ReadFile(&work->file, header, sizeof(NWAVHeader)) != sizeof(NWAVHeader)
         || header->magic != NWAV_MAGIC
-        || header->stereo // Only mono streams are supported
+        || header->stereo
         || header->sampleRate < PLAY_RATE_MIN || header->sampleRate > PLAY_RATE_MAX
         || header->format > SND_WAVE_FORMAT_PCM16) {
         return FALSE;
@@ -243,7 +239,6 @@ static BOOL NWAV_ReadHeader(void) {
 
     work->bytesPerSample = header->format == SND_WAVE_FORMAT_PCM16 ? 2 : 1;
 
-    // Events are not used, skip their IDs (padded to 4 bytes) and their sample positions.
     numEvents = header->numEvents;
     work->dataStart = sizeof(NWAVHeader);
     if (numEvents != 0) {
@@ -310,7 +305,6 @@ void NWAV_Stop(void) {
     OS_UnlockMutex(&work->mutex);
 }
 
-// Position of the next sample to be buffered.
 u32 NWAV_GetPosition(void) {
     return sWork->cursor;
 }
@@ -336,7 +330,6 @@ void NWAV_SetPaused(BOOL paused) {
 }
 
 void NWAV_Main(void) {
-    // The last page of silence was played, release the stream.
     if (sWork != NULL && sWork->isPlaying && NWAV_IsFinished()) {
         NWAV_Stop();
     }

@@ -26,16 +26,9 @@
 
 #define NWAV_MAGIC 0x5641574E // 'NWAV'
 
-// Streams are opened by file ID, relative to the first file of the waves directory (base/root/waves).
 #define NWAV_FIRST_FILE "waves/00_raimon1.nwav"
-
-// Heap used for the stream buffers and thread, allocated once on the first stream.
 #define NWAV_HEAP_ID 0
-
 #define NWAV_VOLUME_MAX 127
-
-// Stream amplification: number of hardware channels (from channel 4) playing the stream together.
-// Each doubling adds about 6 dB, but every channel is taken away from the sequences and sound effects.
 #define NWAV_CHANNEL_COUNT 2
 
 void NWAV_Main(void);

@@ -7,18 +7,11 @@
 
 #define NNS_VOLUME_MAX 127
 
-// Streamed audio (base/root/waves)
-// A sequence replaced by a stream keeps playing without any channels, so all of the
-// game's BGM logic (fades, pausing for fanfares, stopping, save states...) keeps working
-// unchanged, and its state is mirrored onto the stream every frame.
-// Sequences NWAV_RAIMON1 to LAST_NWAV are replaced by the matching wave file.
-
 typedef struct NWAV_Override {
     u16 seqNo;
     u16 nwav;
 } NWAV_Override;
 
-// Use this array to override specific sequences that cannot be reassigned via music_tables.c or DSPRE's header editor
 static const NWAV_Override sNwavOverrides[] = {
     { SEQ_GS_POKEMON_THEME, NWAV_TITLE_SCREEN }, // Title screen
     { SEQ_GS_R_1_29, NWAV_RAIMON1},
@@ -26,25 +19,21 @@ static const NWAV_Override sNwavOverrides[] = {
     { SEQ_GS_R_2_30, NWAV_RAIMON2},
 };
 
-// Player handles that can be replaced by a stream.
 static const u8 sStreamableSndHandles[] = {
     SND_HANDLE_BGM,
     SND_HANDLE_FIELD,
 };
 
-// A replaced sequence on each streamable handle.
-// Only one is streamed at a time: the others are suspended, e.g. the field music paused during a battle,
-// and resume where they were once their sequence is unpaused.
 typedef struct StreamedSeq {
-    NNSSndSeqPlayer *seqPlayer; // NULL if the handle's sequence isn't replaced
+    NNSSndSeqPlayer *seqPlayer;
     u16 seqNo;
     u16 track;
-    u32 position; // Where the stream resumes
+    u32 position;
 } StreamedSeq;
 
 typedef struct StreamedBGM {
     StreamedSeq seqs[NELEMS(sStreamableSndHandles)];
-    StreamedSeq *active; // NULL if no sequence is streamed
+    StreamedSeq *active;
     int channelVolume;
 } StreamedBGM;
 
@@ -53,13 +42,11 @@ static StreamedBGM sStreamedBGM;
 static void Sound_UpdateStreamedBGM(void);
 
 void LONG_CALL NNS_SndMain_Hook(void) {
-    // Must run before NNS_SndMain, which starts the sequences prepared this frame.
     Sound_UpdateStreamedBGM();
     NWAV_Main();
     NNS_SndMain_Original();
 }
 
-// Returns the wave file replacing the sequence, or -1 if it isn't streamed.
 static int Sound_GetStreamTrack(u16 seqNo) {
     int i;
 
@@ -75,14 +62,9 @@ static int Sound_GetStreamTrack(u16 seqNo) {
 }
 
 static void Sound_SilenceSeqPlayer(NNSSndHandle *handle) {
-    // No track can allocate a channel, so the sequence doesn't take channels from the other sounds.
-    // This only applies to the tracks already opened, and is reset by the game after any sequence starts (GB Sounds).
     u32 allTracks = 0xFFFF;
     u32 noChannels = 0;
-
     NNS_SndPlayerSetTrackAllocatableChannel(handle, allTracks, noChannels);
-    // A null initial volume mutes the whole player on the ARM7, so the sequence stays silent in any case.
-    // It's written before NNS_SndMain computes the player volume, and it's left out of the stream volume.
     handle->player->initVolume = 0;
 }
 
@@ -121,10 +103,7 @@ static int Sound_GetFaderVolume(const NNSSndFader *fader) {
     return (fader->origin + (fader->target - fader->origin) * fader->counter / fader->frame) >> 8;
 }
 
-// Equivalent of the sequence's output volume, as a linear channel volume.
 static int Sound_GetStreamedBGMChannelVolume(const NNSSndSeqPlayer *seqPlayer) {
-    // NNS volumes are on a squared curve: combine them as scales, then square the result.
-    // The initial volume from the sound archive is left out, as it's specific to the sequence's mix.
     int scale = seqPlayer->player->volume;
     scale = scale * seqPlayer->volume / NNS_VOLUME_MAX;
     scale = scale * Sound_GetFaderVolume(&seqPlayer->fader) / NNS_VOLUME_MAX;
@@ -145,14 +124,12 @@ static void Sound_UpdateStreamedBGM(void) {
         handle = GF_GetSoundHandle(sStreamableSndHandles[i]);
         seqPlayer = handle->player;
 
-        // Sequences started this frame are still only prepared, so a replaced one is silenced before it plays a note.
         if (seqPlayer != NULL && seqPlayer->prepareFlag && seqPlayer->seqType == NNS_SND_SEQ_TYPE_SEQ) {
             Sound_ReleaseStreamedSeq(seq);
             track = Sound_GetStreamTrack(seqPlayer->seqNo);
             if (track >= 0) {
                 seq->track = track;
                 seq->position = 0;
-                // If the stream is missing or invalid, the sequence plays normally.
                 if (Sound_PlayStreamedSeq(seq)) {
                     seq->seqPlayer = seqPlayer;
                     seq->seqNo = seqPlayer->seqNo;
@@ -163,16 +140,15 @@ static void Sound_UpdateStreamedBGM(void) {
         if (seq->seqPlayer == NULL) {
             continue;
         }
-        // The sequence was stopped, finished, or replaced by another one.
+
         if (seqPlayer != seq->seqPlayer || seqPlayer->status == NNS_SND_SEQ_PLAYER_STATUS_FREE || seqPlayer->seqNo != seq->seqNo) {
             Sound_ReleaseStreamedSeq(seq);
             continue;
         }
-        // The GB Sounds code resets the tracks' channels, keep the sequence silent.
+
         Sound_SilenceSeqPlayer(handle);
     }
 
-    // The streamed sequence was paused for another one, stream the one that plays instead.
     active = sStreamedBGM.active;
     if (active == NULL || active->seqPlayer->pauseFlag) {
         for (i = 0; i < (int)NELEMS(sStreamableSndHandles); i++) {
