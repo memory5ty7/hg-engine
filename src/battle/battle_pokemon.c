@@ -1402,5 +1402,10 @@ BOOL LONG_CALL IsMonValidAndHealthy(struct PartyPokemon *mon)
 BOOL LONG_CALL IsBattlerSlotValid(struct BattleSystem *battleSystem, int battlerId)
 {
     // TODO implement battle type check for relevant types like raids and totem battles here
+
+    if (BattleTypeGet(battleSystem) & BATTLE_TYPE_LINK) {
+        return TRUE;
+    }
+
     return battleSystem->sp->battlemon[battlerId].species != SPECIES_NONE;
 }
