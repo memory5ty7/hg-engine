@@ -320,4 +320,6 @@ BOOL MapObject_IsSingleMovementActive(LocalMapObject *obj);
 void MapObject_PauseMovement(LocalMapObject *obj);
 void LONG_CALL MapObjectManager_RestoreFromSave(void *mapObjectManager, SavedMapObject *savedObjects, u32 objectCount);
 
+void LONG_CALL FieldDrawMapName_Reset(void *info);
+
 #endif // POKEHEARTGOLD_MAP_EVENTS_INTERNAL_H

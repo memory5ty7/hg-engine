@@ -7257,6 +7257,11 @@ RunNewCommand NEW_COMMAND_QUEUE_NEW_REPEL, 0x800C
 .hword \arg0
 .endm
 
+.macro prompt_number,arg0
+.hword 297
+.hword \arg0
+.endm
+
 .macro DummyGiveBag
 .hword 298
 .endm

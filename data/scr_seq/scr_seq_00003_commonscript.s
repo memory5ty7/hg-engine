@@ -776,10 +776,60 @@ scr_seq_0003_010:
     goto _0A2E
 
 _0A18:
+    goto_if_set 0x18F, _skipPCOnOff
     scrcmd_500 90
     scrcmd_501 90
     scrcmd_308 90
+_skipPCOnOff:
     return
+
+_debug:
+    npc_msg 96
+    menu_init_std_gmm 1, 1, 0, 1, VAR_SPECIAL_x8006
+    menu_item_add 97, 255, 1 // Give Pokémon
+    menu_item_add 98, 255, 2 // Give Item
+    menu_item_add 94, 255, 10 // Cancel
+    menu_exec
+    compare VAR_SPECIAL_x8006, 1
+    goto_if_eq _giveMon
+    compare VAR_SPECIAL_x8006, 2
+    goto_if_eq _giveItem
+    compare VAR_SPECIAL_x8006, 3
+    goto _0DF0 
+
+_giveMon:
+    closemsg
+	fade_screen 6, 1, 0, RGB_BLACK
+	wait_fade
+    prompt_number VAR_SPECIAL_x8004
+    prompt_number VAR_SPECIAL_x8005
+    prompt_number VAR_SPECIAL_x8006
+	fade_screen 6, 1, 1, RGB_BLACK
+	wait_fade
+    compare VAR_SPECIAL_x8004, 0
+    goto_if_eq wrongInput
+    compare VAR_SPECIAL_x8005, 0
+    goto_if_eq wrongInput
+    GivePokemon VAR_SPECIAL_x8004,VAR_SPECIAL_x8005,0,VAR_SPECIAL_x8006,0,VAR_SPECIAL_RESULT
+    goto _0A2E
+
+_giveItem:
+    closemsg
+	fade_screen 6, 1, 0, RGB_BLACK
+	wait_fade
+    prompt_number VAR_SPECIAL_x8004
+    prompt_number VAR_SPECIAL_x8005
+	fade_screen 6, 1, 1, RGB_BLACK
+	wait_fade
+    compare VAR_SPECIAL_x8004, 0
+    goto_if_eq wrongInput
+    compare VAR_SPECIAL_x8005, 0
+    goto_if_eq wrongInput
+    giveitem VAR_SPECIAL_x8004, VAR_SPECIAL_x8005, VAR_SPECIAL_RESULT
+    goto _0A2E
+
+wrongInput:
+    goto _0A2E
 
 _0A23:
     scrcmd_502 90
@@ -791,15 +841,17 @@ _0A2E:
     buffer_players_name 0
     npc_msg 34
     menu_init_std_gmm 1, 1, 0, 1, VAR_SPECIAL_x8006
-    call_if_unset FLAG_SYS_MET_BILL, _0A78
-    call_if_set FLAG_SYS_MET_BILL, _0A82
-    menu_item_add 63, 255, 1
-    goto_if_set FLAG_GAME_CLEAR, _0A8C
-    goto_if_unset FLAG_GAME_CLEAR, _0AD1
+    call _PCAvailable
+    menu_item_add 93, 255, 7 // Debug
     goto _0AD1
     .byte 0x02, 0x00
 _0A78:
     menu_item_add 61, 255, 0
+    return
+
+_PCAvailable:
+    call_if_unset FLAG_SYS_MET_BILL, _0A78 // Someone's PC (1)
+    call_if_set FLAG_SYS_MET_BILL, _0A82 // Bill's PC (1)
     return
 
 _0A82:
@@ -817,11 +869,12 @@ _0A8C:
     goto _0DF0
 
 _0AD1:
-    menu_item_add 66, 255, 2
+    menu_item_add 66, 255, 2 // Switch Off
     menu_exec
     switch VAR_SPECIAL_x8006
     case 0, _0B01
     case 1, _0C23
+    case 7, _debug
     goto _0DF0
 
 _0B01:

@@ -935,3 +935,6 @@ GetSpeciesName = 0x0200BCDC | 1;
 
 CallTask_LeaveOverworld = 0x0205525C | 1;
 CallTask_RestoreOverworld = 0x020552A4 | 1;
+
+/* Map Name Popup */
+FieldDrawMapName_Reset = 0x021EFACC | 1;
