@@ -61,6 +61,7 @@ struct BattleStruct *ServerInit(struct BattleSystem *bw)
     BattleBgExpansionLoader(bw);
 
     gBattleSystem = bw;
+    WifiOverlaySwap_Reset();
 
 #ifdef DEBUG_BATTLE_SCENARIOS
     // Apply test battle state (recharge, charging, etc.)
@@ -81,9 +82,20 @@ u32 ServerBeforeAct_restoreOverlay = 0;
 
 void ServerBeforeAct(struct BattleSystem *bsys, struct BattleStruct *ctx)
 {
-    u32 ovyId = OVERLAY_SERVERBEFOREACT, offset = 0x021FD900 | 1;
+    u32 ovyId = OVERLAY_SERVERBEFOREACT, offset = 0x02215000 | 1;
 
     void (*internalFunc)(struct BattleSystem *bsys, struct BattleStruct *ctx);
+
+    internalFunc = (void (*)(struct BattleSystem *bsys, struct BattleStruct *ctx))(offset);
+
+    // wifi battle:  run the overlay over overlay 0 without unloading it, see wifi_overlay_swap.c
+    if (IsOverlayLoaded(OVERLAY_WIFI) && WifiOverlaySwap_Load(ovyId)) {
+        WifiOverlaySwap_SwapIn(ovyId);
+        internalFunc(bsys, ctx);
+        WifiOverlaySwap_SwapOut(ovyId);
+        WifiOverlaySwap_Unload(ovyId);
+        return;
+    }
 
     // if ctx->sba_seq_no == SBA_RESET_DEFIANT before func is called, it is the first call
     // if (ctx->sba_seq_no == SBA_RESET_DEFIANT)
@@ -143,6 +155,20 @@ void ServerWazaBefore(void *bw, struct BattleStruct *sp)
 
     void (*internalFunc)(void *bw, struct BattleStruct *sp);
 
+    // wifi battle:  run the overlay over overlay 0 without unloading it, see wifi_overlay_swap.c
+    ovyId = OVERLAY_BATTLECONTROLLER_BEFOREMOVE;
+    if (IsOverlayLoaded(OVERLAY_WIFI)
+        && (sp->wb_seq_no == BEFORE_MOVE_START_FLAG_UNLOAD ? WifiOverlaySwap_Load(ovyId) : WifiOverlaySwap_IsLoaded(ovyId))) {
+        internalFunc = (void (*)(void *bw, struct BattleStruct *sp))(0x0220C000 | 1);
+        WifiOverlaySwap_SwapIn(ovyId);
+        internalFunc(bw, sp);
+        WifiOverlaySwap_SwapOut(ovyId);
+        if (sp->wb_seq_no == BEFORE_MOVE_START_FLAG_UNLOAD) {
+            WifiOverlaySwap_Unload(ovyId);
+        }
+        return;
+    }
+
     // if wb_seq_no == BEFORE_MOVE_START_FLAG_UNLOAD before func is called, it is the first call
     if (sp->wb_seq_no == BEFORE_MOVE_START_FLAG_UNLOAD) {
         if (IsOverlayLoaded(OVERLAY_WIFI)) { // we are taking overlay 0's place
@@ -162,7 +188,7 @@ void ServerWazaBefore(void *bw, struct BattleStruct *sp)
         HandleLoadOverlay(ovyId, 2);
     }
 
-    offset = 0x021E5900 | 1;
+    offset = 0x0220C000 | 1;
     internalFunc = (void (*)(void *bw, struct BattleStruct *sp))(offset);
     internalFunc(bw, sp);
 

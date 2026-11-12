@@ -28,4 +28,12 @@ void LONG_CALL UnloadOverlayByID(u32 ovyId);
 u32 LONG_CALL HandleLoadOverlay(u32 ovyId, u32 loadType);
 u32 LONG_CALL IsOverlayLoaded(u32 ovyId);
 
+// in src/battle/wifi_overlay_swap.c
+void WifiOverlaySwap_Reset(void);
+BOOL WifiOverlaySwap_IsLoaded(u32 ovyId);
+BOOL WifiOverlaySwap_Load(u32 ovyId);
+void WifiOverlaySwap_SwapIn(u32 ovyId);
+void WifiOverlaySwap_SwapOut(u32 ovyId);
+void WifiOverlaySwap_Unload(u32 ovyId);
+
 #endif // OVERLAY_H

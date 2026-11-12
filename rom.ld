@@ -786,6 +786,10 @@ OS_DisableInterrupts = 0x020D3A38;
 NNS_FndAllocFromExpHeapEx = 0x020B53A0;
 OS_RestoreInterrupts = 0x020D3A4C;
 sHeapInfo = 0x021D1584;
+DC_FlushRange = 0x020D2894;
+IC_InvalidateRange = 0x020D28D0;
+FS_LoadOverlayInfo = 0x020D88C0;
+FS_LoadOverlayImage = 0x020D8A48;
 
 /* spa functions */
 LoadOpenSPAToEmitter = 0x0201526C | 1;

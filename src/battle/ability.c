@@ -1021,9 +1021,20 @@ u32 LONG_CALL ServerWazaKoyuuCheck(void *bw, struct BattleStruct *sp)
 // u32 ServerDoPostMoveEffects_restoreOverlay = 0;
 void ServerDoPostMoveEffects(struct BattleSystem *bsys, struct BattleStruct *ctx)
 {
-    u32 ovyId = OVERLAY_SERVERDOPOSTMOVEEFFECTS, offset = 0x021E5900 | 1, ServerDoPostMoveEffects_restoreOverlay = 0;
+    u32 ovyId = OVERLAY_SERVERDOPOSTMOVEEFFECTS, offset = 0x0220C000 | 1, ServerDoPostMoveEffects_restoreOverlay = 0;
 
     void (*internalFunc)(struct BattleSystem *bsys, struct BattleStruct *ctx);
+
+    // wifi battle:  run the overlay over overlay 0 without unloading it, see wifi_overlay_swap.c
+    if (IsOverlayLoaded(OVERLAY_WIFI) && WifiOverlaySwap_Load(ovyId)) {
+        internalFunc = (void (*)(struct BattleSystem *bsys, struct BattleStruct *ctx))(offset);
+        WifiOverlaySwap_SwapIn(ovyId);
+        internalFunc(bsys, ctx);
+        WifiOverlaySwap_SwapOut(ovyId);
+        WifiOverlaySwap_Unload(ovyId);
+        ctx->swoak_seq_no = 0; // reset according to the scriptures
+        return;
+    }
 
     // if ctx->sba_seq_no == SBA_RESET_DEFIANT before func is called, it is the first call
     // if (ctx->wb_seq_no == BEFORE_MOVE_START_FLAG_UNLOAD)
