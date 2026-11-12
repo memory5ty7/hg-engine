@@ -665,3 +665,10 @@ arm9 ScrCmd_CreateRoamer 02045264 1
 0012 PlayerTrainerVictoryBGM_hook 0224DA9E 3
 
 arm9 FieldSystem_RestoreMapObjectsFromSave 0203B9F4 1
+
+# Debug Menu
+arm9 ScrCmd_NamePlayer 0204E71C 1
+arm9 Task_NamingScreen 0203F580 1
+arm9 ScrCmd_SetClearFlag 0204E88C 1
+arm9 ScrCmd_DebugSetVar 0204E8B8 1
+arm9 UseItemOnPokemon 020902D0 5
