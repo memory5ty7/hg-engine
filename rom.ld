@@ -936,6 +936,8 @@ SetName = 0x0203F650 | 1;
 NamingScreen_DeleteArgs = 0x0208311C | 1;
 GetSpeciesNameIntoArray = 0x0200BC28 | 1;
 GetSpeciesName = 0x0200BCDC | 1;
+FieldSystem_BugContest_Get = 0x0206DB28 | 1;
+NamingScreen_CreateArgs = 0x020830D8 | 1;
 
 CallTask_LeaveOverworld = 0x0205525C | 1;
 CallTask_RestoreOverworld = 0x020552A4 | 1;

@@ -603,6 +603,15 @@ typedef struct FieldSystemUnkSub4 {
     void *unk24; // padding for legendCutsceneCamera
 } FieldSystemUnkSub4;
 
+typedef enum MenuInputState {
+    MENU_INPUT_STATE_BUTTONS,
+    MENU_INPUT_STATE_TOUCH,
+} MenuInputState;
+
+typedef struct MenuInputStateMgr {
+    MenuInputState state;
+} MenuInputStateMgr;
+
 typedef struct FieldSystem {
     /*  0x0 */ struct FieldSystemUnkSub0 *unk0;
     /*  0x4 */ FieldSystemUnkSub4 *unk4;
@@ -625,12 +634,10 @@ typedef struct FieldSystem {
     /* 0xB4 */ s64 unkB4;
     /* 0xBC */ u8 unkBC[0x28];
     /* 0xE4 */ FollowMon followMon;
-    // u8 unk104[4];
-    // void *unk108;//struct FieldSystemUnk108 *unk108;
-    // u8 filler_10C[8];
-    // void *unk114;//struct UnkFsysSub_114* unk114;
-    // void *bugContest;//BUGCONTEST* bugContest;
-    // u8 unk11C[0xC];
+    u8 unk104[4];
+    void *unk108;//struct FieldSystemUnk108 *unk108;
+    MenuInputStateMgr menuInputState;
+    /* 0x110 */ u8 padding[0x18]; // padding to 0x128
 } FieldSystem; // size: 0x128
 
 struct IconFormChangeData {

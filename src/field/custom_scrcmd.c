@@ -6,8 +6,44 @@
 // repurpose DummyCheckBag
 BOOL ScrCmd_NamePlayer(SCRIPTCONTEXT *ctx) {
     u16 *p_var = ScriptGetVarPointer(ctx);
-    CallTask_NamingScreen(ctx->taskman, 7, 0, 10, 0, NULL, p_var);
+    CallTask_NamingScreenCustom(ctx->taskman, 7, 0, 10, 0, NULL, p_var);
     return TRUE;
+}
+
+void CallTask_NamingScreenCustom(TaskManager *taskman, int type, int species, int maxLen, int partyIdx, const u16 *defaultStr, u16 *retVar) {
+    FieldSystem *fieldSystem = TaskManager_GetFieldSystem(taskman);
+    NamingScreenData *data = sys_AllocMemoryLo(HEAPID_WORLD, sizeof(NamingScreenData));
+    data->state = 0;
+    data->partyIdx = partyIdx;
+    data->retVar = retVar;
+    data->args = NamingScreen_CreateArgs(HEAPID_WORLD, type, species, maxLen, Save_PlayerData_GetOptionsAddr(fieldSystem->savedata), &fieldSystem->menuInputState);
+    data->unk10 = String_New(12, HEAPID_WORLD);
+
+    switch (type) {
+    case 1:
+        struct PartyPokemon *mon;
+        if (partyIdx == 0xff) {
+            BugContest *contest = FieldSystem_BugContest_Get(fieldSystem);
+            mon = contest->mon;
+        } else {
+            mon = Party_GetMonByIndex(SaveArray_Party_Get(fieldSystem->savedata), data->partyIdx);
+        }
+        data->args->monGender = GetMonData(mon, MON_DATA_GENDER, NULL);
+        data->args->monForm = GetMonData(mon, MON_DATA_FORM, NULL);
+        if (defaultStr != NULL) {
+            CopyU16ArrayToString(data->unk10, defaultStr);
+        }
+        break;
+    case 5:
+        CopyU16ArrayToString(data->unk10, defaultStr);
+        break;
+    default:
+        if (defaultStr != NULL) {
+            CopyU16ArrayToString(data->args->nameInputString, defaultStr);
+        }
+        break;
+    }
+    TaskManager_Call(taskman, Task_NamingScreenCustom, data);
 }
 
 void LoadNameToCharArray(u16 name[], char buf[]) {
@@ -113,7 +149,7 @@ int GetNumberFromInput(String *inputString) {
     return result;
 }
 
-BOOL Task_NamingScreen(TaskManager *taskman) {
+BOOL Task_NamingScreenCustom(TaskManager *taskman) {
     FieldSystem *fieldSystem = TaskManager_GetFieldSystem(taskman);
     NamingScreenData *data = TaskManager_GetEnvironment(taskman);
     switch (data->state) {
