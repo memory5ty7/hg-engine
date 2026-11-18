@@ -1,7 +1,7 @@
 # Makefile
 
 ROMNAME = rom.nds
-BUILDROM = test.nds
+BUILDROM = squawka.nds
 
 define n
 

@@ -69,3 +69,11 @@ test_filter.txt
 /scripts/fixed/moves-updated.s
 
 /hg-engine.wiki/
+
+# Squawkabilly Stories
+/backup/
+/Maps/
+/traduction/
+/sprites/
+/docs/
+/squawka-suite/
