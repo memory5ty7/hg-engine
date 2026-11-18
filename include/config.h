@@ -54,7 +54,7 @@
 
 // IMPLEMENT_TRANSPARENT_TEXTBOXES should be used if you want to implement transparent textboxes
 // uncommenting this line out will enable transparent textboxes
-// #define IMPLEMENT_TRANSPARENT_TEXTBOXES
+#define IMPLEMENT_TRANSPARENT_TEXTBOXES
 
 // IMPLEMENT_WILD_DOUBLE_BATTLES defines whether or not grass tiles will have a 10% chance of starting a wild double battle
 // commenting this line out disables wild double battles entirely
@@ -63,15 +63,15 @@
 
 // IMPLEMENT_CAPTURE_EXPERIENCE defines whether or not capturing wild pokemon will net experience
 // commenting this line out disables capture experience
-#define IMPLEMENT_CAPTURE_EXPERIENCE
+//#define IMPLEMENT_CAPTURE_EXPERIENCE
 
 // IMPLEMENT_CRITICAL_CAPTURE defines whether or not throwing a poké ball has a certain percent chance of a guaranteed capture called a critical throw
 // commenting this line out disables critical captures
-#define IMPLEMENT_CRITICAL_CAPTURE
+//#define IMPLEMENT_CRITICAL_CAPTURE
 
 // if critical capture generation is 9 or above, then the critical capture animation will be triggered if the mon is going to be caught and has already been caught.
 // this will also make the critical capture species only count the regional dex species.
-#define CRITICAL_CAPTURE_GENERATION GEN_LATEST
+//#define CRITICAL_CAPTURE_GENERATION GEN_LATEST
 
 // IMPLEMENT_NEW_EV_IV_VIEWER defines whether or not pressing L, R, or Select in the pokémon summaries will display EV's, IV's, or the raw stat
 // commenting this line out disables the building of the new EV/IV viewing system
@@ -82,10 +82,10 @@
 // uncommenting IMPLEMENT_LEVEL_CAP enables the level cap system.  make sure to also uncomment LEVEL_CAP_VARIABLE in the process
 // uncommenting UNCAP_CANDIES_FROM_LEVEL_CAP will allow for rare candies to not be capped by the level cap even with the level cap in place, like run & bun
 // uncommenting ALLOW_LEVEL_CAP_EVOLVE will allow for rare candies to evolve pokemon already at the level cap that can evolve at that level already
-// #define IMPLEMENT_LEVEL_CAP
-// #define LEVEL_CAP_VARIABLE 0x416F
+#define IMPLEMENT_LEVEL_CAP
+#define LEVEL_CAP_VARIABLE 0x416F
 // #define UNCAP_CANDIES_FROM_LEVEL_CAP
-// #define ALLOW_LEVEL_CAP_EVOLVE
+#define ALLOW_LEVEL_CAP_EVOLVE
 
 // System flags that need to be enabled for the player to use the gimmick. If you want to change them, remember to change them in flags.s as well for consistency
 #define FLAG_MEGA_EVOLUTION_ENABLED  2518
@@ -128,20 +128,20 @@
 
 // Friendship grants additional bonuses.
 // Comment out the line below to revert back to Gen 5- behaviour
-#define FRIENDSHIP_EFFECTS
+//#define FRIENDSHIP_EFFECTS
 
 // RESTORE_ITEMS_AT_BATTLE_END will restore held items that are single-use at the end of battle (Gen 9)
 // comment out the line below to revert back to Gen 8- behavior
-#define RESTORE_ITEMS_AT_BATTLE_END
+//#define RESTORE_ITEMS_AT_BATTLE_END
 
 // AI_CAN_GRAB_ITEMS allows to use Trick, Switcheroo, (Thief still todo) on the Player and actually grab items. This can result in lost items.
 #define AI_CAN_GRAB_ITEMS
 
 // PROTEAN_GENERATION defines the behavior that Protean should exhibit, where it either changes type every move (<=8) or changes type once per appearance in battle (>=9)
-#define PROTEAN_GENERATION GEN_LATEST
+#define PROTEAN_GENERATION 6
 
 // BATTLE_BOND_GENERATION defines the behavior that Battle Bond should exhibit, where it either changes Greninja's Form to Ash-Greninja (<=8) or it raises Atk, Spatk, Speed once per battle (>=9)
-#define BATTLE_BOND_GENERATION GEN_LATEST
+#define BATTLE_BOND_GENERATION 7
 
 // CORROSIVE_GAS_IMPLIED_BEHAVIOUR defines the behavior that Corrosive Gas should exhibit, where it either does it does not affect a Kyogre, a Groudon, or species holding their respective Mega Stones to not lose their Blue Orb, Red Orb, and Mega Stones respectively (TRUE), or affects species in the above cases (FALSE).
 #define CORROSIVE_GAS_IMPLIED_BEHAVIOUR TRUE
@@ -152,13 +152,13 @@
 #define SNOW_WARNING_GENERATION GEN_LATEST
 
 // IMPLEMENT_REUSABLE_REPELS defines whether or not a prompt to use another repel automatically appears upon the previous repel being used up
-#define IMPLEMENT_REUSABLE_REPELS
+//#define IMPLEMENT_REUSABLE_REPELS
 
 // UPDATE_VITAMIN_EV_CAPS changes the cap on the vitamins from 100 to 252 per recent generations
-#define UPDATE_VITAMIN_EV_CAPS
+//#define UPDATE_VITAMIN_EV_CAPS
 
 // DISABLE_ITEMS_IN_TRAINER_BATTLE will disable the usage of items in trainer battles. This is also true for the AI.
-// #define DISABLE_ITEMS_IN_TRAINER_BATTLE
+#define DISABLE_ITEMS_IN_TRAINER_BATTLE
 
 // REUSABLE_TMS will make TMs infinite and hide the quantity number.
 #define REUSABLE_TMS
@@ -224,7 +224,7 @@
 
 // DISABLE_CRITICAL_HP_WARNING should be used if you want to disable the warning whenever your pokemon is at critical health
 // comment out this line if you do not want this to happen
-#define DISABLE_CRITICAL_HP_WARNING
+//#define DISABLE_CRITICAL_HP_WARNING
 
 // UNSEEN_FIST_GENERATION defines the behavior that Unseen Fist should exhibit, where it either completely ignores Protect (<=8) or deals 0.25x Damage (>=9)
 #define UNSEEN_FIST_GENERATION GEN_LATEST
@@ -240,7 +240,7 @@
 
 // SKIP_TUTORIAL_INFO will skip the tutorial when starting a new game and go straight to Professor Oak greeting you.
 // uncomment the line out to get this functionality
-// #define SKIP_TUTORIAL_INFO
+#define SKIP_TUTORIAL_INFO
 
 // Champions-specific move configurations. Set to 0 to use Scarlet/Violet values.
 #define CHAMPIONS_POWER_CHANGES         1
