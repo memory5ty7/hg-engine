@@ -776,9 +776,11 @@ scr_seq_0003_010:
     goto _0A2E
 
 _0A18:
+    goto_if_set 0x18F, _skipPCOnOff
     scrcmd_500 90
     scrcmd_501 90
     scrcmd_308 90
+_skipPCOnOff:
     return
 
 _0A23:
@@ -793,9 +795,7 @@ _0A2E:
     menu_init_std_gmm 1, 1, 0, 1, VAR_SPECIAL_x8006
     call_if_unset FLAG_SYS_MET_BILL, _0A78
     call_if_set FLAG_SYS_MET_BILL, _0A82
-    menu_item_add 63, 255, 1
-    goto_if_set FLAG_GAME_CLEAR, _0A8C
-    goto_if_unset FLAG_GAME_CLEAR, _0AD1
+    menu_item_add 60, 255, 6
     goto _0AD1
     .byte 0x02, 0x00
 _0A78:
@@ -806,23 +806,25 @@ _0A82:
     menu_item_add 62, 255, 0
     return
 
-_0A8C:
-    menu_item_add 64, 255, 2
-    menu_item_add 66, 255, 3
-    menu_exec
-    switch VAR_SPECIAL_x8006
-    case 0, _0B01
-    case 1, _0C23
-    case 2, _0DBA
-    goto _0DF0
-
 _0AD1:
     menu_item_add 66, 255, 2
     menu_exec
     switch VAR_SPECIAL_x8006
     case 0, _0B01
     case 1, _0C23
+    case 6, _healPokemon
     goto _0DF0
+
+_healPokemon:
+    fade_screen 6, 1, 0, RGB_BLACK
+    wait_fade
+    closemsg
+    play_fanfare SEQ_ME_ASA
+    wait_fanfare
+    heal_party
+    fade_screen 6, 1, 1, RGB_BLACK
+    wait_fade
+    goto _0A2E
 
 _0B01:
     play_se SEQ_SE_DP_PC_LOGIN
@@ -1012,7 +1014,11 @@ _0DE7:
 _0DF0:
     closemsg
     play_se SEQ_SE_DP_PC_LOGOFF
+    goto_if_set 0x18F, _skipPCOff
     call _0A23
+
+_skipPCOff:
+    clearflag 0x18F
     touchscreen_menu_show
     releaseall
     end
@@ -1026,7 +1032,9 @@ _0E02:
 _0E16:
     fade_screen 6, 1, 0, RGB_BLACK
     wait_fade
+    goto_if_set 0x18F, _skipPCTransition
     scrcmd_309 90
+_skipPCTransition:
     return
 
 scr_seq_0003_014:

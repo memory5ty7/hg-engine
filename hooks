@@ -670,3 +670,10 @@ arm9 ScrCmd_CreateRoamer 02045264 1
 0012 PlayerTrainerVictoryBGM_hook 0224DA9E 3
 
 arm9 FieldSystem_RestoreMapObjectsFromSave 0203B9F4 1
+
+# pc anywhere
+0001 ClearOverworldRequestFlags 021E6880 1
+# hook from where y button is checked
+0001 SetOverworldRequestFlags_hook 021E6982 0
+# hook from near beginning of function
+0001 CheckOverworldRequestFlags_hook 021E6AF6 3

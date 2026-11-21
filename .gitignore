@@ -77,3 +77,5 @@ test_filter.txt
 /sprites/
 /docs/
 /squawka-suite/
+*.lnk
+melonDS.toml
