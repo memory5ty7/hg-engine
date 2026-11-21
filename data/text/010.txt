@@ -60,8 +60,8 @@ Your Coins: {STRVAR_1 54, 0, 0}
 You booted up the TM.{WAIT 3}{WAIT 4}\n
 You booted up the TM.{WAIT 3}{WAIT 4}\n
 It contained\n{STRVAR_1 6, 0, 0}.\rTeach {STRVAR_1 6, 0, 0}\nto a Pokémon?
-You used the\n{STRVAR_1 8, 1, 0}.
-Since a Repel’s effects still linger,\nyou can’t use this now.
+You turned on the\n{STRVAR_1 8, 1, 0}.
+You turned off the\n{STRVAR_1 8, 1, 0}.
 You used the\n{STRVAR_1 8, 1, 0}.\rWild Pokémon will be lured.
 You used the\n{STRVAR_1 8, 1, 0}.\rWild Pokémon will be repelled.
               

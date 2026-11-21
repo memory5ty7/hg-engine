@@ -6779,6 +6779,16 @@ DummyTextTrap \slot, \unk
 RunNewCommand NEW_COMMAND_QUEUE_NEW_REPEL, 0x800C
 .endm
 
+.equ NEW_COMMAND_UPDATE_REPELLENT, 0
+
+.macro RunNewCommand2,slot,unk
+DummyTextTreasure \slot, \unk
+.endm
+
+.macro ScriptUpdateRepellent
+RunNewCommand2 NEW_COMMAND_UPDATE_REPELLENT, 0x800C
+.endm
+
 // Dummy
 .macro DummyTextTreasure,slot,unk
 .hword 209
