@@ -275,7 +275,7 @@ u16 GetMonEvolutionInternal(struct Party *party, struct PartyPokemon *pokemon, u
             } break;
             case EVO_LEVEL_DARK_TYPE_MON_IN_PARTY:
                 if (evoTable[i].param <= level && party != NULL) {
-                    for (int k = 0; k < 6; k++) {
+                    for (int k = 0; k < party->count; k++) {
                         if (!CheckIfMonsAreEqual(pokemon, Party_GetMonByIndex(party, k)) // make sure that pancham doesn't satisfy its own requirement
                             && (GetMonData(Party_GetMonByIndex(party, k), MON_DATA_TYPE_1, NULL) == TYPE_DARK || GetMonData(Party_GetMonByIndex(party, k), MON_DATA_TYPE_2, NULL) == TYPE_DARK)) // if either type is dark then set evolution
                         {

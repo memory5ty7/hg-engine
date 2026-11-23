@@ -409,7 +409,10 @@ void MakeTrainerPokemonParty(struct BATTLE_PARAM *bp, int num, int heapID)
 
     // Change battle forms for player party
     for (int i = 0; i < 4; i++) {
-        for (int j = 0; j < 6; j++) {
+        if (bp->poke_party[i] == NULL) {
+            continue;
+        }
+        for (int j = 0; j < bp->poke_party[i]->count; j++) {
             struct PartyPokemon *mon = Party_GetMonByIndex(bp->poke_party[i], j);
             if (mon != NULL) {
                 ChangeToBattleForm(mon);
