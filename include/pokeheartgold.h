@@ -38,4 +38,7 @@ void LONG_CALL PartyMenu_PrintMonLevelOnWindow(struct PartyMenu *partyMenu, u8 p
 void LONG_CALL sub_0207A7F4(struct PartyMenu *partyMenu, u8 partySlot);
 void LONG_CALL sub_0207D5DC(struct PartyMenu *partyMenu, u8 partySlot);
 
+// Nuzlocke Healing
+void LONG_CALL CallTask_Blackout(TaskManager *taskManager);
+
 #endif // POKEHEARTGOLD_H

@@ -5,6 +5,7 @@
 #include "../include/script.h"
 #include "../include/types.h"
 #include "../include/constants/battle_constants.h"
+#include "../include/constants/vars_flags.h"
 
 #define SCRIPT_NEW_CMD_REPEL_USE 0
 
@@ -81,4 +82,10 @@ BOOL ScriptUpdateRepellent(SCRIPTCONTEXT *ctx)
     *destVar = ret;
 
     return FALSE;
+}
+
+BOOL ScrCmd_WhiteOut(SCRIPTCONTEXT *ctx) {
+    ClearScriptFlag(FLAG_NUZLOCKE_MODE);
+    CallTask_Blackout(ctx->taskman);
+    return TRUE;
 }

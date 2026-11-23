@@ -684,3 +684,7 @@ arm9 LoadScriptsAndMessagesByMapId 02040114 3
 
 # Fast levelup
 arm9 PartyMenu_ItemUseFunc_LevelUp 02081A74 1
+
+# Nuzlocke Healing
+arm9 ScrCmd_WhiteOut 020498C8 1
+arm9 HealParty 02090C1C 1
