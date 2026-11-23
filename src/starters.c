@@ -57,6 +57,19 @@ void LONG_CALL CreateStarter_CreateMon(struct PartyPokemon *mon, int species, in
     if (form != 0) {
         SetMonData(mon, MON_DATA_FORM, &form);
     }
+
+    u8 stats[6] = {0, 1, 2, 3, 4, 5};
+    u32 maxIV = 31;
+
+    for (int i = 0; i < 3; i++) {
+        int j = i + (gf_rand() % (6 - i));
+        u8 tmp = stats[i];
+        stats[i] = stats[j];
+        stats[j] = tmp;
+        SetMonData(mon, MON_DATA_HP_IV + stats[i], &maxIV);
+    }
+
+    RecalcPartyPokemonStats(mon);
 }
 
 /**
