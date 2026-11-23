@@ -5,13 +5,17 @@
 const struct ScriptBankMapping *sScriptBankMapping = (const struct ScriptBankMapping *)0x020FA4A4;
 
 u16 LoadScriptsAndMessagesByMapId(FieldSystem *fieldSystem, struct SCRIPTCONTEXT *ctx, u16 scriptId) {
-    void **mapObj = FieldSysGetAttrAddr(fieldSystem, 10);
-    u16 spriteID = MapObject_GetSpriteID(*mapObj);
+    if (scriptId >= 7000 && scriptId <= 7000 + MAX_TOTAL_ITEM_NUM) {
+        TaskManager *taskman = fieldSystem->taskman;
 
-    if (spriteID == 87 && scriptId >= 7000 && scriptId <= 7000 + MAX_TOTAL_ITEM_NUM)
-    {
-        LoadScriptsAndMessagesParameterized(fieldSystem, ctx, 141, 199);
-        return scriptId - 7000;
+        if (taskman != NULL && taskman->env != NULL) {
+            void **mapObj = FieldSysGetAttrAddr(fieldSystem, 10);
+
+            if (mapObj != NULL && *mapObj != NULL && MapObject_GetSpriteID(*mapObj) == 87) {
+                LoadScriptsAndMessagesParameterized(fieldSystem, ctx, 141, 199);
+                return scriptId - 7000;
+            }
+        }
     }
 
     const struct ScriptBankMapping *mapping_p = sScriptBankMapping;
