@@ -23,6 +23,8 @@
 #include "save.h"
 #include "script.h"
 #include "sound.h"
+#include "pokeheartgold.h"
+#include "use_item_on_mon.h"
 
 extern u32 word_to_store_form_at;
 struct OVERWORLD_TAG *LONG_CALL ObjectEvent_GetGraphicsInfo(u32 spriteId);
@@ -1928,7 +1930,7 @@ u32 MonTryLearnMoveOnLevelUp(struct PartyPokemon *mon, int *last_i, u16 *sp0)
             *sp0 = LEVEL_UP_LEARNSET_MOVE(levelUpLearnset[*last_i]);
             (*last_i)++;
 
-            if (isMonEvolving) // Skip moves already attempted at level 0 during evolution.
+            if (isMonEvolving)
             {
                 BOOL alreadyAttempted = FALSE;
                 for (s32 i = 0; i < *last_i - 1; i++) {
