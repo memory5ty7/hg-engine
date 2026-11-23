@@ -2699,7 +2699,7 @@
 
 #define MAX_TOTAL_ITEM_NUM ITEM_REPELLENT
 
-#define NUM_MEGA_STONES   (48) // includes the pixie plate, doesn't include plza megas due to overflowing bag
+#define NUM_MEGA_STONES   (100) // includes the pixie plate, doesn't include plza megas due to overflowing bag
 #define NUM_HMS           (ITEM_HM08 - ITEM_HM01 + 1) // intentionally do not include HM07_ORAS (Dive)
 #define NUM_MACHINE_MOVES 340
 
@@ -2870,13 +2870,13 @@ enum ItemGeneration {
 #ifdef ITEM_POCKET_EXPANSION
 
 // pixie plate + megas
-#define NUM_BAG_ITEMS        165 + 32 + NUM_MEGA_STONES
+#define NUM_BAG_ITEMS        165 + 32
 #define NUM_BAG_MEDICINE     40
 #define NUM_BAG_BALLS        24 + 2
 #define NUM_BAG_TMS_HMS      101
 #define NUM_BAG_BERRIES      64
 #define NUM_BAG_MAIL         12
-#define NUM_BAG_BATTLE_ITEMS 30
+#define NUM_BAG_BATTLE_ITEMS NUM_MEGA_STONES
 #define NUM_BAG_KEY_ITEMS    50 + 42
 
 #else
