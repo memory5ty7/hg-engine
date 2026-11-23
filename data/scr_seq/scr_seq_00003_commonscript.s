@@ -796,6 +796,8 @@ _0A2E:
     call_if_unset FLAG_SYS_MET_BILL, _0A78
     call_if_set FLAG_SYS_MET_BILL, _0A82
     menu_item_add 60, 255, 6
+    menu_item_add 86, 255, 11 // Status Pokémon
+    menu_item_add 71, 255, 8 // Move Relearner
     goto _0AD1
     .byte 0x02, 0x00
 _0A78:
@@ -812,7 +814,9 @@ _0AD1:
     switch VAR_SPECIAL_x8006
     case 0, _0B01
     case 1, _0C23
+    case 11, _statusPokemon
     case 6, _healPokemon
+    case 8, _moveRelearner
     goto _0DF0
 
 _healPokemon:
@@ -826,6 +830,96 @@ _healPokemon:
     wait_fade
     goto _0A2E
 
+_statusPokemon:
+    menu_init_std_gmm 1, 1, 0, 1, VAR_SPECIAL_x8006
+    menu_item_add 87, 255, 1
+    menu_item_add 88, 255, 2
+    menu_item_add 89, 255, 3
+    menu_item_add 90, 255, 4
+    menu_item_add 91, 255, 5
+    menu_item_add 92, 255, 6
+    menu_item_add 94, 255, 10
+    menu_exec
+    compare VAR_SPECIAL_x8006, 10
+    goto_if_ne statusMain
+
+    goto _0DF0 
+
+statusMain:
+    setflag 0x18F
+    closemsg
+    playfanfare SEQ_SE_DP_SELECT
+	fade_screen 6, 1, 0, RGB_BLACK
+	wait_fade 
+	party_select_ui 
+	getselectedpartyslot VAR_SPECIAL_x8005
+	returnscreen
+	fade_screen 6, 1, 1, RGB_BLACK
+	wait_fade 
+
+    switch VAR_SPECIAL_x8006
+    case 1, burn_mon
+    case 2, freeze_mon
+    case 3, paralyze_mon
+    case 4, poison_mon
+    case 5, toxic_mon
+    case 6, sleep_mon
+    goto _0A2E
+
+burn_mon:
+    DummyTextTrap 1, VAR_SPECIAL_x8005
+    goto _0A2E
+
+freeze_mon:
+    DummyTextTrap 2, VAR_SPECIAL_x8005
+    goto _0A2E
+
+paralyze_mon:
+    DummyTextTrap 3, VAR_SPECIAL_x8005
+    goto _0A2E
+
+poison_mon:
+    DummyTextTrap 4, VAR_SPECIAL_x8005
+    goto _0A2E
+    
+toxic_mon:
+    DummyTextTrap 5, VAR_SPECIAL_x8005
+    goto _0A2E
+
+sleep_mon:
+    DummyTextTrap 6, VAR_SPECIAL_x8005
+    goto _0A2E
+
+_moveRelearner:
+    closemsg
+	fade_screen 6, 1, 0, RGB_BLACK
+	wait_fade 
+	party_select_ui 
+	getselectedpartyslot VAR_SPECIAL_x8005
+	returnscreen 
+	fade_screen 6, 1, 1, RGB_BLACK
+	wait_fade 
+
+    compare_var_to_value VAR_SPECIAL_x8005, 255
+    goto_if_eq _0A2E
+
+	getpartypokemonid VAR_SPECIAL_x8005, VAR_SPECIAL_RESULT
+    compare_var_to_value VAR_SPECIAL_RESULT, 0
+    goto_if_eq _0A2E
+
+	scrcmd_466 VAR_SPECIAL_RESULT, VAR_SPECIAL_x8005
+    compare_var_to_value VAR_SPECIAL_RESULT, 0
+    goto_if_eq _0A2E
+
+	fade_screen 6, 1, 0, RGB_BLACK
+	wait_fade 
+	move_relearner_init VAR_SPECIAL_x8005
+	move_relearner_get_result VAR_SPECIAL_RESULT
+	returnscreen 
+	fade_screen 6, 1, 1, RGB_BLACK
+	wait_fade 
+    goto _0A2E
+    
 _0B01:
     play_se SEQ_SE_DP_PC_LOGIN
     buffer_players_name 0
