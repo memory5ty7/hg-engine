@@ -939,3 +939,8 @@ Save_MapObjects_Get = 0x0203B9D0 | 1;
 
 /* Map Name Popup */
 FieldDrawMapName_Reset = 0x021EFACC | 1;
+
+/* Items gen9 fix */
+LoadScriptsAndMessagesParameterized = 0x02040168 | 1;
+LoadScriptsAndMessagesForCurrentMap	= 0x0204018C | 1;
+MapObject_GetSpriteID = 0x0205F25C | 1;

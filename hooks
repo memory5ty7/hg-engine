@@ -678,3 +678,6 @@ arm9 FieldSystem_RestoreMapObjectsFromSave 0203B9F4 1
 
 # Repel
 0015 BagApp_TryUseRepel 021FBA9C 2
+
+# Items gen9 fix
+arm9 LoadScriptsAndMessagesByMapId 02040114 3
