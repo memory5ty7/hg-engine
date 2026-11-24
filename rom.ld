@@ -987,3 +987,10 @@ GetSpeciesName = 0x0200BCDC | 1;
 
 CallTask_LeaveOverworld = 0x0205525C | 1;
 CallTask_RestoreOverworld = 0x020552A4 | 1;
+
+/* Last Mon Theme */
+BattleSystem_GetBattleType = 0x0223A7E0 | 1;
+BattleSystem_GetTrainerIndex = 0x0223A9AC | 1;
+TrainerMessageWithIdPairExists = 0x020734D0 | 1;
+BattleSystem_GetParty = 0x0223A7F4 | 1;
+BattleSystem_GetTrainer = 0x0223A9F4 | 1;

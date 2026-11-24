@@ -696,3 +696,6 @@ arm9 Task_NamingScreen 0203F580 1
 arm9 ScrCmd_SetClearFlag 0204E88C 1
 arm9 ScrCmd_DebugSetVar 0204E8B8 1
 arm9 UseItemOnPokemon 020902D0 5
+
+# Last Mon Theme
+0012 CheckTrainerMessage 02250D4C 2

@@ -92,4 +92,8 @@ String* LONG_CALL _get_species_name(u16 species, int heapID);
 void LONG_CALL CallTask_LeaveOverworld(TaskManager *taskManager);
 void LONG_CALL CallTask_RestoreOverworld(TaskManager *taskManager);
 
+// Last Mon Battle Theme
+u32 LONG_CALL BattleSystem_GetBattleType(void *bsys);
+BOOL LONG_CALL TrainerMessageWithIdPairExists(u32 trainer_idx, u32 msg_id, int heapId);
+
 #endif // POKEHEARTGOLD_H
