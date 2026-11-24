@@ -798,6 +798,7 @@ _0A2E:
     menu_item_add 60, 255, 6
     menu_item_add 86, 255, 11 // Status Pokémon
     menu_item_add 71, 255, 8 // Move Relearner
+    menu_item_add 93, 255, 7 // Debug
     goto _0AD1
     .byte 0x02, 0x00
 _0A78:
@@ -817,6 +818,7 @@ _0AD1:
     case 11, _statusPokemon
     case 6, _healPokemon
     case 8, _moveRelearner
+    case 7, _debug
     goto _0DF0
 
 _healPokemon:
@@ -919,7 +921,87 @@ _moveRelearner:
 	fade_screen 6, 1, 1, RGB_BLACK
 	wait_fade 
     goto _0A2E
-    
+
+_debug:
+    npc_msg 96
+    menu_init_std_gmm 1, 1, 0, 1, VAR_SPECIAL_x8006
+    menu_item_add 97, 255, 1 // Give Pokémon
+    menu_item_add 98, 255, 2 // Give Item
+    menu_item_add 99, 255, 3 // Toggle Flag
+    menu_item_add 100, 255, 4 // Set Var
+    menu_item_add 94, 255, 10 // Cancel
+    menu_exec
+    compare VAR_SPECIAL_x8006, 1
+    goto_if_eq _giveMon
+    compare VAR_SPECIAL_x8006, 2
+    goto_if_eq _giveItem
+    compare VAR_SPECIAL_x8006, 3
+    goto_if_eq _toggleFlag
+    compare VAR_SPECIAL_x8006, 4
+    goto_if_eq _setVar
+    goto _0DF0 
+
+_giveMon:
+    closemsg
+	fade_screen 6, 1, 0, RGB_BLACK
+	wait_fade
+    prompt_number VAR_SPECIAL_x8004
+    prompt_number VAR_SPECIAL_x8005
+    prompt_number VAR_SPECIAL_x8006
+	fade_screen 6, 1, 1, RGB_BLACK
+	wait_fade
+    compare VAR_SPECIAL_x8004, 0
+    goto_if_eq wrongInput
+    compare VAR_SPECIAL_x8005, 0
+    goto_if_eq wrongInput
+    GivePokemon VAR_SPECIAL_x8004,VAR_SPECIAL_x8005,0,VAR_SPECIAL_x8006,0,VAR_SPECIAL_RESULT
+    goto _0A2E
+
+_giveItem:
+    closemsg
+	fade_screen 6, 1, 0, RGB_BLACK
+	wait_fade
+    prompt_number VAR_SPECIAL_x8004
+    prompt_number VAR_SPECIAL_x8005
+	fade_screen 6, 1, 1, RGB_BLACK
+	wait_fade
+    compare VAR_SPECIAL_x8004, 0
+    goto_if_eq wrongInput
+    compare VAR_SPECIAL_x8005, 0
+    goto_if_eq wrongInput
+    giveitem VAR_SPECIAL_x8004, VAR_SPECIAL_x8005, VAR_SPECIAL_RESULT
+    goto _0A2E
+
+_toggleFlag:
+    closemsg
+	fade_screen 6, 1, 0, RGB_BLACK
+	wait_fade
+    prompt_number VAR_SPECIAL_x8004
+	fade_screen 6, 1, 1, RGB_BLACK
+	wait_fade
+    compare VAR_SPECIAL_x8004, 0
+    goto_if_eq wrongInput
+    setClearFlag VAR_SPECIAL_x8004
+    goto _0A2E  
+
+_setVar:
+    closemsg
+	fade_screen 6, 1, 0, RGB_BLACK
+	wait_fade
+    prompt_number VAR_SPECIAL_x8004
+    prompt_number VAR_SPECIAL_x8005
+	fade_screen 6, 1, 1, RGB_BLACK
+	wait_fade
+    compare VAR_SPECIAL_x8004, 0
+    goto_if_eq wrongInput
+    compare VAR_SPECIAL_x8005, 0
+    goto_if_eq wrongInput
+    debugSetVar VAR_SPECIAL_x8004, VAR_SPECIAL_x8005
+    goto _0A2E 
+
+wrongInput:
+    goto _0A2E
+
 _0B01:
     play_se SEQ_SE_DP_PC_LOGIN
     buffer_players_name 0

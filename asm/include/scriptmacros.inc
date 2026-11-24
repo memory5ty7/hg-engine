@@ -10411,6 +10411,22 @@ RunNewCommand2 NEW_COMMAND_UPDATE_REPELLENT, 0x800C
 .byte \arg1
 .endm
 
+.macro prompt_number,arg0
+.hword 297
+.hword \arg0
+.endm
+
+.macro setClearFlag,arg0
+.hword 305
+.hword \arg0
+.endm
+
+.macro debugSetVar,arg0,arg1
+.hword 306
+.hword \arg0
+.hword \arg1
+.endm
+
 // Convenience macros
 
 // Generic compare macro which attempts to deduce argument types based on their values

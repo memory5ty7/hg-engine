@@ -689,3 +689,10 @@ arm9 UseItemOnPokemon 020902D0 5
 # Nuzlocke Healing
 arm9 ScrCmd_WhiteOut 020498C8 1
 arm9 HealParty 02090C1C 1
+
+# Debug Menu
+arm9 ScrCmd_NamePlayer 0204E71C 1
+arm9 Task_NamingScreen 0203F580 1
+arm9 ScrCmd_SetClearFlag 0204E88C 1
+arm9 ScrCmd_DebugSetVar 0204E8B8 1
+arm9 UseItemOnPokemon 020902D0 5
