@@ -899,14 +899,6 @@ _0D99:
 	end
 
 _0D9F:
-	compare VAR_TEMP_x4010, 255
-	goto_if_eq _0DC7
-	check_registered_phone_number VAR_TEMP_x4010, VAR_SPECIAL_RESULT
-	compare VAR_SPECIAL_RESULT, 1
-	goto_if_eq _0DC7
-	setvar VAR_SPECIAL_RESULT, 1
-	return
-
 _0DC7:
 	setvar VAR_SPECIAL_RESULT, 0
 	return
