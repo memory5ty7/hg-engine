@@ -21,4 +21,13 @@ u8 LONG_CALL BattleSystem_GetBattleOutcomeFlags(struct BattleSystem *bsys);
 void LONG_CALL BattleSystem_SetBattleOutcomeFlags(struct BattleSystem *bsys, u8 battleOutcomeFlag);
 BOOL LONG_CALL BattleContext_Main(struct BattleSystem *bsys, struct BattleStruct *ctx);
 
+// Nuzlocke Mode Capture
+
+BOOL LONG_CALL BattleSystem_CheckMonCaught(struct BattleSystem *bsys, int battlerId);
+BOOL LONG_CALL CheckEvoLineCaught(struct BattleSystem *bsys, u16 species);
+void LONG_CALL setAreaCaughtFlag(struct BattleSystem *bsys, u8 mapSec);
+BOOL LONG_CALL checkAreaCaughtFlag(struct BattleSystem *bsys, u8 mapSec);
+void LONG_CALL ReadBattleScriptFromNarc(struct BattleStruct *ctx, int narcId, int fileId);
+int LONG_CALL ov12_022581D4(struct BattleSystem *bsys, struct BattleStruct *ctx, int var, int battlerId);
+
 #endif

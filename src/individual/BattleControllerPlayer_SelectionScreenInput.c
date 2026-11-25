@@ -6,9 +6,12 @@
 #include "constants/hold_item_effects.h"
 #include "constants/item.h"
 #include "constants/move_effects.h"
+#include "constants/map_sections.h"
+#include "constants/vars_flags.h"
 
 #include "battle.h"
 #include "battle_controller_player.h"
+#include "pokemon.h"
 
 #ifdef DEBUG_BATTLE_SCENARIOS
 #include "test_battle.h"
@@ -162,6 +165,18 @@ void BattleControllerPlayer_SelectionScreenInputInternal(struct BattleSystem *bs
                             ctx->playerActions[battlerId][0] = CONTROLLER_COMMAND_CATCHING_CONSTEST_THROW_BALL;
                         } else if (BattleTypeGet(bsys) & BATTLE_TYPES_WITHOUT_ITEMS) {
                             msg.id = BATTLE_MSG_ITEMS_CANT_BE_USED_HERE; // Items can't be used here
+                            msg.tag = TAG_NONE;
+                            ov12_022639B8(bsys, battlerId, msg);
+                            ctx->com_seq_no[battlerId] = SSI_STATE_15;
+                            ctx->ret_seq_no[battlerId] = SSI_STATE_SELECT_COMMAND_INIT;
+                        } else if (checkAreaCaughtFlag(bsys, bsys->location) && CheckScriptFlag(FLAG_NUZLOCKE_MODE)) {
+                            msg.id = BATTLE_MSG_AREA_ALREADY_CAUGHT_POKEMON; // You have already caught a Pokémon in this Area!
+                            msg.tag = TAG_NONE;
+                            ov12_022639B8(bsys, battlerId, msg);
+                            ctx->com_seq_no[battlerId] = SSI_STATE_15;
+                            ctx->ret_seq_no[battlerId] = SSI_STATE_SELECT_COMMAND_INIT;                
+                        } else if (BattleSystem_CheckMonCaught(bsys, ctx->battlemon[BATTLER_ENEMY].species) & CheckScriptFlag(FLAG_NUZLOCKE_MODE)) {
+                            msg.id = BATTLE_MSG_ALREADY_CAUGHT_POKEMON; // You have already caught this Pokémon (or its Evolution Line)!
                             msg.tag = TAG_NONE;
                             ov12_022639B8(bsys, battlerId, msg);
                             ctx->com_seq_no[battlerId] = SSI_STATE_15;

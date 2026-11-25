@@ -994,3 +994,9 @@ BattleSystem_GetTrainerIndex = 0x0223A9AC | 1;
 TrainerMessageWithIdPairExists = 0x020734D0 | 1;
 BattleSystem_GetParty = 0x0223A7F4 | 1;
 BattleSystem_GetTrainer = 0x0223A9F4 | 1;
+
+/* Nuzlocke Mode Capture */
+BattleSystem_CheckMonCaught = 0x0223C330 | 1;
+ReadBattleScriptFromNarc = 0x0224EB9C | 1;
+ov12_02261258 = 0x02261258 | 1;
+ov12_022581D4 = 0x022581D4 | 1;

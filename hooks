@@ -699,3 +699,7 @@ arm9 UseItemOnPokemon 020902D0 5
 
 # Last Mon Theme
 0012 CheckTrainerMessage 02250D4C 2
+
+# Nuzlocke Mode Capture
+0012 ov12_0224D464 0224D464 2
+0012 BattleSystem_SetPokedexCaught 0223C2F0 2

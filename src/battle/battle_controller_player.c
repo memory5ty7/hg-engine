@@ -10,6 +10,8 @@
 #include "constants/move_effects.h"
 
 #include "battle.h"
+#include "pokemon.h"
+#include "constants/vars_flags.h"
 #include "overlay.h"
 
 #ifdef DEBUG_BATTLE_SCENARIOS
@@ -260,5 +262,63 @@ void LONG_CALL ov12_0224DD74(struct BattleSystem *bsys UNUSED, struct BattleStru
                 ctx->lastClientDamagedBy[ctx->defence_client] = BATTLER_NONE;
             }
         }
+    }
+}
+
+BOOL LONG_CALL CheckEvoLineCaught(struct BattleSystem *bsys, u16 species)
+{
+    return BattleSystem_CheckMonCaught(bsys, species);
+}
+
+void LONG_CALL setAreaCaughtFlag(struct BattleSystem *bsys, u8 mapSec)
+{
+    u16 varID = VAR_MAPSEC_1 + (int)((int)mapSec / 16);
+    SetScriptVar(varID , GetScriptVar(varID) | (1 << (mapSec % 16)));
+}
+
+BOOL LONG_CALL checkAreaCaughtFlag(struct BattleSystem *bsys, u8 mapSec)
+{
+    u16 varID = VAR_MAPSEC_1 + (int)(mapSec / 16);
+    u16 varValue = GetScriptVar(varID);
+    return varValue & (1 << mapSec % 16);
+}
+
+void ov12_0224D464(struct BattleSystem *bsys, struct BattleStruct *ctx) {
+    if (BattleSystem_GetBattleOutcomeFlags(bsys) & BATTLE_RESULT_TRY_FLEE) {
+        ctx->server_seq_no = CONTROLLER_COMMAND_44;
+    } else if (BattleSystem_GetBattleOutcomeFlags(bsys) == BATTLE_RESULT_LOSE || BattleSystem_GetBattleOutcomeFlags(bsys) == BATTLE_RESULT_DRAW) {
+        ReadBattleScriptFromNarc(ctx, 1, 5);
+        ctx->server_seq_no = CONTROLLER_COMMAND_RUN_SCRIPT;
+        ctx->next_server_seq_no = CONTROLLER_COMMAND_44;
+    } else if (BattleSystem_GetBattleOutcomeFlags(bsys) == BATTLE_OUTCOME_WIN) {
+        ReadBattleScriptFromNarc(ctx, 1, 4);
+        ctx->server_seq_no = CONTROLLER_COMMAND_RUN_SCRIPT;
+        ctx->next_server_seq_no = CONTROLLER_COMMAND_44;
+    } else if (BattleSystem_GetBattleOutcomeFlags(bsys) == BATTLE_RESULT_CAPTURED_MON) {
+        ctx->server_seq_no = CONTROLLER_COMMAND_RUN_SCRIPT;
+        ctx->next_server_seq_no = CONTROLLER_COMMAND_44;
+    } else if (BattleSystem_GetBattleOutcomeFlags(bsys) == BATTLE_RESULT_PLAYER_FLED) {
+        ctx->server_seq_no = CONTROLLER_COMMAND_44;
+    }
+
+    if (!(BattleTypeGet(bsys) & BATTLE_TYPE_TRAINER) && !CheckEvoLineCaught(bsys, ctx->battlemon[BATTLER_ENEMY].species))
+    {
+        setAreaCaughtFlag(bsys, bsys->location);
+    }
+
+    ctx->fight_end_flag = TRUE;
+}
+
+void BattleSystem_SetPokedexCaught(struct BattleSystem *bsys, int battlerId) {
+    u32 flag = ov12_02261258(bsys->opponentData[battlerId]);
+
+    if (!(bsys->battleType & (BATTLE_TYPE_LINK | BATTLE_TYPE_FRONTIER)) && (flag & 1)) {
+        int selectedMonIndex = ov12_022581D4(bsys, bsys->sp, 2, battlerId);
+        struct PartyPokemon *mon = Battle_GetClientPartyMon(bsys, battlerId, selectedMonIndex);
+        if (!CheckEvoLineCaught(bsys, bsys->sp->battlemon[bsys->sp->defence_client].species))
+        {
+            setAreaCaughtFlag(bsys, bsys->location);
+        }
+        SetPokemonGet(bsys->pokedex, mon);
     }
 }

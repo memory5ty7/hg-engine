@@ -1251,7 +1251,7 @@ struct BattleSystem {
     u8 criticalHpMusicDelay : 3;
     u32 terrain;
     u32 bgId;
-    // int location;
+    int location;
     // u32 battleSpecial;
     // int timezone; //might be timeOfDay? unclear
     // int safariBallCnt;
@@ -3942,5 +3942,7 @@ void LONG_CALL InitSwitchWork(struct BattleSystem *bsys, struct BattleStruct *ct
 void LONG_CALL ov12_02256F78(struct BattleSystem *bsys, struct BattleStruct *ctx, int battlerId, u8 selectedMonIndex);
 
 int LONG_CALL PokeParty_GetPokeCount(const struct Party *party);
+
+#define BATTLE_OUTCOME_WIN         1
 
 #endif // BATTLE_H
